@@ -4,8 +4,8 @@
 ---
 
 ## Version
-OS : ubuntu:22.04 
-JDK : java-8-openjdk-amd64
-Python : python3.10
-Kafka : kafka_2.13-2.7.2
-Spark : spark_3.4.0
+OS : ubuntu:22.04 <br>
+JDK : java-8-openjdk-amd64 <br>
+Python : python3.10 <br>
+Kafka : kafka_2.13-2.7.2 <br>
+Spark : spark_3.4.0 <br>
