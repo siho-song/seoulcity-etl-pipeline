@@ -9,10 +9,10 @@ from kafka import KafkaProducer
 
 
 def split_data(data, max_size):
-    data_str = json.dumps(data, indent=4,ensure_ascii=False)
+    data_str = json.dumps(data,ensure_ascii=False)
     size = len(data_str)
     if size <= max_size:
-        return [data]
+        return [data_str]
     num_splits = (size + max_size - 1) // max_size
     split_size = size // num_splits
     splits = []
@@ -27,9 +27,9 @@ def split_data(data, max_size):
     return splits
 
 producer = KafkaProducer(bootstrap_servers='localhost:9092',
-                         value_serializer = lambda x: str(x).encode('utf-8')
+                         value_serializer = lambda x: json.dumps(x).encode('utf-8')
                          )
-
+# str(x).encode('utf-8')
 
 def data_producing(API_KEY,hotspots_list):
     for i in hotspots_list:
@@ -40,20 +40,21 @@ def data_producing(API_KEY,hotspots_list):
             data_splits = split_data(data, max_size=100000) # 최대 크기 1MB로 설정
             metadatas=[]
             for split in data_splits:
-                metadata = producer.send('seoulcity', split).get()
+                metadata = producer.send('seoulcity', value=split).get()
                 metadatas.append((f"Message produced to partition {metadata.partition}, offset {metadata.offset}"))
                 producer.flush()
                 print(metadatas)
-        time.sleep(10)
+        time.sleep(3)
         
 
 # path variable
 kafka_home = os.getcwd()
-dataset_path = kafka_home+"\\resource\\dataset\\"
+dataset_path = kafka_home+"/resource/dataset/"
 file_hotspot = dataset_path+"seoulcity-hotspot.xlsx"
 
 #environment variable
 API_KEY= os.environ.get('SEOUL_SECRET_KEY')
+print(API_KEY)
 
 hotspots = pd.read_excel(file_hotspot)
 hotspots=hotspots['장소명']
