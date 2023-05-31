@@ -1,6 +1,6 @@
 from kafka import KafkaConsumer
 
-consumer = KafkaConsumer('seoulcity',
+consumer = KafkaConsumer('seoulcity_visual',
                          bootstrap_servers=['localhost:9092'],
                          )
 

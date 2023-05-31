@@ -44,7 +44,7 @@ def data_producing(API_KEY,hotspots_list):
                 metadatas.append((f"Message produced to partition {metadata.partition}, offset {metadata.offset}"))
                 producer.flush()
                 print(metadatas)
-        time.sleep(3)
+        time.sleep(1)
         
 
 # path variable

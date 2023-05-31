@@ -112,33 +112,35 @@ services:
       - spark-master
       
   mongodb:
-    image: mongo
+    image: mongo:latest
     container_name: mongodb
     restart: always
     ports:
       - "27017:27017"
-    
+    env_file:
+      - ./env_file.env
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
-      MONGO_INITDB_DATABASE: seoulcity
+      TZ: Asia/Seoul
+
     volumes:
-      - ./data/mongodb:/data/db
+      - ./mongo/docker-entrypoint-initdb.d/init-mongo.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      # - ./mongo_data:/data/db
   
-  # mongo-express:
-  #   image: mongo-express
-  #   container_name: mongo-express
-  #   depends_on: 
-  #       - mongodb
-  #   ports:
-  #     - "27018:27018"
-  #   environment:
-  #     ME_CONFIG_MONGODB_ADMINUSERNAME: root
-  #     ME_CONFIG_MONGODB_ADMINPASSWORD: root
-  #     ME_CONFIG_MONGODB_SERVER: seouldb-server
+  mongo-express:
+    container_name: mongo-express
+    image: mongo-express
+    restart: always
+    depends_on: 
+        - mongodb
+    ports:
+      - "27018:8081"
+    
+    env_file:
+      - ./env_file.env
+   
 
   notebook:
-    image: jupyter/pyspark-notebook
+    image: jupyter/pyspark-notebook 
     privileged: true
     restart: always
     ports:
@@ -146,7 +148,7 @@ services:
     volumes:
       - ./notebooks/work:/home/jovyan/work
     environment:
-      - GRANT_SUDO=yes
+      GRANT_SUDO: yes
 
 networks:
   default:
