@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_96a07be6b223573f81655deaa6283030 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_96a07be6b223573f81655deaa6283030" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_96a07be6b223573f81655deaa6283030 = L.map(
+                "map_96a07be6b223573f81655deaa6283030",
+                {
+                    center: [37.64051971456238, 127.02623514391327],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c27f33c459814b342d082533411de40c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_96a07be6b223573f81655deaa6283030);
+        
+    
+            var marker_03ab35cdc6b234b68f747e8278fbc525 = L.marker(
+                [37.63926315, 127.02672577],
+                {}
+            ).addTo(map_96a07be6b223573f81655deaa6283030);
+        
+    
+            var icon_972e9a0012ba228f586a8f9c290fb616 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03ab35cdc6b234b68f747e8278fbc525.setIcon(icon_972e9a0012ba228f586a8f9c290fb616);
+        
+    
+        var popup_245df636d58b9289939eb744330d7405 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dc80e242b2d1be71d9603d2f5c0d918 = $(`<div id="html_0dc80e242b2d1be71d9603d2f5c0d918" style="width: 100.0%; height: 100.0%;">{'정류장명': '1503. 강북구청사거리(수유역 8번출구)', '대여가능 수': '24', '반납율': '높음'}</div>`)[0];
+                popup_245df636d58b9289939eb744330d7405.setContent(html_0dc80e242b2d1be71d9603d2f5c0d918);
+            
+        
+
+        marker_03ab35cdc6b234b68f747e8278fbc525.bindPopup(popup_245df636d58b9289939eb744330d7405)
+        ;
+
+        
+    
+    
+            marker_03ab35cdc6b234b68f747e8278fbc525.bindTooltip(
+                `<div>
+                     {'정류장명': '1503. 강북구청사거리(수유역 8번출구)', '대여가능 수': '24', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d412d04b9b37a97f33449741f29a1e50 = L.marker(
+                [37.63967133, 127.02519989],
+                {}
+            ).addTo(map_96a07be6b223573f81655deaa6283030);
+        
+    
+            var icon_69334d560e394781df165c5db0388458 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d412d04b9b37a97f33449741f29a1e50.setIcon(icon_69334d560e394781df165c5db0388458);
+        
+    
+        var popup_4c7e5e3b60103e4ce31412a5d79c4e0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a85233c9febacfb7752edca2748db00 = $(`<div id="html_6a85233c9febacfb7752edca2748db00" style="width: 100.0%; height: 100.0%;">{'정류장명': '1513. 강북구청 뒷편', '대여가능 수': '2', '반납율': '낮음'}</div>`)[0];
+                popup_4c7e5e3b60103e4ce31412a5d79c4e0a.setContent(html_6a85233c9febacfb7752edca2748db00);
+            
+        
+
+        marker_d412d04b9b37a97f33449741f29a1e50.bindPopup(popup_4c7e5e3b60103e4ce31412a5d79c4e0a)
+        ;
+
+        
+    
+    
+            marker_d412d04b9b37a97f33449741f29a1e50.bindTooltip(
+                `<div>
+                     {'정류장명': '1513. 강북구청 뒷편', '대여가능 수': '2', '반납율': '낮음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09be85919376d3d2d175ac19b8d792d3 = L.marker(
+                [37.63986206, 127.022789],
+                {}
+            ).addTo(map_96a07be6b223573f81655deaa6283030);
+        
+    
+            var icon_e5500a1640f3094bbaf1215d3494ec65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09be85919376d3d2d175ac19b8d792d3.setIcon(icon_e5500a1640f3094bbaf1215d3494ec65);
+        
+    
+        var popup_c03aa070a3a633ef0ccfec8ad5a50600 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53179c39d8bdd51213c204fc8607d292 = $(`<div id="html_53179c39d8bdd51213c204fc8607d292" style="width: 100.0%; height: 100.0%;">{'정류장명': '1520. 수유중앙시장', '대여가능 수': '8', '반납율': '높음'}</div>`)[0];
+                popup_c03aa070a3a633ef0ccfec8ad5a50600.setContent(html_53179c39d8bdd51213c204fc8607d292);
+            
+        
+
+        marker_09be85919376d3d2d175ac19b8d792d3.bindPopup(popup_c03aa070a3a633ef0ccfec8ad5a50600)
+        ;
+
+        
+    
+    
+            marker_09be85919376d3d2d175ac19b8d792d3.bindTooltip(
+                `<div>
+                     {'정류장명': '1520. 수유중앙시장', '대여가능 수': '8', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a60364ebe63e962449ba75bf38eae4b = L.marker(
+                [37.64173889, 127.02462769],
+                {}
+            ).addTo(map_96a07be6b223573f81655deaa6283030);
+        
+    
+            var icon_5e4514c50e88bb074b6c92945eb54015 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5a60364ebe63e962449ba75bf38eae4b.setIcon(icon_5e4514c50e88bb074b6c92945eb54015);
+        
+    
+        var popup_892e4df0ddbc99c0e56652416989f01c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c195bc8bb61fe5d5cc312b7edec573d = $(`<div id="html_7c195bc8bb61fe5d5cc312b7edec573d" style="width: 100.0%; height: 100.0%;">{'정류장명': '1526. 강북종합시장 앞', '대여가능 수': '2', '반납율': '높음'}</div>`)[0];
+                popup_892e4df0ddbc99c0e56652416989f01c.setContent(html_7c195bc8bb61fe5d5cc312b7edec573d);
+            
+        
+
+        marker_5a60364ebe63e962449ba75bf38eae4b.bindPopup(popup_892e4df0ddbc99c0e56652416989f01c)
+        ;
+
+        
+    
+    
+            marker_5a60364ebe63e962449ba75bf38eae4b.bindTooltip(
+                `<div>
+                     {'정류장명': '1526. 강북종합시장 앞', '대여가능 수': '2', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61b32393d1b6b66a72511743938b9345 = L.marker(
+                [37.6362915, 127.02337646],
+                {}
+            ).addTo(map_96a07be6b223573f81655deaa6283030);
+        
+    
+            var icon_014fbb19e26e848822b7bc3789926ef6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_61b32393d1b6b66a72511743938b9345.setIcon(icon_014fbb19e26e848822b7bc3789926ef6);
+        
+    
+        var popup_02bd8b9300f21ff52de82309639f79ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7075c75c5e5b360100f726fec0c1547f = $(`<div id="html_7075c75c5e5b360100f726fec0c1547f" style="width: 100.0%; height: 100.0%;">{'정류장명': '1535. 효성인텔리안 앞', '대여가능 수': '12', '반납율': '높음'}</div>`)[0];
+                popup_02bd8b9300f21ff52de82309639f79ce.setContent(html_7075c75c5e5b360100f726fec0c1547f);
+            
+        
+
+        marker_61b32393d1b6b66a72511743938b9345.bindPopup(popup_02bd8b9300f21ff52de82309639f79ce)
+        ;
+
+        
+    
+    
+            marker_61b32393d1b6b66a72511743938b9345.bindTooltip(
+                `<div>
+                     {'정류장명': '1535. 효성인텔리안 앞', '대여가능 수': '12', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

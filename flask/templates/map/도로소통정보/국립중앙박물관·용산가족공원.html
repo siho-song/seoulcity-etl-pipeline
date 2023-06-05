@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_60105abfe13e4aad519a188a4e36b9f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_60105abfe13e4aad519a188a4e36b9f3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_60105abfe13e4aad519a188a4e36b9f3 = L.map(
+                "map_60105abfe13e4aad519a188a4e36b9f3",
+                {
+                    center: [37.52044110709711, 126.98071861681541],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7b7b43928f009a6277e1b48dda5c214 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+            var poly_line_3d3fbd16f88918051418691430aa0d70 = L.polyline(
+                [[37.519935331550805, 126.9856244599082], [37.51993301339437, 126.9851520657106], [37.51992226072525, 126.98495902231872], [37.51987928476187, 126.98445172340378], [37.51989349329596, 126.98374687765164], [37.51989345089185, 126.98344159490892], [37.51986840180204, 126.98331140657262], [37.519811177936965, 126.98323958842658], [37.519732500999375, 126.98318573291317], [37.51962164713191, 126.98316780011054], [37.51893150447762, 126.9831589769449], [37.518645429929926, 126.98312312635102]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_6a53896d869fa6110fc2aef3740ea358 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80daea0b88a56c6f3a1344f57963ee92 = $(`<div id="html_80daea0b88a56c6f3a1344f57963ee92" style="width: 100.0%; height: 100.0%;">{'도로명': '동작대로', '구간명': '동작대교북측 ~ 용산동6가68-2', '구간 거리': '345m', '평균 속도': '31.7km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_6a53896d869fa6110fc2aef3740ea358.setContent(html_80daea0b88a56c6f3a1344f57963ee92);
+            
+        
+
+        poly_line_3d3fbd16f88918051418691430aa0d70.bindPopup(popup_6a53896d869fa6110fc2aef3740ea358)
+        ;
+
+        
+    
+    
+            poly_line_3d3fbd16f88918051418691430aa0d70.bindTooltip(
+                `<div>
+                     {'도로명': '동작대로', '구간명': '동작대교북측 ~ 용산동6가68-2', '구간 거리': '345m', '평균 속도': '31.7km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4d6f612edf26c71fff96d96432cc9831 = L.polyline(
+                [[37.52029531743096, 126.98922063386148], [37.52023475778932, 126.98743727960638], [37.52017134211799, 126.98695997676374], [37.52003087043332, 126.98616876182972], [37.519935331550805, 126.9856244599082]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_385343f6f5a10bb8768f8b6a8953ef09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_380cf0bd33e5b2d4eebfae7b726089dc = $(`<div id="html_380cf0bd33e5b2d4eebfae7b726089dc" style="width: 100.0%; height: 100.0%;">{'도로명': '서빙고로', '구간명': '용산동6가68-2 ~ 서빙고역1번출구', '구간 거리': '322m', '평균 속도': '28.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_385343f6f5a10bb8768f8b6a8953ef09.setContent(html_380cf0bd33e5b2d4eebfae7b726089dc);
+            
+        
+
+        poly_line_4d6f612edf26c71fff96d96432cc9831.bindPopup(popup_385343f6f5a10bb8768f8b6a8953ef09)
+        ;
+
+        
+    
+    
+            poly_line_4d6f612edf26c71fff96d96432cc9831.bindTooltip(
+                `<div>
+                     {'도로명': '서빙고로', '구간명': '용산동6가68-2 ~ 서빙고역1번출구', '구간 거리': '322m', '평균 속도': '28.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_75f5f0f41554828ef5a073bbba1a6051 = L.polyline(
+                [[37.5230376536242, 126.9720517939606], [37.52294863201812, 126.97243969514358], [37.52285413812848, 126.97279967383558], [37.521880903147874, 126.97592612367986], [37.520722484734144, 126.97967505625236], [37.5199437901041, 126.98213805669049]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_8afd6270373d8126bf1f652a2eff48d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b94934d2f8a6186c42c7b3f2e6ef7470 = $(`<div id="html_b94934d2f8a6186c42c7b3f2e6ef7470" style="width: 100.0%; height: 100.0%;">{'도로명': '서빙고로', '구간명': '한강교회 ~ 이촌역앞교차로', '구간 거리': '956m', '평균 속도': '36.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_8afd6270373d8126bf1f652a2eff48d7.setContent(html_b94934d2f8a6186c42c7b3f2e6ef7470);
+            
+        
+
+        poly_line_75f5f0f41554828ef5a073bbba1a6051.bindPopup(popup_8afd6270373d8126bf1f652a2eff48d7)
+        ;
+
+        
+    
+    
+            poly_line_75f5f0f41554828ef5a073bbba1a6051.bindTooltip(
+                `<div>
+                     {'도로명': '서빙고로', '구간명': '한강교회 ~ 이촌역앞교차로', '구간 거리': '956m', '평균 속도': '36.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0b3fe8e8b5ae3efaa6b81d3dcf24639f = L.polyline(
+                [[37.5199437901041, 126.98213805669049], [37.519821040859874, 126.98263830955159], [37.51975778148624, 126.98299790712863], [37.519694303887015, 126.98345378227681], [37.51968837774215, 126.98414163167413], [37.51969746842699, 126.98450491251512], [37.519742632086945, 126.98501448349232], [37.51982696723262, 126.98564852086169]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_f0f75d3dda1fb9d054ec6bcde03d502e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fe150636574f9b2513ed1a415a6a8bf = $(`<div id="html_9fe150636574f9b2513ed1a415a6a8bf" style="width: 100.0%; height: 100.0%;">{'도로명': '서빙고로', '구간명': '용산동6가68-28 ~ 한강교회', '구간 거리': '315m', '평균 속도': '56.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f0f75d3dda1fb9d054ec6bcde03d502e.setContent(html_9fe150636574f9b2513ed1a415a6a8bf);
+            
+        
+
+        poly_line_0b3fe8e8b5ae3efaa6b81d3dcf24639f.bindPopup(popup_f0f75d3dda1fb9d054ec6bcde03d502e)
+        ;
+
+        
+    
+    
+            poly_line_0b3fe8e8b5ae3efaa6b81d3dcf24639f.bindTooltip(
+                `<div>
+                     {'도로명': '서빙고로', '구간명': '용산동6가68-28 ~ 한강교회', '구간 거리': '315m', '평균 속도': '56.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1bf6c66283923ef44066776dce198ea7 = L.polyline(
+                [[37.519935331550805, 126.9856244599082], [37.51984976348664, 126.98499579394453], [37.519805400123296, 126.98449526033275], [37.51979651684732, 126.98414023438622], [37.51980232329518, 126.98346628640896], [37.51986387388307, 126.98302424557728], [37.51992566592431, 126.98267298703601], [37.5200471186667, 126.98217802106423], [37.520823130781146, 126.97972465175836], [37.52198165519601, 126.97597538003832], [37.52295590794353, 126.97284566036245], [37.52305195932347, 126.97247974729238], [37.523141547207146, 126.97208937929601]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_ac094830219ea3e75e32728a54136cd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b1e18be94db00f5949ab9929ef6b0c5 = $(`<div id="html_2b1e18be94db00f5949ab9929ef6b0c5" style="width: 100.0%; height: 100.0%;">{'도로명': '서빙고로', '구간명': '이촌역앞교차로 ~ 용산동6가68-2', '구간 거리': '1265m', '평균 속도': '33.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ac094830219ea3e75e32728a54136cd0.setContent(html_2b1e18be94db00f5949ab9929ef6b0c5);
+            
+        
+
+        poly_line_1bf6c66283923ef44066776dce198ea7.bindPopup(popup_ac094830219ea3e75e32728a54136cd0)
+        ;
+
+        
+    
+    
+            poly_line_1bf6c66283923ef44066776dce198ea7.bindTooltip(
+                `<div>
+                     {'도로명': '서빙고로', '구간명': '이촌역앞교차로 ~ 용산동6가68-2', '구간 거리': '1265m', '평균 속도': '33.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f76ab5cedfc976c18b08018a03a46342 = L.polyline(
+                [[37.5199437901041, 126.98213805669049], [37.51976459211647, 126.98255271496788], [37.51963231816676, 126.98277721732944], [37.51948930088855, 126.9828939754624], [37.51933912680385, 126.98297930810713], [37.51911742779144, 126.98301078503657], [37.518927911050476, 126.98303776370489], [37.518645429929926, 126.98312312635102]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_a7c15cbf6d0e230116d02c859d582ddf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b39db9dfa247853634bf329e0fdd05c7 = $(`<div id="html_b39db9dfa247853634bf329e0fdd05c7" style="width: 100.0%; height: 100.0%;">{'도로명': '동작대로', '구간명': '동작대교북측 ~ 한강교회', '구간 거리': '182m', '평균 속도': '52.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a7c15cbf6d0e230116d02c859d582ddf.setContent(html_b39db9dfa247853634bf329e0fdd05c7);
+            
+        
+
+        poly_line_f76ab5cedfc976c18b08018a03a46342.bindPopup(popup_a7c15cbf6d0e230116d02c859d582ddf)
+        ;
+
+        
+    
+    
+            poly_line_f76ab5cedfc976c18b08018a03a46342.bindTooltip(
+                `<div>
+                     {'도로명': '동작대로', '구간명': '동작대교북측 ~ 한강교회', '구간 거리': '182m', '평균 속도': '52.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0b7ee0ba9138a0ece02de1047533461c = L.polyline(
+                [[37.52108017419941, 126.97448991529313], [37.52092270043908, 126.97503347436593], [37.520768669011225, 126.97546113421835], [37.52031142709871, 126.97689497700833], [37.5203104332925, 126.97689497731476], [37.51987002253807, 126.97667255821875]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_db26872566e5d1a91e165890384f1b31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9399d3e6d3348e67de2c1f2b73d29430 = $(`<div id="html_9399d3e6d3348e67de2c1f2b73d29430" style="width: 100.0%; height: 100.0%;">{'도로명': '이촌로65가길', '구간명': '원유치원 ~ 한가람아파트', '구간 거리': '282m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_db26872566e5d1a91e165890384f1b31.setContent(html_9399d3e6d3348e67de2c1f2b73d29430);
+            
+        
+
+        poly_line_0b7ee0ba9138a0ece02de1047533461c.bindPopup(popup_db26872566e5d1a91e165890384f1b31)
+        ;
+
+        
+    
+    
+            poly_line_0b7ee0ba9138a0ece02de1047533461c.bindTooltip(
+                `<div>
+                     {'도로명': '이촌로65가길', '구간명': '원유치원 ~ 한가람아파트', '구간 거리': '282m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0205fe41f78a2884923fb72e392c5004 = L.polyline(
+                [[37.51982967249522, 126.97679849432066], [37.52028951505446, 126.97703072804558], [37.52036000411886, 126.97703070643789], [37.52040370371727, 126.97697082406718], [37.520868162491496, 126.97551435226491], [37.52102290548408, 126.975084713225], [37.521181782197, 126.97453631597739]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_bb8e8c528920d17abad985c23f3bf856 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad56a841225441fd1f1a229d373df2f7 = $(`<div id="html_ad56a841225441fd1f1a229d373df2f7" style="width: 100.0%; height: 100.0%;">{'도로명': '이촌로65가길', '구간명': '한가람아파트 ~ 원유치원', '구간 거리': '302m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_bb8e8c528920d17abad985c23f3bf856.setContent(html_ad56a841225441fd1f1a229d373df2f7);
+            
+        
+
+        poly_line_0205fe41f78a2884923fb72e392c5004.bindPopup(popup_bb8e8c528920d17abad985c23f3bf856)
+        ;
+
+        
+    
+    
+            poly_line_0205fe41f78a2884923fb72e392c5004.bindTooltip(
+                `<div>
+                     {'도로명': '이촌로65가길', '구간명': '한가람아파트 ~ 원유치원', '구간 거리': '302m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e8841252bdf9ac53bce1a3386601c143 = L.polyline(
+                [[37.52020345546264, 126.97894864018268], [37.52003801080484, 126.97887419045148], [37.51957837980782, 126.97863601755601], [37.51954443942053, 126.97862329002103], [37.51928809322569, 126.97849925155059]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_b33bd358a2d83772523828201bf4084c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a3591b0b83966a1c444f9fc73217edb = $(`<div id="html_0a3591b0b83966a1c444f9fc73217edb" style="width: 100.0%; height: 100.0%;">{'도로명': '이촌로87길', '구간명': '이촌동301-7 ~ 이촌동301-142', '구간 거리': '109m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b33bd358a2d83772523828201bf4084c.setContent(html_0a3591b0b83966a1c444f9fc73217edb);
+            
+        
+
+        poly_line_e8841252bdf9ac53bce1a3386601c143.bindPopup(popup_b33bd358a2d83772523828201bf4084c)
+        ;
+
+        
+    
+    
+            poly_line_e8841252bdf9ac53bce1a3386601c143.bindTooltip(
+                `<div>
+                     {'도로명': '이촌로87길', '구간명': '이촌동301-7 ~ 이촌동301-142', '구간 거리': '109m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6b1d9a105c365f256a718e98625fe511 = L.polyline(
+                [[37.519249210898195, 126.97862591262538], [37.51950947306233, 126.97875184622971], [37.51954219069248, 126.97876411603123], [37.51999912358244, 126.97900089106176], [37.520166974932465, 126.97907642405211]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_53b4689dede1fb1d1fb65f2a17782ca9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88da8a290377448ec9f92264ee7b66f8 = $(`<div id="html_88da8a290377448ec9f92264ee7b66f8" style="width: 100.0%; height: 100.0%;">{'도로명': '이촌로87길', '구간명': '이촌동301-142 ~ 이촌동301-7', '구간 거리': '109m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_53b4689dede1fb1d1fb65f2a17782ca9.setContent(html_88da8a290377448ec9f92264ee7b66f8);
+            
+        
+
+        poly_line_6b1d9a105c365f256a718e98625fe511.bindPopup(popup_53b4689dede1fb1d1fb65f2a17782ca9)
+        ;
+
+        
+    
+    
+            poly_line_6b1d9a105c365f256a718e98625fe511.bindTooltip(
+                `<div>
+                     {'도로명': '이촌로87길', '구간명': '이촌동301-142 ~ 이촌동301-7', '구간 거리': '109m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_efb2830030b5e4aae892d994cf782c76 = L.polyline(
+                [[37.51977725626669, 126.98049973632519], [37.520035339380954, 126.9796754960281], [37.52005201553531, 126.97962546423975], [37.520235550541294, 126.97903729021678]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_f0e7e0e7d8eadc290d87a4cec1a7a8cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3638469723725ea7cc159e6ecc985a41 = $(`<div id="html_3638469723725ea7cc159e6ecc985a41" style="width: 100.0%; height: 100.0%;">{'도로명': '이촌로87길', '구간명': '이촌동301-142 ~ 이촌동301-7', '구간 거리': '139m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f0e7e0e7d8eadc290d87a4cec1a7a8cf.setContent(html_3638469723725ea7cc159e6ecc985a41);
+            
+        
+
+        poly_line_efb2830030b5e4aae892d994cf782c76.bindPopup(popup_f0e7e0e7d8eadc290d87a4cec1a7a8cf)
+        ;
+
+        
+    
+    
+            poly_line_efb2830030b5e4aae892d994cf782c76.bindTooltip(
+                `<div>
+                     {'도로명': '이촌로87길', '구간명': '이촌동301-142 ~ 이촌동301-7', '구간 거리': '139m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a66c501f92a7d5c1bb3813183f41c34f = L.polyline(
+                [[37.520134879883024, 126.97898777521357], [37.51995179807406, 126.97957449824904], [37.519935145354566, 126.97962445757885], [37.51967663214008, 126.98045007259236]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_c52392ee9e47eb9a0e0daf95bb92fe53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_746bf4b175a947d794620fc1ca258eda = $(`<div id="html_746bf4b175a947d794620fc1ca258eda" style="width: 100.0%; height: 100.0%;">{'도로명': '이촌로87길', '구간명': '이촌동301-7 ~ 이촌동301-142', '구간 거리': '139m', '평균 속도': '34.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_c52392ee9e47eb9a0e0daf95bb92fe53.setContent(html_746bf4b175a947d794620fc1ca258eda);
+            
+        
+
+        poly_line_a66c501f92a7d5c1bb3813183f41c34f.bindPopup(popup_c52392ee9e47eb9a0e0daf95bb92fe53)
+        ;
+
+        
+    
+    
+            poly_line_a66c501f92a7d5c1bb3813183f41c34f.bindTooltip(
+                `<div>
+                     {'도로명': '이촌로87길', '구간명': '이촌동301-7 ~ 이촌동301-142', '구간 거리': '139m', '평균 속도': '34.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_692f1875c59449ecef7a5cb0789ea848 = L.polyline(
+                [[37.52042051048283, 126.97904881747957], [37.520203868155676, 126.97894882897731]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_f477f820281689b0d2259bdbde7a5a2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c34d8246331b9ae3c3d6067931438d4 = $(`<div id="html_7c34d8246331b9ae3c3d6067931438d4" style="width: 100.0%; height: 100.0%;">{'도로명': '이촌로87길', '구간명': '이촌동301-142 ~ 용산동6가412', '구간 거리': '26m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f477f820281689b0d2259bdbde7a5a2d.setContent(html_7c34d8246331b9ae3c3d6067931438d4);
+            
+        
+
+        poly_line_692f1875c59449ecef7a5cb0789ea848.bindPopup(popup_f477f820281689b0d2259bdbde7a5a2d)
+        ;
+
+        
+    
+    
+            poly_line_692f1875c59449ecef7a5cb0789ea848.bindTooltip(
+                `<div>
+                     {'도로명': '이촌로87길', '구간명': '이촌동301-142 ~ 용산동6가412', '구간 거리': '26m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e3090e6d4de16b5a350309b8e91bdf51 = L.polyline(
+                [[37.52016656223984, 126.97907623638801], [37.52038320446053, 126.979176225209]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_60105abfe13e4aad519a188a4e36b9f3);
+        
+    
+        var popup_196fc8a5ff0b0e05cfc9adeb06e4296a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c06313bb2aad1a13f520005d7dee647 = $(`<div id="html_8c06313bb2aad1a13f520005d7dee647" style="width: 100.0%; height: 100.0%;">{'도로명': '이촌로87길', '구간명': '용산동6가412 ~ 이촌동301-142', '구간 거리': '26m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_196fc8a5ff0b0e05cfc9adeb06e4296a.setContent(html_8c06313bb2aad1a13f520005d7dee647);
+            
+        
+
+        poly_line_e3090e6d4de16b5a350309b8e91bdf51.bindPopup(popup_196fc8a5ff0b0e05cfc9adeb06e4296a)
+        ;
+
+        
+    
+    
+            poly_line_e3090e6d4de16b5a350309b8e91bdf51.bindTooltip(
+                `<div>
+                     {'도로명': '이촌로87길', '구간명': '용산동6가412 ~ 이촌동301-142', '구간 거리': '26m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

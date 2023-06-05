@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_89dd284abf4fdd7371dcc7142c577651 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_89dd284abf4fdd7371dcc7142c577651" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_89dd284abf4fdd7371dcc7142c577651 = L.map(
+                "map_89dd284abf4fdd7371dcc7142c577651",
+                {
+                    center: [37.57284267817116, 126.97771098371271],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25a3ea967ca925bc8b90e1a35b2f7dbb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_89dd284abf4fdd7371dcc7142c577651);
+        
+    
+            var marker_a2f5072bb4a863d0e362a9f64918aa43 = L.marker(
+                [37.57540383, 126.97868146],
+                {}
+            ).addTo(map_89dd284abf4fdd7371dcc7142c577651);
+        
+    
+            var icon_84d91087e735984939b0d5eff03ad56c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a2f5072bb4a863d0e362a9f64918aa43.setIcon(icon_84d91087e735984939b0d5eff03ad56c);
+        
+    
+        var popup_0c9ea5a0147ed23af958f294d0c850e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55026ac45cbfd373b0aadb9023986350 = $(`<div id="html_55026ac45cbfd373b0aadb9023986350" style="width: 100.0%; height: 100.0%;">{'주차장명': '열린마당(구)', '주소': '종로구 세종로 111-0 옆', '주차가능 수': '', '가격': '1000원 이하 (10분)'}</div>`)[0];
+                popup_0c9ea5a0147ed23af958f294d0c850e3.setContent(html_55026ac45cbfd373b0aadb9023986350);
+            
+        
+
+        marker_a2f5072bb4a863d0e362a9f64918aa43.bindPopup(popup_0c9ea5a0147ed23af958f294d0c850e3)
+        ;
+
+        
+    
+    
+            marker_a2f5072bb4a863d0e362a9f64918aa43.bindTooltip(
+                `<div>
+                     {'주차장명': '열린마당(구)', '주소': '종로구 세종로 111-0 옆', '주차가능 수': '', '가격': '1000원 이하 (10분)'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70ea6317c937a478daf6604a4e192681 = L.marker(
+                [37.57165697, 126.97428036],
+                {}
+            ).addTo(map_89dd284abf4fdd7371dcc7142c577651);
+        
+    
+            var icon_1337227021c635c11303412d4745c6bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_70ea6317c937a478daf6604a4e192681.setIcon(icon_1337227021c635c11303412d4745c6bf);
+        
+    
+        var popup_0cedbded631c1745165d5100df4329e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aab8663d7be27f156677a8135fea1f9b = $(`<div id="html_aab8663d7be27f156677a8135fea1f9b" style="width: 100.0%; height: 100.0%;">{'주차장명': '광화문빌딩(구)', '주소': '종로구 당주동 40-9', '주차가능 수': '', '가격': '1000원 이하 (10분)'}</div>`)[0];
+                popup_0cedbded631c1745165d5100df4329e0.setContent(html_aab8663d7be27f156677a8135fea1f9b);
+            
+        
+
+        marker_70ea6317c937a478daf6604a4e192681.bindPopup(popup_0cedbded631c1745165d5100df4329e0)
+        ;
+
+        
+    
+    
+            marker_70ea6317c937a478daf6604a4e192681.bindTooltip(
+                `<div>
+                     {'주차장명': '광화문빌딩(구)', '주소': '종로구 당주동 40-9', '주차가능 수': '', '가격': '1000원 이하 (10분)'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_530ca5ac095f7855f5e94ac546b31231 = L.marker(
+                [37.56766762, 126.97685794],
+                {}
+            ).addTo(map_89dd284abf4fdd7371dcc7142c577651);
+        
+    
+            var icon_2e9d9e8d13f71c98b71911af00ea7d03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_530ca5ac095f7855f5e94ac546b31231.setIcon(icon_2e9d9e8d13f71c98b71911af00ea7d03);
+        
+    
+        var popup_fdf9290d6bd59a72a8410f11a7e7f7bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc9ce3942cbfa54a49da127260466781 = $(`<div id="html_fc9ce3942cbfa54a49da127260466781" style="width: 100.0%; height: 100.0%;">{'주차장명': '세종대로1 관광버스 승하차 허용 구간(시)', '주소': '중구 태평로1가 60-22 (코리아나호텔 주차장 입구 ~ 시의회 앞)', '주차가능 수': '', '가격': ''}</div>`)[0];
+                popup_fdf9290d6bd59a72a8410f11a7e7f7bc.setContent(html_fc9ce3942cbfa54a49da127260466781);
+            
+        
+
+        marker_530ca5ac095f7855f5e94ac546b31231.bindPopup(popup_fdf9290d6bd59a72a8410f11a7e7f7bc)
+        ;
+
+        
+    
+    
+            marker_530ca5ac095f7855f5e94ac546b31231.bindTooltip(
+                `<div>
+                     {'주차장명': '세종대로1 관광버스 승하차 허용 구간(시)', '주소': '중구 태평로1가 60-22 (코리아나호텔 주차장 입구 ~ 시의회 앞)', '주차가능 수': '', '가격': ''}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9dac72ccb979aa998f672ba5bb51684 = L.marker(
+                [37.56593287, 126.97694237],
+                {}
+            ).addTo(map_89dd284abf4fdd7371dcc7142c577651);
+        
+    
+            var icon_0ec37b509cc48e2d919b3d4cb8024145 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f9dac72ccb979aa998f672ba5bb51684.setIcon(icon_0ec37b509cc48e2d919b3d4cb8024145);
+        
+    
+        var popup_60ab1f6c3b4abce517311dd13b53613f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27fa992d292cdf829433e572e4b8eaf9 = $(`<div id="html_27fa992d292cdf829433e572e4b8eaf9" style="width: 100.0%; height: 100.0%;">{'주차장명': '세종대로2 관광버스 승하차 허용 구간(시)', '주소': '중구 정동 5-5 (정동 5-5(시청역 2번 출구 앞)', '주차가능 수': '', '가격': ''}</div>`)[0];
+                popup_60ab1f6c3b4abce517311dd13b53613f.setContent(html_27fa992d292cdf829433e572e4b8eaf9);
+            
+        
+
+        marker_f9dac72ccb979aa998f672ba5bb51684.bindPopup(popup_60ab1f6c3b4abce517311dd13b53613f)
+        ;
+
+        
+    
+    
+            marker_f9dac72ccb979aa998f672ba5bb51684.bindTooltip(
+                `<div>
+                     {'주차장명': '세종대로2 관광버스 승하차 허용 구간(시)', '주소': '중구 정동 5-5 (정동 5-5(시청역 2번 출구 앞)', '주차가능 수': '', '가격': ''}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94f0d163b77a114c524919377f37318c = L.marker(
+                [37.574701, 126.97386],
+                {}
+            ).addTo(map_89dd284abf4fdd7371dcc7142c577651);
+        
+    
+            var icon_fedd943254b32668e6ccfe43bd227df4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_94f0d163b77a114c524919377f37318c.setIcon(icon_fedd943254b32668e6ccfe43bd227df4);
+        
+    
+        var popup_f00fe70c668de71864ac10947e6a5ed5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17f4f0dfc223e3457a764b11a9a3dc2e = $(`<div id="html_17f4f0dfc223e3457a764b11a9a3dc2e" style="width: 100.0%; height: 100.0%;">{'주차장명': '적선동 버스전용 주차장(시)', '주소': '종로구 적선동 140-0', '주차가능 수': '', '가격': '1000원 이하 (10분)'}</div>`)[0];
+                popup_f00fe70c668de71864ac10947e6a5ed5.setContent(html_17f4f0dfc223e3457a764b11a9a3dc2e);
+            
+        
+
+        marker_94f0d163b77a114c524919377f37318c.bindPopup(popup_f00fe70c668de71864ac10947e6a5ed5)
+        ;
+
+        
+    
+    
+            marker_94f0d163b77a114c524919377f37318c.bindTooltip(
+                `<div>
+                     {'주차장명': '적선동 버스전용 주차장(시)', '주소': '종로구 적선동 140-0', '주차가능 수': '', '가격': '1000원 이하 (10분)'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29c733c5f22c49c258ec971699675b13 = L.marker(
+                [37.57340269, 126.97588429],
+                {}
+            ).addTo(map_89dd284abf4fdd7371dcc7142c577651);
+        
+    
+            var icon_f9d34e2dfb99be91b97255549a3dcad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_29c733c5f22c49c258ec971699675b13.setIcon(icon_f9d34e2dfb99be91b97255549a3dcad6);
+        
+    
+        var popup_1566dd99d737f8037c20e4e6a2dfb0be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9759c04d2a3dc7cb2f2488b737472239 = $(`<div id="html_9759c04d2a3dc7cb2f2488b737472239" style="width: 100.0%; height: 100.0%;">{'주차장명': '세종로 공영주차장(시)', '주소': '종로구 세종로 80-1', '주차가능 수': '269', '가격': '1000원 이하 (10분)'}</div>`)[0];
+                popup_1566dd99d737f8037c20e4e6a2dfb0be.setContent(html_9759c04d2a3dc7cb2f2488b737472239);
+            
+        
+
+        marker_29c733c5f22c49c258ec971699675b13.bindPopup(popup_1566dd99d737f8037c20e4e6a2dfb0be)
+        ;
+
+        
+    
+    
+            marker_29c733c5f22c49c258ec971699675b13.bindTooltip(
+                `<div>
+                     {'주차장명': '세종로 공영주차장(시)', '주소': '종로구 세종로 80-1', '주차가능 수': '269', '가격': '1000원 이하 (10분)'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_505c0338617d3f29e17e8e7a613fd918 = L.marker(
+                [37.574735, 126.973856],
+                {}
+            ).addTo(map_89dd284abf4fdd7371dcc7142c577651);
+        
+    
+            var icon_42d832539334da782650078140d707d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_505c0338617d3f29e17e8e7a613fd918.setIcon(icon_42d832539334da782650078140d707d1);
+        
+    
+        var popup_bf643316c0033f0113b8aff6a0fe2fc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ed14f992f20142cc3cee9ad4ffa89e7 = $(`<div id="html_3ed14f992f20142cc3cee9ad4ffa89e7" style="width: 100.0%; height: 100.0%;">{'주차장명': '적선동 버스전용 주차장(시)', '주소': '종로구 적선동 140-0', '주차가능 수': '5', '가격': '1000원 이하 (10분)'}</div>`)[0];
+                popup_bf643316c0033f0113b8aff6a0fe2fc2.setContent(html_3ed14f992f20142cc3cee9ad4ffa89e7);
+            
+        
+
+        marker_505c0338617d3f29e17e8e7a613fd918.bindPopup(popup_bf643316c0033f0113b8aff6a0fe2fc2)
+        ;
+
+        
+    
+    
+            marker_505c0338617d3f29e17e8e7a613fd918.bindTooltip(
+                `<div>
+                     {'주차장명': '적선동 버스전용 주차장(시)', '주소': '종로구 적선동 140-0', '주차가능 수': '5', '가격': '1000원 이하 (10분)'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bda1829ce8f5ab64d47ae5a263a72fd = L.marker(
+                [37.57449014, 126.97418586],
+                {}
+            ).addTo(map_89dd284abf4fdd7371dcc7142c577651);
+        
+    
+            var icon_795bbd6d36e4e54a9d53eda640bb0dbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1bda1829ce8f5ab64d47ae5a263a72fd.setIcon(icon_795bbd6d36e4e54a9d53eda640bb0dbb);
+        
+    
+        var popup_bab524783dc860d1b5a98617659e2d7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0d25c2c519c8bbe3453528dc29ca3b8 = $(`<div id="html_d0d25c2c519c8bbe3453528dc29ca3b8" style="width: 100.0%; height: 100.0%;">{'주차장명': '적선동 주차장(시)', '주소': '종로구 적선동 140-0', '주차가능 수': '6', '가격': '1000원 이하 (10분)'}</div>`)[0];
+                popup_bab524783dc860d1b5a98617659e2d7d.setContent(html_d0d25c2c519c8bbe3453528dc29ca3b8);
+            
+        
+
+        marker_1bda1829ce8f5ab64d47ae5a263a72fd.bindPopup(popup_bab524783dc860d1b5a98617659e2d7d)
+        ;
+
+        
+    
+    
+            marker_1bda1829ce8f5ab64d47ae5a263a72fd.bindTooltip(
+                `<div>
+                     {'주차장명': '적선동 주차장(시)', '주소': '종로구 적선동 140-0', '주차가능 수': '6', '가격': '1000원 이하 (10분)'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

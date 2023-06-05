@@ -1,0 +1,2563 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3 = L.map(
+                "map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3",
+                {
+                    center: [37.50091992556644, 127.04066187132385],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a55ef4791595cc4a666c4408686a2fdb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+            var poly_line_355db2c9efa169ea4ee6b0e065b33ec7 = L.polyline(
+                [[37.498589408359884, 127.04467810387524], [37.49602850200209, 127.03950677938992], [37.495900451620045, 127.03922078613132]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_8245affc411357da221db0467d21b009 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8944335a811e9e96f89a97ea4f8de1cc = $(`<div id="html_8944335a811e9e96f89a97ea4f8de1cc" style="width: 100.0%; height: 100.0%;">{'도로명': '역삼로', '구간명': '구역삼세무서앞교차로 ~ 개나리아파트앞교차로', '구간 거리': '567m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8245affc411357da221db0467d21b009.setContent(html_8944335a811e9e96f89a97ea4f8de1cc);
+            
+        
+
+        poly_line_355db2c9efa169ea4ee6b0e065b33ec7.bindPopup(popup_8245affc411357da221db0467d21b009)
+        ;
+
+        
+    
+    
+            poly_line_355db2c9efa169ea4ee6b0e065b33ec7.bindTooltip(
+                `<div>
+                     {'도로명': '역삼로', '구간명': '구역삼세무서앞교차로 ~ 개나리아파트앞교차로', '구간 거리': '567m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2c054ac5fa2c68df231a5d350bf2ffde = L.polyline(
+                [[37.495806194140656, 127.03928726486875], [37.49593541479694, 127.03957587185806], [37.49849757771695, 127.04474973749446]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_eab63452a2250395096afcbfdbf3eaa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe71d1a96ae7ca3e3f8727858e2a544e = $(`<div id="html_fe71d1a96ae7ca3e3f8727858e2a544e" style="width: 100.0%; height: 100.0%;">{'도로명': '역삼로', '구간명': '개나리아파트앞교차로 ~ 구역삼세무서앞교차로', '구간 거리': '568m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_eab63452a2250395096afcbfdbf3eaa6.setContent(html_fe71d1a96ae7ca3e3f8727858e2a544e);
+            
+        
+
+        poly_line_2c054ac5fa2c68df231a5d350bf2ffde.bindPopup(popup_eab63452a2250395096afcbfdbf3eaa6)
+        ;
+
+        
+    
+    
+            poly_line_2c054ac5fa2c68df231a5d350bf2ffde.bindTooltip(
+                `<div>
+                     {'도로명': '역삼로', '구간명': '개나리아파트앞교차로 ~ 구역삼세무서앞교차로', '구간 거리': '568m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d6b1dc809e14ca5799b3504417b20a4f = L.polyline(
+                [[37.49934875635869, 127.03753469315302], [37.49583432417405, 127.03919050288853]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_257cde0c4ceafcfe187efbe4cee54c17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fafb0a990a4beee42237d0f8a9b606f = $(`<div id="html_4fafb0a990a4beee42237d0f8a9b606f" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '구역삼세무서앞교차로 ~ 한은금융결재원', '구간 거리': '417m', '평균 속도': '15.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_257cde0c4ceafcfe187efbe4cee54c17.setContent(html_4fafb0a990a4beee42237d0f8a9b606f);
+            
+        
+
+        poly_line_d6b1dc809e14ca5799b3504417b20a4f.bindPopup(popup_257cde0c4ceafcfe187efbe4cee54c17)
+        ;
+
+        
+    
+    
+            poly_line_d6b1dc809e14ca5799b3504417b20a4f.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '구역삼세무서앞교차로 ~ 한은금융결재원', '구간 거리': '417m', '평균 속도': '15.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5260d1c3a0ad1252e076d2d950d753d8 = L.polyline(
+                [[37.50080655284978, 127.03686736140115], [37.49934923306127, 127.03753447173794]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_8d6a624f4f459152a55628c7b3bbc6cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cd166d58cc3751305d4fb9108e79ff8 = $(`<div id="html_9cd166d58cc3751305d4fb9108e79ff8" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '한은금융결재원 ~ 역삼역앞교차로', '구간 거리': '172m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8d6a624f4f459152a55628c7b3bbc6cf.setContent(html_9cd166d58cc3751305d4fb9108e79ff8);
+            
+        
+
+        poly_line_5260d1c3a0ad1252e076d2d950d753d8.bindPopup(popup_8d6a624f4f459152a55628c7b3bbc6cf)
+        ;
+
+        
+    
+    
+            poly_line_5260d1c3a0ad1252e076d2d950d753d8.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '한은금융결재원 ~ 역삼역앞교차로', '구간 거리': '172m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7bf11a110ba3985004905d3e2ca2fcf4 = L.polyline(
+                [[37.495872320661555, 127.03931754705421], [37.49938675460143, 127.03766174243673]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_6666f643d698b8a79fbca5cb93093776 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71c59893472298b4a7c3126553edf10b = $(`<div id="html_71c59893472298b4a7c3126553edf10b" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '한은금융결재원 ~ 구역삼세무서앞교차로', '구간 거리': '417m', '평균 속도': '32.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_6666f643d698b8a79fbca5cb93093776.setContent(html_71c59893472298b4a7c3126553edf10b);
+            
+        
+
+        poly_line_7bf11a110ba3985004905d3e2ca2fcf4.bindPopup(popup_6666f643d698b8a79fbca5cb93093776)
+        ;
+
+        
+    
+    
+            poly_line_7bf11a110ba3985004905d3e2ca2fcf4.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '한은금융결재원 ~ 구역삼세무서앞교차로', '구간 거리': '417m', '평균 속도': '32.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_72e2ab959b64de9e5eacf66ca2d73f14 = L.polyline(
+                [[37.49938627879958, 127.03766196385162], [37.50084359839665, 127.03699485566382]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_3c0c9f0efc0e9fae77f27e23bb394368 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd380ee5b5c8765cc2bde16228d1f533 = $(`<div id="html_dd380ee5b5c8765cc2bde16228d1f533" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '역삼역앞교차로 ~ 한은금융결재원', '구간 거리': '172m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3c0c9f0efc0e9fae77f27e23bb394368.setContent(html_dd380ee5b5c8765cc2bde16228d1f533);
+            
+        
+
+        poly_line_72e2ab959b64de9e5eacf66ca2d73f14.bindPopup(popup_3c0c9f0efc0e9fae77f27e23bb394368)
+        ;
+
+        
+    
+    
+            poly_line_72e2ab959b64de9e5eacf66ca2d73f14.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '역삼역앞교차로 ~ 한은금융결재원', '구간 거리': '172m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9cbf0214f3b27c6e2550c2da9c5eb660 = L.polyline(
+                [[37.49996288703002, 127.03391649653418], [37.49906256574401, 127.03100773781247]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_d6e83c2a66270c55e292c1e3ab19857e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e04f5c5be0dfe944111d5916030e85c3 = $(`<div id="html_e04f5c5be0dfe944111d5916030e85c3" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '국기원입구교차로 ~ 한국타이어빌딩', '구간 거리': '276m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d6e83c2a66270c55e292c1e3ab19857e.setContent(html_e04f5c5be0dfe944111d5916030e85c3);
+            
+        
+
+        poly_line_9cbf0214f3b27c6e2550c2da9c5eb660.bindPopup(popup_d6e83c2a66270c55e292c1e3ab19857e)
+        ;
+
+        
+    
+    
+            poly_line_9cbf0214f3b27c6e2550c2da9c5eb660.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '국기원입구교차로 ~ 한국타이어빌딩', '구간 거리': '276m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_976d3fb4c9cc279a5686d12350808214 = L.polyline(
+                [[37.50049732384249, 127.0356675207553], [37.499962977946545, 127.03391679286999]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_ac471162073ee2f9e4f0f42828de351e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18b40e8350b81d0e4ed9bd68749eeca6 = $(`<div id="html_18b40e8350b81d0e4ed9bd68749eeca6" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '한국타이어빌딩 ~ 강남파이낸스센터', '구간 거리': '166m', '평균 속도': '35.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ac471162073ee2f9e4f0f42828de351e.setContent(html_18b40e8350b81d0e4ed9bd68749eeca6);
+            
+        
+
+        poly_line_976d3fb4c9cc279a5686d12350808214.bindPopup(popup_ac471162073ee2f9e4f0f42828de351e)
+        ;
+
+        
+    
+    
+            poly_line_976d3fb4c9cc279a5686d12350808214.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '한국타이어빌딩 ~ 강남파이낸스센터', '구간 거리': '166m', '평균 속도': '35.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aaa30d6841056d09d65bd08f0a6fee17 = L.polyline(
+                [[37.50087555938142, 127.0369068357935], [37.50049732384249, 127.0356675207553]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_6fbcfe95284ff5316e3d5bbb76905238 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ed4e889cbe3ddb2002e5960227af868 = $(`<div id="html_0ed4e889cbe3ddb2002e5960227af868" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '강남파이낸스센터 ~ 역삼역앞교차로', '구간 거리': '117m', '평균 속도': '35.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_6fbcfe95284ff5316e3d5bbb76905238.setContent(html_0ed4e889cbe3ddb2002e5960227af868);
+            
+        
+
+        poly_line_aaa30d6841056d09d65bd08f0a6fee17.bindPopup(popup_6fbcfe95284ff5316e3d5bbb76905238)
+        ;
+
+        
+    
+    
+            poly_line_aaa30d6841056d09d65bd08f0a6fee17.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '강남파이낸스센터 ~ 역삼역앞교차로', '구간 거리': '117m', '평균 속도': '35.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e6426679fde102987247ff4249803791 = L.polyline(
+                [[37.4989617833951, 127.03105688265617], [37.49986210348803, 127.03396563805684]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_5699760d3040569f670471593746b479 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_090db96423b269e6831748a213c13a2b = $(`<div id="html_090db96423b269e6831748a213c13a2b" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '한국타이어빌딩 ~ 국기원입구교차로', '구간 거리': '276m', '평균 속도': '30.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_5699760d3040569f670471593746b479.setContent(html_090db96423b269e6831748a213c13a2b);
+            
+        
+
+        poly_line_e6426679fde102987247ff4249803791.bindPopup(popup_5699760d3040569f670471593746b479)
+        ;
+
+        
+    
+    
+            poly_line_e6426679fde102987247ff4249803791.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '한국타이어빌딩 ~ 국기원입구교차로', '구간 거리': '276m', '평균 속도': '30.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_446e3788430c8650b460642694ba9aae = L.polyline(
+                [[37.49986201257161, 127.03396534172136], [37.50039635775824, 127.03571606759418]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_502db023b880fe9da31c68e6221162e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_448a932dafe19e5f6c76d894a69913bc = $(`<div id="html_448a932dafe19e5f6c76d894a69913bc" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '강남파이낸스센터 ~ 한국타이어빌딩', '구간 거리': '166m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_502db023b880fe9da31c68e6221162e5.setContent(html_448a932dafe19e5f6c76d894a69913bc);
+            
+        
+
+        poly_line_446e3788430c8650b460642694ba9aae.bindPopup(popup_502db023b880fe9da31c68e6221162e5)
+        ;
+
+        
+    
+    
+            poly_line_446e3788430c8650b460642694ba9aae.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '강남파이낸스센터 ~ 한국타이어빌딩', '구간 거리': '166m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eacc9b1db352eed5c5c7527409eb14a5 = L.polyline(
+                [[37.50039635775824, 127.03571606759418], [37.50077459279511, 127.03695538120778]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_8fbf6dbb02d4516f3915cfe35ec6ff9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e631a566fbaf8992529e1c6ee4b4b45f = $(`<div id="html_e631a566fbaf8992529e1c6ee4b4b45f" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '역삼역앞교차로 ~ 강남파이낸스센터', '구간 거리': '117m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_8fbf6dbb02d4516f3915cfe35ec6ff9c.setContent(html_e631a566fbaf8992529e1c6ee4b4b45f);
+            
+        
+
+        poly_line_eacc9b1db352eed5c5c7527409eb14a5.bindPopup(popup_8fbf6dbb02d4516f3915cfe35ec6ff9c)
+        ;
+
+        
+    
+    
+            poly_line_eacc9b1db352eed5c5c7527409eb14a5.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '역삼역앞교차로 ~ 강남파이낸스센터', '구간 거리': '117m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1451f5659fa32c37670c4dff55e302c2 = L.polyline(
+                [[37.50135783334601, 127.04331097561273], [37.498524439153826, 127.04465042321733]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_c5b6c225b7967e81d73b4f69901c2b71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fcdb386f0c5b80459f3e196e576a7f8 = $(`<div id="html_6fcdb386f0c5b80459f3e196e576a7f8" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로', '구간명': '개나리아파트앞교차로 ~ 디오빌역삼', '구간 거리': '336m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c5b6c225b7967e81d73b4f69901c2b71.setContent(html_6fcdb386f0c5b80459f3e196e576a7f8);
+            
+        
+
+        poly_line_1451f5659fa32c37670c4dff55e302c2.bindPopup(popup_c5b6c225b7967e81d73b4f69901c2b71)
+        ;
+
+        
+    
+    
+            poly_line_1451f5659fa32c37670c4dff55e302c2.bindTooltip(
+                `<div>
+                     {'도로명': '언주로', '구간명': '개나리아파트앞교차로 ~ 디오빌역삼', '구간 거리': '336m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3d2814f210c3eec28cae33a513b1c8aa = L.polyline(
+                [[37.502597304976916, 127.04272857228258], [37.50135793517703, 127.043310928173]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_d83c2bcf79b1eb29841f8096b683a4f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94d1f9e60ffbff347dcc2ad6647d6562 = $(`<div id="html_94d1f9e60ffbff347dcc2ad6647d6562" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로', '구간명': '디오빌역삼 ~ 르네상스호텔사거리', '구간 거리': '147m', '평균 속도': '36.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_d83c2bcf79b1eb29841f8096b683a4f4.setContent(html_94d1f9e60ffbff347dcc2ad6647d6562);
+            
+        
+
+        poly_line_3d2814f210c3eec28cae33a513b1c8aa.bindPopup(popup_d83c2bcf79b1eb29841f8096b683a4f4)
+        ;
+
+        
+    
+    
+            poly_line_3d2814f210c3eec28cae33a513b1c8aa.bindTooltip(
+                `<div>
+                     {'도로명': '언주로', '구간명': '디오빌역삼 ~ 르네상스호텔사거리', '구간 거리': '147m', '평균 속도': '36.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e9d445cf91b800dbca838102dab91070 = L.polyline(
+                [[37.498562546899564, 127.04477741935928], [37.501395942510754, 127.04343797587556]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_365df69fbe4658ffaabb93af2e16ed1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_deaba2f26a9e2af5e9bf51bb315f3c7a = $(`<div id="html_deaba2f26a9e2af5e9bf51bb315f3c7a" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로', '구간명': '디오빌역삼 ~ 개나리아파트앞교차로', '구간 거리': '336m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_365df69fbe4658ffaabb93af2e16ed1f.setContent(html_deaba2f26a9e2af5e9bf51bb315f3c7a);
+            
+        
+
+        poly_line_e9d445cf91b800dbca838102dab91070.bindPopup(popup_365df69fbe4658ffaabb93af2e16ed1f)
+        ;
+
+        
+    
+    
+            poly_line_e9d445cf91b800dbca838102dab91070.bindTooltip(
+                `<div>
+                     {'도로명': '언주로', '구간명': '디오빌역삼 ~ 개나리아파트앞교차로', '구간 거리': '336m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6133767390664f9ea111d104d0b7613f = L.polyline(
+                [[37.501395840679194, 127.04343802444596], [37.50263521109655, 127.04285567036317]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_c31691556294049d3d83e09c684d269d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19633a5fc7f403690f8797bbb165950e = $(`<div id="html_19633a5fc7f403690f8797bbb165950e" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로', '구간명': '르네상스호텔사거리 ~ 디오빌역삼', '구간 거리': '147m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c31691556294049d3d83e09c684d269d.setContent(html_19633a5fc7f403690f8797bbb165950e);
+            
+        
+
+        poly_line_6133767390664f9ea111d104d0b7613f.bindPopup(popup_c31691556294049d3d83e09c684d269d)
+        ;
+
+        
+    
+    
+            poly_line_6133767390664f9ea111d104d0b7613f.bindTooltip(
+                `<div>
+                     {'도로명': '언주로', '구간명': '르네상스호텔사거리 ~ 디오빌역삼', '구간 거리': '147m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b5f785bfeded20727e75379b15424786 = L.polyline(
+                [[37.50131600727684, 127.03836836003596], [37.50087563948791, 127.03690710159668]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_bc27e540be8f5b20483fe1dc20e0c4a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_defb504753519e6cdf002a5ba17f4b92 = $(`<div id="html_defb504753519e6cdf002a5ba17f4b92" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '역삼역앞교차로 ~ 일월빌딩앞', '구간 거리': '138m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_bc27e540be8f5b20483fe1dc20e0c4a6.setContent(html_defb504753519e6cdf002a5ba17f4b92);
+            
+        
+
+        poly_line_b5f785bfeded20727e75379b15424786.bindPopup(popup_bc27e540be8f5b20483fe1dc20e0c4a6)
+        ;
+
+        
+    
+    
+            poly_line_b5f785bfeded20727e75379b15424786.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '역삼역앞교차로 ~ 일월빌딩앞', '구간 거리': '138m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_702291ba54a48571662ac76a18667edb = L.polyline(
+                [[37.502180242479604, 127.04115397511205], [37.50131581916716, 127.03836774245957]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_f2b7d6d0d3ffa9d24dc89948e6384832 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d915eebc7f27958d7f0c5441612b19d5 = $(`<div id="html_d915eebc7f27958d7f0c5441612b19d5" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '일월빌딩앞 ~ 서울르네상스호텔앞', '구간 거리': '264m', '평균 속도': '34.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f2b7d6d0d3ffa9d24dc89948e6384832.setContent(html_d915eebc7f27958d7f0c5441612b19d5);
+            
+        
+
+        poly_line_702291ba54a48571662ac76a18667edb.bindPopup(popup_f2b7d6d0d3ffa9d24dc89948e6384832)
+        ;
+
+        
+    
+    
+            poly_line_702291ba54a48571662ac76a18667edb.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '일월빌딩앞 ~ 서울르네상스호텔앞', '구간 거리': '264m', '평균 속도': '34.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6b5fa8dc08d098411c799c56b8c1b3a6 = L.polyline(
+                [[37.50266682037566, 127.04276810758797], [37.50218042877578, 127.04115458365415]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_005c6a02ae2dfa636a60d09035b5fdfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a09b3f0624328810b01f797c736ed3b = $(`<div id="html_5a09b3f0624328810b01f797c736ed3b" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '서울르네상스호텔앞 ~ 르네상스호텔사거리', '구간 거리': '153m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_005c6a02ae2dfa636a60d09035b5fdfd.setContent(html_5a09b3f0624328810b01f797c736ed3b);
+            
+        
+
+        poly_line_6b5fa8dc08d098411c799c56b8c1b3a6.bindPopup(popup_005c6a02ae2dfa636a60d09035b5fdfd)
+        ;
+
+        
+    
+    
+            poly_line_6b5fa8dc08d098411c799c56b8c1b3a6.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '서울르네상스호텔앞 ~ 르네상스호텔사거리', '구간 거리': '153m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6c0ca68edfbf0fb4c583d0b24ebb5cc6 = L.polyline(
+                [[37.5007745117874, 127.03695511653541], [37.5012148798919, 127.03841637328534]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_3b6318419eac319c3b2716a2a1c947a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d24e3141cd854998ffda27bb6db45f2f = $(`<div id="html_d24e3141cd854998ffda27bb6db45f2f" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '일월빌딩앞 ~ 역삼역앞교차로', '구간 거리': '138m', '평균 속도': '26.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_3b6318419eac319c3b2716a2a1c947a2.setContent(html_d24e3141cd854998ffda27bb6db45f2f);
+            
+        
+
+        poly_line_6c0ca68edfbf0fb4c583d0b24ebb5cc6.bindPopup(popup_3b6318419eac319c3b2716a2a1c947a2)
+        ;
+
+        
+    
+    
+            poly_line_6c0ca68edfbf0fb4c583d0b24ebb5cc6.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '일월빌딩앞 ~ 역삼역앞교차로', '구간 거리': '138m', '평균 속도': '26.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b1d49dd44f9afe1386a8d48f41288897 = L.polyline(
+                [[37.50121506800162, 127.0384169897301], [37.502079491070106, 127.04120321920489]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_92e9558e71b9c8390cacb73449dc5ce7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba67011279e2c9789889da6d8eb9ca26 = $(`<div id="html_ba67011279e2c9789889da6d8eb9ca26" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '서울르네상스호텔앞 ~ 일월빌딩앞', '구간 거리': '264m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_92e9558e71b9c8390cacb73449dc5ce7.setContent(html_ba67011279e2c9789889da6d8eb9ca26);
+            
+        
+
+        poly_line_b1d49dd44f9afe1386a8d48f41288897.bindPopup(popup_92e9558e71b9c8390cacb73449dc5ce7)
+        ;
+
+        
+    
+    
+            poly_line_b1d49dd44f9afe1386a8d48f41288897.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '서울르네상스호텔앞 ~ 일월빌딩앞', '구간 거리': '264m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_44590862be93530545c30d5ae079780b = L.polyline(
+                [[37.50207930477377, 127.04120261179443], [37.502565695727206, 127.04281613386244]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_a4de5f0ed2e8a62be2162d1058cdca7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42367c33145ddbd7c32243d3ff4f7f46 = $(`<div id="html_42367c33145ddbd7c32243d3ff4f7f46" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '르네상스호텔사거리 ~ 서울르네상스호텔앞', '구간 거리': '153m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a4de5f0ed2e8a62be2162d1058cdca7a.setContent(html_42367c33145ddbd7c32243d3ff4f7f46);
+            
+        
+
+        poly_line_44590862be93530545c30d5ae079780b.bindPopup(popup_a4de5f0ed2e8a62be2162d1058cdca7a)
+        ;
+
+        
+    
+    
+            poly_line_44590862be93530545c30d5ae079780b.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '르네상스호텔사거리 ~ 서울르네상스호텔앞', '구간 거리': '153m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bcebbb2e6260daf3600e8557a9a15acc = L.polyline(
+                [[37.50401311949595, 127.04718065488741], [37.50312741899066, 127.04429851963596]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_05746cc8232ec992258260c97dd70d78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e539fb7a6251f7b766d2d3d0e06cc686 = $(`<div id="html_e539fb7a6251f7b766d2d3d0e06cc686" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '삼성제일빌딩 ~ 빅토리아오피스텔', '구간 거리': '273m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_05746cc8232ec992258260c97dd70d78.setContent(html_e539fb7a6251f7b766d2d3d0e06cc686);
+            
+        
+
+        poly_line_bcebbb2e6260daf3600e8557a9a15acc.bindPopup(popup_05746cc8232ec992258260c97dd70d78)
+        ;
+
+        
+    
+    
+            poly_line_bcebbb2e6260daf3600e8557a9a15acc.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '삼성제일빌딩 ~ 빅토리아오피스텔', '구간 거리': '273m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ee3b8edfe5a7cca923f3451228a857c8 = L.polyline(
+                [[37.50312755397607, 127.04429896078362], [37.502923960413504, 127.04362248169198]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_ac3f41039ed7bb781a2dd16ff4f8f46f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb180b4dd5e0401e02b1f6f76e4817df = $(`<div id="html_bb180b4dd5e0401e02b1f6f76e4817df" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '르네상스호텔교차로 ~ 삼성제일빌딩', '구간 거리': '64m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ac3f41039ed7bb781a2dd16ff4f8f46f.setContent(html_bb180b4dd5e0401e02b1f6f76e4817df);
+            
+        
+
+        poly_line_ee3b8edfe5a7cca923f3451228a857c8.bindPopup(popup_ac3f41039ed7bb781a2dd16ff4f8f46f)
+        ;
+
+        
+    
+    
+            poly_line_ee3b8edfe5a7cca923f3451228a857c8.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '르네상스호텔교차로 ~ 삼성제일빌딩', '구간 거리': '64m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eac71da1cd6d2915de76caa25ef1f975 = L.polyline(
+                [[37.502923960413504, 127.04362248169198], [37.50266683027487, 127.04276814039076]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_dfd1e26abab7456df3a59ebd6687db03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15ad9abd7e2dcf619744266c8dcf3bd1 = $(`<div id="html_15ad9abd7e2dcf619744266c8dcf3bd1" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '르네상스호텔사거리 ~ 르네상스호텔교차로', '구간 거리': '81m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_dfd1e26abab7456df3a59ebd6687db03.setContent(html_15ad9abd7e2dcf619744266c8dcf3bd1);
+            
+        
+
+        poly_line_eac71da1cd6d2915de76caa25ef1f975.bindPopup(popup_dfd1e26abab7456df3a59ebd6687db03)
+        ;
+
+        
+    
+    
+            poly_line_eac71da1cd6d2915de76caa25ef1f975.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '르네상스호텔사거리 ~ 르네상스호텔교차로', '구간 거리': '81m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4e512dcda4aa737831bbdb1db80f9f28 = L.polyline(
+                [[37.503026543901136, 127.04434736308993], [37.50391224323216, 127.0472294950382]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_6fe430f82b31dc9bcb139d3d7b5d5ef9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65e96e06496c8652303f826341d4e82f = $(`<div id="html_65e96e06496c8652303f826341d4e82f" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '빅토리아오피스텔 ~ 삼성제일빌딩', '구간 거리': '273m', '평균 속도': '43.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_6fe430f82b31dc9bcb139d3d7b5d5ef9.setContent(html_65e96e06496c8652303f826341d4e82f);
+            
+        
+
+        poly_line_4e512dcda4aa737831bbdb1db80f9f28.bindPopup(popup_6fe430f82b31dc9bcb139d3d7b5d5ef9)
+        ;
+
+        
+    
+    
+            poly_line_4e512dcda4aa737831bbdb1db80f9f28.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '빅토리아오피스텔 ~ 삼성제일빌딩', '구간 거리': '273m', '평균 속도': '43.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_35bf0c2eaa485b38df76bc4bee7769e0 = L.polyline(
+                [[37.502565686729014, 127.04281610106014], [37.502822816525466, 127.04367044250364]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_632b0cfc973744651397cbd8b2d45034 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_385aa6ffdc45ada206c76c45584c6015 = $(`<div id="html_385aa6ffdc45ada206c76c45584c6015" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '르네상스호텔교차로 ~ 르네상스호텔사거리', '구간 거리': '81m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_632b0cfc973744651397cbd8b2d45034.setContent(html_385aa6ffdc45ada206c76c45584c6015);
+            
+        
+
+        poly_line_35bf0c2eaa485b38df76bc4bee7769e0.bindPopup(popup_632b0cfc973744651397cbd8b2d45034)
+        ;
+
+        
+    
+    
+            poly_line_35bf0c2eaa485b38df76bc4bee7769e0.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '르네상스호텔교차로 ~ 르네상스호텔사거리', '구간 거리': '81m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1aaaa29e9b95ab7fe110d72b954ecc3a = L.polyline(
+                [[37.502822816525466, 127.04367044250364], [37.503026408916334, 127.04434692081188]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_1dbec5d7844aa69635697b2cafe84537 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_178f7fae27eeea4c9d6e618a3ecea8fc = $(`<div id="html_178f7fae27eeea4c9d6e618a3ecea8fc" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로', '구간명': '삼성제일빌딩 ~ 르네상스호텔교차로', '구간 거리': '64m', '평균 속도': '33.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_1dbec5d7844aa69635697b2cafe84537.setContent(html_178f7fae27eeea4c9d6e618a3ecea8fc);
+            
+        
+
+        poly_line_1aaaa29e9b95ab7fe110d72b954ecc3a.bindPopup(popup_1dbec5d7844aa69635697b2cafe84537)
+        ;
+
+        
+    
+    
+            poly_line_1aaaa29e9b95ab7fe110d72b954ecc3a.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로', '구간명': '삼성제일빌딩 ~ 르네상스호텔교차로', '구간 거리': '64m', '평균 속도': '33.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1d488cf49a9b54935f1b262f334f5d7e = L.polyline(
+                [[37.50211654203621, 127.03626888052413], [37.50080658529058, 127.03686734671531]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_0a9bfa9166cdcaa857b914ea85c64cd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_721bdc004a78f9d8d44e0bb70760d717 = $(`<div id="html_721bdc004a78f9d8d44e0bb70760d717" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '역삼역앞교차로 ~ 커피빈역삼점', '구간 거리': '155m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_0a9bfa9166cdcaa857b914ea85c64cd5.setContent(html_721bdc004a78f9d8d44e0bb70760d717);
+            
+        
+
+        poly_line_1d488cf49a9b54935f1b262f334f5d7e.bindPopup(popup_0a9bfa9166cdcaa857b914ea85c64cd5)
+        ;
+
+        
+    
+    
+            poly_line_1d488cf49a9b54935f1b262f334f5d7e.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '역삼역앞교차로 ~ 커피빈역삼점', '구간 거리': '155m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_580d1b328d997e53097a31cee850a0a2 = L.polyline(
+                [[37.50345520877442, 127.03562839689381], [37.50211577787305, 127.03626923978965]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_8b99d9fa2927a1074435356040a51ae4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4c7b205a76f081cc2a1d07eb3b5383c = $(`<div id="html_b4c7b205a76f081cc2a1d07eb3b5383c" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '커피빈역삼점 ~ 강남제일병원', '구간 거리': '159m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8b99d9fa2927a1074435356040a51ae4.setContent(html_b4c7b205a76f081cc2a1d07eb3b5383c);
+            
+        
+
+        poly_line_580d1b328d997e53097a31cee850a0a2.bindPopup(popup_8b99d9fa2927a1074435356040a51ae4)
+        ;
+
+        
+    
+    
+            poly_line_580d1b328d997e53097a31cee850a0a2.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '커피빈역삼점 ~ 강남제일병원', '구간 거리': '159m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0161e05068f19dab9655d8efc6cc312f = L.polyline(
+                [[37.50731038603506, 127.03382591523707], [37.50637341506337, 127.03426536365012], [37.50345561068043, 127.03562820595458]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_be33ef124022577f14c9f8ff35132cdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a0be6ddb3b1fcebd1d67118a6165a80 = $(`<div id="html_1a0be6ddb3b1fcebd1d67118a6165a80" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '강남제일병원 ~ 차병원사거리', '구간 거리': '457m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_be33ef124022577f14c9f8ff35132cdc.setContent(html_1a0be6ddb3b1fcebd1d67118a6165a80);
+            
+        
+
+        poly_line_0161e05068f19dab9655d8efc6cc312f.bindPopup(popup_be33ef124022577f14c9f8ff35132cdc)
+        ;
+
+        
+    
+    
+            poly_line_0161e05068f19dab9655d8efc6cc312f.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '강남제일병원 ~ 차병원사거리', '구간 거리': '457m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_31e2ea91090cc0bc2c791cae720a1190 = L.polyline(
+                [[37.500843565955535, 127.03699487148054], [37.50215352243661, 127.03639640835371]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_33e5462d79072d25cb867b1e862457a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5eddd6fd1ad09aee2fde1434c6c3a1ce = $(`<div id="html_5eddd6fd1ad09aee2fde1434c6c3a1ce" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '커피빈역삼점 ~ 역삼역앞교차로', '구간 거리': '155m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_33e5462d79072d25cb867b1e862457a6.setContent(html_5eddd6fd1ad09aee2fde1434c6c3a1ce);
+            
+        
+
+        poly_line_31e2ea91090cc0bc2c791cae720a1190.bindPopup(popup_33e5462d79072d25cb867b1e862457a6)
+        ;
+
+        
+    
+    
+            poly_line_31e2ea91090cc0bc2c791cae720a1190.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '커피빈역삼점 ~ 역삼역앞교차로', '구간 거리': '155m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3f10dfa5805e2b92fc002cac60b55c92 = L.polyline(
+                [[37.50215428750049, 127.03639605135167], [37.50349371908002, 127.0357552103932]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_87da49c0ef56fed8a7e6f5c1a3971221 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a675033566e1c205e19935b9e6dbbf7 = $(`<div id="html_1a675033566e1c205e19935b9e6dbbf7" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '강남제일병원 ~ 커피빈역삼점', '구간 거리': '159m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_87da49c0ef56fed8a7e6f5c1a3971221.setContent(html_1a675033566e1c205e19935b9e6dbbf7);
+            
+        
+
+        poly_line_3f10dfa5805e2b92fc002cac60b55c92.bindPopup(popup_87da49c0ef56fed8a7e6f5c1a3971221)
+        ;
+
+        
+    
+    
+            poly_line_3f10dfa5805e2b92fc002cac60b55c92.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '강남제일병원 ~ 커피빈역삼점', '구간 거리': '159m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6d1fd49396f16f14385160639f19b194 = L.polyline(
+                [[37.50349331717408, 127.03575540020097], [37.50641118968762, 127.03439252939542], [37.5073482287098, 127.03395305184456]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_7b82d3e4c1298654a3339e97f031a0f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d67e3f6484c23dd4763f49033fe3f708 = $(`<div id="html_d67e3f6484c23dd4763f49033fe3f708" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로', '구간명': '차병원사거리 ~ 강남제일병원', '구간 거리': '457m', '평균 속도': '19.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7b82d3e4c1298654a3339e97f031a0f3.setContent(html_d67e3f6484c23dd4763f49033fe3f708);
+            
+        
+
+        poly_line_6d1fd49396f16f14385160639f19b194.bindPopup(popup_7b82d3e4c1298654a3339e97f031a0f3)
+        ;
+
+        
+    
+    
+            poly_line_6d1fd49396f16f14385160639f19b194.bindTooltip(
+                `<div>
+                     {'도로명': '논현로', '구간명': '차병원사거리 ~ 강남제일병원', '구간 거리': '457m', '평균 속도': '19.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2663a6629b4302fe1dedc3a2b0478f24 = L.polyline(
+                [[37.504196045545946, 127.0419798767087], [37.502597361750105, 127.04272854517245]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_63354fe42909f6a61d67a197cd9c6992 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81e7d767974f351481cd03157e8ff9f7 = $(`<div id="html_81e7d767974f351481cd03157e8ff9f7" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로', '구간명': '르네상스호텔사거리 ~ 삼부오피스빌딩', '구간 거리': '189m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_63354fe42909f6a61d67a197cd9c6992.setContent(html_81e7d767974f351481cd03157e8ff9f7);
+            
+        
+
+        poly_line_2663a6629b4302fe1dedc3a2b0478f24.bindPopup(popup_63354fe42909f6a61d67a197cd9c6992)
+        ;
+
+        
+    
+    
+            poly_line_2663a6629b4302fe1dedc3a2b0478f24.bindTooltip(
+                `<div>
+                     {'도로명': '언주로', '구간명': '르네상스호텔사거리 ~ 삼부오피스빌딩', '구간 거리': '189m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_271310e5672deb807a99bb9e148ed92f = L.polyline(
+                [[37.50263515522476, 127.04285569634278], [37.504233839814766, 127.04210703021435]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_2d1a7efa3d4dd25754989eb0558b5930 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef7ee99042d79bae2a17b297b18b2888 = $(`<div id="html_ef7ee99042d79bae2a17b297b18b2888" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로', '구간명': '삼부오피스빌딩 ~ 르네상스호텔사거리', '구간 거리': '189m', '평균 속도': '38.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_2d1a7efa3d4dd25754989eb0558b5930.setContent(html_ef7ee99042d79bae2a17b297b18b2888);
+            
+        
+
+        poly_line_271310e5672deb807a99bb9e148ed92f.bindPopup(popup_2d1a7efa3d4dd25754989eb0558b5930)
+        ;
+
+        
+    
+    
+            poly_line_271310e5672deb807a99bb9e148ed92f.bindTooltip(
+                `<div>
+                     {'도로명': '언주로', '구간명': '삼부오피스빌딩 ~ 르네상스호텔사거리', '구간 거리': '189m', '평균 속도': '38.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1a6d948205e1d348b83c83a953e58ecc = L.polyline(
+                [[37.49978126412707, 127.03589217468418], [37.499291093350934, 127.03611096996472], [37.49904616685874, 127.03661627700865], [37.49931654349641, 127.03761995034517]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_60bedcef9a70588a9f87733d64d5968d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3bd7ee99dd0045047feef8bb96b194e = $(`<div id="html_b3bd7ee99dd0045047feef8bb96b194e" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로85길', '구간명': '한은금융결재원 ~ 성보빌딩', '구간 거리': '204m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_60bedcef9a70588a9f87733d64d5968d.setContent(html_b3bd7ee99dd0045047feef8bb96b194e);
+            
+        
+
+        poly_line_1a6d948205e1d348b83c83a953e58ecc.bindPopup(popup_60bedcef9a70588a9f87733d64d5968d)
+        ;
+
+        
+    
+    
+            poly_line_1a6d948205e1d348b83c83a953e58ecc.bindTooltip(
+                `<div>
+                     {'도로명': '논현로85길', '구간명': '한은금융결재원 ~ 성보빌딩', '구간 거리': '204m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3c42828055cf2d9a941ab5b8b770c7c1 = L.polyline(
+                [[37.49941896839484, 127.0375764840523], [37.499164739574944, 127.03663275194343], [37.49936350365138, 127.03622268101277], [37.49981749250754, 127.03602003726223]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_89871ea4e401ed56a3013382e0d70e0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf1ef9ed3925653011982314a0348070 = $(`<div id="html_bf1ef9ed3925653011982314a0348070" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로85길', '구간명': '성보빌딩 ~ 한은금융결재원', '구간 거리': '184m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_89871ea4e401ed56a3013382e0d70e0a.setContent(html_bf1ef9ed3925653011982314a0348070);
+            
+        
+
+        poly_line_3c42828055cf2d9a941ab5b8b770c7c1.bindPopup(popup_89871ea4e401ed56a3013382e0d70e0a)
+        ;
+
+        
+    
+    
+            poly_line_3c42828055cf2d9a941ab5b8b770c7c1.bindTooltip(
+                `<div>
+                     {'도로명': '논현로85길', '구간명': '성보빌딩 ~ 한은금융결재원', '구간 거리': '184m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_78c6234d4501e43b021aac516f939e47 = L.polyline(
+                [[37.49989387758751, 127.03387736464161], [37.499253781003745, 127.03417208601631], [37.49923919686944, 127.03424519671975], [37.499748655356264, 127.03597957705588]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_4ed5c6e3ff83cacbd7b1516eee523b60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2aedfcc00c1d79118c44f4c7e68627e = $(`<div id="html_d2aedfcc00c1d79118c44f4c7e68627e" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로87길', '구간명': '성보빌딩 ~ 한국타이어빌딩', '구간 거리': '246m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_4ed5c6e3ff83cacbd7b1516eee523b60.setContent(html_d2aedfcc00c1d79118c44f4c7e68627e);
+            
+        
+
+        poly_line_78c6234d4501e43b021aac516f939e47.bindPopup(popup_4ed5c6e3ff83cacbd7b1516eee523b60)
+        ;
+
+        
+    
+    
+            poly_line_78c6234d4501e43b021aac516f939e47.bindTooltip(
+                `<div>
+                     {'도로명': '논현로87길', '구간명': '성보빌딩 ~ 한국타이어빌딩', '구간 거리': '246m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5447c8b7e864b7f4c7ef51b3214522d5 = L.polyline(
+                [[37.49985010130827, 127.03593263369706], [37.4993609254057, 127.03426730233573], [37.49993111380258, 127.03400477001445]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_8e12e0eaa339296a144f84cdf49f8c04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36d191796c76ff435586be34bdc61292 = $(`<div id="html_36d191796c76ff435586be34bdc61292" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로87길', '구간명': '한국타이어빌딩 ~ 성보빌딩', '구간 거리': '224m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8e12e0eaa339296a144f84cdf49f8c04.setContent(html_36d191796c76ff435586be34bdc61292);
+            
+        
+
+        poly_line_5447c8b7e864b7f4c7ef51b3214522d5.bindPopup(popup_8e12e0eaa339296a144f84cdf49f8c04)
+        ;
+
+        
+    
+    
+            poly_line_5447c8b7e864b7f4c7ef51b3214522d5.bindTooltip(
+                `<div>
+                     {'도로명': '논현로87길', '구간명': '한국타이어빌딩 ~ 성보빌딩', '구간 거리': '224m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_639319ca56a4e75dec65b27c4ad00b11 = L.polyline(
+                [[37.49932197199329, 127.03763429948741], [37.49940675301862, 127.03780377381926], [37.49964247523176, 127.03860588306031], [37.5001295516189, 127.03906721907661], [37.50105897831805, 127.03861694323238], [37.50129206396879, 127.03845142484673]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_e2ac2f41ebeba3add0ab0ad63361c279 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59e77d5c71053a71eaa46c1d293eb821 = $(`<div id="html_59e77d5c71053a71eaa46c1d293eb821" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로86길', '구간명': '일월빌딩앞 ~ 한은금융결재원', '구간 거리': '301m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_e2ac2f41ebeba3add0ab0ad63361c279.setContent(html_59e77d5c71053a71eaa46c1d293eb821);
+            
+        
+
+        poly_line_639319ca56a4e75dec65b27c4ad00b11.bindPopup(popup_e2ac2f41ebeba3add0ab0ad63361c279)
+        ;
+
+        
+    
+    
+            poly_line_639319ca56a4e75dec65b27c4ad00b11.bindTooltip(
+                `<div>
+                     {'도로명': '논현로86길', '구간명': '일월빌딩앞 ~ 한은금융결재원', '구간 거리': '301m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fdd80a3a3540b421b93ad0bde911c22d = L.polyline(
+                [[37.50043012004003, 127.03562726710555], [37.499782658164435, 127.03589157937091]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_3b70f64c0e0ff85b452d431def9f8f92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8aab007f05d11aef7e7f4a1067f3321e = $(`<div id="html_8aab007f05d11aef7e7f4a1067f3321e" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로26길', '구간명': '성보빌딩 ~ 강남파이낸스센터', '구간 거리': '76m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3b70f64c0e0ff85b452d431def9f8f92.setContent(html_8aab007f05d11aef7e7f4a1067f3321e);
+            
+        
+
+        poly_line_fdd80a3a3540b421b93ad0bde911c22d.bindPopup(popup_3b70f64c0e0ff85b452d431def9f8f92)
+        ;
+
+        
+    
+    
+            poly_line_fdd80a3a3540b421b93ad0bde911c22d.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로26길', '구간명': '성보빌딩 ~ 강남파이낸스센터', '구간 거리': '76m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c5769b38d935ce6474356bf1b06a1352 = L.polyline(
+                [[37.499816098469545, 127.0360206325735], [37.50046356153078, 127.03575632130546]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_a1fad7ace8999d3c4bd15e8cfd374b01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_571613f5707edf9d329797c2da774bf6 = $(`<div id="html_571613f5707edf9d329797c2da774bf6" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로26길', '구간명': '강남파이낸스센터 ~ 성보빌딩', '구간 거리': '76m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a1fad7ace8999d3c4bd15e8cfd374b01.setContent(html_571613f5707edf9d329797c2da774bf6);
+            
+        
+
+        poly_line_c5769b38d935ce6474356bf1b06a1352.bindPopup(popup_a1fad7ace8999d3c4bd15e8cfd374b01)
+        ;
+
+        
+    
+    
+            poly_line_c5769b38d935ce6474356bf1b06a1352.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로26길', '구간명': '강남파이낸스센터 ~ 성보빌딩', '구간 거리': '76m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9cf6e40ea4221cd3e7900e1272ca5010 = L.polyline(
+                [[37.500606037195865, 127.033558803888], [37.499894347973964, 127.03387715111505]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_8fc38263015051952804e8c75d01b509 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f79fa9784e1cc02287304b119cf83ce6 = $(`<div id="html_f79fa9784e1cc02287304b119cf83ce6" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로19길', '구간명': '한국타이어빌딩 ~ 현대해상강남사옥', '구간 거리': '84m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_8fc38263015051952804e8c75d01b509.setContent(html_f79fa9784e1cc02287304b119cf83ce6);
+            
+        
+
+        poly_line_9cf6e40ea4221cd3e7900e1272ca5010.bindPopup(popup_8fc38263015051952804e8c75d01b509)
+        ;
+
+        
+    
+    
+            poly_line_9cf6e40ea4221cd3e7900e1272ca5010.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로19길', '구간명': '한국타이어빌딩 ~ 현대해상강남사옥', '구간 거리': '84m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_da4ee231bf823f0134dfbf14da230387 = L.polyline(
+                [[37.49993064341597, 127.0340049835403], [37.50064233387846, 127.03368663737336]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_31af53715793b803f24735d91c1ca49e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_169eba5440ae909c9b00106070a40c01 = $(`<div id="html_169eba5440ae909c9b00106070a40c01" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로19길', '구간명': '현대해상강남사옥 ~ 한국타이어빌딩', '구간 거리': '84m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_31af53715793b803f24735d91c1ca49e.setContent(html_169eba5440ae909c9b00106070a40c01);
+            
+        
+
+        poly_line_da4ee231bf823f0134dfbf14da230387.bindPopup(popup_31af53715793b803f24735d91c1ca49e)
+        ;
+
+        
+    
+    
+            poly_line_da4ee231bf823f0134dfbf14da230387.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로19길', '구간명': '현대해상강남사옥 ~ 한국타이어빌딩', '구간 거리': '84m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3649bb4b11480994925bfd1d70488a7e = L.polyline(
+                [[37.50003459611003, 127.03057683724448], [37.500563846182516, 127.03230661342917], [37.50073550489487, 127.03279400776543], [37.500571777421136, 127.03360607394616]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_de5b0f26f6b8cfdacf10c743c301f340 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfbd9e294123007782a3e97f8db7aa5c = $(`<div id="html_cfbd9e294123007782a3e97f8db7aa5c" style="width: 100.0%; height: 100.0%;">{'도로명': '강남대로94길', '구간명': '현대해상강남사옥 ~ 과학기술회관', '구간 거리': '285m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_de5b0f26f6b8cfdacf10c743c301f340.setContent(html_cfbd9e294123007782a3e97f8db7aa5c);
+            
+        
+
+        poly_line_3649bb4b11480994925bfd1d70488a7e.bindPopup(popup_de5b0f26f6b8cfdacf10c743c301f340)
+        ;
+
+        
+    
+    
+            poly_line_3649bb4b11480994925bfd1d70488a7e.bindTooltip(
+                `<div>
+                     {'도로명': '강남대로94길', '구간명': '현대해상강남사옥 ~ 과학기술회관', '구간 거리': '285m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9690ca9cfd8312f0a219a7a0edd48a21 = L.polyline(
+                [[37.50067659368508, 127.03363936730757], [37.5008494674799, 127.03278193652426], [37.50066381884121, 127.03225482141723], [37.50013552948308, 127.03052818418656]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_2b9ea5c146a9fea3ea82a2cc2c62189a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c831d1d4d7e248017257197062e4cb4f = $(`<div id="html_c831d1d4d7e248017257197062e4cb4f" style="width: 100.0%; height: 100.0%;">{'도로명': '강남대로94길', '구간명': '과학기술회관 ~ 현대해상강남사옥', '구간 거리': '293m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_2b9ea5c146a9fea3ea82a2cc2c62189a.setContent(html_c831d1d4d7e248017257197062e4cb4f);
+            
+        
+
+        poly_line_9690ca9cfd8312f0a219a7a0edd48a21.bindPopup(popup_2b9ea5c146a9fea3ea82a2cc2c62189a)
+        ;
+
+        
+    
+    
+            poly_line_9690ca9cfd8312f0a219a7a0edd48a21.bindTooltip(
+                `<div>
+                     {'도로명': '강남대로94길', '구간명': '과학기술회관 ~ 현대해상강남사옥', '구간 거리': '293m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2a429c844f209413e5e006f9e9aeea96 = L.polyline(
+                [[37.5004805318435, 127.03574485977538], [37.500658352208255, 127.0355669976002], [37.501144640783814, 127.03531957857965]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_390709a0087f58cf50494d8e18be7560 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef5429acd4e211093d2658c1221944bd = $(`<div id="html_ef5429acd4e211093d2658c1221944bd" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로25길', '구간명': '우신빌딩 ~ 강남파이낸스센터', '구간 거리': '83m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_390709a0087f58cf50494d8e18be7560.setContent(html_ef5429acd4e211093d2658c1221944bd);
+            
+        
+
+        poly_line_2a429c844f209413e5e006f9e9aeea96.bindPopup(popup_390709a0087f58cf50494d8e18be7560)
+        ;
+
+        
+    
+    
+            poly_line_2a429c844f209413e5e006f9e9aeea96.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로25길', '구간명': '우신빌딩 ~ 강남파이낸스센터', '구간 거리': '83m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2dfadc59b6e800b5d2e51eafb7e71caa = L.polyline(
+                [[37.500573721839395, 127.03364705654634], [37.501073867476954, 127.03528102863005]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_30d15dbff8aac36c84ab1a83dc930024 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17a97ad5370e09097575485c3476e233 = $(`<div id="html_17a97ad5370e09097575485c3476e233" style="width: 100.0%; height: 100.0%;">{'도로명': '강남대로94길', '구간명': '우신빌딩 ~ 현대해상강남사옥', '구간 거리': '155m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_30d15dbff8aac36c84ab1a83dc930024.setContent(html_17a97ad5370e09097575485c3476e233);
+            
+        
+
+        poly_line_2dfadc59b6e800b5d2e51eafb7e71caa.bindPopup(popup_30d15dbff8aac36c84ab1a83dc930024)
+        ;
+
+        
+    
+    
+            poly_line_2dfadc59b6e800b5d2e51eafb7e71caa.bindTooltip(
+                `<div>
+                     {'도로명': '강남대로94길', '구간명': '우신빌딩 ~ 현대해상강남사옥', '구간 거리': '155m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9635c5adae221d0c7cd134b066dabaf7 = L.polyline(
+                [[37.50117479556553, 127.03523235861091], [37.500674649264226, 127.03359838465138]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_3537998184a2c99652c30f1a7ec24ef9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_849b9a90ddb6e51b54787af65b854613 = $(`<div id="html_849b9a90ddb6e51b54787af65b854613" style="width: 100.0%; height: 100.0%;">{'도로명': '강남대로94길', '구간명': '현대해상강남사옥 ~ 우신빌딩', '구간 거리': '155m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3537998184a2c99652c30f1a7ec24ef9.setContent(html_849b9a90ddb6e51b54787af65b854613);
+            
+        
+
+        poly_line_9635c5adae221d0c7cd134b066dabaf7.bindPopup(popup_3537998184a2c99652c30f1a7ec24ef9)
+        ;
+
+        
+    
+    
+            poly_line_9635c5adae221d0c7cd134b066dabaf7.bindTooltip(
+                `<div>
+                     {'도로명': '강남대로94길', '구간명': '현대해상강남사옥 ~ 우신빌딩', '구간 거리': '155m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9e92715976f0ab07f1282c7434a3d4c3 = L.polyline(
+                [[37.502104291830335, 127.0411188158531], [37.50184985556237, 127.04129030422338], [37.50102780827232, 127.04169104132276], [37.50097937923194, 127.041823509656], [37.501041556655146, 127.04242262792171], [37.501326125714876, 127.04339781278763]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_524dd79fde7b1a8dfc00d85b537000c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d422374772c8621351442a553e2b87c = $(`<div id="html_1d422374772c8621351442a553e2b87c" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로85길', '구간명': '디오빌역삼 ~ 서울르네상스호텔앞', '구간 거리': '288m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_524dd79fde7b1a8dfc00d85b537000c9.setContent(html_1d422374772c8621351442a553e2b87c);
+            
+        
+
+        poly_line_9e92715976f0ab07f1282c7434a3d4c3.bindPopup(popup_524dd79fde7b1a8dfc00d85b537000c9)
+        ;
+
+        
+    
+    
+            poly_line_9e92715976f0ab07f1282c7434a3d4c3.bindTooltip(
+                `<div>
+                     {'도로명': '언주로85길', '구간명': '디오빌역삼 ~ 서울르네상스호텔앞', '구간 거리': '288m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_803079ca32c6a4eb2c9eb544688eb145 = L.polyline(
+                [[37.50142765017107, 127.04335113863685], [37.50114721847069, 127.04239012870346], [37.50109060812984, 127.04184465756148], [37.501107800653536, 127.04179763135977], [37.50189517166609, 127.04141380014612], [37.50215544169415, 127.04123837966853]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_0761864e2b8b5bac4cebc9189ed0576f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a75a52c15d72e922f1eaef253562c1c7 = $(`<div id="html_a75a52c15d72e922f1eaef253562c1c7" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로85길', '구간명': '서울르네상스호텔앞 ~ 디오빌역삼', '구간 거리': '270m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_0761864e2b8b5bac4cebc9189ed0576f.setContent(html_a75a52c15d72e922f1eaef253562c1c7);
+            
+        
+
+        poly_line_803079ca32c6a4eb2c9eb544688eb145.bindPopup(popup_0761864e2b8b5bac4cebc9189ed0576f)
+        ;
+
+        
+    
+    
+            poly_line_803079ca32c6a4eb2c9eb544688eb145.bindTooltip(
+                `<div>
+                     {'도로명': '언주로85길', '구간명': '서울르네상스호텔앞 ~ 디오빌역삼', '구간 거리': '270m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9e165b6add435c8562a1ee1437513468 = L.polyline(
+                [[37.5013264730776, 127.04339897104677], [37.50161597624415, 127.04433772119735], [37.50213783370863, 127.04477637988037], [37.502227665890004, 127.04488056161837]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_bcd06fbd8153f9ed2237207c2aab9a4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1eb1f1ea39975f795d7289901d4c16a8 = $(`<div id="html_1eb1f1ea39975f795d7289901d4c16a8" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로86길', '구간명': '연신자동차공업사 ~ 디오빌역삼', '구간 거리': '172m', '평균 속도': '19.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_bcd06fbd8153f9ed2237207c2aab9a4f.setContent(html_1eb1f1ea39975f795d7289901d4c16a8);
+            
+        
+
+        poly_line_9e165b6add435c8562a1ee1437513468.bindPopup(popup_bcd06fbd8153f9ed2237207c2aab9a4f)
+        ;
+
+        
+    
+    
+            poly_line_9e165b6add435c8562a1ee1437513468.bindTooltip(
+                `<div>
+                     {'도로명': '언주로86길', '구간명': '연신자동차공업사 ~ 디오빌역삼', '구간 거리': '172m', '평균 속도': '19.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3744ed344b07d7d72e7a99fd99c3d8ba = L.polyline(
+                [[37.502301040176214, 127.04478088458119], [37.50220500810363, 127.04466951324102], [37.50170448925913, 127.04424879147581], [37.50142730280789, 127.04334998037636]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_3ad14b8f09101b1a6811704ca0dce2c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da95c281148b198e2a96fc7889679fb6 = $(`<div id="html_da95c281148b198e2a96fc7889679fb6" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로86길', '구간명': '디오빌역삼 ~ 연신자동차공업사', '구간 거리': '167m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3ad14b8f09101b1a6811704ca0dce2c4.setContent(html_da95c281148b198e2a96fc7889679fb6);
+            
+        
+
+        poly_line_3744ed344b07d7d72e7a99fd99c3d8ba.bindPopup(popup_3ad14b8f09101b1a6811704ca0dce2c4)
+        ;
+
+        
+    
+    
+            poly_line_3744ed344b07d7d72e7a99fd99c3d8ba.bindTooltip(
+                `<div>
+                     {'도로명': '언주로86길', '구간명': '디오빌역삼 ~ 연신자동차공업사', '구간 거리': '167m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4d2f70b956fb65d0d24c61a567113a7a = L.polyline(
+                [[37.50114111105963, 127.03532119751591], [37.50130897909649, 127.03525240155146], [37.5018834129373, 127.0355251871199], [37.502068450750514, 127.03613397268752], [37.50208113651906, 127.0363379268813]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_87557a15c4db0fdc4d1d7d1e2ae533aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78459f1a857953f1f972c5d631980950 = $(`<div id="html_78459f1a857953f1f972c5d631980950" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로25길', '구간명': '커피빈역삼점 ~ 우신빌딩', '구간 거리': '163m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_87557a15c4db0fdc4d1d7d1e2ae533aa.setContent(html_78459f1a857953f1f972c5d631980950);
+            
+        
+
+        poly_line_4d2f70b956fb65d0d24c61a567113a7a.bindPopup(popup_87557a15c4db0fdc4d1d7d1e2ae533aa)
+        ;
+
+        
+    
+    
+            poly_line_4d2f70b956fb65d0d24c61a567113a7a.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로25길', '구간명': '커피빈역삼점 ~ 우신빌딩', '구간 거리': '163m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0e09518136d122db9ae7824ec7f1f225 = L.polyline(
+                [[37.50256477412001, 127.03764344102002], [37.502471778201425, 127.03771254977961], [37.50124533601993, 127.03832937968718]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_455d405215058c25bfad27858ffff50e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_633f307ab4438e591bdb15a34b351506 = $(`<div id="html_633f307ab4438e591bdb15a34b351506" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로27길', '구간명': '일월빌딩앞 ~ 주원빌딩', '구간 거리': '159m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_455d405215058c25bfad27858ffff50e.setContent(html_633f307ab4438e591bdb15a34b351506);
+            
+        
+
+        poly_line_0e09518136d122db9ae7824ec7f1f225.bindPopup(popup_455d405215058c25bfad27858ffff50e)
+        ;
+
+        
+    
+    
+            poly_line_0e09518136d122db9ae7824ec7f1f225.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로27길', '구간명': '일월빌딩앞 ~ 주원빌딩', '구간 거리': '159m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5087b9a2397245c41d7826aac6640220 = L.polyline(
+                [[37.501285551120425, 127.03845535370021], [37.502519708703126, 127.03783464465792], [37.50261985677248, 127.0377602208177]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_23f5ee9c4a45d4c0429caf2dda033608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d22bbf87b642b7d6eebb162f59a30e5 = $(`<div id="html_9d22bbf87b642b7d6eebb162f59a30e5" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로27길', '구간명': '주원빌딩 ~ 일월빌딩앞', '구간 거리': '160m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_23f5ee9c4a45d4c0429caf2dda033608.setContent(html_9d22bbf87b642b7d6eebb162f59a30e5);
+            
+        
+
+        poly_line_5087b9a2397245c41d7826aac6640220.bindPopup(popup_23f5ee9c4a45d4c0429caf2dda033608)
+        ;
+
+        
+    
+    
+            poly_line_5087b9a2397245c41d7826aac6640220.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로27길', '구간명': '주원빌딩 ~ 일월빌딩앞', '구간 거리': '160m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f1c2c4e72ec566f8175c5197fec8a402 = L.polyline(
+                [[37.502085175587965, 127.03635887927263], [37.5025424580449, 127.03772806443014]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_0dd8d61791a4413b36754bafe406d803 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe0518477ed7aab6d1d3806ca42ff143 = $(`<div id="html_fe0518477ed7aab6d1d3806ca42ff143" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로94길', '구간명': '주원빌딩 ~ 커피빈역삼점', '구간 거리': '131m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_0dd8d61791a4413b36754bafe406d803.setContent(html_fe0518477ed7aab6d1d3806ca42ff143);
+            
+        
+
+        poly_line_f1c2c4e72ec566f8175c5197fec8a402.bindPopup(popup_0dd8d61791a4413b36754bafe406d803)
+        ;
+
+        
+    
+    
+            poly_line_f1c2c4e72ec566f8175c5197fec8a402.bindTooltip(
+                `<div>
+                     {'도로명': '논현로94길', '구간명': '주원빌딩 ~ 커피빈역삼점', '구간 거리': '131m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d10c43c6eeb638282c007af6fbdec525 = L.polyline(
+                [[37.502642171969406, 127.03767559732931], [37.50218488891285, 127.0363064106699]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_48ae7d8c4cbb25c8393bd06afa742548 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8eda8817ef7252137fa005cc9a85a7fb = $(`<div id="html_8eda8817ef7252137fa005cc9a85a7fb" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로94길', '구간명': '커피빈역삼점 ~ 주원빌딩', '구간 거리': '131m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_48ae7d8c4cbb25c8393bd06afa742548.setContent(html_8eda8817ef7252137fa005cc9a85a7fb);
+            
+        
+
+        poly_line_d10c43c6eeb638282c007af6fbdec525.bindPopup(popup_48ae7d8c4cbb25c8393bd06afa742548)
+        ;
+
+        
+    
+    
+            poly_line_d10c43c6eeb638282c007af6fbdec525.bindTooltip(
+                `<div>
+                     {'도로명': '논현로94길', '구간명': '커피빈역삼점 ~ 주원빌딩', '구간 거리': '131m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_57f6a8e3361d5ea3ea2fc1062aab0455 = L.polyline(
+                [[37.503049366777944, 127.04426460519733], [37.50285865610339, 127.04440684279939], [37.502288134848975, 127.044710111151], [37.50222748559447, 127.04478109511078]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_3f711719d09bc84e1703d61dc2859d1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_875e6825aee9ce5cc39d288a2cd7493b = $(`<div id="html_875e6825aee9ce5cc39d288a2cd7493b" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로44길', '구간명': '연신자동차공업사 ~ 삼성제일빌딩', '구간 거리': '103m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3f711719d09bc84e1703d61dc2859d1e.setContent(html_875e6825aee9ce5cc39d288a2cd7493b);
+            
+        
+
+        poly_line_57f6a8e3361d5ea3ea2fc1062aab0455.bindPopup(popup_3f711719d09bc84e1703d61dc2859d1e)
+        ;
+
+        
+    
+    
+            poly_line_57f6a8e3361d5ea3ea2fc1062aab0455.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로44길', '구간명': '연신자동차공업사 ~ 삼성제일빌딩', '구간 거리': '103m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_badcdeb5f671e74202fd9c9864ed09a9 = L.polyline(
+                [[37.50230122047186, 127.04488035118636], [37.50234789438717, 127.04482572459553], [37.50290757646473, 127.04452821937095], [37.50310459609077, 127.04438127647339]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_61d6b86540ba601d52283674440e24e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1dfc37feb7a3668bcde8a1c0416e73a = $(`<div id="html_e1dfc37feb7a3668bcde8a1c0416e73a" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로44길', '구간명': '삼성제일빌딩 ~ 연신자동차공업사', '구간 거리': '100m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_61d6b86540ba601d52283674440e24e0.setContent(html_e1dfc37feb7a3668bcde8a1c0416e73a);
+            
+        
+
+        poly_line_badcdeb5f671e74202fd9c9864ed09a9.bindPopup(popup_61d6b86540ba601d52283674440e24e0)
+        ;
+
+        
+    
+    
+            poly_line_badcdeb5f671e74202fd9c9864ed09a9.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로44길', '구간명': '삼성제일빌딩 ~ 연신자동차공업사', '구간 거리': '100m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_23dc900da131d9e39350d3e79fd12337 = L.polyline(
+                [[37.50214992190594, 127.04124161108845], [37.50310193521624, 127.0407642310578], [37.50354364350347, 127.04058564546203]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_cd9212e02518652795f1ba9957010537 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_435435e9e254eb034555a48bda71f93e = $(`<div id="html_435435e9e254eb034555a48bda71f93e" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로37길', '구간명': '남전타운 ~ 서울르네상스호텔앞', '구간 거리': '165m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_cd9212e02518652795f1ba9957010537.setContent(html_435435e9e254eb034555a48bda71f93e);
+            
+        
+
+        poly_line_23dc900da131d9e39350d3e79fd12337.bindPopup(popup_cd9212e02518652795f1ba9957010537)
+        ;
+
+        
+    
+    
+            poly_line_23dc900da131d9e39350d3e79fd12337.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로37길', '구간명': '남전타운 ~ 서울르네상스호텔앞', '구간 거리': '165m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4c51d863d1b31d58a625eb0c7b348841 = L.polyline(
+                [[37.503510493870024, 127.04045646747714], [37.50306526235336, 127.04063647796414], [37.50210981161524, 127.04111558442615]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_44d27d18b4ebb729c00b412aee8ca20b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_427e5e628bee5a29a53f46fc92e6f6dd = $(`<div id="html_427e5e628bee5a29a53f46fc92e6f6dd" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로37길', '구간명': '서울르네상스호텔앞 ~ 남전타운', '구간 거리': '166m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_44d27d18b4ebb729c00b412aee8ca20b.setContent(html_427e5e628bee5a29a53f46fc92e6f6dd);
+            
+        
+
+        poly_line_4c51d863d1b31d58a625eb0c7b348841.bindPopup(popup_44d27d18b4ebb729c00b412aee8ca20b)
+        ;
+
+        
+    
+    
+            poly_line_4c51d863d1b31d58a625eb0c7b348841.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로37길', '구간명': '서울르네상스호텔앞 ~ 남전타운', '구간 거리': '166m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_84ffb89a02ad67b5a7371e39db0ecd7e = L.polyline(
+                [[37.50255793167732, 127.03775419454655], [37.50260805876159, 127.03780605169125], [37.503438198222646, 127.04040078469481], [37.503475774765015, 127.04054248678612]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_8b410c8acc4fda9e93d48596010ece12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c4141af7745a410d60b5702a8a21328 = $(`<div id="html_9c4141af7745a410d60b5702a8a21328" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로93길', '구간명': '남전타운 ~ 주원빌딩', '구간 거리': '268m', '평균 속도': '16.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8b410c8acc4fda9e93d48596010ece12.setContent(html_9c4141af7745a410d60b5702a8a21328);
+            
+        
+
+        poly_line_84ffb89a02ad67b5a7371e39db0ecd7e.bindPopup(popup_8b410c8acc4fda9e93d48596010ece12)
+        ;
+
+        
+    
+    
+            poly_line_84ffb89a02ad67b5a7371e39db0ecd7e.bindTooltip(
+                `<div>
+                     {'도로명': '언주로93길', '구간명': '남전타운 ~ 주원빌딩', '구간 거리': '268m', '평균 속도': '16.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7cc403efd0ed7c32de309f7611145953 = L.polyline(
+                [[37.50392021147735, 127.04386030859798], [37.50354486544282, 127.04403404716669]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_e2d00e050f757cdeb7ca75b687c40cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6bb9606f64c94ba688b1da0ab86bc4e = $(`<div id="html_c6bb9606f64c94ba688b1da0ab86bc4e" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로43길', '구간명': '브이피 ~ 이환빌딩', '구간 거리': '44m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e2d00e050f757cdeb7ca75b687c40cf9.setContent(html_c6bb9606f64c94ba688b1da0ab86bc4e);
+            
+        
+
+        poly_line_7cc403efd0ed7c32de309f7611145953.bindPopup(popup_e2d00e050f757cdeb7ca75b687c40cf9)
+        ;
+
+        
+    
+    
+            poly_line_7cc403efd0ed7c32de309f7611145953.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로43길', '구간명': '브이피 ~ 이환빌딩', '구간 거리': '44m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ab25ab88d0783cd40c68353cb983478b = L.polyline(
+                [[37.50354486544282, 127.04403404716669], [37.50305827701752, 127.04425927467213]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_d8d1fba08a595d5cb651f63f7d911114 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa5978dcee826b4d0a6b2f501353d6c1 = $(`<div id="html_aa5978dcee826b4d0a6b2f501353d6c1" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로43길', '구간명': '삼성제일빌딩 ~ 브이피', '구간 거리': '58m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_d8d1fba08a595d5cb651f63f7d911114.setContent(html_aa5978dcee826b4d0a6b2f501353d6c1);
+            
+        
+
+        poly_line_ab25ab88d0783cd40c68353cb983478b.bindPopup(popup_d8d1fba08a595d5cb651f63f7d911114)
+        ;
+
+        
+    
+    
+            poly_line_ab25ab88d0783cd40c68353cb983478b.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로43길', '구간명': '삼성제일빌딩 ~ 브이피', '구간 거리': '58m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_72ea3ccdab3681b3da6f44b55246b24e = L.polyline(
+                [[37.50309568584578, 127.04438660698736], [37.5035822736093, 127.0441613801959]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_7892d7c94e87012ff39029b02e7eeaca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d2a2b90ffa8a775191daf8ae3ef1d18 = $(`<div id="html_1d2a2b90ffa8a775191daf8ae3ef1d18" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로43길', '구간명': '브이피 ~ 삼성제일빌딩', '구간 거리': '58m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7892d7c94e87012ff39029b02e7eeaca.setContent(html_1d2a2b90ffa8a775191daf8ae3ef1d18);
+            
+        
+
+        poly_line_72ea3ccdab3681b3da6f44b55246b24e.bindPopup(popup_7892d7c94e87012ff39029b02e7eeaca)
+        ;
+
+        
+    
+    
+            poly_line_72ea3ccdab3681b3da6f44b55246b24e.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로43길', '구간명': '브이피 ~ 삼성제일빌딩', '구간 거리': '58m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6caaf5f7dd941c26ae0c2334397115df = L.polyline(
+                [[37.5035822736093, 127.0441613801959], [37.50395761982878, 127.04398764104737]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_638bdc6938c5990f09caf25140efcfbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c78f661fa6c67e57835381ca6ed9ea12 = $(`<div id="html_c78f661fa6c67e57835381ca6ed9ea12" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로43길', '구간명': '이환빌딩 ~ 브이피', '구간 거리': '44m', '평균 속도': '22.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_638bdc6938c5990f09caf25140efcfbe.setContent(html_c78f661fa6c67e57835381ca6ed9ea12);
+            
+        
+
+        poly_line_6caaf5f7dd941c26ae0c2334397115df.bindPopup(popup_638bdc6938c5990f09caf25140efcfbe)
+        ;
+
+        
+    
+    
+            poly_line_6caaf5f7dd941c26ae0c2334397115df.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로43길', '구간명': '이환빌딩 ~ 브이피', '구간 거리': '44m', '평균 속도': '22.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_98df46d52c09cfff47393ad36e553fb1 = L.polyline(
+                [[37.50348696509771, 127.040566561688], [37.503575402507735, 127.04068935946519], [37.50388807923162, 127.04124050431264], [37.50403991329013, 127.04181907350205], [37.504169054782174, 127.04207932831054]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_476d7006ad06a5f7a53fd90406dfe160 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3085c1934a9f9672dde69ed4c8f9ed7 = $(`<div id="html_a3085c1934a9f9672dde69ed4c8f9ed7" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로93길', '구간명': '삼부오피스빌딩 ~ 남전타운', '구간 거리': '155m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_476d7006ad06a5f7a53fd90406dfe160.setContent(html_a3085c1934a9f9672dde69ed4c8f9ed7);
+            
+        
+
+        poly_line_98df46d52c09cfff47393ad36e553fb1.bindPopup(popup_476d7006ad06a5f7a53fd90406dfe160)
+        ;
+
+        
+    
+    
+            poly_line_98df46d52c09cfff47393ad36e553fb1.bindTooltip(
+                `<div>
+                     {'도로명': '언주로93길', '구간명': '삼부오피스빌딩 ~ 남전타운', '구간 거리': '155m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f2c25e81216e40b8a595c37c31d19f99 = L.polyline(
+                [[37.504260829701, 127.0420075774051], [37.504138547026486, 127.04176114540319], [37.50398564911154, 127.041178522769], [37.50365982629145, 127.0406042061935], [37.50356717229302, 127.04047555230486]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_565304e1dab85b31614083ca54010112 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19521477538f0181cd6b800fc52affd5 = $(`<div id="html_19521477538f0181cd6b800fc52affd5" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로93길', '구간명': '남전타운 ~ 삼부오피스빌딩', '구간 거리': '158m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_565304e1dab85b31614083ca54010112.setContent(html_19521477538f0181cd6b800fc52affd5);
+            
+        
+
+        poly_line_f2c25e81216e40b8a595c37c31d19f99.bindPopup(popup_565304e1dab85b31614083ca54010112)
+        ;
+
+        
+    
+    
+            poly_line_f2c25e81216e40b8a595c37c31d19f99.bindTooltip(
+                `<div>
+                     {'도로명': '언주로93길', '구간명': '남전타운 ~ 삼부오피스빌딩', '구간 거리': '158m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a0461fd50a064b5f588b791541c2ffd6 = L.polyline(
+                [[37.503888557854836, 127.04394865610136], [37.50429202315534, 127.04524569078046], [37.50476331077756, 127.046816579815]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_5cf7bb0666cf38f83499c9ee9c2c6526 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fe7193c9d6495444bf0a2a73a911927 = $(`<div id="html_8fe7193c9d6495444bf0a2a73a911927" style="width: 100.0%; height: 100.0%;">{'도로명': '선릉로93길', '구간명': '우리빌딩 ~ 이환빌딩', '구간 거리': '272m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_5cf7bb0666cf38f83499c9ee9c2c6526.setContent(html_8fe7193c9d6495444bf0a2a73a911927);
+            
+        
+
+        poly_line_a0461fd50a064b5f588b791541c2ffd6.bindPopup(popup_5cf7bb0666cf38f83499c9ee9c2c6526)
+        ;
+
+        
+    
+    
+            poly_line_a0461fd50a064b5f588b791541c2ffd6.bindTooltip(
+                `<div>
+                     {'도로명': '선릉로93길', '구간명': '우리빌딩 ~ 이환빌딩', '구간 거리': '272m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e2f4ad21988cff1828bd8289b593b72a = L.polyline(
+                [[37.504864494599865, 127.04676875096497], [37.50439297688795, 127.04519709317888], [37.50398927348004, 127.0438992934791]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_dd91b4670a4f537f705be2ecf14d68d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_482ec0484c844e4270273806de04a036 = $(`<div id="html_482ec0484c844e4270273806de04a036" style="width: 100.0%; height: 100.0%;">{'도로명': '선릉로93길', '구간명': '이환빌딩 ~ 우리빌딩', '구간 거리': '272m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_dd91b4670a4f537f705be2ecf14d68d8.setContent(html_482ec0484c844e4270273806de04a036);
+            
+        
+
+        poly_line_e2f4ad21988cff1828bd8289b593b72a.bindPopup(popup_dd91b4670a4f537f705be2ecf14d68d8)
+        ;
+
+        
+    
+    
+            poly_line_e2f4ad21988cff1828bd8289b593b72a.bindTooltip(
+                `<div>
+                     {'도로명': '선릉로93길', '구간명': '이환빌딩 ~ 우리빌딩', '구간 거리': '272m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8cbff61cc90cf9602ebf0e540ad0d28b = L.polyline(
+                [[37.504163502724545, 127.04206432415513], [37.50432351103385, 127.04268566908976], [37.50435012119736, 127.04282791738179], [37.50435007152927, 127.04296469360476], [37.50421552668544, 127.04367342175227], [37.50415955131564, 127.04374027518443], [37.50391886152957, 127.04386095923846]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_3f688a40237dfefc6d34bfefbfd8921d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebc03680c9a3bc60de2e4089fa4212f8 = $(`<div id="html_ebc03680c9a3bc60de2e4089fa4212f8" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로94길', '구간명': '이환빌딩 ~ 삼부오피스빌딩', '구간 거리': '185m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3f688a40237dfefc6d34bfefbfd8921d.setContent(html_ebc03680c9a3bc60de2e4089fa4212f8);
+            
+        
+
+        poly_line_8cbff61cc90cf9602ebf0e540ad0d28b.bindPopup(popup_3f688a40237dfefc6d34bfefbfd8921d)
+        ;
+
+        
+    
+    
+            poly_line_8cbff61cc90cf9602ebf0e540ad0d28b.bindTooltip(
+                `<div>
+                     {'도로명': '언주로94길', '구간명': '이환빌딩 ~ 삼부오피스빌딩', '구간 거리': '185m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_40740d383fa0a4a71fbf7f7f5a1b8608 = L.polyline(
+                [[37.50395896977725, 127.0439869904088], [37.50421899616294, 127.04385661211184], [37.50431327316771, 127.04374401221601], [37.504458186363536, 127.04298067047779], [37.504458247531325, 127.04281222708968], [37.50442775430325, 127.04264922434943], [37.50426638176582, 127.04202258157571]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_784cf2b53ad1528c79205f973deda2cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_defaea2fe58b0b863d5f8b42e9eab7e0 = $(`<div id="html_defaea2fe58b0b863d5f8b42e9eab7e0" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로94길', '구간명': '삼부오피스빌딩 ~ 이환빌딩', '구간 거리': '203m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_784cf2b53ad1528c79205f973deda2cf.setContent(html_defaea2fe58b0b863d5f8b42e9eab7e0);
+            
+        
+
+        poly_line_40740d383fa0a4a71fbf7f7f5a1b8608.bindPopup(popup_784cf2b53ad1528c79205f973deda2cf)
+        ;
+
+        
+    
+    
+            poly_line_40740d383fa0a4a71fbf7f7f5a1b8608.bindTooltip(
+                `<div>
+                     {'도로명': '언주로94길', '구간명': '삼부오피스빌딩 ~ 이환빌딩', '구간 거리': '203m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_15690d8be3376eac39e93fdf002ce536 = L.polyline(
+                [[37.50342394807068, 127.03571597055311], [37.50364655542519, 127.03644908222952], [37.50373027366202, 127.03662836305332], [37.50388150382116, 127.03714202268888]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_04ac98fac8c9ffd037898a9ceea84c27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e7a9ed1771e3f1b39368005992d0ca2 = $(`<div id="html_0e7a9ed1771e3f1b39368005992d0ca2" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로98길', '구간명': '역삼동801-33 ~ 강남제일병원', '구간 거리': '136m', '평균 속도': '18.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_04ac98fac8c9ffd037898a9ceea84c27.setContent(html_0e7a9ed1771e3f1b39368005992d0ca2);
+            
+        
+
+        poly_line_15690d8be3376eac39e93fdf002ce536.bindPopup(popup_04ac98fac8c9ffd037898a9ceea84c27)
+        ;
+
+        
+    
+    
+            poly_line_15690d8be3376eac39e93fdf002ce536.bindTooltip(
+                `<div>
+                     {'도로명': '논현로98길', '구간명': '역삼동801-33 ~ 강남제일병원', '구간 거리': '136m', '평균 속도': '18.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_01a5a353ca4ce6eaabc0e4a8bf0af2a9 = L.polyline(
+                [[37.50388150382116, 127.03714202268888], [37.50408585502993, 127.0378361282462], [37.50458281961391, 127.03837879903473], [37.50488872526051, 127.03925375065484], [37.50535395231537, 127.0405180486642], [37.50536144138984, 127.0406048766856], [37.505163288464, 127.04157434095025]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_91f30ac2d73b4330d340eded76b506ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_044c825b9bccb34257bf453d917f817f = $(`<div id="html_044c825b9bccb34257bf453d917f817f" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로98길', '구간명': '영동전화국 ~ 역삼동801-33', '구간 거리': '442m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_91f30ac2d73b4330d340eded76b506ff.setContent(html_044c825b9bccb34257bf453d917f817f);
+            
+        
+
+        poly_line_01a5a353ca4ce6eaabc0e4a8bf0af2a9.bindPopup(popup_91f30ac2d73b4330d340eded76b506ff)
+        ;
+
+        
+    
+    
+            poly_line_01a5a353ca4ce6eaabc0e4a8bf0af2a9.bindTooltip(
+                `<div>
+                     {'도로명': '논현로98길', '구간명': '영동전화국 ~ 역삼동801-33', '구간 거리': '442m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a824a2dc1317c86aa60e8f7cd5455144 = L.polyline(
+                [[37.505268016648785, 127.04160806929994], [37.50547104528223, 127.0406147518115], [37.50545953749002, 127.04048133083091], [37.504987315550046, 127.03919802050434], [37.50467208012997, 127.03829638595099], [37.50417768484659, 127.03775652113444], [37.50398292046261, 127.0370949787815]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_4debe5e2aabd42639b7f6563bce8ef37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a343724b81a5e3481603ba83e2fb877d = $(`<div id="html_a343724b81a5e3481603ba83e2fb877d" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로98길', '구간명': '역삼동801-33 ~ 영동전화국', '구간 거리': '450m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_4debe5e2aabd42639b7f6563bce8ef37.setContent(html_a343724b81a5e3481603ba83e2fb877d);
+            
+        
+
+        poly_line_a824a2dc1317c86aa60e8f7cd5455144.bindPopup(popup_4debe5e2aabd42639b7f6563bce8ef37)
+        ;
+
+        
+    
+    
+            poly_line_a824a2dc1317c86aa60e8f7cd5455144.bindTooltip(
+                `<div>
+                     {'도로명': '논현로98길', '구간명': '역삼동801-33 ~ 영동전화국', '구간 거리': '450m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_39fbb3ca91e548b3544f24acf2855d13 = L.polyline(
+                [[37.50398292046261, 127.0370949787815], [37.50382838058547, 127.03657007638014], [37.50374438313429, 127.03639019697721], [37.50352497981286, 127.03566763553783]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_1cc70dc6356c9986e741e489fc63b782 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14dff373ed7aaf3f58866888ecdbbedb = $(`<div id="html_14dff373ed7aaf3f58866888ecdbbedb" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로98길', '구간명': '강남제일병원 ~ 역삼동801-33', '구간 거리': '136m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_1cc70dc6356c9986e741e489fc63b782.setContent(html_14dff373ed7aaf3f58866888ecdbbedb);
+            
+        
+
+        poly_line_39fbb3ca91e548b3544f24acf2855d13.bindPopup(popup_1cc70dc6356c9986e741e489fc63b782)
+        ;
+
+        
+    
+    
+            poly_line_39fbb3ca91e548b3544f24acf2855d13.bindTooltip(
+                `<div>
+                     {'도로명': '논현로98길', '구간명': '강남제일병원 ~ 역삼동801-33', '구간 거리': '136m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7ce9b3dd3ebb9b63b029772c8d5a0b13 = L.polyline(
+                [[37.50123882317557, 127.03833330854883], [37.501012643694736, 127.03849392257462], [37.50014669716027, 127.03891344618889], [37.499732933142134, 127.03852154924664], [37.499504300780934, 127.03774356585517], [37.49941353898973, 127.03756213602612]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_c4d756fcacad251945bd9fb069000e96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ee395be04099f1f5cacf44e01790f9d = $(`<div id="html_6ee395be04099f1f5cacf44e01790f9d" style="width: 100.0%; height: 100.0%;">{'도로명': '논현로86길', '구간명': '한은금융결재원 ~ 일월빌딩앞', '구간 거리': '282m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c4d756fcacad251945bd9fb069000e96.setContent(html_6ee395be04099f1f5cacf44e01790f9d);
+            
+        
+
+        poly_line_7ce9b3dd3ebb9b63b029772c8d5a0b13.bindPopup(popup_c4d756fcacad251945bd9fb069000e96)
+        ;
+
+        
+    
+    
+            poly_line_7ce9b3dd3ebb9b63b029772c8d5a0b13.bindTooltip(
+                `<div>
+                     {'도로명': '논현로86길', '구간명': '한은금융결재원 ~ 일월빌딩앞', '구간 거리': '282m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d9dbea7ab2d8c6c8a26225104483c38 = L.polyline(
+                [[37.501104023131575, 127.03519380872854], [37.50060321919518, 127.03544861429793], [37.5004131497385, 127.03563872865446]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_63953d54cb81bbd5f031697922f0b941 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ea53f065573131dc8cf1405d322f62d = $(`<div id="html_0ea53f065573131dc8cf1405d322f62d" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로25길', '구간명': '강남파이낸스센터 ~ 우신빌딩', '구간 거리': '87m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_63953d54cb81bbd5f031697922f0b941.setContent(html_0ea53f065573131dc8cf1405d322f62d);
+            
+        
+
+        poly_line_0d9dbea7ab2d8c6c8a26225104483c38.bindPopup(popup_63953d54cb81bbd5f031697922f0b941)
+        ;
+
+        
+    
+    
+            poly_line_0d9dbea7ab2d8c6c8a26225104483c38.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로25길', '구간명': '강남파이낸스센터 ~ 우신빌딩', '구간 거리': '87m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cebc3ee6885afd29eaf6f6dd85a60bed = L.polyline(
+                [[37.50218892888784, 127.03632736421991], [37.50217502910691, 127.03610389044694], [37.50196711287039, 127.03541983692934], [37.50131162043519, 127.03510855820208], [37.501107551952984, 127.03519218978663]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_b237a96b662d5488e5afbd05f90554f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4e940be2a231ff76adf348033c6f61f = $(`<div id="html_a4e940be2a231ff76adf348033c6f61f" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로25길', '구간명': '우신빌딩 ~ 커피빈역삼점', '구간 거리': '186m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_b237a96b662d5488e5afbd05f90554f0.setContent(html_a4e940be2a231ff76adf348033c6f61f);
+            
+        
+
+        poly_line_cebc3ee6885afd29eaf6f6dd85a60bed.bindPopup(popup_b237a96b662d5488e5afbd05f90554f0)
+        ;
+
+        
+    
+    
+            poly_line_cebc3ee6885afd29eaf6f6dd85a60bed.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로25길', '구간명': '우신빌딩 ~ 커피빈역삼점', '구간 거리': '186m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fa40e75c749f39f1fd352b17721ed47d = L.polyline(
+                [[37.503578361738526, 127.04049962609473], [37.50353975212276, 127.04035402602288], [37.50269811098447, 127.03772334757976], [37.50262669831947, 127.03764946833067]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_968d9e028367b6cdaa7eadc101fce099 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6826e56887d639b2c4cb23fda843ca9f = $(`<div id="html_6826e56887d639b2c4cb23fda843ca9f" style="width: 100.0%; height: 100.0%;">{'도로명': '언주로93길', '구간명': '주원빌딩 ~ 남전타운', '구간 거리': '275m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_968d9e028367b6cdaa7eadc101fce099.setContent(html_6826e56887d639b2c4cb23fda843ca9f);
+            
+        
+
+        poly_line_fa40e75c749f39f1fd352b17721ed47d.bindPopup(popup_968d9e028367b6cdaa7eadc101fce099)
+        ;
+
+        
+    
+    
+            poly_line_fa40e75c749f39f1fd352b17721ed47d.bindTooltip(
+                `<div>
+                     {'도로명': '언주로93길', '구간명': '주원빌딩 ~ 남전타운', '구간 거리': '275m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b38c40014f833571470933942e5bcc4c = L.polyline(
+                [[37.50513756106462, 127.03648031963543], [37.50488622787847, 127.03658085931298], [37.504066940677944, 127.03696962204677], [37.50391036918488, 127.03705642933981]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_525449c033652d60448cbfd9ee55a987 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_137137307ff4159fd179b852491fc78c = $(`<div id="html_137137307ff4159fd179b852491fc78c" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로27길', '구간명': '역삼동801-33 ~ 역삼동801-21', '구간 거리': '145m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_525449c033652d60448cbfd9ee55a987.setContent(html_137137307ff4159fd179b852491fc78c);
+            
+        
+
+        poly_line_b38c40014f833571470933942e5bcc4c.bindPopup(popup_525449c033652d60448cbfd9ee55a987)
+        ;
+
+        
+    
+    
+            poly_line_b38c40014f833571470933942e5bcc4c.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로27길', '구간명': '역삼동801-33 ~ 역삼동801-21', '구간 거리': '145m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e5a3c3c8e4a0cc465c90ae4c95d914a7 = L.polyline(
+                [[37.50395405416991, 127.03718057332905], [37.504107930376534, 127.03709526003787], [37.504921783219565, 127.03670907780983], [37.505170390633936, 127.03660962970454]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_d6465c49df990c8147f89e8784a11b01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_721c5d52f3c24a2787d3d403847b5dae = $(`<div id="html_721c5d52f3c24a2787d3d403847b5dae" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로27길', '구간명': '역삼동801-21 ~ 역삼동801-33', '구간 거리': '144m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d6465c49df990c8147f89e8784a11b01.setContent(html_721c5d52f3c24a2787d3d403847b5dae);
+            
+        
+
+        poly_line_e5a3c3c8e4a0cc465c90ae4c95d914a7.bindPopup(popup_d6465c49df990c8147f89e8784a11b01)
+        ;
+
+        
+    
+    
+            poly_line_e5a3c3c8e4a0cc465c90ae4c95d914a7.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로27길', '구간명': '역삼동801-21 ~ 역삼동801-33', '구간 거리': '144m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9782615c627ace9e4a869faeb111769d = L.polyline(
+                [[37.503614676074115, 127.04407559179371], [37.50349674427121, 127.04364632510921], [37.50340264700181, 127.04333266991378], [37.50285491302003, 127.04358269126944]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_3d9f51c38075e37c39b10b615fcb6dbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d7e493c10e1337280d646f7b142d5f9 = $(`<div id="html_3d7e493c10e1337280d646f7b142d5f9" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로43길', '구간명': '르네상스호텔교차로 ~ 브이피', '구간 거리': '134m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3d9f51c38075e37c39b10b615fcb6dbd.setContent(html_3d7e493c10e1337280d646f7b142d5f9);
+            
+        
+
+        poly_line_9782615c627ace9e4a869faeb111769d.bindPopup(popup_3d9f51c38075e37c39b10b615fcb6dbd)
+        ;
+
+        
+    
+    
+            poly_line_9782615c627ace9e4a869faeb111769d.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로43길', '구간명': '르네상스호텔교차로 ~ 브이피', '구간 거리': '134m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3c197a7072a32063fd0babcb1d5f30e0 = L.polyline(
+                [[37.50289186388973, 127.0437102329898], [37.503339135357606, 127.04350607063763], [37.503395024448636, 127.04369236896292], [37.50351246210679, 127.04411983550638]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1b7ff4514cbbc2bf5e5c62d4eff6f9b3);
+        
+    
+        var popup_f447a4b162c1e225e5901d20e1a20722 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddff7e2a45ef99762f0f939f3e25df94 = $(`<div id="html_ddff7e2a45ef99762f0f939f3e25df94" style="width: 100.0%; height: 100.0%;">{'도로명': '테헤란로43길', '구간명': '브이피 ~ 르네상스호텔교차로', '구간 거리': '110m', '평균 속도': '28.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f447a4b162c1e225e5901d20e1a20722.setContent(html_ddff7e2a45ef99762f0f939f3e25df94);
+            
+        
+
+        poly_line_3c197a7072a32063fd0babcb1d5f30e0.bindPopup(popup_f447a4b162c1e225e5901d20e1a20722)
+        ;
+
+        
+    
+    
+            poly_line_3c197a7072a32063fd0babcb1d5f30e0.bindTooltip(
+                `<div>
+                     {'도로명': '테헤란로43길', '구간명': '브이피 ~ 르네상스호텔교차로', '구간 거리': '110m', '평균 속도': '28.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

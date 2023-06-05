@@ -1,0 +1,14 @@
+{"type": "record",
+  "namespace": "SeoulRtd.citydata",
+  "name": "a",
+  "fields": [
+    {
+      "name": "list_total_count",
+      "type": "string"
+    },
+    {
+      "name": "list_total_count1",
+      "type": "string"
+    }
+  ]
+}

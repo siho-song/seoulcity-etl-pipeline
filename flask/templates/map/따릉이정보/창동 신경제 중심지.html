@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d26b5bbe457c3ca9a7feb4e24b40b25 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9d26b5bbe457c3ca9a7feb4e24b40b25" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9d26b5bbe457c3ca9a7feb4e24b40b25 = L.map(
+                "map_9d26b5bbe457c3ca9a7feb4e24b40b25",
+                {
+                    center: [37.65696415135618, 127.05937215373292],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a3206f732d972a963bdc80a6e7bf5899 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var marker_a2fdba4d4ba99f193e4e39da9f5cd562 = L.marker(
+                [37.65470123, 127.06340027],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_e091080db92a9cfe9fda639a84efb067 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2fdba4d4ba99f193e4e39da9f5cd562.setIcon(icon_e091080db92a9cfe9fda639a84efb067);
+        
+    
+        var popup_83b4db30f082bd047171f872e57a16f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7b8d97d7be15398cf3ace5811c56461 = $(`<div id="html_a7b8d97d7be15398cf3ace5811c56461" style="width: 100.0%; height: 100.0%;">{'정류장명': '1637. KT 전화국 버스정류장 옆', '대여가능 수': '14', '반납율': '높음'}</div>`)[0];
+                popup_83b4db30f082bd047171f872e57a16f2.setContent(html_a7b8d97d7be15398cf3ace5811c56461);
+            
+        
+
+        marker_a2fdba4d4ba99f193e4e39da9f5cd562.bindPopup(popup_83b4db30f082bd047171f872e57a16f2)
+        ;
+
+        
+    
+    
+            marker_a2fdba4d4ba99f193e4e39da9f5cd562.bindTooltip(
+                `<div>
+                     {'정류장명': '1637. KT 전화국 버스정류장 옆', '대여가능 수': '14', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63205a53da2e0fa36c5e5e74fd4dfc4a = L.marker(
+                [37.65620041, 127.06362152],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_8af72a1da9e07842bb0f696c00c99eed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63205a53da2e0fa36c5e5e74fd4dfc4a.setIcon(icon_8af72a1da9e07842bb0f696c00c99eed);
+        
+    
+        var popup_c2e8ab2810ffa4b21d7e9cd8033871f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36cf9b6d0d46e1176f762d32e22db3f7 = $(`<div id="html_36cf9b6d0d46e1176f762d32e22db3f7" style="width: 100.0%; height: 100.0%;">{'정류장명': '1653. 노원역1번출구', '대여가능 수': '16', '반납율': '높음'}</div>`)[0];
+                popup_c2e8ab2810ffa4b21d7e9cd8033871f3.setContent(html_36cf9b6d0d46e1176f762d32e22db3f7);
+            
+        
+
+        marker_63205a53da2e0fa36c5e5e74fd4dfc4a.bindPopup(popup_c2e8ab2810ffa4b21d7e9cd8033871f3)
+        ;
+
+        
+    
+    
+            marker_63205a53da2e0fa36c5e5e74fd4dfc4a.bindTooltip(
+                `<div>
+                     {'정류장명': '1653. 노원역1번출구', '대여가능 수': '16', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4533096d34a204afd8437ac24b9f31a = L.marker(
+                [37.65404892, 127.05732727],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_e48c5ca86fcc828e30e95c705ea46b06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4533096d34a204afd8437ac24b9f31a.setIcon(icon_e48c5ca86fcc828e30e95c705ea46b06);
+        
+    
+        var popup_978c5127e88effac22054268af3f5a19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7db4602243cf79cff318f7a5595777e2 = $(`<div id="html_7db4602243cf79cff318f7a5595777e2" style="width: 100.0%; height: 100.0%;">{'정류장명': '1657. 노원구청', '대여가능 수': '32', '반납율': '높음'}</div>`)[0];
+                popup_978c5127e88effac22054268af3f5a19.setContent(html_7db4602243cf79cff318f7a5595777e2);
+            
+        
+
+        marker_b4533096d34a204afd8437ac24b9f31a.bindPopup(popup_978c5127e88effac22054268af3f5a19)
+        ;
+
+        
+    
+    
+            marker_b4533096d34a204afd8437ac24b9f31a.bindTooltip(
+                `<div>
+                     {'정류장명': '1657. 노원구청', '대여가능 수': '32', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9578d8b2ddc423b7fda6536a518e007a = L.marker(
+                [37.65421677, 127.05921173],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_c45f11969d1b6a896855a494c8ebc582 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9578d8b2ddc423b7fda6536a518e007a.setIcon(icon_c45f11969d1b6a896855a494c8ebc582);
+        
+    
+        var popup_486e7bb8c5fd742c7f35b0b6885f78fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f74173a3f7b592bbc9102bcd063f4a26 = $(`<div id="html_f74173a3f7b592bbc9102bcd063f4a26" style="width: 100.0%; height: 100.0%;">{'정류장명': '1662. 노원역7번출구', '대여가능 수': '25', '반납율': '높음'}</div>`)[0];
+                popup_486e7bb8c5fd742c7f35b0b6885f78fc.setContent(html_f74173a3f7b592bbc9102bcd063f4a26);
+            
+        
+
+        marker_9578d8b2ddc423b7fda6536a518e007a.bindPopup(popup_486e7bb8c5fd742c7f35b0b6885f78fc)
+        ;
+
+        
+    
+    
+            marker_9578d8b2ddc423b7fda6536a518e007a.bindTooltip(
+                `<div>
+                     {'정류장명': '1662. 노원역7번출구', '대여가능 수': '25', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_692337bc9c848a5e44634576225f088b = L.marker(
+                [37.65354919, 127.05808258],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_4c4f5af166230542233cd21ad9e30409 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_692337bc9c848a5e44634576225f088b.setIcon(icon_4c4f5af166230542233cd21ad9e30409);
+        
+    
+        var popup_a471c469ce9b530f909e005d12b9c051 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3b664e086d36792ab3af04be1bf8525 = $(`<div id="html_e3b664e086d36792ab3af04be1bf8525" style="width: 100.0%; height: 100.0%;">{'정류장명': '1674. 서울북부고용센터앞', '대여가능 수': '5', '반납율': '높음'}</div>`)[0];
+                popup_a471c469ce9b530f909e005d12b9c051.setContent(html_e3b664e086d36792ab3af04be1bf8525);
+            
+        
+
+        marker_692337bc9c848a5e44634576225f088b.bindPopup(popup_a471c469ce9b530f909e005d12b9c051)
+        ;
+
+        
+    
+    
+            marker_692337bc9c848a5e44634576225f088b.bindTooltip(
+                `<div>
+                     {'정류장명': '1674. 서울북부고용센터앞', '대여가능 수': '5', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85dec658a7e041bf01ffcd87bd361993 = L.marker(
+                [37.6577301, 127.05931091],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_0585a3189e1aff4d3202a1e77905c24c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_85dec658a7e041bf01ffcd87bd361993.setIcon(icon_0585a3189e1aff4d3202a1e77905c24c);
+        
+    
+        var popup_a79ded08070475d41499878cfa50af61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97efa5b24c6f50578af86627c164e837 = $(`<div id="html_97efa5b24c6f50578af86627c164e837" style="width: 100.0%; height: 100.0%;">{'정류장명': '1690. 도봉운전면허시험장 버스정류장 옆', '대여가능 수': '3', '반납율': '높음'}</div>`)[0];
+                popup_a79ded08070475d41499878cfa50af61.setContent(html_97efa5b24c6f50578af86627c164e837);
+            
+        
+
+        marker_85dec658a7e041bf01ffcd87bd361993.bindPopup(popup_a79ded08070475d41499878cfa50af61)
+        ;
+
+        
+    
+    
+            marker_85dec658a7e041bf01ffcd87bd361993.bindTooltip(
+                `<div>
+                     {'정류장명': '1690. 도봉운전면허시험장 버스정류장 옆', '대여가능 수': '3', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0802593da785f196491092a48d64306d = L.marker(
+                [37.65420151, 127.05072784],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_8fba9c7e441500441f214e0d4448b5ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0802593da785f196491092a48d64306d.setIcon(icon_8fba9c7e441500441f214e0d4448b5ae);
+        
+    
+        var popup_4ac550acfd0939c0d5fe79ca95b089c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3b54faa72f9bbee96952ffef7e3a0b4 = $(`<div id="html_e3b54faa72f9bbee96952ffef7e3a0b4" style="width: 100.0%; height: 100.0%;">{'정류장명': '1716. 창동역 1번출구 건너편', '대여가능 수': '4', '반납율': '높음'}</div>`)[0];
+                popup_4ac550acfd0939c0d5fe79ca95b089c6.setContent(html_e3b54faa72f9bbee96952ffef7e3a0b4);
+            
+        
+
+        marker_0802593da785f196491092a48d64306d.bindPopup(popup_4ac550acfd0939c0d5fe79ca95b089c6)
+        ;
+
+        
+    
+    
+            marker_0802593da785f196491092a48d64306d.bindTooltip(
+                `<div>
+                     {'정류장명': '1716. 창동역 1번출구 건너편', '대여가능 수': '4', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe6036d310ff429494c4cb87a968bf7a = L.marker(
+                [37.65570831, 127.05010223],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_f7bdca2b88fff572537fce4a41d7be0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe6036d310ff429494c4cb87a968bf7a.setIcon(icon_f7bdca2b88fff572537fce4a41d7be0d);
+        
+    
+        var popup_cb54cb507d27f0c078f2746edf1b391e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d803cea7db5072c62937fb66653f6a16 = $(`<div id="html_d803cea7db5072c62937fb66653f6a16" style="width: 100.0%; height: 100.0%;">{'정류장명': '1717. 시립창동운동장 입구', '대여가능 수': '7', '반납율': '높음'}</div>`)[0];
+                popup_cb54cb507d27f0c078f2746edf1b391e.setContent(html_d803cea7db5072c62937fb66653f6a16);
+            
+        
+
+        marker_fe6036d310ff429494c4cb87a968bf7a.bindPopup(popup_cb54cb507d27f0c078f2746edf1b391e)
+        ;
+
+        
+    
+    
+            marker_fe6036d310ff429494c4cb87a968bf7a.bindTooltip(
+                `<div>
+                     {'정류장명': '1717. 시립창동운동장 입구', '대여가능 수': '7', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7d45977e6aa6e4dd48f4b3525c49605 = L.marker(
+                [37.65301514, 127.04699707],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_82ffc125aed6a882ede7e1934ff5d791 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7d45977e6aa6e4dd48f4b3525c49605.setIcon(icon_82ffc125aed6a882ede7e1934ff5d791);
+        
+    
+        var popup_1d0949d37ab498350646c067581b2b24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d3d99d30e1109406030b0d7fc75ac43 = $(`<div id="html_4d3d99d30e1109406030b0d7fc75ac43" style="width: 100.0%; height: 100.0%;">{'정류장명': '1721. 창동역 2번출구', '대여가능 수': '73', '반납율': '높음'}</div>`)[0];
+                popup_1d0949d37ab498350646c067581b2b24.setContent(html_4d3d99d30e1109406030b0d7fc75ac43);
+            
+        
+
+        marker_d7d45977e6aa6e4dd48f4b3525c49605.bindPopup(popup_1d0949d37ab498350646c067581b2b24)
+        ;
+
+        
+    
+    
+            marker_d7d45977e6aa6e4dd48f4b3525c49605.bindTooltip(
+                `<div>
+                     {'정류장명': '1721. 창동역 2번출구', '대여가능 수': '73', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efd8100a78cdf304b81691e49d17ad69 = L.marker(
+                [37.65779877, 127.05004883],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_cd8b978cc0c9a1b05d9de770ff164c9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_efd8100a78cdf304b81691e49d17ad69.setIcon(icon_cd8b978cc0c9a1b05d9de770ff164c9b);
+        
+    
+        var popup_0335d5497549b5a7314257d03e231ed9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47ee4dbd77a776855646830eb1b8b71d = $(`<div id="html_47ee4dbd77a776855646830eb1b8b71d" style="width: 100.0%; height: 100.0%;">{'정류장명': '1722. 창동청소년수련관', '대여가능 수': '19', '반납율': '높음'}</div>`)[0];
+                popup_0335d5497549b5a7314257d03e231ed9.setContent(html_47ee4dbd77a776855646830eb1b8b71d);
+            
+        
+
+        marker_efd8100a78cdf304b81691e49d17ad69.bindPopup(popup_0335d5497549b5a7314257d03e231ed9)
+        ;
+
+        
+    
+    
+            marker_efd8100a78cdf304b81691e49d17ad69.bindTooltip(
+                `<div>
+                     {'정류장명': '1722. 창동청소년수련관', '대여가능 수': '19', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e58c82b29ef4813a31b9400e64f81b9 = L.marker(
+                [37.65148544, 127.04431915],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_80225def4199f737abfd3d87b5424d8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4e58c82b29ef4813a31b9400e64f81b9.setIcon(icon_80225def4199f737abfd3d87b5424d8f);
+        
+    
+        var popup_6f8294295af4e33b149178e37edc5a70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42e88fab100920da1adc9b89b3f23377 = $(`<div id="html_42e88fab100920da1adc9b89b3f23377" style="width: 100.0%; height: 100.0%;">{'정류장명': '1756.서울북부광역등기국', '대여가능 수': '1', '반납율': '보통'}</div>`)[0];
+                popup_6f8294295af4e33b149178e37edc5a70.setContent(html_42e88fab100920da1adc9b89b3f23377);
+            
+        
+
+        marker_4e58c82b29ef4813a31b9400e64f81b9.bindPopup(popup_6f8294295af4e33b149178e37edc5a70)
+        ;
+
+        
+    
+    
+            marker_4e58c82b29ef4813a31b9400e64f81b9.bindTooltip(
+                `<div>
+                     {'정류장명': '1756.서울북부광역등기국', '대여가능 수': '1', '반납율': '보통'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ce4c72e9f2a0bc0975a5b2178b45898 = L.marker(
+                [37.65128708, 127.04554749],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_12c820ecc3c0c3b6aa00e5163a80d8b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ce4c72e9f2a0bc0975a5b2178b45898.setIcon(icon_12c820ecc3c0c3b6aa00e5163a80d8b1);
+        
+    
+        var popup_6c4f0043d95027a0308d1058713ab2a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24c4750be49737e62280e0978c35d6cc = $(`<div id="html_24c4750be49737e62280e0978c35d6cc" style="width: 100.0%; height: 100.0%;">{'정류장명': '1775.신원리베르텔 앞', '대여가능 수': '5', '반납율': '높음'}</div>`)[0];
+                popup_6c4f0043d95027a0308d1058713ab2a5.setContent(html_24c4750be49737e62280e0978c35d6cc);
+            
+        
+
+        marker_5ce4c72e9f2a0bc0975a5b2178b45898.bindPopup(popup_6c4f0043d95027a0308d1058713ab2a5)
+        ;
+
+        
+    
+    
+            marker_5ce4c72e9f2a0bc0975a5b2178b45898.bindTooltip(
+                `<div>
+                     {'정류장명': '1775.신원리베르텔 앞', '대여가능 수': '5', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fcb76ef5bb7362446f2b00729a9145f = L.marker(
+                [37.65680313, 127.0665741],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_03200958fd8ab3fb3802d213d4f06000 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_0fcb76ef5bb7362446f2b00729a9145f.setIcon(icon_03200958fd8ab3fb3802d213d4f06000);
+        
+    
+        var popup_c77b8538b3f0db447544c5d486bfbba7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd6c30828d7466754bb4db907454f190 = $(`<div id="html_cd6c30828d7466754bb4db907454f190" style="width: 100.0%; height: 100.0%;">{'정류장명': '4003. 상계초교 입구 교차로 명주빌딩 앞', '대여가능 수': '0', '반납율': '낮음'}</div>`)[0];
+                popup_c77b8538b3f0db447544c5d486bfbba7.setContent(html_cd6c30828d7466754bb4db907454f190);
+            
+        
+
+        marker_0fcb76ef5bb7362446f2b00729a9145f.bindPopup(popup_c77b8538b3f0db447544c5d486bfbba7)
+        ;
+
+        
+    
+    
+            marker_0fcb76ef5bb7362446f2b00729a9145f.bindTooltip(
+                `<div>
+                     {'정류장명': '4003. 상계초교 입구 교차로 명주빌딩 앞', '대여가능 수': '0', '반납율': '낮음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c99517ce10a3f53f07b86906e668e157 = L.marker(
+                [37.65373611, 127.04929352],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_e9be60049decd2ff82792f0e03b45295 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c99517ce10a3f53f07b86906e668e157.setIcon(icon_e9be60049decd2ff82792f0e03b45295);
+        
+    
+        var popup_e8ace1dfb707ad63355245da43814dc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5c623041d76a72be7b9f0292d591d44 = $(`<div id="html_a5c623041d76a72be7b9f0292d591d44" style="width: 100.0%; height: 100.0%;">{'정류장명': '4065. 창동역 1번출구 앞', '대여가능 수': '12', '반납율': '높음'}</div>`)[0];
+                popup_e8ace1dfb707ad63355245da43814dc2.setContent(html_a5c623041d76a72be7b9f0292d591d44);
+            
+        
+
+        marker_c99517ce10a3f53f07b86906e668e157.bindPopup(popup_e8ace1dfb707ad63355245da43814dc2)
+        ;
+
+        
+    
+    
+            marker_c99517ce10a3f53f07b86906e668e157.bindTooltip(
+                `<div>
+                     {'정류장명': '4065. 창동역 1번출구 앞', '대여가능 수': '12', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_448fa44e070839c21c8e079f6dcad8ec = L.marker(
+                [37.65999603, 127.05127716],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_1bdd6539b77b26e42eb1e62f12210df4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_448fa44e070839c21c8e079f6dcad8ec.setIcon(icon_1bdd6539b77b26e42eb1e62f12210df4);
+        
+    
+        var popup_7a45ea41f406333651e25af7bf72a93e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56f5cf855d7b423cb59556c2034c0142 = $(`<div id="html_56f5cf855d7b423cb59556c2034c0142" style="width: 100.0%; height: 100.0%;">{'정류장명': '4076. 도봉통합복지센터 뒤 중랑천 변', '대여가능 수': '15', '반납율': '높음'}</div>`)[0];
+                popup_7a45ea41f406333651e25af7bf72a93e.setContent(html_56f5cf855d7b423cb59556c2034c0142);
+            
+        
+
+        marker_448fa44e070839c21c8e079f6dcad8ec.bindPopup(popup_7a45ea41f406333651e25af7bf72a93e)
+        ;
+
+        
+    
+    
+            marker_448fa44e070839c21c8e079f6dcad8ec.bindTooltip(
+                `<div>
+                     {'정류장명': '4076. 도봉통합복지센터 뒤 중랑천 변', '대여가능 수': '15', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57c694073283e49aa3f790ee06ea298d = L.marker(
+                [37.65229416, 127.06134796],
+                {}
+            ).addTo(map_9d26b5bbe457c3ca9a7feb4e24b40b25);
+        
+    
+            var icon_f346244e11143809f88f29f8d2c5319b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_57c694073283e49aa3f790ee06ea298d.setIcon(icon_f346244e11143809f88f29f8d2c5319b);
+        
+    
+        var popup_b834a3e03b136910d9e0fed8927e3d53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9ee2968e652781959503ed14d965603 = $(`<div id="html_d9ee2968e652781959503ed14d965603" style="width: 100.0%; height: 100.0%;">{'정류장명': '5311. 주공601동 상가 노원지하보도 앞', '대여가능 수': '1', '반납율': '높음'}</div>`)[0];
+                popup_b834a3e03b136910d9e0fed8927e3d53.setContent(html_d9ee2968e652781959503ed14d965603);
+            
+        
+
+        marker_57c694073283e49aa3f790ee06ea298d.bindPopup(popup_b834a3e03b136910d9e0fed8927e3d53)
+        ;
+
+        
+    
+    
+            marker_57c694073283e49aa3f790ee06ea298d.bindTooltip(
+                `<div>
+                     {'정류장명': '5311. 주공601동 상가 노원지하보도 앞', '대여가능 수': '1', '반납율': '높음'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

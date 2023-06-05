@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ed18e3ab81cec9bae22e85dce0b52425 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ed18e3ab81cec9bae22e85dce0b52425" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ed18e3ab81cec9bae22e85dce0b52425 = L.map(
+                "map_ed18e3ab81cec9bae22e85dce0b52425",
+                {
+                    center: [37.53009842959042, 127.07045484651447],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7afb9cc2f66004586b772445149407c2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+            var poly_line_f17a2fbe67fcbf3cace3cd4237dd84a9 = L.polyline(
+                [[37.53197675700001, 127.0639048821844], [37.53190054716947, 127.06414670114887], [37.53180978374861, 127.06446967316572], [37.53175077499835, 127.06471912003262], [37.531723809946854, 127.06487820423963], [37.53170149581609, 127.06518406671607], [37.53169061055886, 127.06551995210121], [37.53167330037154, 127.06572291904432], [37.53163851960288, 127.0659578374756], [37.531586270350125, 127.06622384055649], [37.53123989416769, 127.06750770885002], [37.53089220927992, 127.06880084688825], [37.53064506962742, 127.06973402007645], [37.53033332380035, 127.07085616971462], [37.53010633962734, 127.07170906105779]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_0b8ef2716286ab6de5d824d67cd49a15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a4ff6fbd1e0965a0a51e805c9ae11da = $(`<div id="html_4a4ff6fbd1e0965a0a51e805c9ae11da" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '갈보리교회 ~ 청담대교', '구간 거리': '723m', '평균 속도': '70.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_0b8ef2716286ab6de5d824d67cd49a15.setContent(html_4a4ff6fbd1e0965a0a51e805c9ae11da);
+            
+        
+
+        poly_line_f17a2fbe67fcbf3cace3cd4237dd84a9.bindPopup(popup_0b8ef2716286ab6de5d824d67cd49a15)
+        ;
+
+        
+    
+    
+            poly_line_f17a2fbe67fcbf3cace3cd4237dd84a9.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '갈보리교회 ~ 청담대교', '구간 거리': '723m', '평균 속도': '70.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c9dab9b1b727396e8d67f69857d1734f = L.polyline(
+                [[37.53010633962734, 127.07170906105779], [37.52996767155489, 127.0722300918065], [37.52971718178011, 127.07314888664062], [37.52949921642179, 127.07390081882333], [37.52927070163104, 127.07463884215541], [37.52919599460268, 127.07486169080423], [37.52903895709208, 127.07532672491902], [37.528914118844625, 127.07566638260457], [37.52834401626321, 127.0772297644835], [37.5282293332477, 127.07756649284258], [37.52808470777882, 127.0779651287899], [37.5279946039895, 127.07823765673287], [37.52790413511756, 127.07856234527313], [37.52782803060689, 127.0788888548671], [37.52775536394882, 127.0791890417369], [37.52762873152791, 127.07983179452671], [37.5275417721084, 127.08037532761415], [37.52744768264809, 127.08112988859438], [37.527431371279995, 127.08131277432625]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_31bbc94c24555a6b596c45a725eb1720 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e65cfac4323a41577a2c37ace2f042c = $(`<div id="html_3e65cfac4323a41577a2c37ace2f042c" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '자양고가차도 ~ 갈보리교회', '구간 거리': '903m', '평균 속도': '72.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_31bbc94c24555a6b596c45a725eb1720.setContent(html_3e65cfac4323a41577a2c37ace2f042c);
+            
+        
+
+        poly_line_c9dab9b1b727396e8d67f69857d1734f.bindPopup(popup_31bbc94c24555a6b596c45a725eb1720)
+        ;
+
+        
+    
+    
+            poly_line_c9dab9b1b727396e8d67f69857d1734f.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '자양고가차도 ~ 갈보리교회', '구간 거리': '903m', '평균 속도': '72.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_649eaa5d1e7afc72f445bbcea51f0853 = L.polyline(
+                [[37.527431371279995, 127.08131277432625], [37.527411205044565, 127.08153888086176], [37.527381939351244, 127.08208294196206], [37.527370574548755, 127.08289630672374], [37.527377579804885, 127.08325628005441], [37.52748726497173, 127.08507695921791], [37.52752971620446, 127.08592871631593], [37.527562137322185, 127.08623847048568], [37.52759493060286, 127.08652860387181], [37.52768270875295, 127.08694345276926], [37.52775935094438, 127.08721922277844], [37.52787245791904, 127.08757753041138], [37.52802953302824, 127.08794989081073], [37.52832014143732, 127.08854880157718], [37.52850161421279, 127.0889273835527], [37.52865596212939, 127.08922476108454], [37.52883010625008, 127.0895290668818], [37.52901865067741, 127.08982101230944], [37.52941529801835, 127.09038615659622], [37.52968880428438, 127.09077250909394], [37.53009500627336, 127.09127753369224], [37.53038133907949, 127.09164978029656], [37.53051105603347, 127.09180546317641], [37.53110742961459, 127.09252122834414], [37.53180029309278, 127.09331481660523], [37.53297353380674, 127.09455100768658], [37.53345468713816, 127.0950605248382], [37.53354403119453, 127.09515459213311]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_5c264bc9a9b387613912102518b65560 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5820b5ca6eefaa1da89452377bbed5d7 = $(`<div id="html_5820b5ca6eefaa1da89452377bbed5d7" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실철교북단 ~ 자양고가차도', '구간 거리': '1486m', '평균 속도': '82.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_5c264bc9a9b387613912102518b65560.setContent(html_5820b5ca6eefaa1da89452377bbed5d7);
+            
+        
+
+        poly_line_649eaa5d1e7afc72f445bbcea51f0853.bindPopup(popup_5c264bc9a9b387613912102518b65560)
+        ;
+
+        
+    
+    
+            poly_line_649eaa5d1e7afc72f445bbcea51f0853.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실철교북단 ~ 자양고가차도', '구간 거리': '1486m', '평균 속도': '82.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a350c75a7e0f55c9fd66d18b7c1674ac = L.polyline(
+                [[37.52756806447386, 127.08356840577697], [37.52754861190977, 127.08324554053722], [37.52754180142722, 127.08289556739528], [37.5275530287183, 127.08209207471262], [37.5275817513975, 127.08155809290506], [37.52761739189317, 127.08115848757346], [37.52771033279336, 127.08041313710967], [37.527795822943496, 127.07987879321483], [37.52792046393156, 127.07924614415381], [37.52799132374084, 127.078953420344], [37.52808368308033, 127.07859760901378], [37.52817301989086, 127.0783022152473], [37.52826248849501, 127.07801214717934], [37.52838594955347, 127.07765331898507], [37.52850056691511, 127.07731678231326], [37.52905605249591, 127.07583949004854], [37.52919790082211, 127.07544973886034], [37.52935796804127, 127.07498177009438], [37.52948281521863, 127.07457921010224], [37.52965944635759, 127.07397653368658], [37.52987861128853, 127.07322046282256], [37.530129836682256, 127.07229896755616], [37.53049533168845, 127.07092563890365], [37.5308071197021, 127.06980334009137], [37.53105452989295, 127.06886914260929], [37.53140206202314, 127.06757657555409], [37.53175074038718, 127.06628417400644], [37.53227181008927, 127.0642179489178], [37.53235123228653, 127.06392925379363]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_07443593af4ff3b1119211e81e243141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fddd3ac6a75063d0ef4c5d8960e4d28 = $(`<div id="html_4fddd3ac6a75063d0ef4c5d8960e4d28" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '한강우성아파트앞 ~ 낙천정지하차도', '구간 거리': '1828m', '평균 속도': '40.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_07443593af4ff3b1119211e81e243141.setContent(html_4fddd3ac6a75063d0ef4c5d8960e4d28);
+            
+        
+
+        poly_line_a350c75a7e0f55c9fd66d18b7c1674ac.bindPopup(popup_07443593af4ff3b1119211e81e243141)
+        ;
+
+        
+    
+    
+            poly_line_a350c75a7e0f55c9fd66d18b7c1674ac.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '한강우성아파트앞 ~ 낙천정지하차도', '구간 거리': '1828m', '평균 속도': '40.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4b63eda0a5df479a4c75868b74d47fcf = L.polyline(
+                [[37.52786702000722, 127.08644311912128], [37.52777222676182, 127.08601458639538], [37.52771553911505, 127.08566656527138], [37.527679390389906, 127.0853811398907], [37.527658051498356, 127.08506214065392], [37.52756806447386, 127.08356840577697]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_5f8530e231eb3c841b4b2ffdb916200d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f95a95dc279575fedaf2ca7e1379ed65 = $(`<div id="html_f95a95dc279575fedaf2ca7e1379ed65" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '낙천정지하차도 ~ 잠실대교북측', '구간 거리': '257m', '평균 속도': '72.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_5f8530e231eb3c841b4b2ffdb916200d.setContent(html_f95a95dc279575fedaf2ca7e1379ed65);
+            
+        
+
+        poly_line_4b63eda0a5df479a4c75868b74d47fcf.bindPopup(popup_5f8530e231eb3c841b4b2ffdb916200d)
+        ;
+
+        
+    
+    
+            poly_line_4b63eda0a5df479a4c75868b74d47fcf.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '낙천정지하차도 ~ 잠실대교북측', '구간 거리': '257m', '평균 속도': '72.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bba4db57ef5621b3c41a43dd65924017 = L.polyline(
+                [[37.52863468282601, 127.08823584983622], [37.528372813128776, 127.08843811626417]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_c257d3fdb26f6cf606abe96290e8cbc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a732f8e2b67e501f77c59b2ff833a8f8 = $(`<div id="html_a732f8e2b67e501f77c59b2ff833a8f8" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '34m', '평균 속도': '49.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_c257d3fdb26f6cf606abe96290e8cbc5.setContent(html_a732f8e2b67e501f77c59b2ff833a8f8);
+            
+        
+
+        poly_line_bba4db57ef5621b3c41a43dd65924017.bindPopup(popup_c257d3fdb26f6cf606abe96290e8cbc5)
+        ;
+
+        
+    
+    
+            poly_line_bba4db57ef5621b3c41a43dd65924017.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '34m', '평균 속도': '49.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f1583dbeca2a22f54fed421de4c11ff9 = L.polyline(
+                [[37.53033016901634, 127.08692626427124], [37.52863468282601, 127.08823584983622]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_a78a33152cdb74b8f95a62240cddf195 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce8a43ea3b0871ef14ae1460d1a3674f = $(`<div id="html_ce8a43ea3b0871ef14ae1460d1a3674f" style="width: 100.0%; height: 100.0%;">{'도로명': '자양로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '221m', '평균 속도': '58.7km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a78a33152cdb74b8f95a62240cddf195.setContent(html_ce8a43ea3b0871ef14ae1460d1a3674f);
+            
+        
+
+        poly_line_f1583dbeca2a22f54fed421de4c11ff9.bindPopup(popup_a78a33152cdb74b8f95a62240cddf195)
+        ;
+
+        
+    
+    
+            poly_line_f1583dbeca2a22f54fed421de4c11ff9.bindTooltip(
+                `<div>
+                     {'도로명': '자양로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '221m', '평균 속도': '58.7km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8d8a97acfc30e847b8c9089e19bfe848 = L.polyline(
+                [[37.53245688947863, 127.08534715586362], [37.53033016901634, 127.08692626427124]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_b8373d4e5b7e03a1449dee1d106c2ee3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae8b3e01762cc1e5cb1c744ed73e2a94 = $(`<div id="html_ae8b3e01762cc1e5cb1c744ed73e2a94" style="width: 100.0%; height: 100.0%;">{'도로명': '자양로', '구간명': '잠실대교북측 ~ 잠실대교북단앞교차로', '구간 거리': '274m', '평균 속도': '34.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_b8373d4e5b7e03a1449dee1d106c2ee3.setContent(html_ae8b3e01762cc1e5cb1c744ed73e2a94);
+            
+        
+
+        poly_line_8d8a97acfc30e847b8c9089e19bfe848.bindPopup(popup_b8373d4e5b7e03a1449dee1d106c2ee3)
+        ;
+
+        
+    
+    
+            poly_line_8d8a97acfc30e847b8c9089e19bfe848.bindTooltip(
+                `<div>
+                     {'도로명': '자양로', '구간명': '잠실대교북측 ~ 잠실대교북단앞교차로', '구간 거리': '274m', '평균 속도': '34.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f4059e722bd87958135cbaa869caedc8 = L.polyline(
+                [[37.52842888736292, 127.08855421001775], [37.52869575531271, 127.08834806136242]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_ebcf3584f0b3747f33aa029c127d52b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14fbd4d3bc6438c5f5716bdb4dae0ef8 = $(`<div id="html_14fbd4d3bc6438c5f5716bdb4dae0ef8" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '35m', '평균 속도': '59.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ebcf3584f0b3747f33aa029c127d52b8.setContent(html_14fbd4d3bc6438c5f5716bdb4dae0ef8);
+            
+        
+
+        poly_line_f4059e722bd87958135cbaa869caedc8.bindPopup(popup_ebcf3584f0b3747f33aa029c127d52b8)
+        ;
+
+        
+    
+    
+            poly_line_f4059e722bd87958135cbaa869caedc8.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '35m', '평균 속도': '59.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fa3d5ba21c0fa19bd033791c1bf08179 = L.polyline(
+                [[37.52869575531271, 127.08834806136242], [37.53038576961739, 127.0870427270706]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_02a5740aa6272d7fb0248eecd2c726de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1765489abb9dec978ef497f899a1a438 = $(`<div id="html_1765489abb9dec978ef497f899a1a438" style="width: 100.0%; height: 100.0%;">{'도로명': '자양로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '220m', '평균 속도': '54.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_02a5740aa6272d7fb0248eecd2c726de.setContent(html_1765489abb9dec978ef497f899a1a438);
+            
+        
+
+        poly_line_fa3d5ba21c0fa19bd033791c1bf08179.bindPopup(popup_02a5740aa6272d7fb0248eecd2c726de)
+        ;
+
+        
+    
+    
+            poly_line_fa3d5ba21c0fa19bd033791c1bf08179.bindTooltip(
+                `<div>
+                     {'도로명': '자양로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '220m', '평균 속도': '54.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e7e5c7fba85919cdbc7176c6f909847a = L.polyline(
+                [[37.53038576961739, 127.0870427270706], [37.532512679148354, 127.08546344678427]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_62ed65acd0482d62cc73a007277c62ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b158c7639f20e589dd4cda66f60b278f = $(`<div id="html_b158c7639f20e589dd4cda66f60b278f" style="width: 100.0%; height: 100.0%;">{'도로명': '자양로', '구간명': '잠실대교북단앞교차로 ~ 잠실대교북측', '구간 거리': '274m', '평균 속도': '11.3km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_62ed65acd0482d62cc73a007277c62ba.setContent(html_b158c7639f20e589dd4cda66f60b278f);
+            
+        
+
+        poly_line_e7e5c7fba85919cdbc7176c6f909847a.bindPopup(popup_62ed65acd0482d62cc73a007277c62ba)
+        ;
+
+        
+    
+    
+            poly_line_e7e5c7fba85919cdbc7176c6f909847a.bindTooltip(
+                `<div>
+                     {'도로명': '자양로', '구간명': '잠실대교북단앞교차로 ~ 잠실대교북측', '구간 거리': '274m', '평균 속도': '11.3km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_61d8e081cee5ef5f42cd18dd2a6b8394 = L.polyline(
+                [[37.530072118772885, 127.09097310711155], [37.52975014554339, 127.09055983403006], [37.529635280166886, 127.09040973336616], [37.5295446790163, 127.09026964875423], [37.52941954565306, 127.09002477896118], [37.52858891208105, 127.08833089642877], [37.52837553232675, 127.08784659648182], [37.52830704918608, 127.08769116514848], [37.52816612726823, 127.08735787028212], [37.52806366456534, 127.08707835110121], [37.527956622739026, 127.08676023360367], [37.52786702000722, 127.08644311912128]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_793dbf4ce7ecfa879b279c189d909a05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_741b342b26ec8ef306f8dc15e4d2071a = $(`<div id="html_741b342b26ec8ef306f8dc15e4d2071a" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '472m', '평균 속도': '74.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_793dbf4ce7ecfa879b279c189d909a05.setContent(html_741b342b26ec8ef306f8dc15e4d2071a);
+            
+        
+
+        poly_line_61d8e081cee5ef5f42cd18dd2a6b8394.bindPopup(popup_793dbf4ce7ecfa879b279c189d909a05)
+        ;
+
+        
+    
+    
+            poly_line_61d8e081cee5ef5f42cd18dd2a6b8394.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '472m', '평균 속도': '74.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2e64d7c389c2c554cddbe48da2cf5db1 = L.polyline(
+                [[37.53352918172056, 127.0590985408331], [37.532935036747105, 127.06091557366844]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_c8cb12c1e6ef8b4ea93a2b5995800e1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25fff69bcb97a939ac9755138d1deb0f = $(`<div id="html_25fff69bcb97a939ac9755138d1deb0f" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '자양동97-1 ~ 성동구-광진구', '구간 거리': '174m', '평균 속도': '61.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_c8cb12c1e6ef8b4ea93a2b5995800e1c.setContent(html_25fff69bcb97a939ac9755138d1deb0f);
+            
+        
+
+        poly_line_2e64d7c389c2c554cddbe48da2cf5db1.bindPopup(popup_c8cb12c1e6ef8b4ea93a2b5995800e1c)
+        ;
+
+        
+    
+    
+            poly_line_2e64d7c389c2c554cddbe48da2cf5db1.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '자양동97-1 ~ 성동구-광진구', '구간 거리': '174m', '평균 속도': '61.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ca1bf92d2920288b1ca1c7212960739d = L.polyline(
+                [[37.532935036747105, 127.06091557366844], [37.53249119784221, 127.06227247704841], [37.53197675700001, 127.0639048821844]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_981e68ae8412ca5d5411d853ae97ed65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7949157e2eb01d423d1cdb3148783562 = $(`<div id="html_7949157e2eb01d423d1cdb3148783562" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '청담대교 ~ 자양동97-1', '구간 거리': '285m', '평균 속도': '64.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_981e68ae8412ca5d5411d853ae97ed65.setContent(html_7949157e2eb01d423d1cdb3148783562);
+            
+        
+
+        poly_line_ca1bf92d2920288b1ca1c7212960739d.bindPopup(popup_981e68ae8412ca5d5411d853ae97ed65)
+        ;
+
+        
+    
+    
+            poly_line_ca1bf92d2920288b1ca1c7212960739d.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '청담대교 ~ 자양동97-1', '구간 거리': '285m', '평균 속도': '64.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4dc689f576508b0fc44d8b77aa4a7c72 = L.polyline(
+                [[37.532775422974616, 127.06221803438103], [37.533704289090025, 127.05919457800987]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_cf7d78556027a0b33999fb6af2d59f1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e8664870c021e181d14f05cb7291472 = $(`<div id="html_4e8664870c021e181d14f05cb7291472" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '성동구-광진구 ~ 영동대교북측', '구간 거리': '286m', '평균 속도': '75.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_cf7d78556027a0b33999fb6af2d59f1c.setContent(html_4e8664870c021e181d14f05cb7291472);
+            
+        
+
+        poly_line_4dc689f576508b0fc44d8b77aa4a7c72.bindPopup(popup_cf7d78556027a0b33999fb6af2d59f1c)
+        ;
+
+        
+    
+    
+            poly_line_4dc689f576508b0fc44d8b77aa4a7c72.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '성동구-광진구 ~ 영동대교북측', '구간 거리': '286m', '평균 속도': '75.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bfcb4a5a73ead416ecf5a0d8a534454f = L.polyline(
+                [[37.53235123228653, 127.06392925379363], [37.532775422974616, 127.06221803438103]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_0bd9530e62af420422a9c2ed750077ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b336dbaa4a55a32366b824a8fbad7df = $(`<div id="html_8b336dbaa4a55a32366b824a8fbad7df" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '영동대교북측 ~ 한강우성아파트앞', '구간 거리': '158m', '평균 속도': '50.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_0bd9530e62af420422a9c2ed750077ee.setContent(html_8b336dbaa4a55a32366b824a8fbad7df);
+            
+        
+
+        poly_line_bfcb4a5a73ead416ecf5a0d8a534454f.bindPopup(popup_0bd9530e62af420422a9c2ed750077ee)
+        ;
+
+        
+    
+    
+            poly_line_bfcb4a5a73ead416ecf5a0d8a534454f.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '영동대교북측 ~ 한강우성아파트앞', '구간 거리': '158m', '평균 속도': '50.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_90e8971e9fae3f00cf2d2bc15aa49b07 = L.polyline(
+                [[37.535971815345036, 127.08372620596805], [37.53342947751974, 127.08473531891163], [37.533197240765844, 127.08483223411211], [37.53294668079949, 127.08497851324744], [37.53276986399535, 127.08510598891714], [37.53245613222396, 127.08534772861333]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_e9bd3aa141ceb5734069a69e502ed5fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1892fca554f0668e698bd36b0e892656 = $(`<div id="html_1892fca554f0668e698bd36b0e892656" style="width: 100.0%; height: 100.0%;">{'도로명': '자양로', '구간명': '잠실대교북단앞교차로 ~ 자양동216-13', '구간 거리': '417m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_e9bd3aa141ceb5734069a69e502ed5fa.setContent(html_1892fca554f0668e698bd36b0e892656);
+            
+        
+
+        poly_line_90e8971e9fae3f00cf2d2bc15aa49b07.bindPopup(popup_e9bd3aa141ceb5734069a69e502ed5fa)
+        ;
+
+        
+    
+    
+            poly_line_90e8971e9fae3f00cf2d2bc15aa49b07.bindTooltip(
+                `<div>
+                     {'도로명': '자양로', '구간명': '잠실대교북단앞교차로 ~ 자양동216-13', '구간 거리': '417m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1c2885de380bd8fc922678f33896e247 = L.polyline(
+                [[37.532512679148354, 127.08546344678427], [37.532825066112395, 127.08522274334656], [37.53299648053622, 127.08509916276716], [37.5332372111069, 127.08495862368318], [37.53346282091754, 127.08486447324682], [37.53600440187208, 127.08385566548826]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_f053c6216aeb56de85eda63ba98f3e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb25815d4d55a9f3fe317af318be1b43 = $(`<div id="html_cb25815d4d55a9f3fe317af318be1b43" style="width: 100.0%; height: 100.0%;">{'도로명': '자양로', '구간명': '자양동216-13 ~ 잠실대교북단앞교차로', '구간 거리': '414m', '평균 속도': '35.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f053c6216aeb56de85eda63ba98f3e88.setContent(html_cb25815d4d55a9f3fe317af318be1b43);
+            
+        
+
+        poly_line_1c2885de380bd8fc922678f33896e247.bindPopup(popup_f053c6216aeb56de85eda63ba98f3e88)
+        ;
+
+        
+    
+    
+            poly_line_1c2885de380bd8fc922678f33896e247.bindTooltip(
+                `<div>
+                     {'도로명': '자양로', '구간명': '자양동216-13 ~ 잠실대교북단앞교차로', '구간 거리': '414m', '평균 속도': '35.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9b464e32bfa6adf38a609ba66bf4aef4 = L.polyline(
+                [[37.533218629874, 127.07562908784817], [37.53303564663358, 127.0755599253402], [37.53160391644419, 127.07514191284329], [37.53052880966265, 127.0748264789088], [37.52975156156188, 127.07460607446755], [37.52965485692452, 127.07464482509214], [37.52943493534227, 127.0752648179516], [37.52918762694542, 127.07594557631516]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_46a3d7288079f5f2e8cc304089d7d301 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_311763735f38ec9121069543c910b7cd = $(`<div id="html_311763735f38ec9121069543c910b7cd" style="width: 100.0%; height: 100.0%;">{'도로명': '자양번영로', '구간명': '광진하나플러스 ~ 신자초교입구교차로', '구간 거리': '533m', '평균 속도': '13.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_46a3d7288079f5f2e8cc304089d7d301.setContent(html_311763735f38ec9121069543c910b7cd);
+            
+        
+
+        poly_line_9b464e32bfa6adf38a609ba66bf4aef4.bindPopup(popup_46a3d7288079f5f2e8cc304089d7d301)
+        ;
+
+        
+    
+    
+            poly_line_9b464e32bfa6adf38a609ba66bf4aef4.bindTooltip(
+                `<div>
+                     {'도로명': '자양번영로', '구간명': '광진하나플러스 ~ 신자초교입구교차로', '구간 거리': '533m', '평균 속도': '13.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_51411f32dfffea18f058788a25505b3a = L.polyline(
+                [[37.529285996275675, 127.07600192051521], [37.52953350446718, 127.07532060955056], [37.52973390285244, 127.0747556568549], [37.529756422786434, 127.07474663309478], [37.53050460054411, 127.07495879626639], [37.53157937366719, 127.0752741332326], [37.53300779373404, 127.07569118195714], [37.53318746562167, 127.07575909347959]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_b6e3095f1cac820600f82ad2a1e7321b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a0771767cd51a895a71ebc1ec2171ce = $(`<div id="html_9a0771767cd51a895a71ebc1ec2171ce" style="width: 100.0%; height: 100.0%;">{'도로명': '자양번영로', '구간명': '신자초교입구교차로 ~ 광진하나플러스', '구간 거리': '515m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_b6e3095f1cac820600f82ad2a1e7321b.setContent(html_9a0771767cd51a895a71ebc1ec2171ce);
+            
+        
+
+        poly_line_51411f32dfffea18f058788a25505b3a.bindPopup(popup_b6e3095f1cac820600f82ad2a1e7321b)
+        ;
+
+        
+    
+    
+            poly_line_51411f32dfffea18f058788a25505b3a.bindTooltip(
+                `<div>
+                     {'도로명': '자양번영로', '구간명': '신자초교입구교차로 ~ 광진하나플러스', '구간 거리': '515m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d2980c9a0f0e665ec3843b9166dd6c7d = L.polyline(
+                [[37.53315241685551, 127.07567029658873], [37.532724292575395, 127.07710673258651]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_659bed3f421887df0589423515503ef3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b927d5f7ae0aa77f1fa5900ace65339a = $(`<div id="html_b927d5f7ae0aa77f1fa5900ace65339a" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '자양유아원 ~ 신자초교입구교차로', '구간 거리': '136m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_659bed3f421887df0589423515503ef3.setContent(html_b927d5f7ae0aa77f1fa5900ace65339a);
+            
+        
+
+        poly_line_d2980c9a0f0e665ec3843b9166dd6c7d.bindPopup(popup_659bed3f421887df0589423515503ef3)
+        ;
+
+        
+    
+    
+            poly_line_d2980c9a0f0e665ec3843b9166dd6c7d.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '자양유아원 ~ 신자초교입구교차로', '구간 거리': '136m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d8b3eef209bcaaa933df436e6900324 = L.polyline(
+                [[37.53272436210457, 127.07710649959178], [37.531967475843466, 127.07961781949487]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_f759e331213439a8430327065dcef53b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_561af465ca8dd54c20bec0979609b568 = $(`<div id="html_561af465ca8dd54c20bec0979609b568" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '국민은행자양동지점 ~ 자양유아원', '구간 거리': '237m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f759e331213439a8430327065dcef53b.setContent(html_561af465ca8dd54c20bec0979609b568);
+            
+        
+
+        poly_line_0d8b3eef209bcaaa933df436e6900324.bindPopup(popup_f759e331213439a8430327065dcef53b)
+        ;
+
+        
+    
+    
+            poly_line_0d8b3eef209bcaaa933df436e6900324.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '국민은행자양동지점 ~ 자양유아원', '구간 거리': '237m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4d0d41f40033a531469445a63b040908 = L.polyline(
+                [[37.531967508353475, 127.07961770978574], [37.531663223004635, 127.08062201461352], [37.53148812995084, 127.0812749056312], [37.5314428376277, 127.0815113853242], [37.5314173120729, 127.08176842972301], [37.531401572765866, 127.08205381642748], [37.53141095958738, 127.08244682391992], [37.5314301228121, 127.08274851471887], [37.53146132063973, 127.08297742548984], [37.53151763276945, 127.08323923522104], [37.53160292591357, 127.08354436624408], [37.531741895817696, 127.08391360971575], [37.531956271249676, 127.08440254871546], [37.53243769966865, 127.08543976957746]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_f4548d10e679843a45d1fdc0aab73daf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6542d0c0f98778d6d21cba0cf3ff430b = $(`<div id="html_6542d0c0f98778d6d21cba0cf3ff430b" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '잠실대교북단앞교차로 ~ 국민은행자양동지점', '구간 거리': '552m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_f4548d10e679843a45d1fdc0aab73daf.setContent(html_6542d0c0f98778d6d21cba0cf3ff430b);
+            
+        
+
+        poly_line_4d0d41f40033a531469445a63b040908.bindPopup(popup_f4548d10e679843a45d1fdc0aab73daf)
+        ;
+
+        
+    
+    
+            poly_line_4d0d41f40033a531469445a63b040908.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '잠실대교북단앞교차로 ~ 국민은행자양동지점', '구간 거리': '552m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_51a4085d7f3492a5d4155436ea03906d = L.polyline(
+                [[37.53282555291695, 127.07715432133185], [37.53325367776963, 127.07571788479736]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_927ce54b28f0000d6b099b787a26670c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b87fc368b26d9c1d6e62e7407e9d274f = $(`<div id="html_b87fc368b26d9c1d6e62e7407e9d274f" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '신자초교입구교차로 ~ 자양유아원', '구간 거리': '136m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_927ce54b28f0000d6b099b787a26670c.setContent(html_b87fc368b26d9c1d6e62e7407e9d274f);
+            
+        
+
+        poly_line_51a4085d7f3492a5d4155436ea03906d.bindPopup(popup_927ce54b28f0000d6b099b787a26670c)
+        ;
+
+        
+    
+    
+            poly_line_51a4085d7f3492a5d4155436ea03906d.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '신자초교입구교차로 ~ 자양유아원', '구간 거리': '136m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2089bfa9bf15995964009c5e4d097cc1 = L.polyline(
+                [[37.53206859521415, 127.07966587599886], [37.532825483388365, 127.07715455319543]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_698787885c8c16c76f989e69bc3c4c49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_174285cc4d2186dd3bf7276fcb96f6e8 = $(`<div id="html_174285cc4d2186dd3bf7276fcb96f6e8" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '자양유아원 ~ 국민은행자양동지점', '구간 거리': '237m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_698787885c8c16c76f989e69bc3c4c49.setContent(html_174285cc4d2186dd3bf7276fcb96f6e8);
+            
+        
+
+        poly_line_2089bfa9bf15995964009c5e4d097cc1.bindPopup(popup_698787885c8c16c76f989e69bc3c4c49)
+        ;
+
+        
+    
+    
+            poly_line_2089bfa9bf15995964009c5e4d097cc1.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '자양유아원 ~ 국민은행자양동지점', '구간 거리': '237m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ec49419c79de59dd1f5314458dbe61e8 = L.polyline(
+                [[37.53253111172194, 127.08537140573384], [37.532050348429394, 127.08433561596014], [37.531838221584515, 127.08385180645243], [37.53170308255935, 127.08349274020856], [37.5316209717051, 127.08319899850989], [37.53156703129024, 127.08294821064041], [37.53153751414433, 127.0827316333684], [37.53151895065803, 127.08243938749152], [37.53150980547247, 127.08205647831997], [37.531524969027195, 127.0817815286108], [37.53154937681119, 127.08153573299455], [37.53159212913832, 127.08131251783118], [37.531765021052216, 127.08066783401614], [37.53206856270409, 127.07966598570815]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_45d83ae9d969ec418793e38b1ca91f8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13b7f6377561019b9d9207c55495ce1f = $(`<div id="html_13b7f6377561019b9d9207c55495ce1f" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '국민은행자양동지점 ~ 잠실대교북단앞교차로', '구간 거리': '541m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_45d83ae9d969ec418793e38b1ca91f8d.setContent(html_13b7f6377561019b9d9207c55495ce1f);
+            
+        
+
+        poly_line_ec49419c79de59dd1f5314458dbe61e8.bindPopup(popup_45d83ae9d969ec418793e38b1ca91f8d)
+        ;
+
+        
+    
+    
+            poly_line_ec49419c79de59dd1f5314458dbe61e8.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '국민은행자양동지점 ~ 잠실대교북단앞교차로', '구간 거리': '541m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b5698aaa5d4cd76b11099f2f894b7904 = L.polyline(
+                [[37.532546448191056, 127.0670875951955], [37.531843394156404, 127.066739726741]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_37bc1f73c65d78b31493e1daf6dec3f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6655062e807995bb1660da8f174aa1a6 = $(`<div id="html_6655062e807995bb1660da8f174aa1a6" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '태진운수주식회사 ~ 한강현대아파트', '구간 거리': '84m', '평균 속도': '15.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_37bc1f73c65d78b31493e1daf6dec3f1.setContent(html_6655062e807995bb1660da8f174aa1a6);
+            
+        
+
+        poly_line_b5698aaa5d4cd76b11099f2f894b7904.bindPopup(popup_37bc1f73c65d78b31493e1daf6dec3f1)
+        ;
+
+        
+    
+    
+            poly_line_b5698aaa5d4cd76b11099f2f894b7904.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '태진운수주식회사 ~ 한강현대아파트', '구간 거리': '84m', '평균 속도': '15.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f3b3929189cb51818ec96aae83241ff0 = L.polyline(
+                [[37.53400755908784, 127.0677643802532], [37.53254422962899, 127.06708653309846]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_1625324582b8888d11f2f0a7edb219d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ff74d2bee636ccaa420a24adfed9913 = $(`<div id="html_9ff74d2bee636ccaa420a24adfed9913" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '한강현대아파트 ~ 자양동천주교회', '구간 거리': '173m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_1625324582b8888d11f2f0a7edb219d3.setContent(html_9ff74d2bee636ccaa420a24adfed9913);
+            
+        
+
+        poly_line_f3b3929189cb51818ec96aae83241ff0.bindPopup(popup_1625324582b8888d11f2f0a7edb219d3)
+        ;
+
+        
+    
+    
+            poly_line_f3b3929189cb51818ec96aae83241ff0.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '한강현대아파트 ~ 자양동천주교회', '구간 거리': '173m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_da25664cf0b812deae19621dcac426ec = L.polyline(
+                [[37.53176411889841, 127.06699235220086], [37.532467172196476, 127.06734022265613]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_6c689166fa394b53ffa47db43574ee7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f5b5b3819ddfd29d57b63fc35da10a8 = $(`<div id="html_5f5b5b3819ddfd29d57b63fc35da10a8" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '한강현대아파트 ~ 태진운수주식회사', '구간 거리': '84m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_6c689166fa394b53ffa47db43574ee7d.setContent(html_5f5b5b3819ddfd29d57b63fc35da10a8);
+            
+        
+
+        poly_line_da25664cf0b812deae19621dcac426ec.bindPopup(popup_6c689166fa394b53ffa47db43574ee7d)
+        ;
+
+        
+    
+    
+            poly_line_da25664cf0b812deae19621dcac426ec.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '한강현대아파트 ~ 태진운수주식회사', '구간 거리': '84m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5b9f66bd9a0e27acb5229a626db7c729 = L.polyline(
+                [[37.5324693907557, 127.06734128589098], [37.533932718766714, 127.06801913734135]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_5e96e6ae523a77211ffd86ceb64b33aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94b89b1d4867a130e853acffb9030df5 = $(`<div id="html_94b89b1d4867a130e853acffb9030df5" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '자양동천주교회 ~ 한강현대아파트', '구간 거리': '173m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_5e96e6ae523a77211ffd86ceb64b33aa.setContent(html_94b89b1d4867a130e853acffb9030df5);
+            
+        
+
+        poly_line_5b9f66bd9a0e27acb5229a626db7c729.bindPopup(popup_5e96e6ae523a77211ffd86ceb64b33aa)
+        ;
+
+        
+    
+    
+            poly_line_5b9f66bd9a0e27acb5229a626db7c729.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '자양동천주교회 ~ 한강현대아파트', '구간 거리': '173m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_26ec33e0d2fd85ef33b79296c406ee36 = L.polyline(
+                [[37.53405033522729, 127.09005613892849], [37.53382971174927, 127.08933839108839], [37.53352726448955, 127.08825787637485], [37.53330575521046, 127.087543741308], [37.53253374879481, 127.08537785425108]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_6cb4e71fb7d150cf6193090bb92877fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed48a4b5fd918075a4ce3379e366e6fc = $(`<div id="html_ed48a4b5fd918075a4ce3379e366e6fc" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '잠실대교북단앞교차로 ~ KT생활관', '구간 거리': '447m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_6cb4e71fb7d150cf6193090bb92877fe.setContent(html_ed48a4b5fd918075a4ce3379e366e6fc);
+            
+        
+
+        poly_line_26ec33e0d2fd85ef33b79296c406ee36.bindPopup(popup_6cb4e71fb7d150cf6193090bb92877fe)
+        ;
+
+        
+    
+    
+            poly_line_26ec33e0d2fd85ef33b79296c406ee36.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '잠실대교북단앞교차로 ~ KT생활관', '구간 거리': '447m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_792859c3d9a290b696c1d7481d2f2fc5 = L.polyline(
+                [[37.53243506259909, 127.08543332106638], [37.53320597737122, 127.08759614300104], [37.53342586124737, 127.08830503697028], [37.533728254168814, 127.08938535687504], [37.53394946785569, 127.0901050279844]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_48c411c4a2a217a330776641dfb5c20e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d7ce9fbf08a30064459a2a120a1bf9c = $(`<div id="html_1d7ce9fbf08a30064459a2a120a1bf9c" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': 'KT생활관 ~ 잠실대교북단앞교차로', '구간 거리': '446m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_48c411c4a2a217a330776641dfb5c20e.setContent(html_1d7ce9fbf08a30064459a2a120a1bf9c);
+            
+        
+
+        poly_line_792859c3d9a290b696c1d7481d2f2fc5.bindPopup(popup_48c411c4a2a217a330776641dfb5c20e)
+        ;
+
+        
+    
+    
+            poly_line_792859c3d9a290b696c1d7481d2f2fc5.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': 'KT생활관 ~ 잠실대교북단앞교차로', '구간 거리': '446m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_503bd6a54ed14ea244c14ac1c630e795 = L.polyline(
+                [[37.530072118772885, 127.09097310711155], [37.52975014554339, 127.09055983403006], [37.529635280166886, 127.09040973336616], [37.5295446790163, 127.09026964875423], [37.52941954565306, 127.09002477896118], [37.52858891208105, 127.08833089642877], [37.52837553232675, 127.08784659648182], [37.52830704918608, 127.08769116514848], [37.52816612726823, 127.08735787028212], [37.52806366456534, 127.08707835110121], [37.527956622739026, 127.08676023360367], [37.52786702000722, 127.08644311912128]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_dc2f2a270be9d0ec7698f8b576ca6b1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bacf7ebcf370abaa546612a7ef6d398a = $(`<div id="html_bacf7ebcf370abaa546612a7ef6d398a" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '472m', '평균 속도': '19.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_dc2f2a270be9d0ec7698f8b576ca6b1c.setContent(html_bacf7ebcf370abaa546612a7ef6d398a);
+            
+        
+
+        poly_line_503bd6a54ed14ea244c14ac1c630e795.bindPopup(popup_dc2f2a270be9d0ec7698f8b576ca6b1c)
+        ;
+
+        
+    
+    
+            poly_line_503bd6a54ed14ea244c14ac1c630e795.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '472m', '평균 속도': '19.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7a68b2ae4a890a24ee2b80cdfc2c9dad = L.polyline(
+                [[37.53325376355038, 127.07571759524622], [37.534398611757304, 127.07182219271074], [37.53535320496697, 127.06852083731923]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_e4d862a6de40a17d84a9a40a232fce2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c573f86a4b5e00dfaebed5246e65881 = $(`<div id="html_4c573f86a4b5e00dfaebed5246e65881" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '신양초교앞교차로 ~ 신자초교입구교차로', '구간 거리': '677m', '평균 속도': '14.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e4d862a6de40a17d84a9a40a232fce2b.setContent(html_4c573f86a4b5e00dfaebed5246e65881);
+            
+        
+
+        poly_line_7a68b2ae4a890a24ee2b80cdfc2c9dad.bindPopup(popup_e4d862a6de40a17d84a9a40a232fce2b)
+        ;
+
+        
+    
+    
+            poly_line_7a68b2ae4a890a24ee2b80cdfc2c9dad.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '신양초교앞교차로 ~ 신자초교입구교차로', '구간 거리': '677m', '평균 속도': '14.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aa236dac9ebdecb9a67682bbb22b798c = L.polyline(
+                [[37.53197675700001, 127.0639048821844], [37.53190054716947, 127.06414670114887], [37.53180978374861, 127.06446967316572], [37.53175077499835, 127.06471912003262], [37.531723809946854, 127.06487820423963], [37.53170149581609, 127.06518406671607], [37.53169061055886, 127.06551995210121], [37.53167330037154, 127.06572291904432], [37.53163851960288, 127.0659578374756], [37.531586270350125, 127.06622384055649], [37.53123989416769, 127.06750770885002], [37.53089220927992, 127.06880084688825], [37.53064506962742, 127.06973402007645], [37.53033332380035, 127.07085616971462], [37.53010633962734, 127.07170906105779]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_405069605fd1e74463b362e848842d71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_306bb142a697946b61b99bcd573fd8e5 = $(`<div id="html_306bb142a697946b61b99bcd573fd8e5" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '갈보리교회 ~ 청담대교', '구간 거리': '723m', '평균 속도': '17.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_405069605fd1e74463b362e848842d71.setContent(html_306bb142a697946b61b99bcd573fd8e5);
+            
+        
+
+        poly_line_aa236dac9ebdecb9a67682bbb22b798c.bindPopup(popup_405069605fd1e74463b362e848842d71)
+        ;
+
+        
+    
+    
+            poly_line_aa236dac9ebdecb9a67682bbb22b798c.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '갈보리교회 ~ 청담대교', '구간 거리': '723m', '평균 속도': '17.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d036c47aece8c9d777b1205636f6fc49 = L.polyline(
+                [[37.53033016901634, 127.08692626427124], [37.52863468282601, 127.08823584983622]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_4981ee4b98d3e4c569107d5bd981e554 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f5ed1421fdd82901c1342a89626d8df = $(`<div id="html_5f5ed1421fdd82901c1342a89626d8df" style="width: 100.0%; height: 100.0%;">{'도로명': '자양로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '221m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_4981ee4b98d3e4c569107d5bd981e554.setContent(html_5f5ed1421fdd82901c1342a89626d8df);
+            
+        
+
+        poly_line_d036c47aece8c9d777b1205636f6fc49.bindPopup(popup_4981ee4b98d3e4c569107d5bd981e554)
+        ;
+
+        
+    
+    
+            poly_line_d036c47aece8c9d777b1205636f6fc49.bindTooltip(
+                `<div>
+                     {'도로명': '자양로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '221m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fbe9323bee1f349e10968f5d704f659f = L.polyline(
+                [[37.532546448191056, 127.0670875951955], [37.531843394156404, 127.066739726741]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_011a896a481e7f14c72e4195649013cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e3a9080b4b95d4f0e7fa8443af2a245 = $(`<div id="html_0e3a9080b4b95d4f0e7fa8443af2a245" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '태진운수주식회사 ~ 한강현대아파트', '구간 거리': '84m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_011a896a481e7f14c72e4195649013cc.setContent(html_0e3a9080b4b95d4f0e7fa8443af2a245);
+            
+        
+
+        poly_line_fbe9323bee1f349e10968f5d704f659f.bindPopup(popup_011a896a481e7f14c72e4195649013cc)
+        ;
+
+        
+    
+    
+            poly_line_fbe9323bee1f349e10968f5d704f659f.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '태진운수주식회사 ~ 한강현대아파트', '구간 거리': '84m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_dff8051c9d568c4ac49cb6f1985c3814 = L.polyline(
+                [[37.527431371279995, 127.08131277432625], [37.527338114861166, 127.08176827931389], [37.52725867101543, 127.0829066078896], [37.52724876425439, 127.08314022881804], [37.52736664758156, 127.08512488589143], [37.5273963533835, 127.0854346461255], [37.527443535206196, 127.08562752720879], [37.52762784167062, 127.08624997917282]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_f60191891335b8fead89b8f3ef0f38a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_366840edeb89d754b72cee496f8f4d0b = $(`<div id="html_366840edeb89d754b72cee496f8f4d0b" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 자양고가차도', '구간 거리': '443m', '평균 속도': '56.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f60191891335b8fead89b8f3ef0f38a4.setContent(html_366840edeb89d754b72cee496f8f4d0b);
+            
+        
+
+        poly_line_dff8051c9d568c4ac49cb6f1985c3814.bindPopup(popup_f60191891335b8fead89b8f3ef0f38a4)
+        ;
+
+        
+    
+    
+            poly_line_dff8051c9d568c4ac49cb6f1985c3814.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 자양고가차도', '구간 거리': '443m', '평균 속도': '56.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_20b96f5537a50bbb6000b18aeff716cc = L.polyline(
+                [[37.52513586966126, 127.06385186547574], [37.52950996552577, 127.0659058096508]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_3f8994b2bb4189357bdc9a36607c7c14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39dad4f9b7022a49906ab2adca9b8e27 = $(`<div id="html_39dad4f9b7022a49906ab2adca9b8e27" style="width: 100.0%; height: 100.0%;">{'도로명': '동부간선도로', '구간명': '청담대교북측 ~ 광진구-강남구', '구간 거리': '518m', '평균 속도': '41.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3f8994b2bb4189357bdc9a36607c7c14.setContent(html_39dad4f9b7022a49906ab2adca9b8e27);
+            
+        
+
+        poly_line_20b96f5537a50bbb6000b18aeff716cc.bindPopup(popup_3f8994b2bb4189357bdc9a36607c7c14)
+        ;
+
+        
+    
+    
+            poly_line_20b96f5537a50bbb6000b18aeff716cc.bindTooltip(
+                `<div>
+                     {'도로명': '동부간선도로', '구간명': '청담대교북측 ~ 광진구-강남구', '구간 거리': '518m', '평균 속도': '41.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0976f4138ae2158f7cafef7597551384 = L.polyline(
+                [[37.52965055958283, 127.06580403324182], [37.525182578692565, 127.06370470590753]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_6abd02320bd532c06f999c44d370c9fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5eaba9e9b62b6972251a99fce11b5ff1 = $(`<div id="html_5eaba9e9b62b6972251a99fce11b5ff1" style="width: 100.0%; height: 100.0%;">{'도로명': '동부간선도로', '구간명': '광진구-강남구 ~ 청담대교북측', '구간 거리': '529m', '평균 속도': '30.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_6abd02320bd532c06f999c44d370c9fc.setContent(html_5eaba9e9b62b6972251a99fce11b5ff1);
+            
+        
+
+        poly_line_0976f4138ae2158f7cafef7597551384.bindPopup(popup_6abd02320bd532c06f999c44d370c9fc)
+        ;
+
+        
+    
+    
+            poly_line_0976f4138ae2158f7cafef7597551384.bindTooltip(
+                `<div>
+                     {'도로명': '동부간선도로', '구간명': '광진구-강남구 ~ 청담대교북측', '구간 거리': '529m', '평균 속도': '30.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ce1e1e09ecf1c00ee1bddcf388ef5d4e = L.polyline(
+                [[37.52762784167062, 127.08624997917282], [37.52782726482046, 127.08692350122456], [37.52792138744625, 127.08724189297665], [37.52797554117816, 127.08739066214973], [37.52805060199088, 127.08754371538653], [37.52819425715435, 127.08777142593878]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_a7b305ff1def577ca355ea90ed00833a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_820d97195cca12655762c2b38aa7aba9 = $(`<div id="html_820d97195cca12655762c2b38aa7aba9" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '150m', '평균 속도': '53.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a7b305ff1def577ca355ea90ed00833a.setContent(html_820d97195cca12655762c2b38aa7aba9);
+            
+        
+
+        poly_line_ce1e1e09ecf1c00ee1bddcf388ef5d4e.bindPopup(popup_a7b305ff1def577ca355ea90ed00833a)
+        ;
+
+        
+    
+    
+            poly_line_ce1e1e09ecf1c00ee1bddcf388ef5d4e.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '150m', '평균 속도': '53.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c5ee66c7121aad8db8ea09de0d32fada = L.polyline(
+                [[37.52762784167062, 127.08624997917282], [37.527801309168595, 127.08700982893984], [37.527909893366925, 127.08737230800575], [37.52803017910593, 127.08767109273437], [37.52810539715712, 127.08786906221596], [37.528141612912854, 127.08799612824032], [37.52816590462846, 127.08812325955255], [37.52816925110001, 127.08822804757115], [37.5281487237361, 127.08832547988305], [37.52810732900934, 127.0884230277935], [37.527964958220714, 127.08862967936048], [37.52784323279739, 127.08877258460168], [37.52750914108966, 127.08910441400835]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_4dc52224f1cc618e56895f0c8e24817a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_208e6abe3efa0f1615f8696ec47e66c6 = $(`<div id="html_208e6abe3efa0f1615f8696ec47e66c6" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '자양동571 ~ 잠실대교북측', '구간 거리': '294m', '평균 속도': '42.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_4dc52224f1cc618e56895f0c8e24817a.setContent(html_208e6abe3efa0f1615f8696ec47e66c6);
+            
+        
+
+        poly_line_c5ee66c7121aad8db8ea09de0d32fada.bindPopup(popup_4dc52224f1cc618e56895f0c8e24817a)
+        ;
+
+        
+    
+    
+            poly_line_c5ee66c7121aad8db8ea09de0d32fada.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '자양동571 ~ 잠실대교북측', '구간 거리': '294m', '평균 속도': '42.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_555c165d6e9f97a8e6857554023ebf4a = L.polyline(
+                [[37.52852275907172, 127.08667907744298], [37.52837229680162, 127.08661702443736], [37.52825759057385, 127.08655028180638], [37.528117608170696, 127.08641630298919], [37.528042109783144, 127.08630891932886], [37.527959236500166, 127.08613869174317], [37.52790130799208, 127.08594137775623], [37.52780617356245, 127.08533552607551], [37.527731946605385, 127.08457235184497], [37.5276914271867, 127.0842401919618], [37.52763678941837, 127.08396201192947], [37.52756806447386, 127.08356840577697]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_c0b8b3d87fd1e2627ce50bae4e16ec7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f42867c0b779c1779b154eb433f2ada9 = $(`<div id="html_f42867c0b779c1779b154eb433f2ada9" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '낙천정지하차도 ~ 잠실대교북측', '구간 거리': '313m', '평균 속도': '46.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c0b8b3d87fd1e2627ce50bae4e16ec7a.setContent(html_f42867c0b779c1779b154eb433f2ada9);
+            
+        
+
+        poly_line_555c165d6e9f97a8e6857554023ebf4a.bindPopup(popup_c0b8b3d87fd1e2627ce50bae4e16ec7a)
+        ;
+
+        
+    
+    
+            poly_line_555c165d6e9f97a8e6857554023ebf4a.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '낙천정지하차도 ~ 잠실대교북측', '구간 거리': '313m', '평균 속도': '46.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_29f7cb196364a994f47da90cd29216b5 = L.polyline(
+                [[37.528372813128776, 127.08843811626417], [37.5278045327978, 127.08887704740177], [37.52750914108966, 127.08910441400835]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_98eaf5859c599555b0fb08d9931e7ae6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b72009aa9be09af7779d5cb790f9121a = $(`<div id="html_b72009aa9be09af7779d5cb790f9121a" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '자양동571 ~ 잠실대교북측', '구간 거리': '113m', '평균 속도': '57.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_98eaf5859c599555b0fb08d9931e7ae6.setContent(html_b72009aa9be09af7779d5cb790f9121a);
+            
+        
+
+        poly_line_29f7cb196364a994f47da90cd29216b5.bindPopup(popup_98eaf5859c599555b0fb08d9931e7ae6)
+        ;
+
+        
+    
+    
+            poly_line_29f7cb196364a994f47da90cd29216b5.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '자양동571 ~ 잠실대교북측', '구간 거리': '113m', '평균 속도': '57.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_596b33343d3440c9ca3882eb7258bbfd = L.polyline(
+                [[37.527596588643966, 127.08919640094992], [37.52786113306383, 127.08899277920561], [37.52842888736292, 127.08855421001775]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_8b5c21e54fd8f432ca58093c30244bac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_520f71de685724ffef2a269c8a0ce3cd = $(`<div id="html_520f71de685724ffef2a269c8a0ce3cd" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '108m', '평균 속도': '62.3km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_8b5c21e54fd8f432ca58093c30244bac.setContent(html_520f71de685724ffef2a269c8a0ce3cd);
+            
+        
+
+        poly_line_596b33343d3440c9ca3882eb7258bbfd.bindPopup(popup_8b5c21e54fd8f432ca58093c30244bac)
+        ;
+
+        
+    
+    
+            poly_line_596b33343d3440c9ca3882eb7258bbfd.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '108m', '평균 속도': '62.3km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_001902f75daee3d1abc3bdf9d3697ef7 = L.polyline(
+                [[37.52852275907172, 127.08667907744298], [37.5283082685418, 127.08672068707389], [37.52823324187029, 127.08674805061356], [37.5281511861705, 127.086811387612], [37.528083533899824, 127.08690159531182], [37.52803033183168, 127.0870321477546], [37.527995172427275, 127.08720751781937], [37.528027900300955, 127.08736005430927], [37.52819425715435, 127.08777142593878]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_fe7ed2b93bde64616259df0cb87fbfdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61aeaca41632109f9c4c0680a34c9ee2 = $(`<div id="html_61aeaca41632109f9c4c0680a34c9ee2" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '138m', '평균 속도': '38.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fe7ed2b93bde64616259df0cb87fbfdb.setContent(html_61aeaca41632109f9c4c0680a34c9ee2);
+            
+        
+
+        poly_line_001902f75daee3d1abc3bdf9d3697ef7.bindPopup(popup_fe7ed2b93bde64616259df0cb87fbfdb)
+        ;
+
+        
+    
+    
+            poly_line_001902f75daee3d1abc3bdf9d3697ef7.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '138m', '평균 속도': '38.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_03c51437da84e43a4fbae0e396b4c1e6 = L.polyline(
+                [[37.52819425715435, 127.08777142593878], [37.52892297261392, 127.08928012071115]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_cc73f224849f672e282a4050a32cd472 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e504545aee4aa9e499448f386d308d4c = $(`<div id="html_e504545aee4aa9e499448f386d308d4c" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '156m', '평균 속도': '55.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_cc73f224849f672e282a4050a32cd472.setContent(html_e504545aee4aa9e499448f386d308d4c);
+            
+        
+
+        poly_line_03c51437da84e43a4fbae0e396b4c1e6.bindPopup(popup_cc73f224849f672e282a4050a32cd472)
+        ;
+
+        
+    
+    
+            poly_line_03c51437da84e43a4fbae0e396b4c1e6.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '156m', '평균 속도': '55.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_95adc742363f527d27ba1833ea9195b1 = L.polyline(
+                [[37.527596588643966, 127.08919640094992], [37.52807351458477, 127.08898542565306], [37.52828325152866, 127.08894834115186], [37.52839772244196, 127.08894771230158], [37.52855055718265, 127.08900676349872], [37.52869402043264, 127.08911377779725], [37.52878020672093, 127.08920912928167], [37.52886176879948, 127.08934642863657], [37.52900100330108, 127.0896091817511], [37.52919164506534, 127.0899105828801]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_fb0318fd4946194bde5c5642c11a82bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6d9c4056601d1bb959f20252b01b4c5 = $(`<div id="html_c6d9c4056601d1bb959f20252b01b4c5" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '218m', '평균 속도': '41.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fb0318fd4946194bde5c5642c11a82bd.setContent(html_c6d9c4056601d1bb959f20252b01b4c5);
+            
+        
+
+        poly_line_95adc742363f527d27ba1833ea9195b1.bindPopup(popup_fb0318fd4946194bde5c5642c11a82bd)
+        ;
+
+        
+    
+    
+            poly_line_95adc742363f527d27ba1833ea9195b1.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '218m', '평균 속도': '41.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_206139504004cf988653b716ac909a53 = L.polyline(
+                [[37.5291888624606, 127.07594239738091], [37.5290621126633, 127.07624804146077], [37.5287556152006, 127.0770976750323], [37.5284516688153, 127.07798118749723], [37.528494874550674, 127.07806573234446], [37.52895599049897, 127.07825014840546], [37.52991398623654, 127.07872242438792], [37.530981710709106, 127.07920730742906], [37.53199839609194, 127.07970509298964]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_1b1c69cf3941cf6b598dbae1c1dc067d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19e7b116c9e17b627133f53a5eae4eab = $(`<div id="html_19e7b116c9e17b627133f53a5eae4eab" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로52길', '구간명': '국민은행자양동지점 ~ 광진하나플러스', '구간 거리': '622m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_1b1c69cf3941cf6b598dbae1c1dc067d.setContent(html_19e7b116c9e17b627133f53a5eae4eab);
+            
+        
+
+        poly_line_206139504004cf988653b716ac909a53.bindPopup(popup_1b1c69cf3941cf6b598dbae1c1dc067d)
+        ;
+
+        
+    
+    
+            poly_line_206139504004cf988653b716ac909a53.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로52길', '구간명': '국민은행자양동지점 ~ 광진하나플러스', '구간 거리': '622m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9bf24df2300cb7018fe6888ce04e810c = L.polyline(
+                [[37.53203767493713, 127.07957860243847], [37.53101974064644, 127.07908020947121], [37.52995213545481, 127.07859538129286], [37.52899219278414, 127.07812214755472], [37.528577946080276, 127.07795647613938], [37.52885449487891, 127.07715260451762], [37.52915937795038, 127.07630744397117], [37.52928476075963, 127.07600509832116]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_a79783fb415c18c1c9fce66486fc1a1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a6f9e6acba21db981d9218478647816 = $(`<div id="html_1a6f9e6acba21db981d9218478647816" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로52길', '구간명': '광진하나플러스 ~ 국민은행자양동지점', '구간 거리': '600m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a79783fb415c18c1c9fce66486fc1a1e.setContent(html_1a6f9e6acba21db981d9218478647816);
+            
+        
+
+        poly_line_9bf24df2300cb7018fe6888ce04e810c.bindPopup(popup_a79783fb415c18c1c9fce66486fc1a1e)
+        ;
+
+        
+    
+    
+            poly_line_9bf24df2300cb7018fe6888ce04e810c.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로52길', '구간명': '광진하나플러스 ~ 국민은행자양동지점', '구간 거리': '600m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_724ffb6f74d88dd9be591b584f35e0e4 = L.polyline(
+                [[37.52981775000312, 127.08822123036546], [37.5297815812142, 127.08810763689712], [37.529721533365816, 127.08798519213158], [37.52935410771598, 127.08725655051327], [37.529284697810084, 127.08718506413983], [37.52923210653844, 127.08714942011487], [37.52916764338025, 127.08712881362868], [37.529093694203524, 127.08712323271989], [37.52902220282087, 127.087138599065], [37.52896273937518, 127.08718384430334], [37.52890812995031, 127.08725301827238], [37.528863111423526, 127.08733711313853], [37.528842036017714, 127.08744802463706], [37.52883757976786, 127.08753788445752], [37.528852233409324, 127.08763662268365], [37.5288620763902, 127.08772340845374], [37.528852923621415, 127.08783425576003], [37.52882943073406, 127.08793619733575], [37.52878684949298, 127.08803525075344], [37.5287298961284, 127.0881164144059], [37.52863468282601, 127.08823584983622]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_4527572a66e7ef0b22ccf226b60dc580 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77efd9cee0ed8c2a5ba0bf4d15f25bf4 = $(`<div id="html_77efd9cee0ed8c2a5ba0bf4d15f25bf4" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '254m', '평균 속도': '29.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_4527572a66e7ef0b22ccf226b60dc580.setContent(html_77efd9cee0ed8c2a5ba0bf4d15f25bf4);
+            
+        
+
+        poly_line_724ffb6f74d88dd9be591b584f35e0e4.bindPopup(popup_4527572a66e7ef0b22ccf226b60dc580)
+        ;
+
+        
+    
+    
+            poly_line_724ffb6f74d88dd9be591b584f35e0e4.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '254m', '평균 속도': '29.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5620b7565282179298b7f7c890d21b15 = L.polyline(
+                [[37.530072118772885, 127.09097310711155], [37.52974778890376, 127.09039115558818], [37.52963347204528, 127.09009232835405], [37.529572811983485, 127.0897932065862], [37.52954209202108, 127.08953135466069], [37.52955919735932, 127.08930667135648], [37.52968327898631, 127.08898407857028], [37.52978131534688, 127.08871552993085]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_09181ed7832e48c47d74076732245082 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c29e7505e6256232ead00a50b419b842 = $(`<div id="html_c29e7505e6256232ead00a50b419b842" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '220m', '평균 속도': '44.7km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_09181ed7832e48c47d74076732245082.setContent(html_c29e7505e6256232ead00a50b419b842);
+            
+        
+
+        poly_line_5620b7565282179298b7f7c890d21b15.bindPopup(popup_09181ed7832e48c47d74076732245082)
+        ;
+
+        
+    
+    
+            poly_line_5620b7565282179298b7f7c890d21b15.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '220m', '평균 속도': '44.7km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_32e50db9823ca8c03d15c3df1b8df60f = L.polyline(
+                [[37.52981775000312, 127.08822123036546], [37.52980462036449, 127.08804649666084], [37.52976837781268, 127.08791194277856], [37.52972143530325, 127.08778643063727], [37.52946565070936, 127.0872712826603], [37.52935769128071, 127.08708771479398], [37.529278663371244, 127.08699382256958], [37.52919252735106, 127.08691344629334], [37.5290956603056, 127.08683312790525], [37.528955835374184, 127.08674406454952]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_09371d429b311aae37f62d81b58ef8a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d92e9c8de747e58c16436c37a2831da0 = $(`<div id="html_d92e9c8de747e58c16436c37a2831da0" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '168m', '평균 속도': '45.8km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_09371d429b311aae37f62d81b58ef8a4.setContent(html_d92e9c8de747e58c16436c37a2831da0);
+            
+        
+
+        poly_line_32e50db9823ca8c03d15c3df1b8df60f.bindPopup(popup_09371d429b311aae37f62d81b58ef8a4)
+        ;
+
+        
+    
+    
+            poly_line_32e50db9823ca8c03d15c3df1b8df60f.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '168m', '평균 속도': '45.8km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e558ee422a580a6b8a70e792e6417a22 = L.polyline(
+                [[37.53033016901634, 127.08692626427124], [37.53015847975038, 127.08693956204321], [37.53000100512844, 127.0869179707556], [37.52913118118807, 127.08676106454267], [37.528955835374184, 127.08674406454952]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_0258b66e4a99c17f0a21ee30135d6d6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bbb8d90fa94306074d9b0a48db5c0c5 = $(`<div id="html_1bbb8d90fa94306074d9b0a48db5c0c5" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '154m', '평균 속도': '40.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_0258b66e4a99c17f0a21ee30135d6d6b.setContent(html_1bbb8d90fa94306074d9b0a48db5c0c5);
+            
+        
+
+        poly_line_e558ee422a580a6b8a70e792e6417a22.bindPopup(popup_0258b66e4a99c17f0a21ee30135d6d6b)
+        ;
+
+        
+    
+    
+            poly_line_e558ee422a580a6b8a70e792e6417a22.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '154m', '평균 속도': '40.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e37234cc7fd07a8520443f6248573f35 = L.polyline(
+                [[37.52869575531271, 127.08834806136242], [37.528949568838335, 127.08819306379802], [37.52911866008865, 127.08812625502003], [37.52926400730334, 127.08808952178815], [37.529388005852724, 127.08808584594549], [37.529485929142254, 127.08812723015127], [37.529567294408594, 127.08820763532914], [37.52963919330495, 127.08830905440603], [37.52967292507979, 127.08840768851482], [37.52969482619825, 127.08853333767385], [37.52968575649952, 127.08866814128656], [37.5296504435222, 127.08880009557788], [37.529586459979406, 127.0889172324544], [37.52951277076347, 127.08898651090914], [37.529417556526894, 127.08903794050873], [37.5293341513553, 127.0890563659064], [37.52925305774978, 127.0890538156234], [37.52913602492762, 127.08900355153287], [37.52902121129525, 127.08890536240762], [37.52890611506514, 127.08872632373017], [37.52844657907757, 127.08774104231018], [37.52786702000722, 127.08644311912128]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_828b1b204405ae17071aeef70b06c064 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_184142b7bf4f427ff1d22bedd41abb0f = $(`<div id="html_184142b7bf4f427ff1d22bedd41abb0f" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '496m', '평균 속도': '40.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_828b1b204405ae17071aeef70b06c064.setContent(html_184142b7bf4f427ff1d22bedd41abb0f);
+            
+        
+
+        poly_line_e37234cc7fd07a8520443f6248573f35.bindPopup(popup_828b1b204405ae17071aeef70b06c064)
+        ;
+
+        
+    
+    
+            poly_line_e37234cc7fd07a8520443f6248573f35.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '496m', '평균 속도': '40.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bd2e25621a32d1becde5632c74198b7b = L.polyline(
+                [[37.52892297261392, 127.08928012071115], [37.529072832601, 127.08951932770668], [37.52914100162169, 127.08957734713557], [37.52925209810132, 127.08963513067867], [37.5293701761104, 127.08964346739492], [37.529473884108825, 127.0896339162815], [37.52957387369545, 127.08958395820035], [37.52966300725615, 127.08949812568227], [37.529716383670326, 127.08941698155982], [37.529758857391535, 127.0892864863635], [37.52992485930427, 127.08867468972527], [37.53009469594134, 127.08796666903251]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_3d73462a102cdedc61dc66422fbb3e0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d112aeffde7ce55ebdfb3909d40013e = $(`<div id="html_9d112aeffde7ce55ebdfb3909d40013e" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '243m', '평균 속도': '38.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3d73462a102cdedc61dc66422fbb3e0c.setContent(html_9d112aeffde7ce55ebdfb3909d40013e);
+            
+        
+
+        poly_line_bd2e25621a32d1becde5632c74198b7b.bindPopup(popup_3d73462a102cdedc61dc66422fbb3e0c)
+        ;
+
+        
+    
+    
+            poly_line_bd2e25621a32d1becde5632c74198b7b.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '243m', '평균 속도': '38.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1b329c813c17b8069ec70a07058e54c1 = L.polyline(
+                [[37.52950996552577, 127.0659058096508], [37.53014890619997, 127.06617805220841]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_205c7c26297895821a34bfdc2db08d41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4295f0261b0fd80256f8a159ba65fb2 = $(`<div id="html_f4295f0261b0fd80256f8a159ba65fb2" style="width: 100.0%; height: 100.0%;">{'도로명': '동부간선도로', '구간명': '청담대교 ~ 청담대교북측', '구간 거리': '75m', '평균 속도': '48.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_205c7c26297895821a34bfdc2db08d41.setContent(html_f4295f0261b0fd80256f8a159ba65fb2);
+            
+        
+
+        poly_line_1b329c813c17b8069ec70a07058e54c1.bindPopup(popup_205c7c26297895821a34bfdc2db08d41)
+        ;
+
+        
+    
+    
+            poly_line_1b329c813c17b8069ec70a07058e54c1.bindTooltip(
+                `<div>
+                     {'도로명': '동부간선도로', '구간명': '청담대교 ~ 청담대교북측', '구간 거리': '75m', '평균 속도': '48.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b6156d0ca0807866f26a32afa2202687 = L.polyline(
+                [[37.52978131534688, 127.08871552993085], [37.53009469594134, 127.08796666903251]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_1d960379df1ae55e988d1393e8d48b45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_def04ee8a14b42766e088cb0cd88b7e2 = $(`<div id="html_def04ee8a14b42766e088cb0cd88b7e2" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '75m', '평균 속도': '35.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_1d960379df1ae55e988d1393e8d48b45.setContent(html_def04ee8a14b42766e088cb0cd88b7e2);
+            
+        
+
+        poly_line_b6156d0ca0807866f26a32afa2202687.bindPopup(popup_1d960379df1ae55e988d1393e8d48b45)
+        ;
+
+        
+    
+    
+            poly_line_b6156d0ca0807866f26a32afa2202687.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '75m', '평균 속도': '35.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_26ef58ed9eedd006302700a356fbceb5 = L.polyline(
+                [[37.53009469594134, 127.08796666903251], [37.530190105125634, 127.08762925706218], [37.53027145498207, 127.08736379093294], [37.53038576961739, 127.0870427270706]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_80ba127b528e952b935729e05db73972 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ce638662b99b1bbf2e10ca4f0cff1f3 = $(`<div id="html_1ce638662b99b1bbf2e10ca4f0cff1f3" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '88m', '평균 속도': '25.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_80ba127b528e952b935729e05db73972.setContent(html_1ce638662b99b1bbf2e10ca4f0cff1f3);
+            
+        
+
+        poly_line_26ef58ed9eedd006302700a356fbceb5.bindPopup(popup_80ba127b528e952b935729e05db73972)
+        ;
+
+        
+    
+    
+            poly_line_26ef58ed9eedd006302700a356fbceb5.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '88m', '평균 속도': '25.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_08fabfb2f7499033ad7c0f510b071983 = L.polyline(
+                [[37.53156863357358, 127.06666367090786], [37.53140717109424, 127.06658447045669], [37.530756312406275, 127.06631498225596], [37.53056808384719, 127.06620003261439], [37.530457361356156, 127.06608463490306], [37.5303734944058, 127.06597656747222], [37.53027755252863, 127.06582739553048], [37.53018729686246, 127.06560332782219], [37.53012678246778, 127.06536037156042], [37.530105281465374, 127.06518830947616], [37.53009265459322, 127.06499748156791], [37.53011871148764, 127.06478771104919], [37.53016295657299, 127.0646601860693], [37.53023103692976, 127.06452877830824], [37.530323060550174, 127.06442343465508], [37.53044497707229, 127.06434037470038], [37.53059381929793, 127.06428336106596], [37.53074582187009, 127.06427499047884], [37.530891959956286, 127.06429285677451], [37.53098156894685, 127.0643409974126], [37.531050379744755, 127.06440797447914], [37.531101360466806, 127.06449002986702], [37.531146475681744, 127.0645983212159], [37.53117985983092, 127.06475908665864], [37.53118645614257, 127.06493123659718], [37.53115744587947, 127.065148512971], [37.53108666006951, 127.06535480110395], [37.53098589899192, 127.06551634545976], [37.5308166154868, 127.0656895151264], [37.530679889842006, 127.06579886099608], [37.530400925585184, 127.06590844673731]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_1eb6b150734ac57dfea1ca9d509a18a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acf06790c0a194b8d963e61bed1ca6c2 = $(`<div id="html_acf06790c0a194b8d963e61bed1ca6c2" style="width: 100.0%; height: 100.0%;">{'도로명': '동부간선도로', '구간명': '청담대교 ~ 청담대교북측', '구간 거리': '569m', '평균 속도': '19.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_1eb6b150734ac57dfea1ca9d509a18a5.setContent(html_acf06790c0a194b8d963e61bed1ca6c2);
+            
+        
+
+        poly_line_08fabfb2f7499033ad7c0f510b071983.bindPopup(popup_1eb6b150734ac57dfea1ca9d509a18a5)
+        ;
+
+        
+    
+    
+            poly_line_08fabfb2f7499033ad7c0f510b071983.bindTooltip(
+                `<div>
+                     {'도로명': '동부간선도로', '구간명': '청담대교 ~ 청담대교북측', '구간 거리': '569m', '평균 속도': '19.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_381d37a2d7bc86aafd32daf97a1ccbd9 = L.polyline(
+                [[37.53874180451417, 127.06999326656474], [37.5372071673034, 127.0692776775772], [37.53612827396882, 127.06878509311996], [37.53521477212801, 127.06838164463629], [37.533663385244374, 127.06765848621168], [37.53247033449996, 127.06711742502799], [37.53184508733985, 127.06680311249593], [37.53156863357358, 127.06666367090786]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_7edf9edde4524069d4db779053920da7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a31e76f5fcff4e8e3fce53a2ad1a3db = $(`<div id="html_6a31e76f5fcff4e8e3fce53a2ad1a3db" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '청담대교북측 ~ 청담대교', '구간 거리': '849m', '평균 속도': '46.7km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7edf9edde4524069d4db779053920da7.setContent(html_6a31e76f5fcff4e8e3fce53a2ad1a3db);
+            
+        
+
+        poly_line_381d37a2d7bc86aafd32daf97a1ccbd9.bindPopup(popup_7edf9edde4524069d4db779053920da7)
+        ;
+
+        
+    
+    
+            poly_line_381d37a2d7bc86aafd32daf97a1ccbd9.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '청담대교북측 ~ 청담대교', '구간 거리': '849m', '평균 속도': '46.7km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9179a5a75f1f48b6dc61ad0feefeb20e = L.polyline(
+                [[37.52950996552577, 127.0659058096508], [37.52993008564231, 127.06614223952843], [37.53011654446981, 127.06626243820709], [37.53027794696216, 127.06637829124783], [37.53040722021871, 127.06651229827149], [37.53048634725527, 127.06662862782272], [37.53056552332234, 127.06675843326065], [37.53064488028289, 127.0669376489558], [37.53068122858267, 127.06709465298596], [37.53071411422382, 127.06728312169469], [37.53072202607455, 127.06748970150572], [37.53071928743176, 127.06771880163038], [37.53065284947153, 127.06813692792387], [37.53046064721884, 127.06938227619275], [37.5301879846553, 127.0711311633638], [37.53010633962734, 127.07170906105779]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_46752ff1618e2393556b08521f641548 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05a7493c0a3f7727cfa186e825ef009c = $(`<div id="html_05a7493c0a3f7727cfa186e825ef009c" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '갈보리교회 ~ 청담대교북측', '구간 거리': '589m', '평균 속도': '59.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_46752ff1618e2393556b08521f641548.setContent(html_05a7493c0a3f7727cfa186e825ef009c);
+            
+        
+
+        poly_line_9179a5a75f1f48b6dc61ad0feefeb20e.bindPopup(popup_46752ff1618e2393556b08521f641548)
+        ;
+
+        
+    
+    
+            poly_line_9179a5a75f1f48b6dc61ad0feefeb20e.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '갈보리교회 ~ 청담대교북측', '구간 거리': '589m', '평균 속도': '59.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c191f08042278038d338c45a30b4fa92 = L.polyline(
+                [[37.53014890619997, 127.06617805220841], [37.53068211738983, 127.06640524880333], [37.5313539937747, 127.06671579212355], [37.53152802706182, 127.06680432651603]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_d086503b02abc3d6fdade3a7e125fd9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f96190afa249fa6ab4a3227cf30add9 = $(`<div id="html_9f96190afa249fa6ab4a3227cf30add9" style="width: 100.0%; height: 100.0%;">{'도로명': '동부간선도로', '구간명': '청담대교북측 ~ 청담대교', '구간 거리': '163m', '평균 속도': '33.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d086503b02abc3d6fdade3a7e125fd9e.setContent(html_9f96190afa249fa6ab4a3227cf30add9);
+            
+        
+
+        poly_line_c191f08042278038d338c45a30b4fa92.bindPopup(popup_d086503b02abc3d6fdade3a7e125fd9e)
+        ;
+
+        
+    
+    
+            poly_line_c191f08042278038d338c45a30b4fa92.bindTooltip(
+                `<div>
+                     {'도로명': '동부간선도로', '구간명': '청담대교북측 ~ 청담대교', '구간 거리': '163m', '평균 속도': '33.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aec532cdb8258f4666902e0e839da450 = L.polyline(
+                [[37.52922392631239, 127.07603967247717], [37.53027668664821, 127.07636409882211], [37.53224492997522, 127.07694704676247], [37.532755499476075, 127.07719387724535]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_15308fd801215f8e2d7951ca8b34593a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_607646adbce51ebaecf837e83f530a50 = $(`<div id="html_607646adbce51ebaecf837e83f530a50" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로46길', '구간명': '자양유아원 ~ 광진하나플러스', '구간 거리': '405m', '평균 속도': '6.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_15308fd801215f8e2d7951ca8b34593a.setContent(html_607646adbce51ebaecf837e83f530a50);
+            
+        
+
+        poly_line_aec532cdb8258f4666902e0e839da450.bindPopup(popup_15308fd801215f8e2d7951ca8b34593a)
+        ;
+
+        
+    
+    
+            poly_line_aec532cdb8258f4666902e0e839da450.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로46길', '구간명': '자양유아원 ~ 광진하나플러스', '구간 거리': '405m', '평균 속도': '6.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6710928f2ea8721326df4ad2619e9074 = L.polyline(
+                [[37.53279434598746, 127.07706717660787], [37.53227691095429, 127.07681702712853], [37.530301982841166, 127.07623210247031], [37.529249696879, 127.07590782429335]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_ce49fba1fcc3f740fe49c28d02501955 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46226c46620a5742667962df452fab73 = $(`<div id="html_46226c46620a5742667962df452fab73" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로46길', '구간명': '광진하나플러스 ~ 자양유아원', '구간 거리': '407m', '평균 속도': '8.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_ce49fba1fcc3f740fe49c28d02501955.setContent(html_46226c46620a5742667962df452fab73);
+            
+        
+
+        poly_line_6710928f2ea8721326df4ad2619e9074.bindPopup(popup_ce49fba1fcc3f740fe49c28d02501955)
+        ;
+
+        
+    
+    
+            poly_line_6710928f2ea8721326df4ad2619e9074.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로46길', '구간명': '광진하나플러스 ~ 자양유아원', '구간 거리': '407m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b3a6c572795d4118f6f1690d847779f1 = L.polyline(
+                [[37.532935036747105, 127.06091557366844], [37.53222473118417, 127.06357812084832], [37.53187894593235, 127.0648539404698], [37.53179363192026, 127.0650767295477], [37.53170346108723, 127.06531581812203], [37.53159397215144, 127.06547884964182], [37.53150676926689, 127.06560131678701], [37.53141721159096, 127.06570497707665], [37.531303589602786, 127.06581722455826], [37.53117800179731, 127.06591084113555], [37.53102960639002, 127.06598435784646], [37.530905755586424, 127.0660360753247], [37.53079626957341, 127.06606175346089], [37.530643277592226, 127.06608781173914], [37.53049217553421, 127.06609199115005], [37.530348095314665, 127.06607463236544], [37.53012639832964, 127.06601698568087], [37.52965055958283, 127.06580403324182]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_f0831c4ce379600f4d3b171d9a7c47fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5f7a3b19871b8bb3bcdb5adc9d2e741 = $(`<div id="html_a5f7a3b19871b8bb3bcdb5adc9d2e741" style="width: 100.0%; height: 100.0%;">{'도로명': '동부간선도로', '구간명': '청담대교북측 ~ 자양동97-1', '구간 거리': '667m', '평균 속도': '50.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f0831c4ce379600f4d3b171d9a7c47fb.setContent(html_a5f7a3b19871b8bb3bcdb5adc9d2e741);
+            
+        
+
+        poly_line_b3a6c572795d4118f6f1690d847779f1.bindPopup(popup_f0831c4ce379600f4d3b171d9a7c47fb)
+        ;
+
+        
+    
+    
+            poly_line_b3a6c572795d4118f6f1690d847779f1.bindTooltip(
+                `<div>
+                     {'도로명': '동부간선도로', '구간명': '청담대교북측 ~ 자양동97-1', '구간 거리': '667m', '평균 속도': '50.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7f95d50345e2a1f083784a4813f190b5 = L.polyline(
+                [[37.53175243729107, 127.06684469954354], [37.531317761799, 127.06849282894001]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_ccc6cd5e547595badadc0edeb616e81c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d117b89a5509cca2ac24dbf4fac8d11 = $(`<div id="html_2d117b89a5509cca2ac24dbf4fac8d11" style="width: 100.0%; height: 100.0%;">{'도로명': '자양강변길', '구간명': '광진트라팰리스 ~ 태진운수주식회사', '구간 거리': '153m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ccc6cd5e547595badadc0edeb616e81c.setContent(html_2d117b89a5509cca2ac24dbf4fac8d11);
+            
+        
+
+        poly_line_7f95d50345e2a1f083784a4813f190b5.bindPopup(popup_ccc6cd5e547595badadc0edeb616e81c)
+        ;
+
+        
+    
+    
+            poly_line_7f95d50345e2a1f083784a4813f190b5.bindTooltip(
+                `<div>
+                     {'도로명': '자양강변길', '구간명': '광진트라팰리스 ~ 태진운수주식회사', '구간 거리': '153m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6079267192fb7ce8027ed8436f30c3b4 = L.polyline(
+                [[37.531420398910875, 127.06853551209744], [37.53185507589463, 127.06688737956148]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_c2922efd2a892b8eba62ed634173e5b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af2729f02b7637e5e49cb098aba489b0 = $(`<div id="html_af2729f02b7637e5e49cb098aba489b0" style="width: 100.0%; height: 100.0%;">{'도로명': '자양강변길', '구간명': '태진운수주식회사 ~ 광진트라팰리스', '구간 거리': '153m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c2922efd2a892b8eba62ed634173e5b3.setContent(html_af2729f02b7637e5e49cb098aba489b0);
+            
+        
+
+        poly_line_6079267192fb7ce8027ed8436f30c3b4.bindPopup(popup_c2922efd2a892b8eba62ed634173e5b3)
+        ;
+
+        
+    
+    
+            poly_line_6079267192fb7ce8027ed8436f30c3b4.bindTooltip(
+                `<div>
+                     {'도로명': '자양강변길', '구간명': '태진운수주식회사 ~ 광진트라팰리스', '구간 거리': '153m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8695df5ce21abdb00758b9f150777e02 = L.polyline(
+                [[37.53014890619997, 127.06617805220841], [37.5303319154962, 127.06620912135321], [37.53048818722264, 127.06622794835866], [37.530651764742075, 127.06622342500552], [37.530813478376565, 127.06619588131278], [37.530932876734056, 127.0661678792534], [37.531066548100384, 127.06611206152574], [37.53122576130044, 127.06603318510034], [37.53136489778881, 127.0659294695479], [37.531487412253526, 127.06580843694147], [37.531583918509185, 127.06569673418852], [37.531675648046615, 127.0655679104062], [37.53179520237835, 127.0653898901095], [37.5318912483707, 127.06513522398167], [37.53197782299822, 127.06490914572356], [37.53237196018843, 127.06370012649818], [37.532775422974616, 127.06221803438103]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_cf25913cdc5c830526ed045a82f18dab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31593be706048c8c2b9f444f3b413819 = $(`<div id="html_31593be706048c8c2b9f444f3b413819" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '영동대교북측 ~ 청담대교', '구간 거리': '509m', '평균 속도': '62.8km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_cf25913cdc5c830526ed045a82f18dab.setContent(html_31593be706048c8c2b9f444f3b413819);
+            
+        
+
+        poly_line_8695df5ce21abdb00758b9f150777e02.bindPopup(popup_cf25913cdc5c830526ed045a82f18dab)
+        ;
+
+        
+    
+    
+            poly_line_8695df5ce21abdb00758b9f150777e02.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '영동대교북측 ~ 청담대교', '구간 거리': '509m', '평균 속도': '62.8km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_658e25974e2a7c1912c9c44965751d6a = L.polyline(
+                [[37.53221076813346, 127.06808802921381], [37.532140179973425, 127.06818352488715], [37.531658493638126, 127.06871112231963], [37.53164544221013, 127.06871185592185], [37.53160311089628, 127.06869409412998], [37.53140583853544, 127.06846439556298]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_3247bd8da6727ec3beb5df3c1cc22a31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78084240566f2b1f598f7edd967c6c72 = $(`<div id="html_78084240566f2b1f598f7edd967c6c72" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로34길', '구간명': '광진트라팰리스 ~ 이튼타워리버', '구간 거리': '119m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3247bd8da6727ec3beb5df3c1cc22a31.setContent(html_78084240566f2b1f598f7edd967c6c72);
+            
+        
+
+        poly_line_658e25974e2a7c1912c9c44965751d6a.bindPopup(popup_3247bd8da6727ec3beb5df3c1cc22a31)
+        ;
+
+        
+    
+    
+            poly_line_658e25974e2a7c1912c9c44965751d6a.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로34길', '구간명': '광진트라팰리스 ~ 이튼타워리버', '구간 거리': '119m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a3631b85be572178275418d42bfe7074 = L.polyline(
+                [[37.53133232305796, 127.06856394652851], [37.53154670984722, 127.06881357300067], [37.53163021763616, 127.0688486114233], [37.531701082792694, 127.06884463189934], [37.5322155472776, 127.0682811322239], [37.532290013750504, 127.06818038932708]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_60de05a5b5d5fdc200f65e8ff1993f10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d628a3f8b3ebd17050dc41fda365ea66 = $(`<div id="html_d628a3f8b3ebd17050dc41fda365ea66" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로34길', '구간명': '이튼타워리버 ~ 광진트라팰리스', '구간 거리': '138m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_60de05a5b5d5fdc200f65e8ff1993f10.setContent(html_d628a3f8b3ebd17050dc41fda365ea66);
+            
+        
+
+        poly_line_a3631b85be572178275418d42bfe7074.bindPopup(popup_60de05a5b5d5fdc200f65e8ff1993f10)
+        ;
+
+        
+    
+    
+            poly_line_a3631b85be572178275418d42bfe7074.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로34길', '구간명': '이튼타워리버 ~ 광진트라팰리스', '구간 거리': '138m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e704b90c222f6ecb0765a93abb646beb = L.polyline(
+                [[37.53131803719475, 127.06849181095997], [37.53117336753438, 127.0690125326556], [37.531244399836275, 127.06914334346584], [37.531983592564146, 127.0701370233888], [37.532067447815905, 127.07012794565435], [37.53212775831088, 127.07007753914034], [37.533153344446404, 127.0689475684617]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_d0b4e83710848a345851d2081d4dd26c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfb42da8aa9faad870b1b46a3c95eef2 = $(`<div id="html_dfb42da8aa9faad870b1b46a3c95eef2" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로4길', '구간명': '연수빌딩 ~ 광진트라팰리스', '구간 거리': '352m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d0b4e83710848a345851d2081d4dd26c.setContent(html_dfb42da8aa9faad870b1b46a3c95eef2);
+            
+        
+
+        poly_line_e704b90c222f6ecb0765a93abb646beb.bindPopup(popup_d0b4e83710848a345851d2081d4dd26c)
+        ;
+
+        
+    
+    
+            poly_line_e704b90c222f6ecb0765a93abb646beb.bindTooltip(
+                `<div>
+                     {'도로명': '능동로4길', '구간명': '연수빌딩 ~ 광진트라팰리스', '구간 거리': '352m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e3a70d4ffae8e83a72ac949619a93c16 = L.polyline(
+                [[37.53308203480096, 127.06884551657747], [37.53206185916707, 127.06996952686849], [37.53203058344516, 127.06999566758905], [37.5320267043863, 127.06999608823122], [37.53132906443743, 127.0690582668827], [37.531293413253415, 127.06899261238748], [37.531420123514806, 127.06853653007869]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_061d404028fa77f71fcc00a4feb52b58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_882c23a3757789ec062d72f302f91242 = $(`<div id="html_882c23a3757789ec062d72f302f91242" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로4길', '구간명': '광진트라팰리스 ~ 연수빌딩', '구간 거리': '318m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_061d404028fa77f71fcc00a4feb52b58.setContent(html_882c23a3757789ec062d72f302f91242);
+            
+        
+
+        poly_line_e3a70d4ffae8e83a72ac949619a93c16.bindPopup(popup_061d404028fa77f71fcc00a4feb52b58)
+        ;
+
+        
+    
+    
+            poly_line_e3a70d4ffae8e83a72ac949619a93c16.bindTooltip(
+                `<div>
+                     {'도로명': '능동로4길', '구간명': '광진트라팰리스 ~ 연수빌딩', '구간 거리': '318m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4b39e72fd6465141da0fd11665167165 = L.polyline(
+                [[37.532455783563805, 127.06719149174222], [37.53219936397609, 127.06811179144533]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_f6e84ce3b854c78fa492847eb44d7058 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12d920b3cd0f9bdb61dd102e3dd7cbe8 = $(`<div id="html_12d920b3cd0f9bdb61dd102e3dd7cbe8" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로34길', '구간명': '이튼타워리버 ~ 한강현대아파트', '구간 거리': '86m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f6e84ce3b854c78fa492847eb44d7058.setContent(html_12d920b3cd0f9bdb61dd102e3dd7cbe8);
+            
+        
+
+        poly_line_4b39e72fd6465141da0fd11665167165.bindPopup(popup_f6e84ce3b854c78fa492847eb44d7058)
+        ;
+
+        
+    
+    
+            poly_line_4b39e72fd6465141da0fd11665167165.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로34길', '구간명': '이튼타워리버 ~ 한강현대아파트', '구간 거리': '86m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e0f3cbf1f0cf2c3710786415574e5cbb = L.polyline(
+                [[37.53230141792146, 127.06815662707727], [37.53255783785526, 127.06723632627468]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_eae8072a0f0d80f3e6ac7dfeeb769271 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c08934a6f731c974a9a954c707e0b229 = $(`<div id="html_c08934a6f731c974a9a954c707e0b229" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로34길', '구간명': '한강현대아파트 ~ 이튼타워리버', '구간 거리': '86m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_eae8072a0f0d80f3e6ac7dfeeb769271.setContent(html_c08934a6f731c974a9a954c707e0b229);
+            
+        
+
+        poly_line_e0f3cbf1f0cf2c3710786415574e5cbb.bindPopup(popup_eae8072a0f0d80f3e6ac7dfeeb769271)
+        ;
+
+        
+    
+    
+            poly_line_e0f3cbf1f0cf2c3710786415574e5cbb.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로34길', '구간명': '한강현대아파트 ~ 이튼타워리버', '구간 거리': '86m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c5bdcad242ced81d734dd7c93e54a019 = L.polyline(
+                [[37.5322319106383, 127.06819800297319], [37.53271399269792, 127.06841820308375], [37.532818531800196, 127.06855412098093], [37.53297282897735, 127.06873880496735], [37.533072194272755, 127.06893320876114]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_a3bf4f1185d561cdc179737162f58eef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee3d385625163660f17660cc829bb0b6 = $(`<div id="html_ee3d385625163660f17660cc829bb0b6" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로34길', '구간명': '연수빌딩 ~ 이튼타워리버', '구간 거리': '118m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a3bf4f1185d561cdc179737162f58eef.setContent(html_ee3d385625163660f17660cc829bb0b6);
+            
+        
+
+        poly_line_c5bdcad242ced81d734dd7c93e54a019.bindPopup(popup_a3bf4f1185d561cdc179737162f58eef)
+        ;
+
+        
+    
+    
+            poly_line_c5bdcad242ced81d734dd7c93e54a019.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로34길', '구간명': '연수빌딩 ~ 이튼타워리버', '구간 거리': '118m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ad03cef57824bdbc996102959ca27d8e = L.polyline(
+                [[37.53316318498595, 127.06885987505355], [37.53305681504944, 127.06865176576848], [37.53289474929268, 127.06845778365701], [37.53277441750048, 127.06830133244792], [37.532268871229554, 127.0680704154873]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_ca3d8265aa12e9afd3497e02e1de1c13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad14e808b2cc0abdff0f3fed74754b80 = $(`<div id="html_ad14e808b2cc0abdff0f3fed74754b80" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로34길', '구간명': '이튼타워리버 ~ 연수빌딩', '구간 거리': '126m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ca3d8265aa12e9afd3497e02e1de1c13.setContent(html_ad14e808b2cc0abdff0f3fed74754b80);
+            
+        
+
+        poly_line_ad03cef57824bdbc996102959ca27d8e.bindPopup(popup_ca3d8265aa12e9afd3497e02e1de1c13)
+        ;
+
+        
+    
+    
+            poly_line_ad03cef57824bdbc996102959ca27d8e.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로34길', '구간명': '이튼타워리버 ~ 연수빌딩', '구간 거리': '126m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4a2b828f142ac76dcc2127373a609c29 = L.polyline(
+                [[37.5323485831343, 127.05849753320973], [37.532478971709175, 127.05867328955603], [37.53259261285925, 127.0587699459401], [37.53273005953655, 127.05885523162421], [37.53281981062045, 127.05894079913968], [37.532894740615845, 127.0590489151475], [37.532936809471714, 127.05913850713749], [37.53297598197973, 127.05925057546959], [37.533006224454084, 127.05936644058826], [37.53301858189253, 127.0594824115241], [37.53301912635919, 127.05962839804366], [37.5330017284285, 127.05975951730282], [37.532963617914916, 127.0599319339068], [37.53283113268513, 127.06037816753404], [37.532787044126415, 127.06054687555468], [37.53273706395076, 127.06073433365543], [37.532696067898044, 127.06093297015401], [37.53266691241346, 127.06110907656543], [37.53261149735666, 127.06143881293089]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_1f725b436f8befb55455298088095b07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88ee95d20c5f2bdb81534e886a19306b = $(`<div id="html_88ee95d20c5f2bdb81534e886a19306b" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '뚝섬한강공원벽천마당 ~ 영동대교북측', '구간 거리': '299m', '평균 속도': '50.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_1f725b436f8befb55455298088095b07.setContent(html_88ee95d20c5f2bdb81534e886a19306b);
+            
+        
+
+        poly_line_4a2b828f142ac76dcc2127373a609c29.bindPopup(popup_1f725b436f8befb55455298088095b07)
+        ;
+
+        
+    
+    
+            poly_line_4a2b828f142ac76dcc2127373a609c29.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '뚝섬한강공원벽천마당 ~ 영동대교북측', '구간 거리': '299m', '평균 속도': '50.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8f16028d8885f44f5c619b45d19b0fe3 = L.polyline(
+                [[37.5323485831343, 127.05849753320973], [37.53315859468564, 127.05895424312683], [37.53357782927588, 127.05918706623953]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_0fc03fa2aa42f6faaa413356ad8abd31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f98a8231f0e5462b9236cc29be5c606 = $(`<div id="html_8f98a8231f0e5462b9236cc29be5c606" style="width: 100.0%; height: 100.0%;">{'도로명': '영동대로', '구간명': '영동대교북측 ~ 영동대교북측', '구간 거리': '149m', '평균 속도': '61.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_0fc03fa2aa42f6faaa413356ad8abd31.setContent(html_8f98a8231f0e5462b9236cc29be5c606);
+            
+        
+
+        poly_line_8f16028d8885f44f5c619b45d19b0fe3.bindPopup(popup_0fc03fa2aa42f6faaa413356ad8abd31)
+        ;
+
+        
+    
+    
+            poly_line_8f16028d8885f44f5c619b45d19b0fe3.bindTooltip(
+                `<div>
+                     {'도로명': '영동대로', '구간명': '영동대교북측 ~ 영동대교북측', '구간 거리': '149m', '평균 속도': '61.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0c05c0f7555651dd78613ab11763e7e9 = L.polyline(
+                [[37.533615681078004, 127.05905957680095], [37.53320262089156, 127.05883018387287], [37.53238702511624, 127.05837032655727]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_fa7ffb40a5b428c486a081640a1a93b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7caa1a06c5740e58da66328ed5d2e29c = $(`<div id="html_7caa1a06c5740e58da66328ed5d2e29c" style="width: 100.0%; height: 100.0%;">{'도로명': '영동대로', '구간명': '영동대교북측 ~ 영동대교북측', '구간 거리': '149m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fa7ffb40a5b428c486a081640a1a93b3.setContent(html_7caa1a06c5740e58da66328ed5d2e29c);
+            
+        
+
+        poly_line_0c05c0f7555651dd78613ab11763e7e9.bindPopup(popup_fa7ffb40a5b428c486a081640a1a93b3)
+        ;
+
+        
+    
+    
+            poly_line_0c05c0f7555651dd78613ab11763e7e9.bindTooltip(
+                `<div>
+                     {'도로명': '영동대로', '구간명': '영동대교북측 ~ 영동대교북측', '구간 거리': '149m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b2f03e3459130aa596661f9c5d6af603 = L.polyline(
+                [[37.5333278313286, 127.05898884894111], [37.53320764890469, 127.05937304242384], [37.53297765363161, 127.06011467542083], [37.532868382214296, 127.06048665507775], [37.53280445123369, 127.06073858123588], [37.532749971000605, 127.06096649411086], [37.532706758771326, 127.06114642570321], [37.53261149735666, 127.06143881293089]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_e2beadd52d08fee84a972e9313f0d6e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ebf157e8c92175b7f39b430c309a35f = $(`<div id="html_5ebf157e8c92175b7f39b430c309a35f" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '뚝섬한강공원벽천마당 ~ 성동구-광진구', '구간 거리': '231m', '평균 속도': '46.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_e2beadd52d08fee84a972e9313f0d6e4.setContent(html_5ebf157e8c92175b7f39b430c309a35f);
+            
+        
+
+        poly_line_b2f03e3459130aa596661f9c5d6af603.bindPopup(popup_e2beadd52d08fee84a972e9313f0d6e4)
+        ;
+
+        
+    
+    
+            poly_line_b2f03e3459130aa596661f9c5d6af603.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '뚝섬한강공원벽천마당 ~ 성동구-광진구', '구간 거리': '231m', '평균 속도': '46.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c8ddfef108f5670e531601b2d2db926c = L.polyline(
+                [[37.53340105203223, 127.05902859047337], [37.53323783825877, 127.0595332892475], [37.53300449027894, 127.06027134867234], [37.532979934444704, 127.06040176051924], [37.53298403028313, 127.06054098749917], [37.53299868987106, 127.06063523316547], [37.533034879535585, 127.06074732144931], [37.533092515296005, 127.06085479080924], [37.53312850461318, 127.0609129760729], [37.53319668766269, 127.06097097263518], [37.533307864497814, 127.06104668470576], [37.53343318234784, 127.06107739463428], [37.53355119594054, 127.06106771895205], [37.53366912563399, 127.06103558366553], [37.533769137194206, 127.06099456911902], [37.53387625199733, 127.06094003653192], [37.533979689254394, 127.06085857326643], [37.534230376994216, 127.06068252663275], [37.534452922348414, 127.06049642834414], [37.53457609146347, 127.0604074150968], [37.534689970060086, 127.06035059767248], [37.53480259969464, 127.06029583033701], [37.53489133105283, 127.06028364959897], [37.53507126793095, 127.06027160446202], [37.53559222910628, 127.06031056827206]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_a48d15c892dcdaadd18efa1e2c2548f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9184ac5519dd53c712ab34e7ae3f7785 = $(`<div id="html_9184ac5519dd53c712ab34e7ae3f7785" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '더나눔커피 ~ 성동구-광진구', '구간 거리': '474m', '평균 속도': '41.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a48d15c892dcdaadd18efa1e2c2548f2.setContent(html_9184ac5519dd53c712ab34e7ae3f7785);
+            
+        
+
+        poly_line_c8ddfef108f5670e531601b2d2db926c.bindPopup(popup_a48d15c892dcdaadd18efa1e2c2548f2)
+        ;
+
+        
+    
+    
+            poly_line_c8ddfef108f5670e531601b2d2db926c.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '더나눔커피 ~ 성동구-광진구', '구간 거리': '474m', '평균 속도': '41.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f53dac49dc2a3d03ead033fab173e895 = L.polyline(
+                [[37.533932684143316, 127.0678428084748], [37.53379183656078, 127.06801274366477], [37.53351761491749, 127.06835181452195], [37.53308146770235, 127.0688461496376]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_b777cd2d58b4e01e69567407f1d7207f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ba8ce9f4f5210eb1f7d7b0f9f20f4a8 = $(`<div id="html_4ba8ce9f4f5210eb1f7d7b0f9f20f4a8" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로4길', '구간명': '연수빌딩 ~ 자양동천주교회', '구간 거리': '130m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b777cd2d58b4e01e69567407f1d7207f.setContent(html_4ba8ce9f4f5210eb1f7d7b0f9f20f4a8);
+            
+        
+
+        poly_line_f53dac49dc2a3d03ead033fab173e895.bindPopup(popup_b777cd2d58b4e01e69567407f1d7207f)
+        ;
+
+        
+    
+    
+            poly_line_f53dac49dc2a3d03ead033fab173e895.bindTooltip(
+                `<div>
+                     {'도로명': '능동로4길', '구간명': '연수빌딩 ~ 자양동천주교회', '구간 거리': '130m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_abd2ec3c2b11f5a54e4c8c09c425bd89 = L.polyline(
+                [[37.53315391154628, 127.06894693427034], [37.53359180195708, 127.06845062429662], [37.53386722396881, 127.06811006901994], [37.53400759382752, 127.06794071042754]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_c0ef6883f44a72112b0b88e2783471e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0633dbbac1c92c553b0d8dcb4c4cd0c = $(`<div id="html_f0633dbbac1c92c553b0d8dcb4c4cd0c" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로4길', '구간명': '자양동천주교회 ~ 연수빌딩', '구간 거리': '130m', '평균 속도': '19.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c0ef6883f44a72112b0b88e2783471e8.setContent(html_f0633dbbac1c92c553b0d8dcb4c4cd0c);
+            
+        
+
+        poly_line_abd2ec3c2b11f5a54e4c8c09c425bd89.bindPopup(popup_c0ef6883f44a72112b0b88e2783471e8)
+        ;
+
+        
+    
+    
+            poly_line_abd2ec3c2b11f5a54e4c8c09c425bd89.bindTooltip(
+                `<div>
+                     {'도로명': '능동로4길', '구간명': '자양동천주교회 ~ 연수빌딩', '구간 거리': '130m', '평균 속도': '19.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9ac9da7baccf6e47f9dbfaf494ebfe12 = L.polyline(
+                [[37.53235123228653, 127.06392925379363], [37.53291094368196, 127.06212171156466], [37.533047125260126, 127.06186637026995], [37.53313956525539, 127.06171310170662], [37.53325353507666, 127.06157767450485], [37.53337472504468, 127.06146017192428], [37.534009427213476, 127.06090842583247], [37.53424265898699, 127.06068690836379], [37.53445661482624, 127.0605083937898], [37.53457954398712, 127.06041643867732], [37.534693002470966, 127.06036011196171], [37.53480409518788, 127.06030674636328], [37.53488917460057, 127.06029493946156], [37.535071140088284, 127.06028023600379], [37.53559222910628, 127.06031056827206]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_0e7f2dfe8b63bc74e41e364e58183055 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47b0e0634be9633c2ae882d758d4ec59 = $(`<div id="html_47b0e0634be9633c2ae882d758d4ec59" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '더나눔커피 ~ 한강우성아파트앞', '구간 거리': '527m', '평균 속도': '29.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_0e7f2dfe8b63bc74e41e364e58183055.setContent(html_47b0e0634be9633c2ae882d758d4ec59);
+            
+        
+
+        poly_line_9ac9da7baccf6e47f9dbfaf494ebfe12.bindPopup(popup_0e7f2dfe8b63bc74e41e364e58183055)
+        ;
+
+        
+    
+    
+            poly_line_9ac9da7baccf6e47f9dbfaf494ebfe12.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '더나눔커피 ~ 한강우성아파트앞', '구간 거리': '527m', '평균 속도': '29.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c55b4611b1a62b46a4cb197d8e13502a = L.polyline(
+                [[37.53199875277201, 127.07970526533876], [37.53249011750273, 127.07994084166788], [37.53260933377262, 127.0800281514174], [37.533378914771944, 127.08088889297534], [37.534240206219295, 127.08185966116713], [37.535377922532874, 127.08313982901355], [37.535827899101676, 127.08364405890092], [37.53594553954745, 127.08383278072607]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_d79685f3b22b8f7f078cc06b632ef3d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eabfec664dd7c3d8a5d846f424c99a97 = $(`<div id="html_eabfec664dd7c3d8a5d846f424c99a97" style="width: 100.0%; height: 100.0%;">{'도로명': '자양로13길', '구간명': '자양동216-13 ~ 국민은행자양동지점', '구간 거리': '574m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d79685f3b22b8f7f078cc06b632ef3d6.setContent(html_eabfec664dd7c3d8a5d846f424c99a97);
+            
+        
+
+        poly_line_c55b4611b1a62b46a4cb197d8e13502a.bindPopup(popup_d79685f3b22b8f7f078cc06b632ef3d6)
+        ;
+
+        
+    
+    
+            poly_line_c55b4611b1a62b46a4cb197d8e13502a.bindTooltip(
+                `<div>
+                     {'도로명': '자양로13길', '구간명': '자양동216-13 ~ 국민은행자양동지점', '구간 거리': '574m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_370f740edc716e5b3a6ab2d334ce6a99 = L.polyline(
+                [[37.53603067768933, 127.08374909178602], [37.53590708735128, 127.08355082521685], [37.53544999178886, 127.08303861879234], [37.53431239233025, 127.081758584883], [37.53345098212336, 127.08078768215096], [37.532673158871035, 127.07991772363131], [37.53253694724409, 127.07981796758173], [37.532037318256876, 127.07957843008978]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_c819fe8c96ede5acd5256b685aae8e4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67376cc50abde063b2a3f21591a8fd4a = $(`<div id="html_67376cc50abde063b2a3f21591a8fd4a" style="width: 100.0%; height: 100.0%;">{'도로명': '자양로13길', '구간명': '국민은행자양동지점 ~ 자양동216-13', '구간 거리': '581m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_c819fe8c96ede5acd5256b685aae8e4d.setContent(html_67376cc50abde063b2a3f21591a8fd4a);
+            
+        
+
+        poly_line_370f740edc716e5b3a6ab2d334ce6a99.bindPopup(popup_c819fe8c96ede5acd5256b685aae8e4d)
+        ;
+
+        
+    
+    
+            poly_line_370f740edc716e5b3a6ab2d334ce6a99.bindTooltip(
+                `<div>
+                     {'도로명': '자양로13길', '구간명': '국민은행자양동지점 ~ 자양동216-13', '구간 거리': '581m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_525ee7a4fb7eff1ca168046f0a92bfad = L.polyline(
+                [[37.528955835374184, 127.08674406454952], [37.52852275907172, 127.08667907744298]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_fbecce43b2dd1c5d601c1bcce680da0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55f6f8ee9ecd3e7de456b195c47ea5e8 = $(`<div id="html_55f6f8ee9ecd3e7de456b195c47ea5e8" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '48m', '평균 속도': '42.8km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fbecce43b2dd1c5d601c1bcce680da0f.setContent(html_55f6f8ee9ecd3e7de456b195c47ea5e8);
+            
+        
+
+        poly_line_525ee7a4fb7eff1ca168046f0a92bfad.bindPopup(popup_fbecce43b2dd1c5d601c1bcce680da0f)
+        ;
+
+        
+    
+    
+            poly_line_525ee7a4fb7eff1ca168046f0a92bfad.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '48m', '평균 속도': '42.8km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1a752352351ae793a9ab6a76e8901365 = L.polyline(
+                [[37.52978131534688, 127.08871552993085], [37.5298093696645, 127.08855367097324], [37.529820781803394, 127.08840687535961], [37.5298228433795, 127.08831403388596], [37.52981775000312, 127.08822123036546]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_9331010e0586bc1743e25d70eba66c29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8974d1bd8fc8bac8e913214d28bc4d2b = $(`<div id="html_8974d1bd8fc8bac8e913214d28bc4d2b" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '44m', '평균 속도': '29.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_9331010e0586bc1743e25d70eba66c29.setContent(html_8974d1bd8fc8bac8e913214d28bc4d2b);
+            
+        
+
+        poly_line_1a752352351ae793a9ab6a76e8901365.bindPopup(popup_9331010e0586bc1743e25d70eba66c29)
+        ;
+
+        
+    
+    
+            poly_line_1a752352351ae793a9ab6a76e8901365.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '잠실대교북측 ~ 잠실대교북측', '구간 거리': '44m', '평균 속도': '29.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d788bc5ca261a97e60bca4bc76dd6395 = L.polyline(
+                [[37.530400925585184, 127.06590844673731], [37.530272200094736, 127.06589935279119], [37.53006481302068, 127.0658767209621], [37.52965055958283, 127.06580403324182]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_8f9c8ba098359ab956f853e62d3748e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe8abdc1e37057d82f93ddc3bd1ebd31 = $(`<div id="html_fe8abdc1e37057d82f93ddc3bd1ebd31" style="width: 100.0%; height: 100.0%;">{'도로명': '동부간선도로', '구간명': '청담대교북측 ~ 청담대교', '구간 거리': '84m', '평균 속도': '36.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8f9c8ba098359ab956f853e62d3748e3.setContent(html_fe8abdc1e37057d82f93ddc3bd1ebd31);
+            
+        
+
+        poly_line_d788bc5ca261a97e60bca4bc76dd6395.bindPopup(popup_8f9c8ba098359ab956f853e62d3748e3)
+        ;
+
+        
+    
+    
+            poly_line_d788bc5ca261a97e60bca4bc76dd6395.bindTooltip(
+                `<div>
+                     {'도로명': '동부간선도로', '구간명': '청담대교북측 ~ 청담대교', '구간 거리': '84m', '평균 속도': '36.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3f224321e20f500a9d9582f3e3a521ec = L.polyline(
+                [[37.532211384749175, 127.06287109180138], [37.531679439825794, 127.06456477176641], [37.531552875480564, 127.06496204020245], [37.53148480595595, 127.06519546790264], [37.53142393692997, 127.06533910008132], [37.53136667117721, 127.06543334298094], [37.53128793985123, 127.06554552742826], [37.53120922339286, 127.0656307704089], [37.53111621597486, 127.06569355098327], [37.530991026576565, 127.06575630201792], [37.53083723446985, 127.0658100480932], [37.53069418056694, 127.06584584306196], [37.53056184895579, 127.06589062803941], [37.530400925585184, 127.06590844673731]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_dbf097805f5d8a4de3d5a88c586f31b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8580f45a19f5b994cba0da2c196223f8 = $(`<div id="html_8580f45a19f5b994cba0da2c196223f8" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '청담대교 ~ 청담대교', '구간 거리': '364m', '평균 속도': '33.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_dbf097805f5d8a4de3d5a88c586f31b5.setContent(html_8580f45a19f5b994cba0da2c196223f8);
+            
+        
+
+        poly_line_3f224321e20f500a9d9582f3e3a521ec.bindPopup(popup_dbf097805f5d8a4de3d5a88c586f31b5)
+        ;
+
+        
+    
+    
+            poly_line_3f224321e20f500a9d9582f3e3a521ec.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '청담대교 ~ 청담대교', '구간 거리': '364m', '평균 속도': '33.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3ebebce0ed6774c86f3b52aab3379a16 = L.polyline(
+                [[37.532211384749175, 127.06287109180138], [37.53197675700001, 127.0639048821844]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_3f3ea9bb67232125727ebfaa03ca02ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a7fba993f4dc3d9f92ac40cd256947f = $(`<div id="html_7a7fba993f4dc3d9f92ac40cd256947f" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '청담대교 ~ 청담대교', '구간 거리': '95m', '평균 속도': '64.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_3f3ea9bb67232125727ebfaa03ca02ee.setContent(html_7a7fba993f4dc3d9f92ac40cd256947f);
+            
+        
+
+        poly_line_3ebebce0ed6774c86f3b52aab3379a16.bindPopup(popup_3f3ea9bb67232125727ebfaa03ca02ee)
+        ;
+
+        
+    
+    
+            poly_line_3ebebce0ed6774c86f3b52aab3379a16.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '청담대교 ~ 청담대교', '구간 거리': '95m', '평균 속도': '64.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8c5e466286f7ef34812b40840f6b071a = L.polyline(
+                [[37.53261149735666, 127.06143881293089], [37.53250849631752, 127.06179877302671], [37.532358368288314, 127.06231248210801], [37.532211384749175, 127.06287109180138]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ed18e3ab81cec9bae22e85dce0b52425);
+        
+    
+        var popup_945160757d5a7640a432e4b339e84d22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87155e3923598a475d57af761b970a42 = $(`<div id="html_87155e3923598a475d57af761b970a42" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '청담대교 ~ 뚝섬한강공원벽천마당', '구간 거리': '134m', '평균 속도': '45.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_945160757d5a7640a432e4b339e84d22.setContent(html_87155e3923598a475d57af761b970a42);
+            
+        
+
+        poly_line_8c5e466286f7ef34812b40840f6b071a.bindPopup(popup_945160757d5a7640a432e4b339e84d22)
+        ;
+
+        
+    
+    
+            poly_line_8c5e466286f7ef34812b40840f6b071a.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '청담대교 ~ 뚝섬한강공원벽천마당', '구간 거리': '134m', '평균 속도': '45.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

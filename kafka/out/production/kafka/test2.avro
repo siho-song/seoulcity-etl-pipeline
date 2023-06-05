@@ -1,0 +1,155 @@
+[{"type": "record",
+  "namespace": "SeoulRtd.citydata",
+  "name": "list_total_count",
+  "fields": [
+    {
+      "name": "list_total_count",
+      "type": ["string","null"],
+      "default":null
+    }]
+},
+{"type": "record",
+  "namespace": "SeoulRtd.citydata.RESULT",
+  "name": "RESULT",
+  "fields": [
+    {
+      "name": "RESULT.CODE",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "RESULT.MESSAGE",
+      "type": ["string","null"],
+      "default":null
+    }]
+},
+{"type": "record",
+  "namespace": "SeoulRtd.citydata.CITYDATA",
+  "name": "AREA_NM",
+  "fields": [
+    {
+      "name": "AREA_NM",
+      "type": ["string","null"],
+      "default":null
+    }]
+},
+{"type": "record",
+  "namespace": "SeoulRtd.citydata.CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS",
+  "name": "LIVE_PPLTN_STTS",
+  "fields": [
+    {
+      "name": "AREA_CONGEST_LVL",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "AREA_CONGEST_MSG",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "AREA_PPLTN_MIN",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "AREA_PPLTN_MAX",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "MALE_PPLTN_RATE",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "FEMALE_PPLTN_RATE",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "PPLTN_RATE_0",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "PPLTN_RATE_10",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "PPLTN_RATE_20",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "PPLTN_RATE_30",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "PPLTN_RATE_40",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "PPLTN_RATE_50",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "PPLTN_RATE_60",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "PPLTN_RATE_70",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "RESNT_PPLTN_RATE",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "NON_RESNT_PPLTN_RATE",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "REPLACE_YN",
+      "type": ["string","null"],
+      "default":null
+    },
+    { "name": "PPLTN_TIME",
+      "type": ["string","null"],
+      "default":null
+    }]
+},
+{"type": "record",
+  "namespace": "SeoulRtd.citydata.CITYDATA.ROAD_TRAFFIC_STTS.AVG_RAD_DATA",
+  "name": "AVG_RAD_DATA",
+  "fields": [
+    {
+      "name": "ROAD_MSG",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "ROAD_TRAFFIC_IDX",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "ROAD_TRFFIC_TIME",
+      "type": ["string","null"],
+      "default":null
+    },
+    {
+      "name": "ROAD_TRAFFIC_SPD",
+      "type": ["string","null"],
+      "default":null
+    }]
+}
+]

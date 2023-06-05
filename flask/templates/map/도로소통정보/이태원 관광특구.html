@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_32e9ade1fcbe32ea7d89548aa844ba66 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_32e9ade1fcbe32ea7d89548aa844ba66" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_32e9ade1fcbe32ea7d89548aa844ba66 = L.map(
+                "map_32e9ade1fcbe32ea7d89548aa844ba66",
+                {
+                    center: [37.534831649124136, 126.99724498748229],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9cb871366342391a86ce8b446f8b293c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+            var poly_line_38061aec0c4804c2504cfa51a5f3bb84 = L.polyline(
+                [[37.530322167474615, 126.99672531548774], [37.52998557789681, 126.99707873640776], [37.52947513731313, 126.99756606790255], [37.52931216524208, 126.99775838492198], [37.529177298971405, 126.99796644627799], [37.52906982275432, 126.99811536455174], [37.5288563834422, 126.99834811313995], [37.52754971092786, 126.99957029037418], [37.52626260345789, 127.00077636421881], [37.52615422197133, 127.000895434858]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_34feb7723deb2b1fdd6ac17984533ab5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70c982d5fa0a4463251844fa2623c22f = $(`<div id="html_70c982d5fa0a4463251844fa2623c22f" style="width: 100.0%; height: 100.0%;">{'도로명': '보광로', '구간명': '뽐네일 ~ 정수기능대학', '구간 거리': '593m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_34feb7723deb2b1fdd6ac17984533ab5.setContent(html_70c982d5fa0a4463251844fa2623c22f);
+            
+        
+
+        poly_line_38061aec0c4804c2504cfa51a5f3bb84.bindPopup(popup_34feb7723deb2b1fdd6ac17984533ab5)
+        ;
+
+        
+    
+    
+            poly_line_38061aec0c4804c2504cfa51a5f3bb84.bindTooltip(
+                `<div>
+                     {'도로명': '보광로', '구간명': '뽐네일 ~ 정수기능대학', '구간 거리': '593m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bb514fdfd73cfbb8397ba4605e587af8 = L.polyline(
+                [[37.53148683598407, 126.99501986918555], [37.53128865874219, 126.99523340439966], [37.53076349924338, 126.99590497496067], [37.53050711867532, 126.99635376422052], [37.53044036111443, 126.99651424461155], [37.53031288660602, 126.99673788183928]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_e3fb420dfd60444cff07f687ce6c6e39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_686bdc3bdbbf17290bd8c7f0834ea6bd = $(`<div id="html_686bdc3bdbbf17290bd8c7f0834ea6bd" style="width: 100.0%; height: 100.0%;">{'도로명': '보광로', '구간명': '정수기능대학 ~ 예림가구전시장', '구간 거리': '201m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_e3fb420dfd60444cff07f687ce6c6e39.setContent(html_686bdc3bdbbf17290bd8c7f0834ea6bd);
+            
+        
+
+        poly_line_bb514fdfd73cfbb8397ba4605e587af8.bindPopup(popup_e3fb420dfd60444cff07f687ce6c6e39)
+        ;
+
+        
+    
+    
+            poly_line_bb514fdfd73cfbb8397ba4605e587af8.bindTooltip(
+                `<div>
+                     {'도로명': '보광로', '구간명': '정수기능대학 ~ 예림가구전시장', '구간 거리': '201m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_07894e9b491236485d12e6661bc70948 = L.polyline(
+                [[37.52622541924116, 127.00099760155712], [37.52633063738508, 127.00088200624927], [37.5276143383386, 126.99967912570435], [37.52892422039266, 126.99845394895362], [37.52914559850589, 126.99821254441521], [37.52925934296993, 126.99805493955657], [37.529391466822695, 126.99785111055301], [37.52954506974552, 126.99766984929971], [37.53005301233102, 126.99718490190516], [37.53039152580668, 126.9968294638568]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_0052b052166f74a7d3dedb065d80865b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e957d1741b66892b317e6041be18f338 = $(`<div id="html_e957d1741b66892b317e6041be18f338" style="width: 100.0%; height: 100.0%;">{'도로명': '보광로', '구간명': '정수기능대학 ~ 뽐네일', '구간 거리': '592m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_0052b052166f74a7d3dedb065d80865b.setContent(html_e957d1741b66892b317e6041be18f338);
+            
+        
+
+        poly_line_07894e9b491236485d12e6661bc70948.bindPopup(popup_0052b052166f74a7d3dedb065d80865b)
+        ;
+
+        
+    
+    
+            poly_line_07894e9b491236485d12e6661bc70948.bindTooltip(
+                `<div>
+                     {'도로명': '보광로', '구간명': '정수기능대학 ~ 뽐네일', '구간 거리': '592m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b08cbc6de5c118c4af5f992cd1118cf5 = L.polyline(
+                [[37.53040080758584, 126.99681689750344], [37.53053268881686, 126.99658552938457], [37.53059942034646, 126.99642511221661], [37.53084649078723, 126.99599262041441], [37.53136257184609, 126.99533266153685], [37.53155724452578, 126.99512290086162]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_e475cb223786b7972ed1db8ee5dfd1de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db2818dcda11c0ab46396d08acfca68a = $(`<div id="html_db2818dcda11c0ab46396d08acfca68a" style="width: 100.0%; height: 100.0%;">{'도로명': '보광로', '구간명': '예림가구전시장 ~ 정수기능대학', '구간 거리': '198m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_e475cb223786b7972ed1db8ee5dfd1de.setContent(html_db2818dcda11c0ab46396d08acfca68a);
+            
+        
+
+        poly_line_b08cbc6de5c118c4af5f992cd1118cf5.bindPopup(popup_e475cb223786b7972ed1db8ee5dfd1de)
+        ;
+
+        
+    
+    
+            poly_line_b08cbc6de5c118c4af5f992cd1118cf5.bindTooltip(
+                `<div>
+                     {'도로명': '보광로', '구간명': '예림가구전시장 ~ 정수기능대학', '구간 거리': '198m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f0d984b04b4b0d446dc826211b98fd6e = L.polyline(
+                [[37.531576075931284, 126.99506932573934], [37.531570052886316, 126.99482021370497], [37.531521370337394, 126.99417055839547], [37.53153966833235, 126.99375651093271], [37.53172802005518, 126.99320356167745], [37.5319315880552, 126.9922842769488], [37.53192555999986, 126.99215576433421], [37.531867974602186, 126.99202563483345], [37.53172137406899, 126.99184792840119], [37.53150285442383, 126.99164448403714], [37.53134448983079, 126.99154187180032], [37.53054523454334, 126.99133774528651]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_3338f8d63dc09bdabd84944a795875d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb07fff786df82808200f6dda210c0a6 = $(`<div id="html_bb07fff786df82808200f6dda210c0a6" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로26길', '구간명': '찬우물삼거리 ~ 예림가구전시장', '구간 거리': '441m', '평균 속도': '24.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3338f8d63dc09bdabd84944a795875d3.setContent(html_bb07fff786df82808200f6dda210c0a6);
+            
+        
+
+        poly_line_f0d984b04b4b0d446dc826211b98fd6e.bindPopup(popup_3338f8d63dc09bdabd84944a795875d3)
+        ;
+
+        
+    
+    
+            poly_line_f0d984b04b4b0d446dc826211b98fd6e.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로26길', '구간명': '찬우물삼거리 ~ 예림가구전시장', '구간 거리': '441m', '평균 속도': '24.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b7e3ed76b2b35de63bdf72441ca31f39 = L.polyline(
+                [[37.530523684162574, 126.99147078403662], [37.5313082400227, 126.9916711574009], [37.53144549309006, 126.99176009051268], [37.53165133554743, 126.99195173279425], [37.53178129038344, 126.9921092617922], [37.53181907594159, 126.99219464958169], [37.5318225965842, 126.99226969002528], [37.53162578083699, 126.99315848119328], [37.53143276916971, 126.99372510846923], [37.5314129682955, 126.99417317124681], [37.53146208717026, 126.99482864196631], [37.53146800550168, 126.99507344425636]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_4b001d9d2338b4146780d532cd628f6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d9a8f7fe8ee8d39416a6422270857ca = $(`<div id="html_9d9a8f7fe8ee8d39416a6422270857ca" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로26길', '구간명': '예림가구전시장 ~ 찬우물삼거리', '구간 거리': '425m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_4b001d9d2338b4146780d532cd628f6b.setContent(html_9d9a8f7fe8ee8d39416a6422270857ca);
+            
+        
+
+        poly_line_b7e3ed76b2b35de63bdf72441ca31f39.bindPopup(popup_4b001d9d2338b4146780d532cd628f6b)
+        ;
+
+        
+    
+    
+            poly_line_b7e3ed76b2b35de63bdf72441ca31f39.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로26길', '구간명': '예림가구전시장 ~ 찬우물삼거리', '구간 거리': '425m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5dbba1a781dadf4f02817567e921005b = L.polyline(
+                [[37.53281687974285, 126.98914850581613], [37.53166648174155, 126.98996733143544], [37.530427185329785, 126.99085955196344], [37.53033248632137, 126.99092772759869], [37.52997103219973, 126.99116213022995], [37.52978648541064, 126.99125834920322], [37.52943834074386, 126.99131461519293]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_09fd92afd234b17945bd9ef1553eaa44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4826e2f01dc55b1f63d4abb737e499f4 = $(`<div id="html_4826e2f01dc55b1f63d4abb737e499f4" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로', '구간명': '스타벅스동빙고점 ~ 이태원지하차도남측', '구간 거리': '424m', '평균 속도': '49.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_09fd92afd234b17945bd9ef1553eaa44.setContent(html_4826e2f01dc55b1f63d4abb737e499f4);
+            
+        
+
+        poly_line_5dbba1a781dadf4f02817567e921005b.bindPopup(popup_09fd92afd234b17945bd9ef1553eaa44)
+        ;
+
+        
+    
+    
+            poly_line_5dbba1a781dadf4f02817567e921005b.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로', '구간명': '스타벅스동빙고점 ~ 이태원지하차도남측', '구간 거리': '424m', '평균 속도': '49.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8e5a4a39334c57efa90cc4d1070e6479 = L.polyline(
+                [[37.5340572561559, 126.98783419645899], [37.53386521900874, 126.98807652759358], [37.53365685482633, 126.98833310214823], [37.53350168409248, 126.98848566079042], [37.533368643004046, 126.98861389713448], [37.5331729249531, 126.98879387896217], [37.53278690903373, 126.98909190553113]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_241be6e33524f5b12524828040cd3f96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14baff5d0d396cd442ac5eca9b0bd270 = $(`<div id="html_14baff5d0d396cd442ac5eca9b0bd270" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로', '구간명': '이태원지하차도남측 ~ 녹사평역', '구간 거리': '180m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_241be6e33524f5b12524828040cd3f96.setContent(html_14baff5d0d396cd442ac5eca9b0bd270);
+            
+        
+
+        poly_line_8e5a4a39334c57efa90cc4d1070e6479.bindPopup(popup_241be6e33524f5b12524828040cd3f96)
+        ;
+
+        
+    
+    
+            poly_line_8e5a4a39334c57efa90cc4d1070e6479.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로', '구간명': '이태원지하차도남측 ~ 녹사평역', '구간 거리': '180m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6fc1002e1ec66b828dd6c9f6cd6a9cc1 = L.polyline(
+                [[37.52981367459271, 126.99138859452133], [37.53001622209871, 126.99128562411185], [37.53038420750145, 126.9910469864938], [37.530480963451105, 126.99097732976912]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_a494b8b710155223c2938e47236c7fa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24ad2aebb4791f814786dcfe73d43791 = $(`<div id="html_24ad2aebb4791f814786dcfe73d43791" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로', '구간명': '주님의교회 ~ 운남자동차용품백화점', '구간 거리': '83m', '평균 속도': '34.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a494b8b710155223c2938e47236c7fa6.setContent(html_24ad2aebb4791f814786dcfe73d43791);
+            
+        
+
+        poly_line_6fc1002e1ec66b828dd6c9f6cd6a9cc1.bindPopup(popup_a494b8b710155223c2938e47236c7fa6)
+        ;
+
+        
+    
+    
+            poly_line_6fc1002e1ec66b828dd6c9f6cd6a9cc1.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로', '구간명': '주님의교회 ~ 운남자동차용품백화점', '구간 거리': '83m', '평균 속도': '34.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1b115278c42ad18437ef4f6521260bf5 = L.polyline(
+                [[37.530480963451105, 126.99097732976912], [37.53172003009915, 126.99008527689153], [37.53287019736555, 126.98926661658308]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_9e7432b0e2cf392cf8b3f25d8bd9723a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2c67d56fb38aa23ddee8a477fdaabb7 = $(`<div id="html_a2c67d56fb38aa23ddee8a477fdaabb7" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로', '구간명': '이태원지하차도남측 ~ 주님의교회', '구간 거리': '305m', '평균 속도': '33.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_9e7432b0e2cf392cf8b3f25d8bd9723a.setContent(html_a2c67d56fb38aa23ddee8a477fdaabb7);
+            
+        
+
+        poly_line_1b115278c42ad18437ef4f6521260bf5.bindPopup(popup_9e7432b0e2cf392cf8b3f25d8bd9723a)
+        ;
+
+        
+    
+    
+            poly_line_1b115278c42ad18437ef4f6521260bf5.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로', '구간명': '이태원지하차도남측 ~ 주님의교회', '구간 거리': '305m', '평균 속도': '33.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3b8c2e90b218aa56419ee08930ceb1aa = L.polyline(
+                [[37.532900167990555, 126.98932321700093], [37.53329363252714, 126.98901943918202], [37.5334983754604, 126.98883115973908], [37.533634173590414, 126.98870026321241], [37.53379965016508, 126.98853757481898], [37.53401756512992, 126.98826924124005], [37.53421053598519, 126.98802573328813]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_f4535a4c22205778293cae2e5384645a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac2bfb34fbdde3702f6c699e3a1d0898 = $(`<div id="html_ac2bfb34fbdde3702f6c699e3a1d0898" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로', '구간명': '녹사평역 ~ 이태원지하차도남측', '구간 거리': '186m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f4535a4c22205778293cae2e5384645a.setContent(html_ac2bfb34fbdde3702f6c699e3a1d0898);
+            
+        
+
+        poly_line_3b8c2e90b218aa56419ee08930ceb1aa.bindPopup(popup_f4535a4c22205778293cae2e5384645a)
+        ;
+
+        
+    
+    
+            poly_line_3b8c2e90b218aa56419ee08930ceb1aa.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로', '구간명': '녹사평역 ~ 이태원지하차도남측', '구간 거리': '186m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b31cb02ef68f03f3d99a82d15ee369fd = L.polyline(
+                [[37.534486767140805, 126.99385911443107], [37.53425470608939, 126.99392553497195], [37.53192733832374, 126.99477230454954], [37.53170306569745, 126.9949191568017], [37.53150404548248, 126.99500737430351]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_15feabb37b955da058e4d810333eb7c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_167c044c1cdd216db75d5064924a00be = $(`<div id="html_167c044c1cdd216db75d5064924a00be" style="width: 100.0%; height: 100.0%;">{'도로명': '보광로', '구간명': '예림가구전시장 ~ 이태원역앞교차로', '구간 거리': '347m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_15feabb37b955da058e4d810333eb7c9.setContent(html_167c044c1cdd216db75d5064924a00be);
+            
+        
+
+        poly_line_b31cb02ef68f03f3d99a82d15ee369fd.bindPopup(popup_15feabb37b955da058e4d810333eb7c9)
+        ;
+
+        
+    
+    
+            poly_line_b31cb02ef68f03f3d99a82d15ee369fd.bindTooltip(
+                `<div>
+                     {'도로명': '보광로', '구간명': '예림가구전시장 ~ 이태원역앞교차로', '구간 거리': '347m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2ff9bf775bd9da24b310fb342d49bac1 = L.polyline(
+                [[37.53154003501534, 126.99513539685739], [37.53174627130977, 126.99504398077806], [37.531967776292106, 126.99489894147212], [37.5342817878567, 126.99405703585478], [37.53451079463267, 126.99399148939648]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_14a0323a43400a4f525e364f81b5acd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b1bebb7e6a0becf54619a7893e82825 = $(`<div id="html_4b1bebb7e6a0becf54619a7893e82825" style="width: 100.0%; height: 100.0%;">{'도로명': '보광로', '구간명': '이태원역앞교차로 ~ 예림가구전시장', '구간 거리': '345m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_14a0323a43400a4f525e364f81b5acd5.setContent(html_4b1bebb7e6a0becf54619a7893e82825);
+            
+        
+
+        poly_line_2ff9bf775bd9da24b310fb342d49bac1.bindPopup(popup_14a0323a43400a4f525e364f81b5acd5)
+        ;
+
+        
+    
+    
+            poly_line_2ff9bf775bd9da24b310fb342d49bac1.bindTooltip(
+                `<div>
+                     {'도로명': '보광로', '구간명': '이태원역앞교차로 ~ 예림가구전시장', '구간 거리': '345m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5737ff8ceac05056e13c81ff5e15c37c = L.polyline(
+                [[37.534300645087285, 127.00040275847738], [37.53421098524643, 127.00049282862108], [37.53404881270515, 127.0005982851628], [37.53389360662898, 127.00069962977733], [37.53375917087719, 127.0008523637757], [37.533669300219046, 127.00100701102866], [37.533629998552016, 127.00120029274133], [37.53332257514789, 127.00483467122002], [37.533188417909706, 127.00637245983332]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_eaa729dcc4b8b6839f69c2a76effc7f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4599f83961b9b0f991e521ae1f346a6c = $(`<div id="html_4599f83961b9b0f991e521ae1f346a6c" style="width: 100.0%; height: 100.0%;">{'도로명': '대사관로', '구간명': '순천향병원 ~ 한남2동지하차도남측', '구간 거리': '567m', '평균 속도': '17.7km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_eaa729dcc4b8b6839f69c2a76effc7f2.setContent(html_4599f83961b9b0f991e521ae1f346a6c);
+            
+        
+
+        poly_line_5737ff8ceac05056e13c81ff5e15c37c.bindPopup(popup_eaa729dcc4b8b6839f69c2a76effc7f2)
+        ;
+
+        
+    
+    
+            poly_line_5737ff8ceac05056e13c81ff5e15c37c.bindTooltip(
+                `<div>
+                     {'도로명': '대사관로', '구간명': '순천향병원 ~ 한남2동지하차도남측', '구간 거리': '567m', '평균 속도': '17.7km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_83b18b3d2e3406384b536ba41b43ba0e = L.polyline(
+                [[37.535195070972044, 126.99868531069804], [37.534981625943715, 126.99909544781367], [37.53456736994414, 126.99993965016456], [37.534428692210476, 127.00021912131561], [37.53433603291362, 127.00036720736155], [37.534300647790275, 127.00040275734605]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_4daa37f5f3010ab522b3a452ee0e0501 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dc470460f5b0597d9967ce45eae0ff4 = $(`<div id="html_6dc470460f5b0597d9967ce45eae0ff4" style="width: 100.0%; height: 100.0%;">{'도로명': '대사관로', '구간명': '한남2동지하차도남측 ~ 이태원호텔앞교차로', '구간 거리': '182m', '평균 속도': '20.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_4daa37f5f3010ab522b3a452ee0e0501.setContent(html_6dc470460f5b0597d9967ce45eae0ff4);
+            
+        
+
+        poly_line_83b18b3d2e3406384b536ba41b43ba0e.bindPopup(popup_4daa37f5f3010ab522b3a452ee0e0501)
+        ;
+
+        
+    
+    
+            poly_line_83b18b3d2e3406384b536ba41b43ba0e.bindTooltip(
+                `<div>
+                     {'도로명': '대사관로', '구간명': '한남2동지하차도남측 ~ 이태원호텔앞교차로', '구간 거리': '182m', '평균 속도': '20.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e302de9bff9b614f1fb6eddd79c60808 = L.polyline(
+                [[37.53329589482207, 127.0063872461773], [37.53343007208155, 127.00484923476198], [37.53373668943411, 127.00122438094154], [37.5337689089631, 127.0010659269373], [37.533839953928684, 127.0009436748967], [37.53395582993536, 127.00081202789778], [37.53409861305669, 127.00071879553026], [37.53427018768013, 127.00060722396644], [37.53436818730771, 127.00050877694967]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_ca701ffa901315e860fa94cd41b9aa24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0ddedad3ccb287cf1a5b5b6876135cc = $(`<div id="html_a0ddedad3ccb287cf1a5b5b6876135cc" style="width: 100.0%; height: 100.0%;">{'도로명': '대사관로', '구간명': '한남2동지하차도남측 ~ 순천향병원', '구간 거리': '557m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ca701ffa901315e860fa94cd41b9aa24.setContent(html_a0ddedad3ccb287cf1a5b5b6876135cc);
+            
+        
+
+        poly_line_e302de9bff9b614f1fb6eddd79c60808.bindPopup(popup_ca701ffa901315e860fa94cd41b9aa24)
+        ;
+
+        
+    
+    
+            poly_line_e302de9bff9b614f1fb6eddd79c60808.bindTooltip(
+                `<div>
+                     {'도로명': '대사관로', '구간명': '한남2동지하차도남측 ~ 순천향병원', '구간 거리': '557m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_768db1119a8b8bbb6a834fdabb624a25 = L.polyline(
+                [[37.53436818730771, 127.00050877694967], [37.534413331241765, 127.00046342672249], [37.5345173433158, 127.00029719388954], [37.53465927564796, 127.00001116597777], [37.53507291948054, 126.99916821095566], [37.53528557729953, 126.99875958514949]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_dfd2a77964461eb2c943e3a06f4dba31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_917ab6ef40014d27845e05102da4080c = $(`<div id="html_917ab6ef40014d27845e05102da4080c" style="width: 100.0%; height: 100.0%;">{'도로명': '대사관로', '구간명': '이태원호텔앞교차로 ~ 한남2동지하차도남측', '구간 거리': '186m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_dfd2a77964461eb2c943e3a06f4dba31.setContent(html_917ab6ef40014d27845e05102da4080c);
+            
+        
+
+        poly_line_768db1119a8b8bbb6a834fdabb624a25.bindPopup(popup_dfd2a77964461eb2c943e3a06f4dba31)
+        ;
+
+        
+    
+    
+            poly_line_768db1119a8b8bbb6a834fdabb624a25.bindTooltip(
+                `<div>
+                     {'도로명': '대사관로', '구간명': '이태원호텔앞교차로 ~ 한남2동지하차도남측', '구간 거리': '186m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bfef6a76f5a9f563bf48045bdfac53eb = L.polyline(
+                [[37.534552655059855, 126.9939196681642], [37.534217346759206, 126.98886483423965], [37.53418412524508, 126.98818975494179], [37.534187946381365, 126.98793122437773]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_a103e74f5ad59aeb730887dc5204ee5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6923d68883afabf895924779db899c5c = $(`<div id="html_6923d68883afabf895924779db899c5c" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '녹사평역 ~ 이태원역앞교차로', '구간 거리': '531m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a103e74f5ad59aeb730887dc5204ee5b.setContent(html_6923d68883afabf895924779db899c5c);
+            
+        
+
+        poly_line_bfef6a76f5a9f563bf48045bdfac53eb.bindPopup(popup_a103e74f5ad59aeb730887dc5204ee5b)
+        ;
+
+        
+    
+    
+            poly_line_bfef6a76f5a9f563bf48045bdfac53eb.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '녹사평역 ~ 이태원역앞교차로', '구간 거리': '531m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7d297e1b8729793fa72af9e42f23f843 = L.polyline(
+                [[37.53407984493682, 126.98792870517532], [37.53407594326114, 126.98819268764639], [37.53410950418477, 126.98887465847628], [37.53444490765101, 126.9939309356339]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_fecc695dde3d5430bf1390a9206fe18f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f8723422397ae338cc9c90cd505f771 = $(`<div id="html_2f8723422397ae338cc9c90cd505f771" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '이태원역앞교차로 ~ 녹사평역', '구간 거리': '532m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fecc695dde3d5430bf1390a9206fe18f.setContent(html_2f8723422397ae338cc9c90cd505f771);
+            
+        
+
+        poly_line_7d297e1b8729793fa72af9e42f23f843.bindPopup(popup_fecc695dde3d5430bf1390a9206fe18f)
+        ;
+
+        
+    
+    
+            poly_line_7d297e1b8729793fa72af9e42f23f843.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '이태원역앞교차로 ~ 녹사평역', '구간 거리': '532m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b97958544a68a753e329d0544bf7f56e = L.polyline(
+                [[37.53466714266477, 126.9955853674567], [37.53455264063337, 126.9939194645102]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_65de4d3d3240e764757dfc57bc2cb741 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_918b76961a893140bc76cc8be3dde542 = $(`<div id="html_918b76961a893140bc76cc8be3dde542" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '이태원역앞교차로 ~ 이태원소방파출소', '구간 거리': '148m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_65de4d3d3240e764757dfc57bc2cb741.setContent(html_918b76961a893140bc76cc8be3dde542);
+            
+        
+
+        poly_line_b97958544a68a753e329d0544bf7f56e.bindPopup(popup_65de4d3d3240e764757dfc57bc2cb741)
+        ;
+
+        
+    
+    
+            poly_line_b97958544a68a753e329d0544bf7f56e.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '이태원역앞교차로 ~ 이태원소방파출소', '구간 거리': '148m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_73a4ad5330d61539c8fd287f684df543 = L.polyline(
+                [[37.53528265539489, 126.99868022451952], [37.535118831360506, 126.99842123147688], [37.535024982264986, 126.99823355156158], [37.5349517245471, 126.9980583342124], [37.5348749734958, 126.99783930409478], [37.534830258859785, 126.99766223219142], [37.53479170720443, 126.99742020765426], [37.53476366124481, 126.9972001370625], [37.53474591551255, 126.99685713057465], [37.53466717962719, 126.99558593882134]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_9ead89421af880264c34cb381fe0f991 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_243e7f3ee480c791da63a7daf5261ddc = $(`<div id="html_243e7f3ee480c791da63a7daf5261ddc" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '이태원소방파출소 ~ 이태원호텔앞교차로', '구간 거리': '288m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9ead89421af880264c34cb381fe0f991.setContent(html_243e7f3ee480c791da63a7daf5261ddc);
+            
+        
+
+        poly_line_73a4ad5330d61539c8fd287f684df543.bindPopup(popup_9ead89421af880264c34cb381fe0f991)
+        ;
+
+        
+    
+    
+            poly_line_73a4ad5330d61539c8fd287f684df543.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '이태원소방파출소 ~ 이태원호텔앞교차로', '구간 거리': '288m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b914c90ba354577ad23ca3cd8df25d08 = L.polyline(
+                [[37.534444921176515, 126.99393114041914], [37.534559422144184, 126.99559704098746]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_590751e8aa94d43bf6fd7960485fab81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8efcefd8cd04a72cc31e97fb46e51b50 = $(`<div id="html_8efcefd8cd04a72cc31e97fb46e51b50" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '이태원소방파출소 ~ 이태원역앞교차로', '구간 거리': '148m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_590751e8aa94d43bf6fd7960485fab81.setContent(html_8efcefd8cd04a72cc31e97fb46e51b50);
+            
+        
+
+        poly_line_b914c90ba354577ad23ca3cd8df25d08.bindPopup(popup_590751e8aa94d43bf6fd7960485fab81)
+        ;
+
+        
+    
+    
+            poly_line_b914c90ba354577ad23ca3cd8df25d08.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '이태원소방파출소 ~ 이태원역앞교차로', '구간 거리': '148m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e521aaf4a29ba9a0daf991ec25f0b181 = L.polyline(
+                [[37.53455938518179, 126.9955964684922], [37.534638067773216, 126.99686679628775], [37.53465609832374, 126.99721529870858], [37.53468527610541, 126.99744425964764], [37.53472540285478, 126.99769616902438], [37.53477366853728, 126.99788730303213], [37.53485426244469, 126.99811730194494], [37.534931196286195, 126.99830130906894], [37.53503044781392, 126.99849979496513], [37.535197992873236, 126.99876467123539]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_bb1161bcc1039840b301ca9bce994a4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af1d0fa68689d569f1c783bf88b416ba = $(`<div id="html_af1d0fa68689d569f1c783bf88b416ba" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '이태원호텔앞교차로 ~ 이태원소방파출소', '구간 거리': '296m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_bb1161bcc1039840b301ca9bce994a4a.setContent(html_af1d0fa68689d569f1c783bf88b416ba);
+            
+        
+
+        poly_line_e521aaf4a29ba9a0daf991ec25f0b181.bindPopup(popup_bb1161bcc1039840b301ca9bce994a4a)
+        ;
+
+        
+    
+    
+            poly_line_e521aaf4a29ba9a0daf991ec25f0b181.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '이태원호텔앞교차로 ~ 이태원소방파출소', '구간 거리': '296m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c8dde01a21fb24cc81a4905e2e92dd0e = L.polyline(
+                [[37.53835307435877, 127.00152053631928], [37.53814444610416, 127.00143566036589], [37.537914072666126, 127.00130382175966], [37.537682206447116, 127.00113795739287], [37.53725503600475, 127.00078777804478], [37.53689280396042, 127.00047457556481], [37.53666502178386, 127.00026282783998], [37.53644975952515, 127.00004435043697], [37.535566413567565, 126.99902099358513], [37.53527773675592, 126.99867344508527]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_423ec0bdcd28db2493100b20df49d7dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7373c627cd222e18a6e1b2a89d28d50 = $(`<div id="html_c7373c627cd222e18a6e1b2a89d28d50" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '이태원호텔앞교차로 ~ 호성빌딩', '구간 거리': '427m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_423ec0bdcd28db2493100b20df49d7dc.setContent(html_c7373c627cd222e18a6e1b2a89d28d50);
+            
+        
+
+        poly_line_c8dde01a21fb24cc81a4905e2e92dd0e.bindPopup(popup_423ec0bdcd28db2493100b20df49d7dc)
+        ;
+
+        
+    
+    
+            poly_line_c8dde01a21fb24cc81a4905e2e92dd0e.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '이태원호텔앞교차로 ~ 호성빌딩', '구간 거리': '427m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d1fc5830a56ae88ea3f92496db57ae0a = L.polyline(
+                [[37.54031099442593, 127.00171939504428], [37.53912891374383, 127.00166701852771], [37.53887409589443, 127.00164468643115], [37.538710024915105, 127.00162628608479], [37.53854526760853, 127.00158998468956], [37.5383513696747, 127.00151988229199]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_b3cd4a7fff50b4ee6697d7910a038013 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1584968a53c929812e41350e252e2f1b = $(`<div id="html_1584968a53c929812e41350e252e2f1b" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '호성빌딩 ~ 북한남삼거리', '구간 거리': '219m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_b3cd4a7fff50b4ee6697d7910a038013.setContent(html_1584968a53c929812e41350e252e2f1b);
+            
+        
+
+        poly_line_d1fc5830a56ae88ea3f92496db57ae0a.bindPopup(popup_b3cd4a7fff50b4ee6697d7910a038013)
+        ;
+
+        
+    
+    
+            poly_line_d1fc5830a56ae88ea3f92496db57ae0a.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '호성빌딩 ~ 북한남삼거리', '구간 거리': '219m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1327a99df4c98771c8696610023c00eb = L.polyline(
+                [[37.53520291150702, 126.99877145066833], [37.535492337673226, 126.99911990207262], [37.536379046215124, 127.00014715465163], [37.536598845710486, 127.00037023829354], [37.536829963185525, 127.00058508636289], [37.537194817735674, 127.00090055658718], [37.53762584589798, 127.00125389993534], [37.537864796461015, 127.00142483251494], [37.53810523926906, 127.00156243420007], [37.53831975183322, 127.00164970479206]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_f0b3e8e5def9c363159c5cfa9e2ef8cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_790ae2d0f557f091b959129bdbac287c = $(`<div id="html_790ae2d0f557f091b959129bdbac287c" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '호성빌딩 ~ 이태원호텔앞교차로', '구간 거리': '433m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f0b3e8e5def9c363159c5cfa9e2ef8cc.setContent(html_790ae2d0f557f091b959129bdbac287c);
+            
+        
+
+        poly_line_1327a99df4c98771c8696610023c00eb.bindPopup(popup_f0b3e8e5def9c363159c5cfa9e2ef8cc)
+        ;
+
+        
+    
+    
+            poly_line_1327a99df4c98771c8696610023c00eb.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '호성빌딩 ~ 이태원호텔앞교차로', '구간 거리': '433m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9ed0c640f082ac8a7e8777be5b6137e3 = L.polyline(
+                [[37.53832145651663, 127.00165035882203], [37.53852090000117, 127.00172246663526], [37.53869584844756, 127.00176101453815], [37.53886552271694, 127.00178004328242], [37.5391232426587, 127.0018026293599], [37.540307182043406, 127.0018550906592]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_ec0edc3b61f6a1360e7771f0c311edfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bb10cff721ad0ee722d2f9c9b3e4960 = $(`<div id="html_3bb10cff721ad0ee722d2f9c9b3e4960" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '북한남삼거리 ~ 호성빌딩', '구간 거리': '222m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_ec0edc3b61f6a1360e7771f0c311edfa.setContent(html_3bb10cff721ad0ee722d2f9c9b3e4960);
+            
+        
+
+        poly_line_9ed0c640f082ac8a7e8777be5b6137e3.bindPopup(popup_ec0edc3b61f6a1360e7771f0c311edfa)
+        ;
+
+        
+    
+    
+            poly_line_9ed0c640f082ac8a7e8777be5b6137e3.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '북한남삼거리 ~ 호성빌딩', '구간 거리': '222m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b1c6040a28defee46615d60bd8dabbcc = L.polyline(
+                [[37.54096998863219, 126.99684743250486], [37.54095080935174, 126.99618575535196], [37.54092629315053, 126.99594261006911], [37.540822132684255, 126.99539210659803], [37.540740632581674, 126.99514091837678], [37.54059148029915, 126.99480561215098], [37.5404500666917, 126.99447119152799], [37.54030066341767, 126.99400221313397], [37.54024748237909, 126.99361616413574], [37.5402378819437, 126.9929915251466], [37.54015234593951, 126.99252825421719], [37.540069191758874, 126.9922488258686], [37.539921726186456, 126.9918633473848], [37.53984353295399, 126.99169586932882], [37.53981969192873, 126.99157343151404], [37.53979636455941, 126.99139191034027], [37.53976752247872, 126.99108602600934], [37.53979025411866, 126.99069296843743], [37.53978225058017, 126.99051237688943], [37.53976028180912, 126.99034945323723], [37.539702963143704, 126.99009141400646], [37.539469846049855, 126.98947192806239], [37.53935407773362, 126.98927484325453], [37.53919006047123, 126.98899947731984], [37.53890069777774, 126.98850558770074], [37.53872225700037, 126.9880834879091], [37.538538665748234, 126.98756076411517], [37.53842598906228, 126.98717887111887], [37.53839767436669, 126.98702340892221], [37.538399659607116, 126.9868149646972]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_ec070d90249d418a29f86a6861632962 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4ee21c3cf3e8feb700c2e6e4938c3c3 = $(`<div id="html_a4ee21c3cf3e8feb700c2e6e4938c3c3" style="width: 100.0%; height: 100.0%;">{'도로명': '회나무로', '구간명': '중앙경리단앞 ~ 한미연구소', '구간 거리': '951m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ec070d90249d418a29f86a6861632962.setContent(html_a4ee21c3cf3e8feb700c2e6e4938c3c3);
+            
+        
+
+        poly_line_b1c6040a28defee46615d60bd8dabbcc.bindPopup(popup_ec070d90249d418a29f86a6861632962)
+        ;
+
+        
+    
+    
+            poly_line_b1c6040a28defee46615d60bd8dabbcc.bindTooltip(
+                `<div>
+                     {'도로명': '회나무로', '구간명': '중앙경리단앞 ~ 한미연구소', '구간 거리': '951m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_de27593dcc3023fa72c8f1cbb85c94df = L.polyline(
+                [[37.53829154750417, 126.98681334083273], [37.53828940906843, 126.98703793657779], [37.538322159305906, 126.98721775844709], [37.53843841951952, 126.98761179451584], [37.53862491800699, 126.98814279630848], [37.53880891541465, 126.98857804153447], [37.53910322598264, 126.98908037665295], [37.539267283609846, 126.98935581032924], [37.53937658974718, 126.98954189332042], [37.539601286567624, 126.99013900339114], [37.539654622151225, 126.9903791108885], [37.539674635450226, 126.99052753219317], [37.539681915980545, 126.99069181872619], [37.53965893869119, 126.99108911886503], [37.539689263152624, 126.99141071905389], [37.539713640740395, 126.99160041717568], [37.53974226416312, 126.99174741342142], [37.53982620023863, 126.99192719345625], [37.53996962212928, 126.9923020992569], [37.54004860817951, 126.99256752085762], [37.540130000807785, 126.99300835275896], [37.54013954147961, 126.99362912224947], [37.5401960619076, 126.99403940949138], [37.54035184504595, 126.9945284167449], [37.540496529459595, 126.99487057066716], [37.54064300804923, 126.99519986731993], [37.540718865295126, 126.99543366429765], [37.540819759757596, 126.9959669037569], [37.54084293749771, 126.99619677612425], [37.54086193995878, 126.99685237158286]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_2f1f70a90389c78fbbc16fde538910f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4ae7d3abb8192cd84c537bc92faa8e6 = $(`<div id="html_c4ae7d3abb8192cd84c537bc92faa8e6" style="width: 100.0%; height: 100.0%;">{'도로명': '회나무로', '구간명': '한미연구소 ~ 중앙경리단앞', '구간 거리': '952m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_2f1f70a90389c78fbbc16fde538910f4.setContent(html_c4ae7d3abb8192cd84c537bc92faa8e6);
+            
+        
+
+        poly_line_de27593dcc3023fa72c8f1cbb85c94df.bindPopup(popup_2f1f70a90389c78fbbc16fde538910f4)
+        ;
+
+        
+    
+    
+            poly_line_de27593dcc3023fa72c8f1cbb85c94df.bindTooltip(
+                `<div>
+                     {'도로명': '회나무로', '구간명': '한미연구소 ~ 중앙경리단앞', '구간 거리': '952m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_781826ce4d15050ae797139f6df31b6b = L.polyline(
+                [[37.52981367459271, 126.99138859452133], [37.53002943419156, 126.99134425136515], [37.530347820955214, 126.99141641986354], [37.530523684162574, 126.99147078403662]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_a92030f617efe25ac9de7b565343e4ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58dc29facf5c980380774b1f431fa5da = $(`<div id="html_58dc29facf5c980380774b1f431fa5da" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로26길', '구간명': '찬우물삼거리 ~ 운남자동차용품백화점', '구간 거리': '80m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a92030f617efe25ac9de7b565343e4ac.setContent(html_58dc29facf5c980380774b1f431fa5da);
+            
+        
+
+        poly_line_781826ce4d15050ae797139f6df31b6b.bindPopup(popup_a92030f617efe25ac9de7b565343e4ac)
+        ;
+
+        
+    
+    
+            poly_line_781826ce4d15050ae797139f6df31b6b.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로26길', '구간명': '찬우물삼거리 ~ 운남자동차용품백화점', '구간 거리': '80m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6890552da608c2017c548f4a080bad5d = L.polyline(
+                [[37.53054523454334, 126.99133774528651], [37.53045681494576, 126.99131566691952], [37.53042654972989, 126.99129559678902], [37.530410871093096, 126.99127917925301], [37.53039370395754, 126.99123787208897], [37.53038797899052, 126.99118938062709], [37.53039226683282, 126.99114088685705], [37.530480963451105, 126.99097732976912]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_eb999b18247b6668d2110b0a27725c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b601c59dffa692529c8aeff1192fbc98 = $(`<div id="html_b601c59dffa692529c8aeff1192fbc98" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로26길', '구간명': '주님의교회 ~ 찬우물삼거리', '구간 거리': '46m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_eb999b18247b6668d2110b0a27725c7c.setContent(html_b601c59dffa692529c8aeff1192fbc98);
+            
+        
+
+        poly_line_6890552da608c2017c548f4a080bad5d.bindPopup(popup_eb999b18247b6668d2110b0a27725c7c)
+        ;
+
+        
+    
+    
+            poly_line_6890552da608c2017c548f4a080bad5d.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로26길', '구간명': '주님의교회 ~ 찬우물삼거리', '구간 거리': '46m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b39d53213c2c98abe18712b7d207288b = L.polyline(
+                [[37.531399008579605, 126.9966070198659], [37.531127327266475, 126.99664997430152], [37.5306249349299, 126.99670474886247], [37.53035608343432, 126.99670951464118]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_19b83b79b4106507450fe43d9f57d47b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b16fa4013349db6e5fd9dd8ebde1ab32 = $(`<div id="html_b16fa4013349db6e5fd9dd8ebde1ab32" style="width: 100.0%; height: 100.0%;">{'도로명': '우사단로', '구간명': '정수기능대학 ~ 보광초교', '구간 거리': '116m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_19b83b79b4106507450fe43d9f57d47b.setContent(html_b16fa4013349db6e5fd9dd8ebde1ab32);
+            
+        
+
+        poly_line_b39d53213c2c98abe18712b7d207288b.bindPopup(popup_19b83b79b4106507450fe43d9f57d47b)
+        ;
+
+        
+    
+    
+            poly_line_b39d53213c2c98abe18712b7d207288b.bindTooltip(
+                `<div>
+                     {'도로명': '우사단로', '구간명': '정수기능대학 ~ 보광초교', '구간 거리': '116m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aaa8c7250f6b9bfd7a8fd8cbbd5e6a16 = L.polyline(
+                [[37.53035760983106, 126.99684526465649], [37.530630381587436, 126.99684042905531], [37.53113876112285, 126.99678500234529], [37.53141251567959, 126.99674172133662]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_7e418d12fe01a3a88cdc0fdf9d1bf737 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75401431d7bd05850dff9b69c8d16d8d = $(`<div id="html_75401431d7bd05850dff9b69c8d16d8d" style="width: 100.0%; height: 100.0%;">{'도로명': '우사단로', '구간명': '보광초교 ~ 정수기능대학', '구간 거리': '118m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7e418d12fe01a3a88cdc0fdf9d1bf737.setContent(html_75401431d7bd05850dff9b69c8d16d8d);
+            
+        
+
+        poly_line_aaa8c7250f6b9bfd7a8fd8cbbd5e6a16.bindPopup(popup_7e418d12fe01a3a88cdc0fdf9d1bf737)
+        ;
+
+        
+    
+    
+            poly_line_aaa8c7250f6b9bfd7a8fd8cbbd5e6a16.bindTooltip(
+                `<div>
+                     {'도로명': '우사단로', '구간명': '보광초교 ~ 정수기능대학', '구간 거리': '118m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c63705d2a5493e1dc5e515a5f0af3bc3 = L.polyline(
+                [[37.53135331667561, 126.99669083717747], [37.53140429591987, 126.99694685382], [37.531451011366066, 126.99706651249139], [37.53149235663158, 126.9973779491711], [37.531451150778985, 126.99785078445873], [37.53142640362419, 126.99821420061903], [37.53141153112602, 126.99836129382219], [37.53136259349898, 126.99866856808103], [37.53128026930339, 126.99907727295978], [37.53126744974506, 126.999184596962], [37.53129337252284, 126.99952761630402], [37.53131608981166, 126.99962269753212], [37.531326742793006, 126.99980550861227], [37.53132039894092, 126.99987919242487], [37.531295772827235, 126.99995958977759], [37.531256769378096, 127.0000458814969], [37.53121420687878, 127.00015786081532], [37.531136291943106, 127.00047337830746], [37.53109889226291, 127.00066356741515], [37.531051171684865, 127.00079954121074], [37.53091972954852, 127.00117643185695], [37.53090964387244, 127.00133344448132], [37.530881716542645, 127.00154616725119], [37.53083737409745, 127.00177814638354], [37.530765492299096, 127.00199768519288], [37.530748424764084, 127.00219319963612], [37.53076892664501, 127.0023090594821], [37.53084424986738, 127.0023342843829], [37.530901945029775, 127.00231199494327], [37.5309906021386, 127.00214909032117], [37.531318781271594, 127.0015631411503], [37.53158331791784, 127.00117877969598], [37.531862162933855, 127.00080466369243], [37.53194880854193, 127.00067309436304], [37.532012434413886, 127.00052103867611], [37.532064099402554, 127.00033390083566], [37.53222430241383, 126.999543603657], [37.53229283134065, 126.9992947463599], [37.532366241020895, 126.99911729702404], [37.532478730034185, 126.99889364209665], [37.53269747439355, 126.99850329922322], [37.532810701204575, 126.99822856796348], [37.53284973046248, 126.99814972372343], [37.53290841605987, 126.99808024003995], [37.53302676803965, 126.99797716355387], [37.53308077382088, 126.99791257411871], [37.53326449241551, 126.99706410965116], [37.533248322021336, 126.99678250191396], [37.5332322579862, 126.99668165659108], [37.53310311784677, 126.99596874601865], [37.53309839643404, 126.99591146596656], [37.533115118085725, 126.99575743453313], [37.53311707020379, 126.99560009343311]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_c1cb6fd032f9d19f79d66c96acab51d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dab3aaea24463a54aed2490fac6e65f = $(`<div id="html_7dab3aaea24463a54aed2490fac6e65f" style="width: 100.0%; height: 100.0%;">{'도로명': '우사단로10길', '구간명': '이태원천주교회 ~ 보광초교', '구간 거리': '1204m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_c1cb6fd032f9d19f79d66c96acab51d2.setContent(html_7dab3aaea24463a54aed2490fac6e65f);
+            
+        
+
+        poly_line_c63705d2a5493e1dc5e515a5f0af3bc3.bindPopup(popup_c1cb6fd032f9d19f79d66c96acab51d2)
+        ;
+
+        
+    
+    
+            poly_line_c63705d2a5493e1dc5e515a5f0af3bc3.bindTooltip(
+                `<div>
+                     {'도로명': '우사단로10길', '구간명': '이태원천주교회 ~ 보광초교', '구간 거리': '1204m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f98f0266312a231c9373716063fc32c3 = L.polyline(
+                [[37.53300896351175, 126.99559797841944], [37.533007112015376, 126.99574717098417], [37.53298951668486, 126.99590925324632], [37.53299624365489, 126.99599087052877], [37.53312651639573, 126.99671003329901], [37.533140970945645, 126.99680077065838], [37.53315532769819, 126.9970508064429], [37.53298435820002, 126.9978403927327], [37.532958265775186, 126.99787159732269], [37.53284013823209, 126.99797447927592], [37.53276532689295, 126.99806305448777], [37.53271663205791, 126.99816142671575], [37.53260482623443, 126.99843270923067], [37.53238875532776, 126.9988182818659], [37.532272394014555, 126.99904963575081], [37.532193235236235, 126.99924098288791], [37.53212064026595, 126.99950460558478], [37.53196044742396, 127.00029485084094], [37.53191294067756, 127.00046692531102], [37.53185832409662, 127.00059745081083], [37.53178095536665, 127.00071493339786], [37.53150291433411, 127.00108797227573], [37.53123344761089, 127.00147949622963], [37.53090174496149, 127.00207173764124], [37.53086131029582, 127.00214603532825], [37.53087130262415, 127.00203155760366], [37.53094055523867, 127.00182005113183], [37.53098776134831, 127.00157308685047], [37.53101705296143, 127.00134997223257], [37.5310260419669, 127.00121003844613], [37.53115016071908, 127.00085414653371], [37.531201612469935, 127.00070754343464], [37.53124049980645, 127.00050978637964], [37.531315156794705, 127.00020746363293], [37.53135269354351, 127.00010870649977], [37.53139378826274, 127.0000177873998], [37.53142637654771, 126.99991139558495], [37.531435289129675, 126.99980786950103], [37.53142305570668, 126.99959794373841], [37.53140000051687, 126.99950144477752], [37.53137633578201, 126.99918830780084], [37.53138640025869, 126.99910405231003], [37.531468080364824, 126.99869854414774], [37.53151830548946, 126.99838318353292], [37.53153394195069, 126.9982285393286], [37.531558768416026, 126.99786395280982], [37.53160145699156, 126.99737409981434], [37.53155505884938, 126.99702459106587], [37.53150641238598, 126.99689998823968], [37.53145820761922, 126.99665790512115]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_dd1a486df856d33ba2b6b2d078439e46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fa8255577418abc586c9a42a329e439 = $(`<div id="html_7fa8255577418abc586c9a42a329e439" style="width: 100.0%; height: 100.0%;">{'도로명': '우사단로10길', '구간명': '보광초교 ~ 이태원천주교회', '구간 거리': '1160m', '평균 속도': '41.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_dd1a486df856d33ba2b6b2d078439e46.setContent(html_7fa8255577418abc586c9a42a329e439);
+            
+        
+
+        poly_line_f98f0266312a231c9373716063fc32c3.bindPopup(popup_dd1a486df856d33ba2b6b2d078439e46)
+        ;
+
+        
+    
+    
+            poly_line_f98f0266312a231c9373716063fc32c3.bindTooltip(
+                `<div>
+                     {'도로명': '우사단로10길', '구간명': '보광초교 ~ 이태원천주교회', '구간 거리': '1160m', '평균 속도': '41.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_90ea47053c8e2092f778a4e23f1e8d80 = L.polyline(
+                [[37.533047877143, 126.9955338678957], [37.532907073336276, 126.99558544631185], [37.53279869776359, 126.99564593800817], [37.5322685994321, 126.99601123930385], [37.53138004542394, 126.99661466086538]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_13b6da1cf6841709c3e59a8eb9e3e997 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fd08133a3d916cb716673b5422616bb = $(`<div id="html_4fd08133a3d916cb716673b5422616bb" style="width: 100.0%; height: 100.0%;">{'도로명': '우사단로', '구간명': '보광초교 ~ 이태원천주교회', '구간 거리': '209m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_13b6da1cf6841709c3e59a8eb9e3e997.setContent(html_4fd08133a3d916cb716673b5422616bb);
+            
+        
+
+        poly_line_90ea47053c8e2092f778a4e23f1e8d80.bindPopup(popup_13b6da1cf6841709c3e59a8eb9e3e997)
+        ;
+
+        
+    
+    
+            poly_line_90ea47053c8e2092f778a4e23f1e8d80.bindTooltip(
+                `<div>
+                     {'도로명': '우사단로', '구간명': '보광초교 ~ 이태원천주교회', '구간 거리': '209m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_13992135890b867a2f41a772e7fa4998 = L.polyline(
+                [[37.5314314788433, 126.99673408036593], [37.53232032537178, 126.99613046066798], [37.53284674897469, 126.99576769335816], [37.532944338042576, 126.99571322256212], [37.533078155636, 126.99566420285032]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_589aba8119da1686ba050f110f3f8c9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afa7eaf407351126651a268ad2f654f3 = $(`<div id="html_afa7eaf407351126651a268ad2f654f3" style="width: 100.0%; height: 100.0%;">{'도로명': '우사단로', '구간명': '이태원천주교회 ~ 보광초교', '구간 거리': '206m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_589aba8119da1686ba050f110f3f8c9a.setContent(html_afa7eaf407351126651a268ad2f654f3);
+            
+        
+
+        poly_line_13992135890b867a2f41a772e7fa4998.bindPopup(popup_589aba8119da1686ba050f110f3f8c9a)
+        ;
+
+        
+    
+    
+            poly_line_13992135890b867a2f41a772e7fa4998.bindTooltip(
+                `<div>
+                     {'도로명': '우사단로', '구간명': '이태원천주교회 ~ 보광초교', '구간 거리': '206m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4ad6b9d34f939196f6b25880ac6fd2ec = L.polyline(
+                [[37.534602866582105, 126.99552459031112], [37.53442910207573, 126.99556743383795], [37.53403813289123, 126.9956003436717], [37.53322069093176, 126.99550968075441], [37.533149794660645, 126.99550698662405], [37.53305198836222, 126.99553258012287]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_5c9b33757f5265f1e68e85bf997948f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_236b747fc7b67492637429ae814beebd = $(`<div id="html_236b747fc7b67492637429ae814beebd" style="width: 100.0%; height: 100.0%;">{'도로명': '우사단로', '구간명': '이태원천주교회 ~ 이태원소방파출소', '구간 거리': '173m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_5c9b33757f5265f1e68e85bf997948f0.setContent(html_236b747fc7b67492637429ae814beebd);
+            
+        
+
+        poly_line_4ad6b9d34f939196f6b25880ac6fd2ec.bindPopup(popup_5c9b33757f5265f1e68e85bf997948f0)
+        ;
+
+        
+    
+    
+            poly_line_4ad6b9d34f939196f6b25880ac6fd2ec.bindTooltip(
+                `<div>
+                     {'도로명': '우사단로', '구간명': '이태원천주교회 ~ 이태원소방파출소', '구간 거리': '173m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ce9e73ae299901eb7362f9fde951a98a = L.polyline(
+                [[37.5330740453164, 126.99566549174767], [37.533159319740726, 126.99564317793212], [37.53321429439679, 126.9956452666882], [37.53403698460461, 126.99573651458637], [37.534443189704916, 126.99570232156412], [37.534623698190025, 126.99565781702843]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_26fe5c109b654d12143dec6d359537d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0533269b0db4c812444b0f8302116d2b = $(`<div id="html_0533269b0db4c812444b0f8302116d2b" style="width: 100.0%; height: 100.0%;">{'도로명': '우사단로', '구간명': '이태원소방파출소 ~ 이태원천주교회', '구간 거리': '173m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_26fe5c109b654d12143dec6d359537d2.setContent(html_0533269b0db4c812444b0f8302116d2b);
+            
+        
+
+        poly_line_ce9e73ae299901eb7362f9fde951a98a.bindPopup(popup_26fe5c109b654d12143dec6d359537d2)
+        ;
+
+        
+    
+    
+            poly_line_ce9e73ae299901eb7362f9fde951a98a.bindTooltip(
+                `<div>
+                     {'도로명': '우사단로', '구간명': '이태원소방파출소 ~ 이태원천주교회', '구간 거리': '173m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_de0125fa64fe047ed009554273d24958 = L.polyline(
+                [[37.53633282828747, 126.98681172834532], [37.535707087156105, 126.98685382723333], [37.53548142287774, 126.98688129049032], [37.53526568707317, 126.98693642998212], [37.53502075333509, 126.98702369990426], [37.534757868556994, 126.98716588472462], [37.53457353389362, 126.9872591983395], [37.53443481387359, 126.98740077112875], [37.53425275246344, 126.98766756749876], [37.53400999750536, 126.98797248048638], [37.53379758655829, 126.9882501662423], [37.533619852618244, 126.9884625156009], [37.533399502245935, 126.98866966029706], [37.533203101211484, 126.98885026894905], [37.53281522381556, 126.98914973248439]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_a73ed4df7544db2087603887d72c02fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cc7429c9c0d651bae3ce5afa60709bd = $(`<div id="html_5cc7429c9c0d651bae3ce5afa60709bd" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로', '구간명': '이태원지하차도남측 ~ 이태원지하차도', '구간 거리': '460m', '평균 속도': '50.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a73ed4df7544db2087603887d72c02fe.setContent(html_5cc7429c9c0d651bae3ce5afa60709bd);
+            
+        
+
+        poly_line_de0125fa64fe047ed009554273d24958.bindPopup(popup_a73ed4df7544db2087603887d72c02fe)
+        ;
+
+        
+    
+    
+            poly_line_de0125fa64fe047ed009554273d24958.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로', '구간명': '이태원지하차도남측 ~ 이태원지하차도', '구간 거리': '460m', '평균 속도': '50.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a186964703a29c0494771f73b5150e0d = L.polyline(
+                [[37.53287185329412, 126.98926538991643], [37.533263456349985, 126.98896304905882], [37.53346751629519, 126.98877539643632], [37.53358518899428, 126.98866395369342], [37.53387996920299, 126.98833726038838], [37.53413573085338, 126.9880214583303], [37.53430045657376, 126.98780366421565], [37.5344044902058, 126.98763487741503], [37.53458222147298, 126.98741163509891], [37.53473828865261, 126.987313613137], [37.535057047949586, 126.98715189768781], [37.535291261191865, 126.9870684496983], [37.53549746293598, 126.98701574819437], [37.535715198545574, 126.9869892495657], [37.53633861335847, 126.98694730834954]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_50e722f6bad40b51f08d4bf1aa1f77be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34a1d9478ae1eaa0d4c1ba0f8030f50d = $(`<div id="html_34a1d9478ae1eaa0d4c1ba0f8030f50d" style="width: 100.0%; height: 100.0%;">{'도로명': '녹사평대로', '구간명': '이태원지하차도 ~ 이태원지하차도남측', '구간 거리': '454m', '평균 속도': '41.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_50e722f6bad40b51f08d4bf1aa1f77be.setContent(html_34a1d9478ae1eaa0d4c1ba0f8030f50d);
+            
+        
+
+        poly_line_a186964703a29c0494771f73b5150e0d.bindPopup(popup_50e722f6bad40b51f08d4bf1aa1f77be)
+        ;
+
+        
+    
+    
+            poly_line_a186964703a29c0494771f73b5150e0d.bindTooltip(
+                `<div>
+                     {'도로명': '녹사평대로', '구간명': '이태원지하차도 ~ 이태원지하차도남측', '구간 거리': '454m', '평균 속도': '41.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b5eaec5c0bb99162e68c79898ab51610 = L.polyline(
+                [[37.53636751724696, 126.9953446631401], [37.53592081384819, 126.99458581252354], [37.5359015925205, 126.99446315244131], [37.53591300270422, 126.99421692233454], [37.53588805812305, 126.99404612238982], [37.53581173620516, 126.99394071022964], [37.53573242097549, 126.99390293801282], [37.535650053830516, 126.99391328829145], [37.5355615331545, 126.9939823977568], [37.535320162062995, 126.99434268575615], [37.53526529956891, 126.99446395641024], [37.53524966366194, 126.99458180600561], [37.53524779488107, 126.99505155026472], [37.535234233558015, 126.99510776050684], [37.535216145280586, 126.99513473605838], [37.53501803069947, 126.99529452194962], [37.534743031874584, 126.99545898329787], [37.534594630643255, 126.99552748723436]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_141c70faf450c2349fe3f208e392958a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05e449f2611052a3d1767185cb241058 = $(`<div id="html_05e449f2611052a3d1767185cb241058" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로27길', '구간명': '이태원소방파출소 ~ 태국대사관', '구간 거리': '366m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_141c70faf450c2349fe3f208e392958a.setContent(html_05e449f2611052a3d1767185cb241058);
+            
+        
+
+        poly_line_b5eaec5c0bb99162e68c79898ab51610.bindPopup(popup_141c70faf450c2349fe3f208e392958a)
+        ;
+
+        
+    
+    
+            poly_line_b5eaec5c0bb99162e68c79898ab51610.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로27길', '구간명': '이태원소방파출소 ~ 태국대사관', '구간 거리': '366m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bfb295d733cfd20d1840d7fb8456831a = L.polyline(
+                [[37.534631935033055, 126.99565492011837], [37.53478501785685, 126.99558425624109], [37.53507069977229, 126.99541340544693], [37.53528832504982, 126.9952378837399], [37.535331260540964, 126.99517385114993], [37.53535583473323, 126.99507199824703], [37.53535773922925, 126.99459337610892], [37.53536879336708, 126.99451005566743], [37.535409276541245, 126.99442057010823], [37.53563320940397, 126.99408631082392], [37.53568581046255, 126.99404524463554], [37.535717870566046, 126.99404121643926], [37.53574917027815, 126.99405612287882], [37.535787283441586, 126.99410876332732], [37.53580431000314, 126.99422534522263], [37.53579285839712, 126.9944724631514], [37.535819421401776, 126.99464197533004], [37.53628057294496, 126.99542537104176]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_1a9c08ec460171757ff2022859f229a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f29b7ed262e0f8a606385d12f2bc3f2 = $(`<div id="html_6f29b7ed262e0f8a606385d12f2bc3f2" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로27길', '구간명': '태국대사관 ~ 이태원소방파출소', '구간 거리': '350m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_1a9c08ec460171757ff2022859f229a8.setContent(html_6f29b7ed262e0f8a606385d12f2bc3f2);
+            
+        
+
+        poly_line_bfb295d733cfd20d1840d7fb8456831a.bindPopup(popup_1a9c08ec460171757ff2022859f229a8)
+        ;
+
+        
+    
+    
+            poly_line_bfb295d733cfd20d1840d7fb8456831a.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로27길', '구간명': '태국대사관 ~ 이태원소방파출소', '구간 거리': '350m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_727896cfe91e5a5a6d0a1b03b4e5f9dc = L.polyline(
+                [[37.536274586194764, 126.99541242203341], [37.53633057594812, 126.9955717712643], [37.536355816733185, 126.99567318345048], [37.53635581914918, 126.9957396343469], [37.53632421779344, 126.99585034572885], [37.536246677451906, 126.99602699322514], [37.53610034158432, 126.99625188057354], [37.53605743066565, 126.99637163890915], [37.53606534174226, 126.99650071553431], [37.536136110946735, 126.99662845538812], [37.53622589223255, 126.99676373912212], [37.536301239816, 126.99684919497636], [37.536366387761234, 126.99685662922442], [37.53664226595972, 126.99682077898677], [37.53709179936064, 126.99688580731477], [37.537179554458255, 126.99693389060704], [37.537572038703466, 126.99744068414064], [37.53777475515515, 126.9978680558493], [37.53788933382619, 126.99820918571636], [37.53791229620844, 126.99836000878982], [37.53792901056572, 126.99889386594172], [37.53787648897658, 126.99916452404207], [37.537792953346646, 126.99941725051204], [37.53774427947461, 126.99963373540912], [37.537744279738206, 126.99973186632245], [37.53777484549955, 126.99986346707543], [37.53789399559133, 127.00013229013592], [37.53808602166831, 127.00037343526358], [37.53818863687347, 127.000534517886], [37.53825450469123, 127.00067312501514], [37.53830372339537, 127.00084972485631], [37.53831445822526, 127.00103623385671], [37.53830886641863, 127.00132633818762], [37.53828281002275, 127.00157630977789]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_7827a5615d03bddfcc0fc0b8cf2f796d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2683107c9eb9f9732683534dfd71b7a = $(`<div id="html_d2683107c9eb9f9732683534dfd71b7a" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로55길', '구간명': '호성빌딩 ~ 태국대사관', '구간 거리': '707m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_7827a5615d03bddfcc0fc0b8cf2f796d.setContent(html_d2683107c9eb9f9732683534dfd71b7a);
+            
+        
+
+        poly_line_727896cfe91e5a5a6d0a1b03b4e5f9dc.bindPopup(popup_7827a5615d03bddfcc0fc0b8cf2f796d)
+        ;
+
+        
+    
+    
+            poly_line_727896cfe91e5a5a6d0a1b03b4e5f9dc.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로55길', '구간명': '호성빌딩 ~ 태국대사관', '구간 거리': '707m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1354891d60d4ecd22691d7e0fbd8522c = L.polyline(
+                [[37.53839001620343, 127.0015939325063], [37.538416816042414, 127.0013368209632], [37.538422671988755, 127.00103297557112], [37.53841052455895, 127.00082192117576], [37.53835294649378, 127.00061532562188], [37.53827768846258, 127.00045695710746], [37.53816670829865, 127.00028274476126], [37.5379811250893, 127.00004968848582], [37.53787523398393, 126.99981078348102], [37.537852399733985, 126.99971246918594], [37.53785239957284, 126.99965253534624], [37.53789526665182, 126.99946187935016], [37.53797955469578, 126.99920687492852], [37.53803764159815, 126.99890753476265], [37.538020015085294, 126.99834450528967], [37.53799338794483, 126.99816961686233], [37.537871471011066, 126.99780663814929], [37.537658417578605, 126.99735747553834], [37.53724225747559, 126.99682011084609], [37.53712022595867, 126.99675324694562], [37.536642894706205, 126.99668419831555], [37.53636570920211, 126.9967202199621], [37.536346943102814, 126.99671807782745], [37.536304046004574, 126.99666942534293], [37.53622217935044, 126.99654606775505], [37.53617088624677, 126.99645348420462], [37.53616734897274, 126.99639575932464], [37.53619308834537, 126.99632392393002], [37.53633662057642, 126.99610334626288], [37.53642307933287, 126.9959063807722], [37.536463940064856, 126.99576322904129], [37.53646393603881, 126.99565245702122], [37.53643195472892, 126.99552396280095], [37.536373504905434, 126.99535761215904]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_c540196bbdb76e1c12e883c3ab931b1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd2bc100e6b13df218ab29fe2846f7f0 = $(`<div id="html_dd2bc100e6b13df218ab29fe2846f7f0" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로55길', '구간명': '태국대사관 ~ 호성빌딩', '구간 거리': '713m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c540196bbdb76e1c12e883c3ab931b1b.setContent(html_dd2bc100e6b13df218ab29fe2846f7f0);
+            
+        
+
+        poly_line_1354891d60d4ecd22691d7e0fbd8522c.bindPopup(popup_c540196bbdb76e1c12e883c3ab931b1b)
+        ;
+
+        
+    
+    
+            poly_line_1354891d60d4ecd22691d7e0fbd8522c.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로55길', '구간명': '태국대사관 ~ 호성빌딩', '구간 거리': '713m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_946aa6167482c1485d7779772597f4c0 = L.polyline(
+                [[37.54091380952749, 126.9967820650505], [37.54067063179125, 126.99679424489389], [37.54059701583169, 126.99676991946875], [37.54046915996051, 126.99665919229922], [37.54035538166745, 126.99653346109679], [37.540077157098565, 126.99611894850024], [37.5397209440452, 126.99555680022188], [37.5395921447912, 126.99542844101263], [37.539477890475894, 126.9953515845929], [37.53934722500389, 126.99529005887271], [37.53926380616564, 126.99527394719127], [37.539168905522914, 126.99527141751751], [37.538717936067805, 126.99529524216594], [37.53858010286064, 126.99527277174037], [37.53850750546269, 126.99524521353116], [37.53835185611091, 126.9951405133084], [37.538156869779186, 126.9950117870531], [37.53809004680877, 126.99500507848575], [37.537978939461524, 126.99503609268795], [37.537840431255454, 126.99507606077344], [37.53770539017044, 126.99509642018965], [37.53764408677839, 126.99509092528662], [37.537623179270184, 126.99507421945756], [37.537563789664915, 126.9949634915811], [37.5372931039019, 126.99461599681275], [37.53721945077748, 126.99459750390044], [37.537133079038306, 126.99465614108887], [37.53661187005423, 126.99496306681735], [37.53646820626724, 126.99506617050946], [37.53628278881675, 126.99534114848525]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_52f5edf48e397af974d07e84ce1abc1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b78ee159e9a4bd9cb6077856dd7a0099 = $(`<div id="html_b78ee159e9a4bd9cb6077856dd7a0099" style="width: 100.0%; height: 100.0%;">{'도로명': '회나무로44길', '구간명': '태국대사관 ~ 한미연구소', '구간 거리': '616m', '평균 속도': '18.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_52f5edf48e397af974d07e84ce1abc1c.setContent(html_b78ee159e9a4bd9cb6077856dd7a0099);
+            
+        
+
+        poly_line_946aa6167482c1485d7779772597f4c0.bindPopup(popup_52f5edf48e397af974d07e84ce1abc1c)
+        ;
+
+        
+    
+    
+            poly_line_946aa6167482c1485d7779772597f4c0.bindTooltip(
+                `<div>
+                     {'도로명': '회나무로44길', '구간명': '태국대사관 ~ 한미연구소', '구간 거리': '616m', '평균 속도': '18.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b6485b6fbfb1d856b0566b228c354daa = L.polyline(
+                [[37.53636530137267, 126.99542888692329], [37.53653840219468, 126.99517217461997], [37.53666172749544, 126.99508366807395], [37.53718177993419, 126.99477742419852], [37.537236530278875, 126.99474025423754], [37.53723916303165, 126.99474091595576], [37.537479614641725, 126.99504959697363], [37.53754610549296, 126.99517356471485], [37.53760911449632, 126.9952239107992], [37.53770800865474, 126.99523277631214], [37.53785903431243, 126.9952100072245], [37.53800277641242, 126.9951685285269], [37.538097636242384, 126.9951420505034], [37.53812616923756, 126.99514491467035], [37.53830117431461, 126.99526045062063], [37.53846593021113, 126.99537127627406], [37.53855734795118, 126.99540597871908], [37.53871321386538, 126.9954313890002], [37.5391700317283, 126.99540725704988], [37.539254400566726, 126.99540950580084], [37.53931973798102, 126.99542212469538], [37.53943318856684, 126.99547554452515], [37.53953253717998, 126.99554237468247], [37.53964404458627, 126.99565350232113], [37.53999350474788, 126.99620499322536], [37.54027790653763, 126.99662871018691], [37.5404025258907, 126.99676642132125], [37.54055120875166, 126.99689518508202], [37.540658770149726, 126.99693072814084], [37.54091811812404, 126.99691773904475]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_1347c7b7feb1955bb285c8ab4713e1fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec50555aa04ea9b3f2a1a42e3683b5ae = $(`<div id="html_ec50555aa04ea9b3f2a1a42e3683b5ae" style="width: 100.0%; height: 100.0%;">{'도로명': '회나무로44길', '구간명': '한미연구소 ~ 태국대사관', '구간 거리': '605m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_1347c7b7feb1955bb285c8ab4713e1fa.setContent(html_ec50555aa04ea9b3f2a1a42e3683b5ae);
+            
+        
+
+        poly_line_b6485b6fbfb1d856b0566b228c354daa.bindPopup(popup_1347c7b7feb1955bb285c8ab4713e1fa)
+        ;
+
+        
+    
+    
+            poly_line_b6485b6fbfb1d856b0566b228c354daa.bindTooltip(
+                `<div>
+                     {'도로명': '회나무로44길', '구간명': '한미연구소 ~ 태국대사관', '구간 거리': '605m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_510355bd7a9d8123f7ff63f6c50065b8 = L.polyline(
+                [[37.53514981779026, 126.99864817353968], [37.534935979157936, 126.9990590663091], [37.53452127471759, 126.99990418366392]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_e1f0002fa940442ae0d2ced7f63f8858 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_043a3f5c91d3282461240b3a02a23caf = $(`<div id="html_043a3f5c91d3282461240b3a02a23caf" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '케이마켓 ~ 이태원호텔앞교차로', '구간 거리': '131m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_e1f0002fa940442ae0d2ced7f63f8858.setContent(html_043a3f5c91d3282461240b3a02a23caf);
+            
+        
+
+        poly_line_510355bd7a9d8123f7ff63f6c50065b8.bindPopup(popup_e1f0002fa940442ae0d2ced7f63f8858)
+        ;
+
+        
+    
+    
+            poly_line_510355bd7a9d8123f7ff63f6c50065b8.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '케이마켓 ~ 이태원호텔앞교차로', '구간 거리': '131m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e8327dc0568b151548f167d168a70014 = L.polyline(
+                [[37.534705370841294, 127.00004663374104], [37.535118566231645, 126.99920459259322], [37.53533083044524, 126.99879672244248]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_32e9ade1fcbe32ea7d89548aa844ba66);
+        
+    
+        var popup_3b15ef40aa49bc8a00f2a87e6cb33c66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c380672a31d685d54cce8aa90b77e694 = $(`<div id="html_c380672a31d685d54cce8aa90b77e694" style="width: 100.0%; height: 100.0%;">{'도로명': '이태원로', '구간명': '이태원호텔앞교차로 ~ 케이마켓', '구간 거리': '130m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3b15ef40aa49bc8a00f2a87e6cb33c66.setContent(html_c380672a31d685d54cce8aa90b77e694);
+            
+        
+
+        poly_line_e8327dc0568b151548f167d168a70014.bindPopup(popup_3b15ef40aa49bc8a00f2a87e6cb33c66)
+        ;
+
+        
+    
+    
+            poly_line_e8327dc0568b151548f167d168a70014.bindTooltip(
+                `<div>
+                     {'도로명': '이태원로', '구간명': '이태원호텔앞교차로 ~ 케이마켓', '구간 거리': '130m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,110 @@
+{"type": "record",
+  "namespace": "SeoulRtd.citydata",
+  "name": "Record",
+  "fields": [
+    {
+      "name": "list_total_count",
+      "type": "string"
+    },
+    {
+      "name": "RESULT.RESULT.CODE",
+      "type": "string"
+    },
+    {
+      "name": "RESULT.RESULT.MESSAGE",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.AREA_NM",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.AREA_CONGEST_LVL",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.AREA_CONGEST_MSG",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.AREA_PPLTN_MIN",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.AREA_PPLTN_MAX",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.MALE_PPLTN_RATE",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.FEMALE_PPLTN_RATE",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.PPLTN_RATE_0",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.PPLTN_RATE_10",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.PPLTN_RATE_20",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.PPLTN_RATE_30",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.PPLTN_RATE_40",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.PPLTN_RATE_50",
+      "type": "string"
+    },
+    {
+      "name": ".CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.PPLTN_RATE_60",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.PPLTN_RATE_70",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.RESNT_PPLTN_RATE",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.NON_RESNT_PPLTN_RATE",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.REPLACE_YN",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.LIVE_PPLTN_STTS.LIVE_PPLTN_STTS.PPLTN_TIME",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.ROAD_TRAFFIC_STTS.AVG_RAD_DATA.ROAD_MSG",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.ROAD_TRAFFIC_STTS.AVG_RAD_DATA.ROAD_TRAFFIC_IDX",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.ROAD_TRAFFIC_STTS.AVG_RAD_DATA.ROAD_TRFFIC_TIME",
+      "type": "string"
+    },
+    {
+      "name": "CITYDATA.ROAD_TRAFFIC_STTS.AVG_RAD_DATA.ROAD_TRAFFIC_SPD",
+      "type": "string"
+    }
+  ]
+}

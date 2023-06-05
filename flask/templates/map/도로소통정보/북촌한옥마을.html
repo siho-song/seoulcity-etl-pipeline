@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_644574070424439bc7783c762caf8864 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_644574070424439bc7783c762caf8864" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_644574070424439bc7783c762caf8864 = L.map(
+                "map_644574070424439bc7783c762caf8864",
+                {
+                    center: [37.58224598551139, 126.98740495216873],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_72ac816819b11b1082c85c719ab6d13c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_644574070424439bc7783c762caf8864);
+        
+    
+            var poly_line_ec3dfba464aa1bc66d96d2bff46a3f68 = L.polyline(
+                [[37.58331704976917, 126.98503689825873], [37.5820679490097, 126.9850056975067], [37.58013362672889, 126.98495217448763], [37.57942382419633, 126.98492763537351], [37.57922428895399, 126.98495421186449]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644574070424439bc7783c762caf8864);
+        
+    
+        var popup_b584bb7ff929b1777cbf7fcb8c1b6ab6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86d09c67499fd2bdbb0721e4813a0d0d = $(`<div id="html_86d09c67499fd2bdbb0721e4813a0d0d" style="width: 100.0%; height: 100.0%;">{'도로명': '북촌로', '구간명': '재동초등학교앞교차로 ~ 대한불교조계종안국선', '구간 거리': '454m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b584bb7ff929b1777cbf7fcb8c1b6ab6.setContent(html_86d09c67499fd2bdbb0721e4813a0d0d);
+            
+        
+
+        poly_line_ec3dfba464aa1bc66d96d2bff46a3f68.bindPopup(popup_b584bb7ff929b1777cbf7fcb8c1b6ab6)
+        ;
+
+        
+    
+    
+            poly_line_ec3dfba464aa1bc66d96d2bff46a3f68.bindTooltip(
+                `<div>
+                     {'도로명': '북촌로', '구간명': '재동초등학교앞교차로 ~ 대한불교조계종안국선', '구간 거리': '454m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0b8aec1389b03ffba9672051638945a8 = L.polyline(
+                [[37.586365898650165, 126.98523580454153], [37.58622154675402, 126.9854225406475], [37.5861804635502, 126.98546127211948], [37.58612733203408, 126.9854835391995], [37.58603864608528, 126.98548833202686], [37.58594658751067, 126.98547678226004], [37.585865620997275, 126.98545011217922], [37.58508279759368, 126.98510256916192], [37.58498366197811, 126.98507923203245], [37.58490049869312, 126.98507354810845], [37.58354493228762, 126.98504144241986], [37.58331683353016, 126.98503689377337]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644574070424439bc7783c762caf8864);
+        
+    
+        var popup_361c4df1a4016d7c5c7cc3415142620c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af67f1033490c51f7b80c77cf3749bcc = $(`<div id="html_af67f1033490c51f7b80c77cf3749bcc" style="width: 100.0%; height: 100.0%;">{'도로명': '북촌로', '구간명': '대한불교조계종안국선 ~ 삼청우체국', '구간 거리': '353m', '평균 속도': '24.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_361c4df1a4016d7c5c7cc3415142620c.setContent(html_af67f1033490c51f7b80c77cf3749bcc);
+            
+        
+
+        poly_line_0b8aec1389b03ffba9672051638945a8.bindPopup(popup_361c4df1a4016d7c5c7cc3415142620c)
+        ;
+
+        
+    
+    
+            poly_line_0b8aec1389b03ffba9672051638945a8.bindTooltip(
+                `<div>
+                     {'도로명': '북촌로', '구간명': '대한불교조계종안국선 ~ 삼청우체국', '구간 거리': '353m', '평균 속도': '24.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b0d7756e2434800b0343fd66798d0cc3 = L.polyline(
+                [[37.57923568655061, 126.98508930682166], [37.579428054536805, 126.98506368534423], [37.58013094909064, 126.98508798599022], [37.58206568396807, 126.9851415248926], [37.58331490092103, 126.98517273015437]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644574070424439bc7783c762caf8864);
+        
+    
+        var popup_6d15384fbfcc0a6ed088d5ae29569e77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a65c43f5520e33d07945b7d2c0d50a04 = $(`<div id="html_a65c43f5520e33d07945b7d2c0d50a04" style="width: 100.0%; height: 100.0%;">{'도로명': '북촌로', '구간명': '대한불교조계종안국선 ~ 재동초등학교앞교차로', '구간 거리': '453m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_6d15384fbfcc0a6ed088d5ae29569e77.setContent(html_a65c43f5520e33d07945b7d2c0d50a04);
+            
+        
+
+        poly_line_b0d7756e2434800b0343fd66798d0cc3.bindPopup(popup_6d15384fbfcc0a6ed088d5ae29569e77)
+        ;
+
+        
+    
+    
+            poly_line_b0d7756e2434800b0343fd66798d0cc3.bindTooltip(
+                `<div>
+                     {'도로명': '북촌로', '구간명': '대한불교조계종안국선 ~ 재동초등학교앞교차로', '구간 거리': '453m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_afe4946c7410b0fbfa1736ae4922d6dc = L.polyline(
+                [[37.58331511716011, 126.98517273577228], [37.58354305553524, 126.98517728146841], [37.584896542406455, 126.98520934021491], [37.58497071639972, 126.98521441016148], [37.585054668005824, 126.98523417277057], [37.58583384991595, 126.98558010096555], [37.58592739116329, 126.98561091258786], [37.5860355822506, 126.98562448717804], [37.58614714066111, 126.98561845714849], [37.586231313424875, 126.98558318199836], [37.586293201795115, 126.98552483570033], [37.58644345170401, 126.98533047080639]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644574070424439bc7783c762caf8864);
+        
+    
+        var popup_dfa4e63ff14154c7a53706034aae5a95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84a55435fb9e2ab71481a0fb3e7c276f = $(`<div id="html_84a55435fb9e2ab71481a0fb3e7c276f" style="width: 100.0%; height: 100.0%;">{'도로명': '북촌로', '구간명': '삼청우체국 ~ 대한불교조계종안국선', '구간 거리': '363m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_dfa4e63ff14154c7a53706034aae5a95.setContent(html_84a55435fb9e2ab71481a0fb3e7c276f);
+            
+        
+
+        poly_line_afe4946c7410b0fbfa1736ae4922d6dc.bindPopup(popup_dfa4e63ff14154c7a53706034aae5a95)
+        ;
+
+        
+    
+    
+            poly_line_afe4946c7410b0fbfa1736ae4922d6dc.bindTooltip(
+                `<div>
+                     {'도로명': '북촌로', '구간명': '삼청우체국 ~ 대한불교조계종안국선', '구간 거리': '363m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_87a718a71924c6fc4a411a1910932cce = L.polyline(
+                [[37.58326194162438, 126.98510270331566], [37.58325270162222, 126.98547612816097], [37.58319252206969, 126.98570161727054], [37.583167239382064, 126.98602586735034], [37.5830284866769, 126.98682753655855], [37.58303101428737, 126.9881391500454], [37.58300980411206, 126.98833009628572], [37.58291448704842, 126.98863412380612], [37.58290236826067, 126.98874250627881], [37.582901231550785, 126.98908189190297], [37.58289562836369, 126.9891023789567], [37.5828940040401, 126.98910419402824], [37.58272992682535, 126.98916292199907], [37.582562168285655, 126.98926304255652], [37.582395409701896, 126.9893425507561], [37.58229393678084, 126.98936889766203], [37.58221338124408, 126.98937438074283], [37.58214483934701, 126.9893675546374], [37.58195947662811, 126.98932307678012], [37.5816316563258, 126.98926254785692], [37.58096713604039, 126.98921750907311], [37.580190245584056, 126.98918308049578], [37.579421080082355, 126.98920701787036], [37.5793137521127, 126.98918006233811]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644574070424439bc7783c762caf8864);
+        
+    
+        var popup_9a8e0984f06ee1da96252e4607dc5b53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34e3e9e8467969068b36f15f775907d0 = $(`<div id="html_34e3e9e8467969068b36f15f775907d0" style="width: 100.0%; height: 100.0%;">{'도로명': '창덕궁길', '구간명': '계동창덕궁앞 ~ 대한불교조계종안국선', '구간 거리': '762m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_9a8e0984f06ee1da96252e4607dc5b53.setContent(html_34e3e9e8467969068b36f15f775907d0);
+            
+        
+
+        poly_line_87a718a71924c6fc4a411a1910932cce.bindPopup(popup_9a8e0984f06ee1da96252e4607dc5b53)
+        ;
+
+        
+    
+    
+            poly_line_87a718a71924c6fc4a411a1910932cce.bindTooltip(
+                `<div>
+                     {'도로명': '창덕궁길', '구간명': '계동창덕궁앞 ~ 대한불교조계종안국선', '구간 거리': '762m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7424483179b5d20679be6d297c68117c = L.polyline(
+                [[37.579292561156265, 126.98931327895349], [37.579411707701865, 126.98934320247285], [37.580189678620805, 126.98931899240631], [37.580962319033475, 126.98935323506898], [37.5816208620396, 126.98939786946933], [37.58194146879953, 126.98945706633974], [37.582130384162134, 126.98950239878342], [37.58221202841558, 126.98951052852838], [37.582307879132415, 126.98950400527487], [37.58242571825158, 126.98947340731564], [37.58260460828021, 126.98938811579235], [37.582768191947274, 126.98929048791251], [37.582947381994735, 126.98922635086758], [37.5829886630974, 126.98918023130172], [37.583009274498394, 126.98910485991539], [37.58301045596914, 126.98875228763511], [37.58301977418237, 126.98866895540239], [37.583115108447146, 126.98836486975569], [37.58313915154696, 126.98814842220183], [37.58313663362563, 126.9868419773567], [37.5832742285397, 126.98604699826596], [37.5832989301446, 126.98573020308137], [37.583360273298354, 126.98550035238333], [37.583370009104286, 126.98510692510241]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644574070424439bc7783c762caf8864);
+        
+    
+        var popup_6485fa94aafbf380f630bbb723f91ed6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1fcae76252588a4b9325c5ecadf7e2d = $(`<div id="html_c1fcae76252588a4b9325c5ecadf7e2d" style="width: 100.0%; height: 100.0%;">{'도로명': '창덕궁길', '구간명': '대한불교조계종안국선 ~ 계동창덕궁앞', '구간 거리': '783m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_6485fa94aafbf380f630bbb723f91ed6.setContent(html_c1fcae76252588a4b9325c5ecadf7e2d);
+            
+        
+
+        poly_line_7424483179b5d20679be6d297c68117c.bindPopup(popup_6485fa94aafbf380f630bbb723f91ed6)
+        ;
+
+        
+    
+    
+            poly_line_7424483179b5d20679be6d297c68117c.bindTooltip(
+                `<div>
+                     {'도로명': '창덕궁길', '구간명': '대한불교조계종안국선 ~ 계동창덕궁앞', '구간 거리': '783m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

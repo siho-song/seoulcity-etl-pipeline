@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d299b8c88d6db70c193c689c7baf6961 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d299b8c88d6db70c193c689c7baf6961" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d299b8c88d6db70c193c689c7baf6961 = L.map(
+                "map_d299b8c88d6db70c193c689c7baf6961",
+                {
+                    center: [37.51834603891631, 127.08875182621864],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc53d13f37488c4e5017c0761d40051b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+            var poly_line_5820549f08fa85f64e84229fdb53e016 = L.polyline(
+                [[37.51734768167931, 127.08820311830101], [37.51729552603442, 127.08781398534565], [37.517205531048866, 127.08701179451624], [37.51712986460066, 127.08616772187395], [37.51703531486777, 127.0850542736442], [37.516988027498044, 127.08450952268068], [37.516955156708846, 127.08380317412335], [37.51692224288146, 127.08315069721162], [37.516922683661576, 127.08252220066696], [37.51692777288056, 127.08206130848883], [37.51695188541668, 127.08166627903773], [37.51698330923381, 127.08108763167493]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_43be5a33120b19367169df6857558ec4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89f6354ca82cdd76564a65f21e7a52d4 = $(`<div id="html_89f6354ca82cdd76564a65f21e7a52d4" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실여름파출소 ~ 잠실대교JC', '구간 거리': '632m', '평균 속도': '67.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_43be5a33120b19367169df6857558ec4.setContent(html_89f6354ca82cdd76564a65f21e7a52d4);
+            
+        
+
+        poly_line_5820549f08fa85f64e84229fdb53e016.bindPopup(popup_43be5a33120b19367169df6857558ec4)
+        ;
+
+        
+    
+    
+            poly_line_5820549f08fa85f64e84229fdb53e016.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실여름파출소 ~ 잠실대교JC', '구간 거리': '632m', '평균 속도': '67.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8f56eef6b6a18626786be585e4b22b71 = L.polyline(
+                [[37.51682958516886, 127.079223988725], [37.516752776385175, 127.08000204507013], [37.51672387278194, 127.08043896773384], [37.51665628086705, 127.08166595690314], [37.516641670365665, 127.0821088800468], [37.516631805388045, 127.08258173725831], [37.51664569300619, 127.0831743333536], [37.51666425139145, 127.08389861966498], [37.51671623261278, 127.0845511161682], [37.51675871286598, 127.08514973068183], [37.51682949198865, 127.08616737649871], [37.51692399141335, 127.08733469408385], [37.516985594979744, 127.0878435501927], [37.51705204590378, 127.08824466938351]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_05677383aa9eb40414980ef208a318d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7a2edf6b6b60acd92d22c7129c024fc = $(`<div id="html_c7a2edf6b6b60acd92d22c7129c024fc" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '인디커피푸드트럭 ~ 신천중학교앞', '구간 거리': '801m', '평균 속도': '74.8km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_05677383aa9eb40414980ef208a318d8.setContent(html_c7a2edf6b6b60acd92d22c7129c024fc);
+            
+        
+
+        poly_line_8f56eef6b6a18626786be585e4b22b71.bindPopup(popup_05677383aa9eb40414980ef208a318d8)
+        ;
+
+        
+    
+    
+            poly_line_8f56eef6b6a18626786be585e4b22b71.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '인디커피푸드트럭 ~ 신천중학교앞', '구간 거리': '801m', '평균 속도': '74.8km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_98c91c8979603d653146afb6ea130b34 = L.polyline(
+                [[37.51886810245277, 127.09572185587602], [37.51635109775726, 127.09767565535591]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_8eae64c2f46c67ddbd6ffdf97c60d008 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_891ad5350277259deaebe27371da70dc = $(`<div id="html_891ad5350277259deaebe27371da70dc" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '잠실대교남측 ~ 잠실대교', '구간 거리': '328m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_8eae64c2f46c67ddbd6ffdf97c60d008.setContent(html_891ad5350277259deaebe27371da70dc);
+            
+        
+
+        poly_line_98c91c8979603d653146afb6ea130b34.bindPopup(popup_8eae64c2f46c67ddbd6ffdf97c60d008)
+        ;
+
+        
+    
+    
+            poly_line_98c91c8979603d653146afb6ea130b34.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '잠실대교남측 ~ 잠실대교', '구간 거리': '328m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0f03acfa3b7b5bacb812b391fc5d7860 = L.polyline(
+                [[37.51640500190944, 127.09779346179344], [37.518924161477294, 127.09583799460968]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_dd697253790ea300d02ef5859846453b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f67a0e240474b781ceb4c923a154464 = $(`<div id="html_3f67a0e240474b781ceb4c923a154464" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '잠실대교 ~ 잠실대교남측', '구간 거리': '329m', '평균 속도': '56.7km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_dd697253790ea300d02ef5859846453b.setContent(html_3f67a0e240474b781ceb4c923a154464);
+            
+        
+
+        poly_line_0f03acfa3b7b5bacb812b391fc5d7860.bindPopup(popup_dd697253790ea300d02ef5859846453b)
+        ;
+
+        
+    
+    
+            poly_line_0f03acfa3b7b5bacb812b391fc5d7860.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '잠실대교 ~ 잠실대교남측', '구간 거리': '329m', '평균 속도': '56.7km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ff616e6c2be8dbdcf07fd408e23fb3af = L.polyline(
+                [[37.517462395497496, 127.07590974414977], [37.51742284872941, 127.07610006567874], [37.51715014949002, 127.07753635862682], [37.51688699610311, 127.07893075108537], [37.51682958516886, 127.079223988725]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_a0a20be81bfcec0922860f8c133b69f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_700a6bc8b19ae6ce33cd0efafaab058c = $(`<div id="html_700a6bc8b19ae6ce33cd0efafaab058c" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '신천중학교앞 ~ 잠실실내체육관북2문앞', '구간 거리': '301m', '평균 속도': '73.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a0a20be81bfcec0922860f8c133b69f5.setContent(html_700a6bc8b19ae6ce33cd0efafaab058c);
+            
+        
+
+        poly_line_ff616e6c2be8dbdcf07fd408e23fb3af.bindPopup(popup_a0a20be81bfcec0922860f8c133b69f5)
+        ;
+
+        
+    
+    
+            poly_line_ff616e6c2be8dbdcf07fd408e23fb3af.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '신천중학교앞 ~ 잠실실내체육관북2문앞', '구간 거리': '301m', '평균 속도': '73.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_06cdf65db01a46ae3f76b324d6cc9896 = L.polyline(
+                [[37.51815532442509, 127.07125747709127], [37.518164804954665, 127.07138401992039], [37.51819320872524, 127.07171925125272], [37.51817871954851, 127.07202451196129], [37.5181164273227, 127.07253324413335], [37.51798249260176, 127.07323943571657], [37.51782460898312, 127.07411320132067], [37.51760936912876, 127.07520239440221], [37.517462395497496, 127.07590974414977]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_51e7320a799dc0c8411ecf44d9c83ca5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78db960227c07c2a9bda01bc1f110d5a = $(`<div id="html_78db960227c07c2a9bda01bc1f110d5a" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실실내체육관북2문앞 ~ 탄천IC', '구간 거리': '421m', '평균 속도': '64.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_51e7320a799dc0c8411ecf44d9c83ca5.setContent(html_78db960227c07c2a9bda01bc1f110d5a);
+            
+        
+
+        poly_line_06cdf65db01a46ae3f76b324d6cc9896.bindPopup(popup_51e7320a799dc0c8411ecf44d9c83ca5)
+        ;
+
+        
+    
+    
+            poly_line_06cdf65db01a46ae3f76b324d6cc9896.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실실내체육관북2문앞 ~ 탄천IC', '구간 거리': '421m', '평균 속도': '64.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_12bb56bb192eaa6dd6619e73c93e6096 = L.polyline(
+                [[37.51698330923381, 127.08108763167493], [37.517019489565065, 127.0804213279931], [37.51704838094211, 127.08000236064248], [37.51712993775568, 127.07925423433134], [37.51717781655303, 127.07895499942356], [37.517421863308314, 127.07761445443487], [37.51761324101612, 127.07659707542196], [37.51783801755597, 127.07552585428553], [37.51798628452513, 127.07479574018122], [37.51805873422048, 127.07441054104936]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_5d0de672b8b491d1b88d8721bdb6ab89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3746a81f77aaa48fea8e58f111764cf = $(`<div id="html_a3746a81f77aaa48fea8e58f111764cf" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실실내체육관북문앞 ~ 잠실여름파출소', '구간 거리': '603m', '평균 속도': '71.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_5d0de672b8b491d1b88d8721bdb6ab89.setContent(html_a3746a81f77aaa48fea8e58f111764cf);
+            
+        
+
+        poly_line_12bb56bb192eaa6dd6619e73c93e6096.bindPopup(popup_5d0de672b8b491d1b88d8721bdb6ab89)
+        ;
+
+        
+    
+    
+            poly_line_12bb56bb192eaa6dd6619e73c93e6096.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실실내체육관북문앞 ~ 잠실여름파출소', '구간 거리': '603m', '평균 속도': '71.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_18129b5e4112d75c1e23fff7b5738e21 = L.polyline(
+                [[37.51805873422048, 127.07441054104936], [37.518292445079, 127.07316790809786], [37.51838415466336, 127.07245599301403], [37.51842870094352, 127.07073960616951]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_ca5c8d2c75d197dd5a24cf8d90a1fc46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb1f2c588ad711133b8003cdd66615c6 = $(`<div id="html_cb1f2c588ad711133b8003cdd66615c6" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '청담IC ~ 잠실실내체육관북문앞', '구간 거리': '328m', '평균 속도': '70.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ca5c8d2c75d197dd5a24cf8d90a1fc46.setContent(html_cb1f2c588ad711133b8003cdd66615c6);
+            
+        
+
+        poly_line_18129b5e4112d75c1e23fff7b5738e21.bindPopup(popup_ca5c8d2c75d197dd5a24cf8d90a1fc46)
+        ;
+
+        
+    
+    
+            poly_line_18129b5e4112d75c1e23fff7b5738e21.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '청담IC ~ 잠실실내체육관북문앞', '구간 거리': '328m', '평균 속도': '70.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2dee853bcd4241a72cea2ade0cec5183 = L.polyline(
+                [[37.51815902343175, 127.06828248432521], [37.51812505524904, 127.06907646195093], [37.518114031882114, 127.06957925767738], [37.51809036500358, 127.07024635955541], [37.51811277699638, 127.0706896190664], [37.51815532442509, 127.07125747709127]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_4bd5122820fab18ca7e9dd40e295e214 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_641693973d726d9b4267df9cb9ea782e = $(`<div id="html_641693973d726d9b4267df9cb9ea782e" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '탄천IC ~ 청담1교', '구간 거리': '263m', '평균 속도': '68.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_4bd5122820fab18ca7e9dd40e295e214.setContent(html_641693973d726d9b4267df9cb9ea782e);
+            
+        
+
+        poly_line_2dee853bcd4241a72cea2ade0cec5183.bindPopup(popup_4bd5122820fab18ca7e9dd40e295e214)
+        ;
+
+        
+    
+    
+            poly_line_2dee853bcd4241a72cea2ade0cec5183.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '탄천IC ~ 청담1교', '구간 거리': '263m', '평균 속도': '68.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_69b194f467971aa53c326410a46c5f33 = L.polyline(
+                [[37.51818771975938, 127.06761165967124], [37.51815902343175, 127.06828248432521]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_06df75ab340d27ff622b0aaeceab56b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52340cff39de22b6d3ab911eac66496a = $(`<div id="html_52340cff39de22b6d3ab911eac66496a" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '청담1교 ~ 강남구-송파구', '구간 거리': '59m', '평균 속도': '67.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_06df75ab340d27ff622b0aaeceab56b2.setContent(html_52340cff39de22b6d3ab911eac66496a);
+            
+        
+
+        poly_line_69b194f467971aa53c326410a46c5f33.bindPopup(popup_06df75ab340d27ff622b0aaeceab56b2)
+        ;
+
+        
+    
+    
+            poly_line_69b194f467971aa53c326410a46c5f33.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '청담1교 ~ 강남구-송파구', '구간 거리': '59m', '평균 속도': '67.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_126fc2e7923a3157a0c63095b21e76a4 = L.polyline(
+                [[37.51842870094352, 127.07073960616951], [37.518475497301566, 127.0690633172233], [37.518522355427116, 127.06757476176244]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_763e0ba2463490e2b3d2d8330813ff19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e90133e403742534c1114b4f928ef03 = $(`<div id="html_9e90133e403742534c1114b4f928ef03" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '강남구-송파구 ~ 청담IC', '구간 거리': '280m', '평균 속도': '67.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_763e0ba2463490e2b3d2d8330813ff19.setContent(html_9e90133e403742534c1114b4f928ef03);
+            
+        
+
+        poly_line_126fc2e7923a3157a0c63095b21e76a4.bindPopup(popup_763e0ba2463490e2b3d2d8330813ff19)
+        ;
+
+        
+    
+    
+            poly_line_126fc2e7923a3157a0c63095b21e76a4.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '강남구-송파구 ~ 청담IC', '구간 거리': '280m', '평균 속도': '67.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5d6eadb8ee89e9bee78fafd768340ed8 = L.polyline(
+                [[37.52241896675348, 127.10091468752786], [37.52254140956235, 127.10110935375083], [37.52348058163089, 127.10259220808372], [37.52375914262452, 127.10300114992378], [37.52409849968047, 127.1034011999147], [37.52568454138151, 127.10525767208378], [37.52638470526406, 127.10604437564446], [37.52677050970661, 127.1064759480941], [37.527100874722045, 127.10681402273265]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_7262e2fd2c6f2ca202d23f3d3579eae8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bca717a63913514f791301b6935dcbc4 = $(`<div id="html_bca717a63913514f791301b6935dcbc4" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '올림픽대교남단IC ~ 잠실대교JC', '구간 거리': '738m', '평균 속도': '65.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_7262e2fd2c6f2ca202d23f3d3579eae8.setContent(html_bca717a63913514f791301b6935dcbc4);
+            
+        
+
+        poly_line_5d6eadb8ee89e9bee78fafd768340ed8.bindPopup(popup_7262e2fd2c6f2ca202d23f3d3579eae8)
+        ;
+
+        
+    
+    
+            poly_line_5d6eadb8ee89e9bee78fafd768340ed8.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '올림픽대교남단IC ~ 잠실대교JC', '구간 거리': '738m', '평균 속도': '65.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3282d470e17e944cf48d4d643ce53795 = L.polyline(
+                [[37.52102832944527, 127.09405314406051], [37.52057353548903, 127.09439794177538], [37.51886810245277, 127.09572185587602]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_c8a9c879af5d1dddc56a42a439a29a21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_761524dd376f531e658b54202010aa2e = $(`<div id="html_761524dd376f531e658b54202010aa2e" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '잠실대교 ~ 잠실대교JC', '구간 거리': '282m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c8a9c879af5d1dddc56a42a439a29a21.setContent(html_761524dd376f531e658b54202010aa2e);
+            
+        
+
+        poly_line_3282d470e17e944cf48d4d643ce53795.bindPopup(popup_c8a9c879af5d1dddc56a42a439a29a21)
+        ;
+
+        
+    
+    
+            poly_line_3282d470e17e944cf48d4d643ce53795.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '잠실대교 ~ 잠실대교JC', '구간 거리': '282m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8f1bc8f31a6c1bad246a3f41d01cdf39 = L.polyline(
+                [[37.52677004230315, 127.08967329709316], [37.52445559720763, 127.09145463447965], [37.52102832944527, 127.09405314406051]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_ca097220ea2a8aedf5ec845c7022e0a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d047de7a02e73016cf47efa83d2dad5e = $(`<div id="html_d047de7a02e73016cf47efa83d2dad5e" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '잠실대교JC ~ 광진구-송파구', '구간 거리': '746m', '평균 속도': '65.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ca097220ea2a8aedf5ec845c7022e0a5.setContent(html_d047de7a02e73016cf47efa83d2dad5e);
+            
+        
+
+        poly_line_8f1bc8f31a6c1bad246a3f41d01cdf39.bindPopup(popup_ca097220ea2a8aedf5ec845c7022e0a5)
+        ;
+
+        
+    
+    
+            poly_line_8f1bc8f31a6c1bad246a3f41d01cdf39.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '잠실대교JC ~ 광진구-송파구', '구간 거리': '746m', '평균 속도': '65.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3e56a72be8e57de2d446dec639b59efe = L.polyline(
+                [[37.518924161477294, 127.09583799460968], [37.52062993388438, 127.09451381789151], [37.52109468666762, 127.09416147097117]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_77ed41890ac2bd51153fdfe9724991d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0215f3e86e816662466ab1ad6ad700e = $(`<div id="html_d0215f3e86e816662466ab1ad6ad700e" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '잠실대교JC ~ 잠실대교', '구간 거리': '283m', '평균 속도': '64.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_77ed41890ac2bd51153fdfe9724991d0.setContent(html_d0215f3e86e816662466ab1ad6ad700e);
+            
+        
+
+        poly_line_3e56a72be8e57de2d446dec639b59efe.bindPopup(popup_77ed41890ac2bd51153fdfe9724991d0)
+        ;
+
+        
+    
+    
+            poly_line_3e56a72be8e57de2d446dec639b59efe.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '잠실대교JC ~ 잠실대교', '구간 거리': '283m', '평균 속도': '64.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f805e67dae6d176ba32735c06ade7e09 = L.polyline(
+                [[37.52109468666762, 127.09416147097117], [37.52451212376304, 127.0915704172607], [37.526827251233726, 127.08978855913789]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_c095e996b03fd8c4897c47e371fa4c6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f47ef5749f5d79b1f81b2613f1cba37f = $(`<div id="html_f47ef5749f5d79b1f81b2613f1cba37f" style="width: 100.0%; height: 100.0%;">{'도로명': '송파대로', '구간명': '광진구-송파구 ~ 잠실대교JC', '구간 거리': '744m', '평균 속도': '65.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_c095e996b03fd8c4897c47e371fa4c6a.setContent(html_f47ef5749f5d79b1f81b2613f1cba37f);
+            
+        
+
+        poly_line_f805e67dae6d176ba32735c06ade7e09.bindPopup(popup_c095e996b03fd8c4897c47e371fa4c6a)
+        ;
+
+        
+    
+    
+            poly_line_f805e67dae6d176ba32735c06ade7e09.bindTooltip(
+                `<div>
+                     {'도로명': '송파대로', '구간명': '광진구-송파구 ~ 잠실대교JC', '구간 거리': '744m', '평균 속도': '65.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7219ea05c8e2448354cc9a6bbf8bcb4f = L.polyline(
+                [[37.52734263447129, 127.10655534535192], [37.52697816791147, 127.10618889232181], [37.52657448297874, 127.1057572949083], [37.52586718501389, 127.10494813166306], [37.524399099467225, 127.10314121140753], [37.52416336711819, 127.1028266080407], [37.52379194976804, 127.10228284711718], [37.523495530052074, 127.10184694501964], [37.5229114985517, 127.10087695884089]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_dfe86b504e2b5bdedfdf184ba03b6685 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f345de5900957f466799aad33b20c497 = $(`<div id="html_f345de5900957f466799aad33b20c497" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 올림픽대교남단IC', '구간 거리': '705m', '평균 속도': '66.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_dfe86b504e2b5bdedfdf184ba03b6685.setContent(html_f345de5900957f466799aad33b20c497);
+            
+        
+
+        poly_line_7219ea05c8e2448354cc9a6bbf8bcb4f.bindPopup(popup_dfe86b504e2b5bdedfdf184ba03b6685)
+        ;
+
+        
+    
+    
+            poly_line_7219ea05c8e2448354cc9a6bbf8bcb4f.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 올림픽대교남단IC', '구간 거리': '705m', '평균 속도': '66.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_70f845f315257528d75abe8678022ed7 = L.polyline(
+                [[37.51707924042712, 127.09059107016742], [37.511893129324434, 127.09248049176387]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_9a5a892bb815688356efb9a37e5fe667 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fa76be238e28ea5fedaabf01e3ee481 = $(`<div id="html_3fa76be238e28ea5fedaabf01e3ee481" style="width: 100.0%; height: 100.0%;">{'도로명': '잠실로', '구간명': '잠실3사거리 ~ 잠실주공5단지', '구간 거리': '599m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9a5a892bb815688356efb9a37e5fe667.setContent(html_3fa76be238e28ea5fedaabf01e3ee481);
+            
+        
+
+        poly_line_70f845f315257528d75abe8678022ed7.bindPopup(popup_9a5a892bb815688356efb9a37e5fe667)
+        ;
+
+        
+    
+    
+            poly_line_70f845f315257528d75abe8678022ed7.bindTooltip(
+                `<div>
+                     {'도로명': '잠실로', '구간명': '잠실3사거리 ~ 잠실주공5단지', '구간 거리': '599m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2bba541869ab4b804da9c7bf1c10630a = L.polyline(
+                [[37.511923262187096, 127.09261084243657], [37.51710937533659, 127.09072143024059]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_91d2b52200593053b66c1e43f2a52e42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b75f33086cf6afd836287100a0f3cd2d = $(`<div id="html_b75f33086cf6afd836287100a0f3cd2d" style="width: 100.0%; height: 100.0%;">{'도로명': '잠실로', '구간명': '잠실주공5단지 ~ 잠실3사거리', '구간 거리': '599m', '평균 속도': '18.7km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_91d2b52200593053b66c1e43f2a52e42.setContent(html_b75f33086cf6afd836287100a0f3cd2d);
+            
+        
+
+        poly_line_2bba541869ab4b804da9c7bf1c10630a.bindPopup(popup_91d2b52200593053b66c1e43f2a52e42)
+        ;
+
+        
+    
+    
+            poly_line_2bba541869ab4b804da9c7bf1c10630a.bindTooltip(
+                `<div>
+                     {'도로명': '잠실로', '구간명': '잠실주공5단지 ~ 잠실3사거리', '구간 거리': '599m', '평균 속도': '18.7km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d33817f8ab20810f78b3dcf408a11c53 = L.polyline(
+                [[37.517145907220296, 127.09063600782244], [37.516966004025164, 127.0899132104513], [37.51665822817279, 127.08813366768423], [37.51656387391663, 127.0874248147102], [37.51642224856849, 127.08578094054293], [37.51631836159013, 127.08442845981675]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_f7453e984cc135d2a244fabd803f2707 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65bb03fc3fcd16cdc6c99ebe213e5102 = $(`<div id="html_65bb03fc3fcd16cdc6c99ebe213e5102" style="width: 100.0%; height: 100.0%;">{'도로명': '한가람로', '구간명': '잠실1단지앞교차로 ~ 잠실주공5단지', '구간 거리': '558m', '평균 속도': '32.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f7453e984cc135d2a244fabd803f2707.setContent(html_65bb03fc3fcd16cdc6c99ebe213e5102);
+            
+        
+
+        poly_line_d33817f8ab20810f78b3dcf408a11c53.bindPopup(popup_f7453e984cc135d2a244fabd803f2707)
+        ;
+
+        
+    
+    
+            poly_line_d33817f8ab20810f78b3dcf408a11c53.bindTooltip(
+                `<div>
+                     {'도로명': '한가람로', '구간명': '잠실1단지앞교차로 ~ 잠실주공5단지', '구간 거리': '558m', '평균 속도': '32.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c59593a2e588460e66f2ce90bb47f3d2 = L.polyline(
+                [[37.51621074003512, 127.08444149034206], [37.516314687566556, 127.08579475422559], [37.516456716510085, 127.08744331512241], [37.51655201591488, 127.0881592706807], [37.51686136751491, 127.08994792207372], [37.517042707674555, 127.09067649253055]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_e5440c756c1928791c30f145583b38f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58c5c20722b1298ab097c394b5ec44b3 = $(`<div id="html_58c5c20722b1298ab097c394b5ec44b3" style="width: 100.0%; height: 100.0%;">{'도로명': '한가람로', '구간명': '잠실주공5단지 ~ 잠실1단지앞교차로', '구간 거리': '560m', '평균 속도': '32.7km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_e5440c756c1928791c30f145583b38f9.setContent(html_58c5c20722b1298ab097c394b5ec44b3);
+            
+        
+
+        poly_line_c59593a2e588460e66f2ce90bb47f3d2.bindPopup(popup_e5440c756c1928791c30f145583b38f9)
+        ;
+
+        
+    
+    
+            poly_line_c59593a2e588460e66f2ce90bb47f3d2.bindTooltip(
+                `<div>
+                     {'도로명': '한가람로', '구간명': '잠실주공5단지 ~ 잠실1단지앞교차로', '구간 거리': '560m', '평균 속도': '32.7km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f2fa5ae55df9b7aed28aadb35fa5d59d = L.polyline(
+                [[37.51783489918985, 127.10263704592953], [37.516631235149205, 127.09960665148948]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_c272d1beb049bbab51cd219e9290bb47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fab90b5f5aa0f14d2e9f3e21a3d2f2c = $(`<div id="html_4fab90b5f5aa0f14d2e9f3e21a3d2f2c" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로35길', '구간명': '잠실중학교 ~ 잠실장미쇼핑', '구간 거리': '299m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c272d1beb049bbab51cd219e9290bb47.setContent(html_4fab90b5f5aa0f14d2e9f3e21a3d2f2c);
+            
+        
+
+        poly_line_f2fa5ae55df9b7aed28aadb35fa5d59d.bindPopup(popup_c272d1beb049bbab51cd219e9290bb47)
+        ;
+
+        
+    
+    
+            poly_line_f2fa5ae55df9b7aed28aadb35fa5d59d.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로35길', '구간명': '잠실중학교 ~ 잠실장미쇼핑', '구간 거리': '299m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_22f366289558e0f0a3628c35edf4451d = L.polyline(
+                [[37.5165344784719, 127.0996672269269], [37.51773814008244, 127.10269761728763]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_d5fdb5e9ba23ee878890420bf794b014 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6608c4bdc82db450a9d7bac08affba7 = $(`<div id="html_c6608c4bdc82db450a9d7bac08affba7" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로35길', '구간명': '잠실장미쇼핑 ~ 잠실중학교', '구간 거리': '299m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_d5fdb5e9ba23ee878890420bf794b014.setContent(html_c6608c4bdc82db450a9d7bac08affba7);
+            
+        
+
+        poly_line_22f366289558e0f0a3628c35edf4451d.bindPopup(popup_d5fdb5e9ba23ee878890420bf794b014)
+        ;
+
+        
+    
+    
+            poly_line_22f366289558e0f0a3628c35edf4451d.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로35길', '구간명': '잠실장미쇼핑 ~ 잠실중학교', '구간 거리': '299m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f72ba04e047f65037a032476a2cd3731 = L.polyline(
+                [[37.51863550099684, 127.09520614361487], [37.51857049743843, 127.09540465254894], [37.51849926062213, 127.0954948601545], [37.51812478137103, 127.09582622954358], [37.51682150029682, 127.09688415947609], [37.516674112212904, 127.0970226758764], [37.51656500342839, 127.0971969154351], [37.51635109775726, 127.09767565535591]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_6541f533704b241ae56bc072f3a217fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adae727105b264f52fc889cb04faa182 = $(`<div id="html_adae727105b264f52fc889cb04faa182" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교남측 ~ 잠실동31', '구간 거리': '342m', '평균 속도': '23.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_6541f533704b241ae56bc072f3a217fd.setContent(html_adae727105b264f52fc889cb04faa182);
+            
+        
+
+        poly_line_f72ba04e047f65037a032476a2cd3731.bindPopup(popup_6541f533704b241ae56bc072f3a217fd)
+        ;
+
+        
+    
+    
+            poly_line_f72ba04e047f65037a032476a2cd3731.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교남측 ~ 잠실동31', '구간 거리': '342m', '평균 속도': '23.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0eea99fcf175e4d9d7ab09a667f2a40f = L.polyline(
+                [[37.51640500190944, 127.09779346179344], [37.51699092697161, 127.09761378953243], [37.51726729954206, 127.09753446069635], [37.51880408225709, 127.09641240218052], [37.51894692525128, 127.09633977519415], [37.519070812359615, 127.09630317779234], [37.51920446401829, 127.09633239953455], [37.51961061683069, 127.09654578819848]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_e23a9e6a9877857ad7eeb5f07e4e93f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22ba0cd39d9f8f594f65ecf7cf640c4c = $(`<div id="html_22ba0cd39d9f8f594f65ecf7cf640c4c" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '천호대교JC ~ 잠실대교남측', '구간 거리': '391m', '평균 속도': '39.4km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_e23a9e6a9877857ad7eeb5f07e4e93f9.setContent(html_22ba0cd39d9f8f594f65ecf7cf640c4c);
+            
+        
+
+        poly_line_0eea99fcf175e4d9d7ab09a667f2a40f.bindPopup(popup_e23a9e6a9877857ad7eeb5f07e4e93f9)
+        ;
+
+        
+    
+    
+            poly_line_0eea99fcf175e4d9d7ab09a667f2a40f.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '천호대교JC ~ 잠실대교남측', '구간 거리': '391m', '평균 속도': '39.4km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_36bb95a13485f6766c32af92f970b9d7 = L.polyline(
+                [[37.51868310078311, 127.09517397005106], [37.51852224814663, 127.09479887390724], [37.51775269899623, 127.0926341980755], [37.51741587075925, 127.09161291446442], [37.51714538166939, 127.09063400617444]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_cf17c93486d4ad6ba21cfbb2c62620d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddf39331cc7184ed3e385861e9e17f86 = $(`<div id="html_ddf39331cc7184ed3e385861e9e17f86" style="width: 100.0%; height: 100.0%;">{'도로명': '한가람로', '구간명': '잠실주공5단지 ~ 잠실동31', '구간 거리': '437m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_cf17c93486d4ad6ba21cfbb2c62620d6.setContent(html_ddf39331cc7184ed3e385861e9e17f86);
+            
+        
+
+        poly_line_36bb95a13485f6766c32af92f970b9d7.bindPopup(popup_cf17c93486d4ad6ba21cfbb2c62620d6)
+        ;
+
+        
+    
+    
+            poly_line_36bb95a13485f6766c32af92f970b9d7.bindTooltip(
+                `<div>
+                     {'도로명': '한가람로', '구간명': '잠실주공5단지 ~ 잠실동31', '구간 거리': '437m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3071372792ee87ee22053c980bc2829a = L.polyline(
+                [[37.51704323322476, 127.09067849417607], [37.51731476239415, 127.09166116366059], [37.51765336637574, 127.0926878337687], [37.51842514850574, 127.09485879038212], [37.51858790120157, 127.09523831713787]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_15ead169ab9aa252544666d34ccfc260 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78021ccb32e1cb7422ef8d76055df60b = $(`<div id="html_78021ccb32e1cb7422ef8d76055df60b" style="width: 100.0%; height: 100.0%;">{'도로명': '한가람로', '구간명': '잠실동31 ~ 잠실주공5단지', '구간 거리': '438m', '평균 속도': '42.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_15ead169ab9aa252544666d34ccfc260.setContent(html_78021ccb32e1cb7422ef8d76055df60b);
+            
+        
+
+        poly_line_3071372792ee87ee22053c980bc2829a.bindPopup(popup_15ead169ab9aa252544666d34ccfc260)
+        ;
+
+        
+    
+    
+            poly_line_3071372792ee87ee22053c980bc2829a.bindTooltip(
+                `<div>
+                     {'도로명': '한가람로', '구간명': '잠실동31 ~ 잠실주공5단지', '구간 거리': '438m', '평균 속도': '42.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_398af3cc94e8b0dc0d942d5abcca6cea = L.polyline(
+                [[37.51961061683069, 127.09654578819848], [37.5199223583751, 127.09704712547953], [37.5207859447465, 127.09852759327711]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_0bf77c75e94b54f57fbc0cb5e3eecf18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c03afdccc6f5f6ab23341c48f30f577 = $(`<div id="html_7c03afdccc6f5f6ab23341c48f30f577" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 천호대교JC', '구간 거리': '218m', '평균 속도': '42.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_0bf77c75e94b54f57fbc0cb5e3eecf18.setContent(html_7c03afdccc6f5f6ab23341c48f30f577);
+            
+        
+
+        poly_line_398af3cc94e8b0dc0d942d5abcca6cea.bindPopup(popup_0bf77c75e94b54f57fbc0cb5e3eecf18)
+        ;
+
+        
+    
+    
+            poly_line_398af3cc94e8b0dc0d942d5abcca6cea.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 천호대교JC', '구간 거리': '218m', '평균 속도': '42.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ea36ea724509d2a549937cf0598fe943 = L.polyline(
+                [[37.5207859447465, 127.09852759327711], [37.52106910133633, 127.09904107735693], [37.5213999311782, 127.09954832098481], [37.521582150491255, 127.09983479151443], [37.52177390805852, 127.10012121170345], [37.52203050863613, 127.10047076586409]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_7c04491906730c985f46539fda972696 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bf6a7631353d0a4056b78d6cd8a5864 = $(`<div id="html_3bf6a7631353d0a4056b78d6cd8a5864" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '221m', '평균 속도': '46.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7c04491906730c985f46539fda972696.setContent(html_3bf6a7631353d0a4056b78d6cd8a5864);
+            
+        
+
+        poly_line_ea36ea724509d2a549937cf0598fe943.bindPopup(popup_7c04491906730c985f46539fda972696)
+        ;
+
+        
+    
+    
+            poly_line_ea36ea724509d2a549937cf0598fe943.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '221m', '평균 속도': '46.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_83f1cf5209b53becad848bf99c7c97ea = L.polyline(
+                [[37.52203050863613, 127.10047076586409], [37.5220421835247, 127.10057592240886], [37.52208139228537, 127.10072413096587], [37.5222219168373, 127.10100721022557], [37.52243142696855, 127.1013731166239]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_756821d16561ceb27df6ea5174c8b3f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e72ccd3e69d12659a1de91ed02eb701e = $(`<div id="html_e72ccd3e69d12659a1de91ed02eb701e" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '93m', '평균 속도': '38.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_756821d16561ceb27df6ea5174c8b3f2.setContent(html_e72ccd3e69d12659a1de91ed02eb701e);
+            
+        
+
+        poly_line_83f1cf5209b53becad848bf99c7c97ea.bindPopup(popup_756821d16561ceb27df6ea5174c8b3f2)
+        ;
+
+        
+    
+    
+            poly_line_83f1cf5209b53becad848bf99c7c97ea.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '93m', '평균 속도': '38.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a19e47cfb45d2901ed11a575d00cc926 = L.polyline(
+                [[37.52239777416238, 127.10131999586775], [37.52137425068025, 127.10234210755956], [37.52136697150458, 127.1024325045724], [37.52163907722039, 127.10325584528579]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_beed713b7bef33a8b6296c01ae98c7bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3015ea90f9e54504d4966d28f2a80382 = $(`<div id="html_3015ea90f9e54504d4966d28f2a80382" style="width: 100.0%; height: 100.0%;">{'도로명': '오금로2길', '구간명': '잠현초등학교앞 ~ 잠실대교JC', '구간 거리': '232m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_beed713b7bef33a8b6296c01ae98c7bd.setContent(html_3015ea90f9e54504d4966d28f2a80382);
+            
+        
+
+        poly_line_a19e47cfb45d2901ed11a575d00cc926.bindPopup(popup_beed713b7bef33a8b6296c01ae98c7bd)
+        ;
+
+        
+    
+    
+            poly_line_a19e47cfb45d2901ed11a575d00cc926.bindTooltip(
+                `<div>
+                     {'도로명': '오금로2길', '구간명': '잠현초등학교앞 ~ 잠실대교JC', '구간 거리': '232m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2c3847b26aa7f2084bcfa3418aa6d458 = L.polyline(
+                [[37.52174667921848, 127.10322723220337], [37.52147742650632, 127.10241252438566], [37.52246507885059, 127.10142623629537]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_aeccde3fd528a94f5668810164da4611 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1c0e52a04b58c0dfe6f4252eafe3951 = $(`<div id="html_a1c0e52a04b58c0dfe6f4252eafe3951" style="width: 100.0%; height: 100.0%;">{'도로명': '오금로2길', '구간명': '잠실대교JC ~ 잠현초등학교앞', '구간 거리': '218m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_aeccde3fd528a94f5668810164da4611.setContent(html_a1c0e52a04b58c0dfe6f4252eafe3951);
+            
+        
+
+        poly_line_2c3847b26aa7f2084bcfa3418aa6d458.bindPopup(popup_aeccde3fd528a94f5668810164da4611)
+        ;
+
+        
+    
+    
+            poly_line_2c3847b26aa7f2084bcfa3418aa6d458.bindTooltip(
+                `<div>
+                     {'도로명': '오금로2길', '구간명': '잠실대교JC ~ 잠현초등학교앞', '구간 거리': '218m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8a9ac9c6ce1929af9aed3e539f320efb = L.polyline(
+                [[37.52243142696855, 127.1013731166239], [37.52274191644951, 127.10190129700639], [37.52294545681514, 127.10222931613364], [37.52302040595643, 127.102395534663], [37.523106011977525, 127.1026425819513], [37.52315585553666, 127.10289407060445], [37.52321974583379, 127.10343740422958], [37.52324116597806, 127.10347784079364], [37.52326976489504, 127.10348686013012], [37.52329480740792, 127.10347342495895], [37.52331275764574, 127.10339263682], [37.523256276055406, 127.10255299510413], [37.52326349834571, 127.10247219098166], [37.52330649417874, 127.10237347831072], [37.523385228519956, 127.1022972616788], [37.52468040893494, 127.10146394040831], [37.52693084221561, 127.1000347213472], [37.53219309842222, 127.09667241874939]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_15a653bfc9e9c11c14579c47a64b6ae6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1210c9de4eaaf09678ca54189f882bab = $(`<div id="html_1210c9de4eaaf09678ca54189f882bab" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로.한가람로사이길', '구간명': '광진구-송파구 ~ 잠실대교JC', '구간 거리': '1424m', '평균 속도': '44.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_15a653bfc9e9c11c14579c47a64b6ae6.setContent(html_1210c9de4eaaf09678ca54189f882bab);
+            
+        
+
+        poly_line_8a9ac9c6ce1929af9aed3e539f320efb.bindPopup(popup_15a653bfc9e9c11c14579c47a64b6ae6)
+        ;
+
+        
+    
+    
+            poly_line_8a9ac9c6ce1929af9aed3e539f320efb.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로.한가람로사이길', '구간명': '광진구-송파구 ~ 잠실대교JC', '구간 거리': '1424m', '평균 속도': '44.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a00fcadc905433ceff5365c250dfa66c = L.polyline(
+                [[37.517462395497496, 127.07590974414977], [37.517120384324556, 127.07641454179276], [37.516873696616194, 127.07678719438594], [37.51669646333911, 127.0771226447154]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_1bce472b4e3a8ed56b75e73204bd9c36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb8f6da51629a8c5bb0a46a6fe37dfe1 = $(`<div id="html_fb8f6da51629a8c5bb0a46a6fe37dfe1" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실선착장앞 ~ 잠실실내체육관북2문앞', '구간 거리': '137m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_1bce472b4e3a8ed56b75e73204bd9c36.setContent(html_fb8f6da51629a8c5bb0a46a6fe37dfe1);
+            
+        
+
+        poly_line_a00fcadc905433ceff5365c250dfa66c.bindPopup(popup_1bce472b4e3a8ed56b75e73204bd9c36)
+        ;
+
+        
+    
+    
+            poly_line_a00fcadc905433ceff5365c250dfa66c.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실선착장앞 ~ 잠실실내체육관북2문앞', '구간 거리': '137m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fb6785ab38d03a0fe34a5655db107fda = L.polyline(
+                [[37.51705204590378, 127.08824466938351], [37.51701142128195, 127.08867800906316], [37.51712864177152, 127.08946778961678], [37.517650983190975, 127.09154878786329], [37.517858840582775, 127.09217491102636]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_3c0afde959ea813660a982b4ee0b6b91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95c2f65c2e95b9cd72e56b3b47267c2d = $(`<div id="html_95c2f65c2e95b9cd72e56b3b47267c2d" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 인디커피푸드트럭', '구간 거리': '362m', '평균 속도': '38.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3c0afde959ea813660a982b4ee0b6b91.setContent(html_95c2f65c2e95b9cd72e56b3b47267c2d);
+            
+        
+
+        poly_line_fb6785ab38d03a0fe34a5655db107fda.bindPopup(popup_3c0afde959ea813660a982b4ee0b6b91)
+        ;
+
+        
+    
+    
+            poly_line_fb6785ab38d03a0fe34a5655db107fda.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 인디커피푸드트럭', '구간 거리': '362m', '평균 속도': '38.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4814aeaca4ac16dc5ad64980972c12ed = L.polyline(
+                [[37.51698330923381, 127.08108763167493], [37.51715772279811, 127.08019279642858], [37.51733948211087, 127.07933099232375], [37.517439555313814, 127.0789711453512], [37.517510619411574, 127.07883601493093], [37.5176647507308, 127.07858813916822], [37.51770621707968, 127.07851305419551], [37.51787042599788, 127.07774864541344]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_9f903c4c9017d7631613df68a14582a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ae42a8ee5d2004cffdc08f5d9bc25f9 = $(`<div id="html_1ae42a8ee5d2004cffdc08f5d9bc25f9" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '종합운동장분기점 ~ 잠실여름파출소', '구간 거리': '314m', '평균 속도': '35.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9f903c4c9017d7631613df68a14582a7.setContent(html_1ae42a8ee5d2004cffdc08f5d9bc25f9);
+            
+        
+
+        poly_line_4814aeaca4ac16dc5ad64980972c12ed.bindPopup(popup_9f903c4c9017d7631613df68a14582a7)
+        ;
+
+        
+    
+    
+            poly_line_4814aeaca4ac16dc5ad64980972c12ed.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '종합운동장분기점 ~ 잠실여름파출소', '구간 거리': '314m', '평균 속도': '35.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f76e0ea524d785becc601036528e6d90 = L.polyline(
+                [[37.51682311120457, 127.06974597262301], [37.51736086757726, 127.06977540021445], [37.51754582566781, 127.06981176391679], [37.51770726297937, 127.06993808424981], [37.51785103192109, 127.07012438787964], [37.51794114203732, 127.07031099932726], [37.51799545393815, 127.0704903324183], [37.51815532442509, 127.07125747709127]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_84f2faca0f878bdf1b4bdf408a3cfa0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3467ba34e2b0d6b3128d36affc92d17a = $(`<div id="html_3467ba34e2b0d6b3128d36affc92d17a" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '탄천IC ~ 탄천IC', '구간 거리': '231m', '평균 속도': '41.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_84f2faca0f878bdf1b4bdf408a3cfa0f.setContent(html_3467ba34e2b0d6b3128d36affc92d17a);
+            
+        
+
+        poly_line_f76e0ea524d785becc601036528e6d90.bindPopup(popup_84f2faca0f878bdf1b4bdf408a3cfa0f)
+        ;
+
+        
+    
+    
+            poly_line_f76e0ea524d785becc601036528e6d90.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '탄천IC ~ 탄천IC', '구간 거리': '231m', '평균 속도': '41.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ea9a80e5d0f718d5f2488a248cb9a821 = L.polyline(
+                [[37.51673096370562, 127.07743655127197], [37.51787042599788, 127.07774864541344]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_98b3fa6b7e962b70a3b269d68d1eccd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d78616c311085c0494f5fdf220369740 = $(`<div id="html_d78616c311085c0494f5fdf220369740" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '종합운동장분기점 ~ 잠실선착장앞', '구간 거리': '129m', '평균 속도': '18.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_98b3fa6b7e962b70a3b269d68d1eccd1.setContent(html_d78616c311085c0494f5fdf220369740);
+            
+        
+
+        poly_line_ea9a80e5d0f718d5f2488a248cb9a821.bindPopup(popup_98b3fa6b7e962b70a3b269d68d1eccd1)
+        ;
+
+        
+    
+    
+            poly_line_ea9a80e5d0f718d5f2488a248cb9a821.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '종합운동장분기점 ~ 잠실선착장앞', '구간 거리': '129m', '평균 속도': '18.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ebbdbe8529a226a67385f306c74de4fb = L.polyline(
+                [[37.51815902343175, 127.06828248432521], [37.51803124220513, 127.06885836206116], [37.51794274179296, 127.06911336562274], [37.51783009173283, 127.06928617161292], [37.51769326614612, 127.06936929530634], [37.51753847231798, 127.06943006501511], [37.51735969495538, 127.06945354736685], [37.51686337457087, 127.06960200785954]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_59a6b2970c540a50d2984407c06d98ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f4f8497f786860db57faffe89b013c7 = $(`<div id="html_2f4f8497f786860db57faffe89b013c7" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '탄천IC ~ 청담1교', '구간 거리': '209m', '평균 속도': '41.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_59a6b2970c540a50d2984407c06d98ba.setContent(html_2f4f8497f786860db57faffe89b013c7);
+            
+        
+
+        poly_line_ebbdbe8529a226a67385f306c74de4fb.bindPopup(popup_59a6b2970c540a50d2984407c06d98ba)
+        ;
+
+        
+    
+    
+            poly_line_ebbdbe8529a226a67385f306c74de4fb.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '탄천IC ~ 청담1교', '구간 거리': '209m', '평균 속도': '41.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8a300bdbc572fbd9507e0387fd3a7184 = L.polyline(
+                [[37.51787042599788, 127.07774864541344], [37.51793165686502, 127.0773650613805], [37.51788556287626, 127.07714675422004], [37.517791387046536, 127.07682093395846], [37.51785085772656, 127.07611400078332], [37.517908413656244, 127.07553881600403], [37.51805873422048, 127.07441054104936]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_904699ba9fa5a5c7d8c778c414dcdf88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10703b8d77c90d2706e37bd411755104 = $(`<div id="html_10703b8d77c90d2706e37bd411755104" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실실내체육관북문앞 ~ 종합운동장분기점', '구간 거리': '300m', '평균 속도': '36.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_904699ba9fa5a5c7d8c778c414dcdf88.setContent(html_10703b8d77c90d2706e37bd411755104);
+            
+        
+
+        poly_line_8a300bdbc572fbd9507e0387fd3a7184.bindPopup(popup_904699ba9fa5a5c7d8c778c414dcdf88)
+        ;
+
+        
+    
+    
+            poly_line_8a300bdbc572fbd9507e0387fd3a7184.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실실내체육관북문앞 ~ 종합운동장분기점', '구간 거리': '300m', '평균 속도': '36.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4a9862118aa49584de3ffe23aecdd4da = L.polyline(
+                [[37.51869482039193, 127.09237395880287], [37.51818810922162, 127.09067009378396], [37.517614225008174, 127.08885883498873], [37.517527496520046, 127.08860781025045], [37.51734768167931, 127.08820311830101]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_3a36bed9b3e1a93fe3fca230eb22e736 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7f7645c2e91b27796f0a37716471146 = $(`<div id="html_e7f7645c2e91b27796f0a37716471146" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '398m', '평균 속도': '20.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_3a36bed9b3e1a93fe3fca230eb22e736.setContent(html_e7f7645c2e91b27796f0a37716471146);
+            
+        
+
+        poly_line_4a9862118aa49584de3ffe23aecdd4da.bindPopup(popup_3a36bed9b3e1a93fe3fca230eb22e736)
+        ;
+
+        
+    
+    
+            poly_line_4a9862118aa49584de3ffe23aecdd4da.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '398m', '평균 속도': '20.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c2c65655b5cae8a1fa391c295ad926c5 = L.polyline(
+                [[37.51869482039193, 127.09237395880287], [37.5184154525846, 127.0915850415701], [37.51830071293886, 127.09150782101835], [37.51818136894357, 127.09147853068362], [37.51805265160515, 127.09149719619208], [37.517948030952546, 127.09158758893092], [37.51785315677902, 127.09173780935744], [37.51782995028101, 127.09192356685749], [37.517858840582775, 127.09217491102636]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_211e9103573bd288a87eb94ec850438d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97dda726c4c11b5e56229ef3655b2f6c = $(`<div id="html_97dda726c4c11b5e56229ef3655b2f6c" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '189m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_211e9103573bd288a87eb94ec850438d.setContent(html_97dda726c4c11b5e56229ef3655b2f6c);
+            
+        
+
+        poly_line_c2c65655b5cae8a1fa391c295ad926c5.bindPopup(popup_211e9103573bd288a87eb94ec850438d)
+        ;
+
+        
+    
+    
+            poly_line_c2c65655b5cae8a1fa391c295ad926c5.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '189m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cde7efd9ee70e69e2d3b5404fe98be47 = L.polyline(
+                [[37.517858840582775, 127.09217491102636], [37.518220252046454, 127.09324332554286], [37.51863884545115, 127.09447237254827]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_04c6474159d5431b2014a6cdd4520358 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67f36a39cd65033e5386a185da6f047b = $(`<div id="html_67f36a39cd65033e5386a185da6f047b" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '221m', '평균 속도': '23.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_04c6474159d5431b2014a6cdd4520358.setContent(html_67f36a39cd65033e5386a185da6f047b);
+            
+        
+
+        poly_line_cde7efd9ee70e69e2d3b5404fe98be47.bindPopup(popup_04c6474159d5431b2014a6cdd4520358)
+        ;
+
+        
+    
+    
+            poly_line_cde7efd9ee70e69e2d3b5404fe98be47.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '221m', '평균 속도': '23.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a64cf261fd6df3e2d530e003e01294ff = L.polyline(
+                [[37.51863884545115, 127.09447237254827], [37.51869031885106, 127.09470413659444], [37.51868240272227, 127.0950035889177], [37.51863550099684, 127.09520614361487]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_1b97a92e9e097cf2e84a966ba3d10be6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_554e37eef8dd3d4549a6a8b738dfdcea = $(`<div id="html_554e37eef8dd3d4549a6a8b738dfdcea" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실동31 ~ 잠실대교JC', '구간 거리': '66m', '평균 속도': '23.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_1b97a92e9e097cf2e84a966ba3d10be6.setContent(html_554e37eef8dd3d4549a6a8b738dfdcea);
+            
+        
+
+        poly_line_a64cf261fd6df3e2d530e003e01294ff.bindPopup(popup_1b97a92e9e097cf2e84a966ba3d10be6)
+        ;
+
+        
+    
+    
+            poly_line_a64cf261fd6df3e2d530e003e01294ff.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실동31 ~ 잠실대교JC', '구간 거리': '66m', '평균 속도': '23.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_898ed772a45d84d8e8c4c0026476a463 = L.polyline(
+                [[37.51682311120457, 127.06974597262301], [37.516942147615666, 127.0697255394333], [37.51736412152217, 127.06967547674792], [37.517897185134196, 127.06964279640961], [37.51804626805721, 127.06966532417358], [37.51830481241249, 127.06969333593972], [37.51848575258585, 127.06975468947228], [37.51863286863662, 127.06984877067819], [37.51875857023546, 127.0699827934278], [37.5188453314355, 127.07011343076552], [37.518911296340036, 127.07023059690292], [37.519004483918714, 127.07055640717992], [37.51902924622948, 127.07080776920256], [37.5190013676009, 127.07101152881442], [37.51890706360067, 127.07131147849113], [37.51883103202074, 127.07138975958898], [37.51874533180103, 127.07143216728224], [37.51866416202216, 127.07140867905542], [37.51856369552365, 127.07132541925189], [37.518515565755465, 127.0712059303728], [37.51842870094352, 127.07073960616951]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_9e125fe18281fde3e67a46e6e0016506 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0861921df031518f9e87d887fb7b73b = $(`<div id="html_b0861921df031518f9e87d887fb7b73b" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '청담IC ~ 탄천IC', '구간 거리': '448m', '평균 속도': '43.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9e125fe18281fde3e67a46e6e0016506.setContent(html_b0861921df031518f9e87d887fb7b73b);
+            
+        
+
+        poly_line_898ed772a45d84d8e8c4c0026476a463.bindPopup(popup_9e125fe18281fde3e67a46e6e0016506)
+        ;
+
+        
+    
+    
+            poly_line_898ed772a45d84d8e8c4c0026476a463.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '청담IC ~ 탄천IC', '구간 거리': '448m', '평균 속도': '43.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_30d6680d21aa50e8bcf3ff0d13969627 = L.polyline(
+                [[37.51705204590378, 127.08824466938351], [37.51714228025557, 127.08871764685996], [37.517237270874, 127.0892026021582], [37.51736085813371, 127.08969956395195], [37.51745115972695, 127.09007677335434], [37.51755580018763, 127.09040611441438], [37.51783167483504, 127.09126241101714], [37.518549877536685, 127.09348402343628], [37.51891734283799, 127.09454996297538], [37.51903511581521, 127.09483743206569], [37.51932785604657, 127.09543489419636], [37.519620595984094, 127.09602787129415], [37.51987054381531, 127.09647264628782], [37.52128807526718, 127.09899309550734], [37.52201383630838, 127.10027059308524], [37.52241896675348, 127.10091468752786]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_9bd26ee2c5e3c8b67253cf4885fc1871 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_594bda220b2c1a5b8fcfa93811e72009 = $(`<div id="html_594bda220b2c1a5b8fcfa93811e72009" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 인디커피푸드트럭', '구간 거리': '1280m', '평균 속도': '75.3km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_9bd26ee2c5e3c8b67253cf4885fc1871.setContent(html_594bda220b2c1a5b8fcfa93811e72009);
+            
+        
+
+        poly_line_30d6680d21aa50e8bcf3ff0d13969627.bindPopup(popup_9bd26ee2c5e3c8b67253cf4885fc1871)
+        ;
+
+        
+    
+    
+            poly_line_30d6680d21aa50e8bcf3ff0d13969627.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 인디커피푸드트럭', '구간 거리': '1280m', '평균 속도': '75.3km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1654c35073c56c2ad45d1c01aa5894d5 = L.polyline(
+                [[37.5229114985517, 127.10087695884089], [37.52252427631675, 127.10023385831315], [37.522144299945666, 127.09959618360644], [37.52167444084728, 127.09878708653457], [37.52012823210122, 127.09619463171045], [37.51987470805964, 127.09574985154204], [37.519610507516454, 127.09523771983116], [37.51927135282134, 127.09455040965732], [37.51913212807577, 127.09425842232282], [37.51883593830221, 127.09349485503384], [37.51807968758308, 127.09115047964019], [37.517808595113294, 127.09027473260721], [37.51772301009076, 127.08996486723588], [37.51763029774864, 127.08962356810596], [37.51751267143678, 127.08912511521423], [37.51742006365815, 127.08864016104963], [37.51734768167931, 127.08820311830101]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_6ca98fb69a52869cd941711d860f54f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0a2dceea8cf2f7245f88f20e122d033 = $(`<div id="html_d0a2dceea8cf2f7245f88f20e122d033" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '1292m', '평균 속도': '71.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_6ca98fb69a52869cd941711d860f54f5.setContent(html_d0a2dceea8cf2f7245f88f20e122d033);
+            
+        
+
+        poly_line_1654c35073c56c2ad45d1c01aa5894d5.bindPopup(popup_6ca98fb69a52869cd941711d860f54f5)
+        ;
+
+        
+    
+    
+            poly_line_1654c35073c56c2ad45d1c01aa5894d5.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '1292m', '평균 속도': '71.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ee8be85b94e9a346add61ba63b803ed5 = L.polyline(
+                [[37.51863884545115, 127.09447237254827], [37.51885906002037, 127.09505577931233], [37.519377714978894, 127.09608594744793], [37.51961061683069, 127.09654578819848]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_8ffb6a7a3172e04ec28a6d93653f0690 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c4dda6596d1e62a6776a411a421261f = $(`<div id="html_0c4dda6596d1e62a6776a411a421261f" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '천호대교JC ~ 잠실대교JC', '구간 거리': '213m', '평균 속도': '53.7km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_8ffb6a7a3172e04ec28a6d93653f0690.setContent(html_0c4dda6596d1e62a6776a411a421261f);
+            
+        
+
+        poly_line_ee8be85b94e9a346add61ba63b803ed5.bindPopup(popup_8ffb6a7a3172e04ec28a6d93653f0690)
+        ;
+
+        
+    
+    
+            poly_line_ee8be85b94e9a346add61ba63b803ed5.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '천호대교JC ~ 잠실대교JC', '구간 거리': '213m', '평균 속도': '53.7km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_db43053752d37c3d42902c44ca10c344 = L.polyline(
+                [[37.52102832944527, 127.09405314406051], [37.520304478199066, 127.09441919520296], [37.52011858712302, 127.094456131046], [37.519951630876086, 127.09445104625966], [37.51975587107821, 127.09439222289278], [37.51963157299577, 127.09430906057496], [37.51950713168843, 127.09418398097108], [37.51939687457014, 127.09402289462766], [37.51927677029377, 127.09377204015446], [37.518998112771996, 127.09318670608346], [37.51869482039193, 127.09237395880287]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_eda72a49a0e28a9f3ae434a57b26b2e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2359a0549094f7987f39518087ef67fd = $(`<div id="html_2359a0549094f7987f39518087ef67fd" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '366m', '평균 속도': '22.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_eda72a49a0e28a9f3ae434a57b26b2e2.setContent(html_2359a0549094f7987f39518087ef67fd);
+            
+        
+
+        poly_line_db43053752d37c3d42902c44ca10c344.bindPopup(popup_eda72a49a0e28a9f3ae434a57b26b2e2)
+        ;
+
+        
+    
+    
+            poly_line_db43053752d37c3d42902c44ca10c344.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '366m', '평균 속도': '22.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_29a769f8448880962627b80508749df8 = L.polyline(
+                [[37.52120211370055, 127.09748039043008], [37.52075146239582, 127.09680612738569], [37.519892665132254, 127.09533763048142], [37.519489472418584, 127.09459726501673], [37.51933096456879, 127.0942747579238], [37.51920600814884, 127.09399997599796], [37.51902297124076, 127.09347999388874], [37.51869482039193, 127.09237395880287]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_a7182c61d8530fdf2f06e0abd396c119 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26b3176ae64f353580af3a82efff291f = $(`<div id="html_26b3176ae64f353580af3a82efff291f" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '534m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_a7182c61d8530fdf2f06e0abd396c119.setContent(html_26b3176ae64f353580af3a82efff291f);
+            
+        
+
+        poly_line_29a769f8448880962627b80508749df8.bindPopup(popup_a7182c61d8530fdf2f06e0abd396c119)
+        ;
+
+        
+    
+    
+            poly_line_29a769f8448880962627b80508749df8.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '534m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5d21a05f82caefbd0446cb60a3ac5b2a = L.polyline(
+                [[37.52120211370055, 127.09748039043008], [37.52087084564136, 127.09684740339668], [37.52043890131473, 127.09606525653318], [37.520357223825826, 127.09589203590897], [37.520327991322006, 127.09571254452936], [37.520317837360835, 127.09553294978792], [37.52033130481929, 127.09528735572835], [37.520383113970574, 127.09509544961382], [37.52046828919289, 127.09489737404888], [37.52109468666762, 127.09416147097117]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_02e33f1e861528072b08de08fc286d5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74bcdefa26a7642db33df3c1b2c39272 = $(`<div id="html_74bcdefa26a7642db33df3c1b2c39272" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '356m', '평균 속도': '47.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_02e33f1e861528072b08de08fc286d5e.setContent(html_74bcdefa26a7642db33df3c1b2c39272);
+            
+        
+
+        poly_line_5d21a05f82caefbd0446cb60a3ac5b2a.bindPopup(popup_02e33f1e861528072b08de08fc286d5e)
+        ;
+
+        
+    
+    
+            poly_line_5d21a05f82caefbd0446cb60a3ac5b2a.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '356m', '평균 속도': '47.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_974088d3e93912afdaa3bff631fb8b28 = L.polyline(
+                [[37.5207859447465, 127.09852759327711], [37.52090083324408, 127.09864973981566], [37.52102512733028, 127.0987329107394], [37.521139699522514, 127.09876223913254], [37.52128743517215, 127.0987255177263], [37.521401580849, 127.09862909259013], [37.52147271795964, 127.09850894322207], [37.52150088691341, 127.09837704717391], [37.52151470724231, 127.09823325100436], [37.52140865474474, 127.09790445669726], [37.52120211370055, 127.09748039043008]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_aebd63d1b6797d399b83df856fd98549 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ba9acd86a49a6672de6d0a7558172cc = $(`<div id="html_4ba9acd86a49a6672de6d0a7558172cc" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '191m', '평균 속도': '32.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_aebd63d1b6797d399b83df856fd98549.setContent(html_4ba9acd86a49a6672de6d0a7558172cc);
+            
+        
+
+        poly_line_974088d3e93912afdaa3bff631fb8b28.bindPopup(popup_aebd63d1b6797d399b83df856fd98549)
+        ;
+
+        
+    
+    
+            poly_line_974088d3e93912afdaa3bff631fb8b28.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '191m', '평균 속도': '32.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e2a792ec2357248e4e0bb4858e53b28c = L.polyline(
+                [[37.5229114985517, 127.10087695884089], [37.52267573866512, 127.10022718640619], [37.52232510302287, 127.09950445133443], [37.522065817471116, 127.09899681764668], [37.52120211370055, 127.09748039043008]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_3451bccdf1b2f7d8bb0dc0b600bb0ca4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5da8e760678daea3a3ad61e18baadc8a = $(`<div id="html_5da8e760678daea3a3ad61e18baadc8a" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '356m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_3451bccdf1b2f7d8bb0dc0b600bb0ca4.setContent(html_5da8e760678daea3a3ad61e18baadc8a);
+            
+        
+
+        poly_line_e2a792ec2357248e4e0bb4858e53b28c.bindPopup(popup_3451bccdf1b2f7d8bb0dc0b600bb0ca4)
+        ;
+
+        
+    
+    
+            poly_line_e2a792ec2357248e4e0bb4858e53b28c.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '356m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_60f40d2c4abcfc41daa992703ce58901 = L.polyline(
+                [[37.51805873422048, 127.07441054104936], [37.51823983747405, 127.07376444659182], [37.51843766165501, 127.07307168855422], [37.518557694880194, 127.07263087433556], [37.518833984177405, 127.07187478643661], [37.5190464979453, 127.07128972165472], [37.51912418464805, 127.07101082509352], [37.519144734368176, 127.07075920231566], [37.5191223893982, 127.07051680796457], [37.51899962139609, 127.07015221746005], [37.51893116686368, 127.07003062713757], [37.51883568082452, 127.06988685426103], [37.51869323820907, 127.06973498179784], [37.518524818674, 127.06962727742437], [37.518323712606445, 127.0695590856078], [37.51805738314752, 127.06953023114069], [37.517901036955806, 127.06950660759215], [37.51735639146726, 127.06953999756988], [37.51692972756632, 127.06959061770908], [37.51686337457087, 127.06960200785954]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_1c1a13195fc6174fb67a256254d89cd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87fc8513906a0dbd45b10399df3cfbcd = $(`<div id="html_87fc8513906a0dbd45b10399df3cfbcd" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '탄천IC ~ 잠실실내체육관북문앞', '구간 거리': '659m', '평균 속도': '15.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_1c1a13195fc6174fb67a256254d89cd0.setContent(html_87fc8513906a0dbd45b10399df3cfbcd);
+            
+        
+
+        poly_line_60f40d2c4abcfc41daa992703ce58901.bindPopup(popup_1c1a13195fc6174fb67a256254d89cd0)
+        ;
+
+        
+    
+    
+            poly_line_60f40d2c4abcfc41daa992703ce58901.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '탄천IC ~ 잠실실내체육관북문앞', '구간 거리': '659m', '평균 속도': '15.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_592f9555c1bd3f782a88bb2b855e0f97 = L.polyline(
+                [[37.52203050863613, 127.10047076586409], [37.52241896675348, 127.10091468752786]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_41fe466309763e2c7d26b70af2f3c928 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_250ed1d81d383e583bf0d35c164ae695 = $(`<div id="html_250ed1d81d383e583bf0d35c164ae695" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '58m', '평균 속도': '61.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_41fe466309763e2c7d26b70af2f3c928.setContent(html_250ed1d81d383e583bf0d35c164ae695);
+            
+        
+
+        poly_line_592f9555c1bd3f782a88bb2b855e0f97.bindPopup(popup_41fe466309763e2c7d26b70af2f3c928)
+        ;
+
+        
+    
+    
+            poly_line_592f9555c1bd3f782a88bb2b855e0f97.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실대교JC ~ 잠실대교JC', '구간 거리': '58m', '평균 속도': '61.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_60484d905280cb32ab17edbe8d44a100 = L.polyline(
+                [[37.51896298444213, 127.10190258076895], [37.51852201444152, 127.10216467844927], [37.51813848061352, 127.10237729954909], [37.51776290424329, 127.10260628034247]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d299b8c88d6db70c193c689c7baf6961);
+        
+    
+        var popup_aafb182a2949cacdb75165a69e1e8f02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f07cf10225ea95d087dda83a899193c9 = $(`<div id="html_f07cf10225ea95d087dda83a899193c9" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로35나길', '구간명': '잠실장미쇼핑 ~ 신천동10-1', '구간 거리': '147m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_aafb182a2949cacdb75165a69e1e8f02.setContent(html_f07cf10225ea95d087dda83a899193c9);
+            
+        
+
+        poly_line_60484d905280cb32ab17edbe8d44a100.bindPopup(popup_aafb182a2949cacdb75165a69e1e8f02)
+        ;
+
+        
+    
+    
+            poly_line_60484d905280cb32ab17edbe8d44a100.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로35나길', '구간명': '잠실장미쇼핑 ~ 신천동10-1', '구간 거리': '147m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

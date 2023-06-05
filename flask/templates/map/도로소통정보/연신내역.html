@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a8ebe0357eb6216b7ec0ee1798666fe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5a8ebe0357eb6216b7ec0ee1798666fe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5a8ebe0357eb6216b7ec0ee1798666fe = L.map(
+                "map_5a8ebe0357eb6216b7ec0ee1798666fe",
+                {
+                    center: [37.61897169750732, 126.92110774535556],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b93f695d8ae5bad0a33feb9da5a8d33f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+            var poly_line_8e9633fe13bacce86dc98c1edcc35b73 = L.polyline(
+                [[37.617461599740096, 126.91942516891739], [37.61550509528953, 126.91812686447683], [37.61530510858611, 126.91800524114558], [37.61510794584374, 126.91791397229288], [37.614913233395086, 126.91783389278038], [37.61470269645755, 126.91778043434392], [37.61425385575292, 126.91770570530905]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_bafbab79d1549d51f120d5c9ef02ff3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95a248813209b5f1e9438a8b142b1f1a = $(`<div id="html_95a248813209b5f1e9438a8b142b1f1a" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로', '구간명': '길마독사거리 ~ 하나은행연신내지점', '구간 거리': '390m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_bafbab79d1549d51f120d5c9ef02ff3f.setContent(html_95a248813209b5f1e9438a8b142b1f1a);
+            
+        
+
+        poly_line_8e9633fe13bacce86dc98c1edcc35b73.bindPopup(popup_bafbab79d1549d51f120d5c9ef02ff3f)
+        ;
+
+        
+    
+    
+            poly_line_8e9633fe13bacce86dc98c1edcc35b73.bindTooltip(
+                `<div>
+                     {'도로명': '연서로', '구간명': '길마독사거리 ~ 하나은행연신내지점', '구간 거리': '390m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0296c4f51b908d3589bb52c83345f733 = L.polyline(
+                [[37.61841608132747, 126.9200614701943], [37.61746163759855, 126.91942519379533]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_6b95f6bfe34599425a969998d3df45cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c6297d12080429e47ba60856a2872d2 = $(`<div id="html_6c6297d12080429e47ba60856a2872d2" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로', '구간명': '하나은행연신내지점 ~ 연신내역', '구간 거리': '120m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_6b95f6bfe34599425a969998d3df45cf.setContent(html_6c6297d12080429e47ba60856a2872d2);
+            
+        
+
+        poly_line_0296c4f51b908d3589bb52c83345f733.bindPopup(popup_6b95f6bfe34599425a969998d3df45cf)
+        ;
+
+        
+    
+    
+            poly_line_0296c4f51b908d3589bb52c83345f733.bindTooltip(
+                `<div>
+                     {'도로명': '연서로', '구간명': '하나은행연신내지점 ~ 연신내역', '구간 거리': '120m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cb7f8453b93f9e4826072747869c9376 = L.polyline(
+                [[37.618933668361386, 126.92135978524107], [37.61872418138347, 126.92063556682524], [37.61863477873629, 126.9203649194031], [37.61853173514784, 126.92018307757198], [37.61841608132747, 126.9200614701943]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_03649849b9d7a4dfdd835a3527c2385c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc32c17f14eaeb11af7a945d0752ea6f = $(`<div id="html_fc32c17f14eaeb11af7a945d0752ea6f" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로', '구간명': '연신내역 ~ 연신내역앞교차로', '구간 거리': '130m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_03649849b9d7a4dfdd835a3527c2385c.setContent(html_fc32c17f14eaeb11af7a945d0752ea6f);
+            
+        
+
+        poly_line_cb7f8453b93f9e4826072747869c9376.bindPopup(popup_03649849b9d7a4dfdd835a3527c2385c)
+        ;
+
+        
+    
+    
+            poly_line_cb7f8453b93f9e4826072747869c9376.bindTooltip(
+                `<div>
+                     {'도로명': '연서로', '구간명': '연신내역 ~ 연신내역앞교차로', '구간 거리': '130m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e0575b0cc1d5132ac214789288493ab6 = L.polyline(
+                [[37.614239659960866, 126.91784044427682], [37.61468487458471, 126.91791456987089], [37.61488562770548, 126.91796554422915], [37.61507244425223, 126.91804237639168], [37.61526278422549, 126.91813048842636], [37.61545630258448, 126.91824817751095], [37.61741112822128, 126.91954537041227]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_955fa9820c994ba68e127cec87220c68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2be1ff4eaf8c70392788a86186bf54d9 = $(`<div id="html_2be1ff4eaf8c70392788a86186bf54d9" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로', '구간명': '하나은행연신내지점 ~ 길마독사거리', '구간 거리': '386m', '평균 속도': '43.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_955fa9820c994ba68e127cec87220c68.setContent(html_2be1ff4eaf8c70392788a86186bf54d9);
+            
+        
+
+        poly_line_e0575b0cc1d5132ac214789288493ab6.bindPopup(popup_955fa9820c994ba68e127cec87220c68)
+        ;
+
+        
+    
+    
+            poly_line_e0575b0cc1d5132ac214789288493ab6.bindTooltip(
+                `<div>
+                     {'도로명': '연서로', '구간명': '하나은행연신내지점 ~ 길마독사거리', '구간 거리': '386m', '평균 속도': '43.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f66a06756b7e0423c9a5b9ccb7792f60 = L.polyline(
+                [[37.61741109036278, 126.91954534553426], [37.618346716384806, 126.9201657311834], [37.618451727279314, 126.92027614769187], [37.61853962061245, 126.92043125488203], [37.61862340121969, 126.92068488254321], [37.618832058884294, 126.92140623754462]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_ff3df98976a336f68628950cb02e08a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4499f3dabbd616230238f9744b07e447 = $(`<div id="html_4499f3dabbd616230238f9744b07e447" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로', '구간명': '연신내역앞교차로 ~ 하나은행연신내지점', '구간 거리': '241m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ff3df98976a336f68628950cb02e08a7.setContent(html_4499f3dabbd616230238f9744b07e447);
+            
+        
+
+        poly_line_f66a06756b7e0423c9a5b9ccb7792f60.bindPopup(popup_ff3df98976a336f68628950cb02e08a7)
+        ;
+
+        
+    
+    
+            poly_line_f66a06756b7e0423c9a5b9ccb7792f60.bindTooltip(
+                `<div>
+                     {'도로명': '연서로', '구간명': '연신내역앞교차로 ~ 하나은행연신내지점', '구간 거리': '241m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a1b46f1c1e7383cd3266e9f51c049674 = L.polyline(
+                [[37.619564796050796, 126.92072995411017], [37.618852882509586, 126.92132645926326]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_79b5d0327e734bb9f41b3b8f74bc4165 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7e8721121c71c426c32d549d42d1e8f = $(`<div id="html_f7e8721121c71c426c32d549d42d1e8f" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로', '구간명': '연신내역앞교차로 ~ 연신내역', '구간 거리': '95m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_79b5d0327e734bb9f41b3b8f74bc4165.setContent(html_f7e8721121c71c426c32d549d42d1e8f);
+            
+        
+
+        poly_line_a1b46f1c1e7383cd3266e9f51c049674.bindPopup(popup_79b5d0327e734bb9f41b3b8f74bc4165)
+        ;
+
+        
+    
+    
+            poly_line_a1b46f1c1e7383cd3266e9f51c049674.bindTooltip(
+                `<div>
+                     {'도로명': '통일로', '구간명': '연신내역앞교차로 ~ 연신내역', '구간 거리': '95m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2836092ce307d442c8c741f5f0652efd = L.polyline(
+                [[37.62335612430398, 126.91979092510702], [37.622532199435504, 126.91971525120968], [37.622352418855655, 126.91971083200475], [37.62219804468663, 126.91972948328683], [37.62106976979215, 126.91992435199458], [37.62065105451483, 126.92001557508436], [37.62043777121684, 126.92009441532389], [37.6202728724016, 126.92018215409485], [37.62008965310205, 126.92029295934249], [37.619564796050796, 126.92072995411017]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_a5297eaf4c50e77878863ec595c7c345 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b15e2eb4b2a3e9b3ecb4604da02ddde = $(`<div id="html_7b15e2eb4b2a3e9b3ecb4604da02ddde" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로', '구간명': '연신내역 ~ 경산빌딩', '구간 거리': '439m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a5297eaf4c50e77878863ec595c7c345.setContent(html_7b15e2eb4b2a3e9b3ecb4604da02ddde);
+            
+        
+
+        poly_line_2836092ce307d442c8c741f5f0652efd.bindPopup(popup_a5297eaf4c50e77878863ec595c7c345)
+        ;
+
+        
+    
+    
+            poly_line_2836092ce307d442c8c741f5f0652efd.bindTooltip(
+                `<div>
+                     {'도로명': '통일로', '구간명': '연신내역 ~ 경산빌딩', '구간 거리': '439m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6b2257b763204aac8508e0cbf51975a3 = L.polyline(
+                [[37.618912844713925, 126.92143956359953], [37.61962449497933, 126.92084328020101], [37.62014318684621, 126.92041141911237], [37.62031740186036, 126.92030605959137], [37.62047420920596, 126.92022262608866], [37.62067561513956, 126.92014817684888], [37.621086363362124, 126.92005869041304], [37.6222105782043, 126.9198645246878], [37.62235654687362, 126.91984688858568], [37.622527200296965, 126.919851084571], [37.62334824624712, 126.91992649458605]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_b268075e82ccdfdcc4ece3c5e2e459a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d5774cb357bbdc3172e2f2622ef1227 = $(`<div id="html_3d5774cb357bbdc3172e2f2622ef1227" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로', '구간명': '경산빌딩 ~ 연신내역앞교차로', '구간 거리': '526m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b268075e82ccdfdcc4ece3c5e2e459a5.setContent(html_3d5774cb357bbdc3172e2f2622ef1227);
+            
+        
+
+        poly_line_6b2257b763204aac8508e0cbf51975a3.bindPopup(popup_b268075e82ccdfdcc4ece3c5e2e459a5)
+        ;
+
+        
+    
+    
+            poly_line_6b2257b763204aac8508e0cbf51975a3.bindTooltip(
+                `<div>
+                     {'도로명': '통일로', '구간명': '경산빌딩 ~ 연신내역앞교차로', '구간 거리': '526m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_57f0d3249b22d84e320af2d50cf420ce = L.polyline(
+                [[37.618852312507144, 126.92132694352408], [37.61768331699644, 126.92233365170871], [37.616279701477715, 126.9238843148206], [37.61589379162615, 126.92444871634441]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_37964dd25db000e2e842a54b5692cfff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff3cea1bc89e77e1419ee7c3cd7ace58 = $(`<div id="html_ff3cea1bc89e77e1419ee7c3cd7ace58" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로', '구간명': '대조동사무소 ~ 연신내역앞교차로', '구간 거리': '430m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_37964dd25db000e2e842a54b5692cfff.setContent(html_ff3cea1bc89e77e1419ee7c3cd7ace58);
+            
+        
+
+        poly_line_57f0d3249b22d84e320af2d50cf420ce.bindPopup(popup_37964dd25db000e2e842a54b5692cfff)
+        ;
+
+        
+    
+    
+            poly_line_57f0d3249b22d84e320af2d50cf420ce.bindTooltip(
+                `<div>
+                     {'도로명': '통일로', '구간명': '대조동사무소 ~ 연신내역앞교차로', '구간 거리': '430m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_796bdbb313108d0da9d7daef73d007e8 = L.polyline(
+                [[37.61597578328033, 126.92453731422488], [37.616356758982356, 126.92398012918184], [37.617749794115774, 126.92244115742417], [37.618913414716744, 126.92143907933918]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_b73d73d10ffda3b5a4f6af5dc306f71d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7aa38ab4db0a2823afb8ecb42a302c72 = $(`<div id="html_7aa38ab4db0a2823afb8ecb42a302c72" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로', '구간명': '연신내역앞교차로 ~ 대조동사무소', '구간 거리': '427m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b73d73d10ffda3b5a4f6af5dc306f71d.setContent(html_7aa38ab4db0a2823afb8ecb42a302c72);
+            
+        
+
+        poly_line_796bdbb313108d0da9d7daef73d007e8.bindPopup(popup_b73d73d10ffda3b5a4f6af5dc306f71d)
+        ;
+
+        
+    
+    
+            poly_line_796bdbb313108d0da9d7daef73d007e8.bindTooltip(
+                `<div>
+                     {'도로명': '통일로', '구간명': '연신내역앞교차로 ~ 대조동사무소', '구간 거리': '427m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cd7c29a5e0ea8a01b7e38f1838a2ef04 = L.polyline(
+                [[37.621431845024134, 126.92624109122852], [37.621352737973844, 126.92613824598696], [37.621260310036504, 126.92594250875753], [37.62063008527237, 126.9246455740387], [37.62033952906969, 126.92409116367833], [37.62027023120021, 126.92389918566741], [37.620125829754535, 126.92343510287945], [37.620045058328444, 126.92326357760756], [37.619854855660144, 126.92291707581825], [37.61975518470227, 126.92281215748984], [37.61929826580852, 126.92240256511093], [37.61920192874594, 126.92227819860443], [37.619121732759, 126.92210470068079], [37.61893439093168, 126.92136245650737]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_84001e1b02718ccfcdeca872679421d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97815c2b32cde7ce67e4886cb493db41 = $(`<div id="html_97815c2b32cde7ce67e4886cb493db41" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로', '구간명': '연신내역앞교차로 ~ 불광지구대', '구간 거리': '521m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_84001e1b02718ccfcdeca872679421d8.setContent(html_97815c2b32cde7ce67e4886cb493db41);
+            
+        
+
+        poly_line_cd7c29a5e0ea8a01b7e38f1838a2ef04.bindPopup(popup_84001e1b02718ccfcdeca872679421d8)
+        ;
+
+        
+    
+    
+            poly_line_cd7c29a5e0ea8a01b7e38f1838a2ef04.bindTooltip(
+                `<div>
+                     {'도로명': '연서로', '구간명': '연신내역앞교차로 ~ 불광지구대', '구간 거리': '521m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c1c055effa5fb6a515dbd94f37dbca83 = L.polyline(
+                [[37.61883133631496, 126.92140356628154], [37.61902227502271, 126.92216006416452], [37.61911515597381, 126.92236100418081], [37.61922758562076, 126.92250614463993], [37.61968899460955, 126.92291976279961], [37.61977420009514, 126.92300945551068], [37.619953936850834, 126.92333688966391], [37.6200283312126, 126.92349487297658], [37.62017058904175, 126.92395206716044], [37.62024457851463, 126.92415704376391], [37.62053878515253, 126.92471841961714], [37.621167689276575, 126.92601263612617], [37.62126622397014, 126.92622130747547], [37.621354123612726, 126.92633558233351]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_13d851c87933ac689ad4bd163e673e70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f264b2ccb2eef25cc3fcbfc2f72beec = $(`<div id="html_5f264b2ccb2eef25cc3fcbfc2f72beec" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로', '구간명': '불광지구대 ~ 연신내역앞교차로', '구간 거리': '527m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_13d851c87933ac689ad4bd163e673e70.setContent(html_5f264b2ccb2eef25cc3fcbfc2f72beec);
+            
+        
+
+        poly_line_c1c055effa5fb6a515dbd94f37dbca83.bindPopup(popup_13d851c87933ac689ad4bd163e673e70)
+        ;
+
+        
+    
+    
+            poly_line_c1c055effa5fb6a515dbd94f37dbca83.bindTooltip(
+                `<div>
+                     {'도로명': '연서로', '구간명': '불광지구대 ~ 연신내역앞교차로', '구간 거리': '527m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8893bdb95bb2ecf0ced2921960662c61 = L.polyline(
+                [[37.61738866144423, 126.91945329596979], [37.61693094703511, 126.92053250997282], [37.61648469235282, 126.92110616636668], [37.61491913677239, 126.92218179872627]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_372004476ea36ff25479fcff9f8c8816 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cac54ef2b5863e591ba57d5e2a0e8242 = $(`<div id="html_cac54ef2b5863e591ba57d5e2a0e8242" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로26길', '구간명': '우성정육점 ~ 하나은행연신내지점', '구간 거리': '377m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_372004476ea36ff25479fcff9f8c8816.setContent(html_cac54ef2b5863e591ba57d5e2a0e8242);
+            
+        
+
+        poly_line_8893bdb95bb2ecf0ced2921960662c61.bindPopup(popup_372004476ea36ff25479fcff9f8c8816)
+        ;
+
+        
+    
+    
+            poly_line_8893bdb95bb2ecf0ced2921960662c61.bindTooltip(
+                `<div>
+                     {'도로명': '연서로26길', '구간명': '우성정육점 ~ 하나은행연신내지점', '구간 거리': '377m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_387d204739c9faa58b40fe25b6476901 = L.polyline(
+                [[37.614970987951445, 126.92230106550554], [37.61655070704939, 126.92121570400778], [37.61701906870735, 126.92061362946403], [37.61748406653883, 126.91951724344132]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_19d4983718c4fd3615f5d0bdc24a2a00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a953ef3b225c1cbab6ca1ebe4ceadb2 = $(`<div id="html_1a953ef3b225c1cbab6ca1ebe4ceadb2" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로26길', '구간명': '하나은행연신내지점 ~ 우성정육점', '구간 거리': '384m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_19d4983718c4fd3615f5d0bdc24a2a00.setContent(html_1a953ef3b225c1cbab6ca1ebe4ceadb2);
+            
+        
+
+        poly_line_387d204739c9faa58b40fe25b6476901.bindPopup(popup_19d4983718c4fd3615f5d0bdc24a2a00)
+        ;
+
+        
+    
+    
+            poly_line_387d204739c9faa58b40fe25b6476901.bindTooltip(
+                `<div>
+                     {'도로명': '연서로26길', '구간명': '하나은행연신내지점 ~ 우성정육점', '구간 거리': '384m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_43d635904bbe0fc094d492517088b9f6 = L.polyline(
+                [[37.61909038361205, 126.91540803899852], [37.61745897512419, 126.91926297304154], [37.61738734556279, 126.91945661271862]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_f5b255b711ea39a8c0b6b3c58ccd26c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c59a652fdbd38080a65c886477758760 = $(`<div id="html_c59a652fdbd38080a65c886477758760" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로27길', '구간명': '하나은행연신내지점 ~ 선일여고입구', '구간 거리': '404m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_f5b255b711ea39a8c0b6b3c58ccd26c8.setContent(html_c59a652fdbd38080a65c886477758760);
+            
+        
+
+        poly_line_43d635904bbe0fc094d492517088b9f6.bindPopup(popup_f5b255b711ea39a8c0b6b3c58ccd26c8)
+        ;
+
+        
+    
+    
+            poly_line_43d635904bbe0fc094d492517088b9f6.bindTooltip(
+                `<div>
+                     {'도로명': '연서로27길', '구간명': '하나은행연신내지점 ~ 선일여고입구', '구간 거리': '404m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6dde5a37323285f2c5bfa5c47104ee16 = L.polyline(
+                [[37.617485382422025, 126.91951392668926], [37.6175557871926, 126.91932359554411], [37.6191858349413, 126.91547187962479]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_fb985fb4f302814055449506e22d5dfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02216a284ebe27f13ef9527ee2d4177f = $(`<div id="html_02216a284ebe27f13ef9527ee2d4177f" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로27길', '구간명': '선일여고입구 ~ 하나은행연신내지점', '구간 거리': '404m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_fb985fb4f302814055449506e22d5dfc.setContent(html_02216a284ebe27f13ef9527ee2d4177f);
+            
+        
+
+        poly_line_6dde5a37323285f2c5bfa5c47104ee16.bindPopup(popup_fb985fb4f302814055449506e22d5dfc)
+        ;
+
+        
+    
+    
+            poly_line_6dde5a37323285f2c5bfa5c47104ee16.bindTooltip(
+                `<div>
+                     {'도로명': '연서로27길', '구간명': '선일여고입구 ~ 하나은행연신내지점', '구간 거리': '404m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_59614d245667100661b34c5a705b77dc = L.polyline(
+                [[37.618825502540794, 126.92027421038999], [37.61867834002549, 126.92019337105762], [37.61841608132747, 126.9200614701943]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_a274161efdabd963c9de49ec5f81439c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_750798ff15f8fff781a0d9edf9435fd2 = $(`<div id="html_750798ff15f8fff781a0d9edf9435fd2" style="width: 100.0%; height: 100.0%;">{'도로명': '연서로', '구간명': '연신내역 ~ 연신내진원와이타운', '구간 거리': '49m', '평균 속도': '6.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_a274161efdabd963c9de49ec5f81439c.setContent(html_750798ff15f8fff781a0d9edf9435fd2);
+            
+        
+
+        poly_line_59614d245667100661b34c5a705b77dc.bindPopup(popup_a274161efdabd963c9de49ec5f81439c)
+        ;
+
+        
+    
+    
+            poly_line_59614d245667100661b34c5a705b77dc.bindTooltip(
+                `<div>
+                     {'도로명': '연서로', '구간명': '연신내역 ~ 연신내진원와이타운', '구간 거리': '49m', '평균 속도': '6.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2f3ca21d99251b140e486ba724121389 = L.polyline(
+                [[37.619564796050796, 126.92072995411017], [37.618825502540794, 126.92027421038999]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_02c978467dc0ff639d319720c65d52fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1af271d68330eebffd6ebc108c7d4061 = $(`<div id="html_1af271d68330eebffd6ebc108c7d4061" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로', '구간명': '연신내진원와이타운 ~ 연신내역', '구간 거리': '91m', '평균 속도': '8.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_02c978467dc0ff639d319720c65d52fe.setContent(html_1af271d68330eebffd6ebc108c7d4061);
+            
+        
+
+        poly_line_2f3ca21d99251b140e486ba724121389.bindPopup(popup_02c978467dc0ff639d319720c65d52fe)
+        ;
+
+        
+    
+    
+            poly_line_2f3ca21d99251b140e486ba724121389.bindTooltip(
+                `<div>
+                     {'도로명': '통일로', '구간명': '연신내진원와이타운 ~ 연신내역', '구간 거리': '91m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d06779c337e4cbf64c5fdaa8d03664ce = L.polyline(
+                [[37.62339623523779, 126.91902695029599], [37.622153295120036, 126.91887803658967], [37.62017215545779, 126.91933803891719], [37.61994832777907, 126.91941869863747], [37.61962102449525, 126.91961725380602], [37.6188899710729, 126.92013054763429], [37.61879354530067, 126.92021939499789]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_5bc05131c5b79780b2973fbe082db8b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1938f8e39ff1d410941b1ecc5e967fb = $(`<div id="html_e1938f8e39ff1d410941b1ecc5e967fb" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로', '구간명': '연신내진원와이타운 ~ 갈현사안경나라', '구간 거리': '535m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_5bc05131c5b79780b2973fbe082db8b3.setContent(html_e1938f8e39ff1d410941b1ecc5e967fb);
+            
+        
+
+        poly_line_d06779c337e4cbf64c5fdaa8d03664ce.bindPopup(popup_5bc05131c5b79780b2973fbe082db8b3)
+        ;
+
+        
+    
+    
+            poly_line_d06779c337e4cbf64c5fdaa8d03664ce.bindTooltip(
+                `<div>
+                     {'도로명': '통일로', '구간명': '연신내진원와이타운 ~ 갈현사안경나라', '구간 거리': '535m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4020e7bd9d3bd39b2038628228682c3a = L.polyline(
+                [[37.618857459755326, 126.920329025829], [37.618948509159424, 126.9202451318865], [37.61967092222458, 126.91973790577775], [37.619986996840886, 126.91954616276932], [37.62019692668792, 126.91947051251681], [37.62215807624039, 126.91901515456613], [37.62338597838012, 126.91916226876498]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_da3b7df249939121d72bdc4552a33278 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd44219f315ad6a179325214f31ddf29 = $(`<div id="html_bd44219f315ad6a179325214f31ddf29" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로', '구간명': '갈현사안경나라 ~ 연신내진원와이타운', '구간 거리': '526m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_da3b7df249939121d72bdc4552a33278.setContent(html_bd44219f315ad6a179325214f31ddf29);
+            
+        
+
+        poly_line_4020e7bd9d3bd39b2038628228682c3a.bindPopup(popup_da3b7df249939121d72bdc4552a33278)
+        ;
+
+        
+    
+    
+            poly_line_4020e7bd9d3bd39b2038628228682c3a.bindTooltip(
+                `<div>
+                     {'도로명': '통일로', '구간명': '갈현사안경나라 ~ 연신내진원와이타운', '구간 거리': '526m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_66e2003d1822eeee16ebb7a9682b7f34 = L.polyline(
+                [[37.61741029227828, 126.92522509301719], [37.61718782349906, 126.92516329767476], [37.61648207053872, 126.92487684568238], [37.61638977450186, 126.9248390885604], [37.615817924137865, 126.9246265938737]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_13255ecf9b14b5a0a0145af7bf9d1ad0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b99b52a35a17c7e158f2e94ede4d298 = $(`<div id="html_1b99b52a35a17c7e158f2e94ede4d298" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로72길', '구간명': '대조동227-4 ~ 불광동309-8', '구간 거리': '185m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_13255ecf9b14b5a0a0145af7bf9d1ad0.setContent(html_1b99b52a35a17c7e158f2e94ede4d298);
+            
+        
+
+        poly_line_66e2003d1822eeee16ebb7a9682b7f34.bindPopup(popup_13255ecf9b14b5a0a0145af7bf9d1ad0)
+        ;
+
+        
+    
+    
+            poly_line_66e2003d1822eeee16ebb7a9682b7f34.bindTooltip(
+                `<div>
+                     {'도로명': '통일로72길', '구간명': '대조동227-4 ~ 불광동309-8', '구간 거리': '185m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4acdb5be5c80d86ebd95dfbe408fe0ad = L.polyline(
+                [[37.61578727641175, 126.92475693587215], [37.616357716165346, 126.92496890733548], [37.616448733326706, 126.9250061414659], [37.617159486846255, 126.92529462495453], [37.617386965931516, 126.92535781224026]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a8ebe0357eb6216b7ec0ee1798666fe);
+        
+    
+        var popup_4a0f08b902a8a197a4d9ae21543e50e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcbc608d26a0441d33f0363012634252 = $(`<div id="html_fcbc608d26a0441d33f0363012634252" style="width: 100.0%; height: 100.0%;">{'도로명': '통일로72길', '구간명': '불광동309-8 ~ 대조동227-4', '구간 거리': '185m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_4a0f08b902a8a197a4d9ae21543e50e0.setContent(html_fcbc608d26a0441d33f0363012634252);
+            
+        
+
+        poly_line_4acdb5be5c80d86ebd95dfbe408fe0ad.bindPopup(popup_4a0f08b902a8a197a4d9ae21543e50e0)
+        ;
+
+        
+    
+    
+            poly_line_4acdb5be5c80d86ebd95dfbe408fe0ad.bindTooltip(
+                `<div>
+                     {'도로명': '통일로72길', '구간명': '불광동309-8 ~ 대조동227-4', '구간 거리': '185m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

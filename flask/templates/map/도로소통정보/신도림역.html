@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e390ed3bb3be915c0be7e36f3601fc55 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e390ed3bb3be915c0be7e36f3601fc55" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e390ed3bb3be915c0be7e36f3601fc55 = L.map(
+                "map_e390ed3bb3be915c0be7e36f3601fc55",
+                {
+                    center: [37.50793620752115, 126.891213250155],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_18353b99a89ac1328e1789c0115d9929 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+            var poly_line_70386b6c29e21bf19588bbfaf8685e9c = L.polyline(
+                [[37.51027216208045, 126.8903323977745], [37.50945475584047, 126.88868056875785], [37.50936324037397, 126.88851098013406], [37.50917091035122, 126.88821559919603], [37.50847519003749, 126.88726572752793]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_e4e21d66fd5b0f5c778395212d66b3f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_388ae32699f3a491a61514e2b45eae7b = $(`<div id="html_388ae32699f3a491a61514e2b45eae7b" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로', '구간명': '대성제5주유소 ~ 신도림역앞교차로', '구간 거리': '338m', '평균 속도': '11.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e4e21d66fd5b0f5c778395212d66b3f5.setContent(html_388ae32699f3a491a61514e2b45eae7b);
+            
+        
+
+        poly_line_70386b6c29e21bf19588bbfaf8685e9c.bindPopup(popup_e4e21d66fd5b0f5c778395212d66b3f5)
+        ;
+
+        
+    
+    
+            poly_line_70386b6c29e21bf19588bbfaf8685e9c.bindTooltip(
+                `<div>
+                     {'도로명': '경인로', '구간명': '대성제5주유소 ~ 신도림역앞교차로', '구간 거리': '338m', '평균 속도': '11.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fd3e3f490ac88098d605c18000b5fc9b = L.polyline(
+                [[37.50839559824969, 126.88735758783389], [37.50908918781296, 126.8883045512452], [37.50927645113759, 126.88859215017777], [37.50936404207342, 126.88875446630601], [37.51018031892144, 126.89040401558901]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_e026c9a6029c9006eadd792ef81b7c42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f7ef0a59c7cbbb0bb7131c2366ec3ec = $(`<div id="html_4f7ef0a59c7cbbb0bb7131c2366ec3ec" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로', '구간명': '신도림역앞교차로 ~ 대성제5주유소', '구간 거리': '336m', '평균 속도': '37.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_e026c9a6029c9006eadd792ef81b7c42.setContent(html_4f7ef0a59c7cbbb0bb7131c2366ec3ec);
+            
+        
+
+        poly_line_fd3e3f490ac88098d605c18000b5fc9b.bindPopup(popup_e026c9a6029c9006eadd792ef81b7c42)
+        ;
+
+        
+    
+    
+            poly_line_fd3e3f490ac88098d605c18000b5fc9b.bindTooltip(
+                `<div>
+                     {'도로명': '경인로', '구간명': '신도림역앞교차로 ~ 대성제5주유소', '구간 거리': '336m', '평균 속도': '37.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_965cb4685460da10e45668bdba5ccfd7 = L.polyline(
+                [[37.510656390516516, 126.89116404545582], [37.51027300525629, 126.89033416211093]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_b44211a4b65666a4b4ae2e05edf11d21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ea69a553a512de479757106fde724be = $(`<div id="html_2ea69a553a512de479757106fde724be" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로', '구간명': '신도림역앞교차로 ~ 구로구-영등포구', '구간 거리': '85m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_b44211a4b65666a4b4ae2e05edf11d21.setContent(html_2ea69a553a512de479757106fde724be);
+            
+        
+
+        poly_line_965cb4685460da10e45668bdba5ccfd7.bindPopup(popup_b44211a4b65666a4b4ae2e05edf11d21)
+        ;
+
+        
+    
+    
+            poly_line_965cb4685460da10e45668bdba5ccfd7.bindTooltip(
+                `<div>
+                     {'도로명': '경인로', '구간명': '신도림역앞교차로 ~ 구로구-영등포구', '구간 거리': '85m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_06fd79361741aa9019d54e1b3eee98b4 = L.polyline(
+                [[37.51017947484659, 126.89040225238628], [37.51056285963344, 126.89123213504631]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_21263a9a46a3980012512d8e4c89dd56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b233e5a2ef17bd56b821ed6a5951d9d = $(`<div id="html_8b233e5a2ef17bd56b821ed6a5951d9d" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로', '구간명': '구로구-영등포구 ~ 신도림역앞교차로', '구간 거리': '85m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_21263a9a46a3980012512d8e4c89dd56.setContent(html_8b233e5a2ef17bd56b821ed6a5951d9d);
+            
+        
+
+        poly_line_06fd79361741aa9019d54e1b3eee98b4.bindPopup(popup_21263a9a46a3980012512d8e4c89dd56)
+        ;
+
+        
+    
+    
+            poly_line_06fd79361741aa9019d54e1b3eee98b4.bindTooltip(
+                `<div>
+                     {'도로명': '경인로', '구간명': '구로구-영등포구 ~ 신도림역앞교차로', '구간 거리': '85m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_731fc5df409f5573a252883061fbbb5b = L.polyline(
+                [[37.51108599352372, 126.88930029978583], [37.51058904230546, 126.88991662983943], [37.510423113873465, 126.89010776923999], [37.51019476676437, 126.89031303094283]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_8a43456d34792a4c9b46a12e992e74aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ea79612e6c1df8d0c1c0c3bb624e95f = $(`<div id="html_1ea79612e6c1df8d0c1c0c3bb624e95f" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로67길', '구간명': '신도림역앞교차로 ~ 신도림대우푸르지오앞', '구간 거리': '134m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_8a43456d34792a4c9b46a12e992e74aa.setContent(html_1ea79612e6c1df8d0c1c0c3bb624e95f);
+            
+        
+
+        poly_line_731fc5df409f5573a252883061fbbb5b.bindPopup(popup_8a43456d34792a4c9b46a12e992e74aa)
+        ;
+
+        
+    
+    
+            poly_line_731fc5df409f5573a252883061fbbb5b.bindTooltip(
+                `<div>
+                     {'도로명': '경인로67길', '구간명': '신도림역앞교차로 ~ 신도림대우푸르지오앞', '구간 거리': '134m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0b4341a1a22e8e87af576411a64353d2 = L.polyline(
+                [[37.510257714222845, 126.89042338251097], [37.510491388312964, 126.89021333333544], [37.51066361268359, 126.89001494033931], [37.511161982745215, 126.8893968528176]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_94e4d5bb347c8a910d9535eb2f3717cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8597b1584556991d7c5d5a2da426d880 = $(`<div id="html_8597b1584556991d7c5d5a2da426d880" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로67길', '구간명': '신도림대우푸르지오앞 ~ 신도림역앞교차로', '구간 거리': '136m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_94e4d5bb347c8a910d9535eb2f3717cd.setContent(html_8597b1584556991d7c5d5a2da426d880);
+            
+        
+
+        poly_line_0b4341a1a22e8e87af576411a64353d2.bindPopup(popup_94e4d5bb347c8a910d9535eb2f3717cd)
+        ;
+
+        
+    
+    
+            poly_line_0b4341a1a22e8e87af576411a64353d2.bindTooltip(
+                `<div>
+                     {'도로명': '경인로67길', '구간명': '신도림대우푸르지오앞 ~ 신도림역앞교차로', '구간 거리': '136m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_59af5249d569db0fb2df8271f32e99f4 = L.polyline(
+                [[37.507117491329325, 126.89226672573245], [37.5072158157102, 126.8921793308249], [37.50765888224946, 126.89180613056335], [37.50771243761822, 126.89171627918981], [37.507723079417, 126.89162200073882], [37.5077015125666, 126.89150083608078], [37.50757968116204, 126.89122720167158]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_5e04cb4593fa6864f95a3c1d6de8f47f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fd2499c3fd39c52c5ea08b69eb76779 = $(`<div id="html_8fd2499c3fd39c52c5ea08b69eb76779" style="width: 100.0%; height: 100.0%;">{'도로명': '새말로', '구간명': '속성변화점 ~ 구로1빗물펌프장', '구간 거리': '130m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_5e04cb4593fa6864f95a3c1d6de8f47f.setContent(html_8fd2499c3fd39c52c5ea08b69eb76779);
+            
+        
+
+        poly_line_59af5249d569db0fb2df8271f32e99f4.bindPopup(popup_5e04cb4593fa6864f95a3c1d6de8f47f)
+        ;
+
+        
+    
+    
+            poly_line_59af5249d569db0fb2df8271f32e99f4.bindTooltip(
+                `<div>
+                     {'도로명': '새말로', '구간명': '속성변화점 ~ 구로1빗물펌프장', '구간 거리': '130m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5f2bb7e4a93b84171945f64960afe1e1 = L.polyline(
+                [[37.50891479947522, 126.88645059352385], [37.50912098472269, 126.8866939543908], [37.510465753548864, 126.88853328811423], [37.51108383421009, 126.88939401492674]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_8eb666531e4137db0331cd88750695fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19fda8f7454a06bb90d3160ead741021 = $(`<div id="html_19fda8f7454a06bb90d3160ead741021" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로65길', '구간명': '신도림대우푸르지오앞 ~ 신도림1차푸르지오', '구간 거리': '355m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_8eb666531e4137db0331cd88750695fa.setContent(html_19fda8f7454a06bb90d3160ead741021);
+            
+        
+
+        poly_line_5f2bb7e4a93b84171945f64960afe1e1.bindPopup(popup_8eb666531e4137db0331cd88750695fa)
+        ;
+
+        
+    
+    
+            poly_line_5f2bb7e4a93b84171945f64960afe1e1.bindTooltip(
+                `<div>
+                     {'도로명': '경인로65길', '구간명': '신도림대우푸르지오앞 ~ 신도림1차푸르지오', '구간 거리': '355m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bb66bb4342fd984773f07dded9761aa6 = L.polyline(
+                [[37.51116414206191, 126.8893031387101], [37.51054573776146, 126.88844196091792], [37.5091979488075, 126.88659849864459], [37.508988862442216, 126.88635171403361]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_1380b0e9f74890190897686017fb9861 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a495cb569f6cec9948b5d97a10aeca48 = $(`<div id="html_a495cb569f6cec9948b5d97a10aeca48" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로65길', '구간명': '신도림1차푸르지오 ~ 신도림대우푸르지오앞', '구간 거리': '356m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_1380b0e9f74890190897686017fb9861.setContent(html_a495cb569f6cec9948b5d97a10aeca48);
+            
+        
+
+        poly_line_bb66bb4342fd984773f07dded9761aa6.bindPopup(popup_1380b0e9f74890190897686017fb9861)
+        ;
+
+        
+    
+    
+            poly_line_bb66bb4342fd984773f07dded9761aa6.bindTooltip(
+                `<div>
+                     {'도로명': '경인로65길', '구간명': '신도림1차푸르지오 ~ 신도림대우푸르지오앞', '구간 거리': '356m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_96eac2390b69289fbaee1aaee55466ff = L.polyline(
+                [[37.50748694722482, 126.88826098115383], [37.507851679887075, 126.88788794366661], [37.50846563235049, 126.88736790950202]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_f9629df6aaea401e82b8e7f757efa505 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d03dba478f9b6521992483d7c10ff533 = $(`<div id="html_d03dba478f9b6521992483d7c10ff533" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로', '구간명': '대성제5주유소 ~ 신도림동692-2', '구간 거리': '134m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f9629df6aaea401e82b8e7f757efa505.setContent(html_d03dba478f9b6521992483d7c10ff533);
+            
+        
+
+        poly_line_96eac2390b69289fbaee1aaee55466ff.bindPopup(popup_f9629df6aaea401e82b8e7f757efa505)
+        ;
+
+        
+    
+    
+            poly_line_96eac2390b69289fbaee1aaee55466ff.bindTooltip(
+                `<div>
+                     {'도로명': '경인로', '구간명': '대성제5주유소 ~ 신도림동692-2', '구간 거리': '134m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_04ec710a7cc94c0f5860f3a751dd8158 = L.polyline(
+                [[37.50840515592687, 126.88725540482297], [37.50778716349595, 126.88777886119512], [37.50741865241669, 126.888155763526]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_6c35544a2be0767a935bbfe481d10aa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4d87071c34a10cccf7c53dfd7eacf62 = $(`<div id="html_a4d87071c34a10cccf7c53dfd7eacf62" style="width: 100.0%; height: 100.0%;">{'도로명': '경인로', '구간명': '신도림동692-2 ~ 대성제5주유소', '구간 거리': '136m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_6c35544a2be0767a935bbfe481d10aa6.setContent(html_a4d87071c34a10cccf7c53dfd7eacf62);
+            
+        
+
+        poly_line_04ec710a7cc94c0f5860f3a751dd8158.bindPopup(popup_6c35544a2be0767a935bbfe481d10aa6)
+        ;
+
+        
+    
+    
+            poly_line_04ec710a7cc94c0f5860f3a751dd8158.bindTooltip(
+                `<div>
+                     {'도로명': '경인로', '구간명': '신도림동692-2 ~ 대성제5주유소', '구간 거리': '136m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aea78efcf4c5d6fc4eee7d9bbb5d9d00 = L.polyline(
+                [[37.51123589684313, 126.89121627359135], [37.511027196714785, 126.89132723958821], [37.510877070908855, 126.89139329510101], [37.51009555270584, 126.89183433498431], [37.50908054347081, 126.89242233505819], [37.50896857368226, 126.89250329433798], [37.508842314474784, 126.89260073258657], [37.50872203298676, 126.89271761222578], [37.50860177309825, 126.8928584330055], [37.508494632114974, 126.89300671519901], [37.508381558321915, 126.89318642635035], [37.50828280748896, 126.89338706421866], [37.50819360915194, 126.89360713926833], [37.50804739820662, 126.89405173131331], [37.507963091201965, 126.8944109491226], [37.50791200242345, 126.89459655505483], [37.50786039299664, 126.89473308449332], [37.50777284386904, 126.89493310492475], [37.50766010555633, 126.8951621547304], [37.50754401901009, 126.895308200338], [37.50737734796459, 126.89553660810661], [37.50630561088801, 126.89670140475849], [37.50594170282893, 126.89709640518092]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_1481e7003bedc3adc110543621dec10f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b72b68841aa71a555ae4dac9fe3b2dcf = $(`<div id="html_b72b68841aa71a555ae4dac9fe3b2dcf" style="width: 100.0%; height: 100.0%;">{'도로명': '대방천로', '구간명': '신도림고가차도남측 ~ 남성아파트', '구간 거리': '815m', '평균 속도': '46.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_1481e7003bedc3adc110543621dec10f.setContent(html_b72b68841aa71a555ae4dac9fe3b2dcf);
+            
+        
+
+        poly_line_aea78efcf4c5d6fc4eee7d9bbb5d9d00.bindPopup(popup_1481e7003bedc3adc110543621dec10f)
+        ;
+
+        
+    
+    
+            poly_line_aea78efcf4c5d6fc4eee7d9bbb5d9d00.bindTooltip(
+                `<div>
+                     {'도로명': '대방천로', '구간명': '신도림고가차도남측 ~ 남성아파트', '구간 거리': '815m', '평균 속도': '46.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ea31ba4f941c81563cd5278346f1587a = L.polyline(
+                [[37.51123589684313, 126.89121627359135], [37.51051675177091, 126.89180816196371], [37.509347690238776, 126.89272537714939], [37.50918295828965, 126.89284600696175], [37.509089179115016, 126.89292655292373], [37.508756014693155, 126.89317529053535], [37.50843558905525, 126.89342106150734], [37.508229712860235, 126.89355064448245], [37.50803932673582, 126.89364936759753], [37.507871876477815, 126.89371502303177], [37.50776567904725, 126.89374648003394], [37.50757558190434, 126.89378800193005], [37.50740034785793, 126.89381465017625], [37.50722196973272, 126.89382374164], [37.50707703694968, 126.89382688073074], [37.506937072647425, 126.89381536744871], [37.50679381701013, 126.89379788493893], [37.50644207648238, 126.89373276188734], [37.50514743436855, 126.89350467348598]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_b7f7433039693706378ce05c918cb189 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c04fa78a4f21e349f32cea9c169bf226 = $(`<div id="html_c04fa78a4f21e349f32cea9c169bf226" style="width: 100.0%; height: 100.0%;">{'도로명': '도림천로', '구간명': '고가차도남측 ~ 남성아파트', '구간 거리': '740m', '평균 속도': '60.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_b7f7433039693706378ce05c918cb189.setContent(html_c04fa78a4f21e349f32cea9c169bf226);
+            
+        
+
+        poly_line_ea31ba4f941c81563cd5278346f1587a.bindPopup(popup_b7f7433039693706378ce05c918cb189)
+        ;
+
+        
+    
+    
+            poly_line_ea31ba4f941c81563cd5278346f1587a.bindTooltip(
+                `<div>
+                     {'도로명': '도림천로', '구간명': '고가차도남측 ~ 남성아파트', '구간 거리': '740m', '평균 속도': '60.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6c2dfd033f07e1cfad918609ec15c7cb = L.polyline(
+                [[37.509144446985026, 126.89304320456887], [37.50924075638664, 126.89296081149313], [37.50940359489802, 126.89284156893625], [37.510575052274966, 126.89192247613167], [37.51129517926494, 126.89132978052014], [37.51170729603127, 126.89104349565527], [37.511891252208855, 126.89090684774007], [37.51206658117227, 126.89075467863543], [37.51224549043951, 126.89058296417831], [37.51240146674981, 126.89039824557125], [37.512558468269084, 126.89016717848]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e390ed3bb3be915c0be7e36f3601fc55);
+        
+    
+        var popup_ed798dce71933d3a4ec970d28ce0a48f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7029449a8a028c9eb27082ad8ea41fbb = $(`<div id="html_7029449a8a028c9eb27082ad8ea41fbb" style="width: 100.0%; height: 100.0%;">{'도로명': '도림천로', '구간명': '신도림고가차도 ~ 문래동1가', '구간 거리': '458m', '평균 속도': '67.3km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ed798dce71933d3a4ec970d28ce0a48f.setContent(html_7029449a8a028c9eb27082ad8ea41fbb);
+            
+        
+
+        poly_line_6c2dfd033f07e1cfad918609ec15c7cb.bindPopup(popup_ed798dce71933d3a4ec970d28ce0a48f)
+        ;
+
+        
+    
+    
+            poly_line_6c2dfd033f07e1cfad918609ec15c7cb.bindTooltip(
+                `<div>
+                     {'도로명': '도림천로', '구간명': '신도림고가차도 ~ 문래동1가', '구간 거리': '458m', '평균 속도': '67.3km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

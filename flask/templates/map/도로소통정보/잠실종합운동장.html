@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e4bb965ce8a2f8097dd535becb8fc0f0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e4bb965ce8a2f8097dd535becb8fc0f0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e4bb965ce8a2f8097dd535becb8fc0f0 = L.map(
+                "map_e4bb965ce8a2f8097dd535becb8fc0f0",
+                {
+                    center: [37.514445948282926, 127.07383912686271],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9649aa4337b0a26a7d290558e4319142 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+            var poly_line_950d1355cf37c458c6656b8a6545a6bc = L.polyline(
+                [[37.517462395497496, 127.07590974414977], [37.51742284872941, 127.07610006567874], [37.51715014949002, 127.07753635862682], [37.51688699610311, 127.07893075108537], [37.51682958516886, 127.079223988725]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_301a8d49b117a694dcdf328259990619 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5246e2976d0a42d537a12b7e324be90 = $(`<div id="html_e5246e2976d0a42d537a12b7e324be90" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '신천중학교앞 ~ 잠실실내체육관북2문앞', '구간 거리': '301m', '평균 속도': '73.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_301a8d49b117a694dcdf328259990619.setContent(html_e5246e2976d0a42d537a12b7e324be90);
+            
+        
+
+        poly_line_950d1355cf37c458c6656b8a6545a6bc.bindPopup(popup_301a8d49b117a694dcdf328259990619)
+        ;
+
+        
+    
+    
+            poly_line_950d1355cf37c458c6656b8a6545a6bc.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '신천중학교앞 ~ 잠실실내체육관북2문앞', '구간 거리': '301m', '평균 속도': '73.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_46377136e4e4bfccf3081a56fd40672b = L.polyline(
+                [[37.51815532442509, 127.07125747709127], [37.518164804954665, 127.07138401992039], [37.51819320872524, 127.07171925125272], [37.51817871954851, 127.07202451196129], [37.5181164273227, 127.07253324413335], [37.51798249260176, 127.07323943571657], [37.51782460898312, 127.07411320132067], [37.51760936912876, 127.07520239440221], [37.517462395497496, 127.07590974414977]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_12c3be2c107dc6e13aa0a57b335aa98b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b2c7a74434a0398ec0be021120efb19 = $(`<div id="html_0b2c7a74434a0398ec0be021120efb19" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실실내체육관북2문앞 ~ 탄천IC', '구간 거리': '421m', '평균 속도': '64.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_12c3be2c107dc6e13aa0a57b335aa98b.setContent(html_0b2c7a74434a0398ec0be021120efb19);
+            
+        
+
+        poly_line_46377136e4e4bfccf3081a56fd40672b.bindPopup(popup_12c3be2c107dc6e13aa0a57b335aa98b)
+        ;
+
+        
+    
+    
+            poly_line_46377136e4e4bfccf3081a56fd40672b.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실실내체육관북2문앞 ~ 탄천IC', '구간 거리': '421m', '평균 속도': '64.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c4ab29dd2e5ab7d8352776d5b6a4baf4 = L.polyline(
+                [[37.51698330923381, 127.08108763167493], [37.517019489565065, 127.0804213279931], [37.51704838094211, 127.08000236064248], [37.51712993775568, 127.07925423433134], [37.51717781655303, 127.07895499942356], [37.517421863308314, 127.07761445443487], [37.51761324101612, 127.07659707542196], [37.51783801755597, 127.07552585428553], [37.51798628452513, 127.07479574018122], [37.51805873422048, 127.07441054104936]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_8f375d04902b309949a791dd1e68b258 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e917cd98528c23a6daaeb0886950af93 = $(`<div id="html_e917cd98528c23a6daaeb0886950af93" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실실내체육관북문앞 ~ 잠실여름파출소', '구간 거리': '603m', '평균 속도': '71.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_8f375d04902b309949a791dd1e68b258.setContent(html_e917cd98528c23a6daaeb0886950af93);
+            
+        
+
+        poly_line_c4ab29dd2e5ab7d8352776d5b6a4baf4.bindPopup(popup_8f375d04902b309949a791dd1e68b258)
+        ;
+
+        
+    
+    
+            poly_line_c4ab29dd2e5ab7d8352776d5b6a4baf4.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실실내체육관북문앞 ~ 잠실여름파출소', '구간 거리': '603m', '평균 속도': '71.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a36099c50ccbe628af9f169e71b2e7d6 = L.polyline(
+                [[37.51805873422048, 127.07441054104936], [37.518292445079, 127.07316790809786], [37.51838415466336, 127.07245599301403], [37.51842870094352, 127.07073960616951]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_e46c0d35cef8ecff8542b624c8fa67f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_700ff6926bac51b9454c7850e347d603 = $(`<div id="html_700ff6926bac51b9454c7850e347d603" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '청담IC ~ 잠실실내체육관북문앞', '구간 거리': '328m', '평균 속도': '70.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_e46c0d35cef8ecff8542b624c8fa67f3.setContent(html_700ff6926bac51b9454c7850e347d603);
+            
+        
+
+        poly_line_a36099c50ccbe628af9f169e71b2e7d6.bindPopup(popup_e46c0d35cef8ecff8542b624c8fa67f3)
+        ;
+
+        
+    
+    
+            poly_line_a36099c50ccbe628af9f169e71b2e7d6.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '청담IC ~ 잠실실내체육관북문앞', '구간 거리': '328m', '평균 속도': '70.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_14e98273076cc0e04284cf15a6f12a39 = L.polyline(
+                [[37.511921667009595, 127.0783222717705], [37.511860924178805, 127.07773553446543], [37.51116700601006, 127.07362630361634]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_ec2d69cd517f4e858d6c2da55992b31c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f4c1d751f521f5cdb2f8f8caa197f18 = $(`<div id="html_4f4c1d751f521f5cdb2f8f8caa197f18" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로', '구간명': '정신여중고교 ~ 종합운동장교차로', '구간 거리': '424m', '평균 속도': '40.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ec2d69cd517f4e858d6c2da55992b31c.setContent(html_4f4c1d751f521f5cdb2f8f8caa197f18);
+            
+        
+
+        poly_line_14e98273076cc0e04284cf15a6f12a39.bindPopup(popup_ec2d69cd517f4e858d6c2da55992b31c)
+        ;
+
+        
+    
+    
+            poly_line_14e98273076cc0e04284cf15a6f12a39.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로', '구간명': '정신여중고교 ~ 종합운동장교차로', '구간 거리': '424m', '평균 속도': '40.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e77c2637d4d9defecb5a26546ef36922 = L.polyline(
+                [[37.51106123669267, 127.07365445367277], [37.51175425998301, 127.07775838915448], [37.51181444853626, 127.07833976490295]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_60881942368a4a72490a725485eaafb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ae96796d464b7872705c320c6c8151b = $(`<div id="html_6ae96796d464b7872705c320c6c8151b" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로', '구간명': '종합운동장교차로 ~ 정신여중고교', '구간 거리': '423m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_60881942368a4a72490a725485eaafb1.setContent(html_6ae96796d464b7872705c320c6c8151b);
+            
+        
+
+        poly_line_e77c2637d4d9defecb5a26546ef36922.bindPopup(popup_60881942368a4a72490a725485eaafb1)
+        ;
+
+        
+    
+    
+            poly_line_e77c2637d4d9defecb5a26546ef36922.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로', '구간명': '종합운동장교차로 ~ 정신여중고교', '구간 거리': '423m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2535a396086db60c1e0577d07ccbec43 = L.polyline(
+                [[37.51544403021435, 127.07741811545456], [37.511858071106076, 127.07826432143109]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_810bb6527ba2398fc721f6f9e67cc530 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2da2aa52acd6fb3e1ff5278325b223c3 = $(`<div id="html_2da2aa52acd6fb3e1ff5278325b223c3" style="width: 100.0%; height: 100.0%;">{'도로명': '백제고분로', '구간명': '종합운동장교차로 ~ 신천중교앞', '구간 거리': '405m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_810bb6527ba2398fc721f6f9e67cc530.setContent(html_2da2aa52acd6fb3e1ff5278325b223c3);
+            
+        
+
+        poly_line_2535a396086db60c1e0577d07ccbec43.bindPopup(popup_810bb6527ba2398fc721f6f9e67cc530)
+        ;
+
+        
+    
+    
+            poly_line_2535a396086db60c1e0577d07ccbec43.bindTooltip(
+                `<div>
+                     {'도로명': '백제고분로', '구간명': '종합운동장교차로 ~ 신천중교앞', '구간 거리': '405m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aedcb5bb2b888edaf718bc8ed5b568b6 = L.polyline(
+                [[37.51663398263028, 127.07714292635518], [37.51633387120877, 127.0772170884485], [37.51615784319036, 127.07724446390253], [37.51544373283667, 127.07741818640852]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_1ba4b0b29f2a6cd16d2a4ef41644f567 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_186db2f4a552a5cc1e346e375c4a2506 = $(`<div id="html_186db2f4a552a5cc1e346e375c4a2506" style="width: 100.0%; height: 100.0%;">{'도로명': '백제고분로', '구간명': '신천중교앞 ~ 잠실선착장앞', '구간 거리': '134m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_1ba4b0b29f2a6cd16d2a4ef41644f567.setContent(html_186db2f4a552a5cc1e346e375c4a2506);
+            
+        
+
+        poly_line_aedcb5bb2b888edaf718bc8ed5b568b6.bindPopup(popup_1ba4b0b29f2a6cd16d2a4ef41644f567)
+        ;
+
+        
+    
+    
+            poly_line_aedcb5bb2b888edaf718bc8ed5b568b6.bindTooltip(
+                `<div>
+                     {'도로명': '백제고분로', '구간명': '신천중교앞 ~ 잠실선착장앞', '구간 거리': '134m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a5e5a0fb13cb45bee7b56e4b74c4dac6 = L.polyline(
+                [[37.51187804440323, 127.0783977152725], [37.515464004448766, 127.0775515143251]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_314b17f64b39119a53ddbfe1c16fe7e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88a5354e493ff9f6c7e8778ae90cb56d = $(`<div id="html_88a5354e493ff9f6c7e8778ae90cb56d" style="width: 100.0%; height: 100.0%;">{'도로명': '백제고분로', '구간명': '신천중교앞 ~ 종합운동장교차로', '구간 거리': '405m', '평균 속도': '24.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_314b17f64b39119a53ddbfe1c16fe7e4.setContent(html_88a5354e493ff9f6c7e8778ae90cb56d);
+            
+        
+
+        poly_line_a5e5a0fb13cb45bee7b56e4b74c4dac6.bindPopup(popup_314b17f64b39119a53ddbfe1c16fe7e4)
+        ;
+
+        
+    
+    
+            poly_line_a5e5a0fb13cb45bee7b56e4b74c4dac6.bindTooltip(
+                `<div>
+                     {'도로명': '백제고분로', '구간명': '신천중교앞 ~ 종합운동장교차로', '구간 거리': '405m', '평균 속도': '24.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1bb1fd0299a7e623688aded078158da3 = L.polyline(
+                [[37.515464301826526, 127.07755144337176], [37.51617122842854, 127.0773794690691], [37.51633161519575, 127.07736013830339], [37.51652040754152, 127.07745958439362]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_9dfb638d1c7e2c501d1437849d748a0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bb090f858a77d8849f40537220fa8bf = $(`<div id="html_1bb090f858a77d8849f40537220fa8bf" style="width: 100.0%; height: 100.0%;">{'도로명': '백제고분로', '구간명': '잠실선착장앞 ~ 신천중교앞', '구간 거리': '121m', '평균 속도': '34.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_9dfb638d1c7e2c501d1437849d748a0a.setContent(html_1bb090f858a77d8849f40537220fa8bf);
+            
+        
+
+        poly_line_1bb1fd0299a7e623688aded078158da3.bindPopup(popup_9dfb638d1c7e2c501d1437849d748a0a)
+        ;
+
+        
+    
+    
+            poly_line_1bb1fd0299a7e623688aded078158da3.bindTooltip(
+                `<div>
+                     {'도로명': '백제고분로', '구간명': '잠실선착장앞 ~ 신천중교앞', '구간 거리': '121m', '평균 속도': '34.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_967df5c0663a6fcd0e3109d1913cb777 = L.polyline(
+                [[37.51653422927414, 127.0775496898868], [37.51638120840493, 127.07928657595048], [37.51621261168748, 127.0815039194103], [37.51618783913347, 127.0827407320038], [37.51621049790484, 127.08443611375858]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_6a4ccfc0e169232099ac63b557223a40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e60364860071716eee748bfa84cbe07 = $(`<div id="html_1e60364860071716eee748bfa84cbe07" style="width: 100.0%; height: 100.0%;">{'도로명': '한가람로', '구간명': '잠실1단지앞교차로 ~ 잠실선착장앞', '구간 거리': '611m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_6a4ccfc0e169232099ac63b557223a40.setContent(html_1e60364860071716eee748bfa84cbe07);
+            
+        
+
+        poly_line_967df5c0663a6fcd0e3109d1913cb777.bindPopup(popup_6a4ccfc0e169232099ac63b557223a40)
+        ;
+
+        
+    
+    
+            poly_line_967df5c0663a6fcd0e3109d1913cb777.bindTooltip(
+                `<div>
+                     {'도로명': '한가람로', '구간명': '잠실1단지앞교차로 ~ 잠실선착장앞', '구간 거리': '611m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bd49b895bf7533347ad27eecba9b9a88 = L.polyline(
+                [[37.51631860371995, 127.08443383753908], [37.516295981668755, 127.08274129933247], [37.51632060212223, 127.08151208493314], [37.5164887681068, 127.07930041505662], [37.516640641355735, 127.07757304733668]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_9da01806950254f17714dba039650e38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86d6135914cc34b357803d01e0402adf = $(`<div id="html_86d6135914cc34b357803d01e0402adf" style="width: 100.0%; height: 100.0%;">{'도로명': '한가람로', '구간명': '잠실선착장앞 ~ 잠실1단지앞교차로', '구간 거리': '608m', '평균 속도': '33.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_9da01806950254f17714dba039650e38.setContent(html_86d6135914cc34b357803d01e0402adf);
+            
+        
+
+        poly_line_bd49b895bf7533347ad27eecba9b9a88.bindPopup(popup_9da01806950254f17714dba039650e38)
+        ;
+
+        
+    
+    
+            poly_line_bd49b895bf7533347ad27eecba9b9a88.bindTooltip(
+                `<div>
+                     {'도로명': '한가람로', '구간명': '잠실선착장앞 ~ 잠실1단지앞교차로', '구간 거리': '608m', '평균 속도': '33.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2603b49dde1e8bc4374c7c74d2aa451e = L.polyline(
+                [[37.510612417587765, 127.07072062438431], [37.515752604276905, 127.06992340475928]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_5281583c1e99d277851993c5a698db99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d04021f91764297c1794d2268ed0417 = $(`<div id="html_2d04021f91764297c1794d2268ed0417" style="width: 100.0%; height: 100.0%;">{'도로명': '탄천동로', '구간명': '종합운동장삼거리 ~ 종합운동장교차로', '구간 거리': '575m', '평균 속도': '32.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_5281583c1e99d277851993c5a698db99.setContent(html_2d04021f91764297c1794d2268ed0417);
+            
+        
+
+        poly_line_2603b49dde1e8bc4374c7c74d2aa451e.bindPopup(popup_5281583c1e99d277851993c5a698db99)
+        ;
+
+        
+    
+    
+            poly_line_2603b49dde1e8bc4374c7c74d2aa451e.bindTooltip(
+                `<div>
+                     {'도로명': '탄천동로', '구간명': '종합운동장삼거리 ~ 종합운동장교차로', '구간 거리': '575m', '평균 속도': '32.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cb76aad89df9d48541b466c4c76b80a4 = L.polyline(
+                [[37.515739346392444, 127.06978869362369], [37.51059916059238, 127.07058592121798]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_edb1af5a88df8126c8cd7f5a7af24186 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18125be0497012d0b7c6bfe6d3f6b0ad = $(`<div id="html_18125be0497012d0b7c6bfe6d3f6b0ad" style="width: 100.0%; height: 100.0%;">{'도로명': '탄천동로', '구간명': '종합운동장교차로 ~ 종합운동장삼거리', '구간 거리': '575m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_edb1af5a88df8126c8cd7f5a7af24186.setContent(html_18125be0497012d0b7c6bfe6d3f6b0ad);
+            
+        
+
+        poly_line_cb76aad89df9d48541b466c4c76b80a4.bindPopup(popup_edb1af5a88df8126c8cd7f5a7af24186)
+        ;
+
+        
+    
+    
+            poly_line_cb76aad89df9d48541b466c4c76b80a4.bindTooltip(
+                `<div>
+                     {'도로명': '탄천동로', '구간명': '종합운동장교차로 ~ 종합운동장삼거리', '구간 거리': '575m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_02e4b128646f77968534e48588fa4b46 = L.polyline(
+                [[37.51112314507283, 127.0737072899417], [37.5120468642506, 127.07351097453802], [37.51288868084206, 127.07338713478102], [37.51314576695539, 127.07341620452506], [37.513418066386706, 127.07350339616502], [37.51363671466737, 127.07362946149534], [37.51506583418336, 127.075023201327], [37.51515249818499, 127.07524123203207], [37.51520282884856, 127.07553532650792], [37.51540038582658, 127.07749334243282]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_87626f1aa89dfd30a9ee582d4290aa23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85f69dc3a4ff4653543331b1085dcbcd = $(`<div id="html_85f69dc3a4ff4653543331b1085dcbcd" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로.백제고분로', '구간명': '신천중교앞 ~ 정신여중고교', '구간 거리': '708m', '평균 속도': '39.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_87626f1aa89dfd30a9ee582d4290aa23.setContent(html_85f69dc3a4ff4653543331b1085dcbcd);
+            
+        
+
+        poly_line_02e4b128646f77968534e48588fa4b46.bindPopup(popup_87626f1aa89dfd30a9ee582d4290aa23)
+        ;
+
+        
+    
+    
+            poly_line_02e4b128646f77968534e48588fa4b46.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로.백제고분로', '구간명': '신천중교앞 ~ 정신여중고교', '구간 거리': '708m', '평균 속도': '39.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_846ca5c6908ac90a0418102ee909af61 = L.polyline(
+                [[37.51550764887314, 127.07747628731708], [37.515309509655175, 127.07551249930006], [37.51525533873209, 127.07519596241754], [37.51515159366267, 127.07493495879073], [37.51369318485417, 127.07351265824224], [37.51345428643485, 127.0733749162237], [37.51316409472484, 127.07328199548502], [37.51288722301836, 127.07325068878859], [37.51203153884686, 127.073376571668], [37.511105097594175, 127.07357346738318]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_b3ff1791a4066338df43afa875d2dbb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d63d5f4d3e75f4181c05790c0473fa5 = $(`<div id="html_5d63d5f4d3e75f4181c05790c0473fa5" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로.백제고분로', '구간명': '정신여중고교 ~ 신천중교앞', '구간 거리': '728m', '평균 속도': '5.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_b3ff1791a4066338df43afa875d2dbb1.setContent(html_5d63d5f4d3e75f4181c05790c0473fa5);
+            
+        
+
+        poly_line_846ca5c6908ac90a0418102ee909af61.bindPopup(popup_b3ff1791a4066338df43afa875d2dbb1)
+        ;
+
+        
+    
+    
+            poly_line_846ca5c6908ac90a0418102ee909af61.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로.백제고분로', '구간명': '정신여중고교 ~ 신천중교앞', '구간 거리': '728m', '평균 속도': '5.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_71266036014cc7471f36c55c335930a6 = L.polyline(
+                [[37.515506491290616, 127.06792428752989], [37.51569230183544, 127.06986415066362]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_2b87418ca32c538cbad045271b676db6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02bc4fde47d4603ab70f2ff81d3d35e0 = $(`<div id="html_02bc4fde47d4603ab70f2ff81d3d35e0" style="width: 100.0%; height: 100.0%;">{'도로명': '봉은사로', '구간명': '종합운동장삼거리 ~ 강남구-송파구', '구간 거리': '173m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_2b87418ca32c538cbad045271b676db6.setContent(html_02bc4fde47d4603ab70f2ff81d3d35e0);
+            
+        
+
+        poly_line_71266036014cc7471f36c55c335930a6.bindPopup(popup_2b87418ca32c538cbad045271b676db6)
+        ;
+
+        
+    
+    
+            poly_line_71266036014cc7471f36c55c335930a6.bindTooltip(
+                `<div>
+                     {'도로명': '봉은사로', '구간명': '종합운동장삼거리 ~ 강남구-송파구', '구간 거리': '173m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2b938de6678a402b3cb4ea0b91a715f1 = L.polyline(
+                [[37.51579964887197, 127.06984794656479], [37.515613838968115, 127.06790808069253]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_238f06bab1e4a42cd84b92916c0b3f2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5d0e9f0eed128fd84013edf759abc0d = $(`<div id="html_c5d0e9f0eed128fd84013edf759abc0d" style="width: 100.0%; height: 100.0%;">{'도로명': '봉은사로', '구간명': '강남구-송파구 ~ 종합운동장삼거리', '구간 거리': '173m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_238f06bab1e4a42cd84b92916c0b3f2c.setContent(html_c5d0e9f0eed128fd84013edf759abc0d);
+            
+        
+
+        poly_line_2b938de6678a402b3cb4ea0b91a715f1.bindPopup(popup_238f06bab1e4a42cd84b92916c0b3f2c)
+        ;
+
+        
+    
+    
+            poly_line_2b938de6678a402b3cb4ea0b91a715f1.bindTooltip(
+                `<div>
+                     {'도로명': '봉은사로', '구간명': '강남구-송파구 ~ 종합운동장삼거리', '구간 거리': '173m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_18f1ee432b01f141b98209f198fcddb4 = L.polyline(
+                [[37.515752916037975, 127.06992338129638], [37.516437799468484, 127.06981211397762], [37.51682311120457, 127.06974597262301]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_57ad6deded8b2b6bb14be9d960eb265a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85c0d32373affa6f78257b8f4d3e6eea = $(`<div id="html_85c0d32373affa6f78257b8f4d3e6eea" style="width: 100.0%; height: 100.0%;">{'도로명': '탄천동로', '구간명': '탄천IC ~ 종합운동장삼거리', '구간 거리': '120m', '평균 속도': '34.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_57ad6deded8b2b6bb14be9d960eb265a.setContent(html_85c0d32373affa6f78257b8f4d3e6eea);
+            
+        
+
+        poly_line_18f1ee432b01f141b98209f198fcddb4.bindPopup(popup_57ad6deded8b2b6bb14be9d960eb265a)
+        ;
+
+        
+    
+    
+            poly_line_18f1ee432b01f141b98209f198fcddb4.bindTooltip(
+                `<div>
+                     {'도로명': '탄천동로', '구간명': '탄천IC ~ 종합운동장삼거리', '구간 거리': '120m', '평균 속도': '34.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_524f2769880ee5b2e8cef44a94c6fca6 = L.polyline(
+                [[37.51686337457087, 127.06960200785954], [37.51642353227188, 127.06967751041239], [37.51573903463138, 127.06978871708723]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_dd82ddb488c2605ab10b6451ee679c2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2160bb7df4cea45b42433b5a38f7480b = $(`<div id="html_2160bb7df4cea45b42433b5a38f7480b" style="width: 100.0%; height: 100.0%;">{'도로명': '탄천동로', '구간명': '종합운동장삼거리 ~ 탄천IC', '구간 거리': '126m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_dd82ddb488c2605ab10b6451ee679c2f.setContent(html_2160bb7df4cea45b42433b5a38f7480b);
+            
+        
+
+        poly_line_524f2769880ee5b2e8cef44a94c6fca6.bindPopup(popup_dd82ddb488c2605ab10b6451ee679c2f)
+        ;
+
+        
+    
+    
+            poly_line_524f2769880ee5b2e8cef44a94c6fca6.bindTooltip(
+                `<div>
+                     {'도로명': '탄천동로', '구간명': '종합운동장삼거리 ~ 탄천IC', '구간 거리': '126m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_21b2181a3758988a6c7e24dc8bece67e = L.polyline(
+                [[37.51666146161928, 127.07757597706804], [37.51671572914152, 127.0779617389248], [37.51682958516886, 127.079223988725]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_b8164017cffbb9d41d407cb0586007b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbd3a8c17ac006a2b3bc04fc923e63fa = $(`<div id="html_bbd3a8c17ac006a2b3bc04fc923e63fa" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '신천중학교앞 ~ 잠실선착장앞', '구간 거리': '147m', '평균 속도': '34.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b8164017cffbb9d41d407cb0586007b2.setContent(html_bbd3a8c17ac006a2b3bc04fc923e63fa);
+            
+        
+
+        poly_line_21b2181a3758988a6c7e24dc8bece67e.bindPopup(popup_b8164017cffbb9d41d407cb0586007b2)
+        ;
+
+        
+    
+    
+            poly_line_21b2181a3758988a6c7e24dc8bece67e.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '신천중학교앞 ~ 잠실선착장앞', '구간 거리': '147m', '평균 속도': '34.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1a46350dc81670eecc78b2560d3ba90d = L.polyline(
+                [[37.517462395497496, 127.07590974414977], [37.517120384324556, 127.07641454179276], [37.516873696616194, 127.07678719438594], [37.51669646333911, 127.0771226447154]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_a37368f58b2709a9c3e057995f215fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a47cf4daafc90f4e8790a9049e40c37 = $(`<div id="html_3a47cf4daafc90f4e8790a9049e40c37" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실선착장앞 ~ 잠실실내체육관북2문앞', '구간 거리': '137m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_a37368f58b2709a9c3e057995f215fd9.setContent(html_3a47cf4daafc90f4e8790a9049e40c37);
+            
+        
+
+        poly_line_1a46350dc81670eecc78b2560d3ba90d.bindPopup(popup_a37368f58b2709a9c3e057995f215fd9)
+        ;
+
+        
+    
+    
+            poly_line_1a46350dc81670eecc78b2560d3ba90d.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실선착장앞 ~ 잠실실내체육관북2문앞', '구간 거리': '137m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0ded389c673983f9e46c5f8dd27c46c2 = L.polyline(
+                [[37.51698330923381, 127.08108763167493], [37.51715772279811, 127.08019279642858], [37.51733948211087, 127.07933099232375], [37.517439555313814, 127.0789711453512], [37.517510619411574, 127.07883601493093], [37.5176647507308, 127.07858813916822], [37.51770621707968, 127.07851305419551], [37.51787042599788, 127.07774864541344]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_0150e945ff92de3146fa33f70e5b2434 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_854fb1c59269910f6bb1d1c06f7b2aa9 = $(`<div id="html_854fb1c59269910f6bb1d1c06f7b2aa9" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '종합운동장분기점 ~ 잠실여름파출소', '구간 거리': '314m', '평균 속도': '35.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_0150e945ff92de3146fa33f70e5b2434.setContent(html_854fb1c59269910f6bb1d1c06f7b2aa9);
+            
+        
+
+        poly_line_0ded389c673983f9e46c5f8dd27c46c2.bindPopup(popup_0150e945ff92de3146fa33f70e5b2434)
+        ;
+
+        
+    
+    
+            poly_line_0ded389c673983f9e46c5f8dd27c46c2.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '종합운동장분기점 ~ 잠실여름파출소', '구간 거리': '314m', '평균 속도': '35.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_50f43275e6da67147e790c618c151c8b = L.polyline(
+                [[37.51682311120457, 127.06974597262301], [37.51736086757726, 127.06977540021445], [37.51754582566781, 127.06981176391679], [37.51770726297937, 127.06993808424981], [37.51785103192109, 127.07012438787964], [37.51794114203732, 127.07031099932726], [37.51799545393815, 127.0704903324183], [37.51815532442509, 127.07125747709127]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_5f4536af67318e37b331455f6d682e5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80c6ae586510cfa2ba784071c63fde87 = $(`<div id="html_80c6ae586510cfa2ba784071c63fde87" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '탄천IC ~ 탄천IC', '구간 거리': '231m', '평균 속도': '41.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_5f4536af67318e37b331455f6d682e5d.setContent(html_80c6ae586510cfa2ba784071c63fde87);
+            
+        
+
+        poly_line_50f43275e6da67147e790c618c151c8b.bindPopup(popup_5f4536af67318e37b331455f6d682e5d)
+        ;
+
+        
+    
+    
+            poly_line_50f43275e6da67147e790c618c151c8b.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '탄천IC ~ 탄천IC', '구간 거리': '231m', '평균 속도': '41.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cd7c09eb6de9575fa03bbe4e54ecf3c9 = L.polyline(
+                [[37.51673096370562, 127.07743655127197], [37.51787042599788, 127.07774864541344]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_a544d39bf70e32dcaa5387071edb5f8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bacbd8d715aab66d73edcd79ee4ce25 = $(`<div id="html_4bacbd8d715aab66d73edcd79ee4ce25" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '종합운동장분기점 ~ 잠실선착장앞', '구간 거리': '129m', '평균 속도': '18.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_a544d39bf70e32dcaa5387071edb5f8a.setContent(html_4bacbd8d715aab66d73edcd79ee4ce25);
+            
+        
+
+        poly_line_cd7c09eb6de9575fa03bbe4e54ecf3c9.bindPopup(popup_a544d39bf70e32dcaa5387071edb5f8a)
+        ;
+
+        
+    
+    
+            poly_line_cd7c09eb6de9575fa03bbe4e54ecf3c9.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '종합운동장분기점 ~ 잠실선착장앞', '구간 거리': '129m', '평균 속도': '18.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_20e531df8eb179218533d862b1c65e21 = L.polyline(
+                [[37.51787042599788, 127.07774864541344], [37.51793165686502, 127.0773650613805], [37.51788556287626, 127.07714675422004], [37.517791387046536, 127.07682093395846], [37.51785085772656, 127.07611400078332], [37.517908413656244, 127.07553881600403], [37.51805873422048, 127.07441054104936]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_a586fb272bcd3a1d95551b9e32a0dce8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_849060dd34ba9970be24e271f2486cc6 = $(`<div id="html_849060dd34ba9970be24e271f2486cc6" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '잠실실내체육관북문앞 ~ 종합운동장분기점', '구간 거리': '300m', '평균 속도': '36.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a586fb272bcd3a1d95551b9e32a0dce8.setContent(html_849060dd34ba9970be24e271f2486cc6);
+            
+        
+
+        poly_line_20e531df8eb179218533d862b1c65e21.bindPopup(popup_a586fb272bcd3a1d95551b9e32a0dce8)
+        ;
+
+        
+    
+    
+            poly_line_20e531df8eb179218533d862b1c65e21.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '잠실실내체육관북문앞 ~ 종합운동장분기점', '구간 거리': '300m', '평균 속도': '36.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_be24ce37c62d950e30242bee70ef5509 = L.polyline(
+                [[37.51682311120457, 127.06974597262301], [37.516942147615666, 127.0697255394333], [37.51736412152217, 127.06967547674792], [37.517897185134196, 127.06964279640961], [37.51804626805721, 127.06966532417358], [37.51830481241249, 127.06969333593972], [37.51848575258585, 127.06975468947228], [37.51863286863662, 127.06984877067819], [37.51875857023546, 127.0699827934278], [37.5188453314355, 127.07011343076552], [37.518911296340036, 127.07023059690292], [37.519004483918714, 127.07055640717992], [37.51902924622948, 127.07080776920256], [37.5190013676009, 127.07101152881442], [37.51890706360067, 127.07131147849113], [37.51883103202074, 127.07138975958898], [37.51874533180103, 127.07143216728224], [37.51866416202216, 127.07140867905542], [37.51856369552365, 127.07132541925189], [37.518515565755465, 127.0712059303728], [37.51842870094352, 127.07073960616951]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_54c853c5507e248a191788bba1767053 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7615ef0b292f388694386f54cf0f306 = $(`<div id="html_d7615ef0b292f388694386f54cf0f306" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '청담IC ~ 탄천IC', '구간 거리': '448m', '평균 속도': '43.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_54c853c5507e248a191788bba1767053.setContent(html_d7615ef0b292f388694386f54cf0f306);
+            
+        
+
+        poly_line_be24ce37c62d950e30242bee70ef5509.bindPopup(popup_54c853c5507e248a191788bba1767053)
+        ;
+
+        
+    
+    
+            poly_line_be24ce37c62d950e30242bee70ef5509.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '청담IC ~ 탄천IC', '구간 거리': '448m', '평균 속도': '43.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_01a57a232bd76213d7a7ac4d10691f51 = L.polyline(
+                [[37.51805873422048, 127.07441054104936], [37.51823983747405, 127.07376444659182], [37.51843766165501, 127.07307168855422], [37.518557694880194, 127.07263087433556], [37.518833984177405, 127.07187478643661], [37.5190464979453, 127.07128972165472], [37.51912418464805, 127.07101082509352], [37.519144734368176, 127.07075920231566], [37.5191223893982, 127.07051680796457], [37.51899962139609, 127.07015221746005], [37.51893116686368, 127.07003062713757], [37.51883568082452, 127.06988685426103], [37.51869323820907, 127.06973498179784], [37.518524818674, 127.06962727742437], [37.518323712606445, 127.0695590856078], [37.51805738314752, 127.06953023114069], [37.517901036955806, 127.06950660759215], [37.51735639146726, 127.06953999756988], [37.51692972756632, 127.06959061770908], [37.51686337457087, 127.06960200785954]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_5230cbf6ba266d2703735b26e83c31f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36fda2c13812a740a70fed66eb0f7474 = $(`<div id="html_36fda2c13812a740a70fed66eb0f7474" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽대로', '구간명': '탄천IC ~ 잠실실내체육관북문앞', '구간 거리': '659m', '평균 속도': '15.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_5230cbf6ba266d2703735b26e83c31f8.setContent(html_36fda2c13812a740a70fed66eb0f7474);
+            
+        
+
+        poly_line_01a57a232bd76213d7a7ac4d10691f51.bindPopup(popup_5230cbf6ba266d2703735b26e83c31f8)
+        ;
+
+        
+    
+    
+            poly_line_01a57a232bd76213d7a7ac4d10691f51.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽대로', '구간명': '탄천IC ~ 잠실실내체육관북문앞', '구간 거리': '659m', '평균 속도': '15.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5822428768f0dd98e16f079377744094 = L.polyline(
+                [[37.510887754754826, 127.07371983478312], [37.51060491658131, 127.0721514862451], [37.51059766464464, 127.07201574758557], [37.51060177157005, 127.07190540283659], [37.51062285029412, 127.0718147623843], [37.51064399561263, 127.07174250839417], [37.510676433277695, 127.07167726171905], [37.51070784168872, 127.07163889404455], [37.51076178358105, 127.07160039755023]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_b2987a4dd0230c1b56ca05583fa5203e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97c270fb457f944b9c73b49b2aee458a = $(`<div id="html_97c270fb457f944b9c73b49b2aee458a" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로', '구간명': '따릉이대여소 ~ 종합운동장역', '구간 거리': '198m', '평균 속도': '7.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_b2987a4dd0230c1b56ca05583fa5203e.setContent(html_97c270fb457f944b9c73b49b2aee458a);
+            
+        
+
+        poly_line_5822428768f0dd98e16f079377744094.bindPopup(popup_b2987a4dd0230c1b56ca05583fa5203e)
+        ;
+
+        
+    
+    
+            poly_line_5822428768f0dd98e16f079377744094.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로', '구간명': '따릉이대여소 ~ 종합운동장역', '구간 거리': '198m', '평균 속도': '7.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7b9943b54c1b51604c9291bce0222527 = L.polyline(
+                [[37.510701627719634, 127.07153709437681], [37.51106280618241, 127.07365872789882]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_5be238b97844f9a880738352a7de169c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_410c366d9a4723ce4d0f0d0041b67cae = $(`<div id="html_410c366d9a4723ce4d0f0d0041b67cae" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로', '구간명': '정신여중고교 ~ 따릉이대여소', '구간 거리': '192m', '평균 속도': '48.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_5be238b97844f9a880738352a7de169c.setContent(html_410c366d9a4723ce4d0f0d0041b67cae);
+            
+        
+
+        poly_line_7b9943b54c1b51604c9291bce0222527.bindPopup(popup_5be238b97844f9a880738352a7de169c)
+        ;
+
+        
+    
+    
+            poly_line_7b9943b54c1b51604c9291bce0222527.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로', '구간명': '정신여중고교 ~ 따릉이대여소', '구간 거리': '192m', '평균 속도': '48.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fad242ec3d82e659ddbe719a89b2eae6 = L.polyline(
+                [[37.51116409461194, 127.07362703527029], [37.51082064786854, 127.07150176172516]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_c3f0b18fc1db5328fbe7f26aef90c9a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7bbd7681ad02ba8c03308fcf9267f62 = $(`<div id="html_f7bbd7681ad02ba8c03308fcf9267f62" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로', '구간명': '따릉이대여소 ~ 정신여중고교', '구간 거리': '192m', '평균 속도': '75.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_c3f0b18fc1db5328fbe7f26aef90c9a8.setContent(html_f7bbd7681ad02ba8c03308fcf9267f62);
+            
+        
+
+        poly_line_fad242ec3d82e659ddbe719a89b2eae6.bindPopup(popup_c3f0b18fc1db5328fbe7f26aef90c9a8)
+        ;
+
+        
+    
+    
+            poly_line_fad242ec3d82e659ddbe719a89b2eae6.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로', '구간명': '따릉이대여소 ~ 정신여중고교', '구간 거리': '192m', '평균 속도': '75.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a823e8659286acd789fd42fa344f88eb = L.polyline(
+                [[37.508968614990856, 127.0742413271978], [37.5108399481798, 127.07380001914754]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_7c6c1ec109e5376235070edb527ad0c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78ccb0b2cd3332b3d1465dff54a3483a = $(`<div id="html_78ccb0b2cd3332b3d1465dff54a3483a" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로4길', '구간명': '종합운동장역 ~ 아시아선수촌아파트', '구간 거리': '211m', '평균 속도': '23.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7c6c1ec109e5376235070edb527ad0c3.setContent(html_78ccb0b2cd3332b3d1465dff54a3483a);
+            
+        
+
+        poly_line_a823e8659286acd789fd42fa344f88eb.bindPopup(popup_7c6c1ec109e5376235070edb527ad0c3)
+        ;
+
+        
+    
+    
+            poly_line_a823e8659286acd789fd42fa344f88eb.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로4길', '구간명': '종합운동장역 ~ 아시아선수촌아파트', '구간 거리': '211m', '평균 속도': '23.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_34897f871b2f699a427b630e00ce3e34 = L.polyline(
+                [[37.510769584032374, 127.07375657349637], [37.51126676799863, 127.07666243577246], [37.51144789760609, 127.0776889684319], [37.51146269102759, 127.07772990245367], [37.51149217671792, 127.07778348326129], [37.51181695230588, 127.07833680531965]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_9cac0e363ddb013c6b5e33ed8a12ddc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_804a99b983ff21e86610bdb4c22eaf92 = $(`<div id="html_804a99b983ff21e86610bdb4c22eaf92" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로', '구간명': '종합운동장교차로 ~ 종합운동장역', '구간 거리': '426m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_9cac0e363ddb013c6b5e33ed8a12ddc5.setContent(html_804a99b983ff21e86610bdb4c22eaf92);
+            
+        
+
+        poly_line_34897f871b2f699a427b630e00ce3e34.bindPopup(popup_9cac0e363ddb013c6b5e33ed8a12ddc5)
+        ;
+
+        
+    
+    
+            poly_line_34897f871b2f699a427b630e00ce3e34.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로', '구간명': '종합운동장교차로 ~ 종합운동장역', '구간 거리': '426m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b4f4d34f642cc6ea98d074330a0f316b = L.polyline(
+                [[37.511919434331666, 127.07832349917443], [37.51171880046753, 127.07798517263983], [37.51157086704043, 127.0777335361971], [37.51154479675204, 127.07768983686529], [37.51152432948049, 127.0776376196316], [37.51140986921162, 127.07697986553994], [37.51110233074337, 127.0751103694834], [37.51088831809233, 127.07371983157934]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4bb965ce8a2f8097dd535becb8fc0f0);
+        
+    
+        var popup_7a118b6be94403c3aa078e1993793ece = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa7e906b1894e93ce463ba39df0a2550 = $(`<div id="html_fa7e906b1894e93ce463ba39df0a2550" style="width: 100.0%; height: 100.0%;">{'도로명': '올림픽로', '구간명': '종합운동장역 ~ 종합운동장교차로', '구간 거리': '428m', '평균 속도': '72.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_7a118b6be94403c3aa078e1993793ece.setContent(html_fa7e906b1894e93ce463ba39df0a2550);
+            
+        
+
+        poly_line_b4f4d34f642cc6ea98d074330a0f316b.bindPopup(popup_7a118b6be94403c3aa078e1993793ece)
+        ;
+
+        
+    
+    
+            poly_line_b4f4d34f642cc6ea98d074330a0f316b.bindTooltip(
+                `<div>
+                     {'도로명': '올림픽로', '구간명': '종합운동장역 ~ 종합운동장교차로', '구간 거리': '428m', '평균 속도': '72.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b0dd4a34f426b6cc2317a54e731b73d4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b0dd4a34f426b6cc2317a54e731b73d4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b0dd4a34f426b6cc2317a54e731b73d4 = L.map(
+                "map_b0dd4a34f426b6cc2317a54e731b73d4",
+                {
+                    center: [37.62209914410204, 127.0415999941422],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fcc6ae50911aa888795d7919e9084615 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+            var poly_line_52025a0aae5b9929582e459b07fa1c46 = L.polyline(
+                [[37.61953587452054, 127.04472463935593], [37.61831783641078, 127.04670343895889]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_b1cf4554b490d0d72be5257e3cc0e80b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c5cb97bfe9a05ad818bcb92167adb09 = $(`<div id="html_9c5cb97bfe9a05ad818bcb92167adb09" style="width: 100.0%; height: 100.0%;">{'도로명': '돌곶이로', '구간명': '장위솜틀집 ~ 북서울꿈의숲동문앞교차로', '구간 거리': '221m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b1cf4554b490d0d72be5257e3cc0e80b.setContent(html_9c5cb97bfe9a05ad818bcb92167adb09);
+            
+        
+
+        poly_line_52025a0aae5b9929582e459b07fa1c46.bindPopup(popup_b1cf4554b490d0d72be5257e3cc0e80b)
+        ;
+
+        
+    
+    
+            poly_line_52025a0aae5b9929582e459b07fa1c46.bindTooltip(
+                `<div>
+                     {'도로명': '돌곶이로', '구간명': '장위솜틀집 ~ 북서울꿈의숲동문앞교차로', '구간 거리': '221m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e58742f2779f7d2501014e9fba750f01 = L.polyline(
+                [[37.61840334145156, 127.04678662487689], [37.619621381840155, 127.04480782436826]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_dd9f0a260ee0d1b1176b174ee060a608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a05964fbd25195b11a0a1745fd95dca = $(`<div id="html_7a05964fbd25195b11a0a1745fd95dca" style="width: 100.0%; height: 100.0%;">{'도로명': '돌곶이로', '구간명': '북서울꿈의숲동문앞교차로 ~ 장위솜틀집', '구간 거리': '221m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_dd9f0a260ee0d1b1176b174ee060a608.setContent(html_7a05964fbd25195b11a0a1745fd95dca);
+            
+        
+
+        poly_line_e58742f2779f7d2501014e9fba750f01.bindPopup(popup_dd9f0a260ee0d1b1176b174ee060a608)
+        ;
+
+        
+    
+    
+            poly_line_e58742f2779f7d2501014e9fba750f01.bindTooltip(
+                `<div>
+                     {'도로명': '돌곶이로', '구간명': '북서울꿈의숲동문앞교차로 ~ 장위솜틀집', '구간 거리': '221m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_14225f2c01e78bd2e4d0253d19ed672f = L.polyline(
+                [[37.62120157909263, 127.0455768721082], [37.61999688906094, 127.0449266649849], [37.619805092895724, 127.0448300813352], [37.61960241893019, 127.04470520461642]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_ecdbe4c72c53ae14b54e923220b2a6d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e657e3c1fec4853fe2e099b47e79b56 = $(`<div id="html_7e657e3c1fec4853fe2e099b47e79b56" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '북서울꿈의숲동문앞교차로 ~ 상아A빌딩', '구간 거리': '193m', '평균 속도': '30.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ecdbe4c72c53ae14b54e923220b2a6d4.setContent(html_7e657e3c1fec4853fe2e099b47e79b56);
+            
+        
+
+        poly_line_14225f2c01e78bd2e4d0253d19ed672f.bindPopup(popup_ecdbe4c72c53ae14b54e923220b2a6d4)
+        ;
+
+        
+    
+    
+            poly_line_14225f2c01e78bd2e4d0253d19ed672f.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '북서울꿈의숲동문앞교차로 ~ 상아A빌딩', '구간 거리': '193m', '평균 속도': '30.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d8ca575c5dbe3443a57f2553ccfd61c = L.polyline(
+                [[37.6221907702905, 127.04629947037348], [37.621961051130064, 127.04608264134261], [37.621786812639606, 127.04593279483663], [37.621637411747436, 127.0458240259468], [37.62145289134201, 127.0457124630564], [37.62120157188606, 127.04557686870564]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_8461c095d2be083fb715a6a7fef5c0f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d5f58e435fd3d28ccfff2ce2a2eb9ee = $(`<div id="html_9d5f58e435fd3d28ccfff2ce2a2eb9ee" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '상아A빌딩 ~ 예수꿈사랑교회', '구간 거리': '128m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_8461c095d2be083fb715a6a7fef5c0f1.setContent(html_9d5f58e435fd3d28ccfff2ce2a2eb9ee);
+            
+        
+
+        poly_line_0d8ca575c5dbe3443a57f2553ccfd61c.bindPopup(popup_8461c095d2be083fb715a6a7fef5c0f1)
+        ;
+
+        
+    
+    
+            poly_line_0d8ca575c5dbe3443a57f2553ccfd61c.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '상아A빌딩 ~ 예수꿈사랑교회', '구간 거리': '128m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8211998f94db0c854bed41bd772b790f = L.polyline(
+                [[37.623218957426765, 127.04782810290605], [37.62279883123678, 127.04708068636296], [37.62263635517423, 127.04683421728902], [37.622482181755, 127.04662737802735], [37.62233019488517, 127.04645432175003], [37.62219414223026, 127.0463029284684]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_23517f773d9c9926d37e9e9645d075fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4148ce1c44beeb680e45dcb77133e77 = $(`<div id="html_e4148ce1c44beeb680e45dcb77133e77" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '예수꿈사랑교회 ~ 청운맨션', '구간 거리': '177m', '평균 속도': '30.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_23517f773d9c9926d37e9e9645d075fa.setContent(html_e4148ce1c44beeb680e45dcb77133e77);
+            
+        
+
+        poly_line_8211998f94db0c854bed41bd772b790f.bindPopup(popup_23517f773d9c9926d37e9e9645d075fa)
+        ;
+
+        
+    
+    
+            poly_line_8211998f94db0c854bed41bd772b790f.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '예수꿈사랑교회 ~ 청운맨션', '구간 거리': '177m', '평균 속도': '30.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0611590df68953395ff03ca4abdda8e5 = L.polyline(
+                [[37.619554837413936, 127.04482725902113], [37.61976113957861, 127.04495437187552], [37.61995545612287, 127.04505222367868], [37.62115892668827, 127.0457017758697]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_88728dcba169ac8b3ee87f845f62680c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea5a89031c7b75a2bf4db9a67c0743f4 = $(`<div id="html_ea5a89031c7b75a2bf4db9a67c0743f4" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '상아A빌딩 ~ 북서울꿈의숲동문앞교차로', '구간 거리': '194m', '평균 속도': '34.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_88728dcba169ac8b3ee87f845f62680c.setContent(html_ea5a89031c7b75a2bf4db9a67c0743f4);
+            
+        
+
+        poly_line_0611590df68953395ff03ca4abdda8e5.bindPopup(popup_88728dcba169ac8b3ee87f845f62680c)
+        ;
+
+        
+    
+    
+            poly_line_0611590df68953395ff03ca4abdda8e5.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '상아A빌딩 ~ 북서울꿈의숲동문앞교차로', '구간 거리': '194m', '평균 속도': '34.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cff4cb0b4007ee774e534f98174cc45f = L.polyline(
+                [[37.621158933894456, 127.04570178040503], [37.62140812191918, 127.04583622406629], [37.62158681779488, 127.04594426646761], [37.621729119011526, 127.0460478669942], [37.62189804242055, 127.04619314202299], [37.62212585649904, 127.04640817349501]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_be32e2fc4dc61b3096f2693659262f8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e6e1f8870302ef54eb2103d12526d2b = $(`<div id="html_3e6e1f8870302ef54eb2103d12526d2b" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '예수꿈사랑교회 ~ 상아A빌딩', '구간 거리': '125m', '평균 속도': '30.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_be32e2fc4dc61b3096f2693659262f8e.setContent(html_3e6e1f8870302ef54eb2103d12526d2b);
+            
+        
+
+        poly_line_cff4cb0b4007ee774e534f98174cc45f.bindPopup(popup_be32e2fc4dc61b3096f2693659262f8e)
+        ;
+
+        
+    
+    
+            poly_line_cff4cb0b4007ee774e534f98174cc45f.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '예수꿈사랑교회 ~ 상아A빌딩', '구간 거리': '125m', '평균 속도': '30.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ad17ee4c67148e6e8ed73e23938d7e2e = L.polyline(
+                [[37.62212248456278, 127.0464047142658], [37.62225807418383, 127.04655559416494], [37.622406319892626, 127.04672439014028], [37.622555212572, 127.04692414411878], [37.62271293501906, 127.04716340354564], [37.62313066219422, 127.04790655218432]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_08af8b1eb5d6660700fd17177aec5439 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e13ed760da02623e48a9844c394f45c = $(`<div id="html_1e13ed760da02623e48a9844c394f45c" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '청운맨션 ~ 예수꿈사랑교회', '구간 거리': '174m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_08af8b1eb5d6660700fd17177aec5439.setContent(html_1e13ed760da02623e48a9844c394f45c);
+            
+        
+
+        poly_line_ad17ee4c67148e6e8ed73e23938d7e2e.bindPopup(popup_08af8b1eb5d6660700fd17177aec5439)
+        ;
+
+        
+    
+    
+            poly_line_ad17ee4c67148e6e8ed73e23938d7e2e.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '청운맨션 ~ 예수꿈사랑교회', '구간 거리': '174m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bdb0e2bb1d20fcd009a31d7653a70b7a = L.polyline(
+                [[37.61422895511914, 127.04140628803736], [37.61431357358615, 127.04144643554613], [37.61499756697363, 127.04186040719664], [37.61557078378179, 127.0422174072231], [37.615645592660364, 127.04230346826081], [37.616035837664725, 127.04290759402656], [37.61630735146152, 127.04334622015847], [37.61656314871882, 127.04381117005939], [37.61709237105492, 127.04486180172059], [37.617216086374285, 127.04511536285476], [37.61736169630908, 127.04547594498501], [37.61751378425621, 127.04584319488401], [37.617512976806495, 127.04584825630636], [37.617475061955034, 127.04590715127594], [37.61690070374505, 127.04691036701118], [37.616538859234275, 127.0475217267211], [37.616119569680194, 127.0481866813648], [37.61605920367744, 127.04831617016926], [37.615980638692726, 127.0485240603376]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_2c92579b945eed285da4b3e66965748c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_545d940d8460aa80b471c2819753802e = $(`<div id="html_545d940d8460aa80b471c2819753802e" style="width: 100.0%; height: 100.0%;">{'도로명': '장위로15길', '구간명': '장곡초교 ~ 내고향한우', '구간 거리': '845m', '평균 속도': '4.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_2c92579b945eed285da4b3e66965748c.setContent(html_545d940d8460aa80b471c2819753802e);
+            
+        
+
+        poly_line_bdb0e2bb1d20fcd009a31d7653a70b7a.bindPopup(popup_2c92579b945eed285da4b3e66965748c)
+        ;
+
+        
+    
+    
+            poly_line_bdb0e2bb1d20fcd009a31d7653a70b7a.bindTooltip(
+                `<div>
+                     {'도로명': '장위로15길', '구간명': '장곡초교 ~ 내고향한우', '구간 거리': '845m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4a0df8ae2f52d16d0bd47c2900a424b0 = L.polyline(
+                [[37.616078297143005, 127.04858238514184], [37.616154851745975, 127.04837981353165], [37.616209011772966, 127.04826363608052], [37.61662461435341, 127.04760453004474], [37.61698795683672, 127.04699064060246], [37.61756102913554, 127.04598967074718], [37.61761375531347, 127.04590776777235], [37.61762728598879, 127.0458229319161], [37.6174578520684, 127.04541379602955], [37.61731052448509, 127.04504895934186], [37.61718412886801, 127.0447899063441], [37.61665331952677, 127.04373612417466], [37.61639454529482, 127.04326576267582], [37.61612047569633, 127.04282300860515], [37.615724482439006, 127.04220998467359], [37.6156324887891, 127.04210415495152], [37.61504501754287, 127.04173827785604], [37.614356194555974, 127.04132138334631], [37.61426713220729, 127.04127912908373]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_bc96a58c2d2f97371d2735a695f09f99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c26beba4cd0b3424f0b1614148b87e3 = $(`<div id="html_8c26beba4cd0b3424f0b1614148b87e3" style="width: 100.0%; height: 100.0%;">{'도로명': '장위로15길', '구간명': '내고향한우 ~ 장곡초교', '구간 거리': '865m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_bc96a58c2d2f97371d2735a695f09f99.setContent(html_8c26beba4cd0b3424f0b1614148b87e3);
+            
+        
+
+        poly_line_4a0df8ae2f52d16d0bd47c2900a424b0.bindPopup(popup_bc96a58c2d2f97371d2735a695f09f99)
+        ;
+
+        
+    
+    
+            poly_line_4a0df8ae2f52d16d0bd47c2900a424b0.bindTooltip(
+                `<div>
+                     {'도로명': '장위로15길', '구간명': '내고향한우 ~ 장곡초교', '구간 거리': '865m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_175aa791746e30e6f0ee7155735a7f3b = L.polyline(
+                [[37.62114264564033, 127.0455905013687], [37.62093440848443, 127.04584402881844], [37.620767063502896, 127.04600622713183], [37.62067045099304, 127.04605604472121], [37.6203001210488, 127.0461751796016], [37.620131337755375, 127.04624745785797], [37.619980012061085, 127.04635387180232], [37.6196724562762, 127.0466648250852], [37.61940371264617, 127.04695480672358], [37.619194256513616, 127.04712406221347], [37.61912763164128, 127.04714768788838], [37.6191034744591, 127.04714066350056], [37.61895915414773, 127.04699629755741], [37.618545248081226, 127.04675901728216], [37.61837946641961, 127.04668134934145]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_a254bcbbaba7ccdea75f0847b715d2ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47665f61a6f79526d9d7998dbd788cf7 = $(`<div id="html_47665f61a6f79526d9d7998dbd788cf7" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로36길', '구간명': '장위솜틀집 ~ 상아A빌딩', '구간 거리': '360m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_a254bcbbaba7ccdea75f0847b715d2ab.setContent(html_47665f61a6f79526d9d7998dbd788cf7);
+            
+        
+
+        poly_line_175aa791746e30e6f0ee7155735a7f3b.bindPopup(popup_a254bcbbaba7ccdea75f0847b715d2ab)
+        ;
+
+        
+    
+    
+            poly_line_175aa791746e30e6f0ee7155735a7f3b.bindTooltip(
+                `<div>
+                     {'도로명': '월계로36길', '구간명': '장위솜틀집 ~ 상아A빌딩', '구간 거리': '360m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d727b325f42d936c6df666eb8e2c0db8 = L.polyline(
+                [[37.6183417114229, 127.0468087155472], [37.61850388881993, 127.04688469489464], [37.61890222012132, 127.04711304706775], [37.61905528808116, 127.04726616421617], [37.61913028838219, 127.04728797309141], [37.61923914046863, 127.04724937392957], [37.619468458249166, 127.04706406834964], [37.61974156118528, 127.04676938431808], [37.620040704073745, 127.04646693714078], [37.62017552191618, 127.04637213133554], [37.620330999065175, 127.04630555169149], [37.62070452894865, 127.0461853874786], [37.62082155389598, 127.04612504605151], [37.621005247322216, 127.04594700204501], [37.62121786015326, 127.04568814669409]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_1b8ce5dab9f0e341aebb1ad40a84a8ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ae3f8791496d92b91d453868ccadb7b = $(`<div id="html_3ae3f8791496d92b91d453868ccadb7b" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로36길', '구간명': '상아A빌딩 ~ 장위솜틀집', '구간 거리': '374m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_1b8ce5dab9f0e341aebb1ad40a84a8ef.setContent(html_3ae3f8791496d92b91d453868ccadb7b);
+            
+        
+
+        poly_line_d727b325f42d936c6df666eb8e2c0db8.bindPopup(popup_1b8ce5dab9f0e341aebb1ad40a84a8ef)
+        ;
+
+        
+    
+    
+            poly_line_d727b325f42d936c6df666eb8e2c0db8.bindTooltip(
+                `<div>
+                     {'도로명': '월계로36길', '구간명': '상아A빌딩 ~ 장위솜틀집', '구간 거리': '374m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f212ae64d842c189f13c56981b82438d = L.polyline(
+                [[37.62213555163736, 127.046292175241], [37.621944555292906, 127.04640364423597], [37.62137621492806, 127.04695757873593], [37.62135089464539, 127.04707022657811], [37.62137854169284, 127.04716663385544], [37.62216686804394, 127.04836582783042], [37.62227749909538, 127.04870822435589]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_c6d00fcb716f4d38fa6546198fdf95e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4d39e28267800aeee1e09896d2c737f = $(`<div id="html_b4d39e28267800aeee1e09896d2c737f" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로101길', '구간명': '미림연립 ~ 예수꿈사랑교회', '구간 거리': '293m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_c6d00fcb716f4d38fa6546198fdf95e1.setContent(html_b4d39e28267800aeee1e09896d2c737f);
+            
+        
+
+        poly_line_f212ae64d842c189f13c56981b82438d.bindPopup(popup_c6d00fcb716f4d38fa6546198fdf95e1)
+        ;
+
+        
+    
+    
+            poly_line_f212ae64d842c189f13c56981b82438d.bindTooltip(
+                `<div>
+                     {'도로명': '한천로101길', '구간명': '미림연립 ~ 예수꿈사랑교회', '구간 거리': '293m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9c7627e97a63eaa02982d6890bbaadea = L.polyline(
+                [[37.622377668546406, 127.04865706687625], [37.622260787009076, 127.04829532655654], [37.621473869144744, 127.04709827470391], [37.62146437963161, 127.04706518723542], [37.62147058221976, 127.04703759435709], [37.62200115166564, 127.04652047527307], [37.622181075145484, 127.04641546757964]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_5c76edc6abea41649661f771c4d3a35e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_326ade2db11ba2083a16bff87c20ee8b = $(`<div id="html_326ade2db11ba2083a16bff87c20ee8b" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로101길', '구간명': '예수꿈사랑교회 ~ 미림연립', '구간 거리': '274m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_5c76edc6abea41649661f771c4d3a35e.setContent(html_326ade2db11ba2083a16bff87c20ee8b);
+            
+        
+
+        poly_line_9c7627e97a63eaa02982d6890bbaadea.bindPopup(popup_5c76edc6abea41649661f771c4d3a35e)
+        ;
+
+        
+    
+    
+            poly_line_9c7627e97a63eaa02982d6890bbaadea.bindTooltip(
+                `<div>
+                     {'도로명': '한천로101길', '구간명': '예수꿈사랑교회 ~ 미림연립', '구간 거리': '274m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_73d318cff26a8ac488d3ac39f781a443 = L.polyline(
+                [[37.61354516939674, 127.03797812241213], [37.615280462699815, 127.03961923489041], [37.61553540865966, 127.03985862072635], [37.615724819169934, 127.04004689404867], [37.61592647694277, 127.04026030955092], [37.61615064169205, 127.04053998387653], [37.61719031144752, 127.04199668794234], [37.61803500333119, 127.04318672100098], [37.61854000450432, 127.04387272611558], [37.61868972002145, 127.04404644095737], [37.61887545432308, 127.04423390721519], [37.619078769015715, 127.04441493868525], [37.61934642746721, 127.04465553189881], [37.619548915934764, 127.0448230089569]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_c58c0811ebfcad38da40ee4302454412 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3a6e8e3132d0eacdfe02edfbc66850e = $(`<div id="html_d3a6e8e3132d0eacdfe02edfbc66850e" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '북서울꿈의숲동문앞교차로 ~ 성북구-강북구', '구간 거리': '904m', '평균 속도': '31.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_c58c0811ebfcad38da40ee4302454412.setContent(html_d3a6e8e3132d0eacdfe02edfbc66850e);
+            
+        
+
+        poly_line_73d318cff26a8ac488d3ac39f781a443.bindPopup(popup_c58c0811ebfcad38da40ee4302454412)
+        ;
+
+        
+    
+    
+            poly_line_73d318cff26a8ac488d3ac39f781a443.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '북서울꿈의숲동문앞교차로 ~ 성북구-강북구', '구간 거리': '904m', '평균 속도': '31.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_60b55c2408bb376bad20d24a13c08ecb = L.polyline(
+                [[37.61960833951248, 127.04470945467384], [37.61940760456128, 127.04454342869522], [37.61914145723166, 127.04430419355528], [37.618940602149834, 127.04412535318797], [37.61876031210311, 127.04394338266603], [37.61861646294607, 127.04377647537606], [37.61811502105975, 127.04309530542045], [37.61727088479848, 127.04190605510618], [37.616229024687016, 127.04044628458043], [37.61599949480974, 127.04015991565637], [37.615793180416155, 127.03994157184124], [37.61560130005595, 127.0397508462558], [37.61534530545987, 127.03951047462395], [37.61360505565211, 127.03786522442522]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_b3b06cc4abb65b57335edd080ec71599 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a782038756bc4db4d609a373a03a4456 = $(`<div id="html_a782038756bc4db4d609a373a03a4456" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '성북구-강북구 ~ 북서울꿈의숲동문앞교차로', '구간 거리': '904m', '평균 속도': '42.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_b3b06cc4abb65b57335edd080ec71599.setContent(html_a782038756bc4db4d609a373a03a4456);
+            
+        
+
+        poly_line_60b55c2408bb376bad20d24a13c08ecb.bindPopup(popup_b3b06cc4abb65b57335edd080ec71599)
+        ;
+
+        
+    
+    
+            poly_line_60b55c2408bb376bad20d24a13c08ecb.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '성북구-강북구 ~ 북서울꿈의숲동문앞교차로', '구간 거리': '904m', '평균 속도': '42.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9d4fb0d783321cca3a047b181b60a4f1 = L.polyline(
+                [[37.61863352776824, 127.03605127171849], [37.617736111923136, 127.03546340608344], [37.617001693338146, 127.03498562049981], [37.61692622990728, 127.03493176771157], [37.61685311073928, 127.03485989998025]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_9374186eedbdcce5a2b3d269dd31f7a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_430f79fd0911bf5bc212f50b8692fc9d = $(`<div id="html_430f79fd0911bf5bc212f50b8692fc9d" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '엘림교회 ~ 공주능입구', '구간 거리': '224m', '평균 속도': '35.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_9374186eedbdcce5a2b3d269dd31f7a9.setContent(html_430f79fd0911bf5bc212f50b8692fc9d);
+            
+        
+
+        poly_line_9d4fb0d783321cca3a047b181b60a4f1.bindPopup(popup_9374186eedbdcce5a2b3d269dd31f7a9)
+        ;
+
+        
+    
+    
+            poly_line_9d4fb0d783321cca3a047b181b60a4f1.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '엘림교회 ~ 공주능입구', '구간 거리': '224m', '평균 속도': '35.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4920a984c7aaa2bef2258e172cf8012e = L.polyline(
+                [[37.6253958924144, 127.03702594044951], [37.624661046798046, 127.03733400079054], [37.62446733002646, 127.03740814851474], [37.624369328578005, 127.0374399870939], [37.624120074292584, 127.03749332560834], [37.62388940684797, 127.03754253737142], [37.62373022905024, 127.03757210412105], [37.62357238578889, 127.03759260362918], [37.623430118968436, 127.03759839630303], [37.62253282706197, 127.037582983031], [37.62169079808341, 127.03756159557437], [37.621567859318546, 127.03755570126759], [37.621443493427584, 127.03753268613276], [37.62131972995316, 127.03749372138743], [37.62076281570947, 127.03725007052545], [37.620185913530634, 127.03700599768838], [37.62003866022143, 127.03693245134353], [37.61941074523156, 127.0365605010859], [37.61863353047055, 127.03605127398521]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_55323e0daf86243975b032aff1cb2bdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c97b615cf52aea4bc227ed88391cb2b = $(`<div id="html_0c97b615cf52aea4bc227ed88391cb2b" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '공주능입구 ~ 완성아파트', '구간 거리': '785m', '평균 속도': '29.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_55323e0daf86243975b032aff1cb2bdf.setContent(html_0c97b615cf52aea4bc227ed88391cb2b);
+            
+        
+
+        poly_line_4920a984c7aaa2bef2258e172cf8012e.bindPopup(popup_55323e0daf86243975b032aff1cb2bdf)
+        ;
+
+        
+    
+    
+            poly_line_4920a984c7aaa2bef2258e172cf8012e.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '공주능입구 ~ 완성아파트', '구간 거리': '785m', '평균 속도': '29.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cc086a574f100273c223b17ce6e7ba8a = L.polyline(
+                [[37.62722680687736, 127.03745301364678], [37.62686256428335, 127.03700124419663], [37.62672865929481, 127.03686707083415], [37.62662007403932, 127.03678669065246], [37.62650023706635, 127.03672991859503], [37.626426675750224, 127.03671336604471], [37.62631826446961, 127.03669904728173], [37.626227174997446, 127.03670391094471], [37.62613412713976, 127.03672498632933], [37.6253963186362, 127.03702576507803]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_6ad42da5d7bfefba1b186e3dd4485aed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb0fd342fa030961cd0a448a1012dec1 = $(`<div id="html_eb0fd342fa030961cd0a448a1012dec1" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '완성아파트 ~ 한진그랑빌APT', '구간 거리': '231m', '평균 속도': '34.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_6ad42da5d7bfefba1b186e3dd4485aed.setContent(html_eb0fd342fa030961cd0a448a1012dec1);
+            
+        
+
+        poly_line_cc086a574f100273c223b17ce6e7ba8a.bindPopup(popup_6ad42da5d7bfefba1b186e3dd4485aed)
+        ;
+
+        
+    
+    
+            poly_line_cc086a574f100273c223b17ce6e7ba8a.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '완성아파트 ~ 한진그랑빌APT', '구간 거리': '231m', '평균 속도': '34.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e1b60d68ed1fdf84b643bb645008124f = L.polyline(
+                [[37.6275973385015, 127.03788484842147], [37.627225593711344, 127.0374515550975]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_8df5802594ae3feb99cfdcdce1689e25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6f607d5d4574a8d0e001134df67c9d1 = $(`<div id="html_c6f607d5d4574a8d0e001134df67c9d1" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '한진그랑빌APT ~ 한마음약국', '구간 거리': '56m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_8df5802594ae3feb99cfdcdce1689e25.setContent(html_c6f607d5d4574a8d0e001134df67c9d1);
+            
+        
+
+        poly_line_e1b60d68ed1fdf84b643bb645008124f.bindPopup(popup_8df5802594ae3feb99cfdcdce1689e25)
+        ;
+
+        
+    
+    
+            poly_line_e1b60d68ed1fdf84b643bb645008124f.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '한진그랑빌APT ~ 한마음약국', '구간 거리': '56m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2f7fd269fee4202d771f9ee934745ba5 = L.polyline(
+                [[37.62833192796112, 127.0387920624301], [37.62759846880407, 127.03788620498862]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_b3a7bc33d4906c316842219eb02eee39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_111f15b981b12e371387c6ae0027954f = $(`<div id="html_111f15b981b12e371387c6ae0027954f" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '한마음약국 ~ 번동평화교회', '구간 거리': '114m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b3a7bc33d4906c316842219eb02eee39.setContent(html_111f15b981b12e371387c6ae0027954f);
+            
+        
+
+        poly_line_2f7fd269fee4202d771f9ee934745ba5.bindPopup(popup_b3a7bc33d4906c316842219eb02eee39)
+        ;
+
+        
+    
+    
+            poly_line_2f7fd269fee4202d771f9ee934745ba5.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '한마음약국 ~ 번동평화교회', '구간 거리': '114m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_41886c8529a68a69bd28990e15b6d0c2 = L.polyline(
+                [[37.62858053271627, 127.03908396516843], [37.62833094357265, 127.03879087697025]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_0c305abc5ea58c4dae4146d822f8ae8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70ab6970cb27b7f92ab34b666776fe32 = $(`<div id="html_70ab6970cb27b7f92ab34b666776fe32" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '번동평화교회 ~ 강북장애인복지관', '구간 거리': '38m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_0c305abc5ea58c4dae4146d822f8ae8d.setContent(html_70ab6970cb27b7f92ab34b666776fe32);
+            
+        
+
+        poly_line_41886c8529a68a69bd28990e15b6d0c2.bindPopup(popup_0c305abc5ea58c4dae4146d822f8ae8d)
+        ;
+
+        
+    
+    
+            poly_line_41886c8529a68a69bd28990e15b6d0c2.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '번동평화교회 ~ 강북장애인복지관', '구간 거리': '38m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3054428bbe7ab695ce9f2704fcb3b828 = L.polyline(
+                [[37.62878140203484, 127.03934749523287], [37.628582674381235, 127.03908662393619]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_91735a64eef97676e5b66cd267923061 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_248330bdf4b6c9b82f178d71c3a7bb22 = $(`<div id="html_248330bdf4b6c9b82f178d71c3a7bb22" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '강북장애인복지관 ~ 강북정보화도서관앞', '구간 거리': '32m', '평균 속도': '33.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_91735a64eef97676e5b66cd267923061.setContent(html_248330bdf4b6c9b82f178d71c3a7bb22);
+            
+        
+
+        poly_line_3054428bbe7ab695ce9f2704fcb3b828.bindPopup(popup_91735a64eef97676e5b66cd267923061)
+        ;
+
+        
+    
+    
+            poly_line_3054428bbe7ab695ce9f2704fcb3b828.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '강북장애인복지관 ~ 강북정보화도서관앞', '구간 거리': '32m', '평균 속도': '33.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_81389f7fe8a42775fd5c012ab0eb3789 = L.polyline(
+                [[37.616786515852766, 127.03496697572851], [37.61686591931673, 127.03504502059975], [37.616950142046555, 127.03510512422409], [37.617686285207405, 127.03558403282399], [37.61858356533726, 127.03617181223309]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_28d2cece449b9bb482364bc8d0a1d25c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd64229a6b43aa8a5fd3681f3e7fbd5d = $(`<div id="html_fd64229a6b43aa8a5fd3681f3e7fbd5d" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '공주능입구 ~ 엘림교회', '구간 거리': '226m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_28d2cece449b9bb482364bc8d0a1d25c.setContent(html_fd64229a6b43aa8a5fd3681f3e7fbd5d);
+            
+        
+
+        poly_line_81389f7fe8a42775fd5c012ab0eb3789.bindPopup(popup_28d2cece449b9bb482364bc8d0a1d25c)
+        ;
+
+        
+    
+    
+            poly_line_81389f7fe8a42775fd5c012ab0eb3789.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '공주능입구 ~ 엘림교회', '구간 거리': '226m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cfd9794f61d874caee9c63e2e5dab1f6 = L.polyline(
+                [[37.61858356263501, 127.03617180996635], [37.61936269919851, 127.03668229735611], [37.61999561786539, 127.03705721178876], [37.62014868515831, 127.03713366324084], [37.62072780501028, 127.03737867594674], [37.621288768365794, 127.03762409788685], [37.6214224371594, 127.03766618284462], [37.621557898029955, 127.03769125064854], [37.62168764544606, 127.0376974714457], [37.622530997038275, 127.03771889395199], [37.62343113062436, 127.03773435786961], [37.62357969903749, 127.03772830923631], [37.62374369091366, 127.03770701111912], [37.623906353969524, 127.03767679733336], [37.624138189228134, 127.03762733621966], [37.624391964133245, 127.03757303075727], [37.62449661288492, 127.03753903434271], [37.62469389717908, 127.03746352031843], [37.625430092084024, 127.03715489652484]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_b02651c12f0247e642e7730388a5b037 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db692aac53e34b180f3ad907d926c981 = $(`<div id="html_db692aac53e34b180f3ad907d926c981" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '완성아파트 ~ 공주능입구', '구간 거리': '794m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_b02651c12f0247e642e7730388a5b037.setContent(html_db692aac53e34b180f3ad907d926c981);
+            
+        
+
+        poly_line_cfd9794f61d874caee9c63e2e5dab1f6.bindPopup(popup_b02651c12f0247e642e7730388a5b037)
+        ;
+
+        
+    
+    
+            poly_line_cfd9794f61d874caee9c63e2e5dab1f6.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '완성아파트 ~ 공주능입구', '구간 거리': '794m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_021b30b0d7a816dba728e4abcd85dc51 = L.polyline(
+                [[37.62542966586198, 127.03715507189563], [37.62616050557089, 127.03685713645602], [37.62623910781068, 127.03683933244047], [37.62631489197077, 127.0368352872057], [37.62641148457827, 127.03684804498509], [37.62647141040026, 127.03686152894639], [37.62657324105686, 127.03690977014956], [37.62666723633244, 127.03697935205784], [37.62679070835411, 127.03710307011119], [37.627150877908626, 127.03754978859564]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_9b04babcf782e4004f614f3cd5105194 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_453efcd969318bc17af6343ad88de786 = $(`<div id="html_453efcd969318bc17af6343ad88de786" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '한진그랑빌APT ~ 완성아파트', '구간 거리': '218m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9b04babcf782e4004f614f3cd5105194.setContent(html_453efcd969318bc17af6343ad88de786);
+            
+        
+
+        poly_line_021b30b0d7a816dba728e4abcd85dc51.bindPopup(popup_9b04babcf782e4004f614f3cd5105194)
+        ;
+
+        
+    
+    
+            poly_line_021b30b0d7a816dba728e4abcd85dc51.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '한진그랑빌APT ~ 완성아파트', '구간 거리': '218m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c93557d7145cb65159e82a27f8b0ea91 = L.polyline(
+                [[37.62715209017244, 127.03755124714466], [37.62752383460149, 127.03798453940497]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_12d13f4b8d73a2834c2ffb729893634a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5206c88805924744077b8417b7e6727 = $(`<div id="html_a5206c88805924744077b8417b7e6727" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '한마음약국 ~ 한진그랑빌APT', '구간 거리': '56m', '평균 속도': '20.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_12d13f4b8d73a2834c2ffb729893634a.setContent(html_a5206c88805924744077b8417b7e6727);
+            
+        
+
+        poly_line_c93557d7145cb65159e82a27f8b0ea91.bindPopup(popup_12d13f4b8d73a2834c2ffb729893634a)
+        ;
+
+        
+    
+    
+            poly_line_c93557d7145cb65159e82a27f8b0ea91.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '한마음약국 ~ 한진그랑빌APT', '구간 거리': '56m', '평균 속도': '20.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_adce0cd3e86539ef870e07dc4f9ba57c = L.polyline(
+                [[37.627522704299665, 127.03798318397054], [37.62825616272162, 127.0388890414442]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_32ee423c3720222b31fb7c7253058601 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_606de6c45ee71d3dbdec7ee2b2cde3e0 = $(`<div id="html_606de6c45ee71d3dbdec7ee2b2cde3e0" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '번동평화교회 ~ 한마음약국', '구간 거리': '114m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_32ee423c3720222b31fb7c7253058601.setContent(html_606de6c45ee71d3dbdec7ee2b2cde3e0);
+            
+        
+
+        poly_line_adce0cd3e86539ef870e07dc4f9ba57c.bindPopup(popup_32ee423c3720222b31fb7c7253058601)
+        ;
+
+        
+    
+    
+            poly_line_adce0cd3e86539ef870e07dc4f9ba57c.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '번동평화교회 ~ 한마음약국', '구간 거리': '114m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_65b61ab10c95a08e16177d841bda1662 = L.polyline(
+                [[37.62825714710911, 127.03889022690423], [37.628506736009065, 127.03918331514443]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_08342ea6c4cc92939a7b05c0ffcdae1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00487cdd324ff43f0fa6a983e37aed12 = $(`<div id="html_00487cdd324ff43f0fa6a983e37aed12" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '강북장애인복지관 ~ 번동평화교회', '구간 거리': '38m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_08342ea6c4cc92939a7b05c0ffcdae1d.setContent(html_00487cdd324ff43f0fa6a983e37aed12);
+            
+        
+
+        poly_line_65b61ab10c95a08e16177d841bda1662.bindPopup(popup_08342ea6c4cc92939a7b05c0ffcdae1d)
+        ;
+
+        
+    
+    
+            poly_line_65b61ab10c95a08e16177d841bda1662.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '강북장애인복지관 ~ 번동평화교회', '구간 거리': '38m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_64bb81521ef293c36942d2eab31ab1bc = L.polyline(
+                [[37.62850459434663, 127.03918065524373], [37.628703321795065, 127.0394415265175]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_8c7ed0a2c0f9f4a4a9a3c51d280dd7fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0090461e1cd4b2ba2036bf2f62af74a = $(`<div id="html_d0090461e1cd4b2ba2036bf2f62af74a" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '강북정보화도서관앞 ~ 강북장애인복지관', '구간 거리': '32m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8c7ed0a2c0f9f4a4a9a3c51d280dd7fd.setContent(html_d0090461e1cd4b2ba2036bf2f62af74a);
+            
+        
+
+        poly_line_64bb81521ef293c36942d2eab31ab1bc.bindPopup(popup_8c7ed0a2c0f9f4a4a9a3c51d280dd7fd)
+        ;
+
+        
+    
+    
+            poly_line_64bb81521ef293c36942d2eab31ab1bc.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '강북정보화도서관앞 ~ 강북장애인복지관', '구간 거리': '32m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1931be8c1ba2f6fa37eee136578f190b = L.polyline(
+                [[37.628698548530366, 127.0393546960868], [37.628648043232374, 127.03944255877941], [37.6285997518412, 127.03959417093282]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_8e979a3ba70b9024679718b23a4ec619 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b77971d165247dbc74da2e65a685e1e = $(`<div id="html_3b77971d165247dbc74da2e65a685e1e" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로32길', '구간명': '새마을금고 ~ 강북정보화도서관앞', '구간 거리': '24m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_8e979a3ba70b9024679718b23a4ec619.setContent(html_3b77971d165247dbc74da2e65a685e1e);
+            
+        
+
+        poly_line_1931be8c1ba2f6fa37eee136578f190b.bindPopup(popup_8e979a3ba70b9024679718b23a4ec619)
+        ;
+
+        
+    
+    
+            poly_line_1931be8c1ba2f6fa37eee136578f190b.bindTooltip(
+                `<div>
+                     {'도로명': '오현로32길', '구간명': '새마을금고 ~ 강북정보화도서관앞', '구간 거리': '24m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fc47030d0577ec6bc64db864f6b5073e = L.polyline(
+                [[37.62860033627179, 127.03959240854103], [37.62838782028284, 127.04020884208029]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_be98917d1e43331311fb9595d9528eef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8752956f6339b95cd41acc7343f4a29 = $(`<div id="html_a8752956f6339b95cd41acc7343f4a29" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로32길', '구간명': '번동초등학교 ~ 새마을금고', '구간 거리': '59m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_be98917d1e43331311fb9595d9528eef.setContent(html_a8752956f6339b95cd41acc7343f4a29);
+            
+        
+
+        poly_line_fc47030d0577ec6bc64db864f6b5073e.bindPopup(popup_be98917d1e43331311fb9595d9528eef)
+        ;
+
+        
+    
+    
+            poly_line_fc47030d0577ec6bc64db864f6b5073e.bindTooltip(
+                `<div>
+                     {'도로명': '오현로32길', '구간명': '번동초등학교 ~ 새마을금고', '구간 거리': '59m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e81899bb9385cfc6bdb90e7155f9abf9 = L.polyline(
+                [[37.628394006539935, 127.04019537256247], [37.62793460690177, 127.04097382121799]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_29f77a7142fa0cbf97305b7a6e111d8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d12a0b5af14ade7099ce4302cc108640 = $(`<div id="html_d12a0b5af14ade7099ce4302cc108640" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로32길', '구간명': '뛰노리방방번동본점 ~ 번동초등학교', '구간 거리': '86m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_29f77a7142fa0cbf97305b7a6e111d8c.setContent(html_d12a0b5af14ade7099ce4302cc108640);
+            
+        
+
+        poly_line_e81899bb9385cfc6bdb90e7155f9abf9.bindPopup(popup_29f77a7142fa0cbf97305b7a6e111d8c)
+        ;
+
+        
+    
+    
+            poly_line_e81899bb9385cfc6bdb90e7155f9abf9.bindTooltip(
+                `<div>
+                     {'도로명': '오현로32길', '구간명': '뛰노리방방번동본점 ~ 번동초등학교', '구간 거리': '86m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ba9cf32a35a20cccea84cee8132d3ff5 = L.polyline(
+                [[37.627932646022415, 127.0409773738345], [37.62787245011778, 127.0410942307963], [37.627718120524214, 127.0412969957489], [37.627630571736226, 127.04143813268317]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_3e763aafa81da13ec44a99e2245690d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2fe9e7e0af53446794b5bbea6b00233 = $(`<div id="html_e2fe9e7e0af53446794b5bbea6b00233" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로32길', '구간명': '강북중앙교회 ~ 뛰노리방방번동본점', '구간 거리': '53m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_3e763aafa81da13ec44a99e2245690d8.setContent(html_e2fe9e7e0af53446794b5bbea6b00233);
+            
+        
+
+        poly_line_ba9cf32a35a20cccea84cee8132d3ff5.bindPopup(popup_3e763aafa81da13ec44a99e2245690d8)
+        ;
+
+        
+    
+    
+            poly_line_ba9cf32a35a20cccea84cee8132d3ff5.bindTooltip(
+                `<div>
+                     {'도로명': '오현로32길', '구간명': '강북중앙교회 ~ 뛰노리방방번동본점', '구간 거리': '53m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_710d8bffdc686a47558532789515724b = L.polyline(
+                [[37.627623613536066, 127.04150700696665], [37.627655575879785, 127.04159954729165], [37.627948863345644, 127.04201871469394], [37.62803906862723, 127.04210881099557], [37.62821687762602, 127.04235990811559], [37.62839013211163, 127.04291041760965], [37.62841093000288, 127.0433921455321]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_1b0ea2562907d7c12bda7d3f821ac6ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e9605a9456bf434f95ccdb56f99b576 = $(`<div id="html_6e9605a9456bf434f95ccdb56f99b576" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로109길', '구간명': '강북유니온빌딩앞 ~ 강북중앙교회', '구간 거리': '196m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_1b0ea2562907d7c12bda7d3f821ac6ec.setContent(html_6e9605a9456bf434f95ccdb56f99b576);
+            
+        
+
+        poly_line_710d8bffdc686a47558532789515724b.bindPopup(popup_1b0ea2562907d7c12bda7d3f821ac6ec)
+        ;
+
+        
+    
+    
+            poly_line_710d8bffdc686a47558532789515724b.bindTooltip(
+                `<div>
+                     {'도로명': '한천로109길', '구간명': '강북유니온빌딩앞 ~ 강북중앙교회', '구간 거리': '196m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1a56836d20519d0dda394fb670fb4f80 = L.polyline(
+                [[37.628412615272225, 127.04340568846874], [37.62844367950841, 127.04355476328008], [37.62856117048309, 127.04389126189102], [37.62867335368757, 127.04412186592504]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_0d278f5a1aaed6a933cfef9e7ea09240 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_268d3588fe1f9a430fefd6c0582db9ac = $(`<div id="html_268d3588fe1f9a430fefd6c0582db9ac" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로109길', '구간명': '번동주공3단지 ~ 강북유니온빌딩앞', '구간 거리': '70m', '평균 속도': '4.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_0d278f5a1aaed6a933cfef9e7ea09240.setContent(html_268d3588fe1f9a430fefd6c0582db9ac);
+            
+        
+
+        poly_line_1a56836d20519d0dda394fb670fb4f80.bindPopup(popup_0d278f5a1aaed6a933cfef9e7ea09240)
+        ;
+
+        
+    
+    
+            poly_line_1a56836d20519d0dda394fb670fb4f80.bindTooltip(
+                `<div>
+                     {'도로명': '한천로109길', '구간명': '번동주공3단지 ~ 강북유니온빌딩앞', '구간 거리': '70m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e4a223d4d5d0f0859b15a2b11f1109e5 = L.polyline(
+                [[37.62870012007117, 127.03964471160577], [37.62874346531835, 127.03950862908799], [37.62878617620573, 127.03943432575998]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_66de0a84bdae28aacce8698639dbc1c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b65f2264100e3b7878c5393c9200d198 = $(`<div id="html_b65f2264100e3b7878c5393c9200d198" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로32길', '구간명': '강북정보화도서관앞 ~ 새마을금고', '구간 거리': '21m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_66de0a84bdae28aacce8698639dbc1c8.setContent(html_b65f2264100e3b7878c5393c9200d198);
+            
+        
+
+        poly_line_e4a223d4d5d0f0859b15a2b11f1109e5.bindPopup(popup_66de0a84bdae28aacce8698639dbc1c8)
+        ;
+
+        
+    
+    
+            poly_line_e4a223d4d5d0f0859b15a2b11f1109e5.bindTooltip(
+                `<div>
+                     {'도로명': '오현로32길', '구간명': '강북정보화도서관앞 ~ 새마을금고', '구간 거리': '21m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_52ca72a26f907e2707b70baed5ed4c93 = L.polyline(
+                [[37.62848702027301, 127.04026290707132], [37.628699535640195, 127.03964647286666]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_5a1f3720b04830e0c5663cacbd1eb572 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9e9783633d1d7217c5803087d2feb96 = $(`<div id="html_a9e9783633d1d7217c5803087d2feb96" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로32길', '구간명': '새마을금고 ~ 번동초등학교', '구간 거리': '59m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_5a1f3720b04830e0c5663cacbd1eb572.setContent(html_a9e9783633d1d7217c5803087d2feb96);
+            
+        
+
+        poly_line_52ca72a26f907e2707b70baed5ed4c93.bindPopup(popup_5a1f3720b04830e0c5663cacbd1eb572)
+        ;
+
+        
+    
+    
+            poly_line_52ca72a26f907e2707b70baed5ed4c93.bindTooltip(
+                `<div>
+                     {'도로명': '오현로32길', '구간명': '새마을금고 ~ 번동초등학교', '구간 거리': '59m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_66069686443b9102f78e3bf975d7e2fd = L.polyline(
+                [[37.628021432941246, 127.04105482566129], [37.628480834007924, 127.04027637773319]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_3b78b62e010ba8e355df5aac91c7e74c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38480403866831a66c0e16945a4f7a2b = $(`<div id="html_38480403866831a66c0e16945a4f7a2b" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로32길', '구간명': '번동초등학교 ~ 뛰노리방방번동본점', '구간 거리': '86m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3b78b62e010ba8e355df5aac91c7e74c.setContent(html_38480403866831a66c0e16945a4f7a2b);
+            
+        
+
+        poly_line_66069686443b9102f78e3bf975d7e2fd.bindPopup(popup_3b78b62e010ba8e355df5aac91c7e74c)
+        ;
+
+        
+    
+    
+            poly_line_66069686443b9102f78e3bf975d7e2fd.bindTooltip(
+                `<div>
+                     {'도로명': '오현로32길', '구간명': '번동초등학교 ~ 뛰노리방방번동본점', '구간 거리': '86m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8aea175f294efe386770fc8caaed87e6 = L.polyline(
+                [[37.627715826128146, 127.04152173403743], [37.62780001333484, 127.04138601803214], [37.627957635892976, 127.04117892630697], [37.628023393822886, 127.0410512730426]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_5103c5ec68f6ad345d29b6964be3894c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6899e83bfedd4ad06d9cb7ad27187bf6 = $(`<div id="html_6899e83bfedd4ad06d9cb7ad27187bf6" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로32길', '구간명': '뛰노리방방번동본점 ~ 강북중앙교회', '구간 거리': '54m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_5103c5ec68f6ad345d29b6964be3894c.setContent(html_6899e83bfedd4ad06d9cb7ad27187bf6);
+            
+        
+
+        poly_line_8aea175f294efe386770fc8caaed87e6.bindPopup(popup_5103c5ec68f6ad345d29b6964be3894c)
+        ;
+
+        
+    
+    
+            poly_line_8aea175f294efe386770fc8caaed87e6.bindTooltip(
+                `<div>
+                     {'도로명': '오현로32길', '구간명': '뛰노리방방번동본점 ~ 강북중앙교회', '구간 거리': '54m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0a394bfbf480d0446bba52282f707d5b = L.polyline(
+                [[37.628518888903045, 127.04338477799483], [37.628497137657824, 127.04288096524196], [37.628310364724655, 127.0422874969624], [37.62811361915501, 127.04200965867403], [37.62802366778683, 127.04191981629933], [37.627747977302086, 127.04152580065336], [37.62772278433683, 127.04145285967024]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_8944f88ff74a4ad82d57297a98b5f577 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_347f557153fd56a679fe3e25e47417ce = $(`<div id="html_347f557153fd56a679fe3e25e47417ce" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로109길', '구간명': '강북중앙교회 ~ 강북유니온빌딩앞', '구간 거리': '200m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8944f88ff74a4ad82d57297a98b5f577.setContent(html_347f557153fd56a679fe3e25e47417ce);
+            
+        
+
+        poly_line_0a394bfbf480d0446bba52282f707d5b.bindPopup(popup_8944f88ff74a4ad82d57297a98b5f577)
+        ;
+
+        
+    
+    
+            poly_line_0a394bfbf480d0446bba52282f707d5b.bindTooltip(
+                `<div>
+                     {'도로명': '한천로109길', '구간명': '강북중앙교회 ~ 강북유니온빌딩앞', '구간 거리': '200m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a8ffb14003fcf386222c55525f3df7d9 = L.polyline(
+                [[37.6287655862339, 127.0440509330255], [37.62865722466201, 127.04382818505488], [37.628546106665816, 127.04350993649315], [37.62851720363175, 127.04337123390653]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_dfa8bc087838888ae60b8d99f1ba8bbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a834f5da3e0b0f648c4adf0bb1f13f9d = $(`<div id="html_a834f5da3e0b0f648c4adf0bb1f13f9d" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로109길', '구간명': '강북유니온빌딩앞 ~ 번동주공3단지', '구간 거리': '66m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_dfa8bc087838888ae60b8d99f1ba8bbd.setContent(html_a834f5da3e0b0f648c4adf0bb1f13f9d);
+            
+        
+
+        poly_line_a8ffb14003fcf386222c55525f3df7d9.bindPopup(popup_dfa8bc087838888ae60b8d99f1ba8bbd)
+        ;
+
+        
+    
+    
+            poly_line_a8ffb14003fcf386222c55525f3df7d9.bindTooltip(
+                `<div>
+                     {'도로명': '한천로109길', '구간명': '강북유니온빌딩앞 ~ 번동주공3단지', '구간 거리': '66m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_22fce14239dab0f2d8d2150a335a4387 = L.polyline(
+                [[37.63060541280821, 127.04151869230552], [37.63009234953128, 127.04237874833561], [37.62996541962152, 127.04257363170707], [37.62984626944652, 127.0427335814493], [37.62972403294872, 127.04287679998038], [37.62954693304403, 127.04307538195279], [37.62886477234504, 127.04383042308672], [37.628683295755025, 127.04403588901405]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_b46acab924fc7e3575bd6fffb7e987d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e950e5abcfc3043f71fe376a08a66705 = $(`<div id="html_e950e5abcfc3043f71fe376a08a66705" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로', '구간명': '번동주공3단지 ~ 강북구민운동장앞교차로', '구간 거리': '309m', '평균 속도': '39.4km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_b46acab924fc7e3575bd6fffb7e987d5.setContent(html_e950e5abcfc3043f71fe376a08a66705);
+            
+        
+
+        poly_line_22fce14239dab0f2d8d2150a335a4387.bindPopup(popup_b46acab924fc7e3575bd6fffb7e987d5)
+        ;
+
+        
+    
+    
+            poly_line_22fce14239dab0f2d8d2150a335a4387.bindTooltip(
+                `<div>
+                     {'도로명': '한천로', '구간명': '번동주공3단지 ~ 강북구민운동장앞교차로', '구간 거리': '309m', '평균 속도': '39.4km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cfc37671d4c2bc28e5354d7f3bb7b6e5 = L.polyline(
+                [[37.628755644155554, 127.04413691002934], [37.62893666843362, 127.04393195592928], [37.629618634180254, 127.04317713239273], [37.629796875368974, 127.04297726986378], [37.629922666988485, 127.04282988673205], [37.63004678864464, 127.04266326272331], [37.630177458057254, 127.04246263892347], [37.63069190486845, 127.04160026426916]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_1e01976948c497d784ab26cb28ca1b72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f4c72092444cc4a09a4586bb8425517 = $(`<div id="html_4f4c72092444cc4a09a4586bb8425517" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로', '구간명': '강북구민운동장앞교차로 ~ 번동주공3단지', '구간 거리': '312m', '평균 속도': '35.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_1e01976948c497d784ab26cb28ca1b72.setContent(html_4f4c72092444cc4a09a4586bb8425517);
+            
+        
+
+        poly_line_cfc37671d4c2bc28e5354d7f3bb7b6e5.bindPopup(popup_1e01976948c497d784ab26cb28ca1b72)
+        ;
+
+        
+    
+    
+            poly_line_cfc37671d4c2bc28e5354d7f3bb7b6e5.bindTooltip(
+                `<div>
+                     {'도로명': '한천로', '구간명': '강북구민운동장앞교차로 ~ 번동주공3단지', '구간 거리': '312m', '평균 속도': '35.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_54743a1159925c85de1c060b151e5ac7 = L.polyline(
+                [[37.62917701645645, 127.03983788257472], [37.628780315907484, 127.03934610919141]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_2f5a6e083219f21ed94d6e50aef2a337 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd29cf6b461847eb0f1c1d659303ce0a = $(`<div id="html_cd29cf6b461847eb0f1c1d659303ce0a" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '강북정보화도서관앞 ~ 덕수빌딩', '구간 거리': '62m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_2f5a6e083219f21ed94d6e50aef2a337.setContent(html_cd29cf6b461847eb0f1c1d659303ce0a);
+            
+        
+
+        poly_line_54743a1159925c85de1c060b151e5ac7.bindPopup(popup_2f5a6e083219f21ed94d6e50aef2a337)
+        ;
+
+        
+    
+    
+            poly_line_54743a1159925c85de1c060b151e5ac7.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '강북정보화도서관앞 ~ 덕수빌딩', '구간 거리': '62m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a5b672ac1a777d49502bdc69467f8d4a = L.polyline(
+                [[37.63068131027818, 127.04150530544698], [37.63054204821737, 127.04137260389054], [37.62985090064111, 127.04060809822138], [37.62917542685464, 127.03983598986578]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_9a6c71a0e4af13903cea73b1c375f077 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7219a127789baf08226ca76fe6c8e83 = $(`<div id="html_e7219a127789baf08226ca76fe6c8e83" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '덕수빌딩 ~ 강북구민운동장앞교차로', '구간 거리': '223m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9a6c71a0e4af13903cea73b1c375f077.setContent(html_e7219a127789baf08226ca76fe6c8e83);
+            
+        
+
+        poly_line_a5b672ac1a777d49502bdc69467f8d4a.bindPopup(popup_9a6c71a0e4af13903cea73b1c375f077)
+        ;
+
+        
+    
+    
+            poly_line_a5b672ac1a777d49502bdc69467f8d4a.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '덕수빌딩 ~ 강북구민운동장앞교차로', '구간 거리': '223m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bcc7d91dead092b7d84ffe5822115ca6 = L.polyline(
+                [[37.628704407921326, 127.03944291255891], [37.62910110807195, 127.03993468595586]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_a5af5e66fddc50df9d4d278a601a8012 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb81f680f5edde1546d1b5c6821c8ecb = $(`<div id="html_bb81f680f5edde1546d1b5c6821c8ecb" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '덕수빌딩 ~ 강북정보화도서관앞', '구간 거리': '62m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a5af5e66fddc50df9d4d278a601a8012.setContent(html_bb81f680f5edde1546d1b5c6821c8ecb);
+            
+        
+
+        poly_line_bcc7d91dead092b7d84ffe5822115ca6.bindPopup(popup_a5af5e66fddc50df9d4d278a601a8012)
+        ;
+
+        
+    
+    
+            poly_line_bcc7d91dead092b7d84ffe5822115ca6.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '덕수빌딩 ~ 강북정보화도서관앞', '구간 거리': '62m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ef548c05cb1ef1b801ff90556d4932d4 = L.polyline(
+                [[37.6291026985732, 127.03993657866548], [37.629778824666985, 127.0407094340885], [37.63047359935697, 127.04147795120035], [37.630616007387914, 127.041613651033]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_ddad42b7378548f2c4ce3bd02cf18e49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8dac50404cfd8ce67a170e32587429f = $(`<div id="html_c8dac50404cfd8ce67a170e32587429f" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '강북구민운동장앞교차로 ~ 덕수빌딩', '구간 거리': '224m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ddad42b7378548f2c4ce3bd02cf18e49.setContent(html_c8dac50404cfd8ce67a170e32587429f);
+            
+        
+
+        poly_line_ef548c05cb1ef1b801ff90556d4932d4.bindPopup(popup_ddad42b7378548f2c4ce3bd02cf18e49)
+        ;
+
+        
+    
+    
+            poly_line_ef548c05cb1ef1b801ff90556d4932d4.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '강북구민운동장앞교차로 ~ 덕수빌딩', '구간 거리': '224m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5e936c2b7041f474d539ed02f454fe1f = L.polyline(
+                [[37.629915965070296, 127.03864241337413], [37.6297157984442, 127.03876304642374], [37.62965928446667, 127.03878381294435], [37.62927799880552, 127.0389669941133], [37.62889640643072, 127.03918566985779], [37.6287126429107, 127.03933773352256]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_e02e8df02a0c46fbbf3e7d2f7ab3cbfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79cd0356b1ba31b0f17a05b315d1e963 = $(`<div id="html_79cd0356b1ba31b0f17a05b315d1e963" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로31길', '구간명': '강북정보화도서관앞 ~ 번성교회앞', '구간 거리': '147m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e02e8df02a0c46fbbf3e7d2f7ab3cbfc.setContent(html_79cd0356b1ba31b0f17a05b315d1e963);
+            
+        
+
+        poly_line_5e936c2b7041f474d539ed02f454fe1f.bindPopup(popup_e02e8df02a0c46fbbf3e7d2f7ab3cbfc)
+        ;
+
+        
+    
+    
+            poly_line_5e936c2b7041f474d539ed02f454fe1f.bindTooltip(
+                `<div>
+                     {'도로명': '오현로31길', '구간명': '강북정보화도서관앞 ~ 번성교회앞', '구간 거리': '147m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_04f9bd2448767fe9ac9813ed0d05f781 = L.polyline(
+                [[37.62877208091068, 127.0394512883223], [37.62894885730179, 127.03930500772026], [37.62931975495848, 127.03909246122929], [37.629693798437934, 127.03891275923031], [37.6297545836296, 127.03889042374759], [37.62996269685379, 127.03876500309667]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_42cb1241851caa917dc1c6de007509f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b1947a10d1b6ecb98dd0bfad6e300fe = $(`<div id="html_7b1947a10d1b6ecb98dd0bfad6e300fe" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로31길', '구간명': '번성교회앞 ~ 강북정보화도서관앞', '구간 거리': '146m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_42cb1241851caa917dc1c6de007509f6.setContent(html_7b1947a10d1b6ecb98dd0bfad6e300fe);
+            
+        
+
+        poly_line_04f9bd2448767fe9ac9813ed0d05f781.bindPopup(popup_42cb1241851caa917dc1c6de007509f6)
+        ;
+
+        
+    
+    
+            poly_line_04f9bd2448767fe9ac9813ed0d05f781.bindTooltip(
+                `<div>
+                     {'도로명': '오현로31길', '구간명': '번성교회앞 ~ 강북정보화도서관앞', '구간 거리': '146m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_df33dff90e2dee649f074ba3cf25f4bd = L.polyline(
+                [[37.6167239430487, 127.03776798237473], [37.61668032985808, 127.03771149603375], [37.61620332598832, 127.03726895611543], [37.61614037083074, 127.0372188433192], [37.616060511160576, 127.03717206011727], [37.61597540095696, 127.03715821074196], [37.614954523514946, 127.03713215616668], [37.61397317767769, 127.03710893538612], [37.61389675166395, 127.03714792065412], [37.61388591861811, 127.03722943208923], [37.61389801177012, 127.03743423597639], [37.61389381066067, 127.03754421454329], [37.61386277924064, 127.03763902740276], [37.613852392359874, 127.03766250813572]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_5d7e08accc6cdfbbf6c6d72d3aea3f37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8daa84988dab1081d59466cfaec0bd92 = $(`<div id="html_8daa84988dab1081d59466cfaec0bd92" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로21가길', '구간명': '남산약국 ~ 속성변화점', '구간 거리': '378m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_5d7e08accc6cdfbbf6c6d72d3aea3f37.setContent(html_8daa84988dab1081d59466cfaec0bd92);
+            
+        
+
+        poly_line_df33dff90e2dee649f074ba3cf25f4bd.bindPopup(popup_5d7e08accc6cdfbbf6c6d72d3aea3f37)
+        ;
+
+        
+    
+    
+            poly_line_df33dff90e2dee649f074ba3cf25f4bd.bindTooltip(
+                `<div>
+                     {'도로명': '월계로21가길', '구간명': '남산약국 ~ 속성변화점', '구간 거리': '378m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_08a47f39bfe24a659809cf9aed1071ef = L.polyline(
+                [[37.61394688406902, 127.03772856145778], [37.61396035366898, 127.03769811325178], [37.61400090794402, 127.03757420014405], [37.614006322881615, 127.03743245882357], [37.61399527738435, 127.03724539652521], [37.61495240930542, 127.03726804636729], [37.61596734024161, 127.03729395145254], [37.61603002328101, 127.0373041505678], [37.6160884019139, 127.03733835071006], [37.61614222690596, 127.03738119643084], [37.616608956742624, 127.03781420469716], [37.61664636105221, 127.03786264940388]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_f6616e059f787eb93d2078514d0f4051 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47e5d586327893d44684fe6700df9db5 = $(`<div id="html_47e5d586327893d44684fe6700df9db5" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로21가길', '구간명': '속성변화점 ~ 남산약국', '구간 거리': '354m', '평균 속도': '7.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_f6616e059f787eb93d2078514d0f4051.setContent(html_47e5d586327893d44684fe6700df9db5);
+            
+        
+
+        poly_line_08a47f39bfe24a659809cf9aed1071ef.bindPopup(popup_f6616e059f787eb93d2078514d0f4051)
+        ;
+
+        
+    
+    
+            poly_line_08a47f39bfe24a659809cf9aed1071ef.bindTooltip(
+                `<div>
+                     {'도로명': '월계로21가길', '구간명': '속성변화점 ~ 남산약국', '구간 거리': '354m', '평균 속도': '7.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5a524a202a380bd9df2b1c6ddedc5893 = L.polyline(
+                [[37.61663963146001, 127.03777865922737], [37.616625081265916, 127.03780721415605], [37.61650650034777, 127.03793091742499], [37.6160316432375, 127.03791485307406], [37.61549036159444, 127.03791008164664], [37.61458839258832, 127.03788562672821], [37.61426678233136, 127.03789586785176], [37.61424251626073, 127.03789226738475], [37.61392890660205, 127.03763839928277]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_9d40bc82a10f2d86352711033260fe4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df794dead3872a8866fd85308e749f5e = $(`<div id="html_df794dead3872a8866fd85308e749f5e" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로21나길', '구간명': '남산약국 ~ 속성변화점', '구간 거리': '313m', '평균 속도': '4.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_9d40bc82a10f2d86352711033260fe4a.setContent(html_df794dead3872a8866fd85308e749f5e);
+            
+        
+
+        poly_line_5a524a202a380bd9df2b1c6ddedc5893.bindPopup(popup_9d40bc82a10f2d86352711033260fe4a)
+        ;
+
+        
+    
+    
+            poly_line_5a524a202a380bd9df2b1c6ddedc5893.bindTooltip(
+                `<div>
+                     {'도로명': '월계로21나길', '구간명': '남산약국 ~ 속성변화점', '구간 거리': '313m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_afd08eafe83c6899ef03a4440fda141c = L.polyline(
+                [[37.61387037070965, 127.0377526702245], [37.61420500551853, 127.03802355904618], [37.61426178760967, 127.03803198523468], [37.614588595734446, 127.03802157971548], [37.615488816809226, 127.03804598894716], [37.61602980922993, 127.03805075894692], [37.616544247204274, 127.03806816275502], [37.616707057287655, 127.03789831937077], [37.616730673549355, 127.03785197264557]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_2956bfeb8634b0db4d5e7038144d2273 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b27e6e947eba889bf8be70211085d3bd = $(`<div id="html_b27e6e947eba889bf8be70211085d3bd" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로21나길', '구간명': '속성변화점 ~ 남산약국', '구간 거리': '332m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_2956bfeb8634b0db4d5e7038144d2273.setContent(html_b27e6e947eba889bf8be70211085d3bd);
+            
+        
+
+        poly_line_afd08eafe83c6899ef03a4440fda141c.bindPopup(popup_2956bfeb8634b0db4d5e7038144d2273)
+        ;
+
+        
+    
+    
+            poly_line_afd08eafe83c6899ef03a4440fda141c.bindTooltip(
+                `<div>
+                     {'도로명': '월계로21나길', '구간명': '속성변화점 ~ 남산약국', '구간 거리': '332m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c5b51fe1cc41681e72720a0f5599ad2a = L.polyline(
+                [[37.6167734669087, 127.0348784543183], [37.61662264593241, 127.03519423066626], [37.61663087493188, 127.035292867729], [37.616671226656, 127.0353588654272], [37.617101762003124, 127.03564358514973], [37.617707979905504, 127.03602121100508], [37.61783395048612, 127.03605420213762], [37.61850486286514, 127.03626957270764], [37.61857394416961, 127.03626417841606], [37.618649183617585, 127.03615636127142]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_fdcb5b1475f4e999753db6371b61c763 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4700968ecde50298eba5616168fe041 = $(`<div id="html_a4700968ecde50298eba5616168fe041" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로14길', '구간명': '공주능입구 ~ 엘림교회', '구간 거리': '289m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fdcb5b1475f4e999753db6371b61c763.setContent(html_a4700968ecde50298eba5616168fe041);
+            
+        
+
+        poly_line_c5b51fe1cc41681e72720a0f5599ad2a.bindPopup(popup_fdcb5b1475f4e999753db6371b61c763)
+        ;
+
+        
+    
+    
+            poly_line_c5b51fe1cc41681e72720a0f5599ad2a.bindTooltip(
+                `<div>
+                     {'도로명': '오현로14길', '구간명': '공주능입구 ~ 엘림교회', '구간 거리': '289m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ccb5eafdf4ac2efb09a0b4baa8a28d78 = L.polyline(
+                [[37.618567909501465, 127.03606672276922], [37.61852233917833, 127.03613202405842], [37.618515134706705, 127.03613258578365], [37.6178583626048, 127.0359217561974], [37.61774358136824, 127.03589169522796], [37.61715093930171, 127.03552252753735], [37.61674251945988, 127.03525243236564], [37.61673521691354, 127.03524048953003], [37.616733944765585, 127.0352252421694], [37.61686615969705, 127.03494842148172]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_84b2f5c5c77ad82f6516cbd933774c2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dcefefb8a272f7e1ec7874d3831ec08 = $(`<div id="html_3dcefefb8a272f7e1ec7874d3831ec08" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로14길', '구간명': '엘림교회 ~ 공주능입구', '구간 거리': '253m', '평균 속도': '39.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_84b2f5c5c77ad82f6516cbd933774c2c.setContent(html_3dcefefb8a272f7e1ec7874d3831ec08);
+            
+        
+
+        poly_line_ccb5eafdf4ac2efb09a0b4baa8a28d78.bindPopup(popup_84b2f5c5c77ad82f6516cbd933774c2c)
+        ;
+
+        
+    
+    
+            poly_line_ccb5eafdf4ac2efb09a0b4baa8a28d78.bindTooltip(
+                `<div>
+                     {'도로명': '오현로14길', '구간명': '엘림교회 ~ 공주능입구', '구간 거리': '253m', '평균 속도': '39.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a78c48b90d9a2a7adc41aa8ef8cc6383 = L.polyline(
+                [[37.62510452644815, 127.04478967746677], [37.62432122782562, 127.04534501350761], [37.62395305783416, 127.04560127986738], [37.62378656981438, 127.04570844909985], [37.623382261033306, 127.04589365970364], [37.62307675284847, 127.04602922160231], [37.62285811318762, 127.04610484542515], [37.6225013577184, 127.04617997104718], [37.62214564803614, 127.04628774907496]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_d37ffda3866c519cf434d60a3eb29cc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c5f0a6218a0f8e9969fd88d96224213 = $(`<div id="html_9c5f0a6218a0f8e9969fd88d96224213" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로37길', '구간명': '예수꿈사랑교회 ~ 한진아파트', '구간 거리': '357m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d37ffda3866c519cf434d60a3eb29cc7.setContent(html_9c5f0a6218a0f8e9969fd88d96224213);
+            
+        
+
+        poly_line_a78c48b90d9a2a7adc41aa8ef8cc6383.bindPopup(popup_d37ffda3866c519cf434d60a3eb29cc7)
+        ;
+
+        
+    
+    
+            poly_line_a78c48b90d9a2a7adc41aa8ef8cc6383.bindTooltip(
+                `<div>
+                     {'도로명': '월계로37길', '구간명': '예수꿈사랑교회 ~ 한진아파트', '구간 거리': '357m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_67221272e8f76405c1bf2f36d1fd00fb = L.polyline(
+                [[37.62217097874162, 127.04641989486326], [37.622522980538896, 127.04631324108165], [37.6228814445038, 127.0462377569169], [37.623109125077, 127.04615900584051], [37.62341876064451, 127.04602161301533], [37.62382987869348, 127.04583328415012], [37.62400389194434, 127.04572127147915], [37.62437396558811, 127.04546368021381], [37.625157633364765, 127.0449080835744]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_cf89b97bd93a94ffd9a4d0032118cb41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66929cf6d6697f95388fd8ac901b58cc = $(`<div id="html_66929cf6d6697f95388fd8ac901b58cc" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로37길', '구간명': '한진아파트 ~ 예수꿈사랑교회', '구간 거리': '360m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_cf89b97bd93a94ffd9a4d0032118cb41.setContent(html_66929cf6d6697f95388fd8ac901b58cc);
+            
+        
+
+        poly_line_67221272e8f76405c1bf2f36d1fd00fb.bindPopup(popup_cf89b97bd93a94ffd9a4d0032118cb41)
+        ;
+
+        
+    
+    
+            poly_line_67221272e8f76405c1bf2f36d1fd00fb.bindTooltip(
+                `<div>
+                     {'도로명': '월계로37길', '구간명': '한진아파트 ~ 예수꿈사랑교회', '구간 거리': '360m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e5776127eb53d8dd5a23628c93e7c3ad = L.polyline(
+                [[37.62508688739559, 127.04488802577362], [37.62654701024749, 127.04749380640519]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_84788a99f3b06e925b918fe4b35bf84e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fbaf64cfbd43a44ad8d00ddd7ba7c66 = $(`<div id="html_9fbaf64cfbd43a44ad8d00ddd7ba7c66" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로105길', '구간명': '번3동주민센터앞교차로 ~ 한진아파트', '구간 거리': '281m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_84788a99f3b06e925b918fe4b35bf84e.setContent(html_9fbaf64cfbd43a44ad8d00ddd7ba7c66);
+            
+        
+
+        poly_line_e5776127eb53d8dd5a23628c93e7c3ad.bindPopup(popup_84788a99f3b06e925b918fe4b35bf84e)
+        ;
+
+        
+    
+    
+            poly_line_e5776127eb53d8dd5a23628c93e7c3ad.bindTooltip(
+                `<div>
+                     {'도로명': '한천로105길', '구간명': '번3동주민센터앞교차로 ~ 한진아파트', '구간 거리': '281m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d59a994ae93236b26d9c9902c4351907 = L.polyline(
+                [[37.626635397893246, 127.04741551623623], [37.625175272433864, 127.04480973517917]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_18fc2383062882a39976e2ea6d7d856c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_702ddae27fa693e594f51fbd99cc0e0d = $(`<div id="html_702ddae27fa693e594f51fbd99cc0e0d" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로105길', '구간명': '한진아파트 ~ 번3동주민센터앞교차로', '구간 거리': '281m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_18fc2383062882a39976e2ea6d7d856c.setContent(html_702ddae27fa693e594f51fbd99cc0e0d);
+            
+        
+
+        poly_line_d59a994ae93236b26d9c9902c4351907.bindPopup(popup_18fc2383062882a39976e2ea6d7d856c)
+        ;
+
+        
+    
+    
+            poly_line_d59a994ae93236b26d9c9902c4351907.bindTooltip(
+                `<div>
+                     {'도로명': '한천로105길', '구간명': '한진아파트 ~ 번3동주민센터앞교차로', '구간 거리': '281m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7cfb6f68af5f97d052cad9c0c7131b7e = L.polyline(
+                [[37.6253625954908, 127.03711501014905], [37.62544641057569, 127.03738652589541], [37.625499307319494, 127.03747235479527], [37.625621324637756, 127.03761309352858], [37.62618489501228, 127.03802781088089], [37.62633618792866, 127.03818645721365], [37.626404722343814, 127.0382783505832], [37.62651652085006, 127.03846254394715], [37.62658030327484, 127.03860119211858]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_7e2f7e27d5fd231bf07fe689ac9b6bff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20474bb65c9dad1c8c437354189fd123 = $(`<div id="html_20474bb65c9dad1c8c437354189fd123" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로20길', '구간명': '해모로아파트105동 ~ 완성아파트', '구간 거리': '194m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_7e2f7e27d5fd231bf07fe689ac9b6bff.setContent(html_20474bb65c9dad1c8c437354189fd123);
+            
+        
+
+        poly_line_7cfb6f68af5f97d052cad9c0c7131b7e.bindPopup(popup_7e2f7e27d5fd231bf07fe689ac9b6bff)
+        ;
+
+        
+    
+    
+            poly_line_7cfb6f68af5f97d052cad9c0c7131b7e.bindTooltip(
+                `<div>
+                     {'도로명': '오현로20길', '구간명': '해모로아파트105동 ~ 완성아파트', '구간 거리': '194m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7127cbb146b7cfa72d0e1f663c920899 = L.polyline(
+                [[37.626673893890754, 127.03853313016205], [37.6266066567442, 127.03838697295551], [37.62648734339504, 127.03819039968944], [37.62641052522242, 127.038087398281], [37.626247253088174, 127.03791618988086], [37.62568590454169, 127.03750310876752], [37.62557915414491, 127.03737997911753], [37.625541511326084, 127.03731890032948], [37.62546338903732, 127.0370658267626]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_a6ba7cf2fed320d2b615c9f15dab2b5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a92cc5d3913899a01dd97b98aa2a965 = $(`<div id="html_8a92cc5d3913899a01dd97b98aa2a965" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로20길', '구간명': '완성아파트 ~ 해모로아파트105동', '구간 거리': '192m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_a6ba7cf2fed320d2b615c9f15dab2b5c.setContent(html_8a92cc5d3913899a01dd97b98aa2a965);
+            
+        
+
+        poly_line_7127cbb146b7cfa72d0e1f663c920899.bindPopup(popup_a6ba7cf2fed320d2b615c9f15dab2b5c)
+        ;
+
+        
+    
+    
+            poly_line_7127cbb146b7cfa72d0e1f663c920899.bindTooltip(
+                `<div>
+                     {'도로명': '오현로20길', '구간명': '완성아파트 ~ 해모로아파트105동', '구간 거리': '192m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0cdb3820505ef59407605d33533f5690 = L.polyline(
+                [[37.62657774743059, 127.03859490369513], [37.62676554005955, 127.03912300765435], [37.626984298921144, 127.03979595914518]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_38859b24f1203dd21d8445bc64ce739f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6823d4703757d434da6ff10d5a78a07 = $(`<div id="html_d6823d4703757d434da6ff10d5a78a07" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로20길', '구간명': '아파트상가 ~ 해모로아파트105동', '구간 거리': '115m', '평균 속도': '27.7km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_38859b24f1203dd21d8445bc64ce739f.setContent(html_d6823d4703757d434da6ff10d5a78a07);
+            
+        
+
+        poly_line_0cdb3820505ef59407605d33533f5690.bindPopup(popup_38859b24f1203dd21d8445bc64ce739f)
+        ;
+
+        
+    
+    
+            poly_line_0cdb3820505ef59407605d33533f5690.bindTooltip(
+                `<div>
+                     {'도로명': '오현로20길', '구간명': '아파트상가 ~ 해모로아파트105동', '구간 거리': '115m', '평균 속도': '27.7km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bc69ab7b9d8bad547391c19a95aee350 = L.polyline(
+                [[37.6270843807321, 127.03974452928844], [37.6268649582298, 127.03906953649748], [37.626676449738234, 127.03853941859151]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_62032f78c7500c90a635882535cf8c98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cfa4aec7a8867a7662b5ecc57544705 = $(`<div id="html_3cfa4aec7a8867a7662b5ecc57544705" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로20길', '구간명': '해모로아파트105동 ~ 아파트상가', '구간 거리': '116m', '평균 속도': '25.7km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_62032f78c7500c90a635882535cf8c98.setContent(html_3cfa4aec7a8867a7662b5ecc57544705);
+            
+        
+
+        poly_line_bc69ab7b9d8bad547391c19a95aee350.bindPopup(popup_62032f78c7500c90a635882535cf8c98)
+        ;
+
+        
+    
+    
+            poly_line_bc69ab7b9d8bad547391c19a95aee350.bindTooltip(
+                `<div>
+                     {'도로명': '오현로20길', '구간명': '해모로아파트105동 ~ 아파트상가', '구간 거리': '116m', '평균 속도': '25.7km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a72a4cb10512f1157258e8f49220c0a9 = L.polyline(
+                [[37.6284282774982, 127.04333847603218], [37.627862137788604, 127.04399438134726], [37.62777743395036, 127.04405312979345], [37.6276311330574, 127.04410512743662], [37.62678990947208, 127.04401915839107], [37.626598930984, 127.04401176971733], [37.62649162979896, 127.04401170644938], [37.626341799218515, 127.0440361060056], [37.62612630753628, 127.04410600883557], [37.625920969548964, 127.04419376115509], [37.62579209054998, 127.04426118722232]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_51097c0dc52ff45c04d809d116d27c87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ed378330e840b4f22a61614384225c1 = $(`<div id="html_1ed378330e840b4f22a61614384225c1" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로37길', '구간명': '번동256 ~ 강북유니온빌딩앞', '구간 거리': '321m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_51097c0dc52ff45c04d809d116d27c87.setContent(html_1ed378330e840b4f22a61614384225c1);
+            
+        
+
+        poly_line_a72a4cb10512f1157258e8f49220c0a9.bindPopup(popup_51097c0dc52ff45c04d809d116d27c87)
+        ;
+
+        
+    
+    
+            poly_line_a72a4cb10512f1157258e8f49220c0a9.bindTooltip(
+                `<div>
+                     {'도로명': '월계로37길', '구간명': '번동256 ~ 강북유니온빌딩앞', '구간 거리': '321m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_dd66c532601f5f6b82825266660b5aa3 = L.polyline(
+                [[37.62579209054998, 127.04426118722232], [37.62577935620603, 127.04426784959185], [37.625538908308094, 127.04443256156917], [37.62510150456253, 127.04479198654253]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_d3727a4f1f3775256ad1e655e3e4ed4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3d35bf2c29ce7217aa759b30dfa4aeb = $(`<div id="html_f3d35bf2c29ce7217aa759b30dfa4aeb" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로37길', '구간명': '한진아파트 ~ 번동256', '구간 거리': '90m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_d3727a4f1f3775256ad1e655e3e4ed4f.setContent(html_f3d35bf2c29ce7217aa759b30dfa4aeb);
+            
+        
+
+        poly_line_dd66c532601f5f6b82825266660b5aa3.bindPopup(popup_d3727a4f1f3775256ad1e655e3e4ed4f)
+        ;
+
+        
+    
+    
+            poly_line_dd66c532601f5f6b82825266660b5aa3.bindTooltip(
+                `<div>
+                     {'도로명': '월계로37길', '구간명': '한진아파트 ~ 번동256', '구간 거리': '90m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2af5919f35c6aded731d39006c886deb = L.polyline(
+                [[37.62516065525262, 127.04490577450164], [37.62559443624958, 127.04454932586995], [37.6258261163479, 127.04439062070101], [37.62583362755128, 127.04438669095411]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_133eeac72d80baf0a5126e76b325f645 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e58c72d1d688d86088c50694270a0424 = $(`<div id="html_e58c72d1d688d86088c50694270a0424" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로37길', '구간명': '번동256 ~ 한진아파트', '구간 거리': '88m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_133eeac72d80baf0a5126e76b325f645.setContent(html_e58c72d1d688d86088c50694270a0424);
+            
+        
+
+        poly_line_2af5919f35c6aded731d39006c886deb.bindPopup(popup_133eeac72d80baf0a5126e76b325f645)
+        ;
+
+        
+    
+    
+            poly_line_2af5919f35c6aded731d39006c886deb.bindTooltip(
+                `<div>
+                     {'도로명': '월계로37길', '구간명': '번동256 ~ 한진아파트', '구간 거리': '88m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_05fda188a8d7e53cbea4bbf913339945 = L.polyline(
+                [[37.62583362755128, 127.04438669095411], [37.62595917772166, 127.04432100647159], [37.626157253586136, 127.04423635857], [37.626362326870634, 127.04416983588555], [37.626498577880206, 127.04414764773449], [37.62659724220845, 127.0441477060896], [37.626783863579234, 127.04415492714269], [37.62764179341875, 127.04424260458865], [37.627818787859184, 127.04417969810213], [37.62792579695869, 127.04410548054332], [37.62850154138683, 127.04343844754902]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_017b62f898d0948a3dc3dd0af5261744 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_017b1cbdfdbe13e4f1ac90c915eca2c2 = $(`<div id="html_017b1cbdfdbe13e4f1ac90c915eca2c2" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로37길', '구간명': '강북유니온빌딩앞 ~ 번동256', '구간 거리': '325m', '평균 속도': '22.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_017b62f898d0948a3dc3dd0af5261744.setContent(html_017b1cbdfdbe13e4f1ac90c915eca2c2);
+            
+        
+
+        poly_line_05fda188a8d7e53cbea4bbf913339945.bindPopup(popup_017b62f898d0948a3dc3dd0af5261744)
+        ;
+
+        
+    
+    
+            poly_line_05fda188a8d7e53cbea4bbf913339945.bindTooltip(
+                `<div>
+                     {'도로명': '월계로37길', '구간명': '강북유니온빌딩앞 ~ 번동256', '구간 거리': '325m', '평균 속도': '22.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_810786ba99b587fa05832e375d4ea3d1 = L.polyline(
+                [[37.62541732988107, 127.03243645736829], [37.62546107883393, 127.0326237147989], [37.625528245894095, 127.0327592547817], [37.62587172762999, 127.03343905632782], [37.62650947390589, 127.03465100590826], [37.62704618741957, 127.03565125716855], [37.62768395094355, 127.0365925283099], [37.628106062896364, 127.03708959299071], [37.62752082009604, 127.03788865099439]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_ae3ccaeacc5088f87cc38d00bc23b795 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5cb5729cefb0225a201ebc3015ea36d = $(`<div id="html_c5cb5729cefb0225a201ebc3015ea36d" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로25다길', '구간명': '한마음약국 ~ 용빌딩', '구간 거리': '606m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_ae3ccaeacc5088f87cc38d00bc23b795.setContent(html_c5cb5729cefb0225a201ebc3015ea36d);
+            
+        
+
+        poly_line_810786ba99b587fa05832e375d4ea3d1.bindPopup(popup_ae3ccaeacc5088f87cc38d00bc23b795)
+        ;
+
+        
+    
+    
+            poly_line_810786ba99b587fa05832e375d4ea3d1.bindTooltip(
+                `<div>
+                     {'도로명': '오현로25다길', '구간명': '한마음약국 ~ 용빌딩', '구간 거리': '606m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_39574a379d0cf7b3aa525f675952380f = L.polyline(
+                [[37.627600353009974, 127.03798073693021], [37.628216836247965, 127.03713902495944], [37.6282255795335, 127.03704408178189], [37.62776230371315, 127.0364985441723], [37.62713242407909, 127.03556890839198], [37.626599374889906, 127.03457548798478], [37.62596245090825, 127.03336510122313], [37.625619760285225, 127.03268686619478], [37.62556065248782, 127.03256758977484], [37.625521065621264, 127.03239814600303]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_c8bf02e485606d3f750c87c03286ee15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_daeb886343deb60de26e40c7944dc331 = $(`<div id="html_daeb886343deb60de26e40c7944dc331" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로25다길', '구간명': '용빌딩 ~ 한마음약국', '구간 거리': '621m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_c8bf02e485606d3f750c87c03286ee15.setContent(html_daeb886343deb60de26e40c7944dc331);
+            
+        
+
+        poly_line_39574a379d0cf7b3aa525f675952380f.bindPopup(popup_c8bf02e485606d3f750c87c03286ee15)
+        ;
+
+        
+    
+    
+            poly_line_39574a379d0cf7b3aa525f675952380f.bindTooltip(
+                `<div>
+                     {'도로명': '오현로25다길', '구간명': '용빌딩 ~ 한마음약국', '구간 거리': '621m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_194a0119aa618aac0e8963c74eb6446d = L.polyline(
+                [[37.62714908793399, 127.03745534111012], [37.62691751563932, 127.03777129990806], [37.626881546051514, 127.03785969457618], [37.62687678610814, 127.03796074611606], [37.62690329694339, 127.03809430615203], [37.62694171670726, 127.03822558409227], [37.62693848926685, 127.03826760653689], [37.626913190407, 127.03830665193692], [37.62677859831727, 127.03840642797228], [37.62660482344729, 127.03850523074018]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_7f2e399ccd0479d5ca45aaac89075d38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdba1847667f1bdecdbe1ca66e1158f9 = $(`<div id="html_cdba1847667f1bdecdbe1ca66e1158f9" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '해모로아파트105동 ~ 한진그랑빌APT', '구간 거리': '127m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_7f2e399ccd0479d5ca45aaac89075d38.setContent(html_cdba1847667f1bdecdbe1ca66e1158f9);
+            
+        
+
+        poly_line_194a0119aa618aac0e8963c74eb6446d.bindPopup(popup_7f2e399ccd0479d5ca45aaac89075d38)
+        ;
+
+        
+    
+    
+            poly_line_194a0119aa618aac0e8963c74eb6446d.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '해모로아파트105동 ~ 한진그랑빌APT', '구간 거리': '127m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_39ea569acf88d3e9606504ad922be578 = L.polyline(
+                [[37.626649372794915, 127.03862909161958], [37.62682847538897, 127.03852726155145], [37.62698478479825, 127.0384113847875], [37.62704296367264, 127.03832159130734], [37.62705170681966, 127.03820776341462], [37.627006782776384, 127.0380542594884], [37.62698569336105, 127.03794801539412], [37.62698813366411, 127.03789621176432], [37.62700703685885, 127.0378497565804], [37.62722859595278, 127.03754746123023]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_937fa0c840fecd33346795ca3fc684f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d84841cb2db33ff8775459f8c42ff1ec = $(`<div id="html_d84841cb2db33ff8775459f8c42ff1ec" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '한진그랑빌APT ~ 해모로아파트105동', '구간 거리': '132m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_937fa0c840fecd33346795ca3fc684f8.setContent(html_d84841cb2db33ff8775459f8c42ff1ec);
+            
+        
+
+        poly_line_39ea569acf88d3e9606504ad922be578.bindPopup(popup_937fa0c840fecd33346795ca3fc684f8)
+        ;
+
+        
+    
+    
+            poly_line_39ea569acf88d3e9606504ad922be578.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '한진그랑빌APT ~ 해모로아파트105동', '구간 거리': '132m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6ad19d15a40b7d93d8170614afbce6f6 = L.polyline(
+                [[37.626984789465894, 127.03979742074105], [37.62731959372681, 127.04076242747006], [37.62739371753458, 127.04119928242595], [37.62741778494767, 127.04125784684463], [37.6275461994642, 127.04144664887237], [37.6276411180894, 127.04153464069334]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_aae92865b0fbec28653b3026b395d2bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6daf385b9498cf812954c1f05edcba8a = $(`<div id="html_6daf385b9498cf812954c1f05edcba8a" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로109길', '구간명': '강북중앙교회 ~ 아파트상가', '구간 거리': '173m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_aae92865b0fbec28653b3026b395d2bb.setContent(html_6daf385b9498cf812954c1f05edcba8a);
+            
+        
+
+        poly_line_6ad19d15a40b7d93d8170614afbce6f6.bindPopup(popup_aae92865b0fbec28653b3026b395d2bb)
+        ;
+
+        
+    
+    
+            poly_line_6ad19d15a40b7d93d8170614afbce6f6.bindTooltip(
+                `<div>
+                     {'도로명': '한천로109길', '구간명': '강북중앙교회 ~ 아파트상가', '구간 거리': '173m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d3dc17f70f3445056453b0bb08aecfed = L.polyline(
+                [[37.627705279764605, 127.04142522593246], [37.627620323634936, 127.04134646996623], [37.627508091386794, 127.04118146051201], [37.62749643080832, 127.04115308360774], [37.62742305672838, 127.04072064878446], [37.627083890186704, 127.03974306769096]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_d9220f7996cd463dec67177cbd100ede = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cc1494aabc4e1b643ed710e29a3b650 = $(`<div id="html_6cc1494aabc4e1b643ed710e29a3b650" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로109길', '구간명': '아파트상가 ~ 강북중앙교회', '구간 거리': '167m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d9220f7996cd463dec67177cbd100ede.setContent(html_6cc1494aabc4e1b643ed710e29a3b650);
+            
+        
+
+        poly_line_d3dc17f70f3445056453b0bb08aecfed.bindPopup(popup_d9220f7996cd463dec67177cbd100ede)
+        ;
+
+        
+    
+    
+            poly_line_d3dc17f70f3445056453b0bb08aecfed.bindTooltip(
+                `<div>
+                     {'도로명': '한천로109길', '구간명': '아파트상가 ~ 강북중앙교회', '구간 거리': '167m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0228d71b07f253a794055e6da04cace2 = L.polyline(
+                [[37.628267152280394, 127.03878158967326], [37.62812428859962, 127.03888459885941], [37.6275608489514, 127.03921017746612], [37.62747946187009, 127.03924831090775], [37.62739643812735, 127.03930404748284], [37.62733004032722, 127.03941627183453], [37.62714530339028, 127.03955491750916], [37.626998379175916, 127.03971949467383]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_d8e87b8c7a84f6b7683d223ff6456fd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc17a34e3b47df9cec6076a10b0fecd7 = $(`<div id="html_bc17a34e3b47df9cec6076a10b0fecd7" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로28길', '구간명': '아파트상가 ~ 번동평화교회', '구간 거리': '165m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d8e87b8c7a84f6b7683d223ff6456fd7.setContent(html_bc17a34e3b47df9cec6076a10b0fecd7);
+            
+        
+
+        poly_line_0228d71b07f253a794055e6da04cace2.bindPopup(popup_d8e87b8c7a84f6b7683d223ff6456fd7)
+        ;
+
+        
+    
+    
+            poly_line_0228d71b07f253a794055e6da04cace2.bindTooltip(
+                `<div>
+                     {'도로명': '오현로28길', '구간명': '아파트상가 ~ 번동평화교회', '구간 거리': '165m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6c23202b323c237a7df4c0dbeed70483 = L.polyline(
+                [[37.62707030046127, 127.03982099384315], [37.62720954732097, 127.03966501641426], [37.62740394088383, 127.0395191236696], [37.627468729611465, 127.03940961949372], [37.6275240004058, 127.03937251352409], [37.627602357936716, 127.0393357991633], [37.62817385608703, 127.0390055661843], [37.62832093839249, 127.03889951542561]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_2bf3c15ed084e9216ac450cf508f2464 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffd81c83c44c2139c144f62b96c7bc2d = $(`<div id="html_ffd81c83c44c2139c144f62b96c7bc2d" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로28길', '구간명': '번동평화교회 ~ 아파트상가', '구간 거리': '163m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_2bf3c15ed084e9216ac450cf508f2464.setContent(html_ffd81c83c44c2139c144f62b96c7bc2d);
+            
+        
+
+        poly_line_6c23202b323c237a7df4c0dbeed70483.bindPopup(popup_2bf3c15ed084e9216ac450cf508f2464)
+        ;
+
+        
+    
+    
+            poly_line_6c23202b323c237a7df4c0dbeed70483.bindTooltip(
+                `<div>
+                     {'도로명': '오현로28길', '구간명': '번동평화교회 ~ 아파트상가', '구간 거리': '163m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8382c3432b4d95f7bb6acdf45ba7bc89 = L.polyline(
+                [[37.628635877813835, 127.03955380879852], [37.62832385327787, 127.03965946633711], [37.62817279220432, 127.0397474821424], [37.62807632606299, 127.03986298775514], [37.627727430007596, 127.04021831247724], [37.62756460015808, 127.04043699498241], [37.6275669336163, 127.04052919016843], [37.627654723617276, 127.0407133370273], [37.62780496171901, 127.04094651795425], [37.627947276392035, 127.04107023216777]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_90577e203aecb748bf95377b9f031f48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2698de638ef788bb37bcfc53ef06d4b = $(`<div id="html_d2698de638ef788bb37bcfc53ef06d4b" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로34길', '구간명': '뛰노리방방번동본점 ~ 새마을금고', '구간 거리': '218m', '평균 속도': '4.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_90577e203aecb748bf95377b9f031f48.setContent(html_d2698de638ef788bb37bcfc53ef06d4b);
+            
+        
+
+        poly_line_8382c3432b4d95f7bb6acdf45ba7bc89.bindPopup(popup_90577e203aecb748bf95377b9f031f48)
+        ;
+
+        
+    
+    
+            poly_line_8382c3432b4d95f7bb6acdf45ba7bc89.bindTooltip(
+                `<div>
+                     {'도로명': '오현로34길', '구간명': '뛰노리방방번동본점 ~ 새마을금고', '구간 거리': '218m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cd129c9cbd356eb37029375a934defe9 = L.polyline(
+                [[37.62800876343826, 127.04095841575109], [37.62787920818512, 127.04084579337946], [37.62774353646071, 127.04063522028352], [37.6276741042471, 127.04048958126475], [37.627674086474954, 127.04048885964386], [37.62780126785403, 127.04031805260428], [37.628147746925535, 127.03996519061927], [37.62823443621134, 127.03986139220244], [37.62836091092578, 127.03978770178645], [37.62866399406818, 127.0396850725979]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_6d68daebe7f12d7947c064cbd8224e87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e119c4f536b2632e6b4fa6b8a41908c = $(`<div id="html_2e119c4f536b2632e6b4fa6b8a41908c" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로34길', '구간명': '새마을금고 ~ 뛰노리방방번동본점', '구간 거리': '190m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_6d68daebe7f12d7947c064cbd8224e87.setContent(html_2e119c4f536b2632e6b4fa6b8a41908c);
+            
+        
+
+        poly_line_cd129c9cbd356eb37029375a934defe9.bindPopup(popup_6d68daebe7f12d7947c064cbd8224e87)
+        ;
+
+        
+    
+    
+            poly_line_cd129c9cbd356eb37029375a934defe9.bindTooltip(
+                `<div>
+                     {'도로명': '오현로34길', '구간명': '새마을금고 ~ 뛰노리방방번동본점', '구간 거리': '190m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_40453d226afebb63c7aad490e761c74b = L.polyline(
+                [[37.62913220961983, 127.03981886189872], [37.62904894676003, 127.03983224173363], [37.62897564240165, 127.03988058086541], [37.62878857441488, 127.0401191746809], [37.628716196231025, 127.04016462850821], [37.62858260526149, 127.04018555157127], [37.62844271770237, 127.0401682321731]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_92792d5de828994822ed5e99490f629e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3723361909af9de194fc64009450ccf = $(`<div id="html_c3723361909af9de194fc64009450ccf" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로34길', '구간명': '번동초등학교 ~ 덕수빌딩', '구간 거리': '88m', '평균 속도': '5.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_92792d5de828994822ed5e99490f629e.setContent(html_c3723361909af9de194fc64009450ccf);
+            
+        
+
+        poly_line_40453d226afebb63c7aad490e761c74b.bindPopup(popup_92792d5de828994822ed5e99490f629e)
+        ;
+
+        
+    
+    
+            poly_line_40453d226afebb63c7aad490e761c74b.bindTooltip(
+                `<div>
+                     {'도로명': '오현로34길', '구간명': '번동초등학교 ~ 덕수빌딩', '구간 거리': '88m', '평균 속도': '5.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e27d94f5e3bab39b9ce626bdad345344 = L.polyline(
+                [[37.62843212282096, 127.04030351806581], [37.62858400738743, 127.04032232368725], [37.628747938918, 127.04029664911079], [37.628852957868936, 127.04023069716041], [37.62904079675595, 127.03999111938663], [37.629081942281225, 127.03996398703939], [37.6291459157911, 127.03995370669391]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_c21df3b48b38a5a25d29b93a1796f2d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aecf8a886bb8370991a7e2e89bd5591 = $(`<div id="html_5aecf8a886bb8370991a7e2e89bd5591" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로34길', '구간명': '덕수빌딩 ~ 번동초등학교', '구간 거리': '90m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c21df3b48b38a5a25d29b93a1796f2d9.setContent(html_5aecf8a886bb8370991a7e2e89bd5591);
+            
+        
+
+        poly_line_e27d94f5e3bab39b9ce626bdad345344.bindPopup(popup_c21df3b48b38a5a25d29b93a1796f2d9)
+        ;
+
+        
+    
+    
+            poly_line_e27d94f5e3bab39b9ce626bdad345344.bindTooltip(
+                `<div>
+                     {'도로명': '오현로34길', '구간명': '덕수빌딩 ~ 번동초등학교', '구간 거리': '90m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2bdde61ac90cf9a1016223d8b7e666d4 = L.polyline(
+                [[37.6299886438767, 127.03867585686531], [37.62996166064789, 127.03860032740205], [37.62993767951696, 127.0385273722729], [37.62990687472388, 127.0384613218652], [37.6298577626474, 127.03837067448065], [37.629794854883585, 127.03831246524872], [37.62971093133977, 127.03827724237433], [37.62956643189633, 127.03826943765363], [37.62935658716841, 127.0382821550874], [37.629125228690675, 127.0383114939123], [37.628983806112444, 127.0383563591191], [37.6288846694725, 127.03842900290869], [37.62882507405417, 127.0385081513089], [37.62878209868875, 127.03859950777857], [37.62871803073785, 127.03882655427903], [37.62867868202555, 127.03890294520355], [37.62850894475399, 127.03908150906713]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_8957bbd37cb2ea66c28b933f067b7b9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d2c4886add3927b4f08b89cab8a2536 = $(`<div id="html_6d2c4886add3927b4f08b89cab8a2536" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '강북장애인복지관 ~ 번성교회앞', '구간 거리': '216m', '평균 속도': '19.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8957bbd37cb2ea66c28b933f067b7b9a.setContent(html_6d2c4886add3927b4f08b89cab8a2536);
+            
+        
+
+        poly_line_2bdde61ac90cf9a1016223d8b7e666d4.bindPopup(popup_8957bbd37cb2ea66c28b933f067b7b9a)
+        ;
+
+        
+    
+    
+            poly_line_2bdde61ac90cf9a1016223d8b7e666d4.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '강북장애인복지관 ~ 번성교회앞', '구간 거리': '216m', '평균 속도': '19.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_39544c8649128959689854384cfc7d25 = L.polyline(
+                [[37.62857832396958, 127.03918577021044], [37.628760567832174, 127.03899405043708], [37.62881568044024, 127.03888705369083], [37.628880490880476, 127.03865737572863], [37.628911944577474, 127.03859051215794], [37.62895251468217, 127.03853663000065], [37.62902505692604, 127.03848347456557], [37.62914397959779, 127.03844574740388], [37.629364620433456, 127.03841776855968], [37.62956671473899, 127.03840552105171], [37.629691110820865, 127.03841224060646], [37.62974447885222, 127.03843463864384], [37.62977880418583, 127.03846640018237], [37.6298154594565, 127.0385340576295], [37.6298406225871, 127.03858800951532], [37.629862365159305, 127.03865415491502], [37.629890018072366, 127.03873155953036]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_9dcd375fed3e79b3bbafa664c639cfb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a24ed9415de69d0652d80370b6c0a89b = $(`<div id="html_a24ed9415de69d0652d80370b6c0a89b" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '번성교회앞 ~ 강북장애인복지관', '구간 거리': '194m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_9dcd375fed3e79b3bbafa664c639cfb2.setContent(html_a24ed9415de69d0652d80370b6c0a89b);
+            
+        
+
+        poly_line_39544c8649128959689854384cfc7d25.bindPopup(popup_9dcd375fed3e79b3bbafa664c639cfb2)
+        ;
+
+        
+    
+    
+            poly_line_39544c8649128959689854384cfc7d25.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '번성교회앞 ~ 강북장애인복지관', '구간 거리': '194m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_75212c8f6c2d0be9cb430642e042caee = L.polyline(
+                [[37.62990309002407, 127.03865327424921], [37.62974963357697, 127.03882760525482], [37.62955060228558, 127.03939517484235], [37.62939855931509, 127.03972225260894], [37.629334537266764, 127.03978039280062], [37.62927285676147, 127.039809437971], [37.629136244390594, 127.03981840524705]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_593e61b038551bbe5c593c0fc9bfecd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55a2bc4339600903bc149dc69a3a06eb = $(`<div id="html_55a2bc4339600903bc149dc69a3a06eb" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '덕수빌딩 ~ 번성교회앞', '구간 거리': '142m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_593e61b038551bbe5c593c0fc9bfecd8.setContent(html_55a2bc4339600903bc149dc69a3a06eb);
+            
+        
+
+        poly_line_75212c8f6c2d0be9cb430642e042caee.bindPopup(popup_593e61b038551bbe5c593c0fc9bfecd8)
+        ;
+
+        
+    
+    
+            poly_line_75212c8f6c2d0be9cb430642e042caee.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '덕수빌딩 ~ 번성교회앞', '구간 거리': '142m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e9d1bd3729719c7f1b0427ab0ecd453f = L.polyline(
+                [[37.62914188102013, 127.03995416220545], [37.62929515300766, 127.0399441018282], [37.629386063493094, 127.03990129235969], [37.629480378836476, 127.03981564342122], [37.62964705019198, 127.03945709677497], [37.629839247680245, 127.03890901392563], [37.62997557281079, 127.03875414336548]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_c3b731558fd4af4748ff45aa19908d2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e350c334568a459a9ab0a7c037d1c650 = $(`<div id="html_e350c334568a459a9ab0a7c037d1c650" style="width: 100.0%; height: 100.0%;">{'도로명': '오현로', '구간명': '번성교회앞 ~ 덕수빌딩', '구간 거리': '151m', '평균 속도': '18.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c3b731558fd4af4748ff45aa19908d2b.setContent(html_e350c334568a459a9ab0a7c037d1c650);
+            
+        
+
+        poly_line_e9d1bd3729719c7f1b0427ab0ecd453f.bindPopup(popup_c3b731558fd4af4748ff45aa19908d2b)
+        ;
+
+        
+    
+    
+            poly_line_e9d1bd3729719c7f1b0427ab0ecd453f.bindTooltip(
+                `<div>
+                     {'도로명': '오현로', '구간명': '번성교회앞 ~ 덕수빌딩', '구간 거리': '151m', '평균 속도': '18.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5cb1f8715fdeb55c07a92532f4591ad7 = L.polyline(
+                [[37.62216170436172, 127.04368134999815], [37.62207836312188, 127.04384387135238], [37.6216139388969, 127.04475202664841], [37.62143977619724, 127.04500084035517], [37.621345395098174, 127.04516816043254], [37.62113409367619, 127.04560394956269]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_26310b332b52f169b00235130391c1c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb1561f3e75eea2264a519912f21db31 = $(`<div id="html_fb1561f3e75eea2264a519912f21db31" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '상아A빌딩 ~ 번동115-9', '구간 거리': '205m', '평균 속도': '5.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_26310b332b52f169b00235130391c1c3.setContent(html_fb1561f3e75eea2264a519912f21db31);
+            
+        
+
+        poly_line_5cb1f8715fdeb55c07a92532f4591ad7.bindPopup(popup_26310b332b52f169b00235130391c1c3)
+        ;
+
+        
+    
+    
+            poly_line_5cb1f8715fdeb55c07a92532f4591ad7.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '상아A빌딩 ~ 번동115-9', '구간 거리': '205m', '평균 속도': '5.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_70722d3ef44fd2be69cb8800f70b15ec = L.polyline(
+                [[37.62122641212638, 127.04567469962741], [37.62143575892059, 127.04524294037162], [37.62152468816007, 127.04508528704848], [37.62170048090556, 127.04483414419481], [37.622169270612275, 127.04391745456594], [37.62225257498579, 127.0437550033047]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_e0cec7a07562a5ef55d9b8cd0686476d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdd047c99c814d60d5af471c5477c908 = $(`<div id="html_fdd047c99c814d60d5af471c5477c908" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로', '구간명': '번동115-9 ~ 상아A빌딩', '구간 거리': '205m', '평균 속도': '7.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e0cec7a07562a5ef55d9b8cd0686476d.setContent(html_fdd047c99c814d60d5af471c5477c908);
+            
+        
+
+        poly_line_70722d3ef44fd2be69cb8800f70b15ec.bindPopup(popup_e0cec7a07562a5ef55d9b8cd0686476d)
+        ;
+
+        
+    
+    
+            poly_line_70722d3ef44fd2be69cb8800f70b15ec.bindTooltip(
+                `<div>
+                     {'도로명': '월계로', '구간명': '번동115-9 ~ 상아A빌딩', '구간 거리': '205m', '평균 속도': '7.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3d59358185f7abdfba5fd3b5011df0b7 = L.polyline(
+                [[37.62587005981241, 127.04358191459903], [37.62585443209007, 127.04369913556164], [37.6257985275962, 127.04386685454784], [37.62576108852537, 127.04397917785809], [37.62575880187371, 127.04432337172449]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_94b72dba3e24d9027d9d314e5f3c560d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1800f58c50c64f8882b4616bbbdf1a12 = $(`<div id="html_1800f58c50c64f8882b4616bbbdf1a12" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로37길', '구간명': '번동256 ~ 번동204', '구간 거리': '68m', '평균 속도': '30.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_94b72dba3e24d9027d9d314e5f3c560d.setContent(html_1800f58c50c64f8882b4616bbbdf1a12);
+            
+        
+
+        poly_line_3d59358185f7abdfba5fd3b5011df0b7.bindPopup(popup_94b72dba3e24d9027d9d314e5f3c560d)
+        ;
+
+        
+    
+    
+            poly_line_3d59358185f7abdfba5fd3b5011df0b7.bindTooltip(
+                `<div>
+                     {'도로명': '월계로37길', '구간명': '번동256 ~ 번동204', '구간 거리': '68m', '평균 속도': '30.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ceae829a7e2764c8c99a9a4fc679d56a = L.polyline(
+                [[37.625866916260456, 127.0443245064179], [37.625869025361716, 127.04400705396631], [37.62589824368721, 127.04391939467634], [37.625958991039575, 127.04373714563091], [37.62597669050448, 127.04360438821072]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_04d9e7f4fb3c227db6d03d21dcab7340 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_507f6575dc18cec1c092f88937b0873a = $(`<div id="html_507f6575dc18cec1c092f88937b0873a" style="width: 100.0%; height: 100.0%;">{'도로명': '월계로37길', '구간명': '번동204 ~ 번동256', '구간 거리': '66m', '평균 속도': '8.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_04d9e7f4fb3c227db6d03d21dcab7340.setContent(html_507f6575dc18cec1c092f88937b0873a);
+            
+        
+
+        poly_line_ceae829a7e2764c8c99a9a4fc679d56a.bindPopup(popup_04d9e7f4fb3c227db6d03d21dcab7340)
+        ;
+
+        
+    
+    
+            poly_line_ceae829a7e2764c8c99a9a4fc679d56a.bindTooltip(
+                `<div>
+                     {'도로명': '월계로37길', '구간명': '번동204 ~ 번동256', '구간 거리': '66m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_104a9a8147c294f9dbb4c2775e1bf209 = L.polyline(
+                [[37.62662124365876, 127.04751116979894], [37.62683995544716, 127.04732737722816], [37.62700588480376, 127.04715395517321], [37.62714000523946, 127.04700825961037], [37.6272550342901, 127.04686533034868], [37.627351759057134, 127.04670334870235], [37.6274472079137, 127.04651366828689], [37.62821504065392, 127.04497427381992], [37.628355584965384, 127.04471022371357], [37.628465456468376, 127.0445296378401], [37.62859457360584, 127.04434680738274], [37.62875835194812, 127.04413362298386]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_0fbc0e337dd8777adf7642d474d88f14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d761d77766058548acd7677a04c6c654 = $(`<div id="html_d761d77766058548acd7677a04c6c654" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로', '구간명': '번동주공3단지 ~ 번3동주민센터앞교차로', '구간 거리': '385m', '평균 속도': '36.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_0fbc0e337dd8777adf7642d474d88f14.setContent(html_d761d77766058548acd7677a04c6c654);
+            
+        
+
+        poly_line_104a9a8147c294f9dbb4c2775e1bf209.bindPopup(popup_0fbc0e337dd8777adf7642d474d88f14)
+        ;
+
+        
+    
+    
+            poly_line_104a9a8147c294f9dbb4c2775e1bf209.bindTooltip(
+                `<div>
+                     {'도로명': '한천로', '구간명': '번동주공3단지 ~ 번3동주민센터앞교차로', '구간 거리': '385m', '평균 속도': '36.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2b6249886d0a998ee6e36beef23a0390 = L.polyline(
+                [[37.62868058796472, 127.04403917719257], [37.628515233196254, 127.04425441334912], [37.628381984776276, 127.04444309355611], [37.628267633617405, 127.04463104351431], [37.628124295326906, 127.04490034246663], [37.627355725950935, 127.04644121483226], [37.627262701867004, 127.04662607533474], [37.62717336208806, 127.0467756922542], [37.62706658124724, 127.04690837127666], [37.62693597900769, 127.04705024583795], [37.62677518216657, 127.04721830280239], [37.62656116446801, 127.04739815293438]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_38f83dc7fae0265bc033334cb156a73c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b5175fa2361501b553efbdfe4826798 = $(`<div id="html_5b5175fa2361501b553efbdfe4826798" style="width: 100.0%; height: 100.0%;">{'도로명': '한천로', '구간명': '번3동주민센터앞교차로 ~ 번동주공3단지', '구간 거리': '382m', '평균 속도': '45.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_38f83dc7fae0265bc033334cb156a73c.setContent(html_5b5175fa2361501b553efbdfe4826798);
+            
+        
+
+        poly_line_2b6249886d0a998ee6e36beef23a0390.bindPopup(popup_38f83dc7fae0265bc033334cb156a73c)
+        ;
+
+        
+    
+    
+            poly_line_2b6249886d0a998ee6e36beef23a0390.bindTooltip(
+                `<div>
+                     {'도로명': '한천로', '구간명': '번3동주민센터앞교차로 ~ 번동주공3단지', '구간 거리': '382m', '평균 속도': '45.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_16ec2b60ba9dbf30901605734ceb7167 = L.polyline(
+                [[37.63115470290264, 127.04470368605868], [37.63080183730931, 127.04492147953613], [37.630466392160606, 127.04521143738849], [37.63007226215844, 127.04553692425992], [37.62993503507897, 127.04571085380819], [37.629225338286375, 127.04669755403421], [37.62910452906018, 127.046787466343], [37.62893565213265, 127.04690234443713], [37.62860925160218, 127.04708384490463], [37.6285724831729, 127.0470930668282], [37.62855052762161, 127.0470870840358], [37.62852722220957, 127.04706575040426], [37.62830468948281, 127.04668447489753]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_a8b6142b721b75b7bf87b37c4ab6c99c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79111f22a7a2675e3bb82c856ce866d6 = $(`<div id="html_79111f22a7a2675e3bb82c856ce866d6" style="width: 100.0%; height: 100.0%;">{'도로명': '덕릉로60길', '구간명': '한성빌라 ~ 월계흥화브라운빌', '구간 거리': '408m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a8b6142b721b75b7bf87b37c4ab6c99c.setContent(html_79111f22a7a2675e3bb82c856ce866d6);
+            
+        
+
+        poly_line_16ec2b60ba9dbf30901605734ceb7167.bindPopup(popup_a8b6142b721b75b7bf87b37c4ab6c99c)
+        ;
+
+        
+    
+    
+            poly_line_16ec2b60ba9dbf30901605734ceb7167.bindTooltip(
+                `<div>
+                     {'도로명': '덕릉로60길', '구간명': '한성빌라 ~ 월계흥화브라운빌', '구간 거리': '408m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7b546dc1f88a2b281261a3b08978df2c = L.polyline(
+                [[37.6314700540319, 127.0416743559639], [37.63136338372312, 127.04184457562272], [37.63064425772426, 127.04310710811622], [37.63054086092111, 127.0432563019175], [37.6303937812752, 127.04344994747076], [37.63021563530528, 127.04366307752082], [37.63008252738854, 127.04380360170208], [37.62969106847877, 127.04421247995641], [37.629548877726776, 127.04437517809761], [37.62926987335426, 127.04460341555998], [37.62914851736581, 127.04474234827701], [37.62904322876512, 127.0449444952218], [37.62883154176483, 127.04544386983105], [37.62848265090634, 127.04609220717695], [37.62821401601062, 127.04669130695878]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_9c0b85b2fe3a4b21194a7cd0e5471d5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a75a296f30049fe718a78998f977c142 = $(`<div id="html_a75a296f30049fe718a78998f977c142" style="width: 100.0%; height: 100.0%;">{'도로명': '우이천로', '구간명': '한성빌라 ~ 초안교', '구간 거리': '578m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_9c0b85b2fe3a4b21194a7cd0e5471d5a.setContent(html_a75a296f30049fe718a78998f977c142);
+            
+        
+
+        poly_line_7b546dc1f88a2b281261a3b08978df2c.bindPopup(popup_9c0b85b2fe3a4b21194a7cd0e5471d5a)
+        ;
+
+        
+    
+    
+            poly_line_7b546dc1f88a2b281261a3b08978df2c.bindTooltip(
+                `<div>
+                     {'도로명': '우이천로', '구간명': '한성빌라 ~ 초안교', '구간 거리': '578m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ba1f21fde5d77a459179ff8eb53922b7 = L.polyline(
+                [[37.62830819671377, 127.0467580696044], [37.6285746685894, 127.04616379727263], [37.62892427753625, 127.04551412427423], [37.629136348094754, 127.04501384546124], [37.62923145004106, 127.0448312543238], [37.62933618293381, 127.04471135263569], [37.62961517489378, 127.04448312669557], [37.629762032204596, 127.04431508768896], [37.63015183210421, 127.04390794415828], [37.63028772978845, 127.04376447394779], [37.63047018365373, 127.04354619075583], [37.6306207537617, 127.0433479511581], [37.63072915649947, 127.04319153361777], [37.63144984126689, 127.04192626659393], [37.63155497734786, 127.04175849416443]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b0dd4a34f426b6cc2317a54e731b73d4);
+        
+    
+        var popup_59d3311694d0edcd83664a2e65aef402 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed55568ac57080818b5cbf4aa1f86d04 = $(`<div id="html_ed55568ac57080818b5cbf4aa1f86d04" style="width: 100.0%; height: 100.0%;">{'도로명': '우이천로', '구간명': '초안교 ~ 한성빌라', '구간 거리': '576m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_59d3311694d0edcd83664a2e65aef402.setContent(html_ed55568ac57080818b5cbf4aa1f86d04);
+            
+        
+
+        poly_line_ba1f21fde5d77a459179ff8eb53922b7.bindPopup(popup_59d3311694d0edcd83664a2e65aef402)
+        ;
+
+        
+    
+    
+            poly_line_ba1f21fde5d77a459179ff8eb53922b7.bindTooltip(
+                `<div>
+                     {'도로명': '우이천로', '구간명': '초안교 ~ 한성빌라', '구간 거리': '576m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

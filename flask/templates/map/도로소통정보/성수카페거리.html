@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_905117f40535c7f399fb1cf053eb8050 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_905117f40535c7f399fb1cf053eb8050" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_905117f40535c7f399fb1cf053eb8050 = L.map(
+                "map_905117f40535c7f399fb1cf053eb8050",
+                {
+                    center: [37.54451744937703, 127.0564596000463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f5bd2414cfa900d33258631155f58c87 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+            var poly_line_adae02240720241e867a3b060a606a12 = L.polyline(
+                [[37.54055600528363, 127.04810727720354], [37.53997908960851, 127.05042048839378]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_7b7d785c51d052a2ec9b221b5e1bbdfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_153c4d551c4a90d20090a8ad57793142 = $(`<div id="html_153c4d551c4a90d20090a8ad57793142" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '성수여중 ~ 두산식품동부영업소', '구간 거리': '214m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_7b7d785c51d052a2ec9b221b5e1bbdfa.setContent(html_153c4d551c4a90d20090a8ad57793142);
+            
+        
+
+        poly_line_adae02240720241e867a3b060a606a12.bindPopup(popup_7b7d785c51d052a2ec9b221b5e1bbdfa)
+        ;
+
+        
+    
+    
+            poly_line_adae02240720241e867a3b060a606a12.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '성수여중 ~ 두산식품동부영업소', '구간 거리': '214m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8f48a93040070f77e8d3dacffeec0978 = L.polyline(
+                [[37.5399791609073, 127.05042020782984], [37.53966203699757, 127.05167258058235]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_41d831c4d99dfeb9bba5167bdf0aa183 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b47f31a1c21c30a00eebbeb11f9d189 = $(`<div id="html_2b47f31a1c21c30a00eebbeb11f9d189" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '성원중학교 ~ 성수여중', '구간 거리': '116m', '평균 속도': '39.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_41d831c4d99dfeb9bba5167bdf0aa183.setContent(html_2b47f31a1c21c30a00eebbeb11f9d189);
+            
+        
+
+        poly_line_8f48a93040070f77e8d3dacffeec0978.bindPopup(popup_41d831c4d99dfeb9bba5167bdf0aa183)
+        ;
+
+        
+    
+    
+            poly_line_8f48a93040070f77e8d3dacffeec0978.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '성원중학교 ~ 성수여중', '구간 거리': '116m', '평균 속도': '39.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_71430e5d4a18eb5e134934f12bfb992d = L.polyline(
+                [[37.53966203970457, 127.05167257153228], [37.53922677090079, 127.05339060920473], [37.53915263530974, 127.05364796740525]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_57c3499d081e54fca11a06fc0319f7db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f78f68eb0c51ae3717b91b4cbfad21ad = $(`<div id="html_f78f68eb0c51ae3717b91b4cbfad21ad" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '성수메디칼 ~ 성원중학교', '구간 거리': '184m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_57c3499d081e54fca11a06fc0319f7db.setContent(html_f78f68eb0c51ae3717b91b4cbfad21ad);
+            
+        
+
+        poly_line_71430e5d4a18eb5e134934f12bfb992d.bindPopup(popup_57c3499d081e54fca11a06fc0319f7db)
+        ;
+
+        
+    
+    
+            poly_line_71430e5d4a18eb5e134934f12bfb992d.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '성수메디칼 ~ 성원중학교', '구간 거리': '184m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0285b27f2e3587e88439db7253cc6dcf = L.polyline(
+                [[37.540082267396954, 127.0504610735345], [37.54065918295845, 127.04814785833915]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_522b8582764942af29d729793bf83a47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae5f37d85bff43eec9d9fde7343d3f69 = $(`<div id="html_ae5f37d85bff43eec9d9fde7343d3f69" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '두산식품동부영업소 ~ 성수여중', '구간 거리': '214m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_522b8582764942af29d729793bf83a47.setContent(html_ae5f37d85bff43eec9d9fde7343d3f69);
+            
+        
+
+        poly_line_0285b27f2e3587e88439db7253cc6dcf.bindPopup(popup_522b8582764942af29d729793bf83a47)
+        ;
+
+        
+    
+    
+            poly_line_0285b27f2e3587e88439db7253cc6dcf.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '두산식품동부영업소 ~ 성수여중', '구간 거리': '214m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8af63d178819a106480b2b2671c0976d = L.polyline(
+                [[37.53976507265739, 127.05171372839993], [37.54008219699909, 127.05046135409937]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_95a480ad0b141bedce76eb27f8fa9d53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75b4087609ca717b012e6a730cb44e4f = $(`<div id="html_75b4087609ca717b012e6a730cb44e4f" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '성수여중 ~ 성원중학교', '구간 거리': '116m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_95a480ad0b141bedce76eb27f8fa9d53.setContent(html_75b4087609ca717b012e6a730cb44e4f);
+            
+        
+
+        poly_line_8af63d178819a106480b2b2671c0976d.bindPopup(popup_95a480ad0b141bedce76eb27f8fa9d53)
+        ;
+
+        
+    
+    
+            poly_line_8af63d178819a106480b2b2671c0976d.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '성수여중 ~ 성원중학교', '구간 거리': '116m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_04641555d9016aae9448521a44d79e91 = L.polyline(
+                [[37.53925430748735, 127.05369415633282], [37.539329161502735, 127.05343430340645], [37.539765070851395, 127.05171373745065]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_7272216c9733f406bda917d947347252 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c90893d9774e664b3986e1ff1dc43a39 = $(`<div id="html_c90893d9774e664b3986e1ff1dc43a39" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로', '구간명': '성원중학교 ~ 성수메디칼', '구간 거리': '184m', '평균 속도': '39.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_7272216c9733f406bda917d947347252.setContent(html_c90893d9774e664b3986e1ff1dc43a39);
+            
+        
+
+        poly_line_04641555d9016aae9448521a44d79e91.bindPopup(popup_7272216c9733f406bda917d947347252)
+        ;
+
+        
+    
+    
+            poly_line_04641555d9016aae9448521a44d79e91.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로', '구간명': '성원중학교 ~ 성수메디칼', '구간 거리': '184m', '평균 속도': '39.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7c742e384a94e205bad9321feff0c34e = L.polyline(
+                [[37.542205314715765, 127.0562026345961], [37.54106545447321, 127.05572392278577], [37.54003546084215, 127.05529729681592], [37.53887607083476, 127.05483237081309]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_86325974f7fc85b982000160fb693611 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edbd236b853273add7b7ce31a1117c39 = $(`<div id="html_edbd236b853273add7b7ce31a1117c39" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '뚝도시장앞교차로 ~ 광림물산', '구간 거리': '389m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_86325974f7fc85b982000160fb693611.setContent(html_edbd236b853273add7b7ce31a1117c39);
+            
+        
+
+        poly_line_7c742e384a94e205bad9321feff0c34e.bindPopup(popup_86325974f7fc85b982000160fb693611)
+        ;
+
+        
+    
+    
+            poly_line_7c742e384a94e205bad9321feff0c34e.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '뚝도시장앞교차로 ~ 광림물산', '구간 거리': '389m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b105ba98d89e3b8087cf476cdec930d9 = L.polyline(
+                [[37.544281730822334, 127.05705390447083], [37.544019349151824, 127.05695098822761], [37.542820016949115, 127.05645987811397], [37.54220525976607, 127.05620261079268]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_4b8db428aa8f01a399c5c8b05494934e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_373e90f83e187a6063588673c211f3d3 = $(`<div id="html_373e90f83e187a6063588673c211f3d3" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '광림물산 ~ 성수역앞교차로', '구간 거리': '242m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_4b8db428aa8f01a399c5c8b05494934e.setContent(html_373e90f83e187a6063588673c211f3d3);
+            
+        
+
+        poly_line_b105ba98d89e3b8087cf476cdec930d9.bindPopup(popup_4b8db428aa8f01a399c5c8b05494934e)
+        ;
+
+        
+    
+    
+            poly_line_b105ba98d89e3b8087cf476cdec930d9.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '광림물산 ~ 성수역앞교차로', '구간 거리': '242m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a6785d9b41b60af18ea885a3467c029e = L.polyline(
+                [[37.53884318186751, 127.05496171477608], [37.54000208221986, 127.05542644646445], [37.54103137635034, 127.05585278383019], [37.542171024383485, 127.05633140783274]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_f6fef466bec45e936f0a59b8a70fbc52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d58896ad0389a7bcd17bdd6b9f37d39 = $(`<div id="html_1d58896ad0389a7bcd17bdd6b9f37d39" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '광림물산 ~ 뚝도시장앞교차로', '구간 거리': '389m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f6fef466bec45e936f0a59b8a70fbc52.setContent(html_1d58896ad0389a7bcd17bdd6b9f37d39);
+            
+        
+
+        poly_line_a6785d9b41b60af18ea885a3467c029e.bindPopup(popup_f6fef466bec45e936f0a59b8a70fbc52)
+        ;
+
+        
+    
+    
+            poly_line_a6785d9b41b60af18ea885a3467c029e.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '광림물산 ~ 뚝도시장앞교차로', '구간 거리': '389m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8b48a0fb8c1afd809971278e1d1dfaed = L.polyline(
+                [[37.542171079333094, 127.05633143163624], [37.54278616773978, 127.05658883819578], [37.543986473198906, 127.05708034920345], [37.54424949885034, 127.05718351755382]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_77455f6eae83872695b4b4121c1b68ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d015674b97a76710622bfbcfd764baec = $(`<div id="html_d015674b97a76710622bfbcfd764baec" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '성수역앞교차로 ~ 광림물산', '구간 거리': '243m', '평균 속도': '13.3km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_77455f6eae83872695b4b4121c1b68ef.setContent(html_d015674b97a76710622bfbcfd764baec);
+            
+        
+
+        poly_line_8b48a0fb8c1afd809971278e1d1dfaed.bindPopup(popup_77455f6eae83872695b4b4121c1b68ef)
+        ;
+
+        
+    
+    
+            poly_line_8b48a0fb8c1afd809971278e1d1dfaed.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '성수역앞교차로 ~ 광림물산', '구간 거리': '243m', '평균 속도': '13.3km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_41927dfa1208e3e303a9045f5aae7524 = L.polyline(
+                [[37.54421505428901, 127.05709468047354], [37.543436609221764, 127.05967800697873], [37.54213446885954, 127.06397289425503]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_4a718913d97a1226a5f2c586e49a551c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85046ef477fb112a65a76214c7ab802c = $(`<div id="html_85046ef477fb112a65a76214c7ab802c" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '성수사거리 ~ 성수역앞교차로', '구간 거리': '650m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_4a718913d97a1226a5f2c586e49a551c.setContent(html_85046ef477fb112a65a76214c7ab802c);
+            
+        
+
+        poly_line_41927dfa1208e3e303a9045f5aae7524.bindPopup(popup_4a718913d97a1226a5f2c586e49a551c)
+        ;
+
+        
+    
+    
+            poly_line_41927dfa1208e3e303a9045f5aae7524.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '성수사거리 ~ 성수역앞교차로', '구간 거리': '650m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_38d54a4cfaefe038b410767d9a05eb5d = L.polyline(
+                [[37.54223551139411, 127.06402121334365], [37.54353769140061, 127.05972619667573], [37.54431617541452, 127.05714274047997]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_a5dd149804bcc43b2a7f7a243e44abd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff55d62cad8ae332163d7c45fdd50a2c = $(`<div id="html_ff55d62cad8ae332163d7c45fdd50a2c" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '성수역앞교차로 ~ 성수사거리', '구간 거리': '650m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a5dd149804bcc43b2a7f7a243e44abd0.setContent(html_ff55d62cad8ae332163d7c45fdd50a2c);
+            
+        
+
+        poly_line_38d54a4cfaefe038b410767d9a05eb5d.bindPopup(popup_a5dd149804bcc43b2a7f7a243e44abd0)
+        ;
+
+        
+    
+    
+            poly_line_38d54a4cfaefe038b410767d9a05eb5d.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '성수역앞교차로 ~ 성수사거리', '구간 거리': '650m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_69e2f0c0313e7bf2f9cfdfd4215e97a7 = L.polyline(
+                [[37.54630578295888, 127.0502839867601], [37.5456878521803, 127.0500347235084], [37.54503799810333, 127.04979900735042], [37.54439154877871, 127.04959019035034], [37.54421304645671, 127.04952567030006]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_f1c3c592496478b18f1d5aa1695c4fed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bae46c64c5fa5b38e86672b1830853b = $(`<div id="html_6bae46c64c5fa5b38e86672b1830853b" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로', '구간명': '경동초교오거리 ~ 경동초등교입구교차로', '구간 거리': '242m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f1c3c592496478b18f1d5aa1695c4fed.setContent(html_6bae46c64c5fa5b38e86672b1830853b);
+            
+        
+
+        poly_line_69e2f0c0313e7bf2f9cfdfd4215e97a7.bindPopup(popup_f1c3c592496478b18f1d5aa1695c4fed)
+        ;
+
+        
+    
+    
+            poly_line_69e2f0c0313e7bf2f9cfdfd4215e97a7.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로', '구간명': '경동초교오거리 ~ 경동초등교입구교차로', '구간 거리': '242m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5034e9bd41f98f905d23bdc47dcad932 = L.polyline(
+                [[37.54418314335137, 127.04965616162083], [37.544363124818304, 127.04972121703777], [37.545009526167796, 127.04993001808391], [37.54565631345683, 127.05016462428031], [37.54627271973638, 127.05041327301618]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_25f8b2dba3941d43df6cee3191a4f5fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ef4e04607db8e92c380985a62e85a72 = $(`<div id="html_4ef4e04607db8e92c380985a62e85a72" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로', '구간명': '경동초등교입구교차로 ~ 경동초교오거리', '구간 거리': '241m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_25f8b2dba3941d43df6cee3191a4f5fb.setContent(html_4ef4e04607db8e92c380985a62e85a72);
+            
+        
+
+        poly_line_5034e9bd41f98f905d23bdc47dcad932.bindPopup(popup_25f8b2dba3941d43df6cee3191a4f5fb)
+        ;
+
+        
+    
+    
+            poly_line_5034e9bd41f98f905d23bdc47dcad932.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로', '구간명': '경동초등교입구교차로 ~ 경동초교오거리', '구간 거리': '241m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1ddfff811d096e32fe8476eaabcbc9db = L.polyline(
+                [[37.54623863935912, 127.05032477297468], [37.54564465510018, 127.05231240490124], [37.54513467840928, 127.05402222658039]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_72407c6c706332b250cdd39b4e84174f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6a0caf2ac08825b104be01e8741451b = $(`<div id="html_e6a0caf2ac08825b104be01e8741451b" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '태화약국 ~ 경동초등교입구교차로', '구간 거리': '349m', '평균 속도': '21.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_72407c6c706332b250cdd39b4e84174f.setContent(html_e6a0caf2ac08825b104be01e8741451b);
+            
+        
+
+        poly_line_1ddfff811d096e32fe8476eaabcbc9db.bindPopup(popup_72407c6c706332b250cdd39b4e84174f)
+        ;
+
+        
+    
+    
+            poly_line_1ddfff811d096e32fe8476eaabcbc9db.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '태화약국 ~ 경동초등교입구교차로', '구간 거리': '349m', '평균 속도': '21.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_58ff8770ef1b4aba2ad97ddb777a557d = L.polyline(
+                [[37.54513476052596, 127.05402195166629], [37.54478522280578, 127.05517856459866]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_b5485b3ee6b978ee80941231a6c624dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36bbf04609b3d3ac992ddedd2e2feeca = $(`<div id="html_36bbf04609b3d3ac992ddedd2e2feeca" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '제일빌딩 ~ 태화약국', '구간 거리': '109m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b5485b3ee6b978ee80941231a6c624dd.setContent(html_36bbf04609b3d3ac992ddedd2e2feeca);
+            
+        
+
+        poly_line_58ff8770ef1b4aba2ad97ddb777a557d.bindPopup(popup_b5485b3ee6b978ee80941231a6c624dd)
+        ;
+
+        
+    
+    
+            poly_line_58ff8770ef1b4aba2ad97ddb777a557d.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '제일빌딩 ~ 태화약국', '구간 거리': '109m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9ab29259074317ced115d571f16d0916 = L.polyline(
+                [[37.54478512534565, 127.05517889041957], [37.54421497577519, 127.0570949429364]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_a216c52ba205803d4976a1c80ebe7a91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb10ba21015ef02f8778eb8c985019f4 = $(`<div id="html_fb10ba21015ef02f8778eb8c985019f4" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '성수역앞교차로 ~ 제일빌딩', '구간 거리': '181m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a216c52ba205803d4976a1c80ebe7a91.setContent(html_fb10ba21015ef02f8778eb8c985019f4);
+            
+        
+
+        poly_line_9ab29259074317ced115d571f16d0916.bindPopup(popup_a216c52ba205803d4976a1c80ebe7a91)
+        ;
+
+        
+    
+    
+            poly_line_9ab29259074317ced115d571f16d0916.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '성수역앞교차로 ~ 제일빌딩', '구간 거리': '181m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7145e79016823000cfe20fad0f59a291 = L.polyline(
+                [[37.54523592710541, 127.05406986104254], [37.54574589184571, 127.05236008036857], [37.54633986426731, 127.05037248686308]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_756319383a17574c87fbf6e17998018e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a13d3046f7f8fa14645b17b97d3863a = $(`<div id="html_6a13d3046f7f8fa14645b17b97d3863a" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '경동초등교입구교차로 ~ 태화약국', '구간 거리': '349m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_756319383a17574c87fbf6e17998018e.setContent(html_6a13d3046f7f8fa14645b17b97d3863a);
+            
+        
+
+        poly_line_7145e79016823000cfe20fad0f59a291.bindPopup(popup_756319383a17574c87fbf6e17998018e)
+        ;
+
+        
+    
+    
+            poly_line_7145e79016823000cfe20fad0f59a291.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '경동초등교입구교차로 ~ 태화약국', '구간 거리': '349m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a258505b72a7f528d37878063b2e140e = L.polyline(
+                [[37.54488630680142, 127.05522675022488], [37.545235844988625, 127.05407013595695]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_98752a6cab73b33d0a6f86f844d1672e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33783a18d1132505019ae7ad4bdc057c = $(`<div id="html_33783a18d1132505019ae7ad4bdc057c" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '태화약국 ~ 제일빌딩', '구간 거리': '109m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_98752a6cab73b33d0a6f86f844d1672e.setContent(html_33783a18d1132505019ae7ad4bdc057c);
+            
+        
+
+        poly_line_a258505b72a7f528d37878063b2e140e.bindPopup(popup_98752a6cab73b33d0a6f86f844d1672e)
+        ;
+
+        
+    
+    
+            poly_line_a258505b72a7f528d37878063b2e140e.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '태화약국 ~ 제일빌딩', '구간 거리': '109m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bc661f5cf2d93b14813a67a721904879 = L.polyline(
+                [[37.5443162539279, 127.05714247914841], [37.544886404261696, 127.05522642440349]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_7483a80ca00db7e03756a0d7c552c102 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00ef119b6459e615a2ed749b6e975e41 = $(`<div id="html_00ef119b6459e615a2ed749b6e975e41" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '제일빌딩 ~ 성수역앞교차로', '구간 거리': '181m', '평균 속도': '31.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_7483a80ca00db7e03756a0d7c552c102.setContent(html_00ef119b6459e615a2ed749b6e975e41);
+            
+        
+
+        poly_line_bc661f5cf2d93b14813a67a721904879.bindPopup(popup_7483a80ca00db7e03756a0d7c552c102)
+        ;
+
+        
+    
+    
+            poly_line_bc661f5cf2d93b14813a67a721904879.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '제일빌딩 ~ 성수역앞교차로', '구간 거리': '181m', '평균 속도': '31.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c9dcd5e39dfa4cb5c40545daf072c918 = L.polyline(
+                [[37.544875932977924, 127.0572150928142], [37.54445705541238, 127.05711716482725], [37.54428054622421, 127.05705345773167]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_fdea03c0ca158a6ac7ce4b7f8789fbed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aa9212c3e06a12cb9e7540ab634066c = $(`<div id="html_0aa9212c3e06a12cb9e7540ab634066c" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '성수역앞교차로 ~ 승림빌딩', '구간 거리': '68m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_fdea03c0ca158a6ac7ce4b7f8789fbed.setContent(html_0aa9212c3e06a12cb9e7540ab634066c);
+            
+        
+
+        poly_line_c9dcd5e39dfa4cb5c40545daf072c918.bindPopup(popup_fdea03c0ca158a6ac7ce4b7f8789fbed)
+        ;
+
+        
+    
+    
+            poly_line_c9dcd5e39dfa4cb5c40545daf072c918.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '성수역앞교차로 ~ 승림빌딩', '구간 거리': '68m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6b1596029f61899e13ee781bd6b7db3b = L.polyline(
+                [[37.54643421022374, 127.05761836288227], [37.54487695008439, 127.05721534366933]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_2b96df1ac3b8db988181656ea40feb2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5ba72bdec352746ec2a69d1359da76b = $(`<div id="html_d5ba72bdec352746ec2a69d1359da76b" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '승림빌딩 ~ 현대서비스앞', '구간 거리': '176m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_2b96df1ac3b8db988181656ea40feb2f.setContent(html_d5ba72bdec352746ec2a69d1359da76b);
+            
+        
+
+        poly_line_6b1596029f61899e13ee781bd6b7db3b.bindPopup(popup_2b96df1ac3b8db988181656ea40feb2f)
+        ;
+
+        
+    
+    
+            poly_line_6b1596029f61899e13ee781bd6b7db3b.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '승림빌딩 ~ 현대서비스앞', '구간 거리': '176m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2ba1257754f0c6d319c838a4220513bd = L.polyline(
+                [[37.54877939026431, 127.05824421815335], [37.5485776698954, 127.05817904454864], [37.54709089555725, 127.05778711793516], [37.546434136351245, 127.05761834358817]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_7910cdced5ff8c1c2bb9b41f3f7ac8f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acb1b6d8d82a89c6d517450fed27e498 = $(`<div id="html_acb1b6d8d82a89c6d517450fed27e498" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '현대서비스앞 ~ 치과의사회관앞교차로', '구간 거리': '266m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7910cdced5ff8c1c2bb9b41f3f7ac8f7.setContent(html_acb1b6d8d82a89c6d517450fed27e498);
+            
+        
+
+        poly_line_2ba1257754f0c6d319c838a4220513bd.bindPopup(popup_7910cdced5ff8c1c2bb9b41f3f7ac8f7)
+        ;
+
+        
+    
+    
+            poly_line_2ba1257754f0c6d319c838a4220513bd.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '현대서비스앞 ~ 치과의사회관앞교차로', '구간 거리': '266m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7d28f0814fbca6bf4bf96ae76d07ef60 = L.polyline(
+                [[37.544250682547585, 127.05718396316269], [37.54443217331971, 127.05724946901485], [37.54485614624954, 127.05734858863285]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_b034add795f8eac0fa582a76f0a291bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_261e8ff23bfdb0368cc164e48a482e0b = $(`<div id="html_261e8ff23bfdb0368cc164e48a482e0b" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '승림빌딩 ~ 성수역앞교차로', '구간 거리': '69m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b034add795f8eac0fa582a76f0a291bb.setContent(html_261e8ff23bfdb0368cc164e48a482e0b);
+            
+        
+
+        poly_line_7d28f0814fbca6bf4bf96ae76d07ef60.bindPopup(popup_b034add795f8eac0fa582a76f0a291bb)
+        ;
+
+        
+    
+    
+            poly_line_7d28f0814fbca6bf4bf96ae76d07ef60.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '승림빌딩 ~ 성수역앞교차로', '구간 거리': '69m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aed971300d808fa596285fd4516a0c2f = L.polyline(
+                [[37.544855129143365, 127.057348337776], [37.5464123888323, 127.05775135963671]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_63c6b2a25228491c61cbc87e3da04185 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed77151f4f5a2621679b6f04d4e57bbc = $(`<div id="html_ed77151f4f5a2621679b6f04d4e57bbc" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '현대서비스앞 ~ 승림빌딩', '구간 거리': '176m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_63c6b2a25228491c61cbc87e3da04185.setContent(html_ed77151f4f5a2621679b6f04d4e57bbc);
+            
+        
+
+        poly_line_aed971300d808fa596285fd4516a0c2f.bindPopup(popup_63c6b2a25228491c61cbc87e3da04185)
+        ;
+
+        
+    
+    
+            poly_line_aed971300d808fa596285fd4516a0c2f.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '현대서비스앞 ~ 승림빌딩', '구간 거리': '176m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_821531526a69e473b53ddd22a4dfea15 = L.polyline(
+                [[37.54641246270481, 127.05775137893085], [37.54706895415943, 127.0579200851606], [37.548553084873454, 127.05831131855135], [37.54875245484046, 127.05837573246426]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_16d0480b14b84af9ae910f7fdf2fc51e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2564070556e478334076f2cc175f439 = $(`<div id="html_f2564070556e478334076f2cc175f439" style="width: 100.0%; height: 100.0%;">{'도로명': '성수이로', '구간명': '치과의사회관앞교차로 ~ 현대서비스앞', '구간 거리': '266m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_16d0480b14b84af9ae910f7fdf2fc51e.setContent(html_f2564070556e478334076f2cc175f439);
+            
+        
+
+        poly_line_821531526a69e473b53ddd22a4dfea15.bindPopup(popup_16d0480b14b84af9ae910f7fdf2fc51e)
+        ;
+
+        
+    
+    
+            poly_line_821531526a69e473b53ddd22a4dfea15.bindTooltip(
+                `<div>
+                     {'도로명': '성수이로', '구간명': '치과의사회관앞교차로 ~ 현대서비스앞', '구간 거리': '266m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ca22dec13150d3001af672aef9967e3b = L.polyline(
+                [[37.54674891688819, 127.04871900053065], [37.54623904356546, 127.05032346172864]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_c327da6c2db10bd22da1b6a89a14012a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac857562a9d9548fdc905d74ec162b20 = $(`<div id="html_ac857562a9d9548fdc905d74ec162b20" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '경동초등교입구교차로 ~ 개풍빌딩', '구간 거리': '153m', '평균 속도': '8.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_c327da6c2db10bd22da1b6a89a14012a.setContent(html_ac857562a9d9548fdc905d74ec162b20);
+            
+        
+
+        poly_line_ca22dec13150d3001af672aef9967e3b.bindPopup(popup_c327da6c2db10bd22da1b6a89a14012a)
+        ;
+
+        
+    
+    
+            poly_line_ca22dec13150d3001af672aef9967e3b.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '경동초등교입구교차로 ~ 개풍빌딩', '구간 거리': '153m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5f3f6748057a7357a586518bbd9a1186 = L.polyline(
+                [[37.54633946006035, 127.05037379811064], [37.54684933405917, 127.04876933623642]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_57e9cd573ff6b367fcd57a371993bab4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d681926c52b6d3572b74cb72a3d5977 = $(`<div id="html_8d681926c52b6d3572b74cb72a3d5977" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '개풍빌딩 ~ 경동초등교입구교차로', '구간 거리': '153m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_57e9cd573ff6b367fcd57a371993bab4.setContent(html_8d681926c52b6d3572b74cb72a3d5977);
+            
+        
+
+        poly_line_5f3f6748057a7357a586518bbd9a1186.bindPopup(popup_57e9cd573ff6b367fcd57a371993bab4)
+        ;
+
+        
+    
+    
+            poly_line_5f3f6748057a7357a586518bbd9a1186.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '개풍빌딩 ~ 경동초등교입구교차로', '구간 거리': '153m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4cd7ce18cee0ca656d7cddeac6d8523b = L.polyline(
+                [[37.55087329764304, 127.05209314609436], [37.548885950242074, 127.05130893010102], [37.547604708343954, 127.05080509659737], [37.546305700982, 127.05028395388874]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_ecd2e17847878c3577cc040193c517b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_027dc35be17a956500ab7ab7d8c737f9 = $(`<div id="html_027dc35be17a956500ab7ab7d8c737f9" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로', '구간명': '경동초등교입구교차로 ~ 상원삼거리', '구간 거리': '532m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_ecd2e17847878c3577cc040193c517b6.setContent(html_027dc35be17a956500ab7ab7d8c737f9);
+            
+        
+
+        poly_line_4cd7ce18cee0ca656d7cddeac6d8523b.bindPopup(popup_ecd2e17847878c3577cc040193c517b6)
+        ;
+
+        
+    
+    
+            poly_line_4cd7ce18cee0ca656d7cddeac6d8523b.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로', '구간명': '경동초등교입구교차로 ~ 상원삼거리', '구간 거리': '532m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e01743545d1b52ccb61ff0fbce333c89 = L.polyline(
+                [[37.54627280261424, 127.05041330588828], [37.54757210578833, 127.05093456963239], [37.54885359397079, 127.05143850262152], [37.550840890072365, 127.05222270244066]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_42febfd63d73a28ea7a57539b5714aef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1631e3a6a01118891506d2e869de4bb5 = $(`<div id="html_1631e3a6a01118891506d2e869de4bb5" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로', '구간명': '상원삼거리 ~ 경동초등교입구교차로', '구간 거리': '532m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_42febfd63d73a28ea7a57539b5714aef.setContent(html_1631e3a6a01118891506d2e869de4bb5);
+            
+        
+
+        poly_line_e01743545d1b52ccb61ff0fbce333c89.bindPopup(popup_42febfd63d73a28ea7a57539b5714aef)
+        ;
+
+        
+    
+    
+            poly_line_e01743545d1b52ccb61ff0fbce333c89.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로', '구간명': '상원삼거리 ~ 경동초등교입구교차로', '구간 거리': '532m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b300a4fca22b6485cc143f26893a3bb5 = L.polyline(
+                [[37.542137697246794, 127.05624270005102], [37.54155811330984, 127.05813969601809], [37.541142591477914, 127.05951724786104], [37.54034733450545, 127.06215014870894], [37.54014675737988, 127.06282808804485]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_416b6c40171cbe1c9163ef5ee46130f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a303c78e559c647798c6daec87c7b1b = $(`<div id="html_7a303c78e559c647798c6daec87c7b1b" style="width: 100.0%; height: 100.0%;">{'도로명': '연무장길', '구간명': '삼보약국 ~ 광림물산', '구간 거리': '623m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_416b6c40171cbe1c9163ef5ee46130f6.setContent(html_7a303c78e559c647798c6daec87c7b1b);
+            
+        
+
+        poly_line_b300a4fca22b6485cc143f26893a3bb5.bindPopup(popup_416b6c40171cbe1c9163ef5ee46130f6)
+        ;
+
+        
+    
+    
+            poly_line_b300a4fca22b6485cc143f26893a3bb5.bindTooltip(
+                `<div>
+                     {'도로명': '연무장길', '구간명': '삼보약국 ~ 광림물산', '구간 거리': '623m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_16abf223cfa6e1403e3f66a96f04125e = L.polyline(
+                [[37.54024810820622, 127.06287537941883], [37.540448556528744, 127.06219787368411], [37.54124369091188, 127.05956537703501], [37.54165913929711, 127.0581880679525], [37.54223864188259, 127.05629134130864]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_3820f23060a617fbb627c3b5f46dacd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef93f7fb33d9a2e60af92777266731fa = $(`<div id="html_ef93f7fb33d9a2e60af92777266731fa" style="width: 100.0%; height: 100.0%;">{'도로명': '연무장길', '구간명': '광림물산 ~ 삼보약국', '구간 거리': '622m', '평균 속도': '14.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_3820f23060a617fbb627c3b5f46dacd4.setContent(html_ef93f7fb33d9a2e60af92777266731fa);
+            
+        
+
+        poly_line_16abf223cfa6e1403e3f66a96f04125e.bindPopup(popup_3820f23060a617fbb627c3b5f46dacd4)
+        ;
+
+        
+    
+    
+            poly_line_16abf223cfa6e1403e3f66a96f04125e.bindTooltip(
+                `<div>
+                     {'도로명': '연무장길', '구간명': '광림물산 ~ 삼보약국', '구간 거리': '622m', '평균 속도': '14.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_92f8056db8bb03b2c85875d9fa6858f6 = L.polyline(
+                [[37.540018609256805, 127.05050695709727], [37.54069319570321, 127.05070099885806], [37.54108565796196, 127.05084915040518], [37.541950299049915, 127.05113420750986], [37.54196966557489, 127.05115191672958]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_1df4ad7d0931b9a5645269c80a96529d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_315a1265330f920daf0dd06a993dcfad = $(`<div id="html_315a1265330f920daf0dd06a993dcfad" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로5길', '구간명': '성수동2가333-84 ~ 성수여중', '구간 거리': '224m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_1df4ad7d0931b9a5645269c80a96529d.setContent(html_315a1265330f920daf0dd06a993dcfad);
+            
+        
+
+        poly_line_92f8056db8bb03b2c85875d9fa6858f6.bindPopup(popup_1df4ad7d0931b9a5645269c80a96529d)
+        ;
+
+        
+    
+    
+            poly_line_92f8056db8bb03b2c85875d9fa6858f6.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로5길', '구간명': '성수동2가333-84 ~ 성수여중', '구간 거리': '224m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_577d297ba64a8d1d1f3763f78fdd127e = L.polyline(
+                [[37.54196966557489, 127.05115191672958], [37.54197359542334, 127.05116303556295], [37.54199871353515, 127.05330575669498], [37.5420086775092, 127.05358883193402], [37.54200745446778, 127.05359166554202], [37.54153987327962, 127.05393845955227], [37.5415239464283, 127.05393622463593], [37.54083077880532, 127.05301034270813], [37.539927872210455, 127.05185418290272], [37.539750694459116, 127.05164382142462]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_2c292caa37567a1d3603695086caa5d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f9d5c18a9d581a36e7872d442bc53d9 = $(`<div id="html_8f9d5c18a9d581a36e7872d442bc53d9" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로5길', '구간명': '성원중학교 ~ 성수동2가333-84', '구간 거리': '560m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_2c292caa37567a1d3603695086caa5d6.setContent(html_8f9d5c18a9d581a36e7872d442bc53d9);
+            
+        
+
+        poly_line_577d297ba64a8d1d1f3763f78fdd127e.bindPopup(popup_2c292caa37567a1d3603695086caa5d6)
+        ;
+
+        
+    
+    
+            poly_line_577d297ba64a8d1d1f3763f78fdd127e.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로5길', '구간명': '성원중학교 ~ 성수동2가333-84', '구간 거리': '560m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7771358e7a54df5cd478eeaada193f8c = L.polyline(
+                [[37.53967641608059, 127.05174248634951], [37.539852109585496, 127.05195108621187], [37.54075278925369, 127.05310439528931], [37.5414724185488, 127.05406562460334], [37.54156376053372, 127.05407843717401], [37.542088217094744, 127.05368945938338], [37.542118016569816, 127.05362046296098], [37.54210679834983, 127.05330175900117], [37.542081377764674, 127.05113330467792], [37.542056734967304, 127.05106356969505], [37.54204925782501, 127.05105673241184]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_a899508d38e18ead80d7183aa453d7d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e15e28eed99b2da8a0c42c52014c260b = $(`<div id="html_e15e28eed99b2da8a0c42c52014c260b" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로5길', '구간명': '성수동2가333-84 ~ 성원중학교', '구간 거리': '599m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a899508d38e18ead80d7183aa453d7d7.setContent(html_e15e28eed99b2da8a0c42c52014c260b);
+            
+        
+
+        poly_line_7771358e7a54df5cd478eeaada193f8c.bindPopup(popup_a899508d38e18ead80d7183aa453d7d7)
+        ;
+
+        
+    
+    
+            poly_line_7771358e7a54df5cd478eeaada193f8c.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로5길', '구간명': '성수동2가333-84 ~ 성원중학교', '구간 거리': '599m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1228d75cfb77810bbd5d7f612b7a0845 = L.polyline(
+                [[37.54204925782501, 127.05105673241184], [37.54199746450764, 127.0510093731079], [37.54111495522541, 127.05071842692969], [37.54072085865462, 127.05056965936386], [37.5400427486166, 127.05037460478214]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_8d2da9415193bc58eee84cb58e46defa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_372d13b8606766b0dd37d400c57aee39 = $(`<div id="html_372d13b8606766b0dd37d400c57aee39" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로5길', '구간명': '성수여중 ~ 성수동2가333-84', '구간 거리': '231m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_8d2da9415193bc58eee84cb58e46defa.setContent(html_372d13b8606766b0dd37d400c57aee39);
+            
+        
+
+        poly_line_1228d75cfb77810bbd5d7f612b7a0845.bindPopup(popup_8d2da9415193bc58eee84cb58e46defa)
+        ;
+
+        
+    
+    
+            poly_line_1228d75cfb77810bbd5d7f612b7a0845.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로5길', '구간명': '성수여중 ~ 성수동2가333-84', '구간 거리': '231m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0b5e8666758ba831fc653d61ddd85c87 = L.polyline(
+                [[37.54414763657901, 127.04956654886132], [37.54341759689242, 127.05195088748212], [37.54276014463927, 127.054123819552], [37.542638247417905, 127.05451577376621], [37.542137370562344, 127.05624379739191]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_c5137e98d7b29bf8fee1cf6310b288dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_228f6cb58b8d7e7dbe83e6a0821a779d = $(`<div id="html_228f6cb58b8d7e7dbe83e6a0821a779d" style="width: 100.0%; height: 100.0%;">{'도로명': '연무장길', '구간명': '광림물산 ~ 경동초교오거리', '구간 거리': '631m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c5137e98d7b29bf8fee1cf6310b288dc.setContent(html_228f6cb58b8d7e7dbe83e6a0821a779d);
+            
+        
+
+        poly_line_0b5e8666758ba831fc653d61ddd85c87.bindPopup(popup_c5137e98d7b29bf8fee1cf6310b288dc)
+        ;
+
+        
+    
+    
+            poly_line_0b5e8666758ba831fc653d61ddd85c87.bindTooltip(
+                `<div>
+                     {'도로명': '연무장길', '구간명': '광림물산 ~ 경동초교오거리', '구간 거리': '631m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8a3c2de21a16cfa8b1ab9becf2e99e64 = L.polyline(
+                [[37.54223896856701, 127.05629024509801], [37.54273941563262, 127.05456370370837], [37.54286103689813, 127.05417263710464], [37.543518589296106, 127.05199937106124], [37.544248553259706, 127.04961528311854]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_0e59346ac5d5f0faf0079c17cb998710 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0344858381bcedad1291222890c14b1 = $(`<div id="html_f0344858381bcedad1291222890c14b1" style="width: 100.0%; height: 100.0%;">{'도로명': '연무장길', '구간명': '경동초교오거리 ~ 광림물산', '구간 거리': '631m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_0e59346ac5d5f0faf0079c17cb998710.setContent(html_f0344858381bcedad1291222890c14b1);
+            
+        
+
+        poly_line_8a3c2de21a16cfa8b1ab9becf2e99e64.bindPopup(popup_0e59346ac5d5f0faf0079c17cb998710)
+        ;
+
+        
+    
+    
+            poly_line_8a3c2de21a16cfa8b1ab9becf2e99e64.bindTooltip(
+                `<div>
+                     {'도로명': '연무장길', '구간명': '경동초교오거리 ~ 광림물산', '구간 거리': '631m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_278322ae791d2877f76618d21bd8fe55 = L.polyline(
+                [[37.545350108362555, 127.05545435000528], [37.544815377578544, 127.05725815040195]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_ec5857ecfc012176c8070f391096a563 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_373248bc4e0a208e1ed03b56f3e0d0f8 = $(`<div id="html_373248bc4e0a208e1ed03b56f3e0d0f8" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로8길', '구간명': '승림빌딩 ~ 남영빌딩', '구간 거리': '170m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_ec5857ecfc012176c8070f391096a563.setContent(html_373248bc4e0a208e1ed03b56f3e0d0f8);
+            
+        
+
+        poly_line_278322ae791d2877f76618d21bd8fe55.bindPopup(popup_ec5857ecfc012176c8070f391096a563)
+        ;
+
+        
+    
+    
+            poly_line_278322ae791d2877f76618d21bd8fe55.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로8길', '구간명': '승림빌딩 ~ 남영빌딩', '구간 거리': '170m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_623a263c932673d2668529dd312241ee = L.polyline(
+                [[37.5449167016815, 127.05730553109488], [37.54545143318225, 127.05550172746553]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_947f858f974c1c88870fcc12a5e3d44a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d3c42b30aa0076895ad185eced2191e = $(`<div id="html_8d3c42b30aa0076895ad185eced2191e" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로8길', '구간명': '남영빌딩 ~ 승림빌딩', '구간 거리': '170m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_947f858f974c1c88870fcc12a5e3d44a.setContent(html_8d3c42b30aa0076895ad185eced2191e);
+            
+        
+
+        poly_line_623a263c932673d2668529dd312241ee.bindPopup(popup_947f858f974c1c88870fcc12a5e3d44a)
+        ;
+
+        
+    
+    
+            poly_line_623a263c932673d2668529dd312241ee.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로8길', '구간명': '남영빌딩 ~ 승림빌딩', '구간 거리': '170m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5bccd95543e09784160b140017de1522 = L.polyline(
+                [[37.54481620694379, 127.05526595277044], [37.54538121231621, 127.05554133393365]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_3a2d0ce990eaa581ecba8b996eba7c51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b832254ea13c6b9c0d9f6b8f263cdec2 = $(`<div id="html_b832254ea13c6b9c0d9f6b8f263cdec2" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로.성수일로8길', '구간명': '남영빌딩 ~ 제일빌딩', '구간 거리': '67m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_3a2d0ce990eaa581ecba8b996eba7c51.setContent(html_b832254ea13c6b9c0d9f6b8f263cdec2);
+            
+        
+
+        poly_line_5bccd95543e09784160b140017de1522.bindPopup(popup_3a2d0ce990eaa581ecba8b996eba7c51)
+        ;
+
+        
+    
+    
+            poly_line_5bccd95543e09784160b140017de1522.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로.성수일로8길', '구간명': '남영빌딩 ~ 제일빌딩', '구간 거리': '67m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_49cea1be019b4877a4a7bccd9fdc2518 = L.polyline(
+                [[37.54542032919984, 127.05541474347193], [37.54485532353584, 127.05513936198798]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_98f6a488e6eea340d2b17aef1744c64d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a3c2e0898bb949127c0378b670c6382 = $(`<div id="html_0a3c2e0898bb949127c0378b670c6382" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로.성수일로8길', '구간명': '제일빌딩 ~ 남영빌딩', '구간 거리': '67m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_98f6a488e6eea340d2b17aef1744c64d.setContent(html_0a3c2e0898bb949127c0378b670c6382);
+            
+        
+
+        poly_line_49cea1be019b4877a4a7bccd9fdc2518.bindPopup(popup_98f6a488e6eea340d2b17aef1744c64d)
+        ;
+
+        
+    
+    
+            poly_line_49cea1be019b4877a4a7bccd9fdc2518.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로.성수일로8길', '구간명': '제일빌딩 ~ 남영빌딩', '구간 거리': '67m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2121a2fc763fd1e519efc5c354931a48 = L.polyline(
+                [[37.54516631752686, 127.05410961402401], [37.54572799323262, 127.05437420697218]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_b51544eed3a293a211d2f70586f6cfa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1423d1644820fe579b78861b5c027118 = $(`<div id="html_1423d1644820fe579b78861b5c027118" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로7길', '구간명': '성수미술관 ~ 태화약국', '구간 거리': '67m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_b51544eed3a293a211d2f70586f6cfa2.setContent(html_1423d1644820fe579b78861b5c027118);
+            
+        
+
+        poly_line_2121a2fc763fd1e519efc5c354931a48.bindPopup(popup_b51544eed3a293a211d2f70586f6cfa2)
+        ;
+
+        
+    
+    
+            poly_line_2121a2fc763fd1e519efc5c354931a48.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로7길', '구간명': '성수미술관 ~ 태화약국', '구간 거리': '67m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_725dc3d3bc3079454c9ca9b3accf1b40 = L.polyline(
+                [[37.54576596394593, 127.05424706679517], [37.545204287958775, 127.05398247353445]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_3cdd32286841103b8bf1ddacae2af30c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61985ffc87f9233e2ca5cfc97559814b = $(`<div id="html_61985ffc87f9233e2ca5cfc97559814b" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로7길', '구간명': '태화약국 ~ 성수미술관', '구간 거리': '67m', '평균 속도': '5.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_3cdd32286841103b8bf1ddacae2af30c.setContent(html_61985ffc87f9233e2ca5cfc97559814b);
+            
+        
+
+        poly_line_725dc3d3bc3079454c9ca9b3accf1b40.bindPopup(popup_3cdd32286841103b8bf1ddacae2af30c)
+        ;
+
+        
+    
+    
+            poly_line_725dc3d3bc3079454c9ca9b3accf1b40.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로7길', '구간명': '태화약국 ~ 성수미술관', '구간 거리': '67m', '평균 속도': '5.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8ebda1b96786d3e6a37f124a8b4db606 = L.polyline(
+                [[37.545696318218866, 127.05428693981456], [37.54535011106979, 127.05545434095464]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_3a0ea256ebc8547f38358750e4fde5a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc11ccaefb6c9a9cf3d6e58778e0dafb = $(`<div id="html_dc11ccaefb6c9a9cf3d6e58778e0dafb" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로8길', '구간명': '남영빌딩 ~ 성수미술관', '구간 거리': '110m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3a0ea256ebc8547f38358750e4fde5a2.setContent(html_dc11ccaefb6c9a9cf3d6e58778e0dafb);
+            
+        
+
+        poly_line_8ebda1b96786d3e6a37f124a8b4db606.bindPopup(popup_3a0ea256ebc8547f38358750e4fde5a2)
+        ;
+
+        
+    
+    
+            poly_line_8ebda1b96786d3e6a37f124a8b4db606.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로8길', '구간명': '남영빌딩 ~ 성수미술관', '구간 거리': '110m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ec8a1957587781668d2bc5c4507f7738 = L.polyline(
+                [[37.545451430475026, 127.05550173651625], [37.5457976389888, 127.0543343340172]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_2518f43e560f45892857df53c65d34c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc3d2082efef92a193411cb3bd797e75 = $(`<div id="html_dc3d2082efef92a193411cb3bd797e75" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로8길', '구간명': '성수미술관 ~ 남영빌딩', '구간 거리': '110m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_2518f43e560f45892857df53c65d34c8.setContent(html_dc3d2082efef92a193411cb3bd797e75);
+            
+        
+
+        poly_line_ec8a1957587781668d2bc5c4507f7738.bindPopup(popup_2518f43e560f45892857df53c65d34c8)
+        ;
+
+        
+    
+    
+            poly_line_ec8a1957587781668d2bc5c4507f7738.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로8길', '구간명': '성수미술관 ~ 남영빌딩', '구간 거리': '110m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9923da56e9d9ff24f3aaae768595a37f = L.polyline(
+                [[37.545727875227335, 127.05437415143871], [37.547342710056604, 127.055140275255]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_edf4cbde113f622a1fadb8566188b0b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a953399f47a0bf710496b61b05481784 = $(`<div id="html_a953399f47a0bf710496b61b05481784" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로7길', '구간명': '성수쇼핑센타 ~ 성수미술관', '구간 거리': '192m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_edf4cbde113f622a1fadb8566188b0b2.setContent(html_a953399f47a0bf710496b61b05481784);
+            
+        
+
+        poly_line_9923da56e9d9ff24f3aaae768595a37f.bindPopup(popup_edf4cbde113f622a1fadb8566188b0b2)
+        ;
+
+        
+    
+    
+            poly_line_9923da56e9d9ff24f3aaae768595a37f.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로7길', '구간명': '성수쇼핑센타 ~ 성수미술관', '구간 거리': '192m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_980bbbfd3fbfa403e34e57f7e16da1df = L.polyline(
+                [[37.54738091759614, 127.05501324379749], [37.545766081951264, 127.05424712232846]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_d31efaa47ace76b57f6f3ce14b865c71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0827d5018048f282ea28cdf9f9e3d457 = $(`<div id="html_0827d5018048f282ea28cdf9f9e3d457" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로7길', '구간명': '성수미술관 ~ 성수쇼핑센타', '구간 거리': '192m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_d31efaa47ace76b57f6f3ce14b865c71.setContent(html_0827d5018048f282ea28cdf9f9e3d457);
+            
+        
+
+        poly_line_980bbbfd3fbfa403e34e57f7e16da1df.bindPopup(popup_d31efaa47ace76b57f6f3ce14b865c71)
+        ;
+
+        
+    
+    
+            poly_line_980bbbfd3fbfa403e34e57f7e16da1df.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로7길', '구간명': '성수미술관 ~ 성수쇼핑센타', '구간 거리': '192m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_39a79896a6d2130cd3faf0e38e0fb311 = L.polyline(
+                [[37.54731614834698, 127.05504042161546], [37.54670577676123, 127.0562503539341], [37.54663073347259, 127.05645424131289], [37.54637109301704, 127.0576672343379]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_992303c8db43a65cc785e3dd09cdae4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4df501ece0a618d23b36683c72137e75 = $(`<div id="html_4df501ece0a618d23b36683c72137e75" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로12길', '구간명': '현대서비스앞 ~ 성수쇼핑센타', '구간 거리': '257m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_992303c8db43a65cc785e3dd09cdae4f.setContent(html_4df501ece0a618d23b36683c72137e75);
+            
+        
+
+        poly_line_39a79896a6d2130cd3faf0e38e0fb311.bindPopup(popup_992303c8db43a65cc785e3dd09cdae4f)
+        ;
+
+        
+    
+    
+            poly_line_39a79896a6d2130cd3faf0e38e0fb311.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로12길', '구간명': '현대서비스앞 ~ 성수쇼핑센타', '구간 거리': '257m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_67e92cf6a12f6a6f34246cbc157a1e7e = L.polyline(
+                [[37.5464755060734, 127.05770248822508], [37.54673274937722, 127.05650069354729], [37.54680092544465, 127.05631546429653], [37.54740748022939, 127.0551130975145]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_fd5502ff148fe0d6ced9c6b48e7bc069 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77cd06977aee9a0cfe30704d42b899c7 = $(`<div id="html_77cd06977aee9a0cfe30704d42b899c7" style="width: 100.0%; height: 100.0%;">{'도로명': '성수일로12길', '구간명': '성수쇼핑센타 ~ 현대서비스앞', '구간 거리': '254m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fd5502ff148fe0d6ced9c6b48e7bc069.setContent(html_77cd06977aee9a0cfe30704d42b899c7);
+            
+        
+
+        poly_line_67e92cf6a12f6a6f34246cbc157a1e7e.bindPopup(popup_fd5502ff148fe0d6ced9c6b48e7bc069)
+        ;
+
+        
+    
+    
+            poly_line_67e92cf6a12f6a6f34246cbc157a1e7e.bindTooltip(
+                `<div>
+                     {'도로명': '성수일로12길', '구간명': '성수쇼핑센타 ~ 현대서비스앞', '구간 거리': '254m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_856c6bd99efc22a8a97aad740f6067e2 = L.polyline(
+                [[37.54283085456589, 127.05143170082107], [37.54218021859443, 127.05105145711964], [37.54201328240442, 127.05103660284772]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_cd35330f6e45b613553aa01e309ee05a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b820a54bb047f143f4f9384350e5dc36 = $(`<div id="html_b820a54bb047f143f4f9384350e5dc36" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로5길', '구간명': '성수동2가333-84 ~ 성수동2가334-13', '구간 거리': '98m', '평균 속도': '4.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_cd35330f6e45b613553aa01e309ee05a.setContent(html_b820a54bb047f143f4f9384350e5dc36);
+            
+        
+
+        poly_line_856c6bd99efc22a8a97aad740f6067e2.bindPopup(popup_cd35330f6e45b613553aa01e309ee05a)
+        ;
+
+        
+    
+    
+            poly_line_856c6bd99efc22a8a97aad740f6067e2.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로5길', '구간명': '성수동2가333-84 ~ 성수동2가334-13', '구간 거리': '98m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b9452e80afe80f685487cf32933591df = L.polyline(
+                [[37.542005640976065, 127.05117204633736], [37.54215268384537, 127.05118513117102], [37.54278523824004, 127.05155480841618]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_905117f40535c7f399fb1cf053eb8050);
+        
+    
+        var popup_134a2a2c6b4a9a0dc5d348adf24aa83e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3d472c73478d765cbb7325ceea13b3a = $(`<div id="html_a3d472c73478d765cbb7325ceea13b3a" style="width: 100.0%; height: 100.0%;">{'도로명': '뚝섬로5길', '구간명': '성수동2가334-13 ~ 성수동2가333-84', '구간 거리': '94m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_134a2a2c6b4a9a0dc5d348adf24aa83e.setContent(html_a3d472c73478d765cbb7325ceea13b3a);
+            
+        
+
+        poly_line_b9452e80afe80f685487cf32933591df.bindPopup(popup_134a2a2c6b4a9a0dc5d348adf24aa83e)
+        ;
+
+        
+    
+    
+            poly_line_b9452e80afe80f685487cf32933591df.bindTooltip(
+                `<div>
+                     {'도로명': '뚝섬로5길', '구간명': '성수동2가334-13 ~ 성수동2가333-84', '구간 거리': '94m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

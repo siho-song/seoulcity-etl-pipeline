@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e4a69a1367b94c3e519d969ee1a71907 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e4a69a1367b94c3e519d969ee1a71907" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e4a69a1367b94c3e519d969ee1a71907 = L.map(
+                "map_e4a69a1367b94c3e519d969ee1a71907",
+                {
+                    center: [37.541, 126.986],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cbbd15b6d78179a60cdddbf75cfb1946 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            var poly_line_0b6900759e52b36004bda278e0077980 = L.polyline(
+                [[37.56948563076525, 127.00205145283637], [37.569513196311995, 127.00245097406732], [37.56953210685013, 127.00663192270471]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_0b6900759e52b36004bda278e0077980.bindTooltip(
+                `<div>
+                     {'도로명': '청계천로', '구간명': '버들다리남측 ~ 청계5가교차로', '구간 거리': '405m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2384e6568433e909955e1f478e980b2c = L.polyline(
+                [[37.56953210685013, 127.00663192270471], [37.5696558834258, 127.00937531057079], [37.569628927487194, 127.0097419938645]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_2384e6568433e909955e1f478e980b2c.bindTooltip(
+                `<div>
+                     {'도로명': '청계천로', '구간명': '청계6가사거리 ~ 버들다리남측', '구간 거리': '275m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4d6872b2d723465ae8558589e22ffb02 = L.polyline(
+                [[37.569628927487194, 127.0097419938645], [37.569642318213845, 127.01220289881854]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_4d6872b2d723465ae8558589e22ffb02.bindTooltip(
+                `<div>
+                     {'도로명': '청계천로', '구간명': '신평화시장 ~ 청계6가사거리', '구간 거리': '217m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3f5908da03aedb77287951e16d7def6f = L.polyline(
+                [[37.5695156582284, 127.00669661877569], [37.569799334645055, 127.00681045276157]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_3f5908da03aedb77287951e16d7def6f.bindTooltip(
+                `<div>
+                     {'도로명': '청계천로', '구간명': '버들다리북측 ~ 버들다리남측', '구간 거리': '33m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_52ad4e7d745724237cb6f41d1967c416 = L.polyline(
+                [[37.56983223107538, 127.00668105901859], [37.56954855543644, 127.00656722547336]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_52ad4e7d745724237cb6f41d1967c416.bindTooltip(
+                `<div>
+                     {'도로명': '청계천로', '구간명': '버들다리남측 ~ 버들다리북측', '구간 거리': '33m', '평균 속도': '31.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e19cf9b389648e8204baf77663fba36a = L.polyline(
+                [[37.56459548792384, 127.01005457374175], [37.56458112851453, 127.01012056106649], [37.56456928860084, 127.01014065358066], [37.56453270707809, 127.01016363352674], [37.56450111265417, 127.01016467055527], [37.564161356825636, 127.01015468095508], [37.56391475129021, 127.01016674934687], [37.56371516111004, 127.01018376122347], [37.56354259843628, 127.01021783716057], [37.563323958467585, 127.01026599253373], [37.56316759694175, 127.01030620156708], [37.563003299314154, 127.01032705020893], [37.562835627471806, 127.01032702706455], [37.56267257765914, 127.01031758762564], [37.56229237867038, 127.01026662176513], [37.56203452353686, 127.0103058485442]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_e19cf9b389648e8204baf77663fba36a.bindTooltip(
+                `<div>
+                     {'도로명': '청구로', '구간명': '산다빌딩 ~ 동대문역사문화공원역3번출구', '구간 거리': '292m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_498bb3c2bb2555eabce351d9bcf0ee1e = L.polyline(
+                [[37.56204752208159, 127.01044068338575], [37.56229315147268, 127.01040331723698], [37.562664345949784, 127.01045307599011], [37.5628331314661, 127.01046284815601], [37.563008740186405, 127.01046287271475], [37.56318391298707, 127.01044064502977], [37.56334413992046, 127.01039944190725], [37.56356033008621, 127.01035182646764], [37.563727238948296, 127.01031886719637], [37.56392051672016, 127.01030239357445], [37.564162134332356, 127.01029056942573], [37.56450342916261, 127.01029927857756], [37.56454755527682, 127.01031163110393], [37.56458298739496, 127.01033750038964], [37.564638768007306, 127.01041001698925], [37.56466979357213, 127.01050428369723]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_498bb3c2bb2555eabce351d9bcf0ee1e.bindTooltip(
+                `<div>
+                     {'도로명': '청구로', '구간명': '한양공고앞 ~ 산다빌딩', '구간 거리': '302m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_68c5f620a1d58a0306aec0df4749df91 = L.polyline(
+                [[37.565375138912586, 127.0161310878125], [37.56508870213038, 127.01609953942656], [37.564846179543515, 127.01607708514929], [37.56455909967519, 127.01603695181139], [37.564393687873846, 127.01600154544953], [37.564179476564746, 127.01594414799851], [37.56398525955159, 127.01586425369139], [37.5637956756506, 127.01578923230156], [37.56355586610214, 127.01564297303008], [37.56316230557137, 127.01540915686753]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_68c5f620a1d58a0306aec0df4749df91.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '신당빌딩 ~ 신당역사거리', '구간 거리': '257m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_667a9e4f8372d004672176c98be49d85 = L.polyline(
+                [[37.563116080978084, 127.01553193944362], [37.563509142156136, 127.01576546058794], [37.563755607568666, 127.01591577929166], [37.563952192657766, 127.0159935709934], [37.56415129631464, 127.0160754768434], [37.564373321615456, 127.01613496802703], [37.56454402747599, 127.01617150768972], [37.56483622305739, 127.01621235685803], [37.56508000699731, 127.01623492842803], [37.56536569592839, 127.0162663945386]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_667a9e4f8372d004672176c98be49d85.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '신당역사거리 ~ 신당빌딩', '구간 거리': '261m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8d58ca3c885c93ef8db5c62d0cfad07a = L.polyline(
+                [[37.56477576393329, 127.01047734750851], [37.564674579854774, 127.00986495487], [37.5643520251339, 127.00797940314361], [37.56431817587006, 127.00774541416865]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_8d58ca3c885c93ef8db5c62d0cfad07a.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '광희동2가328 ~ 한양공고앞', '구간 거리': '247m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1cc78aba8bc6bdbc34254770bf25f237 = L.polyline(
+                [[37.564936761855044, 127.01138441224214], [37.56485900735985, 127.01100780717134], [37.56477576393329, 127.01047734750851]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_1cc78aba8bc6bdbc34254770bf25f237.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '한양공고앞 ~ 한양공고앞', '구간 거리': '82m', '평균 속도': '30.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_58172a9c7a2f8a7781533fedfdc866ce = L.polyline(
+                [[37.56421179904785, 127.00776969979421], [37.564245957161255, 127.00800582204918], [37.56459548792384, 127.01005457374175]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_58172a9c7a2f8a7781533fedfdc866ce.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '동대문역사문화공원역3번출구 ~ 광희동2가257', '구간 거리': '206m', '평균 속도': '27.7km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a3afc40c0b2165fff552d2b509daf99f = L.polyline(
+                [[37.56459548792384, 127.01005457374175], [37.56466979357213, 127.01050428369723]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_a3afc40c0b2165fff552d2b509daf99f.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '한양공고앞 ~ 동대문역사문화공원역3번출구', '구간 거리': '41m', '평균 속도': '36.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_15b9a669ca04d4fcde82a9c5074f2d7c = L.polyline(
+                [[37.56466979357213, 127.01050428369723], [37.56475354743789, 127.0110380183582], [37.56483210515069, 127.01141851217635]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_15b9a669ca04d4fcde82a9c5074f2d7c.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '한양공고앞 ~ 한양공고앞', '구간 거리': '83m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a96383667ad0b75b9cc5bfbc8f148757 = L.polyline(
+                [[37.56458399137043, 127.00244103206192], [37.56459757714382, 127.0027826292107], [37.564664420054015, 127.00382072110509], [37.56471432374917, 127.004409069373], [37.56471896160482, 127.00458702511438], [37.56471194568566, 127.00485397483942], [37.56469577449097, 127.00500772522042], [37.56465032988029, 127.00532042693958], [37.56448465303627, 127.00633923084608], [37.56444064293261, 127.0065706763448]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_a96383667ad0b75b9cc5bfbc8f148757.bindTooltip(
+                `<div>
+                     {'도로명': '마른내로', '구간명': '광희동1가203 ~ 오장동사거리', '구간 거리': '369m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ef2897dc99150fcb44f0c88861d99c21 = L.polyline(
+                [[37.56454580365354, 127.00660223422743], [37.56459022749297, 127.00636861186756], [37.564756488595776, 127.00534621972021], [37.56480261372583, 127.00502883052401], [37.564819830513365, 127.00486513873479], [37.564827139714964, 127.00458704419806], [37.56482225533899, 127.00439963815703], [37.56477207689861, 127.00380804734364], [37.56470547885981, 127.00277376273058], [37.56469197590963, 127.0024342533998]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_ef2897dc99150fcb44f0c88861d99c21.bindTooltip(
+                `<div>
+                     {'도로명': '마른내로', '구간명': '오장동사거리 ~ 광희동1가169-1', '구간 거리': '372m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cc5231f729696ea8636a13519386e038 = L.polyline(
+                [[37.565366219610944, 127.00975711418037], [37.565160120269034, 127.0104018007763], [37.56514142292023, 127.01046158635368]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_cc5231f729696ea8636a13519386e038.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '한양공고앞 ~ 동대문역사문화공원역앞교차로', '구간 거리': '67m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4831791dddd2bffa8f9b165747c2a6a0 = L.polyline(
+                [[37.56514142292023, 127.01046158635368], [37.56493391329597, 127.01112512367033], [37.564836074109245, 127.01137110756824]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_4831791dddd2bffa8f9b165747c2a6a0.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '한양공고앞 ~ 한양공고앞', '구간 거리': '87m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d251fb4a645a8b1d6c933e40103d8e26 = L.polyline(
+                [[37.56493279199009, 127.01143181804512], [37.56503278429419, 127.0111804215872], [37.565242055273835, 127.01051125268297], [37.5652606030398, 127.01045194467089], [37.56546655034424, 127.00980773385105]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_d251fb4a645a8b1d6c933e40103d8e26.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '동대문역사문화공원역앞교차로 ~ 한양공고앞', '구간 거리': '155m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bec051fff46e089bdbe1d829ab7522b6 = L.polyline(
+                [[37.56497457197079, 127.01235419835601], [37.56494984546627, 127.01169530924123], [37.56493843007176, 127.01139818857274]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_bec051fff46e089bdbe1d829ab7522b6.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '한양공고앞 ~ 성동여자실업고교앞', '구간 거리': '85m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7cab08a6795f6273abb13e2577a4c2af = L.polyline(
+                [[37.56510545538316, 127.01350417576484], [37.564991386690686, 127.01258144147766], [37.56497440110243, 127.01235113093927]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_7cab08a6795f6273abb13e2577a4c2af.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '성동여자실업고교앞 ~ 금성빌딩', '구간 거리': '103m', '평균 속도': '40.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_01b4d6f5d04ebeb4e487f54c3e591916 = L.polyline(
+                [[37.56536648606905, 127.01565345595984], [37.56510547698678, 127.01350435347382]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_01b4d6f5d04ebeb4e487f54c3e591916.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '금성빌딩 ~ 신당역', '구간 거리': '192m', '평균 속도': '37.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3aa2b4eed65e53ed2a7f09eb73160dab = L.polyline(
+                [[37.56542399281346, 127.01618967450133], [37.56536662106269, 127.01565463088325]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_3aa2b4eed65e53ed2a7f09eb73160dab.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '신당역 ~ 신당역사거리', '구간 거리': '48m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9b6a8cf18c6e0e3553d72398a913e322 = L.polyline(
+                [[37.564830436035194, 127.01140473699665], [37.564841848718046, 127.01170178140109], [37.56486657249192, 127.01236059486253]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_9b6a8cf18c6e0e3553d72398a913e322.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '성동여자실업고교앞 ~ 한양공고앞', '구간 거리': '85m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8e4aa2d24919dea39aabdec68232461c = L.polyline(
+                [[37.56486674245901, 127.01236366227474], [37.56488403661968, 127.01259814463265], [37.56499861647552, 127.01352501812337]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_8e4aa2d24919dea39aabdec68232461c.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '금성빌딩 ~ 성동여자실업고교앞', '구간 거리': '104m', '평균 속도': '35.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_10e572840d5eca064c7e99fad2786b06 = L.polyline(
+                [[37.564998594872016, 127.01352484041463], [37.565259603586824, 127.01567393990139]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_10e572840d5eca064c7e99fad2786b06.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '신당역 ~ 금성빌딩', '구간 거리': '192m', '평균 속도': '7.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_87d3b8caabee43af5f01157065adb165 = L.polyline(
+                [[37.56525946949432, 127.01567276497971], [37.56531684116411, 127.01620780784525]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_87d3b8caabee43af5f01157065adb165.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '신당역사거리 ~ 신당역', '구간 거리': '48m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_292ebd496696b4e78ceb646692ec4b79 = L.polyline(
+                [[37.56474980994208, 127.00729101811709], [37.56465686620292, 127.00725643486938], [37.56424134954584, 127.00711837135601]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_292ebd496696b4e78ceb646692ec4b79.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '광희동사거리 ~ 광희동2가9', '구간 거리': '58m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6c9b9b0132ac1717a1498103064f1766 = L.polyline(
+                [[37.56539185022468, 127.00752991387775], [37.56474980994208, 127.00729101811709]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_6c9b9b0132ac1717a1498103064f1766.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '광희동2가9 ~ 동대문역사문화공원', '구간 거리': '74m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e5575f0be273ab939e65837f4de37340 = L.polyline(
+                [[37.565589583569576, 127.00760273109367], [37.565391703365776, 127.00752985953255]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_e5575f0be273ab939e65837f4de37340.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동대문역사문화공원 ~ 동대문역사문화공원', '구간 거리': '23m', '평균 속도': '31.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_40f9bd4434b69f56929ee793c5b85a7f = L.polyline(
+                [[37.56602294237789, 127.0077623200616], [37.565589583569576, 127.00760273109367]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_40f9bd4434b69f56929ee793c5b85a7f.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동대문역사문화공원 ~ 동대문역사문화공원앞교차로', '구간 거리': '50m', '평균 속도': '33.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5e1c4ff1051fa3777037f70e37c03178 = L.polyline(
+                [[37.56421370349437, 127.00724967991766], [37.5646276838331, 127.00738723348309], [37.56471910398543, 127.00742124965987]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_5e1c4ff1051fa3777037f70e37c03178.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '광희동2가9 ~ 광희동사거리', '구간 거리': '58m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e81b8ac826d7256fb86e934f0cc09448 = L.polyline(
+                [[37.56471910398543, 127.00742124965987], [37.56536114310679, 127.00766014644006]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_e81b8ac826d7256fb86e934f0cc09448.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동대문역사문화공원 ~ 광희동2가9', '구간 거리': '74m', '평균 속도': '18.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4df67dcfc273e27d1de4164f3b840702 = L.polyline(
+                [[37.56536128906464, 127.00766020078541], [37.56555916918891, 127.00773307266158]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_4df67dcfc273e27d1de4164f3b840702.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동대문역사문화공원 ~ 동대문역사문화공원', '구간 거리': '23m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e1937d3d5497932a25e130934832ef32 = L.polyline(
+                [[37.56555916918891, 127.00773307266158], [37.56599252782317, 127.00789266231972]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_e1937d3d5497932a25e130934832ef32.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동대문역사문화공원앞교차로 ~ 동대문역사문화공원', '구간 거리': '50m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_82a115a5ad989eab5399184607643c5b = L.polyline(
+                [[37.565316944652956, 127.01620872356091], [37.56544755576336, 127.0173129462764], [37.56553559931121, 127.01808222819163], [37.56558786979098, 127.01856348520815], [37.56561139323761, 127.01881806721893], [37.56562313637558, 127.01912918529877], [37.56563089526067, 127.01969657311604]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_82a115a5ad989eab5399184607643c5b.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '신당중앙시장 ~ 신당역사거리', '구간 거리': '310m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3cf2595f71321acb7584ba2617c4fc03 = L.polyline(
+                [[37.5657389989597, 127.01969424045834], [37.56573121156413, 127.01912480083101], [37.56571921719974, 127.01880700635813], [37.56569514325549, 127.01854647124527], [37.565642672966774, 127.0180633809758], [37.56555453841423, 127.01729329998071], [37.56542389022548, 127.0161887587845]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_3cf2595f71321acb7584ba2617c4fc03.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '신당역사거리 ~ 신당중앙시장', '구간 거리': '312m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a69271c5cc5532e4834b3a4e0e915cd4 = L.polyline(
+                [[37.56595594490337, 127.00780802232644], [37.56588966061626, 127.0080862909446], [37.565793381589465, 127.00841421173398]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_a69271c5cc5532e4834b3a4e0e915cd4.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '동대문역사문화공원 ~ 동대문역사문화공원앞교차로', '구간 거리': '57m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c0780fef0b70e4972e60e8d6985c70fa = L.polyline(
+                [[37.565793381589465, 127.00841421173398], [37.56577796179221, 127.00846672968889], [37.56536620609268, 127.00975715492645]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_c0780fef0b70e4972e60e8d6985c70fa.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '동대문역사문화공원역앞교차로 ~ 동대문역사문화공원', '구간 거리': '128m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2efdaacc7c559d39509ac6fbd431c62d = L.polyline(
+                [[37.56546656296158, 127.00980769310483], [37.56587887975301, 127.00851550978297], [37.56589482047466, 127.00846121588818], [37.565992273002, 127.00812930491911], [37.56605952623103, 127.00784696010844]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_2efdaacc7c559d39509ac6fbd431c62d.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '동대문역사문화공원앞교차로 ~ 동대문역사문화공원역앞교차로', '구간 거리': '185m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f64d7a15414f71948d33b89a3b2fb3e7 = L.polyline(
+                [[37.567073336430425, 127.01252857830971], [37.5669451006742, 127.01247485348021], [37.566817477406026, 127.01239695256538], [37.566698331477006, 127.01230251167075], [37.56659075719195, 127.01219711728456], [37.56648644907641, 127.01206378389561], [37.56640839937047, 127.01191324227244], [37.5663307203448, 127.01173893002728], [37.56626986982011, 127.01155586212434], [37.56621201076369, 127.01133067258063], [37.56607115319116, 127.01062728873823], [37.566023720613465, 127.01042112682782], [37.56595670553879, 127.01025525448419], [37.565873084300385, 127.0101066121111], [37.5657739315167, 127.0099898103265], [37.56544556846263, 127.00972525744427]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_f64d7a15414f71948d33b89a3b2fb3e7.bindTooltip(
+                `<div>
+                     {'도로명': '을지로45길', '구간명': '동대문역사문화공원역앞교차로 ~ 디자이너클럽앞', '구간 거리': '324m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_920feb5056cf272f3e15f25bdf48056d = L.polyline(
+                [[37.56785599999393, 127.01247709831355], [37.56781401092518, 127.01252780701485], [37.56776080608902, 127.01255453291922], [37.567672025481606, 127.01258076041744], [37.56758185311561, 127.01258740884788], [37.56740316567707, 127.01258036430558], [37.56722337446846, 127.01255680501953], [37.56706450965913, 127.01252589081052]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_920feb5056cf272f3e15f25bdf48056d.bindTooltip(
+                `<div>
+                     {'도로명': '을지로45길', '구간명': '디자이너클럽앞 ~ 운동장평화시장', '구간 거리': '91m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_84f2641f16d2d005e2c13dbcdb3661be = L.polyline(
+                [[37.565387200569674, 127.0098395905084], [37.56570721261381, 127.01009741574296], [37.565791123792884, 127.01019626257674], [37.565863861679816, 127.01032555936231], [37.56592268840219, 127.01047116388759], [37.56596676149763, 127.01066272591963], [37.566108025915995, 127.011368142924], [37.566168362594865, 127.01160297405565], [37.566233343773774, 127.01179847062545], [37.56631582663067, 127.011983562539], [37.566401755696944, 127.01214930107531], [37.56651864355077, 127.0122987151525], [37.56663608533864, 127.01241377766962], [37.56676484399877, 127.0125158379895], [37.56690419919377, 127.01260090147038], [37.567039132596086, 127.01265743135801]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_84f2641f16d2d005e2c13dbcdb3661be.bindTooltip(
+                `<div>
+                     {'도로명': '을지로45길', '구간명': '디자이너클럽앞 ~ 동대문역사문화공원역앞교차로', '구간 거리': '327m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_11789cee20b0d924cb44c11ed7935655 = L.polyline(
+                [[37.567047959364395, 127.0126601188718], [37.567209482922074, 127.01269155109364], [37.5673958521818, 127.01271597207217], [37.56758332788781, 127.01272336479919], [37.56768768294843, 127.0127156707868], [37.56779343347836, 127.01268442965105], [37.56787373454611, 127.01264409252806], [37.56793092812252, 127.01257502210184]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_11789cee20b0d924cb44c11ed7935655.bindTooltip(
+                `<div>
+                     {'도로명': '을지로45길', '구간명': '운동장평화시장 ~ 디자이너클럽앞', '구간 거리': '102m', '평균 속도': '9.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e6f5bc4a01de2e3f141dd9e2f79ab94e = L.polyline(
+                [[37.56681533773554, 127.00226791087259], [37.56683449493121, 127.0026867698156], [37.56682706750867, 127.00289890679359], [37.56680451566848, 127.00314201203196], [37.566782083062236, 127.0033251533271], [37.56657653277413, 127.00444154247062]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_e6f5bc4a01de2e3f141dd9e2f79ab94e.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '을지전화국 ~ 을지로5가사거리', '구간 거리': '195m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_de8e15218e5437f1478630166fd6b79d = L.polyline(
+                [[37.56657647059247, 127.0044418865651], [37.56616251784937, 127.00674427361768]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_de8e15218e5437f1478630166fd6b79d.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '타임캐슬오피스텔 ~ 을지전화국', '구간 거리': '209m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d078e1c27703e9ac84ad15a16ede45d9 = L.polyline(
+                [[37.56616273054932, 127.00674313721359], [37.56607217272524, 127.00720932235934]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_d078e1c27703e9ac84ad15a16ede45d9.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '동대문역사문화공원 ~ 타임캐슬오피스텔', '구간 거리': '42m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c74f5199fd034da2599954c1af334054 = L.polyline(
+                [[37.56607217272524, 127.00720932235934], [37.56595521667579, 127.00781138963073]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_c74f5199fd034da2599954c1af334054.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '동대문역사문화공원앞교차로 ~ 동대문역사문화공원', '구간 거리': '55m', '평균 속도': '6.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7b5980dd2d03a76e5120671bdd2f40e3 = L.polyline(
+                [[37.566681870657156, 127.00447215313281], [37.566888330476246, 127.00335082290148], [37.56691167873402, 127.00316020967452], [37.566934911044214, 127.0029097670964], [37.566942750509774, 127.00268585572685], [37.5669232789955, 127.00226011870028]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_7b5980dd2d03a76e5120671bdd2f40e3.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '을지로5가사거리 ~ 을지전화국', '구간 거리': '198m', '평균 속도': '31.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2467f6adea511845cd9baa141b7ac15b = L.polyline(
+                [[37.56626798042027, 127.00677420143442], [37.56668193373985, 127.00447181016983]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_2467f6adea511845cd9baa141b7ac15b.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '을지전화국 ~ 타임캐슬오피스텔', '구간 거리': '209m', '평균 속도': '35.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_01891837bef3f171b70db520ba2893ae = L.polyline(
+                [[37.56617720977022, 127.00724152473327], [37.566267767720035, 127.00677533784003]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_01891837bef3f171b70db520ba2893ae.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '타임캐슬오피스텔 ~ 동대문역사문화공원', '구간 거리': '42m', '평균 속도': '30.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6d7d48df52e9e861337d50a6d3f12ada = L.polyline(
+                [[37.566060253558604, 127.0078435927997], [37.56617720977022, 127.00724152473327]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_6d7d48df52e9e861337d50a6d3f12ada.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '동대문역사문화공원 ~ 동대문역사문화공원앞교차로', '구간 거리': '55m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_42703c66e6c0ca94b2eb57c93ccdda77 = L.polyline(
+                [[37.56801271890223, 127.01593840100419], [37.56761123124179, 127.01597434213053], [37.56718285660022, 127.0160326040639]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_42703c66e6c0ca94b2eb57c93ccdda77.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '흥인사거리 ~ 흥인사거리', '구간 거리': '92m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b7acd4cf751ec89538c60fe24da3582a = L.polyline(
+                [[37.56718285660022, 127.0160326040639], [37.56701853444425, 127.01605495346979], [37.56683091346171, 127.0160638077172]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_b7acd4cf751ec89538c60fe24da3582a.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '광희초교 ~ 흥인사거리', '구간 거리': '39m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_431ad63e58cb3ea17b0a20be5a5d32ec = L.polyline(
+                [[37.56683060441797, 127.01606382349753], [37.56646084466523, 127.01608394058961]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_431ad63e58cb3ea17b0a20be5a5d32ec.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '신당역(서울6호선) ~ 광희초교', '구간 거리': '41m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9582f99be7dcce7a02a03243786179ba = L.polyline(
+                [[37.56646084466523, 127.01608394058961], [37.565680040232465, 127.01612642000224], [37.56536980505037, 127.01613083312043]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_9582f99be7dcce7a02a03243786179ba.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '신당역사거리 ~ 신당역(서울6호선)', '구간 거리': '121m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8264c50015b52b8cd7457c69230c004d = L.polyline(
+                [[37.56683497192161, 127.01619954107761], [37.567026392438265, 127.01619050801915], [37.56719449346656, 127.01616764470567]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_8264c50015b52b8cd7457c69230c004d.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '흥인사거리 ~ 광희초교', '구간 거리': '40m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f490f772f215037af90352e8a71da73f = L.polyline(
+                [[37.56719449346656, 127.01616764470567], [37.567620894956484, 127.01610965137627], [37.56802040404657, 127.01607388825839]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_f490f772f215037af90352e8a71da73f.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '흥인사거리 ~ 흥인사거리', '구간 거리': '92m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a9eaf87aa5c9bd37f0128c874125f240 = L.polyline(
+                [[37.56537102979017, 127.01626665037224], [37.56568299128894, 127.01626221329089], [37.56646552209096, 127.01621964172067]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_a9eaf87aa5c9bd37f0128c874125f240.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '신당역(서울6호선) ~ 신당역사거리', '구간 거리': '122m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_480e57df09b2e7aea2ee817fd0434448 = L.polyline(
+                [[37.56646552209096, 127.01621964172067], [37.56683528186636, 127.01619952529812]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_480e57df09b2e7aea2ee817fd0434448.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '광희초교 ~ 신당역(서울6호선)', '구간 거리': '41m', '평균 속도': '40.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e5063bc3bbe3c68c84b8bbc425d21420 = L.polyline(
+                [[37.566628886609145, 127.0080565712496], [37.56648567698502, 127.00796246998715], [37.566303754879044, 127.00787152074425], [37.56602372171997, 127.0077626155667]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_e5063bc3bbe3c68c84b8bbc425d21420.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동대문역사문화공원앞교차로 ~ 동대문역사문화공원', '구간 거리': '72m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_978702e4278e5fe852c1cf077d0d4b08 = L.polyline(
+                [[37.5677886671856, 127.00888792295217], [37.56669694568219, 127.0081012921739], [37.566628886609145, 127.0080565712496]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_978702e4278e5fe852c1cf077d0d4b08.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동대문역사문화공원 ~ 밀리오레', '구간 거리': '148m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fed9200d186ad0419d16ae53e50f623b = L.polyline(
+                [[37.568861718093956, 127.00958773777025], [37.568783681891915, 127.00954415391683], [37.56865763148968, 127.0094685009096], [37.56778715629471, 127.00888687348261]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_fed9200d186ad0419d16ae53e50f623b.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '밀리오레 ~ 흥인시장', '구간 거리': '134m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1e38acd315e556b57ef84c23e554be9f = L.polyline(
+                [[37.569626225573806, 127.00967416152345], [37.569431029301164, 127.00968643259714], [37.569251003628, 127.00967008780599], [37.56905624172044, 127.00963712432045], [37.56885079207988, 127.0095833104987]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_1e38acd315e556b57ef84c23e554be9f.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '흥인시장 ~ 청계6가사거리', '구간 거리': '87m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_642e5f9abe895b404c329c000244f082 = L.polyline(
+                [[37.56993508382038, 127.00962259234889], [37.569621835882735, 127.00967466354062]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_642e5f9abe895b404c329c000244f082.bindTooltip(
+                `<div>
+                     {'도로명': '율곡로', '구간명': '청계6가사거리 ~ 청계6가사거리', '구간 거리': '35m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1ea8175c1e12706f43e6be75fbd368ab = L.polyline(
+                [[37.56599174848132, 127.00789236794529], [37.56626772354319, 127.00799969526305], [37.566440512468255, 127.00808607883387], [37.566578775752355, 127.00817693004463], [37.56664497520985, 127.00822042952075], [37.56773487511673, 127.00900574824519]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_1ea8175c1e12706f43e6be75fbd368ab.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '밀리오레 ~ 동대문역사문화공원앞교차로', '구간 거리': '218m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2111678a0626bc2ad4d9d8510d2c60ea = L.polyline(
+                [[37.567736386907505, 127.00900679771652], [37.568608920182406, 127.00958980057436], [37.56873840943902, 127.00966751996175], [37.568817797928446, 127.00971185796237]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_2111678a0626bc2ad4d9d8510d2c60ea.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '흥인시장 ~ 밀리오레', '구간 거리': '135m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_531f659b4c9170bfdac85d00783fe4ae = L.polyline(
+                [[37.56882872483881, 127.00971628411901], [37.569037967528665, 127.00977109036431], [37.56923987869834, 127.009805265174], [37.56942982964461, 127.00982251148767], [37.56963162846067, 127.00980982621029]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_531f659b4c9170bfdac85d00783fe4ae.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '청계6가사거리 ~ 흥인시장', '구간 거리': '90m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_23c722d3ac42964f49641d3cb78f1e03 = L.polyline(
+                [[37.56963601815231, 127.009809324201], [37.56994926524761, 127.00975725243129]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_23c722d3ac42964f49641d3cb78f1e03.bindTooltip(
+                `<div>
+                     {'도로명': '율곡로', '구간명': '청계6가사거리 ~ 청계6가사거리', '구간 거리': '35m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_887acbceaa0af0bfb6c5137e753b906d = L.polyline(
+                [[37.56807058642707, 127.01600371406103], [37.56806160076317, 127.01568846666473], [37.56809031843766, 127.01446608102076], [37.56809994535617, 127.01388257102508], [37.56809804116913, 127.0136150764297], [37.568067221740584, 127.01321034782259], [37.56803231701134, 127.0129104055784], [37.56799522651762, 127.01272881828844], [37.567945488167865, 127.01250759931311]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_887acbceaa0af0bfb6c5137e753b906d.bindTooltip(
+                `<div>
+                     {'도로명': '마장로', '구간명': '운동장평화시장 ~ 흥인사거리', '구간 거리': '311m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_57568b153928631ed5e346b1f4525118 = L.polyline(
+                [[37.56784143996576, 127.0125445221595], [37.56789082342524, 127.01276416628787], [37.567926165070624, 127.0129371866508], [37.56795985005775, 127.01322665005598], [37.56798996771777, 127.01362216523702], [37.567991816054, 127.01388177106186], [37.56798223270687, 127.01446267113963], [37.56795342445798, 127.01568889334968], [37.567962536560216, 127.01600857405919]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_57568b153928631ed5e346b1f4525118.bindTooltip(
+                `<div>
+                     {'도로명': '마장로', '구간명': '흥인사거리 ~ 운동장평화시장', '구간 거리': '308m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fe2ccffc6c61243a66d4dd31c2279160 = L.polyline(
+                [[37.567962518637955, 127.0160078541524], [37.56796868528886, 127.01631546686552], [37.56798799319421, 127.01659011188806], [37.56802083639401, 127.01688174575231], [37.56815635295519, 127.01767855817428], [37.568209406086126, 127.01804315296316], [37.568249087605444, 127.01837117580521], [37.56827939127781, 127.01874069764779], [37.56830015735326, 127.01901164000662], [37.56830957402848, 127.01932566756697], [37.56831714429996, 127.019641674464]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_fe2ccffc6c61243a66d4dd31c2279160.bindTooltip(
+                `<div>
+                     {'도로명': '마장로', '구간명': '동대문중앙교회앞 ~ 흥인사거리', '구간 거리': '324m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6aafea6e3e1f5f134beede1723d619fa = L.polyline(
+                [[37.56842521490345, 127.01963758827685], [37.568417632091524, 127.01932106702428], [37.56840808097494, 127.01900256672272], [37.56838697770308, 127.01872722860946], [37.56835637092994, 127.01835400023135], [37.56831605496278, 127.01802073028759], [37.56826242121762, 127.01765214820924], [37.56812736000246, 127.01685801181121], [37.56809544361446, 127.01657461250115], [37.56807668510372, 127.01630777409194], [37.56807060434936, 127.01600443396882]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_6aafea6e3e1f5f134beede1723d619fa.bindTooltip(
+                `<div>
+                     {'도로명': '마장로', '구간명': '흥인사거리 ~ 동대문중앙교회앞', '구간 거리': '324m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_16e44d6610628a60adc08c066e910c67 = L.polyline(
+                [[37.567947466928324, 127.01252295757088], [37.56793785668016, 127.01225900747389], [37.56793551921393, 127.01206055957019], [37.56793779843647, 127.01191262105823], [37.56795990907398, 127.01178492217332], [37.56799311237461, 127.01165983515698], [37.56829262224885, 127.01099323064112]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_16e44d6610628a60adc08c066e910c67.bindTooltip(
+                `<div>
+                     {'도로명': '마장로', '구간명': '맥스타일 ~ 운동장평화시장', '구간 거리': '145m', '평균 속도': '21.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_32cce7c995e8398123d9211ea133c292 = L.polyline(
+                [[37.56829262224885, 127.01099323064112], [37.56859832299405, 127.0103128324394], [37.56877454107154, 127.00988624054644], [37.56888411671757, 127.00968861659014]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_32cce7c995e8398123d9211ea133c292.bindTooltip(
+                `<div>
+                     {'도로명': '마장로', '구간명': '흥인시장 ~ 맥스타일', '구간 거리': '133m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_916bd6a48bfeafd0b1bdcc1ddda2852f = L.polyline(
+                [[37.568795400225525, 127.00961097809324], [37.56868181017057, 127.009815842383], [37.568503233042605, 127.01024814418238], [37.56819846719051, 127.01092646143934]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_916bd6a48bfeafd0b1bdcc1ddda2852f.bindTooltip(
+                `<div>
+                     {'도로명': '마장로', '구간명': '맥스타일 ~ 흥인시장', '구간 거리': '134m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0763e22c38a0805f64b24e7216a73b67 = L.polyline(
+                [[37.56819846719051, 127.01092646143934], [37.56789383891367, 127.01160445625199], [37.56785549897198, 127.01174889704365], [37.56782990399825, 127.01189672076133], [37.56782738444021, 127.01206024896769], [37.5678297737057, 127.01226311674417], [37.56783946030705, 127.01252916392279]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_0763e22c38a0805f64b24e7216a73b67.bindTooltip(
+                `<div>
+                     {'도로명': '마장로', '구간명': '운동장평화시장 ~ 맥스타일', '구간 거리': '152m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_80b4f2a50fab682a625cd98f50873250 = L.polyline(
+                [[37.569641646764445, 127.0121349863377], [37.56918430251489, 127.01214212487008], [37.569016583386, 127.0121567981341], [37.568749523068874, 127.01220744277106], [37.56842071115884, 127.01226695578461]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_80b4f2a50fab682a625cd98f50873250.bindTooltip(
+                `<div>
+                     {'도로명': '마장로1길', '구간명': '신당동222-8 ~ 신평화시장', '구간 거리': '136m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9acea4b777f544b6a3dcf94052e07510 = L.polyline(
+                [[37.56842071115884, 127.01226695578461], [37.568138323881136, 127.01231806571862], [37.56804147794466, 127.01234978779026], [37.56786800241376, 127.01246615010722]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_9acea4b777f544b6a3dcf94052e07510.bindTooltip(
+                `<div>
+                     {'도로명': '마장로1길', '구간명': '운동장평화시장 ~ 신당동222-8', '구간 거리': '65m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7c0a1e27ff5d92e0de23aa0b932bb87c = L.polyline(
+                [[37.56791892569267, 127.01258597143186], [37.568081124579685, 127.01247717321851], [37.56815973917327, 127.01245142256654], [37.56843612846547, 127.01240139877987]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_7c0a1e27ff5d92e0de23aa0b932bb87c.bindTooltip(
+                `<div>
+                     {'도로명': '마장로1길', '구간명': '신당동222-8 ~ 운동장평화시장', '구간 거리': '60m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fc985ad57ccf4e57fc93a315385fbd53 = L.polyline(
+                [[37.56843612846547, 127.01240139877987], [37.56876529994625, 127.01234182188409], [37.56902842649605, 127.01229192301764], [37.56918873308358, 127.01227789857208], [37.569642989624285, 127.0122708101686]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_fc985ad57ccf4e57fc93a315385fbd53.bindTooltip(
+                `<div>
+                     {'도로명': '마장로1길', '구간명': '신평화시장 ~ 신당동222-8', '구간 거리': '135m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1558179a8532d881d017d22aea26af2d = L.polyline(
+                [[37.569658651390135, 127.01583085212567], [37.56801375415712, 127.01593832085818]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_1558179a8532d881d017d22aea26af2d.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '흥인사거리 ~ 청계7가사거리', '구간 거리': '183m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9b7155b0477ce5de7c051ee253970059 = L.polyline(
+                [[37.57001220919996, 127.01580400456513], [37.569658198185074, 127.01583088485623]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_9b7155b0477ce5de7c051ee253970059.bindTooltip(
+                `<div>
+                     {'도로명': '지봉로', '구간명': '청계7가사거리 ~ 청계7가사거리', '구간 거리': '39m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_82b9f4884a0f833abc7e1acfdac7e8c2 = L.polyline(
+                [[37.56801936879159, 127.01607396840255], [37.569664267046846, 127.01596650264528]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_82b9f4884a0f833abc7e1acfdac7e8c2.bindTooltip(
+                `<div>
+                     {'도로명': '다산로', '구간명': '청계7가사거리 ~ 흥인사거리', '구간 거리': '183m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_01227e95930a93f881aeda1237ede73c = L.polyline(
+                [[37.56966472025186, 127.01596647104742], [37.570018731297054, 127.01593959139574]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_01227e95930a93f881aeda1237ede73c.bindTooltip(
+                `<div>
+                     {'도로명': '지봉로', '구간명': '청계7가사거리 ~ 청계7가사거리', '구간 거리': '39m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_490885970050251f61ebee0b173f59ea = L.polyline(
+                [[37.569642318213845, 127.01220289881854], [37.5696614587874, 127.0158986779488]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_490885970050251f61ebee0b173f59ea.bindTooltip(
+                `<div>
+                     {'도로명': '청계천로', '구간명': '청계7가사거리 ~ 신평화시장', '구간 거리': '327m', '평균 속도': '18.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eeb74f51a363d39fa91ad30a30dae8b5 = L.polyline(
+                [[37.5696614587874, 127.0158986779488], [37.56972114406764, 127.01624476495682], [37.56978070265595, 127.01652330900754], [37.56986409741725, 127.01681383830082], [37.56999277325018, 127.01719422854775], [37.57012860705557, 127.01751472095455], [37.5703764545913, 127.01802991675042], [37.57093411556883, 127.01910226246636]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_eeb74f51a363d39fa91ad30a30dae8b5.bindTooltip(
+                `<div>
+                     {'도로명': '청계천로', '구간명': '영도교 ~ 청계7가사거리', '구간 거리': '319m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a758ae9feb7e27185b9e5ad8d41e306d = L.polyline(
+                [[37.56504377605274, 127.01344748240713], [37.564885074674, 127.01347830769686], [37.56453876561644, 127.01352074932737], [37.564496024636654, 127.013563691559], [37.56446793222086, 127.01365187951464], [37.56396349080697, 127.01431139159344], [37.563451761031224, 127.0150211827547]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_a758ae9feb7e27185b9e5ad8d41e306d.bindTooltip(
+                `<div>
+                     {'도로명': '다산로35길', '구간명': '신동아빌딩 ~ 금성빌딩', '구간 거리': '236m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4a23d724c8c0cb1a47fbf6c8b3c7e513 = L.polyline(
+                [[37.56353189843196, 127.01511235964809], [37.56404255818417, 127.01440405314948], [37.56456048827232, 127.01372690665626], [37.564584470710166, 127.01365161668139], [37.56489859487233, 127.01361312002494], [37.56506029667007, 127.01358171264275]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_4a23d724c8c0cb1a47fbf6c8b3c7e513.bindTooltip(
+                `<div>
+                     {'도로명': '다산로35길', '구간명': '금성빌딩 ~ 신동아빌딩', '구간 거리': '228m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f16951827a9939e4b65d827a05e4452d = L.polyline(
+                [[37.563467852750016, 127.0151276369387], [37.564187716775265, 127.0155751694312], [37.564309917083364, 127.01562983804614], [37.56530868401696, 127.01573138983848]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_f16951827a9939e4b65d827a05e4452d.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로76길', '구간명': '신당역 ~ 신동아빌딩', '구간 거리': '215m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2c378fddad3888a9421af676adc8743e = L.polyline(
+                [[37.565317405601476, 127.01559600602947], [37.56433280292587, 127.01549589643861], [37.56422997644659, 127.0154498953301], [37.56351580760063, 127.01500590537643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_2c378fddad3888a9421af676adc8743e.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로76길', '구간명': '신동아빌딩 ~ 신당역', '구간 거리': '210m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8dc16e77a83658d750d9c5360e1e7790 = L.polyline(
+                [[37.56431817587006, 127.00774541416865], [37.564333634060965, 127.00758196837006], [37.564388944509155, 127.0075100991725], [37.56447667575821, 127.00744781776864], [37.56454914965373, 127.0073975133061], [37.56471910398543, 127.00742124965987]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_8dc16e77a83658d750d9c5360e1e7790.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '광희동2가9 ~ 광희동2가328', '구간 거리': '63m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e6d88f48c6161b92f90c5536c9ecf5f3 = L.polyline(
+                [[37.56474980994208, 127.00729101811709], [37.564579682653864, 127.0070884576186], [37.564524384865926, 127.00693751739588], [37.56450690049052, 127.00682315156655], [37.56454580365354, 127.00660223422743]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_e6d88f48c6161b92f90c5536c9ecf5f3.bindTooltip(
+                `<div>
+                     {'도로명': '마른내로', '구간명': '광희동1가169-1 ~ 광희동2가9', '구간 거리': '71m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_270c1cc215cf815935f161e588bf096b = L.polyline(
+                [[37.56514142292023, 127.01046158635368], [37.56507487108282, 127.01056004714296], [37.56500605574747, 127.0105997131547], [37.5649166603729, 127.01060344360505], [37.56482130702815, 127.01057348293104], [37.56477576393329, 127.01047734750851]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_270c1cc215cf815935f161e588bf096b.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로', '구간명': '한양공고앞 ~ 한양공고앞', '구간 거리': '51m', '평균 속도': '16.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2f166c00f79add6c5d34cf14a30427e2 = L.polyline(
+                [[37.56622737355528, 127.00669305321779], [37.56558193654965, 127.00650645032376], [37.56551901326333, 127.00656290558543], [37.565323942602745, 127.00757910886404]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_2f166c00f79add6c5d34cf14a30427e2.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동대문역사문화공원 ~ 타임캐슬오피스텔', '구간 거리': '174m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_61f73c786910d163864aeefdc2eb3965 = L.polyline(
+                [[37.565429049861116, 127.00761095150281], [37.565612612609485, 127.00665469627864], [37.566203124679696, 127.00682542065984]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_61f73c786910d163864aeefdc2eb3965.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '타임캐슬오피스텔 ~ 동대문역사문화공원', '구간 거리': '154m', '평균 속도': '81.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d1b9e194b651839b261b6b8a5dc422d0 = L.polyline(
+                [[37.56555916918891, 127.00773307266158], [37.56569461312917, 127.00793818713994], [37.56578101337053, 127.00817403688829], [37.565793381589465, 127.00841421173398]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_d1b9e194b651839b261b6b8a5dc422d0.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '동대문역사문화공원 ~ 동대문역사문화공원', '구간 거리': '68m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b3a55b538a4ff8028986e5374f3723f4 = L.polyline(
+                [[37.56607217272524, 127.00720932235934], [37.56597773499193, 127.00741038270917], [37.565870453551824, 127.00750770227914], [37.565736354604525, 127.00759378937063], [37.565589583569576, 127.00760273109367]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_b3a55b538a4ff8028986e5374f3723f4.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동대문역사문화공원 ~ 동대문역사문화공원', '구간 거리': '68m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2ffa7e3a942f8a836ed7ed1bca060281 = L.polyline(
+                [[37.56492615672437, 127.01242494625336], [37.56502998264219, 127.01241140019711], [37.56611199202564, 127.01240688348256], [37.566117785700655, 127.01241288009119], [37.56623697204083, 127.01283524904761], [37.56631221430751, 127.01287577484857], [37.56677423485444, 127.01280361393721], [37.56688361940493, 127.01276992787733], [37.5670792227242, 127.01265447253854]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_2ffa7e3a942f8a836ed7ed1bca060281.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로71길', '구간명': '디자이너클럽앞 ~ 성동여자실업고교앞', '구간 거리': '269m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b99475aee0aa280638a06092172dda87 = L.polyline(
+                [[37.567033246305385, 127.01253153719632], [37.56684740330941, 127.01264123077029], [37.56675462740155, 127.01266980247546], [37.56632791846323, 127.01273644880985], [37.56632306688175, 127.01273383556297], [37.566209673244494, 127.01233199304433], [37.56615063283788, 127.01227089491177], [37.56502420433608, 127.01227559759421], [37.56491498770027, 127.01228984697975]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_b99475aee0aa280638a06092172dda87.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로71길', '구간명': '성동여자실업고교앞 ~ 디자이너클럽앞', '구간 거리': '265m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e078fe018a975792865a77168f74f164 = L.polyline(
+                [[37.56530338267203, 127.01573051717402], [37.56552358572244, 127.01578076941308], [37.56669301197808, 127.01580685520791], [37.566719852881725, 127.01583871266092], [37.5667804507231, 127.01614790987435]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_e078fe018a975792865a77168f74f164.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로75길', '구간명': '광희초교 ~ 신당역', '구간 거리': '187m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7e330186b174468e48ba8b19e30a3816 = L.polyline(
+                [[37.5668854355977, 127.01611543776235], [37.56681723124889, 127.01576742888771], [37.56673681385527, 127.01567198221288], [37.56553427697052, 127.0156451603875], [37.56532270694739, 127.01559687868455]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_7e330186b174468e48ba8b19e30a3816.bindTooltip(
+                `<div>
+                     {'도로명': '퇴계로75길', '구간명': '신당역 ~ 광희초교', '구간 거리': '201m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c63d19a17e602c881000aefbd585b1fd = L.polyline(
+                [[37.566628886609145, 127.0080565712496], [37.56638893620432, 127.0077173922156], [37.566198245928845, 127.0073916863854], [37.56617720977022, 127.00724152473327]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_c63d19a17e602c881000aefbd585b1fd.bindTooltip(
+                `<div>
+                     {'도로명': '을지로', '구간명': '동대문역사문화공원 ~ 동대문역사문화공원', '구간 거리': '89m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1d118c615836da9d1b7fb62a0c1933d0 = L.polyline(
+                [[37.566203530121214, 127.00682553615026], [37.56704501948844, 127.0070602814434], [37.567082802817026, 127.00716386492515], [37.56793830199607, 127.00780249945423]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_1d118c615836da9d1b7fb62a0c1933d0.bindTooltip(
+                `<div>
+                     {'도로명': '을지로43길', '구간명': '케레스타 ~ 타임캐슬오피스텔', '구간 거리': '216m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b0b6bb8fc203c75b96216a58594284cf = L.polyline(
+                [[37.56799353258491, 127.00768572807588], [37.567167038148185, 127.00706874720231], [37.567120921870554, 127.00694231753292], [37.56622696811354, 127.00669293885998]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_b0b6bb8fc203c75b96216a58594284cf.bindTooltip(
+                `<div>
+                     {'도로명': '을지로43길', '구간명': '타임캐슬오피스텔 ~ 케레스타', '구간 거리': '221m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b8e4bd2929583f2bb7b9c2bdeff85a8c = L.polyline(
+                [[37.567912864377845, 127.00773106798492], [37.567758808108174, 127.00871981799068], [37.567709928876475, 127.00892758622871]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_b8e4bd2929583f2bb7b9c2bdeff85a8c.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로13길', '구간명': '밀리오레 ~ 케레스타', '구간 거리': '108m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_44c23f2a465a49a09ab796343b6a6903 = L.polyline(
+                [[37.56781361435278, 127.0089660850378], [37.56786393569925, 127.00875218621935], [37.56801897023022, 127.0077571596069]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_44c23f2a465a49a09ab796343b6a6903.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로13길', '구간명': '케레스타 ~ 밀리오레', '구간 거리': '109m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6765f4fdb6beea708bdb212d6f5ff6f1 = L.polyline(
+                [[37.567994985251765, 127.00722501842117], [37.56791294730361, 127.00773054617729]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_6765f4fdb6beea708bdb212d6f5ff6f1.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로13길', '구간명': '케레스타 ~ 동화상가', '구간 거리': '46m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2a19cb5e307b241ebcc7ab3aa3471b26 = L.polyline(
+                [[37.56801888730433, 127.00775768141514], [37.568100925367354, 127.00725215184089]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_2a19cb5e307b241ebcc7ab3aa3471b26.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로13길', '구간명': '동화상가 ~ 케레스타', '구간 거리': '46m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ce68811118aa7d5579f07f4cd7b884a6 = L.polyline(
+                [[37.56660615911354, 127.00451828381593], [37.56743238053014, 127.00500736849467], [37.56825334103048, 127.00546977727379], [37.56826811920093, 127.00548834536181], [37.56827580806435, 127.00555115772346], [37.56826736721401, 127.00565289927077], [37.56810192559513, 127.00650793274248], [37.567994820304676, 127.0072260778855]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_ce68811118aa7d5579f07f4cd7b884a6.bindTooltip(
+                `<div>
+                     {'도로명': '을지로39길', '구간명': '동화상가 ~ 을지전화국', '구간 거리': '360m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8e3f971973d56e1a0cc79f2173b89b9f = L.polyline(
+                [[37.56810109031454, 127.00725109350697], [37.56820766487217, 127.00653650158279], [37.568374148504866, 127.00567608585362], [37.568384789954855, 127.00554781982824], [37.56836960223008, 127.00542374908798], [37.56831572848226, 127.0053560592676], [37.567477543610195, 127.00488394970756], [37.56665224428812, 127.00439541172801]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_8e3f971973d56e1a0cc79f2173b89b9f.bindTooltip(
+                `<div>
+                     {'도로명': '을지로39길', '구간명': '을지전화국 ~ 동화상가', '구간 거리': '377m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b7bc84e763be4bd42bcca7e125ae9a08 = L.polyline(
+                [[37.568051208684544, 127.00730637751168], [37.56905895177774, 127.00723003607285], [37.569191493098344, 127.00723869918137], [37.56919579158249, 127.00724139927803], [37.56920175074842, 127.00725637544316], [37.569280773695446, 127.00918139909601], [37.569273030479565, 127.00922839527624], [37.56924342866936, 127.00928078810091], [37.56908686853789, 127.00941157338917], [37.568814791392555, 127.00958955869966]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_b7bc84e763be4bd42bcca7e125ae9a08.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로.장충단로13길', '구간명': '흥인시장 ~ 동화상가', '구간 거리': '364m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0c096c478a0c1ac71a79432257cfb5bf = L.polyline(
+                [[37.568864725532734, 127.00971003597786], [37.569141925287504, 127.00952870109506], [37.56931999013502, 127.0093799513192], [37.56937431244761, 127.00928380512502], [37.56938946537832, 127.00919183877865], [37.56930856233196, 127.00722102842494], [37.56927638549227, 127.0071401627212], [37.56921965826072, 127.00710452264191], [37.56905850592919, 127.00709399048546], [37.56804470099666, 127.00717079273686]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_0c096c478a0c1ac71a79432257cfb5bf.bindTooltip(
+                `<div>
+                     {'도로명': '장충단로', '구간명': '동화상가 ~ 흥인시장', '구간 거리': '397m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_942561e38309692dc8b9257039493d98 = L.polyline(
+                [[37.56654246427734, 127.01725667591766], [37.566517220895726, 127.0161498451978]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_942561e38309692dc8b9257039493d98.bindTooltip(
+                `<div>
+                     {'도로명': '다산로46길', '구간명': '신당역(서울6호선) ~ 신당역(서울6호선)', '구간 거리': '98m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eee2337c5b7ffd7045f979d1b7f40d43 = L.polyline(
+                [[37.566409145899165, 127.01615373597353], [37.56643438834415, 127.01726056509546]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_eee2337c5b7ffd7045f979d1b7f40d43.bindTooltip(
+                `<div>
+                     {'도로명': '다산로46길', '구간명': '신당역(서울6호선) ~ 신당역(서울6호선)', '구간 거리': '98m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b27e575b16bbea047a98c48041502143 = L.polyline(
+                [[37.56933807696494, 127.01412845298307], [37.56931840643088, 127.01412845266341], [37.56929389197711, 127.014122324221], [37.56872676899372, 127.01317441219143], [37.56864699566767, 127.01294705500445], [37.56847973601567, 127.01231281771463]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_b27e575b16bbea047a98c48041502143.bindTooltip(
+                `<div>
+                     {'도로명': '마장로1가길', '구간명': '신당동222-8 ~ 신당동217-120', '구간 거리': '191m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_98ef6dec0c00d184f74c6a7bc8008346 = L.polyline(
+                [[37.56837710274161, 127.0123555368065], [37.5685459823819, 127.01299591999224], [37.568632859498834, 127.0132435182749], [37.569232280629095, 127.01424541808562], [37.56930775384488, 127.01426428610665], [37.569338077749904, 127.0142642862298]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_98ef6dec0c00d184f74c6a7bc8008346.bindTooltip(
+                `<div>
+                     {'도로명': '마장로1가길', '구간명': '신당동217-120 ~ 신당동222-8', '구간 거리': '206m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d3f6e139fbc5a525cffdbaf82a0b5463 = L.polyline(
+                [[37.569005432509655, 127.01090375377446], [37.56824621414225, 127.01089193557881]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_d3f6e139fbc5a525cffdbaf82a0b5463.bindTooltip(
+                `<div>
+                     {'도로명': '-', '구간명': '맥스타일 ~ 맥스타일', '구간 거리': '84m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_abcced16d2e3c435f1bb6646c6b7ce32 = L.polyline(
+                [[37.568244874366854, 127.01102775645819], [37.56900409272061, 127.01103957603222]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_abcced16d2e3c435f1bb6646c6b7ce32.bindTooltip(
+                `<div>
+                     {'도로명': '-', '구간명': '맥스타일 ~ 맥스타일', '구간 거리': '84m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c39b3ab5edbbb598b40733b82b3bf96b = L.polyline(
+                [[37.56728394656354, 127.01687915602358], [37.56724261648366, 127.01609563380948]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_c39b3ab5edbbb598b40733b82b3bf96b.bindTooltip(
+                `<div>
+                     {'도로명': '다산로48길', '구간명': '흥인사거리 ~ 흥인동165', '구간 거리': '69m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f4faddb621b34aabdb38de7a6a7283be = L.polyline(
+                [[37.567134733620854, 127.01610461607507], [37.567176063642144, 127.01688813716416]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e4a69a1367b94c3e519d969ee1a71907);
+        
+    
+            poly_line_f4faddb621b34aabdb38de7a6a7283be.bindTooltip(
+                `<div>
+                     {'도로명': '다산로48길', '구간명': '흥인동165 ~ 흥인사거리', '구간 거리': '69m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

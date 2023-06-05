@@ -1,0 +1,536 @@
+{
+      "type": "record",
+      "name": "ROAD_TRAFFIC_STTS",
+      "namespace": "Record.SeoulRtd.citydata.CITYDATA.ROAD_TRAFFIC_STTS",
+      "fields": [
+        {
+          "name": "LINK_ID",
+          "type": "string"
+        },
+        {
+          "name": "ROAD_NM",
+          "type": "string"
+        },
+        {
+          "name": "START_ND_CD",
+          "type": "string"
+        },
+        {
+          "name": "START_ND_NM",
+          "type": "string"
+        },
+        {
+          "name": "START_ND_XY",
+          "type": "string"
+        },
+        {
+          "name": "END_ND_CD",
+          "type": "string"
+        },
+        {
+          "name": "END_ND_NM",
+          "type": "string"
+        },
+        {
+          "name": "END_ND_XY",
+          "type": "string"
+        },
+        {
+          "name": "DIST",
+          "type": "string"
+        },
+        {
+          "name": "SPD",
+          "type": "string"
+        },
+        {
+          "name": "IDX",
+          "type": "string"
+        },
+        {
+          "name": "XYLIST",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "record",
+      "name": "PRK_STTS",
+      "namespace": "Record.SeoulRtd.citydata.CITYDATA.PRK_STTS",
+      "fields": [
+        {
+          "name": "PRK_NM",
+          "type": "string"
+        },
+        {
+          "name": "PRK_CD",
+          "type": "string"
+        },
+        {
+          "name": "CPCTY",
+          "type": "string"
+        },
+        {
+          "name": "CUR_PRK_CNT",
+          "type": "string"
+        },
+        {
+          "name": "CUR_PRK_TIME",
+          "type": "string"
+        },
+        {
+          "name": "CUR_PRK_YN",
+          "type": "string"
+        },
+        {
+          "name": "PAY_YN",
+          "type": "string"
+        },
+        {
+          "name": "RATES",
+          "type": "string"
+        },
+        {
+          "name": "TIME_RATES",
+          "type": "string"
+        },
+        {
+          "name": "ADD_RATES",
+          "type": "string"
+        },
+        {
+          "name": "ADD_TIME_RATES",
+          "type": "string"
+        },
+        {
+          "name": "ADDRESS",
+          "type": "string"
+        },
+        {
+          "name": "ROAD_ADDR",
+          "type": "string"
+        },
+        {
+          "name": "LNG",
+          "type": "string"
+        },
+        {
+          "name": "LAT",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "record",
+      "name": "SUB_DETAIL",
+      "namespace": "Record.SeoulRtd.citydata.CITYDATA.SUB_STTS.SUB_STTS.SUB_DETAIL",
+      "fields": [
+        {
+          "name": "SUB_NT_STN",
+          "type": "string"
+        },
+        {
+          "name": "SUB_BF_STN",
+          "type": "string"
+        },
+        {
+          "name": "SUB_ROUTE_NM",
+          "type": "string"
+        },
+        {
+          "name": "SUB_LINE",
+          "type": "string"
+        },
+        {
+          "name": "SUB_ORD",
+          "type": "string"
+        },
+        {
+          "name": "SUB_DIR",
+          "type": "string"
+        },
+        {
+          "name": "SUB_TERMINAL",
+          "type": "string"
+        },
+        {
+          "name": "SUB_ARVTIME",
+          "type": "string"
+        },
+        {
+          "name": "SUB_ARMG1",
+          "type": "string"
+        },
+        {
+          "name": "SUB_ARMG2",
+          "type": "string"
+        },
+        {
+          "name": "SUB_ARVINFO",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "record",
+      "name": "SUB_STTS",
+      "namespace": "Record.SeoulRtd.citydata.CITYDATA.SUB_STTS",
+      "fields": [
+        {
+          "name": "SUB_STN_NM",
+          "type": "string"
+        },
+        {
+          "name": "SUB_STN_LINE",
+          "type": "string"
+        },
+        {
+          "name": "SUB_STN_RADDR",
+          "type": "string"
+        },
+        {
+          "name": "SUB_STN_JIBUN",
+          "type": "string"
+        },
+        {
+          "name": "SUB_STN_X",
+          "type": "string"
+        },
+        {
+          "name": "SUB_STN_Y",
+          "type": "string"
+        },
+        {
+          "name": "SUB_DETAIL",
+          "type": {
+            "type": "array",
+            "items": "Record.SeoulRtd.citydata.CITYDATA.SUB_STTS.SUB_STTS.SUB_DETAIL"
+          }
+        }
+      ]
+    },
+    {
+        "type": "record",
+        "name": "BUS_STN_STTS",
+        "namespace": "Record.SeoulRtd.citydata.CITYDATA.BUS_STN_STTS",
+        "fields": [
+          {
+            "name": "BUS_STN_ID",
+            "type": "string"
+          },
+          {
+            "name": "BUS_ARS_ID",
+            "type": "string"
+          },
+          {
+            "name": "BUS_STN_NM",
+            "type": "string"
+          },
+          {
+            "name": "BUS_STN_X",
+            "type": "string"
+          },
+          {
+            "name": "BUS_STN_Y",
+            "type": "string"
+          },
+          {
+            "name": "BUS_DETAIL",
+            "type": {
+              "type": "array",
+              "items": "BUS_DETAIL"
+            }
+          }
+        ]
+    },
+     {  
+      "type": "record",
+      "name": "BUS_DETAIL",
+      "namespace": "Record.SeoulRtd.citydata.CITYDATA.BUS_STN_STTS.BUS_STN_STTS.BUS_DETAIL",
+      "fields": [
+        {
+          "name": "RTE_STN_NM",
+          "type": "string"
+        },
+        {
+          "name": "RTE_NM",
+          "type": "string"
+        },
+        {
+          "name": "RTE_ID",
+          "type": "string"
+        },
+        {
+          "name": "RTE_SECT",
+          "type": "string"
+        },
+        {
+          "name": "RTE_CONGEST_1",
+          "type": "string"
+        },
+        {
+          "name": "RTE_ARRV_TM_1",
+          "type": "string"
+        },
+        {
+          "name": "RTE_ARRV_STN_1",
+          "type": "string"
+        },
+        {
+          "name": "RTE_CONGEST_2",
+          "type": "string"
+        },
+        {
+          "name": "RTE_ARRV_TM_2",
+          "type": "string"
+        },
+        {
+          "name": "RTE_ARRV_STN_2",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "ACDNT_CNTRL_STTS",
+      "type": "string",
+      "namespace": "SeoulRtd.citydata.CITYDATA"
+    },
+    {
+      "type": "record",
+      "name": "SBIKE_STTS",
+      "namespace": "SeoulRtd.citydata.CITYDATA.SBIKE_STTS",
+      "fields": [
+        {
+          "name": "SBIKE_SPOT_NM",
+          "type": "string"
+        },
+        {
+          "name": "SBIKE_SPOT_ID",
+          "type": "string"
+        },
+        {
+          "name": "SBIKE_SHARED",
+          "type": "string"
+        },
+        {
+          "name": "SBIKE_PARKING_CNT",
+          "type": "string"
+        },
+        {
+          "name": "SBIKE_RACK_CNT",
+          "type": "string"
+        },
+        {
+          "name": "SBIKE_X",
+          "type": "string"
+        },
+        {
+          "name": "SBIKE_Y",
+          "type": "string"
+        }
+      ]
+    },
+   {
+      "type": "record",
+      "name": "WEATHER_STTS",
+      "namespace": "SeoulRtd.citydata.CITYDATA.WEATHER_STTS",
+      "fields": [
+        {
+          "name": "WEATHER_TIME",
+          "type": "string"
+        },
+        {
+          "name": "TEMP",
+          "type": "string"
+        },
+        {
+          "name": "SENSIBLE_TEMP",
+          "type": "string"
+        },
+        {
+          "name": "MAX_TEMP",
+          "type": "string"
+        },
+        {
+          "name": "MIN_TEMP",
+          "type": "string"
+        },
+        {
+          "name": "HUMIDITY",
+          "type": "string"
+        },
+        {
+          "name": "WIND_DIRCT",
+          "type": "string"
+        },
+        {
+          "name": "WIND_SPD",
+          "type": "string"
+        },
+        {
+          "name": "PRECIPITATION",
+          "type": "string"
+        },
+        {
+          "name": "PRECPT_TYPE",
+          "type": "string"
+        },
+        {
+          "name": "PCP_MSG",
+          "type": "string"
+        },
+        {
+          "name": "SUNRISE",
+          "type": "string"
+        },
+        {
+          "name": "SUNSET",
+          "type": "string"
+        },
+        {
+          "name": "UV_INDEX_LVL",
+          "type": "string"
+        },
+        {
+          "name": "UV_INDEX",
+          "type": "string"
+        },
+        {
+          "name": "UV_MSG",
+          "type": "string"
+        },
+        {
+          "name": "PM25_INDEX",
+          "type": "string"
+        },
+        {
+          "name": "PM25",
+          "type": "string"
+        },
+        {
+          "name": "PM10_INDEX",
+          "type": "string"
+        },
+        {
+          "name": "PM10",
+          "type": "string"
+        },
+        {
+          "name": "AIR_IDX",
+          "type": "string"
+        },
+        {
+          "name": "AIR_IDX_MVL",
+          "type": "string"
+        },
+        {
+          "name": "AIR_IDX_MAIN",
+          "type": "string"
+        },
+        {
+          "name": "AIR_MSG",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "record",
+      "name": "FCST24HOURS",
+      "namespace": "Record.SeoulRtd.citydata.CITYDATA.WEATHER_STTS.WEATHER_STTS.FCST24HOURS",
+      "fields": [
+        {
+          "name": "FCST_DT",
+          "type": "string"
+        },
+        {
+          "name": "TEMP",
+          "type": "string"
+        },
+        {
+          "name": "PRECIPITATION",
+          "type": "string"
+        },
+        {
+          "name": "PRECPT_TYPE",
+          "type": "string"
+        },
+        {
+          "name": "RAIN_CHANCE",
+          "type": "string"
+        },
+        {
+          "name": "SKY_STTS",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "record",
+      "name": "NEWS_LIST",
+      "namespace": "Record.SeoulRtd.citydata.CITYDATA.WEATHER_STTS.WEATHER_STTS.NEWS_LIST",
+      "fields": [
+        {
+          "name": "WARN_VAL",
+          "type": "string"
+        },
+        {
+          "name": "WARN_STRESS",
+          "type": "string"
+        },
+        {
+          "name": "ANNOUNCE_TIME",
+          "type": "string"
+        },
+        {
+          "name": "COMMAND",
+          "type": "string"
+        },
+        {
+          "name": "CANCEL_YN",
+          "type": "string"
+        },
+        {
+          "name": "WARN_MSG",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "record",
+      "name": "COVID_19_STTS",
+      "namespace": "SeoulRtd.citydata.CITYDATA.COVID_19_STTS.",
+      "fields": [
+        {
+          "name": "STRD_DT",
+          "type": "string"
+        },
+        {
+          "name": "GU_NM",
+          "type": "string"
+        },
+        {
+          "name": "GU_CONFIRMED",
+          "type": "string"
+        },
+        {
+          "name": "GU_ADDED",
+          "type": "string"
+        },
+        {
+          "name": "CONFIRMED",
+          "type": "string"
+        },
+        {
+          "name": "ADDED",
+          "type": "string"
+        },
+        {
+          "name": "DIED",
+          "type": "string"
+        },
+        {
+          "name": "T_DIED",
+          "type": "string"
+        }
+      ]
+}

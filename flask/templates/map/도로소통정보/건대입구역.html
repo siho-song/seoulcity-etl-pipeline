@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_96e3b3779ae4ab9cd781079f91eeb833 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_96e3b3779ae4ab9cd781079f91eeb833" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_96e3b3779ae4ab9cd781079f91eeb833 = L.map(
+                "map_96e3b3779ae4ab9cd781079f91eeb833",
+                {
+                    center: [37.540839990937776, 127.06765880158264],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_64c0526be35b8fd2204d2c8349255511 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+            var poly_line_94a59233b0cce38bd654c2a2bde8fd52 = L.polyline(
+                [[37.54421505428901, 127.05709468047354], [37.543436609221764, 127.05967800697873], [37.54213446885954, 127.06397289425503]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_d51882ab7c04d561bb7c88ca656a832f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_627e97afdf9549fcd99252314929f656 = $(`<div id="html_627e97afdf9549fcd99252314929f656" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '성수사거리 ~ 성수역앞교차로', '구간 거리': '650m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d51882ab7c04d561bb7c88ca656a832f.setContent(html_627e97afdf9549fcd99252314929f656);
+            
+        
+
+        poly_line_94a59233b0cce38bd654c2a2bde8fd52.bindPopup(popup_d51882ab7c04d561bb7c88ca656a832f)
+        ;
+
+        
+    
+    
+            poly_line_94a59233b0cce38bd654c2a2bde8fd52.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '성수사거리 ~ 성수역앞교차로', '구간 거리': '650m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3dd7f98330f8c4fb2dc1431db3f975a2 = L.polyline(
+                [[37.54223551139411, 127.06402121334365], [37.54353769140061, 127.05972619667573], [37.54431617541452, 127.05714274047997]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_3c34a679f8516d55e5066beb43a320c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f30841afe97f009f110770dce286b84c = $(`<div id="html_f30841afe97f009f110770dce286b84c" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '성수역앞교차로 ~ 성수사거리', '구간 거리': '650m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_3c34a679f8516d55e5066beb43a320c3.setContent(html_f30841afe97f009f110770dce286b84c);
+            
+        
+
+        poly_line_3dd7f98330f8c4fb2dc1431db3f975a2.bindPopup(popup_3c34a679f8516d55e5066beb43a320c3)
+        ;
+
+        
+    
+    
+            poly_line_3dd7f98330f8c4fb2dc1431db3f975a2.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '성수역앞교차로 ~ 성수사거리', '구간 거리': '650m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_47e8ada2e13b73a40f9a7555322000c6 = L.polyline(
+                [[37.54024810820622, 127.06287537941883], [37.540448556528744, 127.06219787368411], [37.54124369091188, 127.05956537703501], [37.54165913929711, 127.0581880679525], [37.54223864188259, 127.05629134130864]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_2d918f2d3205bbf5a0d3dab8a6f0d76b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65459ad74bdbb6b93716c2cc70adffcf = $(`<div id="html_65459ad74bdbb6b93716c2cc70adffcf" style="width: 100.0%; height: 100.0%;">{'도로명': '연무장길', '구간명': '광림물산 ~ 삼보약국', '구간 거리': '622m', '평균 속도': '14.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_2d918f2d3205bbf5a0d3dab8a6f0d76b.setContent(html_65459ad74bdbb6b93716c2cc70adffcf);
+            
+        
+
+        poly_line_47e8ada2e13b73a40f9a7555322000c6.bindPopup(popup_2d918f2d3205bbf5a0d3dab8a6f0d76b)
+        ;
+
+        
+    
+    
+            poly_line_47e8ada2e13b73a40f9a7555322000c6.bindTooltip(
+                `<div>
+                     {'도로명': '연무장길', '구간명': '광림물산 ~ 삼보약국', '구간 거리': '622m', '평균 속도': '14.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4495a100d622e20fc549203cc1b1407d = L.polyline(
+                [[37.54220753592907, 127.06393534791563], [37.5402199775526, 127.06279002913942]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_14d0239861313f8f867362c81282f18b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8df8d4b61f27527216443323ee2950c = $(`<div id="html_f8df8d4b61f27527216443323ee2950c" style="width: 100.0%; height: 100.0%;">{'도로명': '동일로', '구간명': '삼보약국 ~ 성수사거리', '구간 거리': '243m', '평균 속도': '34.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_14d0239861313f8f867362c81282f18b.setContent(html_f8df8d4b61f27527216443323ee2950c);
+            
+        
+
+        poly_line_4495a100d622e20fc549203cc1b1407d.bindPopup(popup_14d0239861313f8f867362c81282f18b)
+        ;
+
+        
+    
+    
+            poly_line_4495a100d622e20fc549203cc1b1407d.bindTooltip(
+                `<div>
+                     {'도로명': '동일로', '구간명': '삼보약국 ~ 성수사거리', '구간 거리': '243m', '평균 속도': '34.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_62aa25ac3182e9f3af85ef370b07c001 = L.polyline(
+                [[37.53944055092154, 127.06249875196586], [37.54017488800641, 127.06291343825502]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_70b53c7f341b3c196ba0511c030616a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3ef985e5737dbacbd989bd0920a18ff = $(`<div id="html_b3ef985e5737dbacbd989bd0920a18ff" style="width: 100.0%; height: 100.0%;">{'도로명': '동일로', '구간명': '삼보약국 ~ 영동대교고가차도북측', '구간 거리': '89m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_70b53c7f341b3c196ba0511c030616a9.setContent(html_b3ef985e5737dbacbd989bd0920a18ff);
+            
+        
+
+        poly_line_62aa25ac3182e9f3af85ef370b07c001.bindPopup(popup_70b53c7f341b3c196ba0511c030616a9)
+        ;
+
+        
+    
+    
+            poly_line_62aa25ac3182e9f3af85ef370b07c001.bindTooltip(
+                `<div>
+                     {'도로명': '동일로', '구간명': '삼보약국 ~ 영동대교고가차도북측', '구간 거리': '89m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f8530d4af811ef7b9650e77117841079 = L.polyline(
+                [[37.54017488800641, 127.06291343825502], [37.54216244429777, 127.06405875961322]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_179a4177f7c10d3ca2f20f6e85537ccb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b534fa43d5b396e0c53e6386e9bae85 = $(`<div id="html_4b534fa43d5b396e0c53e6386e9bae85" style="width: 100.0%; height: 100.0%;">{'도로명': '동일로', '구간명': '성수사거리 ~ 삼보약국', '구간 거리': '243m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_179a4177f7c10d3ca2f20f6e85537ccb.setContent(html_4b534fa43d5b396e0c53e6386e9bae85);
+            
+        
+
+        poly_line_f8530d4af811ef7b9650e77117841079.bindPopup(popup_179a4177f7c10d3ca2f20f6e85537ccb)
+        ;
+
+        
+    
+    
+            poly_line_f8530d4af811ef7b9650e77117841079.bindTooltip(
+                `<div>
+                     {'도로명': '동일로', '구간명': '성수사거리 ~ 삼보약국', '구간 거리': '243m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a0b472bd95097ff5da4b62480725a7d1 = L.polyline(
+                [[37.53152802706182, 127.06680432651603], [37.53178158729316, 127.06693552637834], [37.53243281279553, 127.06724487026953], [37.53362618093389, 127.06778607492377], [37.53517799129874, 127.06850943628044], [37.53609183860474, 127.0689130346604], [37.53717004863576, 127.06940530893613], [37.53870436898019, 127.07012064643453]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_c75803818d147a909f70703bacd4468a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b52f7f0970300764b209407107513a93 = $(`<div id="html_b52f7f0970300764b209407107513a93" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '청담대교 ~ 청담대교북측', '구간 거리': '849m', '평균 속도': '20.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_c75803818d147a909f70703bacd4468a.setContent(html_b52f7f0970300764b209407107513a93);
+            
+        
+
+        poly_line_a0b472bd95097ff5da4b62480725a7d1.bindPopup(popup_c75803818d147a909f70703bacd4468a)
+        ;
+
+        
+    
+    
+            poly_line_a0b472bd95097ff5da4b62480725a7d1.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '청담대교 ~ 청담대교북측', '구간 거리': '849m', '평균 속도': '20.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a266af188fb8bd0863bd9eb4ea3cb2c0 = L.polyline(
+                [[37.53757688175124, 127.0693808220981], [37.535338987254924, 127.06836991199009]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_3df93b39d9a9d27a70c8829783b62f85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a76dd2fb4a74bcdb71cbea9c960b33d = $(`<div id="html_8a76dd2fb4a74bcdb71cbea9c960b33d" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '신양초교앞교차로 ~ 명성장갑', '구간 거리': '264m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3df93b39d9a9d27a70c8829783b62f85.setContent(html_8a76dd2fb4a74bcdb71cbea9c960b33d);
+            
+        
+
+        poly_line_a266af188fb8bd0863bd9eb4ea3cb2c0.bindPopup(popup_3df93b39d9a9d27a70c8829783b62f85)
+        ;
+
+        
+    
+    
+            poly_line_a266af188fb8bd0863bd9eb4ea3cb2c0.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '신양초교앞교차로 ~ 명성장갑', '구간 거리': '264m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1e8829cd4e7e0b8614f4a2f73ea3a1cb = L.polyline(
+                [[37.53792623731184, 127.06954786766883], [37.53757876252616, 127.06938169619885]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_4b127fcedd505daee1759645e7bebc23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_163629bf3aa2a255ba5950bc1fc1c4af = $(`<div id="html_163629bf3aa2a255ba5950bc1fc1c4af" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '명성장갑 ~ 광진문화예술회관', '구간 거리': '41m', '평균 속도': '29.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_4b127fcedd505daee1759645e7bebc23.setContent(html_163629bf3aa2a255ba5950bc1fc1c4af);
+            
+        
+
+        poly_line_1e8829cd4e7e0b8614f4a2f73ea3a1cb.bindPopup(popup_4b127fcedd505daee1759645e7bebc23)
+        ;
+
+        
+    
+    
+            poly_line_1e8829cd4e7e0b8614f4a2f73ea3a1cb.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '명성장갑 ~ 광진문화예술회관', '구간 거리': '41m', '평균 속도': '29.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e5ea3e9b566f3fe4c16f4b2c14370b23 = L.polyline(
+                [[37.538760311002484, 127.06992947964312], [37.53792477088688, 127.06954718289988]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_a42140b8ed373b8846b30eb9b71ec4f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d016d06f940c783afaf079319c681cd8 = $(`<div id="html_d016d06f940c783afaf079319c681cd8" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '광진문화예술회관 ~ 청담대교', '구간 거리': '99m', '평균 속도': '36.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a42140b8ed373b8846b30eb9b71ec4f6.setContent(html_d016d06f940c783afaf079319c681cd8);
+            
+        
+
+        poly_line_e5ea3e9b566f3fe4c16f4b2c14370b23.bindPopup(popup_a42140b8ed373b8846b30eb9b71ec4f6)
+        ;
+
+        
+    
+    
+            poly_line_e5ea3e9b566f3fe4c16f4b2c14370b23.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '광진문화예술회관 ~ 청담대교', '구간 거리': '99m', '평균 속도': '36.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a9926376e13e4753052a290626aebbc4 = L.polyline(
+                [[37.53994226603433, 127.07057032168314], [37.539233952896495, 127.07021845148181], [37.53874180451417, 127.06999326656474]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_84033da2d7fff8ee87d556f01ee82e19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b259832e2a7a43e243d2fc2e133d9b2 = $(`<div id="html_9b259832e2a7a43e243d2fc2e133d9b2" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '청담대교 ~ 건대입구역앞교차로', '구간 거리': '143m', '평균 속도': '34.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_84033da2d7fff8ee87d556f01ee82e19.setContent(html_9b259832e2a7a43e243d2fc2e133d9b2);
+            
+        
+
+        poly_line_a9926376e13e4753052a290626aebbc4.bindPopup(popup_84033da2d7fff8ee87d556f01ee82e19)
+        ;
+
+        
+    
+    
+            poly_line_a9926376e13e4753052a290626aebbc4.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '청담대교 ~ 건대입구역앞교차로', '구간 거리': '143m', '평균 속도': '34.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_31f74262ca1553c923aa2cb25a0ff67e = L.polyline(
+                [[37.535265794033485, 127.06862542690844], [37.537503685463406, 127.0696363425251]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_22fa167472adaa917adddfc54124c39b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d12fa494f9ef9d14db544192f6fea2d9 = $(`<div id="html_d12fa494f9ef9d14db544192f6fea2d9" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '명성장갑 ~ 신양초교앞교차로', '구간 거리': '264m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_22fa167472adaa917adddfc54124c39b.setContent(html_d12fa494f9ef9d14db544192f6fea2d9);
+            
+        
+
+        poly_line_31f74262ca1553c923aa2cb25a0ff67e.bindPopup(popup_22fa167472adaa917adddfc54124c39b)
+        ;
+
+        
+    
+    
+            poly_line_31f74262ca1553c923aa2cb25a0ff67e.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '명성장갑 ~ 신양초교앞교차로', '구간 거리': '264m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cc7dec66584dca884490317460500bbd = L.polyline(
+                [[37.537501804689704, 127.06963546955032], [37.53784927912189, 127.06980164202587]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_73ab2f29376f55225e946869c1c4cb1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbbaa15df41ba53c0a050db03593a765 = $(`<div id="html_bbbaa15df41ba53c0a050db03593a765" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '광진문화예술회관 ~ 명성장갑', '구간 거리': '41m', '평균 속도': '26.3km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_73ab2f29376f55225e946869c1c4cb1b.setContent(html_bbbaa15df41ba53c0a050db03593a765);
+            
+        
+
+        poly_line_cc7dec66584dca884490317460500bbd.bindPopup(popup_73ab2f29376f55225e946869c1c4cb1b)
+        ;
+
+        
+    
+    
+            poly_line_cc7dec66584dca884490317460500bbd.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '광진문화예술회관 ~ 명성장갑', '구간 거리': '41m', '평균 속도': '26.3km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d745b39a2a476092966b6ad5f0d718a0 = L.polyline(
+                [[37.53785074554471, 127.06980232793057], [37.53868586238852, 127.0701844332611]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_998a20b48ec87916bcb626503e87e757 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eac47fb7cedeb16d6324c5dc219be796 = $(`<div id="html_eac47fb7cedeb16d6324c5dc219be796" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '청담대교 ~ 광진문화예술회관', '구간 거리': '99m', '평균 속도': '33.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_998a20b48ec87916bcb626503e87e757.setContent(html_eac47fb7cedeb16d6324c5dc219be796);
+            
+        
+
+        poly_line_d745b39a2a476092966b6ad5f0d718a0.bindPopup(popup_998a20b48ec87916bcb626503e87e757)
+        ;
+
+        
+    
+    
+            poly_line_d745b39a2a476092966b6ad5f0d718a0.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '청담대교 ~ 광진문화예술회관', '구간 거리': '99m', '평균 속도': '33.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6c9644ba4df9415e6c83c123db16e5ff = L.polyline(
+                [[37.53870436898019, 127.07012064643453], [37.539195556017106, 127.07034539215529], [37.539898785108896, 127.07069463802591]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_cd0bc93b78c3de7ad937460723e34cbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13734d613080ce92d7fdaa7c3dd49804 = $(`<div id="html_13734d613080ce92d7fdaa7c3dd49804" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '건대입구역앞교차로 ~ 청담대교', '구간 거리': '142m', '평균 속도': '8.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_cd0bc93b78c3de7ad937460723e34cbe.setContent(html_13734d613080ce92d7fdaa7c3dd49804);
+            
+        
+
+        poly_line_6c9644ba4df9415e6c83c123db16e5ff.bindPopup(popup_cd0bc93b78c3de7ad937460723e34cbe)
+        ;
+
+        
+    
+    
+            poly_line_6c9644ba4df9415e6c83c123db16e5ff.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '건대입구역앞교차로 ~ 청담대교', '구간 거리': '142m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_feb20dac64f0417f827574192d3084b5 = L.polyline(
+                [[37.539870596931046, 127.07060644962282], [37.53929359068229, 127.07235185329053]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_142ef1eb101836fa707399928681d1db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc7473fef6cb43a942aef8dce450ccb2 = $(`<div id="html_fc7473fef6cb43a942aef8dce450ccb2" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '이디야커피건대스타시티2호점 ~ 건대입구역앞교차로', '구간 거리': '167m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_142ef1eb101836fa707399928681d1db.setContent(html_fc7473fef6cb43a942aef8dce450ccb2);
+            
+        
+
+        poly_line_feb20dac64f0417f827574192d3084b5.bindPopup(popup_142ef1eb101836fa707399928681d1db)
+        ;
+
+        
+    
+    
+            poly_line_feb20dac64f0417f827574192d3084b5.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '이디야커피건대스타시티2호점 ~ 건대입구역앞교차로', '구간 거리': '167m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c949008bafbb264c759f05e9f6acb03e = L.polyline(
+                [[37.539292819718206, 127.07235431806046], [37.53903056225584, 127.0732440795779], [37.538877158605246, 127.07384927172485], [37.5387508890712, 127.074364376096]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_ee782763e1fdb893f45c216efe1aead2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fde9311498af630cb9dfab2da4dd420 = $(`<div id="html_0fde9311498af630cb9dfab2da4dd420" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '건대후문 ~ 이디야커피건대스타시티2호점', '구간 거리': '188m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ee782763e1fdb893f45c216efe1aead2.setContent(html_0fde9311498af630cb9dfab2da4dd420);
+            
+        
+
+        poly_line_c949008bafbb264c759f05e9f6acb03e.bindPopup(popup_ee782763e1fdb893f45c216efe1aead2)
+        ;
+
+        
+    
+    
+            poly_line_c949008bafbb264c759f05e9f6acb03e.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '건대후문 ~ 이디야커피건대스타시티2호점', '구간 거리': '188m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e980eccd345566736cd17ea388ce7e16 = L.polyline(
+                [[37.53875092339608, 127.07436423808944], [37.53835700927657, 127.07595902183434], [37.538070145622605, 127.07713717788978]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_d8db96ecb6df4e3180ca27cb1118b8ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a6fbe9b8c2ab0f71d0ee56339a1f183 = $(`<div id="html_1a6fbe9b8c2ab0f71d0ee56339a1f183" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '자양삼거리 ~ 건대후문', '구간 거리': '256m', '평균 속도': '36.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_d8db96ecb6df4e3180ca27cb1118b8ff.setContent(html_1a6fbe9b8c2ab0f71d0ee56339a1f183);
+            
+        
+
+        poly_line_e980eccd345566736cd17ea388ce7e16.bindPopup(popup_d8db96ecb6df4e3180ca27cb1118b8ff)
+        ;
+
+        
+    
+    
+            poly_line_e980eccd345566736cd17ea388ce7e16.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '자양삼거리 ~ 건대후문', '구간 거리': '256m', '평균 속도': '36.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0aebe2a04afccba4fd42247134c8ab68 = L.polyline(
+                [[37.5393934463273, 127.07240391574784], [37.539970454238755, 127.07065851015712]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_320bf16b807df3e5f711038e3b26d71c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f3bcb5e00b3d8ba95d093be3c6c917e = $(`<div id="html_8f3bcb5e00b3d8ba95d093be3c6c917e" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '건대입구역앞교차로 ~ 이디야커피건대스타시티2호점', '구간 거리': '167m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_320bf16b807df3e5f711038e3b26d71c.setContent(html_8f3bcb5e00b3d8ba95d093be3c6c917e);
+            
+        
+
+        poly_line_0aebe2a04afccba4fd42247134c8ab68.bindPopup(popup_320bf16b807df3e5f711038e3b26d71c)
+        ;
+
+        
+    
+    
+            poly_line_0aebe2a04afccba4fd42247134c8ab68.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '건대입구역앞교차로 ~ 이디야커피건대스타시티2호점', '구간 거리': '167m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ca0a01b0f3c9302e38e06f8ea951eacd = L.polyline(
+                [[37.53885422392397, 127.0744043250065], [37.53898034097462, 127.0738898387637], [37.53913282807186, 127.07328826233261], [37.539394216391415, 127.07240145097427]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_0cd7f64c9eb95eebdaa9bce871f5bdeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a2a30a101e635016da31b184b31fd0c = $(`<div id="html_5a2a30a101e635016da31b184b31fd0c" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '이디야커피건대스타시티2호점 ~ 건대후문', '구간 거리': '187m', '평균 속도': '44.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_0cd7f64c9eb95eebdaa9bce871f5bdeb.setContent(html_5a2a30a101e635016da31b184b31fd0c);
+            
+        
+
+        poly_line_ca0a01b0f3c9302e38e06f8ea951eacd.bindPopup(popup_0cd7f64c9eb95eebdaa9bce871f5bdeb)
+        ;
+
+        
+    
+    
+            poly_line_ca0a01b0f3c9302e38e06f8ea951eacd.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '이디야커피건대스타시티2호점 ~ 건대후문', '구간 거리': '187m', '평균 속도': '44.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_81685119091fcc1fc5c791123c5a0d22 = L.polyline(
+                [[37.53817354007516, 127.07717688139876], [37.538460339981896, 127.07599898630745], [37.538854189599036, 127.07440446301331]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_146ca043ffe3efd42f7d39e6de6da5e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f9493ffed25ec4f80460aacf17e9378 = $(`<div id="html_8f9493ffed25ec4f80460aacf17e9378" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '건대후문 ~ 자양삼거리', '구간 거리': '256m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_146ca043ffe3efd42f7d39e6de6da5e7.setContent(html_8f9493ffed25ec4f80460aacf17e9378);
+            
+        
+
+        poly_line_81685119091fcc1fc5c791123c5a0d22.bindPopup(popup_146ca043ffe3efd42f7d39e6de6da5e7)
+        ;
+
+        
+    
+    
+            poly_line_81685119091fcc1fc5c791123c5a0d22.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '건대후문 ~ 자양삼거리', '구간 거리': '256m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d4162fb203678b0ed2ffe97528f934b1 = L.polyline(
+                [[37.54213526849335, 127.06397040556745], [37.54101706193446, 127.06726093752606], [37.53987086951586, 127.07060564199041]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_31d54d4d0ffbeca8ad4e10a0233eeea2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2d90ff5a2fa0012a0f593033ea4d4ec = $(`<div id="html_d2d90ff5a2fa0012a0f593033ea4d4ec" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '건대입구역앞교차로 ~ 성수사거리', '구간 거리': '638m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_31d54d4d0ffbeca8ad4e10a0233eeea2.setContent(html_d2d90ff5a2fa0012a0f593033ea4d4ec);
+            
+        
+
+        poly_line_d4162fb203678b0ed2ffe97528f934b1.bindPopup(popup_31d54d4d0ffbeca8ad4e10a0233eeea2)
+        ;
+
+        
+    
+    
+            poly_line_d4162fb203678b0ed2ffe97528f934b1.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '건대입구역앞교차로 ~ 성수사거리', '구간 거리': '638m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_98cdda1e4928cedb7f58fe1b6d88325d = L.polyline(
+                [[37.53997018165283, 127.07065931892193], [37.541116439653365, 127.06731442420505], [37.542234711759306, 127.06402370203395]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_ec2ed3907b7fcb949a535332cc37b9e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38f4f7d8b6248ce0c1854bcf54ef683e = $(`<div id="html_38f4f7d8b6248ce0c1854bcf54ef683e" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로', '구간명': '성수사거리 ~ 건대입구역앞교차로', '구간 거리': '638m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ec2ed3907b7fcb949a535332cc37b9e6.setContent(html_38f4f7d8b6248ce0c1854bcf54ef683e);
+            
+        
+
+        poly_line_98cdda1e4928cedb7f58fe1b6d88325d.bindPopup(popup_ec2ed3907b7fcb949a535332cc37b9e6)
+        ;
+
+        
+    
+    
+            poly_line_98cdda1e4928cedb7f58fe1b6d88325d.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로', '구간명': '성수사거리 ~ 건대입구역앞교차로', '구간 거리': '638m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c7c812e65a49aaa84620cd6fb6271d3f = L.polyline(
+                [[37.54730832901452, 127.07414449247577], [37.54720337702906, 127.07400813378393], [37.54712627329183, 127.07395615750771], [37.54638176067523, 127.07359451745121], [37.5443127580848, 127.07261627900283], [37.540155390298985, 127.0706878830879], [37.53994226603433, 127.07057032168314]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_9f6ff64df34ca6e40258dd7f9153a237 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_058dbfded3193e53c913d5454bd541d5 = $(`<div id="html_058dbfded3193e53c913d5454bd541d5" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '건대입구역앞교차로 ~ 어린이대공원역교차로', '구간 거리': '878m', '평균 속도': '17.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9f6ff64df34ca6e40258dd7f9153a237.setContent(html_058dbfded3193e53c913d5454bd541d5);
+            
+        
+
+        poly_line_c7c812e65a49aaa84620cd6fb6271d3f.bindPopup(popup_9f6ff64df34ca6e40258dd7f9153a237)
+        ;
+
+        
+    
+    
+            poly_line_c7c812e65a49aaa84620cd6fb6271d3f.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '건대입구역앞교차로 ~ 어린이대공원역교차로', '구간 거리': '878m', '평균 속도': '17.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e83ba80385a9c039b10812caa1bd4c82 = L.polyline(
+                [[37.539898785108896, 127.07069463802591], [37.54011488336822, 127.07081384094275], [37.544274980169405, 127.07274350828108], [37.54634321339043, 127.07372138688136], [37.5470810341415, 127.07407977820472], [37.54713737228535, 127.07411775526266], [37.547230591913994, 127.07423887202309]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_bb3aaa6658e8141077b6d96507934423 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42e6af0fab7a2e30b80d7c1fa81d0f81 = $(`<div id="html_42e6af0fab7a2e30b80d7c1fa81d0f81" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로', '구간명': '어린이대공원역교차로 ~ 건대입구역앞교차로', '구간 거리': '873m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_bb3aaa6658e8141077b6d96507934423.setContent(html_42e6af0fab7a2e30b80d7c1fa81d0f81);
+            
+        
+
+        poly_line_e83ba80385a9c039b10812caa1bd4c82.bindPopup(popup_bb3aaa6658e8141077b6d96507934423)
+        ;
+
+        
+    
+    
+            poly_line_e83ba80385a9c039b10812caa1bd4c82.bindTooltip(
+                `<div>
+                     {'도로명': '능동로', '구간명': '어린이대공원역교차로 ~ 건대입구역앞교차로', '구간 거리': '873m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_39ead9960c007f1954ea33bf07343674 = L.polyline(
+                [[37.53874180451417, 127.06999326656474], [37.5372071673034, 127.0692776775772], [37.53612827396882, 127.06878509311996], [37.53521477212801, 127.06838164463629], [37.533663385244374, 127.06765848621168], [37.53247033449996, 127.06711742502799], [37.53184508733985, 127.06680311249593], [37.53156863357358, 127.06666367090786]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_ace18cdd7377b4b5a4f453cb83419297 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4651d13ad2d83771ed8712f5cdda88e8 = $(`<div id="html_4651d13ad2d83771ed8712f5cdda88e8" style="width: 100.0%; height: 100.0%;">{'도로명': '강변북로', '구간명': '청담대교북측 ~ 청담대교', '구간 거리': '849m', '평균 속도': '39.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ace18cdd7377b4b5a4f453cb83419297.setContent(html_4651d13ad2d83771ed8712f5cdda88e8);
+            
+        
+
+        poly_line_39ead9960c007f1954ea33bf07343674.bindPopup(popup_ace18cdd7377b4b5a4f453cb83419297)
+        ;
+
+        
+    
+    
+            poly_line_39ead9960c007f1954ea33bf07343674.bindTooltip(
+                `<div>
+                     {'도로명': '강변북로', '구간명': '청담대교북측 ~ 청담대교', '구간 거리': '849m', '평균 속도': '39.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9544aa06d1e5657a9417f0bbf0fb5444 = L.polyline(
+                [[37.5369740518934, 127.07100782865703], [37.53610199140983, 127.07356069225176], [37.53616110191888, 127.07365982501774], [37.53783203142546, 127.07414905058734]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_0e02d8b31679a6afcfab2d310c146a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1a1bf324d07fcb9822db2c25b9642fe = $(`<div id="html_e1a1bf324d07fcb9822db2c25b9642fe" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로10길', '구간명': '더샵스타시티 ~ 광진문화예술회관및구', '구간 거리': '447m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_0e02d8b31679a6afcfab2d310c146a76.setContent(html_e1a1bf324d07fcb9822db2c25b9642fe);
+            
+        
+
+        poly_line_9544aa06d1e5657a9417f0bbf0fb5444.bindPopup(popup_0e02d8b31679a6afcfab2d310c146a76)
+        ;
+
+        
+    
+    
+            poly_line_9544aa06d1e5657a9417f0bbf0fb5444.bindTooltip(
+                `<div>
+                     {'도로명': '능동로10길', '구간명': '더샵스타시티 ~ 광진문화예술회관및구', '구간 거리': '447m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_49bc1db648862ca727f1df67767d8795 = L.polyline(
+                [[37.53785658193749, 127.07401682106303], [37.53622682730672, 127.07353965350053], [37.53707341624653, 127.07106135360512]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_9a97e5bee5a4052d41099394de36bac8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d75d5f05aa9c1aa4bfc174bff794497 = $(`<div id="html_0d75d5f05aa9c1aa4bfc174bff794497" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로10길', '구간명': '광진문화예술회관및구 ~ 더샵스타시티', '구간 거리': '424m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_9a97e5bee5a4052d41099394de36bac8.setContent(html_0d75d5f05aa9c1aa4bfc174bff794497);
+            
+        
+
+        poly_line_49bc1db648862ca727f1df67767d8795.bindPopup(popup_9a97e5bee5a4052d41099394de36bac8)
+        ;
+
+        
+    
+    
+            poly_line_49bc1db648862ca727f1df67767d8795.bindTooltip(
+                `<div>
+                     {'도로명': '능동로10길', '구간명': '광진문화예술회관및구 ~ 더샵스타시티', '구간 거리': '424m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e900031b96a5d54708e66de45775b972 = L.polyline(
+                [[37.53749053165724, 127.06948202490904], [37.5369739823933, 127.07100803338427]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_38600f69371736955a493b6e565a7a5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a03c7bd3f01e19a330504e0c8d4082a = $(`<div id="html_4a03c7bd3f01e19a330504e0c8d4082a" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로10길', '구간명': '광진문화예술회관및구 ~ 명성장갑', '구간 거리': '147m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_38600f69371736955a493b6e565a7a5b.setContent(html_4a03c7bd3f01e19a330504e0c8d4082a);
+            
+        
+
+        poly_line_e900031b96a5d54708e66de45775b972.bindPopup(popup_38600f69371736955a493b6e565a7a5b)
+        ;
+
+        
+    
+    
+            poly_line_e900031b96a5d54708e66de45775b972.bindTooltip(
+                `<div>
+                     {'도로명': '능동로10길', '구간명': '광진문화예술회관및구 ~ 명성장갑', '구간 거리': '147m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_254c0e0f8badcb746c156dfe122f665b = L.polyline(
+                [[37.53707348484576, 127.07106114887674], [37.53759003568929, 127.06953513987465]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_d25e00fb25d1076fb3f25926d215d0ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_159c5a329a5d0965c3cd7abcbd5d6f11 = $(`<div id="html_159c5a329a5d0965c3cd7abcbd5d6f11" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로10길', '구간명': '명성장갑 ~ 광진문화예술회관및구', '구간 거리': '147m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d25e00fb25d1076fb3f25926d215d0ed.setContent(html_159c5a329a5d0965c3cd7abcbd5d6f11);
+            
+        
+
+        poly_line_254c0e0f8badcb746c156dfe122f665b.bindPopup(popup_d25e00fb25d1076fb3f25926d215d0ed)
+        ;
+
+        
+    
+    
+            poly_line_254c0e0f8badcb746c156dfe122f665b.bindTooltip(
+                `<div>
+                     {'도로명': '능동로10길', '구간명': '명성장갑 ~ 광진문화예술회관및구', '구간 거리': '147m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7593ff1c3131856aa818395cc6f7cb59 = L.polyline(
+                [[37.537002882373685, 127.07109722506414], [37.53739395938113, 127.07130254118928], [37.537559792261845, 127.07136487750654], [37.5377317290412, 127.07139946733528], [37.5379540759166, 127.07140268112533], [37.5381221176206, 127.07143136122762], [37.53839226162187, 127.07154473027057], [37.53848213375136, 127.07160258142825], [37.53855089258982, 127.07169923579089], [37.538628391945245, 127.07191435778557]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_23c9c0e22d8500391f2b34bc2de8677a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20337175ccea4891a82c8b24204d5cb9 = $(`<div id="html_20337175ccea4891a82c8b24204d5cb9" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로10길.인접길', '구간명': '폴바셋더클래식500점 ~ 광진문화예술회관및구', '구간 거리': '204m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_23c9c0e22d8500391f2b34bc2de8677a.setContent(html_20337175ccea4891a82c8b24204d5cb9);
+            
+        
+
+        poly_line_7593ff1c3131856aa818395cc6f7cb59.bindPopup(popup_23c9c0e22d8500391f2b34bc2de8677a)
+        ;
+
+        
+    
+    
+            poly_line_7593ff1c3131856aa818395cc6f7cb59.bindTooltip(
+                `<div>
+                     {'도로명': '능동로10길.인접길', '구간명': '폴바셋더클래식500점 ~ 광진문화예술회관및구', '구간 거리': '204m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a7ca21fe64d6b7d3e66cd2053966468b = L.polyline(
+                [[37.5387268999113, 127.07185839092165], [37.538642567063484, 127.07162430196453], [37.538549358716395, 127.07149327931685], [37.53843429447012, 127.07141921164995], [37.53814674743737, 127.07129853974537], [37.53796200828447, 127.0712670108414], [37.53774095252749, 127.07126381565443], [37.53758395157826, 127.07123223079728], [37.53743041449511, 127.07117451714305], [37.53704458573956, 127.07097195712745]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_24143891d3d2980e5bec93a4144890fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91d9da388f002d724d7303ea507321ba = $(`<div id="html_91d9da388f002d724d7303ea507321ba" style="width: 100.0%; height: 100.0%;">{'도로명': '능동로10길.인접길', '구간명': '광진문화예술회관및구 ~ 폴바셋더클래식500점', '구간 거리': '213m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_24143891d3d2980e5bec93a4144890fa.setContent(html_91d9da388f002d724d7303ea507321ba);
+            
+        
+
+        poly_line_a7ca21fe64d6b7d3e66cd2053966468b.bindPopup(popup_24143891d3d2980e5bec93a4144890fa)
+        ;
+
+        
+    
+    
+            poly_line_a7ca21fe64d6b7d3e66cd2053966468b.bindTooltip(
+                `<div>
+                     {'도로명': '능동로10길.인접길', '구간명': '광진문화예술회관및구 ~ 폴바셋더클래식500점', '구간 거리': '213m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f9f52eae0d588459e73fd1d01528cf97 = L.polyline(
+                [[37.5386398370624, 127.07183785135919], [37.5385130426523, 127.07199365635135], [37.537794777767466, 127.07405572768036]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_7f0c5650e13ec6c2bd890c6f45d88828 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3900cad5bc4a310e5059683286751ffe = $(`<div id="html_3900cad5bc4a310e5059683286751ffe" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로36길.인접길', '구간명': '더샵스타시티 ~ 폴바셋더클래식500점', '구간 거리': '219m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7f0c5650e13ec6c2bd890c6f45d88828.setContent(html_3900cad5bc4a310e5059683286751ffe);
+            
+        
+
+        poly_line_f9f52eae0d588459e73fd1d01528cf97.bindPopup(popup_7f0c5650e13ec6c2bd890c6f45d88828)
+        ;
+
+        
+    
+    
+            poly_line_f9f52eae0d588459e73fd1d01528cf97.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로36길.인접길', '구간명': '더샵스타시티 ~ 폴바셋더클래식500점', '구간 거리': '219m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5d0d0229f81e5517915a672747122776 = L.polyline(
+                [[37.537893835626505, 127.07411014289637], [37.53860367946727, 127.07207224661933], [37.53871545387923, 127.07193489856454]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_9d4df310284cdcc350c9ecc580dc8ba9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_306713eeaa38f38d22825c4ed47b167e = $(`<div id="html_306713eeaa38f38d22825c4ed47b167e" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로36길.인접길', '구간명': '폴바셋더클래식500점 ~ 더샵스타시티', '구간 거리': '214m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9d4df310284cdcc350c9ecc580dc8ba9.setContent(html_306713eeaa38f38d22825c4ed47b167e);
+            
+        
+
+        poly_line_5d0d0229f81e5517915a672747122776.bindPopup(popup_9d4df310284cdcc350c9ecc580dc8ba9)
+        ;
+
+        
+    
+    
+            poly_line_5d0d0229f81e5517915a672747122776.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로36길.인접길', '구간명': '폴바셋더클래식500점 ~ 더샵스타시티', '구간 거리': '214m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e94081532a46d1deded498fb0df10a79 = L.polyline(
+                [[37.537831172035276, 127.07414878949893], [37.538789421217146, 127.07445020555494]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_5853000e5ee5cc487fbde461dcdc6eda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9f585da708e78892098a440d81666b5 = $(`<div id="html_b9f585da708e78892098a440d81666b5" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로36길', '구간명': '건대후문 ~ 더샵스타시티', '구간 거리': '110m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_5853000e5ee5cc487fbde461dcdc6eda.setContent(html_b9f585da708e78892098a440d81666b5);
+            
+        
+
+        poly_line_e94081532a46d1deded498fb0df10a79.bindPopup(popup_5853000e5ee5cc487fbde461dcdc6eda)
+        ;
+
+        
+    
+    
+            poly_line_e94081532a46d1deded498fb0df10a79.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로36길', '구간명': '건대후문 ~ 더샵스타시티', '구간 거리': '110m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_54596374c897807bb56d03ff84d8f13f = L.polyline(
+                [[37.538815691744446, 127.07431849662834], [37.53785744132797, 127.07401708215001]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_c71c7441154da990909578fea219626a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_655fa2688602e6d6f4fd3a947b546f44 = $(`<div id="html_655fa2688602e6d6f4fd3a947b546f44" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로36길', '구간명': '더샵스타시티 ~ 건대후문', '구간 거리': '110m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_c71c7441154da990909578fea219626a.setContent(html_655fa2688602e6d6f4fd3a947b546f44);
+            
+        
+
+        poly_line_54596374c897807bb56d03ff84d8f13f.bindPopup(popup_c71c7441154da990909578fea219626a)
+        ;
+
+        
+    
+    
+            poly_line_54596374c897807bb56d03ff84d8f13f.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로36길', '구간명': '더샵스타시티 ~ 건대후문', '구간 거리': '110m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_acb6acbb0ec2b5cdd9b080179fac37e4 = L.polyline(
+                [[37.538643741535786, 127.07193925262631], [37.538888999178404, 127.07218724569877], [37.5390223336112, 127.07229484382077], [37.53932403744995, 127.07244121268366]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_6002c77c893e347049d5643bff304a0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81f2b126fe8ef56c998f4a7b6dae80ba = $(`<div id="html_81f2b126fe8ef56c998f4a7b6dae80ba" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로.인접길', '구간명': '이디야커피건대스타시티2호점 ~ 폴바셋더클래식500점', '구간 거리': '88m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_6002c77c893e347049d5643bff304a0a.setContent(html_81f2b126fe8ef56c998f4a7b6dae80ba);
+            
+        
+
+        poly_line_acb6acbb0ec2b5cdd9b080179fac37e4.bindPopup(popup_6002c77c893e347049d5643bff304a0a)
+        ;
+
+        
+    
+    
+            poly_line_acb6acbb0ec2b5cdd9b080179fac37e4.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로.인접길', '구간명': '이디야커피건대스타시티2호점 ~ 폴바셋더클래식500점', '구간 거리': '88m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9ca42a4dca83afd201f2720599128526 = L.polyline(
+                [[37.53936299953184, 127.07231455628698], [37.53907154227501, 127.07217315929874], [37.53895230774419, 127.07207694064917], [37.53871154940292, 127.07183349606893]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_62bdefb1359ef4bf4109f4733be4295c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d995c915c8dc949cc198004b7d2d867d = $(`<div id="html_d995c915c8dc949cc198004b7d2d867d" style="width: 100.0%; height: 100.0%;">{'도로명': '아차산로.인접길', '구간명': '폴바셋더클래식500점 ~ 이디야커피건대스타시티2호점', '구간 거리': '85m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_62bdefb1359ef4bf4109f4733be4295c.setContent(html_d995c915c8dc949cc198004b7d2d867d);
+            
+        
+
+        poly_line_9ca42a4dca83afd201f2720599128526.bindPopup(popup_62bdefb1359ef4bf4109f4733be4295c)
+        ;
+
+        
+    
+    
+            poly_line_9ca42a4dca83afd201f2720599128526.bindTooltip(
+                `<div>
+                     {'도로명': '아차산로.인접길', '구간명': '폴바셋더클래식500점 ~ 이디야커피건대스타시티2호점', '구간 거리': '85m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6fa0002ab9ac6537061aef6f5f982233 = L.polyline(
+                [[37.54014776277102, 127.062824935392], [37.539571716983254, 127.06450877619882], [37.53873073075595, 127.06699759775248], [37.53812452568155, 127.06876498189288], [37.53783769400363, 127.06964914113243]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_5e348d4743d87dc50b03daa71d7db63b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8043c56d87061b7cbad4fa7fc9f69633 = $(`<div id="html_8043c56d87061b7cbad4fa7fc9f69633" style="width: 100.0%; height: 100.0%;">{'도로명': '동일로18길', '구간명': '광진문화예술회관 ~ 삼보약국', '구간 거리': '655m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_5e348d4743d87dc50b03daa71d7db63b.setContent(html_8043c56d87061b7cbad4fa7fc9f69633);
+            
+        
+
+        poly_line_6fa0002ab9ac6537061aef6f5f982233.bindPopup(popup_5e348d4743d87dc50b03daa71d7db63b)
+        ;
+
+        
+    
+    
+            poly_line_6fa0002ab9ac6537061aef6f5f982233.bindTooltip(
+                `<div>
+                     {'도로명': '동일로18길', '구간명': '광진문화예술회관 ~ 삼보약국', '구간 거리': '655m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8e75408eaab89e177ffef67f66756a08 = L.polyline(
+                [[37.53793782346156, 127.06970036872791], [37.53822425024239, 127.06881745727739], [37.5388301465376, 127.06705097498754], [37.539671151929156, 127.06456209417313], [37.54024710281436, 127.06287853094369]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_ad675624675149206ee9b03a3d158d75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_075cb5ee0ccf7940fce1fb073775d056 = $(`<div id="html_075cb5ee0ccf7940fce1fb073775d056" style="width: 100.0%; height: 100.0%;">{'도로명': '동일로18길', '구간명': '삼보약국 ~ 광진문화예술회관', '구간 거리': '655m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_ad675624675149206ee9b03a3d158d75.setContent(html_075cb5ee0ccf7940fce1fb073775d056);
+            
+        
+
+        poly_line_8e75408eaab89e177ffef67f66756a08.bindPopup(popup_ad675624675149206ee9b03a3d158d75)
+        ;
+
+        
+    
+    
+            poly_line_8e75408eaab89e177ffef67f66756a08.bindTooltip(
+                `<div>
+                     {'도로명': '동일로18길', '구간명': '삼보약국 ~ 광진문화예술회관', '구간 거리': '655m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ebc9f26fa8867809591f23e5b6cc40f4 = L.polyline(
+                [[37.54216274784059, 127.0640589329974], [37.5441407837575, 127.06518036422334], [37.545592136075186, 127.06600198806407]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_e31fafc58f9c9bdc32e24e4d46d795eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e16cf7e853f2be93f281a439c8c98ff4 = $(`<div id="html_e16cf7e853f2be93f281a439c8c98ff4" style="width: 100.0%; height: 100.0%;">{'도로명': '동일로', '구간명': '장구약국 ~ 성수사거리', '구간 거리': '418m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_e31fafc58f9c9bdc32e24e4d46d795eb.setContent(html_e16cf7e853f2be93f281a439c8c98ff4);
+            
+        
+
+        poly_line_ebc9f26fa8867809591f23e5b6cc40f4.bindPopup(popup_e31fafc58f9c9bdc32e24e4d46d795eb)
+        ;
+
+        
+    
+    
+            poly_line_ebc9f26fa8867809591f23e5b6cc40f4.bindTooltip(
+                `<div>
+                     {'도로명': '동일로', '구간명': '장구약국 ~ 성수사거리', '구간 거리': '418m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d738be58c4e09ea7f89734c3ebffa70 = L.polyline(
+                [[37.54563656679125, 127.0658781933565], [37.54418524244455, 127.06505658729245], [37.54220723238607, 127.06393517453184]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_96e3b3779ae4ab9cd781079f91eeb833);
+        
+    
+        var popup_cd127126cb475632db9a3b4580eef52a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31f00361ebeb5c78435a1de72ce5d063 = $(`<div id="html_31f00361ebeb5c78435a1de72ce5d063" style="width: 100.0%; height: 100.0%;">{'도로명': '동일로', '구간명': '성수사거리 ~ 장구약국', '구간 거리': '418m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_cd127126cb475632db9a3b4580eef52a.setContent(html_31f00361ebeb5c78435a1de72ce5d063);
+            
+        
+
+        poly_line_0d738be58c4e09ea7f89734c3ebffa70.bindPopup(popup_cd127126cb475632db9a3b4580eef52a)
+        ;
+
+        
+    
+    
+            poly_line_0d738be58c4e09ea7f89734c3ebffa70.bindTooltip(
+                `<div>
+                     {'도로명': '동일로', '구간명': '성수사거리 ~ 장구약국', '구간 거리': '418m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -31,7 +31,6 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
-
   spark-master:
     container_name: spark-master
     image: gkdldhdl/spark:0.05
@@ -110,6 +109,25 @@ services:
 
     depends_on:
       - spark-master
+    
+  spark-worker-4:
+    container_name: spark-worker-4
+    image: gkdldhdl/spark:0.05
+    stdin_open: true
+    tty: true
+    ports:
+      - "8084:8084"
+    environment:
+      SPARK_MODE: worker
+      SPARK_MASTER_HOST: spark-master
+      SPARK_MASTER_PORT: 17077
+      SPARK_WORKER_CORES: 1
+      SPARK_WORKER_MEMORY: 4G
+      SPARK_WORKER_WEBUI_PORT: 8084
+      SPARK_WORKER_PORT: 18084
+
+    depends_on:
+      - spark-master
       
   mongodb:
     image: mongo:latest
@@ -149,7 +167,7 @@ services:
       - ./notebooks/work:/home/jovyan/work
     environment:
       GRANT_SUDO: yes
-
+      
 networks:
   default:
     name: seoulcity-net

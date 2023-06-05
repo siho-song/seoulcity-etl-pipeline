@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd1decf1f19172efb323485364c33b2c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd1decf1f19172efb323485364c33b2c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd1decf1f19172efb323485364c33b2c = L.map(
+                "map_fd1decf1f19172efb323485364c33b2c",
+                {
+                    center: [37.49142045051981, 127.0141911239256],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d10e2e7a876aa18be1d635a5bdf8f12f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+            var poly_line_9250637b8ae46619aad15231110bd726 = L.polyline(
+                [[37.488383508275824, 127.0145426785587], [37.48797011026371, 127.01461778304076], [37.487758284771246, 127.01467850055553], [37.487559325620104, 127.01474655403176], [37.487372893113815, 127.01482198408429], [37.487180029084435, 127.01490513970869], [37.48679248871051, 127.01510823767151]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_10e0cb1da7237dfb0db66d7b27a299ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58e74d0d40b1878a8da9140564287dc1 = $(`<div id="html_58e74d0d40b1878a8da9140564287dc1" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '상보빌딩 ~ 서울교대앞교차로', '구간 거리': '184m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_10e0cb1da7237dfb0db66d7b27a299ff.setContent(html_58e74d0d40b1878a8da9140564287dc1);
+            
+        
+
+        poly_line_9250637b8ae46619aad15231110bd726.bindPopup(popup_10e0cb1da7237dfb0db66d7b27a299ff)
+        ;
+
+        
+    
+    
+            poly_line_9250637b8ae46619aad15231110bd726.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '상보빌딩 ~ 서울교대앞교차로', '구간 거리': '184m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_229f224a7b4ef977ec17f27c465b0d0b = L.polyline(
+                [[37.486834154170715, 127.01523344256606], [37.48721846713094, 127.01503203602323], [37.48740705122657, 127.01495072627304], [37.48759014631021, 127.0148766470418], [37.487784549843475, 127.01481015223531], [37.48798992575689, 127.01475128365293], [37.48839899981786, 127.01467696489213]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_441a24657e1a115ffdcb223e69e21915 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c074c387e5f24da66b38753ad8d87828 = $(`<div id="html_c074c387e5f24da66b38753ad8d87828" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '서울교대앞교차로 ~ 상보빌딩', '구간 거리': '181m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_441a24657e1a115ffdcb223e69e21915.setContent(html_c074c387e5f24da66b38753ad8d87828);
+            
+        
+
+        poly_line_229f224a7b4ef977ec17f27c465b0d0b.bindPopup(popup_441a24657e1a115ffdcb223e69e21915)
+        ;
+
+        
+    
+    
+            poly_line_229f224a7b4ef977ec17f27c465b0d0b.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '서울교대앞교차로 ~ 상보빌딩', '구간 거리': '181m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_691ea28d83231cc73fcde9dd470e0949 = L.polyline(
+                [[37.48787152899888, 127.01270231394014], [37.48707018926556, 127.01005830470581]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_443be815382a2fb25032fa408d40ef55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_136934fdab6590aa2c0ba8cfcd285387 = $(`<div id="html_136934fdab6590aa2c0ba8cfcd285387" style="width: 100.0%; height: 100.0%;">{'도로명': '사임당로', '구간명': '교대입구교차로 ~ 제우교역', '구간 거리': '250m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_443be815382a2fb25032fa408d40ef55.setContent(html_136934fdab6590aa2c0ba8cfcd285387);
+            
+        
+
+        poly_line_691ea28d83231cc73fcde9dd470e0949.bindPopup(popup_443be815382a2fb25032fa408d40ef55)
+        ;
+
+        
+    
+    
+            poly_line_691ea28d83231cc73fcde9dd470e0949.bindTooltip(
+                `<div>
+                     {'도로명': '사임당로', '구간명': '교대입구교차로 ~ 제우교역', '구간 거리': '250m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_acec3d5cc8a3e94a9bc01a048d4a958a = L.polyline(
+                [[37.48844178916984, 127.01458572400317], [37.48787153440283, 127.01270233316319]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_18d994d9275b94deb4667d360e8d8a3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e93e913437446375a7507e3ee940294f = $(`<div id="html_e93e913437446375a7507e3ee940294f" style="width: 100.0%; height: 100.0%;">{'도로명': '사임당로', '구간명': '제우교역 ~ 서울교대앞교차로', '구간 거리': '178m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_18d994d9275b94deb4667d360e8d8a3e.setContent(html_e93e913437446375a7507e3ee940294f);
+            
+        
+
+        poly_line_acec3d5cc8a3e94a9bc01a048d4a958a.bindPopup(popup_18d994d9275b94deb4667d360e8d8a3e)
+        ;
+
+        
+    
+    
+            poly_line_acec3d5cc8a3e94a9bc01a048d4a958a.bindTooltip(
+                `<div>
+                     {'도로명': '사임당로', '구간명': '제우교역 ~ 서울교대앞교차로', '구간 거리': '178m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d934587f4207fc6757bbc09419418b50 = L.polyline(
+                [[37.48777046404688, 127.01275052960199], [37.4883407180558, 127.01463391827042]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_3e8c1f4854b72bb5b6369ed859813646 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d9d4ec782abfd7c4018810e564d7ad0 = $(`<div id="html_1d9d4ec782abfd7c4018810e564d7ad0" style="width: 100.0%; height: 100.0%;">{'도로명': '사임당로', '구간명': '서울교대앞교차로 ~ 제우교역', '구간 거리': '178m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_3e8c1f4854b72bb5b6369ed859813646.setContent(html_1d9d4ec782abfd7c4018810e564d7ad0);
+            
+        
+
+        poly_line_d934587f4207fc6757bbc09419418b50.bindPopup(popup_3e8c1f4854b72bb5b6369ed859813646)
+        ;
+
+        
+    
+    
+            poly_line_d934587f4207fc6757bbc09419418b50.bindTooltip(
+                `<div>
+                     {'도로명': '사임당로', '구간명': '서울교대앞교차로 ~ 제우교역', '구간 거리': '178m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e1826c42fc9ffab28bbd4c0d12edf6cc = L.polyline(
+                [[37.48973561132805, 127.01882775985325], [37.488441741435686, 127.01458556795424]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_2faebb9d2bdf22cc20cb93f8f3d40670 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ff36f95ef4d53ab69b12653d132cb11 = $(`<div id="html_6ff36f95ef4d53ab69b12653d132cb11" style="width: 100.0%; height: 100.0%;">{'도로명': '사임당로', '구간명': '서울교대앞교차로 ~ 대학전문교회', '구간 거리': '402m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_2faebb9d2bdf22cc20cb93f8f3d40670.setContent(html_6ff36f95ef4d53ab69b12653d132cb11);
+            
+        
+
+        poly_line_e1826c42fc9ffab28bbd4c0d12edf6cc.bindPopup(popup_2faebb9d2bdf22cc20cb93f8f3d40670)
+        ;
+
+        
+    
+    
+            poly_line_e1826c42fc9ffab28bbd4c0d12edf6cc.bindTooltip(
+                `<div>
+                     {'도로명': '사임당로', '구간명': '서울교대앞교차로 ~ 대학전문교회', '구간 거리': '402m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_db102bfd0eef2381070d21f845016563 = L.polyline(
+                [[37.488340765789744, 127.01463407544992], [37.48963463396382, 127.01887626247384]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_acc36b703e61bfccb86044c1fffc9855 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a05de1b357bd8a4264dd08991bf1de4 = $(`<div id="html_3a05de1b357bd8a4264dd08991bf1de4" style="width: 100.0%; height: 100.0%;">{'도로명': '사임당로', '구간명': '대학전문교회 ~ 서울교대앞교차로', '구간 거리': '402m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_acc36b703e61bfccb86044c1fffc9855.setContent(html_3a05de1b357bd8a4264dd08991bf1de4);
+            
+        
+
+        poly_line_db102bfd0eef2381070d21f845016563.bindPopup(popup_acc36b703e61bfccb86044c1fffc9855)
+        ;
+
+        
+    
+    
+            poly_line_db102bfd0eef2381070d21f845016563.bindTooltip(
+                `<div>
+                     {'도로명': '사임당로', '구간명': '대학전문교회 ~ 서울교대앞교차로', '구간 거리': '402m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4a55817642df7d6b59d96819839e5b07 = L.polyline(
+                [[37.49128648583037, 127.01404950307894], [37.48838400203883, 127.01454259158885]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_1f101b388cdbdc649c9efabe32383ac1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1273696b79bd1ee0f8cdca5effd70b52 = $(`<div id="html_1273696b79bd1ee0f8cdca5effd70b52" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '서울교대앞교차로 ~ 꽃마을한방병원에이동', '구간 거리': '325m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_1f101b388cdbdc649c9efabe32383ac1.setContent(html_1273696b79bd1ee0f8cdca5effd70b52);
+            
+        
+
+        poly_line_4a55817642df7d6b59d96819839e5b07.bindPopup(popup_1f101b388cdbdc649c9efabe32383ac1)
+        ;
+
+        
+    
+    
+            poly_line_4a55817642df7d6b59d96819839e5b07.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '서울교대앞교차로 ~ 꽃마을한방병원에이동', '구간 거리': '325m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_80016c4339d663aa33a7bd26629f6051 = L.polyline(
+                [[37.493706086243286, 127.01363110976345], [37.49128635878564, 127.01404952567039]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_aa7ca0d4c7825f716d6283149ced3253 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9084dd8498f17663036f7254c4f4768f = $(`<div id="html_9084dd8498f17663036f7254c4f4768f" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '꽃마을한방병원에이동 ~ 법원검찰청앞교차로', '구간 거리': '271m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_aa7ca0d4c7825f716d6283149ced3253.setContent(html_9084dd8498f17663036f7254c4f4768f);
+            
+        
+
+        poly_line_80016c4339d663aa33a7bd26629f6051.bindPopup(popup_aa7ca0d4c7825f716d6283149ced3253)
+        ;
+
+        
+    
+    
+            poly_line_80016c4339d663aa33a7bd26629f6051.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '꽃마을한방병원에이동 ~ 법원검찰청앞교차로', '구간 거리': '271m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c42dcfd090e4243c589dd6663a1684fb = L.polyline(
+                [[37.48839850605469, 127.01467705186101], [37.49130098949823, 127.01418396845868]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_f79d25e192adfd81e55b7fa7a1dc1703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be415fc7627d68f987488ffce0ec8317 = $(`<div id="html_be415fc7627d68f987488ffce0ec8317" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '꽃마을한방병원에이동 ~ 서울교대앞교차로', '구간 거리': '325m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f79d25e192adfd81e55b7fa7a1dc1703.setContent(html_be415fc7627d68f987488ffce0ec8317);
+            
+        
+
+        poly_line_c42dcfd090e4243c589dd6663a1684fb.bindPopup(popup_f79d25e192adfd81e55b7fa7a1dc1703)
+        ;
+
+        
+    
+    
+            poly_line_c42dcfd090e4243c589dd6663a1684fb.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '꽃마을한방병원에이동 ~ 서울교대앞교차로', '구간 거리': '325m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_41c4fb8226005a5b6a88bc12df48f853 = L.polyline(
+                [[37.49130111654285, 127.01418394699816], [37.493720844469614, 127.01376553647657]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_131db1106b061f57d897b8e873ac49f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b95d8d4f08686a208d91941d49342245 = $(`<div id="html_b95d8d4f08686a208d91941d49342245" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '법원검찰청앞교차로 ~ 꽃마을한방병원에이동', '구간 거리': '271m', '평균 속도': '20.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_131db1106b061f57d897b8e873ac49f6.setContent(html_b95d8d4f08686a208d91941d49342245);
+            
+        
+
+        poly_line_41c4fb8226005a5b6a88bc12df48f853.bindPopup(popup_131db1106b061f57d897b8e873ac49f6)
+        ;
+
+        
+    
+    
+            poly_line_41c4fb8226005a5b6a88bc12df48f853.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '법원검찰청앞교차로 ~ 꽃마을한방병원에이동', '구간 거리': '271m', '평균 속도': '20.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_26956c7d59ba626a343adfb2f5141578 = L.polyline(
+                [[37.49294939458339, 127.01106869281136], [37.4919156375235, 127.00768401401814]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_0f07bcfe4093d076272b83175da2fda5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e3a19288b09f25126853f9dde2405ca = $(`<div id="html_5e3a19288b09f25126853f9dde2405ca" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로', '구간명': '서초역사거리 ~ 법원사거리', '구간 거리': '321m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_0f07bcfe4093d076272b83175da2fda5.setContent(html_5e3a19288b09f25126853f9dde2405ca);
+            
+        
+
+        poly_line_26956c7d59ba626a343adfb2f5141578.bindPopup(popup_0f07bcfe4093d076272b83175da2fda5)
+        ;
+
+        
+    
+    
+            poly_line_26956c7d59ba626a343adfb2f5141578.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로', '구간명': '서초역사거리 ~ 법원사거리', '구간 거리': '321m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_089a22aa2d36129f9a700078ec73a52b = L.polyline(
+                [[37.49376379084319, 127.01367354116331], [37.49294923965707, 127.01106819184861]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_316ebbf56b7918e6527809b452c3e7a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f232c82e72f78da9c9ad3ab9d6f60dfa = $(`<div id="html_f232c82e72f78da9c9ad3ab9d6f60dfa" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로', '구간명': '법원사거리 ~ 법원검찰청앞교차로', '구간 거리': '248m', '평균 속도': '31.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_316ebbf56b7918e6527809b452c3e7a9.setContent(html_f232c82e72f78da9c9ad3ab9d6f60dfa);
+            
+        
+
+        poly_line_089a22aa2d36129f9a700078ec73a52b.bindPopup(popup_316ebbf56b7918e6527809b452c3e7a9)
+        ;
+
+        
+    
+    
+            poly_line_089a22aa2d36129f9a700078ec73a52b.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로', '구간명': '법원사거리 ~ 법원검찰청앞교차로', '구간 거리': '248m', '평균 속도': '31.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6ff144594dbb1dfdcbb26c2505213317 = L.polyline(
+                [[37.49181468008308, 127.00773258280563], [37.49284843576978, 127.01111725771187]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_3609c672d3d86090ed5f698f8c0f3d77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9583bae4ecb9aff7d324c3845e534ba0 = $(`<div id="html_9583bae4ecb9aff7d324c3845e534ba0" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로', '구간명': '법원사거리 ~ 서초역사거리', '구간 거리': '321m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_3609c672d3d86090ed5f698f8c0f3d77.setContent(html_9583bae4ecb9aff7d324c3845e534ba0);
+            
+        
+
+        poly_line_6ff144594dbb1dfdcbb26c2505213317.bindPopup(popup_3609c672d3d86090ed5f698f8c0f3d77)
+        ;
+
+        
+    
+    
+            poly_line_6ff144594dbb1dfdcbb26c2505213317.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로', '구간명': '법원사거리 ~ 서초역사거리', '구간 거리': '321m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_587a6a07998be7c86186f2ff3ae6d914 = L.polyline(
+                [[37.49284859069589, 127.01111775867415], [37.493663139902345, 127.01372310503021]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_f203c60f8e7dd374307fea36e63fcee8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2867b8f82a3341a688a191fde2f5aec6 = $(`<div id="html_2867b8f82a3341a688a191fde2f5aec6" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로', '구간명': '법원검찰청앞교차로 ~ 법원사거리', '구간 거리': '248m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f203c60f8e7dd374307fea36e63fcee8.setContent(html_2867b8f82a3341a688a191fde2f5aec6);
+            
+        
+
+        poly_line_587a6a07998be7c86186f2ff3ae6d914.bindPopup(popup_f203c60f8e7dd374307fea36e63fcee8)
+        ;
+
+        
+    
+    
+            poly_line_587a6a07998be7c86186f2ff3ae6d914.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로', '구간명': '법원검찰청앞교차로 ~ 법원사거리', '구간 거리': '248m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0a65853597c8ad623788993a135de5e2 = L.polyline(
+                [[37.493927756914196, 127.01420881255464], [37.49376392504282, 127.01367397654668]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_e68f1b633387bf9226d65edec947e3c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_caeedd75bd820a7435b1c091b1e46055 = $(`<div id="html_caeedd75bd820a7435b1c091b1e46055" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로', '구간명': '법원검찰청앞교차로 ~ 법원검찰청앞', '구간 거리': '51m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e68f1b633387bf9226d65edec947e3c2.setContent(html_caeedd75bd820a7435b1c091b1e46055);
+            
+        
+
+        poly_line_0a65853597c8ad623788993a135de5e2.bindPopup(popup_e68f1b633387bf9226d65edec947e3c2)
+        ;
+
+        
+    
+    
+            poly_line_0a65853597c8ad623788993a135de5e2.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로', '구간명': '법원검찰청앞교차로 ~ 법원검찰청앞', '구간 거리': '51m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_db0783c4148099344e486144924a59a2 = L.polyline(
+                [[37.495820459918086, 127.02042778333235], [37.49392779744332, 127.01420894712808]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_06b59b4f78fae198fad79866813f08fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e73fe3071e60fe7e5f3b7213222a7966 = $(`<div id="html_e73fe3071e60fe7e5f3b7213222a7966" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로', '구간명': '법원검찰청앞 ~ 서초1교', '구간 거리': '589m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_06b59b4f78fae198fad79866813f08fb.setContent(html_e73fe3071e60fe7e5f3b7213222a7966);
+            
+        
+
+        poly_line_db0783c4148099344e486144924a59a2.bindPopup(popup_06b59b4f78fae198fad79866813f08fb)
+        ;
+
+        
+    
+    
+            poly_line_db0783c4148099344e486144924a59a2.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로', '구간명': '법원검찰청앞 ~ 서초1교', '구간 거리': '589m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cc8ac4bf11749bd93ff7d0b1637c96bc = L.polyline(
+                [[37.49366300570288, 127.0137226696474], [37.493826836455554, 127.01425750617265]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_9c774975b8ac89034d3e174622288d31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef9f540fd0334ec5e5d9cc8354980fee = $(`<div id="html_ef9f540fd0334ec5e5d9cc8354980fee" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로', '구간명': '법원검찰청앞 ~ 법원검찰청앞교차로', '구간 거리': '51m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9c774975b8ac89034d3e174622288d31.setContent(html_ef9f540fd0334ec5e5d9cc8354980fee);
+            
+        
+
+        poly_line_cc8ac4bf11749bd93ff7d0b1637c96bc.bindPopup(popup_9c774975b8ac89034d3e174622288d31)
+        ;
+
+        
+    
+    
+            poly_line_cc8ac4bf11749bd93ff7d0b1637c96bc.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로', '구간명': '법원검찰청앞 ~ 법원검찰청앞교차로', '구간 거리': '51m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fb68428f28668181f294838da2fd55ae = L.polyline(
+                [[37.493826795926466, 127.01425737159937], [37.495719454985554, 127.0204762006484]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_3c1e7b872de8a848312ca98c477e03f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8964a8d2ba096bbd0054dd1328e48316 = $(`<div id="html_8964a8d2ba096bbd0054dd1328e48316" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로', '구간명': '서초1교 ~ 법원검찰청앞', '구간 거리': '589m', '평균 속도': '35.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_3c1e7b872de8a848312ca98c477e03f3.setContent(html_8964a8d2ba096bbd0054dd1328e48316);
+            
+        
+
+        poly_line_fb68428f28668181f294838da2fd55ae.bindPopup(popup_3c1e7b872de8a848312ca98c477e03f3)
+        ;
+
+        
+    
+    
+            poly_line_fb68428f28668181f294838da2fd55ae.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로', '구간명': '서초1교 ~ 법원검찰청앞', '구간 거리': '589m', '평균 속도': '35.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aaf8c015e41ffbe7bbe037a8b0bc40ef = L.polyline(
+                [[37.494329484924094, 127.0134896150307], [37.493703848991075, 127.01363155715417]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_96aad4f2e69a5f5850d8f98bff5c3b7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_782d1ea3db652dc66b8727acfba9a547 = $(`<div id="html_782d1ea3db652dc66b8727acfba9a547" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '법원검찰청앞교차로 ~ 법원검찰청', '구간 거리': '71m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_96aad4f2e69a5f5850d8f98bff5c3b7d.setContent(html_782d1ea3db652dc66b8727acfba9a547);
+            
+        
+
+        poly_line_aaf8c015e41ffbe7bbe037a8b0bc40ef.bindPopup(popup_96aad4f2e69a5f5850d8f98bff5c3b7d)
+        ;
+
+        
+    
+    
+            poly_line_aaf8c015e41ffbe7bbe037a8b0bc40ef.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '법원검찰청앞교차로 ~ 법원검찰청', '구간 거리': '71m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9c08b62908ff38dc09e27a02eac785b0 = L.polyline(
+                [[37.49559327228322, 127.0132028841127], [37.494329484924094, 127.0134896150307]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_ffbf0ffbed33438293d894e70fee99c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92e3a2ba2b793003637caec30ecdc33b = $(`<div id="html_92e3a2ba2b793003637caec30ecdc33b" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '법원검찰청 ~ 법원후문', '구간 거리': '143m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ffbf0ffbed33438293d894e70fee99c4.setContent(html_92e3a2ba2b793003637caec30ecdc33b);
+            
+        
+
+        poly_line_9c08b62908ff38dc09e27a02eac785b0.bindPopup(popup_ffbf0ffbed33438293d894e70fee99c4)
+        ;
+
+        
+    
+    
+            poly_line_9c08b62908ff38dc09e27a02eac785b0.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '법원검찰청 ~ 법원후문', '구간 거리': '143m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f6fb9b4b6f8ddaa44b1103b6dac65fea = L.polyline(
+                [[37.49372308172233, 127.01376508908974], [37.494348718714484, 127.01362314804395]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_b380826780f306dc3dfa3d8f719a8b0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cac00cc9ef870931c448035ca2bd7c75 = $(`<div id="html_cac00cc9ef870931c448035ca2bd7c75" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '법원검찰청 ~ 법원검찰청앞교차로', '구간 거리': '71m', '평균 속도': '25.5km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_b380826780f306dc3dfa3d8f719a8b0c.setContent(html_cac00cc9ef870931c448035ca2bd7c75);
+            
+        
+
+        poly_line_f6fb9b4b6f8ddaa44b1103b6dac65fea.bindPopup(popup_b380826780f306dc3dfa3d8f719a8b0c)
+        ;
+
+        
+    
+    
+            poly_line_f6fb9b4b6f8ddaa44b1103b6dac65fea.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '법원검찰청 ~ 법원검찰청앞교차로', '구간 거리': '71m', '평균 속도': '25.5km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f81586fff912a19a3e2d77da8ce31241 = L.polyline(
+                [[37.494348718714484, 127.01362314804395], [37.49561250639316, 127.01333641930272]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_b66924340d46ea5352c4315860379ca6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9abe18138e0aad4bf3bc075eda2fb2d8 = $(`<div id="html_9abe18138e0aad4bf3bc075eda2fb2d8" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로', '구간명': '법원후문 ~ 법원검찰청', '구간 거리': '143m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_b66924340d46ea5352c4315860379ca6.setContent(html_9abe18138e0aad4bf3bc075eda2fb2d8);
+            
+        
+
+        poly_line_f81586fff912a19a3e2d77da8ce31241.bindPopup(popup_b66924340d46ea5352c4315860379ca6)
+        ;
+
+        
+    
+    
+            poly_line_f81586fff912a19a3e2d77da8ce31241.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로', '구간명': '법원후문 ~ 법원검찰청', '구간 거리': '143m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3a9e28d6973295c111f5a65c3f831d3d = L.polyline(
+                [[37.49288643970672, 127.01102695853974], [37.49270670988952, 127.01108045562164], [37.492146618798316, 127.01136227917742], [37.49153840490878, 127.01163666642823], [37.49040218935195, 127.01243317017496], [37.48940634679588, 127.01259696303987], [37.48880965183541, 127.01223546537473], [37.48872575579827, 127.0122402380551], [37.48866383044249, 127.01225749638755], [37.48780202406769, 127.01266290476283]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_b303f0ecec4c696450edfc5d8101101c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dcb765b8b504bb13b7a2ed1f8bce6d1 = $(`<div id="html_2dcb765b8b504bb13b7a2ed1f8bce6d1" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로48길', '구간명': '제우교역 ~ 법원사거리', '구간 거리': '607m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_b303f0ecec4c696450edfc5d8101101c.setContent(html_2dcb765b8b504bb13b7a2ed1f8bce6d1);
+            
+        
+
+        poly_line_3a9e28d6973295c111f5a65c3f831d3d.bindPopup(popup_b303f0ecec4c696450edfc5d8101101c)
+        ;
+
+        
+    
+    
+            poly_line_3a9e28d6973295c111f5a65c3f831d3d.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로48길', '구간명': '제우교역 ~ 법원사거리', '구간 거리': '607m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2d4efae595673e9fee072b0ad4badca1 = L.polyline(
+                [[37.48783997435325, 127.0127899569362], [37.48869467726195, 127.0123878921989], [37.4887400308165, 127.01237525251324], [37.488787252017715, 127.01237256578032], [37.489388400852114, 127.0127367631207], [37.4904368057031, 127.01256432618499], [37.49158335831458, 127.01176057970967], [37.49218503719443, 127.0114891413686], [37.49273948260372, 127.01121015830851], [37.492911390615035, 127.01115899090739]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_25399fe016337703a49eaf5d779a31ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6c4690b5b557665cd10bd239884d212 = $(`<div id="html_f6c4690b5b557665cd10bd239884d212" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로48길', '구간명': '법원사거리 ~ 제우교역', '구간 거리': '606m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_25399fe016337703a49eaf5d779a31ec.setContent(html_f6c4690b5b557665cd10bd239884d212);
+            
+        
+
+        poly_line_2d4efae595673e9fee072b0ad4badca1.bindPopup(popup_25399fe016337703a49eaf5d779a31ec)
+        ;
+
+        
+    
+    
+            poly_line_2d4efae595673e9fee072b0ad4badca1.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로48길', '구간명': '법원사거리 ~ 제우교역', '구간 거리': '606m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d8adc72784ddb1f2fdc9cf623dbb225 = L.polyline(
+                [[37.49123969907838, 127.01411868124885], [37.49124453543324, 127.01433031824624], [37.49154806735838, 127.0168712656599], [37.491393788836874, 127.01695254550434], [37.49129706102711, 127.0170350615713], [37.491196232016456, 127.01714695937798], [37.49113068287578, 127.01727030605603], [37.49110160149819, 127.0173901476971], [37.49107631786632, 127.01779261722105], [37.49105924176738, 127.01789538807333], [37.491050082685895, 127.01794515295242], [37.491033052552865, 127.0179878792055], [37.490986619927526, 127.01803584962231], [37.48966277173124, 127.01879023717575]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_5a14959d30fd2ca5ce5b9954d21d12d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c74054a27dc6d0733c4bc99c3f96d305 = $(`<div id="html_c74054a27dc6d0733c4bc99c3f96d305" style="width: 100.0%; height: 100.0%;">{'도로명': '사임당로17길', '구간명': '대학전문교회 ~ 꽃마을한방병원에이동', '구간 거리': '538m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_5a14959d30fd2ca5ce5b9954d21d12d7.setContent(html_c74054a27dc6d0733c4bc99c3f96d305);
+            
+        
+
+        poly_line_0d8adc72784ddb1f2fdc9cf623dbb225.bindPopup(popup_5a14959d30fd2ca5ce5b9954d21d12d7)
+        ;
+
+        
+    
+    
+            poly_line_0d8adc72784ddb1f2fdc9cf623dbb225.bindTooltip(
+                `<div>
+                     {'도로명': '사임당로17길', '구간명': '대학전문교회 ~ 꽃마을한방병원에이동', '구간 거리': '538m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2ac7b16ff64ba35ca927721d3aa190d3 = L.polyline(
+                [[37.48970747263243, 127.01891378635129], [37.49104431797612, 127.01815199492863], [37.491119483816945, 127.01807433766375], [37.49115253551614, 127.01799142000742], [37.491164848943775, 127.01792450893063], [37.491183564586464, 127.01781187694338], [37.49120846264882, 127.01741554454607], [37.491229473359105, 127.01732896230504], [37.491278384497804, 127.01723692370466], [37.491363530835926, 127.01714242932741], [37.491445619148834, 127.01707240271246], [37.49164029567498, 127.01696983980749], [37.49166130219487, 127.01690396700333], [37.491352425327996, 127.01431827019468], [37.49134777538683, 127.01411479140354]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_37aceec8e156c3e7c2f3c2ae1a9d263e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e703778cd0090266682451fcd5ddb859 = $(`<div id="html_e703778cd0090266682451fcd5ddb859" style="width: 100.0%; height: 100.0%;">{'도로명': '사임당로17길', '구간명': '꽃마을한방병원에이동 ~ 대학전문교회', '구간 거리': '554m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_37aceec8e156c3e7c2f3c2ae1a9d263e.setContent(html_e703778cd0090266682451fcd5ddb859);
+            
+        
+
+        poly_line_2ac7b16ff64ba35ca927721d3aa190d3.bindPopup(popup_37aceec8e156c3e7c2f3c2ae1a9d263e)
+        ;
+
+        
+    
+    
+            poly_line_2ac7b16ff64ba35ca927721d3aa190d3.bindTooltip(
+                `<div>
+                     {'도로명': '사임당로17길', '구간명': '꽃마을한방병원에이동 ~ 대학전문교회', '구간 거리': '554m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_84cc61f38514c4a98512edad15b5f393 = L.polyline(
+                [[37.49470074555309, 127.01016100642799], [37.49287971074268, 127.01102955271082]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_d12766f5ba04717a5858aba818856add = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92b835bc0581fc7eb1edef150288f089 = $(`<div id="html_92b835bc0581fc7eb1edef150288f089" style="width: 100.0%; height: 100.0%;">{'도로명': '법원로', '구간명': '법원사거리 ~ 정곡빌딩서관', '구간 거리': '216m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d12766f5ba04717a5858aba818856add.setContent(html_92b835bc0581fc7eb1edef150288f089);
+            
+        
+
+        poly_line_84cc61f38514c4a98512edad15b5f393.bindPopup(popup_d12766f5ba04717a5858aba818856add)
+        ;
+
+        
+    
+    
+            poly_line_84cc61f38514c4a98512edad15b5f393.bindTooltip(
+                `<div>
+                     {'도로명': '법원로', '구간명': '법원사거리 ~ 정곡빌딩서관', '구간 거리': '216m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2b7a74b09f26fa080cdb758d3c02ec96 = L.polyline(
+                [[37.49291811958182, 127.01115639674683], [37.49473915531245, 127.01028785309931]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_2cbf9af72df5f6b279c4be81be9e769a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16b547d3718754557a034c613437e432 = $(`<div id="html_16b547d3718754557a034c613437e432" style="width: 100.0%; height: 100.0%;">{'도로명': '법원로', '구간명': '정곡빌딩서관 ~ 법원사거리', '구간 거리': '216m', '평균 속도': '23.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_2cbf9af72df5f6b279c4be81be9e769a.setContent(html_16b547d3718754557a034c613437e432);
+            
+        
+
+        poly_line_2b7a74b09f26fa080cdb758d3c02ec96.bindPopup(popup_2cbf9af72df5f6b279c4be81be9e769a)
+        ;
+
+        
+    
+    
+            poly_line_2b7a74b09f26fa080cdb758d3c02ec96.bindTooltip(
+                `<div>
+                     {'도로명': '법원로', '구간명': '정곡빌딩서관 ~ 법원사거리', '구간 거리': '216m', '평균 속도': '23.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_057c26224df41a7e252fdd582d970d4a = L.polyline(
+                [[37.49452650887421, 127.01407776630155], [37.49387154646007, 127.01416569566531]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_b8ccc1a20043cc14afde4b31bd208fd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff27bcf8e57896532ee23b5208ea34ea = $(`<div id="html_ff27bcf8e57896532ee23b5208ea34ea" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로51길', '구간명': '법원검찰청앞 ~ 도일빌딩', '구간 거리': '73m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_b8ccc1a20043cc14afde4b31bd208fd8.setContent(html_ff27bcf8e57896532ee23b5208ea34ea);
+            
+        
+
+        poly_line_057c26224df41a7e252fdd582d970d4a.bindPopup(popup_b8ccc1a20043cc14afde4b31bd208fd8)
+        ;
+
+        
+    
+    
+            poly_line_057c26224df41a7e252fdd582d970d4a.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로51길', '구간명': '법원검찰청앞 ~ 도일빌딩', '구간 거리': '73m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b3e915a82220f0380992ad061f4e695d = L.polyline(
+                [[37.493883046876526, 127.01430062310506], [37.49453800938955, 127.01421269490616]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_e1bc2f94366d92642e09d8d560c379ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b5043f0fbe9dffc5c68f8f3a2b9352d = $(`<div id="html_4b5043f0fbe9dffc5c68f8f3a2b9352d" style="width: 100.0%; height: 100.0%;">{'도로명': '서초대로51길', '구간명': '도일빌딩 ~ 법원검찰청앞', '구간 거리': '73m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_e1bc2f94366d92642e09d8d560c379ad.setContent(html_4b5043f0fbe9dffc5c68f8f3a2b9352d);
+            
+        
+
+        poly_line_b3e915a82220f0380992ad061f4e695d.bindPopup(popup_e1bc2f94366d92642e09d8d560c379ad)
+        ;
+
+        
+    
+    
+            poly_line_b3e915a82220f0380992ad061f4e695d.bindTooltip(
+                `<div>
+                     {'도로명': '서초대로51길', '구간명': '도일빌딩 ~ 법원검찰청앞', '구간 거리': '73m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fdf145d6bc98fda240786ea5d1c713d0 = L.polyline(
+                [[37.494289111904635, 127.01358221093831], [37.4944822690906, 127.0141710602476]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_389cd121566a7d3e0174b6abd5a194ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdfa924376d3a97cf085912c721fc46e = $(`<div id="html_cdfa924376d3a97cf085912c721fc46e" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로24길', '구간명': '도일빌딩 ~ 법원검찰청', '구간 거리': '56m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_389cd121566a7d3e0174b6abd5a194ee.setContent(html_cdfa924376d3a97cf085912c721fc46e);
+            
+        
+
+        poly_line_fdf145d6bc98fda240786ea5d1c713d0.bindPopup(popup_389cd121566a7d3e0174b6abd5a194ee)
+        ;
+
+        
+    
+    
+            poly_line_fdf145d6bc98fda240786ea5d1c713d0.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로24길', '구간명': '도일빌딩 ~ 법원검찰청', '구간 거리': '56m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8fd7a96b00e890f034deaeb0f4c8ffc3 = L.polyline(
+                [[37.4945822492055, 127.01411940204618], [37.49438909176555, 127.0135305520848]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_b0943c15a302a2868dbf42329e2ac568 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c2147d089966bacef067af897766d91 = $(`<div id="html_3c2147d089966bacef067af897766d91" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로24길', '구간명': '법원검찰청 ~ 도일빌딩', '구간 거리': '56m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b0943c15a302a2868dbf42329e2ac568.setContent(html_3c2147d089966bacef067af897766d91);
+            
+        
+
+        poly_line_8fd7a96b00e890f034deaeb0f4c8ffc3.bindPopup(popup_b0943c15a302a2868dbf42329e2ac568)
+        ;
+
+        
+    
+    
+            poly_line_8fd7a96b00e890f034deaeb0f4c8ffc3.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로24길', '구간명': '법원검찰청 ~ 도일빌딩', '구간 거리': '56m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a14a782609377098d7fbbc330e5c5f7e = L.polyline(
+                [[37.49466914876758, 127.01024763168581], [37.49555208798568, 127.01329285241322]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_50e4be66d37aa2893c39807be899d2b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd97251e10031d457ffa0f0f0211ea42 = $(`<div id="html_cd97251e10031d457ffa0f0f0211ea42" style="width: 100.0%; height: 100.0%;">{'도로명': '법원로.서초중앙로사이길', '구간명': '법원후문 ~ 정곡빌딩서관', '구간 거리': '287m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_50e4be66d37aa2893c39807be899d2b7.setContent(html_cd97251e10031d457ffa0f0f0211ea42);
+            
+        
+
+        poly_line_a14a782609377098d7fbbc330e5c5f7e.bindPopup(popup_50e4be66d37aa2893c39807be899d2b7)
+        ;
+
+        
+    
+    
+            poly_line_a14a782609377098d7fbbc330e5c5f7e.bindTooltip(
+                `<div>
+                     {'도로명': '법원로.서초중앙로사이길', '구간명': '법원후문 ~ 정곡빌딩서관', '구간 거리': '287m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f457515751e2aefaabad416a8297d36b = L.polyline(
+                [[37.49565369072365, 127.01324644982282], [37.49477075122615, 127.01020122664666]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_5483f6daeb4aa39de9f54c7772f7609a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1aaf160a9da598f2d2edf33f26336ba = $(`<div id="html_b1aaf160a9da598f2d2edf33f26336ba" style="width: 100.0%; height: 100.0%;">{'도로명': '법원로.서초중앙로사이길', '구간명': '정곡빌딩서관 ~ 법원후문', '구간 거리': '287m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_5483f6daeb4aa39de9f54c7772f7609a.setContent(html_b1aaf160a9da598f2d2edf33f26336ba);
+            
+        
+
+        poly_line_f457515751e2aefaabad416a8297d36b.bindPopup(popup_5483f6daeb4aa39de9f54c7772f7609a)
+        ;
+
+        
+    
+    
+            poly_line_f457515751e2aefaabad416a8297d36b.bindTooltip(
+                `<div>
+                     {'도로명': '법원로.서초중앙로사이길', '구간명': '정곡빌딩서관 ~ 법원후문', '구간 거리': '287m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_934ae74077e88e92aeb24e750fc00fd0 = L.polyline(
+                [[37.49448176651957, 127.0141694690988], [37.49483659984142, 127.01533382783218], [37.494921877039005, 127.01643577923761], [37.49496632409101, 127.0166901172474], [37.49579369884741, 127.01938673026818], [37.49587374502417, 127.01956262617549], [37.496238957640806, 127.0201660107323], [37.496665246107696, 127.02080173313323]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_9f32b442475a0b20efae51f5592a15c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a50ffa161737f18fafcd75ff5f372d41 = $(`<div id="html_a50ffa161737f18fafcd75ff5f372d41" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로24길', '구간명': '서초삼익아파트 ~ 도일빌딩', '구간 거리': '645m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9f32b442475a0b20efae51f5592a15c7.setContent(html_a50ffa161737f18fafcd75ff5f372d41);
+            
+        
+
+        poly_line_934ae74077e88e92aeb24e750fc00fd0.bindPopup(popup_9f32b442475a0b20efae51f5592a15c7)
+        ;
+
+        
+    
+    
+            poly_line_934ae74077e88e92aeb24e750fc00fd0.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로24길', '구간명': '서초삼익아파트 ~ 도일빌딩', '구간 거리': '645m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4d72a7ae27984d8133f64a1d2c3e26b8 = L.polyline(
+                [[37.49674796936342, 127.02071435403298], [37.49632341893457, 127.02008122377948], [37.49596412118974, 127.01948761204008], [37.4958916514487, 127.01932836383187], [37.4950701742613, 127.0166509732119], [37.495028869143695, 127.01641460996352], [37.49494280198654, 127.01530246929195], [37.49458275267834, 127.01412099206611]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd1decf1f19172efb323485364c33b2c);
+        
+    
+        var popup_5caaaaefb27cc19be7c6770da310e78c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_754dd513185217d47d5dd9cfa853765d = $(`<div id="html_754dd513185217d47d5dd9cfa853765d" style="width: 100.0%; height: 100.0%;">{'도로명': '서초중앙로24길', '구간명': '도일빌딩 ~ 서초삼익아파트', '구간 거리': '641m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_5caaaaefb27cc19be7c6770da310e78c.setContent(html_754dd513185217d47d5dd9cfa853765d);
+            
+        
+
+        poly_line_4d72a7ae27984d8133f64a1d2c3e26b8.bindPopup(popup_5caaaaefb27cc19be7c6770da310e78c)
+        ;
+
+        
+    
+    
+            poly_line_4d72a7ae27984d8133f64a1d2c3e26b8.bindTooltip(
+                `<div>
+                     {'도로명': '서초중앙로24길', '구간명': '도일빌딩 ~ 서초삼익아파트', '구간 거리': '641m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

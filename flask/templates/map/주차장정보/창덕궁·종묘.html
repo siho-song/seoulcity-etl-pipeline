@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6e57030c3714757a3f53e87f476538f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c6e57030c3714757a3f53e87f476538f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c6e57030c3714757a3f53e87f476538f = L.map(
+                "map_c6e57030c3714757a3f53e87f476538f",
+                {
+                    center: [37.57731812585061, 126.99526797030991],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fbcbd264ea7b5997cf54afa1a07e79ec = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c6e57030c3714757a3f53e87f476538f);
+        
+    
+            var marker_78f53121d0f60c386dc66ba735e77ade = L.marker(
+                [37.57278931, 126.99679296],
+                {}
+            ).addTo(map_c6e57030c3714757a3f53e87f476538f);
+        
+    
+            var icon_66e0d040c017c2123109a2bfae687085 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_78f53121d0f60c386dc66ba735e77ade.setIcon(icon_66e0d040c017c2123109a2bfae687085);
+        
+    
+        var popup_f2ce24a84a720145f3d7a0ca85e36d62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87c11ad0105cde4e33411a9e37a57178 = $(`<div id="html_87c11ad0105cde4e33411a9e37a57178" style="width: 100.0%; height: 100.0%;">{'주차장명': '동순라길(종묘) 관광버스전용 주차장(시)', '주소': '종로구 인의동 107-1', '주차가능 수': '', '가격': ''}</div>`)[0];
+                popup_f2ce24a84a720145f3d7a0ca85e36d62.setContent(html_87c11ad0105cde4e33411a9e37a57178);
+            
+        
+
+        marker_78f53121d0f60c386dc66ba735e77ade.bindPopup(popup_f2ce24a84a720145f3d7a0ca85e36d62)
+        ;
+
+        
+    
+    
+            marker_78f53121d0f60c386dc66ba735e77ade.bindTooltip(
+                `<div>
+                     {'주차장명': '동순라길(종묘) 관광버스전용 주차장(시)', '주소': '종로구 인의동 107-1', '주차가능 수': '', '가격': ''}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6c3df0ae214e5ec213204fd6af62da4 = L.marker(
+                [37.57815842, 126.98934964],
+                {}
+            ).addTo(map_c6e57030c3714757a3f53e87f476538f);
+        
+    
+            var icon_dd3e85069a9513e21141c3ed07a82862 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e6c3df0ae214e5ec213204fd6af62da4.setIcon(icon_dd3e85069a9513e21141c3ed07a82862);
+        
+    
+        var popup_65d19de0fb6790027e6d7984ce4c5b47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5228c485a6672ea33892a9864497a048 = $(`<div id="html_5228c485a6672ea33892a9864497a048" style="width: 100.0%; height: 100.0%;">{'주차장명': '원서공원 앞(구)', '주소': '종로구 와룡동 206-0', '주차가능 수': '', '가격': '1000원 이하 (10분)'}</div>`)[0];
+                popup_65d19de0fb6790027e6d7984ce4c5b47.setContent(html_5228c485a6672ea33892a9864497a048);
+            
+        
+
+        marker_e6c3df0ae214e5ec213204fd6af62da4.bindPopup(popup_65d19de0fb6790027e6d7984ce4c5b47)
+        ;
+
+        
+    
+    
+            marker_e6c3df0ae214e5ec213204fd6af62da4.bindTooltip(
+                `<div>
+                     {'주차장명': '원서공원 앞(구)', '주소': '종로구 와룡동 206-0', '주차가능 수': '', '가격': '1000원 이하 (10분)'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccbfdb4cba7c391b37d8ee7b4d5658a7 = L.marker(
+                [37.57968725, 126.99641311],
+                {}
+            ).addTo(map_c6e57030c3714757a3f53e87f476538f);
+        
+    
+            var icon_18b64b146367e26a1184809f501d1f45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ccbfdb4cba7c391b37d8ee7b4d5658a7.setIcon(icon_18b64b146367e26a1184809f501d1f45);
+        
+    
+        var popup_252a71c5e9b6bd96652999627d11a642 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f31736256b98e7734e381745ddeebf6 = $(`<div id="html_4f31736256b98e7734e381745ddeebf6" style="width: 100.0%; height: 100.0%;">{'주차장명': '창경궁로1 관광버스 주차허용 구간(시)', '주소': '종로구 와룡동 2-86 (창경궁주차장~홍화문)', '주차가능 수': '', '가격': ''}</div>`)[0];
+                popup_252a71c5e9b6bd96652999627d11a642.setContent(html_4f31736256b98e7734e381745ddeebf6);
+            
+        
+
+        marker_ccbfdb4cba7c391b37d8ee7b4d5658a7.bindPopup(popup_252a71c5e9b6bd96652999627d11a642)
+        ;
+
+        
+    
+    
+            marker_ccbfdb4cba7c391b37d8ee7b4d5658a7.bindTooltip(
+                `<div>
+                     {'주차장명': '창경궁로1 관광버스 주차허용 구간(시)', '주소': '종로구 와룡동 2-86 (창경궁주차장~홍화문)', '주차가능 수': '', '가격': ''}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e449392e0266794bd72912b8a0cc2c6 = L.marker(
+                [37.57892891, 126.99652305],
+                {}
+            ).addTo(map_c6e57030c3714757a3f53e87f476538f);
+        
+    
+            var icon_237bfd0e6cc07afce17024678bec9a3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5e449392e0266794bd72912b8a0cc2c6.setIcon(icon_237bfd0e6cc07afce17024678bec9a3a);
+        
+    
+        var popup_91faafe9f3657d63d871ccbb78984853 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c23df613917513f76713981584abb232 = $(`<div id="html_c23df613917513f76713981584abb232" style="width: 100.0%; height: 100.0%;">{'주차장명': '창경궁로2 관광버스 주차허용 구간(시)', '주소': '종로구 와룡동 2-86 (홍화문~선인문)', '주차가능 수': '', '가격': ''}</div>`)[0];
+                popup_91faafe9f3657d63d871ccbb78984853.setContent(html_c23df613917513f76713981584abb232);
+            
+        
+
+        marker_5e449392e0266794bd72912b8a0cc2c6.bindPopup(popup_91faafe9f3657d63d871ccbb78984853)
+        ;
+
+        
+    
+    
+            marker_5e449392e0266794bd72912b8a0cc2c6.bindTooltip(
+                `<div>
+                     {'주차장명': '창경궁로2 관광버스 주차허용 구간(시)', '주소': '종로구 와룡동 2-86 (홍화문~선인문)', '주차가능 수': '', '가격': ''}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa7b52155ecc5853207dbb9b3ea3ccfa = L.marker(
+                [37.57150398, 126.99496888],
+                {}
+            ).addTo(map_c6e57030c3714757a3f53e87f476538f);
+        
+    
+            var icon_cef5ef44d9678124a2651fe512aa5b23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fa7b52155ecc5853207dbb9b3ea3ccfa.setIcon(icon_cef5ef44d9678124a2651fe512aa5b23);
+        
+    
+        var popup_ee7b956ec62b1ebaf82b2159a685123d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52d1a73f2dfa9eee6ca703c697e7ae65 = $(`<div id="html_52d1a73f2dfa9eee6ca703c697e7ae65" style="width: 100.0%; height: 100.0%;">{'주차장명': '종묘주차장 공영주차장(시)', '주소': '종로구 훈정동 2-0', '주차가능 수': '484', '가격': '1000원 이하 (10분)'}</div>`)[0];
+                popup_ee7b956ec62b1ebaf82b2159a685123d.setContent(html_52d1a73f2dfa9eee6ca703c697e7ae65);
+            
+        
+
+        marker_fa7b52155ecc5853207dbb9b3ea3ccfa.bindPopup(popup_ee7b956ec62b1ebaf82b2159a685123d)
+        ;
+
+        
+    
+    
+            marker_fa7b52155ecc5853207dbb9b3ea3ccfa.bindTooltip(
+                `<div>
+                     {'주차장명': '종묘주차장 공영주차장(시)', '주소': '종로구 훈정동 2-0', '주차가능 수': '484', '가격': '1000원 이하 (10분)'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddc62343edc27206675e508cb4ef6345 = L.marker(
+                [37.5730121, 126.99677676],
+                {}
+            ).addTo(map_c6e57030c3714757a3f53e87f476538f);
+        
+    
+            var icon_c5ae23d45f92cfccd851c180ea6de2cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ddc62343edc27206675e508cb4ef6345.setIcon(icon_c5ae23d45f92cfccd851c180ea6de2cb);
+        
+    
+        var popup_9559eedee2b2a4216a2ecab5f5052183 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_172c89b9f405b1cb037adfd4b395e2e3 = $(`<div id="html_172c89b9f405b1cb037adfd4b395e2e3" style="width: 100.0%; height: 100.0%;">{'주차장명': '동순라길(종묘) 관광버스전용 주차장(시)', '주소': '종로구 인의동 107-1', '주차가능 수': '2', '가격': ''}</div>`)[0];
+                popup_9559eedee2b2a4216a2ecab5f5052183.setContent(html_172c89b9f405b1cb037adfd4b395e2e3);
+            
+        
+
+        marker_ddc62343edc27206675e508cb4ef6345.bindPopup(popup_9559eedee2b2a4216a2ecab5f5052183)
+        ;
+
+        
+    
+    
+            marker_ddc62343edc27206675e508cb4ef6345.bindTooltip(
+                `<div>
+                     {'주차장명': '동순라길(종묘) 관광버스전용 주차장(시)', '주소': '종로구 인의동 107-1', '주차가능 수': '2', '가격': ''}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

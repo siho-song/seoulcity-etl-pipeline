@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5dd5b1800916ad702bf014fbdb5cebf3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5dd5b1800916ad702bf014fbdb5cebf3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5dd5b1800916ad702bf014fbdb5cebf3 = L.map(
+                "map_5dd5b1800916ad702bf014fbdb5cebf3",
+                {
+                    center: [37.64774352596933, 127.03433958229118],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d7c3e4393926adf6d2cf3d416507d3ad = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+            var poly_line_443f8d84f6d0388fd6a64f0eec82f2ca = L.polyline(
+                [[37.642893007434324, 127.03082563740548], [37.641280095132394, 127.02908627760081], [37.6396678141466, 127.02734045805062]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_d0c0fb96f7f663155e2b7cf737a28618 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2f89336934914f9a689a0f717e74ebe = $(`<div id="html_f2f89336934914f9a689a0f717e74ebe" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '강북구청사거리 ~ 강북구-도봉구', '구간 거리': '472m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d0c0fb96f7f663155e2b7cf737a28618.setContent(html_f2f89336934914f9a689a0f717e74ebe);
+            
+        
+
+        poly_line_443f8d84f6d0388fd6a64f0eec82f2ca.bindPopup(popup_d0c0fb96f7f663155e2b7cf737a28618)
+        ;
+
+        
+    
+    
+            poly_line_443f8d84f6d0388fd6a64f0eec82f2ca.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '강북구청사거리 ~ 강북구-도봉구', '구간 거리': '472m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a2953563db082928306bd877139ad508 = L.polyline(
+                [[37.64308948399165, 127.03113166568536], [37.642571491306306, 127.0319462728165]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_2caa6f2f86ca2f8d93fb2ea287b590f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c723bd54266870ce39d038e2815f2f2f = $(`<div id="html_c723bd54266870ce39d038e2815f2f2f" style="width: 100.0%; height: 100.0%;">{'도로명': '우이천로', '구간명': '번창교 ~ 우이교앞교차로', '구간 거리': '92m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_2caa6f2f86ca2f8d93fb2ea287b590f9.setContent(html_c723bd54266870ce39d038e2815f2f2f);
+            
+        
+
+        poly_line_a2953563db082928306bd877139ad508.bindPopup(popup_2caa6f2f86ca2f8d93fb2ea287b590f9)
+        ;
+
+        
+    
+    
+            poly_line_a2953563db082928306bd877139ad508.bindTooltip(
+                `<div>
+                     {'도로명': '우이천로', '구간명': '번창교 ~ 우이교앞교차로', '구간 거리': '92m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ba1893ddf7aa60e34e4d355dfc31ec53 = L.polyline(
+                [[37.642655931052275, 127.03203118954465], [37.64317392341568, 127.03121658208164]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_fe460f7d02a0ddcf1fb37e4c9f5b3f71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc5eccb1c715200e32c56e4b2f955c4f = $(`<div id="html_cc5eccb1c715200e32c56e4b2f955c4f" style="width: 100.0%; height: 100.0%;">{'도로명': '우이천로', '구간명': '우이교앞교차로 ~ 번창교', '구간 거리': '92m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fe460f7d02a0ddcf1fb37e4c9f5b3f71.setContent(html_cc5eccb1c715200e32c56e4b2f955c4f);
+            
+        
+
+        poly_line_ba1893ddf7aa60e34e4d355dfc31ec53.bindPopup(popup_fe460f7d02a0ddcf1fb37e4c9f5b3f71)
+        ;
+
+        
+    
+    
+            poly_line_ba1893ddf7aa60e34e4d355dfc31ec53.bindTooltip(
+                `<div>
+                     {'도로명': '우이천로', '구간명': '우이교앞교차로 ~ 번창교', '구간 거리': '92m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fde603415279f3cdc6854830d6fe8827 = L.polyline(
+                [[37.64508705664739, 127.02795836369005], [37.64457406562006, 127.02874405609252], [37.64323708176678, 127.03085941912413], [37.64308705565091, 127.03113579354915]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_7727209cfe5a782bcb3f4017b55f5df3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d307de0b2d7817662045c7d81251ba4 = $(`<div id="html_9d307de0b2d7817662045c7d81251ba4" style="width: 100.0%; height: 100.0%;">{'도로명': '우이천로', '구간명': '우이교앞교차로 ~ 한일병원', '구간 거리': '358m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7727209cfe5a782bcb3f4017b55f5df3.setContent(html_9d307de0b2d7817662045c7d81251ba4);
+            
+        
+
+        poly_line_fde603415279f3cdc6854830d6fe8827.bindPopup(popup_7727209cfe5a782bcb3f4017b55f5df3)
+        ;
+
+        
+    
+    
+            poly_line_fde603415279f3cdc6854830d6fe8827.bindTooltip(
+                `<div>
+                     {'도로명': '우이천로', '구간명': '우이교앞교차로 ~ 한일병원', '구간 거리': '358m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ef68c4627233b337d842e22c04e3b1c4 = L.polyline(
+                [[37.64317635085828, 127.0312124542153], [37.64332416236393, 127.03094015773077], [37.644658168742346, 127.0288295050311], [37.64517061503731, 127.02804464948218]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_cce2130b4a672e614eb81279bc4184a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8107b43d42958fa0f8e1cd2faefea2f0 = $(`<div id="html_8107b43d42958fa0f8e1cd2faefea2f0" style="width: 100.0%; height: 100.0%;">{'도로명': '우이천로', '구간명': '한일병원 ~ 우이교앞교차로', '구간 거리': '357m', '평균 속도': '15.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_cce2130b4a672e614eb81279bc4184a2.setContent(html_8107b43d42958fa0f8e1cd2faefea2f0);
+            
+        
+
+        poly_line_ef68c4627233b337d842e22c04e3b1c4.bindPopup(popup_cce2130b4a672e614eb81279bc4184a2)
+        ;
+
+        
+    
+    
+            poly_line_ef68c4627233b337d842e22c04e3b1c4.bindTooltip(
+                `<div>
+                     {'도로명': '우이천로', '구간명': '한일병원 ~ 우이교앞교차로', '구간 거리': '357m', '평균 속도': '15.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7078345490dfe63dc152d0d41f222a19 = L.polyline(
+                [[37.64519026991145, 127.03259219833622], [37.64432107943113, 127.03208108930804], [37.64413042561527, 127.03196229136951], [37.643964449598315, 127.03184359975141], [37.64380587867274, 127.03172480643516], [37.64364954606667, 127.03159443232751], [37.64346247027443, 127.0314255872223], [37.64326637436071, 127.03123338559175], [37.643167560097055, 127.03112324675138]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_8ac23761003e6fdb2f4154f5c07ecbfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_524e162e07ac40f2b4d5b9c7a97da5d5 = $(`<div id="html_524e162e07ac40f2b4d5b9c7a97da5d5" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '우이교앞교차로 ~ 성북택시', '구간 거리': '260m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_8ac23761003e6fdb2f4154f5c07ecbfa.setContent(html_524e162e07ac40f2b4d5b9c7a97da5d5);
+            
+        
+
+        poly_line_7078345490dfe63dc152d0d41f222a19.bindPopup(popup_8ac23761003e6fdb2f4154f5c07ecbfa)
+        ;
+
+        
+    
+    
+            poly_line_7078345490dfe63dc152d0d41f222a19.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '우이교앞교차로 ~ 성북택시', '구간 거리': '260m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a1b5531a22dcbc521244ce3435495910 = L.polyline(
+                [[37.64654756879779, 127.03339695700583], [37.64519042485531, 127.03259229018455]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_35672836adf8386e19df2dfd41584aa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68dd30605e586de595fde528789da3b6 = $(`<div id="html_68dd30605e586de595fde528789da3b6" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '성북택시 ~ 창동시장입구교차로', '구간 거리': '167m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_35672836adf8386e19df2dfd41584aa3.setContent(html_68dd30605e586de595fde528789da3b6);
+            
+        
+
+        poly_line_a1b5531a22dcbc521244ce3435495910.bindPopup(popup_35672836adf8386e19df2dfd41584aa3)
+        ;
+
+        
+    
+    
+            poly_line_a1b5531a22dcbc521244ce3435495910.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '성북택시 ~ 창동시장입구교차로', '구간 거리': '167m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cd4cada310c3995bd26fd8bc04fb787a = L.polyline(
+                [[37.64309584730373, 127.03122500091867], [37.64319721771009, 127.03133798825017], [37.64339769289293, 127.03153448388424], [37.643588129288204, 127.03170636150466], [37.64374830180276, 127.03183993943927], [37.64391005604576, 127.0319611171275], [37.64407966220591, 127.03208240409461], [37.6442741759624, 127.03220360718763], [37.645144474848756, 127.03271536933617]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_d65b086dc9b5f86992a026a6a40c547f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95ba4a03b538c7bf155a6dae61a29a86 = $(`<div id="html_95ba4a03b538c7bf155a6dae61a29a86" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '성북택시 ~ 우이교앞교차로', '구간 거리': '264m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_d65b086dc9b5f86992a026a6a40c547f.setContent(html_95ba4a03b538c7bf155a6dae61a29a86);
+            
+        
+
+        poly_line_cd4cada310c3995bd26fd8bc04fb787a.bindPopup(popup_d65b086dc9b5f86992a026a6a40c547f)
+        ;
+
+        
+    
+    
+            poly_line_cd4cada310c3995bd26fd8bc04fb787a.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '성북택시 ~ 우이교앞교차로', '구간 거리': '264m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2a27b6a1fe60e8d89f4d0ce43972b669 = L.polyline(
+                [[37.645144319904674, 127.03271527862074], [37.64650146301812, 127.03351994718115]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_2f1e1b4ff325847f8b65cc7a4265244b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8491866d6524ac6895b709aef0784c1 = $(`<div id="html_c8491866d6524ac6895b709aef0784c1" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '창동시장입구교차로 ~ 성북택시', '구간 거리': '167m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_2f1e1b4ff325847f8b65cc7a4265244b.setContent(html_c8491866d6524ac6895b709aef0784c1);
+            
+        
+
+        poly_line_2a27b6a1fe60e8d89f4d0ce43972b669.bindPopup(popup_2f1e1b4ff325847f8b65cc7a4265244b)
+        ;
+
+        
+    
+    
+            poly_line_2a27b6a1fe60e8d89f4d0ce43972b669.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '창동시장입구교차로 ~ 성북택시', '구간 거리': '167m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f76f39459fa8a2473f738d944b2d2bc2 = L.polyline(
+                [[37.64624981107421, 127.03434996961975], [37.64657340587821, 127.03348746251785]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_20add7f3f8cbc585427d50445e6d446b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5fa9e09cc4d468024a4cf3c5851d924 = $(`<div id="html_c5fa9e09cc4d468024a4cf3c5851d924" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110길', '구간명': '창동시장입구교차로 ~ 도봉전화국', '구간 거리': '84m', '평균 속도': '8.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_20add7f3f8cbc585427d50445e6d446b.setContent(html_c5fa9e09cc4d468024a4cf3c5851d924);
+            
+        
+
+        poly_line_f76f39459fa8a2473f738d944b2d2bc2.bindPopup(popup_20add7f3f8cbc585427d50445e6d446b)
+        ;
+
+        
+    
+    
+            poly_line_f76f39459fa8a2473f738d944b2d2bc2.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110길', '구간명': '창동시장입구교차로 ~ 도봉전화국', '구간 거리': '84m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ce1842c8dd0fdfdb58de0a609fc011c0 = L.polyline(
+                [[37.64666444589755, 127.03935865395522], [37.64662637881902, 127.03923850095869], [37.64660197721723, 127.03912806831485], [37.64647587872127, 127.03834181079684], [37.64631943858665, 127.03728657412839], [37.646280758642135, 127.03672877331739], [37.64615760352092, 127.03485674049743], [37.64615944526055, 127.03473411069486], [37.64616723205931, 127.0346527605243], [37.64619147704582, 127.03454381543075], [37.64625146219735, 127.0343450855435]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_ae97f8979d838f9f27cedfb5c3f9d753 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11ff4a265a1a1ca98e4df447b313ac26 = $(`<div id="html_11ff4a265a1a1ca98e4df447b313ac26" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110길', '구간명': '도봉전화국 ~ 창북중교입구교차로', '구간 거리': '449m', '평균 속도': '19.3km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ae97f8979d838f9f27cedfb5c3f9d753.setContent(html_11ff4a265a1a1ca98e4df447b313ac26);
+            
+        
+
+        poly_line_ce1842c8dd0fdfdb58de0a609fc011c0.bindPopup(popup_ae97f8979d838f9f27cedfb5c3f9d753)
+        ;
+
+        
+    
+    
+            poly_line_ce1842c8dd0fdfdb58de0a609fc011c0.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110길', '구간명': '도봉전화국 ~ 창북중교입구교차로', '구간 거리': '449m', '평균 속도': '19.3km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0f9e02e27672482c67f03e8d3606ea12 = L.polyline(
+                [[37.64647562596252, 127.03342944061217], [37.64615203157811, 127.03429194570258]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_1cbead294ccd112b12b8b7070a2d6aae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d05e5e25632a5402a76c34e80c2f4734 = $(`<div id="html_d05e5e25632a5402a76c34e80c2f4734" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110길', '구간명': '도봉전화국 ~ 창동시장입구교차로', '구간 거리': '84m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_1cbead294ccd112b12b8b7070a2d6aae.setContent(html_d05e5e25632a5402a76c34e80c2f4734);
+            
+        
+
+        poly_line_0f9e02e27672482c67f03e8d3606ea12.bindPopup(popup_1cbead294ccd112b12b8b7070a2d6aae)
+        ;
+
+        
+    
+    
+            poly_line_0f9e02e27672482c67f03e8d3606ea12.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110길', '구간명': '도봉전화국 ~ 창동시장입구교차로', '구간 거리': '84m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cc6d1e22aaa12165582094b5f2c89176 = L.polyline(
+                [[37.64615038135815, 127.03429682977392], [37.64608867103308, 127.03450127742589], [37.6460608796433, 127.03462615448761], [37.646051449821115, 127.03472467714757], [37.64604940130261, 127.03486107392365], [37.646173028940865, 127.03674028591038], [37.64621218687476, 127.03730498566287], [37.6463697380269, 127.03836771582412], [37.64649676334791, 127.039159755032], [37.646523774742505, 127.03928199708515], [37.64656400726148, 127.03940898376351]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_d0b1935176d329154e7f920f07c9fe9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc2802f5ffd78dc96ee56f85b7ca052a = $(`<div id="html_fc2802f5ffd78dc96ee56f85b7ca052a" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110길', '구간명': '창북중교입구교차로 ~ 도봉전화국', '구간 거리': '458m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_d0b1935176d329154e7f920f07c9fe9c.setContent(html_fc2802f5ffd78dc96ee56f85b7ca052a);
+            
+        
+
+        poly_line_cc6d1e22aaa12165582094b5f2c89176.bindPopup(popup_d0b1935176d329154e7f920f07c9fe9c)
+        ;
+
+        
+    
+    
+            poly_line_cc6d1e22aaa12165582094b5f2c89176.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110길', '구간명': '창북중교입구교차로 ~ 도봉전화국', '구간 거리': '458m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7fb759813e4d3b7bc401f3e4d1ebcb65 = L.polyline(
+                [[37.6513891483551, 127.03627459280288], [37.6510864778829, 127.03608255345249], [37.650718317853574, 127.03586509189866], [37.649106613938905, 127.03491312989276], [37.64774903659112, 127.03410902633563], [37.646547559789546, 127.03339695133623]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_871b1a4563e10face5a7091198acca00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_971e4ebcf0e0b03fd57899977d29129b = $(`<div id="html_971e4ebcf0e0b03fd57899977d29129b" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '창동시장입구교차로 ~ 정의여중고교입구교차로', '구간 거리': '594m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_871b1a4563e10face5a7091198acca00.setContent(html_971e4ebcf0e0b03fd57899977d29129b);
+            
+        
+
+        poly_line_7fb759813e4d3b7bc401f3e4d1ebcb65.bindPopup(popup_871b1a4563e10face5a7091198acca00)
+        ;
+
+        
+    
+    
+            poly_line_7fb759813e4d3b7bc401f3e4d1ebcb65.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '창동시장입구교차로 ~ 정의여중고교입구교차로', '구간 거리': '594m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_532dda07c139c57cfd566ff57b9ba00a = L.polyline(
+                [[37.64650147112568, 127.03351995171731], [37.64770295980492, 127.03423203619451], [37.64906060118364, 127.03503617891717], [37.65067235816629, 127.03598817474835]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_c9a8f969838fa36046e477d82fc7b6f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_905545dff4b29ad9241e8cbb82df15f6 = $(`<div id="html_905545dff4b29ad9241e8cbb82df15f6" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '소피아관광호텔 ~ 창동시장입구교차로', '구간 거리': '512m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c9a8f969838fa36046e477d82fc7b6f7.setContent(html_905545dff4b29ad9241e8cbb82df15f6);
+            
+        
+
+        poly_line_532dda07c139c57cfd566ff57b9ba00a.bindPopup(popup_c9a8f969838fa36046e477d82fc7b6f7)
+        ;
+
+        
+    
+    
+            poly_line_532dda07c139c57cfd566ff57b9ba00a.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '소피아관광호텔 ~ 창동시장입구교차로', '구간 거리': '512m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_25aa6119bc9d6eba70204c3fa1b60ce2 = L.polyline(
+                [[37.65067235816629, 127.03598817474835], [37.65103913971692, 127.0362048236144], [37.65134045157599, 127.03639600145353]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_15d39c64147ac79249c701d287e6e77d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9158e2206b3ea3fb8fbff3c3cbe89a26 = $(`<div id="html_9158e2206b3ea3fb8fbff3c3cbe89a26" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '정의여중고교입구교차로 ~ 소피아관광호텔', '구간 거리': '82m', '평균 속도': '8.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_15d39c64147ac79249c701d287e6e77d.setContent(html_9158e2206b3ea3fb8fbff3c3cbe89a26);
+            
+        
+
+        poly_line_25aa6119bc9d6eba70204c3fa1b60ce2.bindPopup(popup_15d39c64147ac79249c701d287e6e77d)
+        ;
+
+        
+    
+    
+            poly_line_25aa6119bc9d6eba70204c3fa1b60ce2.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '정의여중고교입구교차로 ~ 소피아관광호텔', '구간 거리': '82m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d2cc08cd91ef28aa358aee50f95b509d = L.polyline(
+                [[37.65141877408656, 127.03633148420343], [37.65139836433914, 127.0358744447874], [37.65119590797333, 127.03326439914896], [37.650999192932545, 127.03080517955128], [37.650854935002855, 127.0289433837199], [37.65083013217303, 127.0287910668452], [37.65078993201291, 127.02868792185369]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_c551ae217b03b9d172ce486a5b9efd73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4727665d438dc5c88df9f9421130ef35 = $(`<div id="html_4727665d438dc5c88df9f9421130ef35" style="width: 100.0%; height: 100.0%;">{'도로명': '노해로', '구간명': '숭미초교앞교차로 ~ 정의여중고교입구교차로', '구간 거리': '679m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c551ae217b03b9d172ce486a5b9efd73.setContent(html_4727665d438dc5c88df9f9421130ef35);
+            
+        
+
+        poly_line_d2cc08cd91ef28aa358aee50f95b509d.bindPopup(popup_c551ae217b03b9d172ce486a5b9efd73)
+        ;
+
+        
+    
+    
+            poly_line_d2cc08cd91ef28aa358aee50f95b509d.bindTooltip(
+                `<div>
+                     {'도로명': '노해로', '구간명': '숭미초교앞교차로 ~ 정의여중고교입구교차로', '구간 거리': '679m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cb10330232094fe0e7edb4b7c62fbeaf = L.polyline(
+                [[37.65069285003605, 127.0287477740653], [37.650726979525054, 127.02883534334275], [37.65074787792255, 127.02896367705392], [37.65089160125105, 127.03081858029402], [37.65108831691577, 127.0332778065778], [37.65129054144524, 127.03588486242906], [37.65131082677624, 127.03633911008754]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_fef21e5945617ee190049b418817e2ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41aff8cb80d1c78c62a7e5b9fe54119e = $(`<div id="html_41aff8cb80d1c78c62a7e5b9fe54119e" style="width: 100.0%; height: 100.0%;">{'도로명': '노해로', '구간명': '정의여중고교입구교차로 ~ 숭미초교앞교차로', '구간 거리': '674m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fef21e5945617ee190049b418817e2ab.setContent(html_41aff8cb80d1c78c62a7e5b9fe54119e);
+            
+        
+
+        poly_line_cb10330232094fe0e7edb4b7c62fbeaf.bindPopup(popup_fef21e5945617ee190049b418817e2ab)
+        ;
+
+        
+    
+    
+            poly_line_cb10330232094fe0e7edb4b7c62fbeaf.bindTooltip(
+                `<div>
+                     {'도로명': '노해로', '구간명': '정의여중고교입구교차로 ~ 숭미초교앞교차로', '구간 거리': '674m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b3d214e4c6db2f5f31c6816e41c293fa = L.polyline(
+                [[37.64147966343588, 127.03328152378016], [37.64197918866163, 127.03376786937586], [37.642917236383994, 127.03463928000444], [37.64313746579492, 127.03477695645611], [37.64323616731733, 127.0348210526012], [37.64332650667382, 127.03482892991762]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_2251287aca73babd1728e083994e5a50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec6604b8f97e876336927861101e7e07 = $(`<div id="html_ec6604b8f97e876336927861101e7e07" style="width: 100.0%; height: 100.0%;">{'도로명': '우이천로22길', '구간명': '협창실업주식회사 ~ 태영데시앙아파트', '구간 거리': '249m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_2251287aca73babd1728e083994e5a50.setContent(html_ec6604b8f97e876336927861101e7e07);
+            
+        
+
+        poly_line_b3d214e4c6db2f5f31c6816e41c293fa.bindPopup(popup_2251287aca73babd1728e083994e5a50)
+        ;
+
+        
+    
+    
+            poly_line_b3d214e4c6db2f5f31c6816e41c293fa.bindTooltip(
+                `<div>
+                     {'도로명': '우이천로22길', '구간명': '협창실업주식회사 ~ 태영데시앙아파트', '구간 거리': '249m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1477f95dfb9b89af665478d9948f4b90 = L.polyline(
+                [[37.643333985164446, 127.03469328846788], [37.643258412551, 127.0346866985437], [37.64317977866933, 127.03465156761388], [37.6429738523249, 127.03452283225033], [37.642044410375476, 127.03365941881204], [37.64154585119984, 127.03317401436824]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_cabec0ad64acf540c2ffa3242aff0859 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ffd0be415df0a378d2c1b41514bdee2 = $(`<div id="html_4ffd0be415df0a378d2c1b41514bdee2" style="width: 100.0%; height: 100.0%;">{'도로명': '우이천로22길', '구간명': '태영데시앙아파트 ~ 협창실업주식회사', '구간 거리': '241m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_cabec0ad64acf540c2ffa3242aff0859.setContent(html_4ffd0be415df0a378d2c1b41514bdee2);
+            
+        
+
+        poly_line_1477f95dfb9b89af665478d9948f4b90.bindPopup(popup_cabec0ad64acf540c2ffa3242aff0859)
+        ;
+
+        
+    
+    
+            poly_line_1477f95dfb9b89af665478d9948f4b90.bindTooltip(
+                `<div>
+                     {'도로명': '우이천로22길', '구간명': '태영데시앙아파트 ~ 협창실업주식회사', '구간 거리': '241m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_14951d7eea8d2acf2842ea349001923f = L.polyline(
+                [[37.64257768284007, 127.03203941477796], [37.64268613718146, 127.03216133962798], [37.643051525385964, 127.03252484157497], [37.64313714714916, 127.03259219075349], [37.643670033207066, 127.0328977441933], [37.64429195001225, 127.03328979450838]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_dbbec68a1bc57b0064cc9d9c76dc0844 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47bc07031256a0978b748d2954068ddb = $(`<div id="html_47bc07031256a0978b748d2954068ddb" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110다길', '구간명': '예닮누리어린이집 ~ 번창교', '구간 거리': '221m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_dbbec68a1bc57b0064cc9d9c76dc0844.setContent(html_47bc07031256a0978b748d2954068ddb);
+            
+        
+
+        poly_line_14951d7eea8d2acf2842ea349001923f.bindPopup(popup_dbbec68a1bc57b0064cc9d9c76dc0844)
+        ;
+
+        
+    
+    
+            poly_line_14951d7eea8d2acf2842ea349001923f.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110다길', '구간명': '예닮누리어린이집 ~ 번창교', '구간 거리': '221m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_edb905eb5bf5f0a8adb1ebcb825547ad = L.polyline(
+                [[37.644340399525106, 127.03316824108896], [37.64371670048608, 127.03277506900851], [37.64318846065735, 127.0324721809747], [37.64311392124031, 127.03241354881699], [37.64275576744673, 127.03205724399633], [37.64264974041309, 127.03193804748656]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_29bd9c8136ff9c2972008c420bbb46ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4f0076d9ea90358418fe89a9afd387c = $(`<div id="html_e4f0076d9ea90358418fe89a9afd387c" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110다길', '구간명': '번창교 ~ 예닮누리어린이집', '구간 거리': '218m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_29bd9c8136ff9c2972008c420bbb46ca.setContent(html_e4f0076d9ea90358418fe89a9afd387c);
+            
+        
+
+        poly_line_edb905eb5bf5f0a8adb1ebcb825547ad.bindPopup(popup_29bd9c8136ff9c2972008c420bbb46ca)
+        ;
+
+        
+    
+    
+            poly_line_edb905eb5bf5f0a8adb1ebcb825547ad.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110다길', '구간명': '번창교 ~ 예닮누리어린이집', '구간 거리': '218m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ec178b45caa9683d88045c056fa692a1 = L.polyline(
+                [[37.64427549174005, 127.03318424757416], [37.64371375241689, 127.03399157046785], [37.6433501041927, 127.03451984285451], [37.64328018941449, 127.0347354361181]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_bbd4c7a6bc14634423d79da786d8cb3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dd1c5b1259e55f6f5a8d6104c82011c = $(`<div id="html_6dd1c5b1259e55f6f5a8d6104c82011c" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로104길', '구간명': '협창실업주식회사 ~ 예닮누리어린이집', '구간 거리': '177m', '평균 속도': '22.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_bbd4c7a6bc14634423d79da786d8cb3f.setContent(html_6dd1c5b1259e55f6f5a8d6104c82011c);
+            
+        
+
+        poly_line_ec178b45caa9683d88045c056fa692a1.bindPopup(popup_bbd4c7a6bc14634423d79da786d8cb3f)
+        ;
+
+        
+    
+    
+            poly_line_ec178b45caa9683d88045c056fa692a1.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로104길', '구간명': '협창실업주식회사 ~ 예닮누리어린이집', '구간 거리': '177m', '평균 속도': '22.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3a485183da923522ef658d4e06cd14c9 = L.polyline(
+                [[37.643380302457004, 127.03478678117561], [37.64344349621824, 127.03459191288763], [37.64379530716905, 127.03408083709348], [37.644356857811786, 127.03327378697841]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_d0852c41f1628fb563aa60eb88962258 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84a19e48d8ec0c12df34d75c9083f494 = $(`<div id="html_84a19e48d8ec0c12df34d75c9083f494" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로104길', '구간명': '예닮누리어린이집 ~ 협창실업주식회사', '구간 거리': '173m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d0852c41f1628fb563aa60eb88962258.setContent(html_84a19e48d8ec0c12df34d75c9083f494);
+            
+        
+
+        poly_line_3a485183da923522ef658d4e06cd14c9.bindPopup(popup_d0852c41f1628fb563aa60eb88962258)
+        ;
+
+        
+    
+    
+            poly_line_3a485183da923522ef658d4e06cd14c9.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로104길', '구간명': '예닮누리어린이집 ~ 협창실업주식회사', '구간 거리': '173m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_abe534aab9405f8805ab9ecd1fd4476c = L.polyline(
+                [[37.64478892402409, 127.0335274888061], [37.64461159108888, 127.0341258388532], [37.64463473211033, 127.03453711181457], [37.643473268331455, 127.03469319121616], [37.64333026595003, 127.03469312470985]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_bcd2efed5ec890fdbf30dba4fa93fd32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c307a8e75c6171662f188c1cf2db89b = $(`<div id="html_8c307a8e75c6171662f188c1cf2db89b" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로104길', '구간명': '협창실업주식회사 ~ 수정오피스텔', '구간 거리': '238m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_bcd2efed5ec890fdbf30dba4fa93fd32.setContent(html_8c307a8e75c6171662f188c1cf2db89b);
+            
+        
+
+        poly_line_abe534aab9405f8805ab9ecd1fd4476c.bindPopup(popup_bcd2efed5ec890fdbf30dba4fa93fd32)
+        ;
+
+        
+    
+    
+            poly_line_abe534aab9405f8805ab9ecd1fd4476c.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로104길', '구간명': '협창실업주식회사 ~ 수정오피스텔', '구간 거리': '238m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_47fe24af7296b7815b51d1346fa6e2b9 = L.polyline(
+                [[37.64333022588838, 127.0348290925494], [37.64347900808204, 127.03482916201493], [37.64468884056894, 127.03466658515778], [37.64474614016812, 127.03459078787171], [37.644721095443266, 127.03414567604155], [37.64489023336945, 127.03357497565253]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_88e129ded9dba56d00869431bb652f8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2e406cc6dd645c545ae973f9b594fd0 = $(`<div id="html_b2e406cc6dd645c545ae973f9b594fd0" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로104길', '구간명': '수정오피스텔 ~ 협창실업주식회사', '구간 거리': '254m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_88e129ded9dba56d00869431bb652f8b.setContent(html_b2e406cc6dd645c545ae973f9b594fd0);
+            
+        
+
+        poly_line_47fe24af7296b7815b51d1346fa6e2b9.bindPopup(popup_88e129ded9dba56d00869431bb652f8b)
+        ;
+
+        
+    
+    
+            poly_line_47fe24af7296b7815b51d1346fa6e2b9.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로104길', '구간명': '수정오피스텔 ~ 협창실업주식회사', '구간 거리': '254m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4110ad04b13a3a3504b15e739543c2ef = L.polyline(
+                [[37.644292406730855, 127.0332900791153], [37.644815811381896, 127.03361229440254]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_6f7138a9cfbb796d286c7cd081d1280b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ce39d753908a20b8453712da71df561 = $(`<div id="html_1ce39d753908a20b8453712da71df561" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110다길', '구간명': '수정오피스텔 ~ 예닮누리어린이집', '구간 거리': '65m', '평균 속도': '30.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_6f7138a9cfbb796d286c7cd081d1280b.setContent(html_1ce39d753908a20b8453712da71df561);
+            
+        
+
+        poly_line_4110ad04b13a3a3504b15e739543c2ef.bindPopup(popup_6f7138a9cfbb796d286c7cd081d1280b)
+        ;
+
+        
+    
+    
+            poly_line_4110ad04b13a3a3504b15e739543c2ef.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110다길', '구간명': '수정오피스텔 ~ 예닮누리어린이집', '구간 거리': '65m', '평균 속도': '30.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_53139480835411184afa22a3f35a9607 = L.polyline(
+                [[37.64486334688587, 127.03349017111839], [37.6443399419056, 127.03316795534907]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_3f172939bdeb7ee14996531312134c91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_906bceee96fc82fc55c693baca32f977 = $(`<div id="html_906bceee96fc82fc55c693baca32f977" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110다길', '구간명': '예닮누리어린이집 ~ 수정오피스텔', '구간 거리': '65m', '평균 속도': '16.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3f172939bdeb7ee14996531312134c91.setContent(html_906bceee96fc82fc55c693baca32f977);
+            
+        
+
+        poly_line_53139480835411184afa22a3f35a9607.bindPopup(popup_3f172939bdeb7ee14996531312134c91)
+        ;
+
+        
+    
+    
+            poly_line_53139480835411184afa22a3f35a9607.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110다길', '구간명': '예닮누리어린이집 ~ 수정오피스텔', '구간 거리': '65m', '평균 속도': '16.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d805175ef08b2ba9683160c98cc2faa9 = L.polyline(
+                [[37.645118247794336, 127.03262540614016], [37.64479045431085, 127.03352285403221]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_b8f5c06f53005df146c7914f1d15888b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c673245bfb49163e9f0fa7102f0f791 = $(`<div id="html_1c673245bfb49163e9f0fa7102f0f791" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로106길', '구간명': '수정오피스텔 ~ 성북택시', '구간 거리': '87m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_b8f5c06f53005df146c7914f1d15888b.setContent(html_1c673245bfb49163e9f0fa7102f0f791);
+            
+        
+
+        poly_line_d805175ef08b2ba9683160c98cc2faa9.bindPopup(popup_b8f5c06f53005df146c7914f1d15888b)
+        ;
+
+        
+    
+    
+            poly_line_d805175ef08b2ba9683160c98cc2faa9.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로106길', '구간명': '수정오피스텔 ~ 성북택시', '구간 거리': '87m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7ccd1140e79fed05afae94becd40cf1f = L.polyline(
+                [[37.64488870308068, 127.03357961043153], [37.64521649699082, 127.03268216160748]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_e3507d6bc2619470ba3fa4c60b7b9b1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07906f747855ae22a295db92e9da51e8 = $(`<div id="html_07906f747855ae22a295db92e9da51e8" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로106길', '구간명': '성북택시 ~ 수정오피스텔', '구간 거리': '87m', '평균 속도': '4.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e3507d6bc2619470ba3fa4c60b7b9b1e.setContent(html_07906f747855ae22a295db92e9da51e8);
+            
+        
+
+        poly_line_7ccd1140e79fed05afae94becd40cf1f.bindPopup(popup_e3507d6bc2619470ba3fa4c60b7b9b1e)
+        ;
+
+        
+    
+    
+            poly_line_7ccd1140e79fed05afae94becd40cf1f.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로106길', '구간명': '성북택시 ~ 수정오피스텔', '구간 거리': '87m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e56b6835814287a6a8f61267e0902033 = L.polyline(
+                [[37.644817514856875, 127.03361329682], [37.64539692811352, 127.03393907738928], [37.64554199395062, 127.03399459612987], [37.646177330180336, 127.03438212899329]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_9f7bd0b0c951dc0d9f37de84761b4430 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a1d31f00dbffc8a348fb7c0369a3c87 = $(`<div id="html_3a1d31f00dbffc8a348fb7c0369a3c87" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110다길', '구간명': '도봉전화국 ~ 수정오피스텔', '구간 거리': '166m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_9f7bd0b0c951dc0d9f37de84761b4430.setContent(html_3a1d31f00dbffc8a348fb7c0369a3c87);
+            
+        
+
+        poly_line_e56b6835814287a6a8f61267e0902033.bindPopup(popup_9f7bd0b0c951dc0d9f37de84761b4430)
+        ;
+
+        
+    
+    
+            poly_line_e56b6835814287a6a8f61267e0902033.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110다길', '구간명': '도봉전화국 ~ 수정오피스텔', '구간 거리': '166m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_14daafe751fcebf4e543f1a6e2e5dbe3 = L.polyline(
+                [[37.64622451244775, 127.03425978625228], [37.64558156384041, 127.03386761181851], [37.64543487815337, 127.03381147275675], [37.64486164250919, 127.03348916756963]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_6fe2ffcf4150034e7db1629985511862 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c1d57e28dfe8e3c7d3982fc2906fa74 = $(`<div id="html_6c1d57e28dfe8e3c7d3982fc2906fa74" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로110다길', '구간명': '수정오피스텔 ~ 도봉전화국', '구간 거리': '166m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_6fe2ffcf4150034e7db1629985511862.setContent(html_6c1d57e28dfe8e3c7d3982fc2906fa74);
+            
+        
+
+        poly_line_14daafe751fcebf4e543f1a6e2e5dbe3.bindPopup(popup_6fe2ffcf4150034e7db1629985511862)
+        ;
+
+        
+    
+    
+            poly_line_14daafe751fcebf4e543f1a6e2e5dbe3.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로110다길', '구간명': '수정오피스텔 ~ 도봉전화국', '구간 거리': '166m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1087ba19d81129e272fa433296620f27 = L.polyline(
+                [[37.65067235816629, 127.03598817474835], [37.65088462181871, 127.03622901225631], [37.651234833547136, 127.03692177294052], [37.65132886652328, 127.0372253821596]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_fd8a0ebadbec98ee3c9201d639095669 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1afbfd85f47b3e379e0099f81885b4b5 = $(`<div id="html_1afbfd85f47b3e379e0099f81885b4b5" style="width: 100.0%; height: 100.0%;">{'도로명': '노해로', '구간명': '정의여중입구 ~ 소피아관광호텔', '구간 거리': '133m', '평균 속도': '19.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fd8a0ebadbec98ee3c9201d639095669.setContent(html_1afbfd85f47b3e379e0099f81885b4b5);
+            
+        
+
+        poly_line_1087ba19d81129e272fa433296620f27.bindPopup(popup_fd8a0ebadbec98ee3c9201d639095669)
+        ;
+
+        
+    
+    
+            poly_line_1087ba19d81129e272fa433296620f27.bindTooltip(
+                `<div>
+                     {'도로명': '노해로', '구간명': '정의여중입구 ~ 소피아관광호텔', '구간 거리': '133m', '평균 속도': '19.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_73aafad083fba23a53a365ed2f01a6ba = L.polyline(
+                [[37.64282252258258, 127.03092873919945], [37.64309640935437, 127.03122561867266]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_1d77e8326ee7e4666f805516f2fe4826 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_122424b3857db9f69c94bfe73af7cf60 = $(`<div id="html_122424b3857db9f69c94bfe73af7cf60" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '우이교앞교차로 ~ 강북구-도봉구', '구간 거리': '40m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_1d77e8326ee7e4666f805516f2fe4826.setContent(html_122424b3857db9f69c94bfe73af7cf60);
+            
+        
+
+        poly_line_73aafad083fba23a53a365ed2f01a6ba.bindPopup(popup_1d77e8326ee7e4666f805516f2fe4826)
+        ;
+
+        
+    
+    
+            poly_line_73aafad083fba23a53a365ed2f01a6ba.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '우이교앞교차로 ~ 강북구-도봉구', '구간 거리': '40m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_55202a04fcfed2b5b614cea04e78c242 = L.polyline(
+                [[37.6431669980459, 127.03112262899745], [37.642893111018125, 127.03082574962116]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dd5b1800916ad702bf014fbdb5cebf3);
+        
+    
+        var popup_e37d838b972329888efddb89f745eafd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_008fb52f60fa0ccc752d5e2aebc5688a = $(`<div id="html_008fb52f60fa0ccc752d5e2aebc5688a" style="width: 100.0%; height: 100.0%;">{'도로명': '도봉로', '구간명': '강북구-도봉구 ~ 우이교앞교차로', '구간 거리': '40m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e37d838b972329888efddb89f745eafd.setContent(html_008fb52f60fa0ccc752d5e2aebc5688a);
+            
+        
+
+        poly_line_55202a04fcfed2b5b614cea04e78c242.bindPopup(popup_e37d838b972329888efddb89f745eafd)
+        ;
+
+        
+    
+    
+            poly_line_55202a04fcfed2b5b614cea04e78c242.bindTooltip(
+                `<div>
+                     {'도로명': '도봉로', '구간명': '강북구-도봉구 ~ 우이교앞교차로', '구간 거리': '40m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

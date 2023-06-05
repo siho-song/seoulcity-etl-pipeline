@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b808fcb76b02f078a24d5a87a11c0a6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b808fcb76b02f078a24d5a87a11c0a6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b808fcb76b02f078a24d5a87a11c0a6f = L.map(
+                "map_b808fcb76b02f078a24d5a87a11c0a6f",
+                {
+                    center: [37.55674194936796, 126.93941159706851],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b5dbf0332e0627ee2bd785f175d7c129 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+            var poly_line_9408200e52ef274495d04b155aba15b6 = L.polyline(
+                [[37.55683907385325, 126.9458746921741], [37.55667317447649, 126.94288037861499]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_d175e8ed4c2b18f9f06e5273af878edf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79b99e09b52e7d69567730989749f730 = $(`<div id="html_79b99e09b52e7d69567730989749f730" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌기차역입구교차로 ~ 이대역앞교차로', '구간 거리': '265m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_d175e8ed4c2b18f9f06e5273af878edf.setContent(html_79b99e09b52e7d69567730989749f730);
+            
+        
+
+        poly_line_9408200e52ef274495d04b155aba15b6.bindPopup(popup_d175e8ed4c2b18f9f06e5273af878edf)
+        ;
+
+        
+    
+    
+            poly_line_9408200e52ef274495d04b155aba15b6.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌기차역입구교차로 ~ 이대역앞교차로', '구간 거리': '265m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bf96b8abb3a5b9a1bd93b899cdcdff6c = L.polyline(
+                [[37.55656531614061, 126.94288980920132], [37.556731215277885, 126.94588411846604]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_4f8e4ebdc2f7bb77151f6b37f09ce1f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16cb3f457d52d1f473ba3bf2ce379cc5 = $(`<div id="html_16cb3f457d52d1f473ba3bf2ce379cc5" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '이대역앞교차로 ~ 신촌기차역입구교차로', '구간 거리': '265m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_4f8e4ebdc2f7bb77151f6b37f09ce1f6.setContent(html_16cb3f457d52d1f473ba3bf2ce379cc5);
+            
+        
+
+        poly_line_bf96b8abb3a5b9a1bd93b899cdcdff6c.bindPopup(popup_4f8e4ebdc2f7bb77151f6b37f09ce1f6)
+        ;
+
+        
+    
+    
+            poly_line_bf96b8abb3a5b9a1bd93b899cdcdff6c.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '이대역앞교차로 ~ 신촌기차역입구교차로', '구간 거리': '265m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b1abc0fc654addef1a0e2c9f27da7e3e = L.polyline(
+                [[37.557208804624516, 126.95200913156786], [37.55705767322781, 126.94970392832228], [37.55683906567787, 126.94587454731544]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_d6d2b3b4b531677a7aab4eb7c0c0a3ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13fdb27a7aa19e24ef3a8ab32cce5f9c = $(`<div id="html_13fdb27a7aa19e24ef3a8ab32cce5f9c" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '이대역앞교차로 ~ 북아현동354-23', '구간 거리': '544m', '평균 속도': '31.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_d6d2b3b4b531677a7aab4eb7c0c0a3ee.setContent(html_13fdb27a7aa19e24ef3a8ab32cce5f9c);
+            
+        
+
+        poly_line_b1abc0fc654addef1a0e2c9f27da7e3e.bindPopup(popup_d6d2b3b4b531677a7aab4eb7c0c0a3ee)
+        ;
+
+        
+    
+    
+            poly_line_b1abc0fc654addef1a0e2c9f27da7e3e.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '이대역앞교차로 ~ 북아현동354-23', '구간 거리': '544m', '평균 속도': '31.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1e574e625695cc345179c131bfdd9763 = L.polyline(
+                [[37.556731223453255, 126.94588426332452], [37.556949871539466, 126.94971435861133], [37.55710104987689, 126.95202027719392]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_eb358c42fbbd1de145cf8bad3ac0c64b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26e45d3d0e67300d2d2a65e58cb28c96 = $(`<div id="html_26e45d3d0e67300d2d2a65e58cb28c96" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '북아현동354-23 ~ 이대역앞교차로', '구간 거리': '544m', '평균 속도': '31.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_eb358c42fbbd1de145cf8bad3ac0c64b.setContent(html_26e45d3d0e67300d2d2a65e58cb28c96);
+            
+        
+
+        poly_line_1e574e625695cc345179c131bfdd9763.bindPopup(popup_eb358c42fbbd1de145cf8bad3ac0c64b)
+        ;
+
+        
+    
+    
+            poly_line_1e574e625695cc345179c131bfdd9763.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '북아현동354-23 ~ 이대역앞교차로', '구간 거리': '544m', '평균 속도': '31.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4b8c978dde3d9e9c41737a7796f9dc80 = L.polyline(
+                [[37.55852030496459, 126.94274403103763], [37.55661759111219, 126.94281722066295]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_65b7eef92518c097bb45674f7ceae148 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a032ee72c108415b0c9a57d074548ae = $(`<div id="html_8a032ee72c108415b0c9a57d074548ae" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '신촌기차역입구교차로 ~ 신촌역', '구간 거리': '211m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_65b7eef92518c097bb45674f7ceae148.setContent(html_8a032ee72c108415b0c9a57d074548ae);
+            
+        
+
+        poly_line_4b8c978dde3d9e9c41737a7796f9dc80.bindPopup(popup_65b7eef92518c097bb45674f7ceae148)
+        ;
+
+        
+    
+    
+            poly_line_4b8c978dde3d9e9c41737a7796f9dc80.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '신촌기차역입구교차로 ~ 신촌역', '구간 거리': '211m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9a175cdeeba6df77e68634bccfb65517 = L.polyline(
+                [[37.556620900367655, 126.9429529671626], [37.55852361430597, 126.94287978098554]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_cfda4c2220cfc2fdf844311b29985457 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8681b600ad44bed765525b1a3d32006b = $(`<div id="html_8681b600ad44bed765525b1a3d32006b" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '신촌역 ~ 신촌기차역입구교차로', '구간 거리': '211m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_cfda4c2220cfc2fdf844311b29985457.setContent(html_8681b600ad44bed765525b1a3d32006b);
+            
+        
+
+        poly_line_9a175cdeeba6df77e68634bccfb65517.bindPopup(popup_cfda4c2220cfc2fdf844311b29985457)
+        ;
+
+        
+    
+    
+            poly_line_9a175cdeeba6df77e68634bccfb65517.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '신촌역 ~ 신촌기차역입구교차로', '구간 거리': '211m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_786560ea6fa44a639bdfac1255efa79c = L.polyline(
+                [[37.55852361430597, 126.94287978098554], [37.55898159400356, 126.9428522809413], [37.55913295837491, 126.94282536343775]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_478c487b3b683e14949fc0e068f929cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e214a7512187dd79a0da132bbf4db07a = $(`<div id="html_e214a7512187dd79a0da132bbf4db07a" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '신촌역 ~ 신촌역', '구간 거리': '68m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_478c487b3b683e14949fc0e068f929cd.setContent(html_e214a7512187dd79a0da132bbf4db07a);
+            
+        
+
+        poly_line_786560ea6fa44a639bdfac1255efa79c.bindPopup(popup_478c487b3b683e14949fc0e068f929cd)
+        ;
+
+        
+    
+    
+            poly_line_786560ea6fa44a639bdfac1255efa79c.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '신촌역 ~ 신촌역', '구간 거리': '68m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6698f3a511d81b6d47f2fd9c47dcdb53 = L.polyline(
+                [[37.5587976948676, 126.94565699150016], [37.55702746036818, 126.94580134253137], [37.55678334793341, 126.94581153761918]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_d3943b9c0bafd8576e54c2fe39147081 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02e01538ad3cae6ce267f665ddaa558b = $(`<div id="html_02e01538ad3cae6ce267f665ddaa558b" style="width: 100.0%; height: 100.0%;">{'도로명': '이화여대길', '구간명': '이대역앞교차로 ~ 무궁화상가아파트', '구간 거리': '224m', '평균 속도': '40.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_d3943b9c0bafd8576e54c2fe39147081.setContent(html_02e01538ad3cae6ce267f665ddaa558b);
+            
+        
+
+        poly_line_6698f3a511d81b6d47f2fd9c47dcdb53.bindPopup(popup_d3943b9c0bafd8576e54c2fe39147081)
+        ;
+
+        
+    
+    
+            poly_line_6698f3a511d81b6d47f2fd9c47dcdb53.bindTooltip(
+                `<div>
+                     {'도로명': '이화여대길', '구간명': '이대역앞교차로 ~ 무궁화상가아파트', '구간 거리': '224m', '평균 속도': '40.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4fc3df9eda5d9d34873de59404bba3af = L.polyline(
+                [[37.5567869411594, 126.94594727303112], [37.557032760062306, 126.94593700698374], [37.55880469844995, 126.94579251983944]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_aa54262c17f68ebdfaa36eee100c05a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24903b6690501d87d0c473f67f1044bf = $(`<div id="html_24903b6690501d87d0c473f67f1044bf" style="width: 100.0%; height: 100.0%;">{'도로명': '이화여대길', '구간명': '무궁화상가아파트 ~ 이대역앞교차로', '구간 거리': '224m', '평균 속도': '14.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_aa54262c17f68ebdfaa36eee100c05a4.setContent(html_24903b6690501d87d0c473f67f1044bf);
+            
+        
+
+        poly_line_4fc3df9eda5d9d34873de59404bba3af.bindPopup(popup_aa54262c17f68ebdfaa36eee100c05a4)
+        ;
+
+        
+    
+    
+            poly_line_4fc3df9eda5d9d34873de59404bba3af.bindTooltip(
+                `<div>
+                     {'도로명': '이화여대길', '구간명': '무궁화상가아파트 ~ 이대역앞교차로', '구간 거리': '224m', '평균 속도': '14.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9e1b9b8d335dae80d44f3ab94a84850d = L.polyline(
+                [[37.55906539631448, 126.93934604588632], [37.55892130563005, 126.93913139045435], [37.55757612978096, 126.93733538008759], [37.55737753403991, 126.93704962015583], [37.55729666577638, 126.9368721295379]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_2db8458ed9d9d63f404b313585d08375 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34559186252ff234656b9379cf84488f = $(`<div id="html_34559186252ff234656b9379cf84488f" style="width: 100.0%; height: 100.0%;">{'도로명': '명물길', '구간명': '귀금속사거리 ~ 신촌명물거리', '구간 거리': '294m', '평균 속도': '23.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_2db8458ed9d9d63f404b313585d08375.setContent(html_34559186252ff234656b9379cf84488f);
+            
+        
+
+        poly_line_9e1b9b8d335dae80d44f3ab94a84850d.bindPopup(popup_2db8458ed9d9d63f404b313585d08375)
+        ;
+
+        
+    
+    
+            poly_line_9e1b9b8d335dae80d44f3ab94a84850d.bindTooltip(
+                `<div>
+                     {'도로명': '명물길', '구간명': '귀금속사거리 ~ 신촌명물거리', '구간 거리': '294m', '평균 속도': '23.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a5f0880bd8dac65729ea87b09b2f6c8f = L.polyline(
+                [[37.55915551678429, 126.94041311792402], [37.55914068678307, 126.9395806602319], [37.55912307709855, 126.9394704257511], [37.55907098765586, 126.9393560916334]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_9c39f4a19c545225fda6f8d9a59cae39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bf2cf5c9c9c7a3c2f9317c375b5ec4e = $(`<div id="html_8bf2cf5c9c9c7a3c2f9317c375b5ec4e" style="width: 100.0%; height: 100.0%;">{'도로명': '명물길', '구간명': '신촌명물거리 ~ 명물거리교차로', '구간 거리': '95m', '평균 속도': '22.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9c39f4a19c545225fda6f8d9a59cae39.setContent(html_8bf2cf5c9c9c7a3c2f9317c375b5ec4e);
+            
+        
+
+        poly_line_a5f0880bd8dac65729ea87b09b2f6c8f.bindPopup(popup_9c39f4a19c545225fda6f8d9a59cae39)
+        ;
+
+        
+    
+    
+            poly_line_a5f0880bd8dac65729ea87b09b2f6c8f.bindTooltip(
+                `<div>
+                     {'도로명': '명물길', '구간명': '신촌명물거리 ~ 명물거리교차로', '구간 거리': '95m', '평균 속도': '22.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d5213d14e9ac1a11ab98c67e1b580304 = L.polyline(
+                [[37.55720282692467, 126.93693959029403], [37.55728902621172, 126.93712877982591], [37.557496003826515, 126.93742660062362], [37.558840543568074, 126.93922176351988], [37.558982739647725, 126.93943359661961]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_ddf41d501af355d7c7dfc6be10e6bf87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f68cfd5b36bb6fb6e7f8d6bceb0b2d57 = $(`<div id="html_f68cfd5b36bb6fb6e7f8d6bceb0b2d57" style="width: 100.0%; height: 100.0%;">{'도로명': '명물길', '구간명': '신촌명물거리 ~ 귀금속사거리', '구간 거리': '296m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_ddf41d501af355d7c7dfc6be10e6bf87.setContent(html_f68cfd5b36bb6fb6e7f8d6bceb0b2d57);
+            
+        
+
+        poly_line_d5213d14e9ac1a11ab98c67e1b580304.bindPopup(popup_ddf41d501af355d7c7dfc6be10e6bf87)
+        ;
+
+        
+    
+    
+            poly_line_d5213d14e9ac1a11ab98c67e1b580304.bindTooltip(
+                `<div>
+                     {'도로명': '명물길', '구간명': '신촌명물거리 ~ 귀금속사거리', '구간 거리': '296m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_44866595f8f0917bbd3ed1cc35d97bf7 = L.polyline(
+                [[37.55897714831287, 126.93942355087856], [37.55902052246076, 126.93951875567969], [37.55903280727769, 126.93959565524816], [37.55904742391006, 126.94041615570579]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_79aaadc5642929eca75110fc6078f2ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_207198246704aa2d0cefcccf96464d75 = $(`<div id="html_207198246704aa2d0cefcccf96464d75" style="width: 100.0%; height: 100.0%;">{'도로명': '명물길', '구간명': '명물거리교차로 ~ 신촌명물거리', '구간 거리': '89m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_79aaadc5642929eca75110fc6078f2ac.setContent(html_207198246704aa2d0cefcccf96464d75);
+            
+        
+
+        poly_line_44866595f8f0917bbd3ed1cc35d97bf7.bindPopup(popup_79aaadc5642929eca75110fc6078f2ac)
+        ;
+
+        
+    
+    
+            poly_line_44866595f8f0917bbd3ed1cc35d97bf7.bindTooltip(
+                `<div>
+                     {'도로명': '명물길', '구간명': '명물거리교차로 ~ 신촌명물거리', '구간 거리': '89m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7f8171b986bfa877a43f5b7924078afa = L.polyline(
+                [[37.55894281608108, 126.93685150153448], [37.557437278459375, 126.93683404703991], [37.5572488523044, 126.93683796353979]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_8d52159fafe17d7bbb5923c88396f8dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba4a1e923beeac0e58ea6b3d42ac0a5c = $(`<div id="html_ba4a1e923beeac0e58ea6b3d42ac0a5c" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로', '구간명': '귀금속사거리 ~ 창천감리교회', '구간 거리': '188m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_8d52159fafe17d7bbb5923c88396f8dc.setContent(html_ba4a1e923beeac0e58ea6b3d42ac0a5c);
+            
+        
+
+        poly_line_7f8171b986bfa877a43f5b7924078afa.bindPopup(popup_8d52159fafe17d7bbb5923c88396f8dc)
+        ;
+
+        
+    
+    
+            poly_line_7f8171b986bfa877a43f5b7924078afa.bindTooltip(
+                `<div>
+                     {'도로명': '연세로', '구간명': '귀금속사거리 ~ 창천감리교회', '구간 거리': '188m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e2590cc31e6043c3dc2bf9c63ba3fd27 = L.polyline(
+                [[37.560045872899806, 126.93683572587003], [37.55894170244927, 126.9368515024743]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_78723b58c0b92c3432b48885cae1b5ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_274c4fafb94ef87762bf7d2a22d1ceae = $(`<div id="html_274c4fafb94ef87762bf7d2a22d1ceae" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로', '구간명': '창천감리교회 ~ 연세대앞교차로', '구간 거리': '123m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_78723b58c0b92c3432b48885cae1b5ec.setContent(html_274c4fafb94ef87762bf7d2a22d1ceae);
+            
+        
+
+        poly_line_e2590cc31e6043c3dc2bf9c63ba3fd27.bindPopup(popup_78723b58c0b92c3432b48885cae1b5ec)
+        ;
+
+        
+    
+    
+            poly_line_e2590cc31e6043c3dc2bf9c63ba3fd27.bindTooltip(
+                `<div>
+                     {'도로명': '연세로', '구간명': '창천감리교회 ~ 연세대앞교차로', '구간 거리': '123m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e5147780a987d4ea4a22b651bf0701a3 = L.polyline(
+                [[37.557250640367656, 126.93697375633614], [37.55743767360145, 126.9369698696455], [37.55894181825501, 126.93698730993744]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_c91b61445a5a5400b72fb1c62cc6e8d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a968443837c7a8ef95d2fd9bba1beaee = $(`<div id="html_a968443837c7a8ef95d2fd9bba1beaee" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로', '구간명': '창천감리교회 ~ 귀금속사거리', '구간 거리': '188m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_c91b61445a5a5400b72fb1c62cc6e8d4.setContent(html_a968443837c7a8ef95d2fd9bba1beaee);
+            
+        
+
+        poly_line_e5147780a987d4ea4a22b651bf0701a3.bindPopup(popup_c91b61445a5a5400b72fb1c62cc6e8d4)
+        ;
+
+        
+    
+    
+            poly_line_e5147780a987d4ea4a22b651bf0701a3.bindTooltip(
+                `<div>
+                     {'도로명': '연세로', '구간명': '창천감리교회 ~ 귀금속사거리', '구간 거리': '188m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3aa94ee8eaaadae42176649a96aef1cf = L.polyline(
+                [[37.55894293188622, 126.93698730786781], [37.56004710235642, 126.9369715332673]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_9b4360c39001598111b6304006a4fac8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_926470266438667e0508aa54c169333d = $(`<div id="html_926470266438667e0508aa54c169333d" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로', '구간명': '연세대앞교차로 ~ 창천감리교회', '구간 거리': '123m', '평균 속도': '4.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_9b4360c39001598111b6304006a4fac8.setContent(html_926470266438667e0508aa54c169333d);
+            
+        
+
+        poly_line_3aa94ee8eaaadae42176649a96aef1cf.bindPopup(popup_9b4360c39001598111b6304006a4fac8)
+        ;
+
+        
+    
+    
+            poly_line_3aa94ee8eaaadae42176649a96aef1cf.bindTooltip(
+                `<div>
+                     {'도로명': '연세로', '구간명': '연세대앞교차로 ~ 창천감리교회', '구간 거리': '123m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a687a0e96016849ede6ae718eef813a4 = L.polyline(
+                [[37.559186970869575, 126.94282253004052], [37.559182244045445, 126.94265863915265], [37.55917438550176, 126.9421138457002], [37.55918018304204, 126.94202677261839]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_fe1e4b8a5f1d2e505b0229081ea29a60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2a70de8d2ec5efdfca1d10257426fc3 = $(`<div id="html_b2a70de8d2ec5efdfca1d10257426fc3" style="width: 100.0%; height: 100.0%;">{'도로명': '이화여대길', '구간명': '신촌역 ~ 신촌역', '구간 거리': '70m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_fe1e4b8a5f1d2e505b0229081ea29a60.setContent(html_b2a70de8d2ec5efdfca1d10257426fc3);
+            
+        
+
+        poly_line_a687a0e96016849ede6ae718eef813a4.bindPopup(popup_fe1e4b8a5f1d2e505b0229081ea29a60)
+        ;
+
+        
+    
+    
+            poly_line_a687a0e96016849ede6ae718eef813a4.bindTooltip(
+                `<div>
+                     {'도로명': '이화여대길', '구간명': '신촌역 ~ 신촌역', '구간 거리': '70m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0881daa90a7f68089b2456a0c86ed151 = L.polyline(
+                [[37.55918018304204, 126.94202677261839], [37.559155519595215, 126.94041333182999]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_5ad8337fe7be107b660f27d7b938178f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dab8b322729ef37fe47a44613bd1229a = $(`<div id="html_dab8b322729ef37fe47a44613bd1229a" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '명물거리교차로 ~ 신촌역', '구간 거리': '143m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_5ad8337fe7be107b660f27d7b938178f.setContent(html_dab8b322729ef37fe47a44613bd1229a);
+            
+        
+
+        poly_line_0881daa90a7f68089b2456a0c86ed151.bindPopup(popup_5ad8337fe7be107b660f27d7b938178f)
+        ;
+
+        
+    
+    
+            poly_line_0881daa90a7f68089b2456a0c86ed151.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '명물거리교차로 ~ 신촌역', '구간 거리': '143m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f92966ac8db2ac77d1cc33a2f41566b8 = L.polyline(
+                [[37.55904742019754, 126.94041594066913], [37.559072082705704, 126.94202937799643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_bfd923d88fecac78af9b47df2eb0e535 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ce02917760d1f5db8766bfdb799347b = $(`<div id="html_9ce02917760d1f5db8766bfdb799347b" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '신촌역 ~ 명물거리교차로', '구간 거리': '143m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_bfd923d88fecac78af9b47df2eb0e535.setContent(html_9ce02917760d1f5db8766bfdb799347b);
+            
+        
+
+        poly_line_f92966ac8db2ac77d1cc33a2f41566b8.bindPopup(popup_bfd923d88fecac78af9b47df2eb0e535)
+        ;
+
+        
+    
+    
+            poly_line_f92966ac8db2ac77d1cc33a2f41566b8.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '신촌역 ~ 명물거리교차로', '구간 거리': '143m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9d8077bb809c0976da343ef8f9b9e12a = L.polyline(
+                [[37.558803094721455, 126.94579262059827], [37.55913399448292, 126.94577801960529], [37.55921327632493, 126.94574950328392], [37.559254940667834, 126.94564467714783], [37.55920704398337, 126.9434262546599], [37.559186970869575, 126.94282253004052]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_a8a96f06de02ae00a92e1c57e06702fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e74a5bec376d5b6c524ff728f5c9fd0 = $(`<div id="html_8e74a5bec376d5b6c524ff728f5c9fd0" style="width: 100.0%; height: 100.0%;">{'도로명': '이화여대길', '구간명': '신촌역 ~ 무궁화상가아파트', '구간 거리': '306m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a8a96f06de02ae00a92e1c57e06702fc.setContent(html_8e74a5bec376d5b6c524ff728f5c9fd0);
+            
+        
+
+        poly_line_9d8077bb809c0976da343ef8f9b9e12a.bindPopup(popup_a8a96f06de02ae00a92e1c57e06702fc)
+        ;
+
+        
+    
+    
+            poly_line_9d8077bb809c0976da343ef8f9b9e12a.bindTooltip(
+                `<div>
+                     {'도로명': '이화여대길', '구간명': '신촌역 ~ 무궁화상가아파트', '구간 거리': '306m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b824c1c55efd8ad26f0538cca0a30a13 = L.polyline(
+                [[37.55907894497921, 126.94282819796342], [37.5590989851527, 126.94343093029082], [37.559146127737804, 126.94561440046924], [37.55913778876268, 126.94563538198084], [37.559116963864355, 126.94564287257725], [37.55879929859589, 126.94565689073842]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_4a8676070e0b6112b8f1f7eb184e579a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0b1055c1a22abe935440ee4bc5f1c89 = $(`<div id="html_d0b1055c1a22abe935440ee4bc5f1c89" style="width: 100.0%; height: 100.0%;">{'도로명': '이화여대길', '구간명': '무궁화상가아파트 ~ 신촌역', '구간 거리': '286m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_4a8676070e0b6112b8f1f7eb184e579a.setContent(html_d0b1055c1a22abe935440ee4bc5f1c89);
+            
+        
+
+        poly_line_b824c1c55efd8ad26f0538cca0a30a13.bindPopup(popup_4a8676070e0b6112b8f1f7eb184e579a)
+        ;
+
+        
+    
+    
+            poly_line_b824c1c55efd8ad26f0538cca0a30a13.bindTooltip(
+                `<div>
+                     {'도로명': '이화여대길', '구간명': '무궁화상가아파트 ~ 신촌역', '구간 거리': '286m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4390149b7f54909d87bda4a6bc232613 = L.polyline(
+                [[37.559883298699376, 126.9403236648437], [37.55910020170054, 126.94034674748247]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_6c37233e2aaf5955075aad8b1ce7c75b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1dcc5d1a10a7edebc7a9f39c4a83ca0a = $(`<div id="html_1dcc5d1a10a7edebc7a9f39c4a83ca0a" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '명물거리교차로 ~ 세브란스병원입구', '구간 거리': '87m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_6c37233e2aaf5955075aad8b1ce7c75b.setContent(html_1dcc5d1a10a7edebc7a9f39c4a83ca0a);
+            
+        
+
+        poly_line_4390149b7f54909d87bda4a6bc232613.bindPopup(popup_6c37233e2aaf5955075aad8b1ce7c75b)
+        ;
+
+        
+    
+    
+            poly_line_4390149b7f54909d87bda4a6bc232613.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '명물거리교차로 ~ 세브란스병원입구', '구간 거리': '87m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6b1e888be646e7951d2f610dc0deaeed = L.polyline(
+                [[37.55910273805369, 126.94048252502087], [37.55988583507944, 126.94045944267046]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_fa5176af55b9a2b0981b2b3929bf4f11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17e55d6853f9bcaeb02cd9a2dde607bc = $(`<div id="html_17e55d6853f9bcaeb02cd9a2dde607bc" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '세브란스병원입구 ~ 명물거리교차로', '구간 거리': '87m', '평균 속도': '8.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_fa5176af55b9a2b0981b2b3929bf4f11.setContent(html_17e55d6853f9bcaeb02cd9a2dde607bc);
+            
+        
+
+        poly_line_6b1e888be646e7951d2f610dc0deaeed.bindPopup(popup_fa5176af55b9a2b0981b2b3929bf4f11)
+        ;
+
+        
+    
+    
+            poly_line_6b1e888be646e7951d2f610dc0deaeed.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '세브란스병원입구 ~ 명물거리교차로', '구간 거리': '87m', '평균 속도': '8.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a95dfd23615148966f95e7b4ce34833c = L.polyline(
+                [[37.55988583507944, 126.94045944267046], [37.56001821797248, 126.94046009676627], [37.56012553202636, 126.940538618568], [37.5603014121503, 126.94067323511496]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_af3e86ca1e5560c77435d788670fcbfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03f81c5ca561826fa2fd847fff97cba0 = $(`<div id="html_03f81c5ca561826fa2fd847fff97cba0" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '세브란스병원입구 ~ 세브란스병원입구', '구간 거리': '51m', '평균 속도': '18.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_af3e86ca1e5560c77435d788670fcbfc.setContent(html_03f81c5ca561826fa2fd847fff97cba0);
+            
+        
+
+        poly_line_a95dfd23615148966f95e7b4ce34833c.bindPopup(popup_af3e86ca1e5560c77435d788670fcbfc)
+        ;
+
+        
+    
+    
+            poly_line_a95dfd23615148966f95e7b4ce34833c.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '세브란스병원입구 ~ 세브란스병원입구', '구간 거리': '51m', '평균 속도': '18.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_87e3348dcc55729258ed64eaaeb47159 = L.polyline(
+                [[37.56013341718711, 126.93824907745945], [37.56010052201568, 126.93690154732127]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_7fa370aa7ca06cc8be4602a105a7f41d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_100fcf86eb823147ae4e8c6117f7d03f = $(`<div id="html_100fcf86eb823147ae4e8c6117f7d03f" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로', '구간명': '연세대앞교차로 ~ 연세대장례식장입구', '구간 거리': '119m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7fa370aa7ca06cc8be4602a105a7f41d.setContent(html_100fcf86eb823147ae4e8c6117f7d03f);
+            
+        
+
+        poly_line_87e3348dcc55729258ed64eaaeb47159.bindPopup(popup_7fa370aa7ca06cc8be4602a105a7f41d)
+        ;
+
+        
+    
+    
+            poly_line_87e3348dcc55729258ed64eaaeb47159.bindTooltip(
+                `<div>
+                     {'도로명': '성산로', '구간명': '연세대앞교차로 ~ 연세대장례식장입구', '구간 거리': '119m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cc0505a3711ade93f098e86de2a866b1 = L.polyline(
+                [[37.55999245327908, 126.93690571181179], [37.56002534840125, 126.93825323887391]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_282e4abfe3c70797f4c3a1a43a5b1071 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_951d64f30c777e2c14240da86fc9a292 = $(`<div id="html_951d64f30c777e2c14240da86fc9a292" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로', '구간명': '연세대장례식장입구 ~ 연세대앞교차로', '구간 거리': '119m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_282e4abfe3c70797f4c3a1a43a5b1071.setContent(html_951d64f30c777e2c14240da86fc9a292);
+            
+        
+
+        poly_line_cc0505a3711ade93f098e86de2a866b1.bindPopup(popup_282e4abfe3c70797f4c3a1a43a5b1071)
+        ;
+
+        
+    
+    
+            poly_line_cc0505a3711ade93f098e86de2a866b1.bindTooltip(
+                `<div>
+                     {'도로명': '성산로', '구간명': '연세대장례식장입구 ~ 연세대앞교차로', '구간 거리': '119m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b9312020342db8b0beaa04cc6ab6e230 = L.polyline(
+                [[37.560025326068775, 126.93825188412455], [37.56003354350286, 126.93921796382895], [37.56001772125365, 126.93948311953831], [37.559996960992244, 126.93967778367798], [37.56001195815106, 126.93986867497269], [37.560029888954176, 126.93996972715172]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_c48bc60ab9b8109ce2c353613e53d55d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67d0353dd66aca644e5857eda72fe9b3 = $(`<div id="html_67d0353dd66aca644e5857eda72fe9b3" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로', '구간명': '세브란스병원입구 ~ 연세대장례식장입구', '구간 거리': '152m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_c48bc60ab9b8109ce2c353613e53d55d.setContent(html_67d0353dd66aca644e5857eda72fe9b3);
+            
+        
+
+        poly_line_b9312020342db8b0beaa04cc6ab6e230.bindPopup(popup_c48bc60ab9b8109ce2c353613e53d55d)
+        ;
+
+        
+    
+    
+            poly_line_b9312020342db8b0beaa04cc6ab6e230.bindTooltip(
+                `<div>
+                     {'도로명': '성산로', '구간명': '세브란스병원입구 ~ 연세대장례식장입구', '구간 거리': '152m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ccd185f121dd898990d24aaa7da6dccc = L.polyline(
+                [[37.560029888954176, 126.93996972715172], [37.560086644386296, 126.94024293635485], [37.5601582545694, 126.9404262960347], [37.560241760244644, 126.94056472864106], [37.5603014121503, 126.94067323511496]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_05daed7cc7641b82daa922cdaab68f36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba0a039a6c0e7adf91abc670cf756e2f = $(`<div id="html_ba0a039a6c0e7adf91abc670cf756e2f" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로', '구간명': '세브란스병원입구 ~ 세브란스병원입구', '구간 거리': '70m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_05daed7cc7641b82daa922cdaab68f36.setContent(html_ba0a039a6c0e7adf91abc670cf756e2f);
+            
+        
+
+        poly_line_ccd185f121dd898990d24aaa7da6dccc.bindPopup(popup_05daed7cc7641b82daa922cdaab68f36)
+        ;
+
+        
+    
+    
+            poly_line_ccd185f121dd898990d24aaa7da6dccc.bindTooltip(
+                `<div>
+                     {'도로명': '성산로', '구간명': '세브란스병원입구 ~ 세브란스병원입구', '구간 거리': '70m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1f08871e0bc9866ba5fb779140ef5422 = L.polyline(
+                [[37.560717986946905, 126.93335170480141], [37.560447819987, 126.93376407560264], [37.56027046559791, 126.93411927119973], [37.56015333472808, 126.93437256920168], [37.56008660045796, 126.9346012656363], [37.560023967837445, 126.9348982929374], [37.56000940134758, 126.93518966776689], [37.55999243189243, 126.93690278385768]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_b075fa6d9b317873c74d42558ceaf03b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79a1b27cad16032de6ac77a65228f47f = $(`<div id="html_79a1b27cad16032de6ac77a65228f47f" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로', '구간명': '연세대앞교차로 ~ 창천오피스텔', '구간 거리': '336m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b075fa6d9b317873c74d42558ceaf03b.setContent(html_79a1b27cad16032de6ac77a65228f47f);
+            
+        
+
+        poly_line_1f08871e0bc9866ba5fb779140ef5422.bindPopup(popup_b075fa6d9b317873c74d42558ceaf03b)
+        ;
+
+        
+    
+    
+            poly_line_1f08871e0bc9866ba5fb779140ef5422.bindTooltip(
+                `<div>
+                     {'도로명': '성산로', '구간명': '연세대앞교차로 ~ 창천오피스텔', '구간 거리': '336m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e7316305b13d9aebfb48ab70ff4cf740 = L.polyline(
+                [[37.560100543402356, 126.93690447527963], [37.56011747871387, 126.93519477139628], [37.56013120751346, 126.93492014757851], [37.56018983586052, 126.93464211166317], [37.56025158727074, 126.93443049261141], [37.56036303441878, 126.93418948514041], [37.560535719884925, 126.93384363988847], [37.5608014697294, 126.93343801164218]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_ed36e96e3f7af725eece604d59bc4365 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c05633c0b59be68e6ffda69f38d151c = $(`<div id="html_3c05633c0b59be68e6ffda69f38d151c" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로', '구간명': '창천오피스텔 ~ 연세대앞교차로', '구간 거리': '328m', '평균 속도': '37.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_ed36e96e3f7af725eece604d59bc4365.setContent(html_3c05633c0b59be68e6ffda69f38d151c);
+            
+        
+
+        poly_line_e7316305b13d9aebfb48ab70ff4cf740.bindPopup(popup_ed36e96e3f7af725eece604d59bc4365)
+        ;
+
+        
+    
+    
+            poly_line_e7316305b13d9aebfb48ab70ff4cf740.bindTooltip(
+                `<div>
+                     {'도로명': '성산로', '구간명': '창천오피스텔 ~ 연세대앞교차로', '구간 거리': '328m', '평균 속도': '37.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aad818853addd47da7416d4052406b21 = L.polyline(
+                [[37.56211916003303, 126.94239767702315], [37.56119464051136, 126.94120285373732], [37.56109998180295, 126.94107092747817], [37.5610062890323, 126.94093583509664], [37.56070958582276, 126.94053815441609], [37.560536634093395, 126.94030246897924], [37.56029505635827, 126.9398909070334], [37.56022046665077, 126.93970754880036], [37.56014882556112, 126.93946429798112], [37.560141656966636, 126.93921651331087], [37.56013343951954, 126.93825043221076]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_f2fce8e9610faa6c048ab72ae3bfd43a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e44169e1c72ac46644c42f393a48e57f = $(`<div id="html_e44169e1c72ac46644c42f393a48e57f" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로', '구간명': '연세대장례식장입구 ~ 세브란스응급실', '구간 거리': '449m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f2fce8e9610faa6c048ab72ae3bfd43a.setContent(html_e44169e1c72ac46644c42f393a48e57f);
+            
+        
+
+        poly_line_aad818853addd47da7416d4052406b21.bindPopup(popup_f2fce8e9610faa6c048ab72ae3bfd43a)
+        ;
+
+        
+    
+    
+            poly_line_aad818853addd47da7416d4052406b21.bindTooltip(
+                `<div>
+                     {'도로명': '성산로', '구간명': '연세대장례식장입구 ~ 세브란스응급실', '구간 거리': '449m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aeb68dcba4abbbeac3f22d73ab6188e4 = L.polyline(
+                [[37.55532153813591, 126.93751078285567], [37.55537795054205, 126.93725433838792], [37.555620062491556, 126.93693884618163]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_9af6f640a0bc1a49acdf75e824b95e81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4856fc3ff9127857d47f1e68a6fee0fd = $(`<div id="html_4856fc3ff9127857d47f1e68a6fee0fd" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로', '구간명': '신촌역3번출구 ~ 신촌로터리', '구간 거리': '62m', '평균 속도': '6.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_9af6f640a0bc1a49acdf75e824b95e81.setContent(html_4856fc3ff9127857d47f1e68a6fee0fd);
+            
+        
+
+        poly_line_aeb68dcba4abbbeac3f22d73ab6188e4.bindPopup(popup_9af6f640a0bc1a49acdf75e824b95e81)
+        ;
+
+        
+    
+    
+            poly_line_aeb68dcba4abbbeac3f22d73ab6188e4.bindTooltip(
+                `<div>
+                     {'도로명': '연세로', '구간명': '신촌역3번출구 ~ 신촌로터리', '구간 거리': '62m', '평균 속도': '6.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_00228a8ee74330ee7457f4edbce1c53d = L.polyline(
+                [[37.55562196217436, 126.93680305888937], [37.555544788661855, 126.93676197078537], [37.55542903019892, 126.93650155721816], [37.55539038899481, 126.93626386958401]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_b23db891bb4cd79c7a77259c0338b512 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3781de231f9c9d45759b35825e5602d6 = $(`<div id="html_3781de231f9c9d45759b35825e5602d6" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌역2번출구', '구간 거리': '57m', '평균 속도': '23.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b23db891bb4cd79c7a77259c0338b512.setContent(html_3781de231f9c9d45759b35825e5602d6);
+            
+        
+
+        poly_line_00228a8ee74330ee7457f4edbce1c53d.bindPopup(popup_b23db891bb4cd79c7a77259c0338b512)
+        ;
+
+        
+    
+    
+            poly_line_00228a8ee74330ee7457f4edbce1c53d.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌역2번출구', '구간 거리': '57m', '평균 속도': '23.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_67dd276afdc234b8745b9093e55e8e65 = L.polyline(
+                [[37.55569674904463, 126.93524911832412], [37.55648933451664, 126.9356969741436], [37.55655574869089, 126.93575464425518], [37.55714738901125, 126.9367282221445], [37.557198290717174, 126.93692668299987]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_693d83e43b99eb05055de98b176a611e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f772551b0feaa29f5698be4461e756d = $(`<div id="html_5f772551b0feaa29f5698be4461e756d" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로5길', '구간명': '귀금속사거리 ~ 신촌현대백화점', '구간 거리': '232m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_693d83e43b99eb05055de98b176a611e.setContent(html_5f772551b0feaa29f5698be4461e756d);
+            
+        
+
+        poly_line_67dd276afdc234b8745b9093e55e8e65.bindPopup(popup_693d83e43b99eb05055de98b176a611e)
+        ;
+
+        
+    
+    
+            poly_line_67dd276afdc234b8745b9093e55e8e65.bindTooltip(
+                `<div>
+                     {'도로명': '연세로5길', '구간명': '귀금속사거리 ~ 신촌현대백화점', '구간 거리': '232m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4f2e1ed89a037f31e79dd7827fcdc872 = L.polyline(
+                [[37.55730120198976, 126.93688503684567], [37.557244603910846, 126.9366643652368], [37.55663130710961, 126.9356551527704], [37.55654269441161, 126.93557820658829], [37.5557411047382, 126.93512526556167]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_a4061698c40ef15d612fb0583f8f7dcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40c349c5576f8f1367dc43febedd3c35 = $(`<div id="html_40c349c5576f8f1367dc43febedd3c35" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로5길', '구간명': '신촌현대백화점 ~ 귀금속사거리', '구간 거리': '242m', '평균 속도': '4.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_a4061698c40ef15d612fb0583f8f7dcb.setContent(html_40c349c5576f8f1367dc43febedd3c35);
+            
+        
+
+        poly_line_4f2e1ed89a037f31e79dd7827fcdc872.bindPopup(popup_a4061698c40ef15d612fb0583f8f7dcb)
+        ;
+
+        
+    
+    
+            poly_line_4f2e1ed89a037f31e79dd7827fcdc872.bindTooltip(
+                `<div>
+                     {'도로명': '연세로5길', '구간명': '신촌현대백화점 ~ 귀금속사거리', '구간 거리': '242m', '평균 속도': '4.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_dfed08b1f7cbf2ab57c2ad91eb2c9427 = L.polyline(
+                [[37.559072082705704, 126.94202937799643], [37.559056067713314, 126.94214373042033], [37.55903088011908, 126.94223896379441], [37.55871833417673, 126.94269197594518], [37.55865542280291, 126.94273993585331], [37.55852030496459, 126.94274403103763]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_f8bc667293e92f96e4fe2566d2bfd4ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8b9aadd2c6971414aca7def61fb62a9 = $(`<div id="html_c8b9aadd2c6971414aca7def61fb62a9" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '신촌역 ~ 신촌역', '구간 거리': '95m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_f8bc667293e92f96e4fe2566d2bfd4ed.setContent(html_c8b9aadd2c6971414aca7def61fb62a9);
+            
+        
+
+        poly_line_dfed08b1f7cbf2ab57c2ad91eb2c9427.bindPopup(popup_f8bc667293e92f96e4fe2566d2bfd4ed)
+        ;
+
+        
+    
+    
+            poly_line_dfed08b1f7cbf2ab57c2ad91eb2c9427.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '신촌역 ~ 신촌역', '구간 거리': '95m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bce35b77c67ccec6d69acce79d6fab68 = L.polyline(
+                [[37.5588883523143, 126.93692341587476], [37.558981628958136, 126.93890418496642], [37.55897003279976, 126.93938777633412]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_bbc4e3fb96919f5e8c44349d3979fc03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d521785165d79ba62683452f709aaec4 = $(`<div id="html_d521785165d79ba62683452f709aaec4" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로12길', '구간명': '신촌명물거리 ~ 창천감리교회', '구간 거리': '218m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_bbc4e3fb96919f5e8c44349d3979fc03.setContent(html_d521785165d79ba62683452f709aaec4);
+            
+        
+
+        poly_line_bce35b77c67ccec6d69acce79d6fab68.bindPopup(popup_bbc4e3fb96919f5e8c44349d3979fc03)
+        ;
+
+        
+    
+    
+            poly_line_bce35b77c67ccec6d69acce79d6fab68.bindTooltip(
+                `<div>
+                     {'도로명': '연세로12길', '구간명': '신촌명물거리 ~ 창천감리교회', '구간 거리': '218m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9bf02cf87b9d7aff48f79a92b4fb0868 = L.polyline(
+                [[37.55907810317855, 126.93939186622305], [37.55908984488287, 126.93890221670645], [37.55899628296063, 126.93691539445958]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_9312adef761b9531ef631fd98ac6ef42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afd19583e6685ebfa0da73eb61cca8a6 = $(`<div id="html_afd19583e6685ebfa0da73eb61cca8a6" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로12길', '구간명': '창천감리교회 ~ 신촌명물거리', '구간 거리': '219m', '평균 속도': '20.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_9312adef761b9531ef631fd98ac6ef42.setContent(html_afd19583e6685ebfa0da73eb61cca8a6);
+            
+        
+
+        poly_line_9bf02cf87b9d7aff48f79a92b4fb0868.bindPopup(popup_9312adef761b9531ef631fd98ac6ef42)
+        ;
+
+        
+    
+    
+            poly_line_9bf02cf87b9d7aff48f79a92b4fb0868.bindTooltip(
+                `<div>
+                     {'도로명': '연세로12길', '구간명': '창천감리교회 ~ 신촌명물거리', '구간 거리': '219m', '평균 속도': '20.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_30cbfd0451a6f28563cb3bfbac8d2734 = L.polyline(
+                [[37.56077214281619, 126.93332876449252], [37.56064125563942, 126.93328996942785], [37.56053532540017, 126.9332946522331], [37.560448301561436, 126.93335178657355], [37.55982150746338, 126.9341588527965], [37.55947138545859, 126.93427360339221], [37.559263816909244, 126.93432291677327], [37.5591327829133, 126.93437925001679], [37.55899343268189, 126.93448264665888], [37.55888697876323, 126.93494172526066], [37.55891775724282, 126.93636259683394], [37.55891796768401, 126.93675424097962], [37.55888971941509, 126.93690372052325]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_85ccd6c322f75ccfc149078e856de1ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_943edc553f86940bb8ea03819bbd280a = $(`<div id="html_943edc553f86940bb8ea03819bbd280a" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로22길', '구간명': '창천감리교회 ~ 창천오피스텔', '구간 거리': '450m', '평균 속도': '13.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_85ccd6c322f75ccfc149078e856de1ee.setContent(html_943edc553f86940bb8ea03819bbd280a);
+            
+        
+
+        poly_line_30cbfd0451a6f28563cb3bfbac8d2734.bindPopup(popup_85ccd6c322f75ccfc149078e856de1ee)
+        ;
+
+        
+    
+    
+            poly_line_30cbfd0451a6f28563cb3bfbac8d2734.bindTooltip(
+                `<div>
+                     {'도로명': '성산로22길', '구간명': '창천감리교회 ~ 창천오피스텔', '구간 거리': '450m', '평균 속도': '13.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bd23b7a612b322b2132de3f48c1980f9 = L.polyline(
+                [[37.55899491585794, 126.93693508983885], [37.55902609581068, 126.9367700942083], [37.55902587585813, 126.93636070420807], [37.5589955189298, 126.93495928903093], [37.559085269627005, 126.93457224237005], [37.5591782521001, 126.93450325091038], [37.55929150922367, 126.9344545605669], [37.55949510765794, 126.93440619040254], [37.55987789938183, 126.93428073316383], [37.560513657226764, 126.93346212737013], [37.5605636557529, 126.9334293011399], [37.56063055309061, 126.93342634418138], [37.56074731293815, 126.93346095188186]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_81f3c2fca8fa20f9748842e269edeea4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d987a11063c6801d9b39388c14da85b = $(`<div id="html_0d987a11063c6801d9b39388c14da85b" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로22길', '구간명': '창천오피스텔 ~ 창천감리교회', '구간 거리': '431m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_81f3c2fca8fa20f9748842e269edeea4.setContent(html_0d987a11063c6801d9b39388c14da85b);
+            
+        
+
+        poly_line_bd23b7a612b322b2132de3f48c1980f9.bindPopup(popup_81f3c2fca8fa20f9748842e269edeea4)
+        ;
+
+        
+    
+    
+            poly_line_bd23b7a612b322b2132de3f48c1980f9.bindTooltip(
+                `<div>
+                     {'도로명': '성산로22길', '구간명': '창천오피스텔 ~ 창천감리교회', '구간 거리': '431m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_76024836479131851a4fa5a6cb3f480e = L.polyline(
+                [[37.560029888954176, 126.93996972715172], [37.559991262693856, 126.94019060782749], [37.55995000014542, 126.94030000000149], [37.55988399617789, 126.94031496413669]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_d1b1d3901196518a8bc8e3374c38e34f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d509d56cea1d0939287db28801074dfe = $(`<div id="html_d509d56cea1d0939287db28801074dfe" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌역로', '구간명': '세브란스병원입구 ~ 세브란스병원입구', '구간 거리': '38m', '평균 속도': '18.5km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_d1b1d3901196518a8bc8e3374c38e34f.setContent(html_d509d56cea1d0939287db28801074dfe);
+            
+        
+
+        poly_line_76024836479131851a4fa5a6cb3f480e.bindPopup(popup_d1b1d3901196518a8bc8e3374c38e34f)
+        ;
+
+        
+    
+    
+            poly_line_76024836479131851a4fa5a6cb3f480e.bindTooltip(
+                `<div>
+                     {'도로명': '신촌역로', '구간명': '세브란스병원입구 ~ 세브란스병원입구', '구간 거리': '38m', '평균 속도': '18.5km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ea27364fee3df3ca09ef7fb0568fa0d5 = L.polyline(
+                [[37.560249431480294, 126.94065458342149], [37.56017828074589, 126.94096746962111], [37.56017064238113, 126.94108348564693], [37.56016679550214, 126.94121619844961], [37.56020101807572, 126.941382947606]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_b918ef38f14c5e893e73ebc2bc744502 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1dad7afa0988790dfab192274eac92a6 = $(`<div id="html_1dad7afa0988790dfab192274eac92a6" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로', '구간명': '신촌민자역사 ~ 세브란스병원입구', '구간 거리': '66m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_b918ef38f14c5e893e73ebc2bc744502.setContent(html_1dad7afa0988790dfab192274eac92a6);
+            
+        
+
+        poly_line_ea27364fee3df3ca09ef7fb0568fa0d5.bindPopup(popup_b918ef38f14c5e893e73ebc2bc744502)
+        ;
+
+        
+    
+    
+            poly_line_ea27364fee3df3ca09ef7fb0568fa0d5.bindTooltip(
+                `<div>
+                     {'도로명': '성산로', '구간명': '신촌민자역사 ~ 세브란스병원입구', '구간 거리': '66m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9a5ae0a84ddb02a442194b2376ddac66 = L.polyline(
+                [[37.55874713796572, 126.94572520911069], [37.558749745738865, 126.94621610016247], [37.55874989846287, 126.94655241854704], [37.558786316949316, 126.9478932351046], [37.55878841166047, 126.94793179692205]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_34d995d29afe6b3435640f2bbdc03cc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13c0e7b01fa76f7c94daa23977bd9726 = $(`<div id="html_13c0e7b01fa76f7c94daa23977bd9726" style="width: 100.0%; height: 100.0%;">{'도로명': '북아현로11길', '구간명': '대신초등학교 ~ 무궁화상가아파트', '구간 거리': '195m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_34d995d29afe6b3435640f2bbdc03cc4.setContent(html_13c0e7b01fa76f7c94daa23977bd9726);
+            
+        
+
+        poly_line_9a5ae0a84ddb02a442194b2376ddac66.bindPopup(popup_34d995d29afe6b3435640f2bbdc03cc4)
+        ;
+
+        
+    
+    
+            poly_line_9a5ae0a84ddb02a442194b2376ddac66.bindTooltip(
+                `<div>
+                     {'도로명': '북아현로11길', '구간명': '대신초등학교 ~ 무궁화상가아파트', '구간 거리': '195m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0c0cd1d0a3f552b6f12c26ec457daee2 = L.polyline(
+                [[37.558896280353565, 126.94792255213393], [37.55889431099448, 126.94788629562109], [37.55885801704015, 126.94655006303589], [37.558857865158224, 126.94621560821481], [37.55885525539015, 126.9457243022218]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_e3e31a38584d5ca03e0c110607a4f233 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_227b1a94774b957556ab4c261cd51667 = $(`<div id="html_227b1a94774b957556ab4c261cd51667" style="width: 100.0%; height: 100.0%;">{'도로명': '북아현로11길', '구간명': '무궁화상가아파트 ~ 대신초등학교', '구간 거리': '194m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_e3e31a38584d5ca03e0c110607a4f233.setContent(html_227b1a94774b957556ab4c261cd51667);
+            
+        
+
+        poly_line_0c0cd1d0a3f552b6f12c26ec457daee2.bindPopup(popup_e3e31a38584d5ca03e0c110607a4f233)
+        ;
+
+        
+    
+    
+            poly_line_0c0cd1d0a3f552b6f12c26ec457daee2.bindTooltip(
+                `<div>
+                     {'도로명': '북아현로11길', '구간명': '무궁화상가아파트 ~ 대신초등학교', '구간 거리': '194m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d9c1b2fc94c508bd13b8164abd4aa04a = L.polyline(
+                [[37.560199306920566, 126.9413662899042], [37.560203466309254, 126.94256773653048], [37.56017512905178, 126.94311114689229], [37.560175244819526, 126.94335192133106], [37.56020924748143, 126.94345141863792], [37.56029393878225, 126.94350098775219], [37.56049827421882, 126.94348630328122], [37.56142322581573, 126.94336619156594], [37.562118612764124, 126.94249304014748]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_5546ed94e0d5880494346137ac3ab61f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_def417a7efc46b9f72306e652c466902 = $(`<div id="html_def417a7efc46b9f72306e652c466902" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로', '구간명': '세브란스응급실 ~ 신촌민자역사', '구간 거리': '431m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_5546ed94e0d5880494346137ac3ab61f.setContent(html_def417a7efc46b9f72306e652c466902);
+            
+        
+
+        poly_line_d9c1b2fc94c508bd13b8164abd4aa04a.bindPopup(popup_5546ed94e0d5880494346137ac3ab61f)
+        ;
+
+        
+    
+    
+            poly_line_d9c1b2fc94c508bd13b8164abd4aa04a.bindTooltip(
+                `<div>
+                     {'도로명': '성산로', '구간명': '세브란스응급실 ~ 신촌민자역사', '구간 거리': '431m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4588ad83281c1a5fef6b53e1ded04016 = L.polyline(
+                [[37.560072118993446, 126.93831844987292], [37.5602534093689, 126.93834933001881], [37.56027941248923, 126.9383620866887], [37.56141867886694, 126.93994293860247], [37.56148471040954, 126.93995042694746], [37.561735362555524, 126.9396576741293], [37.561742892891836, 126.93965377116987], [37.561751321138985, 126.93965617063989], [37.56212280496662, 126.9401771996042], [37.562190332417984, 126.94019946427288], [37.56224964592234, 126.94017457532065], [37.56237035470186, 126.94004763482998], [37.562386236904544, 126.94003588154368], [37.56239339441755, 126.94003587580708], [37.56240018770078, 126.94004074519127], [37.563198277730336, 126.94114383089016], [37.563227874108435, 126.94120440917958], [37.5632640683688, 126.94136995931581]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_f1ad4cb05d240e0e0622bd07a75245c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd7e6d60e4e18c3490ab28bdcd87b855 = $(`<div id="html_fd7e6d60e4e18c3490ab28bdcd87b855" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로.연희로26길사이길', '구간명': '세브란스본관 ~ 연세대장례식장입구', '구간 거리': '510m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_f1ad4cb05d240e0e0622bd07a75245c8.setContent(html_fd7e6d60e4e18c3490ab28bdcd87b855);
+            
+        
+
+        poly_line_4588ad83281c1a5fef6b53e1ded04016.bindPopup(popup_f1ad4cb05d240e0e0622bd07a75245c8)
+        ;
+
+        
+    
+    
+            poly_line_4588ad83281c1a5fef6b53e1ded04016.bindTooltip(
+                `<div>
+                     {'도로명': '성산로.연희로26길사이길', '구간명': '세브란스본관 ~ 연세대장례식장입구', '구간 거리': '510m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aad402268d005991e6490aeaf098afc4 = L.polyline(
+                [[37.563368327309526, 126.94133398880776], [37.56332806292877, 126.9411498181557], [37.563285115437644, 126.94106191609437], [37.562468663854006, 126.93993345190383], [37.562422038300525, 126.93990003217858], [37.56235672599528, 126.93990008464372], [37.56230779058263, 126.93993629747004], [37.56219595560412, 126.94005390799602], [37.56218662687202, 126.9400578225662], [37.56218167236383, 126.94005618877003], [37.561808849966155, 126.93953328337373], [37.56173335346732, 126.93951179324193], [37.56167605898654, 126.93954148326023], [37.56145840810278, 126.93979569258288], [37.5603424708912, 126.93824721513889], [37.56028072324926, 126.93821692123615], [37.56008664655641, 126.93818386531866]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_e64c8eccd49d65ddde11202683f3edd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0146d803714ee26677dd087184846cc6 = $(`<div id="html_0146d803714ee26677dd087184846cc6" style="width: 100.0%; height: 100.0%;">{'도로명': '성산로.연희로26길사이길', '구간명': '연세대장례식장입구 ~ 세브란스본관', '구간 거리': '522m', '평균 속도': '9.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e64c8eccd49d65ddde11202683f3edd4.setContent(html_0146d803714ee26677dd087184846cc6);
+            
+        
+
+        poly_line_aad402268d005991e6490aeaf098afc4.bindPopup(popup_e64c8eccd49d65ddde11202683f3edd4)
+        ;
+
+        
+    
+    
+            poly_line_aad402268d005991e6490aeaf098afc4.bindTooltip(
+                `<div>
+                     {'도로명': '성산로.연희로26길사이길', '구간명': '연세대장례식장입구 ~ 세브란스본관', '구간 거리': '522m', '평균 속도': '9.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_18e8e5d480227f318f5d13eeb816f524 = L.polyline(
+                [[37.55520734776913, 126.93693003826603], [37.555620062491556, 126.93693884618163]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_3afa70dea46028b5cba0557e3554b5e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3c5f8fb28ed776196682c5d30c29ec4 = $(`<div id="html_a3c5f8fb28ed776196682c5d30c29ec4" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로', '구간명': '신촌역3번출구 ~ 신촌로터리', '구간 거리': '46m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3afa70dea46028b5cba0557e3554b5e8.setContent(html_a3c5f8fb28ed776196682c5d30c29ec4);
+            
+        
+
+        poly_line_18e8e5d480227f318f5d13eeb816f524.bindPopup(popup_3afa70dea46028b5cba0557e3554b5e8)
+        ;
+
+        
+    
+    
+            poly_line_18e8e5d480227f318f5d13eeb816f524.bindTooltip(
+                `<div>
+                     {'도로명': '연세로', '구간명': '신촌역3번출구 ~ 신촌로터리', '구간 거리': '46m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c20c7f2fbaf218ae7f9c7e839609039f = L.polyline(
+                [[37.555218914608496, 126.93755353137217], [37.555257396259854, 126.93768834835079], [37.55538210533744, 126.93806720172142], [37.5562031103494, 126.94052398511091], [37.556378553566645, 126.94110657001833], [37.55642993199966, 126.94134359576711], [37.5564793384705, 126.94165876725725], [37.556524521288104, 126.9421726120501], [37.5565653234083, 126.94288993255657]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_72fe8a577476d1eb38d9f712be5caf30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a80d50e726b2651daf0d17adf9c4184 = $(`<div id="html_5a80d50e726b2651daf0d17adf9c4184" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌기차역입구교차로 ~ 신촌로터리', '구간 거리': '499m', '평균 속도': '13.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_72fe8a577476d1eb38d9f712be5caf30.setContent(html_5a80d50e726b2651daf0d17adf9c4184);
+            
+        
+
+        poly_line_c20c7f2fbaf218ae7f9c7e839609039f.bindPopup(popup_72fe8a577476d1eb38d9f712be5caf30)
+        ;
+
+        
+    
+    
+            poly_line_c20c7f2fbaf218ae7f9c7e839609039f.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌기차역입구교차로 ~ 신촌로터리', '구간 거리': '499m', '평균 속도': '13.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7619aa68c31e423c1b78a8d13cfde36a = L.polyline(
+                [[37.555620062491556, 126.93693884618163], [37.55724882395685, 126.93697375560252]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_2108a1f1a36dd6d167c30d0419ca126a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4789d1ab6fb134d5f75c975b849cc351 = $(`<div id="html_4789d1ab6fb134d5f75c975b849cc351" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로', '구간명': '귀금속사거리 ~ 신촌역3번출구', '구간 거리': '181m', '평균 속도': '14.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_2108a1f1a36dd6d167c30d0419ca126a.setContent(html_4789d1ab6fb134d5f75c975b849cc351);
+            
+        
+
+        poly_line_7619aa68c31e423c1b78a8d13cfde36a.bindPopup(popup_2108a1f1a36dd6d167c30d0419ca126a)
+        ;
+
+        
+    
+    
+            poly_line_7619aa68c31e423c1b78a8d13cfde36a.bindTooltip(
+                `<div>
+                     {'도로명': '연세로', '구간명': '귀금속사거리 ~ 신촌역3번출구', '구간 거리': '181m', '평균 속도': '14.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3d3f06a92b768915461ee850205ded83 = L.polyline(
+                [[37.55562196217436, 126.93680305888937], [37.555193943655546, 126.93679360937637]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_ca2012e17d87afd2da920a64fa59dc3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9bbdf77c04f3335c96fda135f69e3ab = $(`<div id="html_c9bbdf77c04f3335c96fda135f69e3ab" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로', '구간명': '신촌로터리 ~ 신촌역2번출구', '구간 거리': '48m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_ca2012e17d87afd2da920a64fa59dc3e.setContent(html_c9bbdf77c04f3335c96fda135f69e3ab);
+            
+        
+
+        poly_line_3d3f06a92b768915461ee850205ded83.bindPopup(popup_ca2012e17d87afd2da920a64fa59dc3e)
+        ;
+
+        
+    
+    
+            poly_line_3d3f06a92b768915461ee850205ded83.bindTooltip(
+                `<div>
+                     {'도로명': '연세로', '구간명': '신촌로터리 ~ 신촌역2번출구', '구간 거리': '48m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0c51674bdeb3dbc09abcad67f037e1f7 = L.polyline(
+                [[37.55667316810986, 126.94288025525891], [37.55663221778432, 126.94216031270247], [37.556586302799715, 126.94163815617175], [37.556535268416255, 126.94131259832082], [37.556481513926194, 126.9410646097458], [37.55630355250642, 126.94047366253263], [37.55548191025661, 126.93801497335119], [37.55535829748383, 126.93763944933663], [37.55532153813591, 126.93751078285567]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_2730fb8905f3e0bdb31731453eed78e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fa671b066fbe346e9eca32ce5d60a42 = $(`<div id="html_9fa671b066fbe346e9eca32ce5d60a42" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌기차역입구교차로', '구간 거리': '502m', '평균 속도': '26.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_2730fb8905f3e0bdb31731453eed78e8.setContent(html_9fa671b066fbe346e9eca32ce5d60a42);
+            
+        
+
+        poly_line_0c51674bdeb3dbc09abcad67f037e1f7.bindPopup(popup_2730fb8905f3e0bdb31731453eed78e8)
+        ;
+
+        
+    
+    
+            poly_line_0c51674bdeb3dbc09abcad67f037e1f7.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌기차역입구교차로', '구간 거리': '502m', '평균 속도': '26.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8414812b37c361a17abf90e6d808745f = L.polyline(
+                [[37.557250668715184, 126.93683796427008], [37.55562196217436, 126.93680305888937]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_bd2dd702a95c82bebe363b682cffbc5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38f3a24463629c7da4acdaf931a7a262 = $(`<div id="html_38f3a24463629c7da4acdaf931a7a262" style="width: 100.0%; height: 100.0%;">{'도로명': '연세로', '구간명': '신촌역2번출구 ~ 귀금속사거리', '구간 거리': '181m', '평균 속도': '32.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_bd2dd702a95c82bebe363b682cffbc5e.setContent(html_38f3a24463629c7da4acdaf931a7a262);
+            
+        
+
+        poly_line_8414812b37c361a17abf90e6d808745f.bindPopup(popup_bd2dd702a95c82bebe363b682cffbc5e)
+        ;
+
+        
+    
+    
+            poly_line_8414812b37c361a17abf90e6d808745f.bindTooltip(
+                `<div>
+                     {'도로명': '연세로', '구간명': '신촌역2번출구 ~ 귀금속사거리', '구간 거리': '181m', '평균 속도': '32.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_91a66e819dafda947750a7423910694a = L.polyline(
+                [[37.55690003914375, 126.93168199862066], [37.55566952674261, 126.9351596113147]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_7d50351df074e027b8898d5867935c62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e599a406bd3c144eb51d53e41eb2d6e = $(`<div id="html_2e599a406bd3c144eb51d53e41eb2d6e" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌현대백화점 ~ 창천동삼거리', '구간 거리': '336m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_7d50351df074e027b8898d5867935c62.setContent(html_2e599a406bd3c144eb51d53e41eb2d6e);
+            
+        
+
+        poly_line_91a66e819dafda947750a7423910694a.bindPopup(popup_7d50351df074e027b8898d5867935c62)
+        ;
+
+        
+    
+    
+            poly_line_91a66e819dafda947750a7423910694a.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌현대백화점 ~ 창천동삼거리', '구간 거리': '336m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_384f3780b5641ad4050fe3cdf0b4c225 = L.polyline(
+                [[37.55566967518031, 126.93515919810218], [37.55529188513525, 126.93620787959907]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_e650fbb75f247825cf1d1e67a7c1677d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64f56ede9b4b24a4162e2505d23adfaa = $(`<div id="html_64f56ede9b4b24a4162e2505d23adfaa" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌현대백화점', '구간 거리': '102m', '평균 속도': '12.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e650fbb75f247825cf1d1e67a7c1677d.setContent(html_64f56ede9b4b24a4162e2505d23adfaa);
+            
+        
+
+        poly_line_384f3780b5641ad4050fe3cdf0b4c225.bindPopup(popup_e650fbb75f247825cf1d1e67a7c1677d)
+        ;
+
+        
+    
+    
+            poly_line_384f3780b5641ad4050fe3cdf0b4c225.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌현대백화점', '구간 거리': '102m', '평균 속도': '12.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_963c5fe21dffe76fb3c9def7a009f29f = L.polyline(
+                [[37.55529188513525, 126.93620787959907], [37.55526435047373, 126.93628430960102], [37.555201058621996, 126.93649265494095], [37.55516663463001, 126.93664438113093], [37.555146604968755, 126.93676112347094], [37.555139198443776, 126.9368547916011]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_3ad714ba10bf5ba54f7226e503f2f94f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_272f40e83b4a2070db386460f77b0dc5 = $(`<div id="html_272f40e83b4a2070db386460f77b0dc5" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '60m', '평균 속도': '17.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3ad714ba10bf5ba54f7226e503f2f94f.setContent(html_272f40e83b4a2070db386460f77b0dc5);
+            
+        
+
+        poly_line_963c5fe21dffe76fb3c9def7a009f29f.bindPopup(popup_3ad714ba10bf5ba54f7226e503f2f94f)
+        ;
+
+        
+    
+    
+            poly_line_963c5fe21dffe76fb3c9def7a009f29f.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '60m', '평균 속도': '17.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_71cbe6be82c0ae381bcde0704d624ef8 = L.polyline(
+                [[37.555768327066, 126.93521477264403], [37.556998840165924, 126.93173715512977]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_10f16957cefe93d95d29b88e5c9307eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55c4ede3e09e42b7059b31bd090c6bfb = $(`<div id="html_55c4ede3e09e42b7059b31bd090c6bfb" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '창천동삼거리 ~ 신촌현대백화점', '구간 거리': '336m', '평균 속도': '27.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_10f16957cefe93d95d29b88e5c9307eb.setContent(html_55c4ede3e09e42b7059b31bd090c6bfb);
+            
+        
+
+        poly_line_71cbe6be82c0ae381bcde0704d624ef8.bindPopup(popup_10f16957cefe93d95d29b88e5c9307eb)
+        ;
+
+        
+    
+    
+            poly_line_71cbe6be82c0ae381bcde0704d624ef8.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '창천동삼거리 ~ 신촌현대백화점', '구간 거리': '336m', '평균 속도': '27.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_98617d7f699c31c51833c87aefee060d = L.polyline(
+                [[37.55539038899481, 126.93626386958401], [37.5557681786282, 126.93521518585702]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_f813134ea1e07ab64c224c4c9c7170c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4467e934e5373d8c5c543d64c2080c3c = $(`<div id="html_4467e934e5373d8c5c543d64c2080c3c" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌현대백화점 ~ 신촌로터리', '구간 거리': '102m', '평균 속도': '28.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_f813134ea1e07ab64c224c4c9c7170c1.setContent(html_4467e934e5373d8c5c543d64c2080c3c);
+            
+        
+
+        poly_line_98617d7f699c31c51833c87aefee060d.bindPopup(popup_f813134ea1e07ab64c224c4c9c7170c1)
+        ;
+
+        
+    
+    
+            poly_line_98617d7f699c31c51833c87aefee060d.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌현대백화점 ~ 신촌로터리', '구간 거리': '102m', '평균 속도': '28.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2692e2796e78f063845a6891e966ad1a = L.polyline(
+                [[37.55524678833169, 126.93686821367962], [37.55525358899445, 126.93678220774333], [37.55527158338111, 126.93667733316146], [37.555303750357126, 126.93653555434221], [37.55536420107406, 126.93633655927734], [37.55539038899481, 126.93626386958401]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_0e4f91e8765a0a87627e98f68ff2a7a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5c114aa369b464df973b1ccc013c5a2 = $(`<div id="html_c5c114aa369b464df973b1ccc013c5a2" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '56m', '평균 속도': '13.5km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_0e4f91e8765a0a87627e98f68ff2a7a5.setContent(html_c5c114aa369b464df973b1ccc013c5a2);
+            
+        
+
+        poly_line_2692e2796e78f063845a6891e966ad1a.bindPopup(popup_0e4f91e8765a0a87627e98f68ff2a7a5)
+        ;
+
+        
+    
+    
+            poly_line_2692e2796e78f063845a6891e966ad1a.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '56m', '평균 속도': '13.5km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9049a97412b6e6e7c5aad5f75913e2a9 = L.polyline(
+                [[37.55532153813591, 126.93751078285567], [37.55529546953531, 126.93741204637087], [37.55526334332133, 126.93723675458365], [37.55524950517763, 126.93706124272325], [37.555247047276275, 126.93686045884459]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_ae0317843c69cf8f690d5f68f221651d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bea40a13d392bf5341ad193fe35b7af9 = $(`<div id="html_bea40a13d392bf5341ad193fe35b7af9" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '58m', '평균 속도': '5.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_ae0317843c69cf8f690d5f68f221651d.setContent(html_bea40a13d392bf5341ad193fe35b7af9);
+            
+        
+
+        poly_line_9049a97412b6e6e7c5aad5f75913e2a9.bindPopup(popup_ae0317843c69cf8f690d5f68f221651d)
+        ;
+
+        
+    
+    
+            poly_line_9049a97412b6e6e7c5aad5f75913e2a9.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '58m', '평균 속도': '5.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b5821f6827d2c5e4805b27f57700268b = L.polyline(
+                [[37.555138940400504, 126.93686254642418], [37.55514146708876, 126.93706899199417], [37.5551564300398, 126.93725877036705], [37.555191246265935, 126.93744873593316], [37.555218914608496, 126.93755353137217]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_18a2050c72c0381f6ebb635c254331fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e589c15617f745b996026a4675439f00 = $(`<div id="html_e589c15617f745b996026a4675439f00" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '62m', '평균 속도': '24.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_18a2050c72c0381f6ebb635c254331fc.setContent(html_e589c15617f745b996026a4675439f00);
+            
+        
+
+        poly_line_b5821f6827d2c5e4805b27f57700268b.bindPopup(popup_18a2050c72c0381f6ebb635c254331fc)
+        ;
+
+        
+    
+    
+            poly_line_b5821f6827d2c5e4805b27f57700268b.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '62m', '평균 속도': '24.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9fb181f8b242f6ba8b7bc3f89867b1fc = L.polyline(
+                [[37.5545480952407, 126.93687309004261], [37.55284781889075, 126.93716390176755], [37.55257740258404, 126.93721847934599], [37.5518844635989, 126.93741300218154], [37.55138798674844, 126.93758515988766], [37.55086586223691, 126.93781630878357], [37.549827253196895, 126.9383931116624]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_95a8a4abdb61687734564aaed8f7c895 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3aacf6ba005029d349b480e76906a3c5 = $(`<div id="html_3aacf6ba005029d349b480e76906a3c5" style="width: 100.0%; height: 100.0%;">{'도로명': '백범로', '구간명': '서강대학교 ~ 신촌로터리', '구간 거리': '544m', '평균 속도': '25.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_95a8a4abdb61687734564aaed8f7c895.setContent(html_3aacf6ba005029d349b480e76906a3c5);
+            
+        
+
+        poly_line_9fb181f8b242f6ba8b7bc3f89867b1fc.bindPopup(popup_95a8a4abdb61687734564aaed8f7c895)
+        ;
+
+        
+    
+    
+            poly_line_9fb181f8b242f6ba8b7bc3f89867b1fc.bindTooltip(
+                `<div>
+                     {'도로명': '백범로', '구간명': '서강대학교 ~ 신촌로터리', '구간 거리': '544m', '평균 속도': '25.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a773436ea10d0db8e58807fddf7e3835 = L.polyline(
+                [[37.55518769540705, 126.93679392587927], [37.5545480952407, 126.93687309004261]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_bf105da768da3dd91f3487abb326caf2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08852a73abe452857cf7ce15c3ecec86 = $(`<div id="html_08852a73abe452857cf7ce15c3ecec86" style="width: 100.0%; height: 100.0%;">{'도로명': '백범로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '71m', '평균 속도': '33.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_bf105da768da3dd91f3487abb326caf2.setContent(html_08852a73abe452857cf7ce15c3ecec86);
+            
+        
+
+        poly_line_a773436ea10d0db8e58807fddf7e3835.bindPopup(popup_bf105da768da3dd91f3487abb326caf2)
+        ;
+
+        
+    
+    
+            poly_line_a773436ea10d0db8e58807fddf7e3835.bindTooltip(
+                `<div>
+                     {'도로명': '백범로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '71m', '평균 속도': '33.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e4ad2e93032fa8f99bf9751e7e08805a = L.polyline(
+                [[37.54987097670851, 126.93851731037662], [37.55090575462051, 126.93794263619436], [37.55142038302124, 126.93771480783151], [37.55191065782423, 126.93754480061943], [37.552597789156195, 126.93735191003611], [37.552863691107, 126.93729824319401], [37.55456268308043, 126.93700765396183]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_cd8b53838c023a01317906b1750d8e35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b2bebe7621a8ddbf96262aa67ae92b1 = $(`<div id="html_1b2bebe7621a8ddbf96262aa67ae92b1" style="width: 100.0%; height: 100.0%;">{'도로명': '백범로', '구간명': '신촌로터리 ~ 서강대학교', '구간 거리': '541m', '평균 속도': '21.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_cd8b53838c023a01317906b1750d8e35.setContent(html_1b2bebe7621a8ddbf96262aa67ae92b1);
+            
+        
+
+        poly_line_e4ad2e93032fa8f99bf9751e7e08805a.bindPopup(popup_cd8b53838c023a01317906b1750d8e35)
+        ;
+
+        
+    
+    
+            poly_line_e4ad2e93032fa8f99bf9751e7e08805a.bindTooltip(
+                `<div>
+                     {'도로명': '백범로', '구간명': '신촌로터리 ~ 서강대학교', '구간 거리': '541m', '평균 속도': '21.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0926355d2145ce1c88c7779fce71fc45 = L.polyline(
+                [[37.55456268308043, 126.93700765396183], [37.55519829133062, 126.93692907940147]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_709e50ff7d2e199b0c4ad2dfdfb0f41e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12207b32a2a3f783fa9d7de40290ad06 = $(`<div id="html_12207b32a2a3f783fa9d7de40290ad06" style="width: 100.0%; height: 100.0%;">{'도로명': '백범로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '71m', '평균 속도': '7.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_709e50ff7d2e199b0c4ad2dfdfb0f41e.setContent(html_12207b32a2a3f783fa9d7de40290ad06);
+            
+        
+
+        poly_line_0926355d2145ce1c88c7779fce71fc45.bindPopup(popup_709e50ff7d2e199b0c4ad2dfdfb0f41e)
+        ;
+
+        
+    
+    
+            poly_line_0926355d2145ce1c88c7779fce71fc45.bindTooltip(
+                `<div>
+                     {'도로명': '백범로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '71m', '평균 속도': '7.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_274391ee757fc995bf8d7c6f74adada4 = L.polyline(
+                [[37.55472198383278, 126.93010198052609], [37.55457792868523, 126.93033667880151], [37.55411947473089, 126.93097912197625], [37.552980233611635, 126.93258904834249], [37.552553311757734, 126.93323406365107]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_a1dc9bdd6c996ab037d38357f7a23719 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8143fcb4ef6123e683cd07f6b0a9f673 = $(`<div id="html_8143fcb4ef6123e683cd07f6b0a9f673" style="width: 100.0%; height: 100.0%;">{'도로명': '서강로9길', '구간명': '창전삼거리 ~ 산울림소극장', '구간 거리': '367m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_a1dc9bdd6c996ab037d38357f7a23719.setContent(html_8143fcb4ef6123e683cd07f6b0a9f673);
+            
+        
+
+        poly_line_274391ee757fc995bf8d7c6f74adada4.bindPopup(popup_a1dc9bdd6c996ab037d38357f7a23719)
+        ;
+
+        
+    
+    
+            poly_line_274391ee757fc995bf8d7c6f74adada4.bindTooltip(
+                `<div>
+                     {'도로명': '서강로9길', '구간명': '창전삼거리 ~ 산울림소극장', '구간 거리': '367m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_723d4246f58ccad6e2ce469e43b54858 = L.polyline(
+                [[37.55263645264641, 126.93332087957732], [37.55306223258665, 126.932677590912], [37.55420013711848, 126.9310695553213], [37.55466111046835, 126.93042357982551], [37.55480761054182, 126.9301849000349]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_e58d5d487d8cdadea988aa70b6b94d61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_041baba67ac7c5c1ddf08db65b67bb7d = $(`<div id="html_041baba67ac7c5c1ddf08db65b67bb7d" style="width: 100.0%; height: 100.0%;">{'도로명': '서강로9길', '구간명': '산울림소극장 ~ 창전삼거리', '구간 거리': '367m', '평균 속도': '10.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e58d5d487d8cdadea988aa70b6b94d61.setContent(html_041baba67ac7c5c1ddf08db65b67bb7d);
+            
+        
+
+        poly_line_723d4246f58ccad6e2ce469e43b54858.bindPopup(popup_e58d5d487d8cdadea988aa70b6b94d61)
+        ;
+
+        
+    
+    
+            poly_line_723d4246f58ccad6e2ce469e43b54858.bindTooltip(
+                `<div>
+                     {'도로명': '서강로9길', '구간명': '산울림소극장 ~ 창전삼거리', '구간 거리': '367m', '평균 속도': '10.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4a65bd36bf5ab1eb1a6a6e8dd4e28779 = L.polyline(
+                [[37.55473362292796, 126.93624696984563], [37.55362440664291, 126.93437252879261], [37.553483161582896, 126.93412633507751], [37.553318136808855, 126.93390094812446], [37.55314691982355, 126.93370904103394], [37.55294460232728, 126.93350513252423], [37.552778227201074, 126.93335090156953], [37.55262511220375, 126.93322117867542]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_5b5a3d9fa31aa41b770df0417b3ef788 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4aedc99d812753196612cd61ed6bb8c7 = $(`<div id="html_4aedc99d812753196612cd61ed6bb8c7" style="width: 100.0%; height: 100.0%;">{'도로명': '서강로', '구간명': '창전삼거리 ~ 신촌로터리', '구간 거리': '358m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_5b5a3d9fa31aa41b770df0417b3ef788.setContent(html_4aedc99d812753196612cd61ed6bb8c7);
+            
+        
+
+        poly_line_4a65bd36bf5ab1eb1a6a6e8dd4e28779.bindPopup(popup_5b5a3d9fa31aa41b770df0417b3ef788)
+        ;
+
+        
+    
+    
+            poly_line_4a65bd36bf5ab1eb1a6a6e8dd4e28779.bindTooltip(
+                `<div>
+                     {'도로명': '서강로', '구간명': '창전삼거리 ~ 신촌로터리', '구간 거리': '358m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d6cc7dd4710504fb3a665e1b7d34dcc0 = L.polyline(
+                [[37.55522186126861, 126.93680409051518], [37.55502539091162, 126.9366482286149], [37.55480265297126, 126.93635573419151], [37.55473362292796, 126.93624696984563]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_a51407e568b7ef41b5c8500adecfe77b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_153292f6df0d6a992a8fb6f211392d7a = $(`<div id="html_153292f6df0d6a992a8fb6f211392d7a" style="width: 100.0%; height: 100.0%;">{'도로명': '서강로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '74m', '평균 속도': '29.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_a51407e568b7ef41b5c8500adecfe77b.setContent(html_153292f6df0d6a992a8fb6f211392d7a);
+            
+        
+
+        poly_line_d6cc7dd4710504fb3a665e1b7d34dcc0.bindPopup(popup_a51407e568b7ef41b5c8500adecfe77b)
+        ;
+
+        
+    
+    
+            poly_line_d6cc7dd4710504fb3a665e1b7d34dcc0.bindTooltip(
+                `<div>
+                     {'도로명': '서강로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '74m', '평균 속도': '29.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c56bbe5b3c00e5bf3753d7123477195c = L.polyline(
+                [[37.55256465218954, 126.9333337644593], [37.55271586685419, 126.93346187763906], [37.55287864137462, 126.93361277001193], [37.55307704524506, 126.93381273473315], [37.55324216840183, 126.9339978117873], [37.55339921489419, 126.9342123029164], [37.553537156225985, 126.93445273903515], [37.55464795481345, 126.93632979089261]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_fcef3709805f4815fac622dc7cff341e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f67a9c1dd9598e52328f1067bbb7b004 = $(`<div id="html_f67a9c1dd9598e52328f1067bbb7b004" style="width: 100.0%; height: 100.0%;">{'도로명': '서강로', '구간명': '신촌로터리 ~ 창전삼거리', '구간 거리': '354m', '평균 속도': '31.0km/h', '혼잡도': '원활'}</div>`)[0];
+                popup_fcef3709805f4815fac622dc7cff341e.setContent(html_f67a9c1dd9598e52328f1067bbb7b004);
+            
+        
+
+        poly_line_c56bbe5b3c00e5bf3753d7123477195c.bindPopup(popup_fcef3709805f4815fac622dc7cff341e)
+        ;
+
+        
+    
+    
+            poly_line_c56bbe5b3c00e5bf3753d7123477195c.bindTooltip(
+                `<div>
+                     {'도로명': '서강로', '구간명': '신촌로터리 ~ 창전삼거리', '구간 거리': '354m', '평균 속도': '31.0km/h', '혼잡도': '원활'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_058ee7515063ebb790e54f63de2b423f = L.polyline(
+                [[37.55464795481345, 126.93632979089261], [37.554721140137296, 126.93644516657903], [37.554956433984785, 126.93675414976963], [37.55516412638062, 126.93691891471099]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_3c6eeb31c44ee1b488149d16ab9aa151 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_163c47dc1049697815cf48fe57a881bf = $(`<div id="html_163c47dc1049697815cf48fe57a881bf" style="width: 100.0%; height: 100.0%;">{'도로명': '서강로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '78m', '평균 속도': '15.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_3c6eeb31c44ee1b488149d16ab9aa151.setContent(html_163c47dc1049697815cf48fe57a881bf);
+            
+        
+
+        poly_line_058ee7515063ebb790e54f63de2b423f.bindPopup(popup_3c6eeb31c44ee1b488149d16ab9aa151)
+        ;
+
+        
+    
+    
+            poly_line_058ee7515063ebb790e54f63de2b423f.bindTooltip(
+                `<div>
+                     {'도로명': '서강로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '78m', '평균 속도': '15.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aa644d4671f464343055c426a6eb5e8b = L.polyline(
+                [[37.55464795481345, 126.93632979089261], [37.554713003161744, 126.93651203451122], [37.55470235163874, 126.93665307762909], [37.554658419301774, 126.93680329312463], [37.5545480952407, 126.93687309004261]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_6c008ab457372958a55c804ea152214c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d318b5fb16754f5a71863549af17ff6a = $(`<div id="html_d318b5fb16754f5a71863549af17ff6a" style="width: 100.0%; height: 100.0%;">{'도로명': '백범로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '58m', '평균 속도': '16.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_6c008ab457372958a55c804ea152214c.setContent(html_d318b5fb16754f5a71863549af17ff6a);
+            
+        
+
+        poly_line_aa644d4671f464343055c426a6eb5e8b.bindPopup(popup_6c008ab457372958a55c804ea152214c)
+        ;
+
+        
+    
+    
+            poly_line_aa644d4671f464343055c426a6eb5e8b.bindTooltip(
+                `<div>
+                     {'도로명': '백범로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '58m', '평균 속도': '16.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_75315c0762b3bdc9112457365729d82b = L.polyline(
+                [[37.55456268308043, 126.93700765396183], [37.555218914608496, 126.93755353137217]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_05ba4c82e73f8fa77cd4eb29e5f2ec1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dfa1a580336974c3308d4f658152d0d = $(`<div id="html_2dfa1a580336974c3308d4f658152d0d" style="width: 100.0%; height: 100.0%;">{'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '87m', '평균 속도': '19.0km/h', '혼잡도': '서행'}</div>`)[0];
+                popup_05ba4c82e73f8fa77cd4eb29e5f2ec1e.setContent(html_2dfa1a580336974c3308d4f658152d0d);
+            
+        
+
+        poly_line_75315c0762b3bdc9112457365729d82b.bindPopup(popup_05ba4c82e73f8fa77cd4eb29e5f2ec1e)
+        ;
+
+        
+    
+    
+            poly_line_75315c0762b3bdc9112457365729d82b.bindTooltip(
+                `<div>
+                     {'도로명': '신촌로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '87m', '평균 속도': '19.0km/h', '혼잡도': '서행'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_da217f114ec86186e58b7623226ec015 = L.polyline(
+                [[37.55529188513525, 126.93620787959907], [37.55521468648999, 126.9362774483328], [37.55513841727645, 126.93630625918537], [37.555056421165325, 126.93632309777898], [37.55494772012427, 126.93633277146134], [37.55485426455065, 126.93631847806782], [37.55473362292796, 126.93624696984563]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b808fcb76b02f078a24d5a87a11c0a6f);
+        
+    
+        var popup_e007a5ca33fbfd71cc4dc748a8ea2199 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e77cf2839c46ab31858fbe1c3980b079 = $(`<div id="html_e77cf2839c46ab31858fbe1c3980b079" style="width: 100.0%; height: 100.0%;">{'도로명': '서강로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '66m', '평균 속도': '11.0km/h', '혼잡도': '정체'}</div>`)[0];
+                popup_e007a5ca33fbfd71cc4dc748a8ea2199.setContent(html_e77cf2839c46ab31858fbe1c3980b079);
+            
+        
+
+        poly_line_da217f114ec86186e58b7623226ec015.bindPopup(popup_e007a5ca33fbfd71cc4dc748a8ea2199)
+        ;
+
+        
+    
+    
+            poly_line_da217f114ec86186e58b7623226ec015.bindTooltip(
+                `<div>
+                     {'도로명': '서강로', '구간명': '신촌로터리 ~ 신촌로터리', '구간 거리': '66m', '평균 속도': '11.0km/h', '혼잡도': '정체'}
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
