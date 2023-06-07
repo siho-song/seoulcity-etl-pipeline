@@ -22,6 +22,10 @@ Mongodb : mongo_6.0.4 <br>
 4. 이후 처리된 데이터를 seoulcity_visual 토픽으로 프로듀싱하고 , spark 로컬 클러스터 같은 경우는 mongodb로 seoulcity raw데이터를 적재 합니다. <br>
 5. 로컬에 따로 consumer 를 두어서 seoulcity_visual 토픽에 대한 데이터를 받았고, folium 을 활용해서 실시간 정보가 포함된 지도를 만들고 flask 앱을 띄워서 파일을 렌더링하는 형식으로 프로젝트를 구성하였습니다. <br>
 ---
+
+## Demo
+
+
 ## Visualization
 
 ### 실시간 도로소통 정보 
