@@ -24,15 +24,39 @@ Mongodb : mongo_6.0.4 <br>
 ---
 ## Visualization
 
-
 ### 실시간 도로소통 정보 
 도로의 혼잡도, 도로명, 구간명 , 구간거리 , 평균속도에 대한 실시간 정보를 제공합니다. <br>
-혼잡도의 경우는 색갈에 따라 다른 정도를 나타냅니다. <br>
+혼잡도의 경우는 색상에 따라 다른 정도를 나타냅니다. <br>
 - red : 정체
 - orange : 서행
 - green : 원활 <br>
 아래는 예시 그림입니다. <br>
 <img width="573" alt="화면 캡처 2023-06-07 142635" src="https://github.com/siho-song/seoulcity-etl-pipeline/assets/79968994/ab24f828-ddb6-4438-976b-a83aa1cf8c4b">
+---
+### 실시간 주차장 정보
+주차장명, 주소 , 주차가능수 , 가격에 대한 실시간 정보를 제공합니다. <br>
+주차장의 경우 실시간정보를 제공하는 주차장도 있고, 제공하지 않는 주차장도 있습니다. <br>
+실시간 정보를 제공하는 주차장<br> 
+- red : 주차불가능
+- green: 주차가능
+<br>
+실시간 정보를 제공하지 않는 주차장<br> 
+-black
+아래는 예시 그림입니다. <br>
+<img width="569" alt="화면 캡처 2023-06-07 142653" src="https://github.com/siho-song/seoulcity-etl-pipeline/assets/79968994/15c7d73d-3941-4aee-9380-40dec34b4482">
+
+---
+### 실시간 따릉이 정보
+정류장명, 대여가능수, 반냡율에 대한 실시간 정보를 제공합니다 <br>
+대여가능 수에 따라 다른 대여가능 수를 나타냅니다.<br>
+- green : 4대 이상
+- skyblue : 2대~4대
+- orange : 1대~2대
+- black : 대여 불가능
+<br>
+
+
+<img width="551" alt="화면 캡처 2023-06-07 142644" src="https://github.com/siho-song/seoulcity-etl-pipeline/assets/79968994/cb6df2d5-dada-4dc7-b1fa-c1083e058bea">
 
 
 
