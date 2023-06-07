@@ -12,5 +12,7 @@ Spark : spark_3.4.0 <br>
 
 
 
-Uploading 2023-06-05 08-50-16.mp4…
+---
+## Architecture
+<img width="945" alt="화면 캡처 2023-06-07 142602" src="https://github.com/siho-song/seoulcity-etl-pipeline/assets/79968994/2d152193-eae0-40f1-a560-ccea2e8950cb">
 
