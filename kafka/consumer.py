@@ -2,6 +2,7 @@ from kafka import KafkaConsumer
 import time
 import json
 import folium
+import os
 
 consumer = KafkaConsumer(
     'seoulcity_visual',  # 수신할 토픽명
@@ -15,8 +16,8 @@ with open ("./resource/center.json" ,"r") as f:
     
 
 # tiles=['cartodbpositron','Stamen Toner','OpenStreetMap']
-
-path = "/mnt/c/Users/Song/Desktop/seoul_city/flask"
+pwd = os.getcwd()
+path = pwd+"/flask"
 
 def get_newmap(AREA_NM):
     m=folium.Map(
