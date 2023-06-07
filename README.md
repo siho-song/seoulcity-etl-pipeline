@@ -31,7 +31,8 @@ Mongodb : mongo_6.0.4 <br>
 - orange : 서행
 - green : 원활 <br>
 아래는 예시 그림입니다. <br>
-<img width="573" alt="화면 캡처 2023-06-07 142635" src="https://github.com/siho-song/seoulcity-etl-pipeline/assets/79968994/ab24f828-ddb6-4438-976b-a83aa1cf8c4b">
+<img width="573" alt="화면 캡처 2023-06-07 142635" src="https://github.com/siho-song/seoulcity-etl-pipeline/assets/79968994/ab24f828-ddb6-4438-976b-a83aa1cf8c4b"> <br>
+
 ---
 ### 실시간 주차장 정보
 주차장명, 주소 , 주차가능수 , 가격에 대한 실시간 정보를 제공합니다. <br>
@@ -43,7 +44,7 @@ Mongodb : mongo_6.0.4 <br>
 실시간 정보를 제공하지 않는 주차장<br> 
 -black
 아래는 예시 그림입니다. <br>
-<img width="569" alt="화면 캡처 2023-06-07 142653" src="https://github.com/siho-song/seoulcity-etl-pipeline/assets/79968994/15c7d73d-3941-4aee-9380-40dec34b4482">
+<img width="569" alt="화면 캡처 2023-06-07 142653" src="https://github.com/siho-song/seoulcity-etl-pipeline/assets/79968994/15c7d73d-3941-4aee-9380-40dec34b4482"> <br>
 
 ---
 ### 실시간 따릉이 정보
