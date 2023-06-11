@@ -47,7 +47,7 @@ https://youtu.be/5LiICZbOpNU
 - green: 주차가능
 <br>
 실시간 정보를 제공하지 않는 주차장<br> 
--black
+-black <br>
 아래는 예시 그림입니다. <br>
 <img width="569" alt="화면 캡처 2023-06-07 142653" src="https://github.com/siho-song/seoulcity-etl-pipeline/assets/79968994/15c7d73d-3941-4aee-9380-40dec34b4482"> <br>
 
